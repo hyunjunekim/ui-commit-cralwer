@@ -5,6 +5,7 @@ import os
 import pickle
 import requests
 import subprocess
+from datetime import date
 
 TARGETS = ['ui', 'chrome/browser/ui', 'chrome/browser/about_flags.cc']
 DRY_RUN = False
@@ -25,19 +26,33 @@ class Commit(object):
 
 
 
-if __name__ == "__main__":
-    current_dir = os.path.dirname(os.path.realpath(__file__))
 
-    token_path = os.path.join(current_dir, "message.token")
+class DirectorySwitcher(object):
+    def __init__(self, origin, target):
+        self.origin = origin
+        self.target = target
+
+    def __enter__(self):
+        os.chdir(self.target)
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        os.chdir(self.origin)
+
+
+if __name__ == "__main__":
+    current_dir = os.getcwd()
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+
+    token_path = os.path.join(script_dir, "message.token")
     if os.path.exists(token_path):
         with open(token_path, 'r') as file:
             MESSAGE_TOKEN = file.read().strip()
 
-    pickle_path = os.path.join(current_dir, "commits.pickle")
+    pickle_path = os.path.join(script_dir, "commits.pickle")
 
     if os.path.exists(pickle_path) and os.path.getsize(pickle_path) > 0:
         with open(pickle_path, 'rb') as file:
-              COMMITS = pickle.load(file)
+            COMMITS = pickle.load(file)
 
 
     for target in TARGETS:
@@ -61,25 +76,64 @@ if __name__ == "__main__":
         else:
             print(response.status_code)
 
-    message = "# Daily reports for Desktop folks\n"
-    for sha in NEW_COMMITS:
-        commit = NEW_COMMITS[sha]
-        message += "### {}\n".format(commit.title)
-        message += "* Affected: {}\n".format(", ".join(commit.targets))
-        message += "* {}\n\n".format(commit.link)
+    today = date.today().strftime("%Y-%m-%d")
+    markdown = "# Daily reports for Desktop folks\n"
+    markdown += "## {}\n".format(today);
+    if NEW_COMMITS:
+        for sha in NEW_COMMITS:
+            commit = NEW_COMMITS[sha]
+            markdown += "### {}\n".format(commit.title)
+            markdown += "* Affected: {}\n".format(", ".join(commit.targets))
+            markdown += "* {}\n\n".format(commit.link)
     else:
-        message += "* Nothing has been commited today :)"
+        markdown += "* Nothing has been commited today :)\n"
 
-    if DRY_RUN:
-        print(message)
-    else:
-        subprocess.check_output(["curl", "-v", "-X", "POST", "-H", "Authorization: Bearer " + MESSAGE_TOKEN,
-                                                         "-F", "message=" + message, "https://notify-api.line.me/api/notify"]);
+    page_path = os.path.join(script_dir, "reports/{}.html".format(today))
+
+    with open(page_path, 'w') as page:
+        page_template = '''<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`{}`);
+              </script>
+            </body>
+        </html>'''
+        page.write(page_template.format(markdown))
 
     COMMITS.update(NEW_COMMITS)
 
     with open(pickle_path, 'wb') as file:
         pickle.dump(COMMITS, file)
+
+    with DirectorySwitcher(current_dir, script_dir):
+        try:
+            subprocess.check_output(["git", "add", "reports"])
+            subprocess.check_output(["git", "commit", "-m", "'Reports on {}'".format(today)])
+            subprocess.check_output(["git", "push", "origin", "main"])
+        except:
+            pass
+
+
+    message = "# Daily reports for Desktop folks\n"
+    if NEW_COMMITS:
+        message += "* New commits: {}\n".format(len(NEW_COMMITS))
+    else:
+        message += "* There's no commit today :)\n"
+    message += "https://sangwoo108.github.io/ui-commit-cralwer/reports/{}.html".format(today)
+
+    if DRY_RUN:
+        print(markdown)
+    else:
+        subprocess.check_output(["curl", "-v", "-X", "POST", "-H", "Authorization: Bearer " + MESSAGE_TOKEN,
+                                 "-F", "message=" + message, "https://notify-api.line.me/api/notify"]);
+
 
     exit(0)
 
