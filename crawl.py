@@ -115,6 +115,7 @@ if __name__ == "__main__":
     with DirectorySwitcher(current_dir, script_dir):
         try:
             subprocess.check_output(["git", "add", "reports"])
+            subprocess.check_output(["git", "add", "commits.pickle"])
             subprocess.check_output(["git", "commit", "-m", "'Reports on {}'".format(today)])
             subprocess.check_output(["git", "push", "origin", "main"])
         except:
