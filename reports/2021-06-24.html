@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-06-24
+### WebUI: Stop generating unused manifest files from preprocess_if_expr().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d464e49
+
+### Simplify usage of timers in ExlusiveAccessBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9c9264
+
+### Migrate //ash/content to //ash/webui
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b62f1a
+
+### Fix broken path in ui/file_manager/base/tools/modules.py
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e215eed
+
+### [CrOS Cellular] Wire per-network roaming flag to UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68449ca
+
+### Switch X509Certificate::Create* to base::span
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6559552
+
+### Fix focus manager tracking for child widget on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6bed28
+
+### Disable flaky InteractionSequenceBrowserTest on LaCros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81c84aa
+
+### ozone/wayland: do not create surface synchronization if not needed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f6cdc9
+
+### Add absolute score metric to PredictionMetricsHandler.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76c97d0
+
+### [Lang-settings] Make language settings only work for IME service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/557b27383
+
+### Create experiment for updating location-loss prompts on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/186407a
+
+### Fix GetNativeTheme() access to only occur when in a Widget hierarchy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd0184d4
+
+### [Fuchsia] Use SurfacelessEGL instead of PbufferGlSurfaceEGL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d322f09
+
+### [lacros shelf] Remove now-redundant observations in BrowserStatusMonitor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c30a4f5b
+
+### [Autofill] Fix crash autofill::SaveAddressProfileIconView::GetBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/737b47e
+
+### Revert "Re-enable WebAppFileHandlingPermissionDialogTests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/537b308
+
+### [Sheriff] Disable AXGeneratedTreeTest.GeneratedTreesWithIgnoredNodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a6303846
+
+### [ntp] Move custom links and visibility MV tile prefs to 1P NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dca3350f
+
+### Add frame score metrics to PredictionMetricsHandler.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a15efa6b
+
+### Enable upgraded UI for sync confirmation and enterprise welcome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7d5fb3
+
+### Disable ExtensionsMenuViewBrowserTest.InvokeUi_UninstallDialog_Accept
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a3ed0e
+
+### Simplify BubbleBorder::DrawBorderAndShadow().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6cbadac
+
+### [STTS] Add metrics for V2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d161ab0
+
+### X11: fixed cursor bitmap changes during DnD
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2fce840
+
+### Migrate ui/file_manager presubmits to python3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8be543e
+
+### Disable flaky PasswordGenerationPopupControllerInPrerendering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39d39aa
+
+### ui/ozone/platform/OWNERS update
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a7ca0c6
+
+### [Lacros] Move ExtensionPlatformKeys related code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1837a9
+
+### OOBE: Add LacrosDataMigrationScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f27471
+
+### Explicitly include windows.h in chrome/browser code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ac7303
+
+### Make building the chrome target with enable_plugins=false work on Linux.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bec86a
+
+### [DisplayList] Detect duplicate displays in less time
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ba4982
+
+### Fire an event when aria-live="off" is removed inside active live region
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/371c00d
+
+### [memories] Visual changes to landing page + dark mode support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06624e5
+
+### Pass handling of most ARIA childrenPresentational to browser
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/145c619
+
+### [CrOS Nearby] Show profile image in the device discovery dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bc9dd0
+
+### Add a flag and feature to disable subframe process reuse
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f390ea9
+
+### Install AppListBubblePresenter visibility notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5aafa3
+
+### dpwa: update additional GenerateAppIdFromURL callsites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fca763e8
+
+### Disable DCHECKs asserting that ui::Layer scrolls are completed successfully.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7859433
+
+### MPArch: Only allow creating TabUnderNavigationThrottle on the primary main frame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96ff0e0
+
+### [Switch Access] Setup guide: Handle case with >1 switch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a2ddce
+
+### [ash-chrome] Check callback before calling it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9277ff
+
+### Create ColorDelegate for downstream color logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35cb2d4
+
+### Remove dead CardUnmaskPromptViews::storage_checkbox_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c54400
+
+### [WebOTP] Alternative string experiment for cross-device WebOTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27a674f
+
+### Disable CaptionBubbleControllerViewsTest.HidesAfterInactivity everywhere
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/defdc22
+
+### Turn release fences on.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d2ebe4
+
+### [WebOTP] Not showing backup string when the remote client name is empty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fff8df1
+
+### ozone: evdev: Add quirk to identify 0x18d1:0x5052 as internal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebe0532
+
+### [Stylize] Add Locale Specific Quotation Marks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e95cf82
+
+### Remove the CopyImageToClipboard flag.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/78d825b
+
+### ChromeLabs: Move shared function to utils file and fix edge case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f4d71c
+
+### Don't clamp sampling time when scroll prediction experiment is enabled.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82e14ef
+
+### [Ozone/DRM] Enable UseRealBuffersForPageFlipTest and
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e0a331
+
+### Revert "Fix key loop in modal dialogs on the Mac."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee4035b
+
+### [code-health] Migrate //ui/webui/resources/PRESUBMIT.py to python3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/171e042
+
+### Remove nsAccessibility mappings for kMenuStart and kMenuEnd
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/634a666
+
+### [Sheriff] Disable AuraLinuxAccessi...EmbeddedRelationshipWithDevTools
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/580c2a6f
+
+### OOBE: Add subtitle to loading state of os-install-element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a41f89
+
+### T&S Sentiment: Add trigger action input for Privacy Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c2f507
+
+`);
+              </script>
+            </body>
+        </html>
