@@ -1,0 +1,212 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-06-26
+### Code health: port away from deprecated ListValue::GetList(size_t, ...)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b418b3c
+
+### [memories] Plumb the score from the clustering backend to the WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1da13f
+
+### Adding a flag to instruct server to rank tiles based on client context
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/be050b7
+
+### Assign appropriate accessibility roles to URL Handling intent picker dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb18beb
+
+### Move InkDrop observation out of layer add/remove
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/016b1d45
+
+### Disable flaky test PageInfoBubbleViewDialogBrowserTest.InvokeUi_MixedContentForm
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff2296c
+
+### [Views] Avoid repeated calls to HasSwitch()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea40327
+
+### Using PasswordReuseManager inside PasswordStore
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/baa849a
+
+### Disable KeyboardLockInteractiveBrowserTest.SubsequentLockCallSupersedesPreviousCall on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/716348e
+
+### Implement base permission subpage in page info
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3acaef2
+
+### [Segmentation Platform] Listen for pref changes in AdaptiveToolbarButtonController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af37c02
+
+### Revert "Move shopping cart image to components"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3110f7
+
+### Revert "Reland "Adds a way to create app shortcuts in different folder on Mac/Win/Linux.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f814fe8
+
+### Move matrix44 into skia/ext
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0deb8ef
+
+### Load shipped version of d3dcompiler_47.dll
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a17c769
+
+### [sync] Configure URL for trusted vault opt in flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e64611
+
+### unit_tests: fix mock warnings in Media* tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41653f4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2009390
+
+### Remove dependency of CRDHostDelegate on UserActivityDetector
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e67aaad
+
+### Desktop PWAs: Add missing includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3849024
+
+### Disabled flaky test PasswordGenerationPopupViewPrerenderingTest.PasswordGenerationPopupControllerInPrerendering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94f6297
+
+### Record and surface web app icon read/write errors in chrome://internals/web-app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/724cfbb
+
+### [//components/safe_browsing] Move core/password_protection/ subdir
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51fe564
+
+### Add keyboard shortcuts to focus help bubbles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/965a6c3
+
+### Bulk rewrite of NavigationHandle::IsInMainFrame callers to IsInPrimaryMainFrame in chrome/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05e487e9
+
+### Clipboard: Implement ReadPng for Android
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4e177b1
+
+### Retire the qualifyPartialUrlQuery method.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f2a25a
+
+### Reland "Invalidate SelectionShouldFollowFocus elements during container focus"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/077247f
+
+### [Keyboard Tooltip] Enable disabled TooltipBrowserTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6feeb6cf
+
+### [WebID] Mediation UI - add badged account avatar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbd883a
+
+### [STTS] Show icon and bubble with timeout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfa8dc4
+
+### views: Clean up CHECKs in ui/views/window/dialog_delegate.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ce9ac9
+
+### ozone: Modify heuristic for loop filter for crash resilience.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/322ac28
+
+### Fix -Wc++11-narrowing: chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e13edd
+
+### Re-enable generated tree tests with notes for sheriffs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af3d3ed
+
+### [Nearby] Add background scanning feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/12166ea
+
+### Move //chrome/browser/{chromeos => ash}/policy [1/10]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0dfae0
+
+### [omnibox] Add and implement CLOSE_INCOGNITO_WINDOWS Pedal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8446cf0
+
+### Settings: Convert appearance_page/ to Polymer class syntax.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dedf56a
+
+### dpwa: Fix up path to csv files in readme.md
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9f4fff
+
+### Add some missing includes for base/stl_util.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e11edbe
+
+### [Switch Access] Setup Guide: Use action assignment pane
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c14c24d
+
+### [Fast Pair] Add UI Trigger buttons to chrome://nearby-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4adb31a
+
+### [//components/safe_browsing] Move core/db/ subdir
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e1f765
+
+### Revert "Reland "Files app: Stop auto-generating JS module for foreground folder""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2f0930
+
+### Fake UUID for diskless volume in Chrome setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bf5c2e3
+
+### system-web-apps: adds ability to show "New Window" in shelf context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd25563
+
+### Add various missing STL headers.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/998100f
+
+### Revert "Files app: Stop auto-generating JS module for foreground folder"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/495c5dd
+
+`);
+              </script>
+            </body>
+        </html>
