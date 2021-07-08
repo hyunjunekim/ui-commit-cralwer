@@ -1,0 +1,180 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-08
+### [Files SWA]: Replace event dispatch with event broadcast
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c16d71b2
+
+### Use chip framework for quiet notification prompt.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df283b0
+
+### Speculative fix for flaky test timeout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c205ce
+
+### Files app: Remove unused files and references to HTML import
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ec8446
+
+### Files app: Simplify the build rule js_tst_gen_html()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad7954f7
+
+### Remove ARC apps icons on Shelf when the restored window are closed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c89c2c
+
+### Remove kArcPreImeKeyEventSupport feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f80db56
+
+### [SharingHub] Keep sharing hub icon active while sharesheet is open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b50dd05
+
+### Add Borealis to settings and add mic toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4da5722
+
+### [test] More expectations in ProfilePickerInteractiveUiTest.NavigateBackWithKeyboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cb8b65
+
+### WebUI: Add TypeScript definitions for more shared files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34cf1148
+
+### Reintroduce DesktopBrowserFrameLacros::TabDraggingKindChanged()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f913c9
+
+### Code health: replace deprecated GetAsInteger/Double/String/Boolean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6bb958
+
+### CBCM DM token is only available when CBCM is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f394cdf
+
+### [IntentHandling] Re-enable disabled test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b5f969
+
+### [Profile creation] Enable the signed-in flow by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/691397f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28404a4
+
+### Swap base/stl_util.h to base/cxx17_backports.h in many files.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4a2f8e
+
+### Reland "Update browser tests to support the new page info"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac777d2
+
+### [OS Settings] Use semantic colors for network icons.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91bf035
+
+### [sync] Add missing call to UpdateAccountsInCookieJarInfoIfNotStale
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/579a983
+
+### WebGPU: implement OpenGLES backend on Windows (D3D) platforms.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/376653f
+
+### dpwas: Reset draggable region on navigation from a WCO app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a19cb86
+
+### [GMNext][TabSwitcher] Draw thumbnail differently if selected
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09c00e2
+
+### T&S Sentiment: Connect Page Info to SentimentService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5907942
+
+### X11 Event coalescing now occurs before changing coordinates.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6280596
+
+### Revert "Update browser tests to support the new page info"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32be553
+
+### dpwas: Stop showing icons in fullscreen WCO macPWAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93d9e85
+
+### [ntp] Disallow 3P NTP in Incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/797a28a
+
+### Change namespace chromeos => ash for //ash/webui/diagnostics_ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f238c7c
+
+### Files SWA: Fix the thumbnail loading when optimize_webui=false
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f3075e
+
+### [Passwords] Switch ManagePasswordsUIController to PasswordStoreInterface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03e1d43
+
+### WebUI tab strip: Better distinguish tab reordering and tab-dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e141ef2
+
+### Remove |is_guest| and |kProfileIsGuest| from Profile Attributes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6902f5
+
+### Convert /chrome/browser/ui/views to ScopedDisplayObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/722242c
+
+### Convert /chrome/browser/ui/views/frame to ScopedDisplayObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a887e13
+
+### Remove NOTIMPLEMENTED from AddNativeUiColorMixer()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b92a3124
+
+### arc: Add a flag for keyboard shortcut helper integration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4c6d7f4
+
+### WebUI Tab Strip: Fix drag tab to new Window bug in split view mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/098abd4
+
+### Remove tengs@ from OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d4e4f9
+
+### [App Management] Disable intent settings in tab mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5a40033
+
+`);
+              </script>
+            </body>
+        </html>
