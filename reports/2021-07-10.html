@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-10
+### [Capture Ribbon] Add a favicon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e486ae
+
+### [Nearby] Make Nearby's WebRTC medium less chatty in the background
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f926b13
+
+### ChromeLabs: Set Accessibility role to kDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c60f687
+
+### Remove PageInfoBubbleViewsMacTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4948d8
+
+### Reland "[GMNext][TabSwitcher] Draw thumbnail differently if selected"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4c0dad
+
+### Avoid accessing NativeTheme too early from bookmarks-related functions.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a4b9bfb
+
+### [Start] Fix white patch seen on top over the URL omnibox issue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a31aac
+
+### Remove dead-code: getCurrentBrowsingContextMedia confirmation-only flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d7704f
+
+### Revert "[base] Don't include <ostream> in string_piece.h"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e83eef
+
+### OOBE - Polymer3 migration pre-work - Dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b7e31b
+
+### [Safe Browsing] Clean SafeBrowsingNavigationObserver of //chrome deps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fe9d86
+
+### Remove Ephemeral Guest Profile NTP.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1e9f0c9
+
+### Switching InsecureCredentialsManager to reading issues from forms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70b55b0
+
+### [tab search] Update the visibility flag to be hidden by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30b494c
+
+### Implement HTTPS-Only Mode interstitial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80e216e
+
+### [segmentation platform] Fix pref observation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1df0cd7
+
+### cbui: refactor base::Value use in PinnedTabCodec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8689e2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b5f09c4
+
+### cros-suggest: add expanded flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f6526d
+
+### Remove unneccssary include from page_navigator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f624cc6
+
+### Remove four expired GPU.DirectComposition histograms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c81541
+
+### [floc] add chrome://floc-internals page to show floc status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b03fe2
+
+### [CrOS Network] Show password tooltip on right when using RTL language
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc0eaaa
+
+### Disable the ProfilePickerInteractiveUITest.CloseSigninWithKeyboard as flaky
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a03107f
+
+### lacros: Add publisher for lacros chrome apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5ded30
+
+### Remove LaunchArcApp in AppLaunchHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55bb69f
+
+### [Profile creation] Hide profile() as an implementation detail
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f89ba03
+
+### Oobe: read minor mode signal for sync consent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03dda84
+
+### Merge //base/util/type_safety into //base/types.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b6dc96
+
+### Rename ArcSupervisionTransition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be7409a
+
+### Window Placement: Fix fullscreen swap from maximized; bounds restoration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a52dda7
+
+### [CodeHealth] Remove the usage of ListValue::AppendString() in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d08adf
+
+### Revert "[signin] Change the "child account" status to tribool"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/059d9609
+
+### Replace omnibox shadow with hairline behind flag
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfcfc3c0
+
+### [base] Don't include <ostream> in string_piece.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/472bf83
+
+### PageInfo: Update strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebaef56
+
+### Move BluetoothChooserDesktop and BluetoothScanningPromptDesktop to //components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4950e717
+
+### B4P cleanup, part 2: Delete old Save/Update bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90ac58c
+
+### Move chrome::ShowDeviceChooserDialog calls to ChromeBluetoothDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da03554
+
+### [Start] Fix "explore sites" icon is grey in Omnibox.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebecf3c
+
+### [Magnifier] Add feature for JS-based caret tracking
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/172e35d
+
+### [Cleanup] Removing the EmptyFolderController and related assets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e3609b
+
+### Frame views now set client view at the end.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b67a7d5
+
+### WebUI: Add announcer to read screen reader messages
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4d3522c
+
+### CodeHealth: Remove DictionaryValue::RemovePath
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/745dad0
+
+### [unseasoned-pdf] Add a feature flag for enabling Pepper-free PDF viewer.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/13aa6c2
+
+### Selectively set AXMode depending on what UIA API is used.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3fabb6
+
+### Move basic CreateChooserTitle to //components/permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6ebc154
+
+### [App Identity]: Implement update confirmation dlg in views.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f55650e
+
+### Defer the ARC app launching during the restoration process.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa5a0e2
+
+### Add client and controller for tab cluster UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fc5d48
+
+### [Fuchsia] Remove Swapchain dependency
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60e3cbb
+
+### Revert "[GMNext][TabSwitcher] Draw thumbnail differently if selected"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5226ea8
+
+### Reland "[Lacros] Enable WebUSB, WebSerial, chrome.usb, chrome.serial API support."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fbf92b
+
+### Introduce views::CascadingProperty
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ddc9cc
+
+### Add flag, runtime feature and workaround for WebGL developer extensions.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/08c7dc3
+
+### [hover cards] Fix z-ordering issue for Hover Cards on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc624a5
+
+### [omnibox] Fix Android about:blank security regression
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/904100f
+
+### [ash-chrome] Always show "Learn more" on the signin fatal screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e7e678
+
+### [signin] Change the "child account" status to tribool
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea76009
+
+### dpwas: Update icon & tooltip for window controls overlay toggle button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/686a5be
+
+### [PageInfo] PageInfo UI handles WebContents being destroyed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1079ace
+
+### [ntp] Move 1P services to //chrome/browser/new_tab_page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83b26a0
+
+### Extract tab scrolling layout stuff from TabStripRegionView into a child View.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/893e465
+
+### [CrOS Network] Change network console.error()s to console.warn()s
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52a28110
+
+`);
+              </script>
+            </body>
+        </html>
