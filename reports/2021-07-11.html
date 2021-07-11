@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-11
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2060f74
+
+### Fix calling TabStripModel::IsTabBlocked with kNoTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c38a30
+
+### [CodeHealth] Remove the ListValue usage from HoldingSpaceKeyedServiceTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75d9be0
+
+`);
+              </script>
+            </body>
+        </html>
