@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-13
+### traffic_counters: Add traffic_counters UI to chrome://network
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7607a9e
+
+### Add additional testing for history sub menu contents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48a117a
+
+### Web Feed - add alternative follow accelerator using IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f571fd
+
+### [memories] Adds an option to remove the top visit only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/315bdd5
+
+### web-apps: split WebAppProvider usage in AppBrowserController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/011dace
+
+### [CrOS Bluetooth] Create feature flag for Bluetooth Revamp
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/168d45b
+
+### DPWA: Remove use of AppRegistrar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed83c14
+
+### Projector: Launch toolbar from Player app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97ce1d5d
+
+### Add feature flag: PhoneHubRecentApps
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aae52d7
+
+### Revert "Frame views now set client view at the end."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85fc3a6
+
+### Fix an off-by-one bug in render_text when dealing with empty lines
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/591ca6e
+
+### [Shortcuts Widget]  Created a new gn target to define keys for intent extras
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c074e26
+
+### ime: Remove unused skip_process_filtered parameter.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/040e1126
+
+### T&S Sentiment: Connect Save Card action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1506b72
+
+### CodeHealth: Remove use of Value::GetAsBoolean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6677e93c
+
+### Updated connection security indicators: Add In Product Help for Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01b2794
+
+### Revert "[OS Settings] Use semantic colors for network icons."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e7f7d9
+
+### Assistant: use equal weight buttons based on settings value
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5cd373
+
+### [X11] Set visual for ANGLE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f44eb3
+
+### [Image Fetcher] Move java code to //components/image_fetcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c47d170
+
+### Remove some NOTIMPLEMENTED annotations.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97598a0
+
+### ui: refactor WindowSizer to use new base::Value API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afc0c82
+
+### Remove MountOptions from SmbService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37c5f87
+
+### [DesktopSharingHub] Add Third Party Icon support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dbd50d
+
+### Convert texts to be scanned to UTF-8 for consistent size calculation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83079971
+
+### [Tab Search] Remove deprecated CloseUI logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/450c09c
+
+### Log instead of throw on DisableAnimationsTestRule exception.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6adc782
+
+### Add feature flag for Cast2Class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11f187f
+
+### Handle an empty tabstrip in TabStrip::GetDropBounds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c956ce
+
+### Revert "Assistant: use equal weight buttons based on settings value"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/732e0ed
+
+### [Lacros] App windows do not show icon or title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f60c467
+
+### Bookmarks WebUI: Announce progress of importing bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4513949
+
+### Revert "Remove crostini dlc flags and related code"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7d1a671
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7294e6
+
+### [CSN] Observe hiding BrowserControls Android View
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de5ea03
+
+### Don't use SwANGLE for headless yet
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0448d34
+
+### Set lock-screen-reauth dialog dimension and pass it to JS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec9a720
+
+### [bfcache] re-enable PopupBlockerBrowserTest.PopupsDisableBackForwardCache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3669828f
+
+### [App Service] Add chrome://app-service-internals developer debug page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa12421
+
+### InProcessBrowserTest: remove unused SetUpCommandLine
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6d3fa7
+
+### Refactor chrome://projector and add skeleton WebUI for Player app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cc27ce
+
+### oobe: new License Packaged flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b78f6b1
+
+### IWYU: add several missing vector includes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/527df83
+
+### [profiles] Delete unused experimental code for signin interception
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fbfc938
+
+### full_restore: Override session restore bounds with Full Restore bounds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c74d183
+
+### Reland "[base] Don't include <ostream> in string_piece.h"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e93e9b2
+
+### T&S Sentiment: Connect Password Manager signal to SentimentService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8fe6fc
+
+### Update download history page & CrOS notification "Show in folder" link text.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbf9b18
+
+### Remove memlog reports upload support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf5399b
+
+### [Shortcuts Widget] Polished the UI for the medium sized widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a09d351
+
+### Change permission prompt bubble to be modal as part of Chip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1ecf79
+
+### Remove unnecessary includes of span.h from other headers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/524bb5d
+
+### Record URL Handling intent picker dialog state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ecbdc97
+
+### Replace DISALLOW_COPY_AND_ASSIGN with =delete in ui/base/clipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e2668a9
+
+### [Capture Ribbon] Fix bool inversion of fallback string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03fa9a9
+
+### Rename DriveApiErrorCode to ApiErrorCode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78c5c73
+
+### PageInfo: Fix assert in Permission WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e438f6
+
+### B4P cleanup, part 3: Delete Passwords Signin promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41d144e
+
+### [omnibox] Process l10n string tokens and common Pedals ignore group.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56626649
+
+### [segmentation_platform] Fix voice being disabled for customization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c5c9c7
+
+### Move RecordArcGhostWindowLaunch to ArcAppLaunchHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db45153
+
+### Use a feature instead of a switch for offline dictation.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/274c09e
+
+### Skip updating exit bubble if mouse lock changes under tab-fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2294a3c
+
+### desk template: Add private API skeleton code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5413f0
+
+### Refactor local_printer.mojom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f93634
+
+### Remove unnecessary includes of values.h from other headers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7acc9a27
+
+### Merge ash/public/cpp/ash_pref_names.* into ash/constants/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9d1cb2
+
+`);
+              </script>
+            </body>
+        </html>
