@@ -1,0 +1,352 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-14
+### Clean up old inheritance comment in WebAppLaunchManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de90c39
+
+### [Signin] Remove parameter from SyncConsentFragmentBase constructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/243347e
+
+### [STTS] Set bubble close_on_deactivate(false)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dde212
+
+### [sync] Add metric to reflect user actions upon recoverability degraded
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efedec1
+
+### Removing ChangePasswordUrlService and related files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d356d93
+
+### ozone/wayland: Rename TestDataDeviceManager::{Delegate => DragDelegate}
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/168ed5d
+
+### Reland "[X11] Set visual for ANGLE"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e6be2e
+
+### Oobe: update strings for child in arc-tos screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4a3084
+
+### Suppress inline autocomplete text changes from triggering Autocomplete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6674371
+
+### Integrate PhishGuard password reuse warnings with PasswordCheck
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/17e4bdf
+
+### Update overlay colors to baseline.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32c449a
+
+### Fix case where an extension could open a pinned grouped tab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e06d6c5
+
+### Side panel: Add context menu for bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ecf430
+
+### [Lacros] Avoid testing OpaqueBrowserFrameView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06ac845
+
+### [Lacros] System web apps update app service state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fef9f25
+
+### ozone/wayland: Migrate test data selection related code to new design
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfcc225
+
+### File handling: implement new customized permissions prompt.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83308944a
+
+### Desk Template: Launch browser windows from a desk template
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7347d23
+
+### [Passwords] Access SmartBubbleStats only via PasswordStoreInterface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57f2b68
+
+### Reland "[signin] Change the "child account" status to tribool"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b458ca
+
+### NewTabUI: Remove GetMainFrame usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/059cac0
+
+### DPWA: Merge WebAppProviderBase into WebAppProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59c5ae2
+
+### Customize Themes: Migrate to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4fd41c8
+
+### [AppIdentity]: Implement update confirmation dlg in views.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7a531ce9
+
+### Disable deletion of primary profiles in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e19f37a
+
+### Move several unlocking related constants to ash/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d84814fd
+
+### Reland "Reland "Assistant: use equal weight buttons based on settings value""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4d655f
+
+### [sync] Rename enum to generalize
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8d9417
+
+### [Autofill] Use consistent naming in save prompt code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95ca9b2
+
+### WebUI: Prepare geometry.mojom for use on WebUI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3427307
+
+### [Shortcuts Widget] Implemented Voice Search on the widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bdd3429
+
+### Implement keyboard shortcut to toggle compat-mode menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/378115c
+
+### Add metrics for location-loss prompting experiment.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61324bf
+
+### Revert "[X11] Set visual for ANGLE"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bdd267
+
+### Files SWA: Change FileTasks to not use chrome.runtime.id
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/780b846
+
+### [CodeHealth] Remove uses of ListValue::DeepCopy() in /chrome/browser/ui/webui/chromeos/login.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec8f777
+
+### CodeHealth: Avoid ListValue::Clear()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03129fe
+
+### [Lacros] Omit uninstall in app menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5128d9
+
+### Lens Chrome - add a new cached param "skipAgsaVersionCheck"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/438965c
+
+### Users can pick their Dictation language in Settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64ad19e
+
+### Fix flicker when re-finding after closing a tab with an open find bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e588cb0
+
+### Revert "Reland "Assistant: use equal weight buttons based on settings value""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7585c8
+
+### Customize Themes: Migrate to TypeScript compiler, still using JS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3c024bc
+
+### Add PWA notification permissions support to quick settings menu.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b88a920
+
+### codehealth ui: remove WebDialogDelegate::OnMainFrameResourceLoadComplete
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fabcc01
+
+### dpwas: Fix window controls overlay apps not installing when OT is enabled locally
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9ab8ca
+
+### Reland "Selectively set AXMode depending on what UIA API is used."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b36a37e
+
+### Fix inactive caption button color for window controls overlay apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88be49a
+
+### Enable -Wenum-compare-conditional.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39cce04
+
+### [Files app] Force cross-filesystem move between My files and Downloads
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bc2891
+
+### Remove MediaRouteProviderId::UNKNOWN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da07f9f
+
+### CodeHealth: Updating base::Value APIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ddae3a
+
+### traffic_counters: Add ResetTrafficCounters to Traffic Counters tab
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e43862
+
+### Don't cache RTL value in LocalizationUtils
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d52116
+
+### Owned class-properties using std::unique_ptr and optionally cascading properties.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc00d9a
+
+### ax_inspect: extra space at the beginning of a line in multi line
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7e771f5b
+
+### [VCN] Show error dialog for vcn errors in bioauthn flows
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de3dfa9
+
+### Feature flags and about flags for the two variants of modifications
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ae49bd3
+
+### [ozone/wayland] Implemented idle mode inhibition for KDE Plasma.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88dd539
+
+### Remove ANGLE from allowed implementations for headless
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9ae77d
+
+### Oobe: update strings for child in fingerprint setup screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c56c8a4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2243f17
+
+### Enable FullscreenControllerInteractiveTests that reached 0 flake scores.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4bf83b
+
+### Remove unused ChromePage constants.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c045b3b
+
+### [Lacros] Identify main profile using profile path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87ca538
+
+### [FilesBanners] Add FilesApp BannerFramework feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03d296b
+
+### traffic_counters: Add Last Reset Time to UI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b09ce91
+
+### [Safe Browsing] Componentize NavigationObserver-related classes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d807bcf
+
+### [CodeHealth] Remove AppendString/AppendInteger/AppendBoolean from
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6759f9b
+
+### Fix layout of web app titlebars on Linux when drawing client shadows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/743c1144
+
+### [Capture Ribbon] Changes following Chrome UX's suggestions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/845abac
+
+### Create base test class and test rule to set color overlay.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5e024ae
+
+### Reland "Assistant: use equal weight buttons based on settings value"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da5f772
+
+### Use grey sync crossed icon for sync-the-transport error in profile menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/115286a
+
+### [Lacros] minimal-ui button spacing matches Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d08928
+
+### Temporarily remove HTTPS-First Mode from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4e1981d
+
+### Remove suggestions from iOS spotlight, remove //components/suggestions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9db19e6
+
+### [AF] Unify and fix meaning and desciption for honorific title strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30eb56c
+
+### [Refactor] Remove uses of @RemovableInRelease for runtime asserts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9747d05d
+
+### [Lacros] Help and Settings apps use correct app type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcb2e4d
+
+### [SH-Toggle] Add flag for the Sharing Hub link toggle feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5bbcaf4
+
+### Oobe: layout/css update on assistant screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb99fdd
+
+### CodeHealth: Remove DictionaryValue::SetDouble in //chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/655445f
+
+### cros: Add metrics for the Chrome PIP resize handle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e013f7
+
+`);
+              </script>
+            </body>
+        </html>
