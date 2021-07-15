@@ -1,0 +1,352 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-15
+### Do not clamp the find bar width to the omnibox width.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7199010
+
+### [realbox] Adds chrome://flags entry for displaying suggestion answers
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03502f34
+
+### [TabSearch] Flaky test fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4ea359
+
+### Fix titlebar layout in window controls overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49cf397
+
+### Revert "[CrOS Device Name] Fix initialization issue with |DeviceNameStore|"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9070191
+
+### ax_inspect_scripting: support eventing in scripts on mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e385d3
+
+### SurfaceControl: Don't set null buffer more than once
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/48d0ad6
+
+### dark_mode: Add settings search for enabler toggle and accent color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac118ce
+
+### os-install: Show service logs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e4f2d57
+
+### [apitrace] Added error to log when egltrace.so is not found.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4faed97
+
+### [Align-gDM-Ext] Revise media-picker audio checkbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc2464d
+
+### Oobe: update strings for child in pin setup screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f74a78a
+
+### [memories] Make HistoryClustersService partially respect `end_time`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d7565c
+
+### [GMNext][TabSwitcher] UI update for spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5427a8b6
+
+### Fix AXPlatformNodeWin::ScrollIntoView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0398fc5
+
+### [Code Health] Remove NOTIFICATION_TAB_DRAG_LOOP_DONE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f33823
+
+### CodeHealth: Remove use of Value::GetAsString from settings WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/991bde3
+
+### printing: Use mojom::PrinterType instead of PrinterType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4df1b42
+
+### Fix several small bugs and add metrics for Page Info v2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5acde05
+
+### Projector: Nudge selfie camera to match UI specs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/904b60b2
+
+### Exclude extension windows from the full restore data.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3970744
+
+### Reset file handling permission after PWA is uninstalled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f66721d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94ff894
+
+### Oobe: update header layout for Assistant value prop settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7fd8c1
+
+### Ensure location bar is updated for start surface state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/669bfcc
+
+### Side panel: add metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f903006
+
+### [Safe Browsing] Eliminate SafeBrowsingBlockingPage::CreateBlockingPage()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb13dc6
+
+### gfx: #include skottie_wrapper.h in skia_vector_animation.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5652f9d
+
+### Fix crash due to assuming the type of an image model.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e397ac
+
+### Clipboard: Replace huangdarwin@ with mek@ and pwnall@ in data_transfer_policy/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/847b585
+
+### [Fixit] Add utility method to MockConfigurationPolicyProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16185a4
+
+### Small visual tweaks to IPH arrow rendering.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d5da6c
+
+### [Shelf] Create a unified api to pin or unpin shelf icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1eb8ee4
+
+### Remove WidgetDelegate initializing callbacks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d16deef
+
+### [D-Bus] Move clients in //chromeos/dbus to separate directories: Part 1.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fafc49e
+
+### Fix chrome://management management domain in Connectors section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a3604e
+
+### [sync] Further tweak trusted vault error UI titles on Android and ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2caca39
+
+### Add myself to the PageInfo OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dad475
+
+### Add POSIX test for Save to PDF file permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6db40c2
+
+### cros: Defer launcher icon loading until requested
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9fbc6b
+
+### [Launcher] Add the flag to enable launcher sort
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aa868bf
+
+### Fix -Wloop-analysis: chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea5581c
+
+### ash: ksv: Move KeyboardShortcutItem to ash/public/cpp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35a20f7
+
+### [views] Fix ScrollView's content view background set logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e77042
+
+### Oobe: update strings for child in assistant screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56517c9
+
+### Add a flag to session restore restore app type browser only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c27ce4
+
+### gpu: Remove DComp FramesSinceColorSpaceChange UMA histogram
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8776988
+
+### [views] Remove unneeded ColorTrackingIconView
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99ef34a
+
+### WebUI: Make CrLazyRenderElement a generic class for TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30f1a22
+
+### Reland "[CrOS Device Name] Fix initialization issue with |DeviceNameStore|"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83a6ccae6
+
+### [Extensions] Remove code related to kExtensionsCheckup
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c1cb138
+
+### [Extensions UI] Remove rogue reference to ToolbarActionsBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f26eafae
+
+### [views]IWYU for border.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/979fbfa
+
+### Don't enable tab scrolling on Chrome OS yet.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f7fc1d
+
+### Revert "Reland "[X11] Set visual for ANGLE""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7da1b3
+
+### Search History Link Android: updated the search history strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2a8804
+
+### [CrOS Network] Add roaming badge in Network Setting page
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e50445
+
+### Desktop PWA browser tests use WebAppControllerBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c03f7a
+
+### Quick Answers V2: Add FeedbackType and description template
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4373e6b
+
+### Delete unnecessary base/no_destructor.h includes.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9cb338a
+
+### Disable DirectCompositionForceFullDamage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84fbbe3
+
+### [CSN] Permanent Dismissal Threshold
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7016cec
+
+### Refactor bubble menu bounds calculation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad8f13e
+
+### Update unit tests to support the new page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19294d0
+
+### Fix -Wimplicit-int-float-conversion.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ec6dc28
+
+### Removing windows.h includes from some base headers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9df510e
+
+### [fuchsia] Remove most |is_fuchsia| conditionals from //chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f5c119
+
+### Replace MediaRouteProviderId with its Mojo counterpart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55cce8d
+
+### Rename SetHighlighted(bool bubble_visible) to SetHighlighted(bool highlighted)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e602a92
+
+### Retire WebAppControllerBrowserTestBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd57f60
+
+### Add a UI flag for updated omnibox connection security indicators
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0626cbb
+
+### Add missing includes in chrome/ and ash/ code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff79bc8
+
+### Include windows_types.h for content_main's wWinMain
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb46341
+
+### [CrOS Device Name] Fix initialization issue with |DeviceNameStore|
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f0c93e
+
+### Refactor extension install dialog to handle payloads.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cbc892
+
+### Add justification field to extension request dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36e8656
+
+### DPWA: Call WebAppProvider::Get()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1612396
+
+### Fix the code disabling the Safety Check promo in enterprise
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75bc89c
+
+### Rename InitiateManualTranslation to ShowTranslateUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4009064
+
+### Remove DialogDelegate::OnDialogInitialized
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f789e9c
+
+### Fix crash when refreshing the Manage Accessibility Settings page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27c4bb0
+
+### WebUI download shelf: migrate to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c78ebea7
+
+### [Lacros] Request system web apps icons using kSystemWeb app type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efc6e598
+
+### Adjust two tests for longer user activation timeout of 5 seconds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2397f66
+
+`);
+              </script>
+            </body>
+        </html>
