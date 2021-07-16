@@ -1,0 +1,332 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-16
+### Create single DeskTemplate definition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fb6a89
+
+### Fix there is no icon during download
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0ebf77
+
+### [Code-Inclusion] Rename MasteringMetadata to ColorVolumeMetadata.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0779f2
+
+### Clipboard: Replace huangdarwin@ with asully@ as owner for //ui/base/clipboard code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/564e9ba
+
+### FL: Verify multiple sign-in is disabled for Family Link users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2794588
+
+### desks_template: Read data from desks storage on app launch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac6e550
+
+### [ntp][modules] Create a pref for module orders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad599ea0
+
+### [Fixit] Use mock policy provider utility in chrome/browser/ui/webui/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea864dc
+
+### chrome: replace "QR code" with "QR Code" throughout UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/929545b
+
+### DPWA: Merge web_applications/components/BUILD.gn into web_applications/BUILD.gn
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e63e401
+
+### [ozone/wayland] Reduced spam in the logs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba25f22
+
+### [Telemetry] Introduce chromeos_system_extension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5254a61
+
+### [DSH] modify Target APIs to use current URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36e254c
+
+### Provide VR state to ToolbarProgressBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f67b964
+
+### Revert "[Refactor] Remove uses of @RemovableInRelease for runtime asserts"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/174cc04
+
+### Removing use-of-hash-affiliation-fetcher flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3a87b75
+
+### Remove IgnoreHangsInScope in favor of simpler function call.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/511859460
+
+### [STTS] Increase bubble timeout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/def31bd
+
+### Revert "[mac] Render secondary UIs as inactive when the widget is inactive"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9426b21
+
+### Ash: Improvements to split view resizing in tablet mode.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9bfdde4
+
+### [views]Remove unused GetFocusRingColor() funcs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3067f29
+
+### [memories] Renames localized strings shared with chrome://history
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4354502
+
+### [HistoryExc] Update strings in placeholder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0801d7f
+
+### Remove deprecated_is_app() call in BrowserCommandController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8f7914
+
+### Convert SearchEngineTabHelper to use RenderFrameHostReceiverSet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffe737c
+
+### Move blocklist_extension_prefs from c/b/extensions/ to extensions/b/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/574a067
+
+### [signin] Remove Signin.Reauth histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/121ccd1
+
+### [omnibox] Clean up on-device big model flags and field trial config.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/24b7b1e
+
+### Remove deprecated_is_app() call in JSTabModalDialogMDD
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/046a8f8
+
+### CodeHealth: Modernize base::Value code in components/flags_ui/
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7afa580
+
+### [omnibox] Test pedals with and without translation console
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f675f94
+
+### Add triggered_from_menu param to translate triggering from the omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb3136f
+
+### blink/transitions: Add PaintHolding for DocumentTransitions.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e12ee1d
+
+### ime: Fix bug with named key conversion (attempt 2).
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6aaf56055
+
+### Use ScopedDiceWebSigninInterceptionBubbleHandle for all interceptions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca6c1e3
+
+### Add tests for SurfaceControl::Transaction callbacks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/991e461
+
+### [segmentation_platform] Consistent minimum screen width logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aec81f4
+
+### Move //chrome/browser/{chromeos => ash}/policy [6/10]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4148bbe
+
+### ax_inspect_scripting: support settable attributes on mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82460f5f
+
+### Coruscate Settings: Update WebUI headers to match new spec.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32efec1
+
+### Move blocklist states manipulation to blocklist_extension_prefs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73dd7e1
+
+### [segmentation_platform] Correct the number of params in flag variations
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/09c8046
+
+### Add duration-based percentage UMA metric for scroll jank
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dfaec8f0
+
+### Add C++ WebUI code for CFM network settings UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b279b19
+
+### [Fixit] Use mock policy provider utility in chrome/browser/ui/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d2a3c1
+
+### dragdrop: Remove huangdarwin@ from //ui/base/dragdrop OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddfea4f
+
+### [mac] Render secondary UIs as inactive when the widget is inactive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/009b2e1
+
+### Sheriff: Disable flaky ArcDefaultAppTest tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de8b8e00
+
+### Cross fade preview image in hover cards.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/43e6bbe
+
+### Fix flaky unit tests for page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f18c481
+
+### Implement drag and capture UI for region search.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b552e8f6
+
+### Fix -Wimplicit-int-float-conversion.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/664cc10
+
+### Extend initial show delay for hover cards when tabs are at full width.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d3e015b
+
+### Make extensions menu tests interactive_uitests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54d04c7
+
+### [Sheriff] Disable PopupBrowserTest.MoveClampedToCurrentDisplay on Linux Ozone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d3db0c
+
+### [Sheriff] Disable WidgetTestInteractive.ChildStackedRelativeToParent on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57466321
+
+### Visual changes to permission chip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb5795e
+
+### [CodeHealth] Remove AppendString/AppendInteger/AppendBoolean usage from
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d52bf2
+
+### Revert "cros: Defer launcher icon loading until requested"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a56062b
+
+### [ntp][modules] Write new order to modules order pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06a02c0
+
+### Remove deprecated_is_app() call in BrowserNonClientFrameViewChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6d33e5
+
+### Move //ash/components/account_manager to //components/account_manager_core
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d11eac1
+
+### Revert "Fix -Wimplicit-int-float-conversion."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc0b594
+
+### Preparing to make using owned raw pointers forbidden for class properties.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8161562
+
+### Remove deprecated_is_app() call in BrowserFrameAsh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00aa364
+
+### WebUI: Add WebUIBrandingUpdate feature flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef1e5f8
+
+### Set kWindowManagerManagesOpacityKey for Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d560f0
+
+### [ProfilePicker] Add a regression test for BackgroundModeManager crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d800dbd
+
+### Prevent fall-through to the global NativeTheme in browser views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aba379e
+
+### Modify Save to PDF test file creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/457896f
+
+### Fix the ARC app restoration flaky issue when not using the ghost window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77a6222
+
+### Add exception for empty page for view-source in Incognito.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b64f05
+
+### Rename kFreezeUserAgent to kReduceUserAgent
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7193afc
+
+### [Emoji picker] Add a flag to support the clipboard.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/77ce928
+
+### [Safe Browsing] Componentize //chrome's SafeBrowsingBlockingPage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6458271
+
+### Remove deprecated_is_app() call in MultiProfileSupport
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/607667b
+
+### System Web App browser tests with Lacros flags enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/baea5d3c
+
+### Remove more windows.h includes from headers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6457cf54
+
+### [Sheriff] Mark testHandleStartVoiceQueryAction as flaky
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55f25e8
+
+`);
+              </script>
+            </body>
+        </html>
