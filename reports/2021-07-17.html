@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-17
+### Revert "Remove kAccessibilityFocusFallsbackToWidgetKey window property"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/910c8ae
+
+### [segmentation platform] Add description to pref header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b28e19
+
+### [Messages] Add feature flag for Chrome survey prompt
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/010d43a
+
+### Remove kAccessibilityFocusFallsbackToWidgetKey window property
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ceec69
+
+### [Start] Add toolbar animation between homepage and tab switcher surface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2209211
+
+### dlp: Add policy to limit data size for clipboard checks.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf1767f
+
+### Remove deprecated_is_app() reference in AppShortcutShelfItemController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c62869
+
+### os-install: Show enrollment error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90dd199
+
+### Reland "[OS Settings] Use semantic colors for network icons."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfb4f5f
+
+### media: fix kVp9kSVCHW(De|En)coding flag names
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5de4a00
+
+### [Zenith] Hide empty cast notifications while loading
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35debca
+
+### Revert "DPWA: Merge web_applications/components/BUILD.gn into web_applications/BUILD.gn"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/955cd14
+
+### ozone/drm: Fix argument name in LookupConnectorIndex() declaration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/311758a
+
+### [Clank CBCM] Fix Export Policies as JSON
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c78c044
+
+### Add "enable-extended-sync-promos-capability" flag on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b414842
+
+### PageInfo: Reduce memory allocations for discoverability icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48b6f8d
+
+### Remove deprecated_is_app() call in SystemMenuModelBuilder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/858ac7f
+
+### Projector: Address comments from crrev/c/3016366
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a735fb2
+
+### Reland "Reland "[X11] Set visual for ANGLE""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e06f4ac
+
+### Remove deprecated_is_app() call in DefaultBrowserPrompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a56d326
+
+### Add Projector App skeleton.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e54634
+
+### Migrate a11y alert to BubbleDialogDelegate
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f4d855e
+
+### WebUI Coruscate: Show a different logo when in dark mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad74b50
+
+### Reland "cros: Defer launcher icon loading until requested"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f33ea2
+
+### dlp: Exclude incognito windows from Data Leak Prevention.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bd4819
+
+### views: update outdated comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8bbf8d
+
+### Reland: Remove kAccessibilityFocusFallsbackToWidgetKey window property
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41d5449
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fd6b5c
+
+### [Android][Signin] Adjust subtitle of |Allow Chrome sign-in| in Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27f9b46e
+
+### Tweak HTTPS-First Mode strings and re-add flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/70158ce
+
+### [memories] Move mojom conversions to the WebUI handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/452f310
+
+### chrome:flags: surface media::kVp9kSVCHWEncoding
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b93a0e35
+
+### [dPWA] Sub Apps - interfaces & renderer part
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/25a598a
+
+### Lacros: Rename LacrosChromeServiceImpl to LacrosService in chrome/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/472292f
+
+### Revert "Sheriff: Disable flaky ArcDefaultAppTest tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42e87f0
+
+### Privacy Review: add card placeholders and card navigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8852bc7
+
+### [hover cards] Defer setting the stack order until after bubble setup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1a3a98
+
+### Remove deprecated_is_app() call in BrowserCommands
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65011d1
+
+### Adjust saved PDF file permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/122e9bf
+
+### What's New: Add startup behavior and a policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73c1325
+
+### Remove deprecated_is_app() call in BrowserWindowState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f7c4c7
+
+### Allow an alternate hover card format with image on top.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f70d87d
+
+### Maintain a Primary BubbleDialogDelegate When Multiple Bubbles Use The Same Anchor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d636cfac
+
+### [CrOS Nearby] Registers SanitizedImageSource for nearby share WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96c9115
+
+### [omnibox] Clean up refined focus UI feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d948966
+
+### Remove deprecated_is_app() call in WindowSizer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8843927
+
+### Remove inactive OWNERS from Chromium
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee5e6a9
+
+### Revert "Enforce clean serialization"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e70acb0
+
+### [ozone/wayland] Enabled "translucent opacity" for windows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff7fb86
+
+### [CodeHealth] Convert //components/signin/core/browser to base::Value
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/341c23e
+
+### [TabSearch] Support tab updates for non previously fetched tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d16c9fd
+
+### TabSearchUIBrowserTest InitialTabItemsListed flaky test fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87afcad
+
+### T&S Sentiment: Use Page Info delegate to inform Sentiment Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fb8882
+
+### [Zenith] Add field trial config entry and modify MR browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe40838
+
+### T&S Sentiment: Add trigger & survey metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/462cfea
+
+### [a11y] Avoid assert failure in AXPosition::CreateNextAnchorPosition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8e2ec2
+
+### [Reland] [Refactor] Remove uses of @RemovableInRelease for runtime asserts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d978361
+
+### Fix window position restore
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b61359c
+
+### Android: Remove override workaround for R8
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e575b9c
+
+### Enforce clean serialization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ed2989
+
+### [memories] Consolidates history_clusters mojom definitions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c84019
+
+### Unify OnBubbleWidgetVisibilityChanged under OS_WIN
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e36dfde
+
+### Remove deprecated_is_app() call in BrowserView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/294f3fd
+
+`);
+              </script>
+            </body>
+        </html>
