@@ -1,0 +1,260 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-20
+### Add multipaste suggestion flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/90afcbd
+
+### Web App identity update dialog: bring strings into alignment with mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4bce23
+
+### Obsolete ChromeColors.ColorApplied histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6063e71
+
+### [CrOS Network] Add tooltip title for mobile network loading spinner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb8a627
+
+### [Lacros] AppServiceAppResult supports SWAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8fb4c64
+
+### In-product help for pulling-to-refresh feed content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b327f67
+
+### desks_template: Fix crash with launching PWAs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22c3902
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1697c70
+
+### [Shortcuts Widget] Added ripple animation to touch surfaces on widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ac7aa3
+
+### Fixes the accessibility focus of FixedLengthCodeInput
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a61d48d
+
+### Better GM2 compliance for controls.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5c0c5ad
+
+### Personalization: display attribution for daily refreshed images
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/229fee1
+
+### Add MediaFoundationRenderer output code to SwapChainPresenter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b55d542
+
+### DPWA: add more tests for manifest id
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2ce5b1
+
+### [ntp] Unit test theme creation in handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73a6593
+
+### Bring filterquality in-house
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/722edf2
+
+### Add user action metric for "New Incognito Window" accelerator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ab5733
+
+### Remove NotificationsViaHelperApp flag and XPC code
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6b47463
+
+### Disable ScrollBarViewsTest.RightClickOpensMenu on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b06e769
+
+### Retire ShelfItemDelegate::context_menu_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18f9ed1
+
+### Remove Browser::deprecated_is_app()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f6b1ff
+
+### menu_scroll_view_container: remove "new" call
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f466a6
+
+### [AF] Fix flaky VirtualCardManualFallbackBubbleViewsInteractiveUiTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f34d9b
+
+### Move from android.support.test.filters to androidx.test.filters
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae09fc8
+
+### Include SRP in web-contextual suggestions mechanism.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8d44775
+
+### [FilesBanner] Add FilesBannerFramework flag to JS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b533bc6
+
+### Minor cleanup of comments in AXAuraObjCache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4761d2a
+
+### [Android][Signin] Adjust signin welcome screen dismiss button string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9272a4
+
+### Rename AccountManagerAsh to AccountManagerMojoService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50f94c7
+
+### Reland "Improve the IME extension load performance."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/243016ac
+
+### Fix RTL display of the hostname in the page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfbbd8b
+
+### [Shortcuts Widget] Implemented the UI of the small version of the widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be2eae1
+
+### Enable TabEntersPresentationModeFromWindowed in all platforms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9145e0dc
+
+### [Reland] Hide Play Games from the Chrome OS launcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/126b922
+
+### Reland "[mac] Render secondary UIs as inactive when the widget is inactive"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e35ef11
+
+### Revert "[views] Add CHECK to prevent fallthrough to global NativeTheme"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f900a6a
+
+### Clipboard: Remove metrics for format registration failures.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0285c2
+
+### views: Add checks for crash in TouchSelectionMenuViews
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/402d6b9
+
+### [AADC] Update link to privacy policy in settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9885119
+
+### Lacros: Add debug test/logo to about chrome page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a19e207
+
+### Start migration to kSyncConsentOptional for the sync consent screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f93c2bc
+
+### Desk Template: Add metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97bc59b
+
+### Move UpdateControlButtonsVisibilityWithNotification() parent class.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce73bc5
+
+### Track empty shortcut icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f500e2
+
+### CookieControls: Add browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d19636c
+
+### ash: Add PressAndReleaseKey() test helper
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c275bd6
+
+### [Code Health] Remove NOTIFICATION_APP_LAUNCHER_REORDERED
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dafd20
+
+### [Profile menu] Disable the command explicitly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fe89a84
+
+### Disable BrowserNavigatorTest.SwitchToTabCorrectWindow on Linux Ozone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ab2ffd
+
+### Clipboard: Add avi@ as MacOS OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/682fca5
+
+### [omnibox][doc][drive] Add flags for drive-aso and long-shortcuts.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6941c4c
+
+### [Shortcuts Widget] Added preview images for the widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85cf95a
+
+### Revert "[Reland] [Refactor] Remove uses of @RemovableInRelease for runtime asserts"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e3abe3bf
+
+### Remove unneeded includes of optional.h from headers.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f52073e
+
+### [memories] `QueryClusters()` API to also return `continuation_end_time`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aab02c0
+
+### Move chrome/browser/ash/login/quick_unlock/ to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3ff980
+
+### [lacros shelf] Add BrowserAppsTracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/582a59e
+
+### Personalization: support daily refresh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e2dc0b
+
+### [views] Add CHECK to prevent fallthrough to global NativeTheme
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93850ec
+
+### DPWA: Merge web_applications/preinstalled_web_apps/BUILD.gn into web_applications/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bd6f837
+
+### [Lacros] AppServiceAppItem supports SWAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8684ae4
+
+`);
+              </script>
+            </body>
+        </html>
