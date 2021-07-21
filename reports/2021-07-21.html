@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-21
+### [Messages] introduce save card confirmation dialog ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fd8ac3
+
+### Clipboard: Change sequence_number from uint64_t to UnguessableToken
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfe1af7
+
+### Revert "[HistoryExc] Update strings in placeholder."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f07eaf9
+
+### [CrOS Cellular] Add, use per-network cellular roaming property.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ded4a36
+
+### Add Box Connection to Downloads section in Settings page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f32182
+
+### Fix interaction between drag, focus, and hover cards.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edbc17e
+
+### Move chrome/browser/ash/login/saml/ to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec8355d
+
+### [CrOS Network] Delete "Missing SIM" UI in network_siminfo component
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/399b465
+
+### Add HTML resources for CFM Network Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e657d1
+
+### [Capture Ribbon] Handle edge-case of capturer extension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9da2b5d
+
+### Move OsInstallScreen to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0815224
+
+### Enable browser UI stretch on overscroll
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69b284c
+
+### [CrOS Bluetooth] Rename Bluetooth Dialog strings provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46170bc
+
+### [memories] Shows snackbar toast upon successful deletion of visit(s)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81a907b
+
+### smartsorting: add share-usage-ranking flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cbab605
+
+### Rename DeviceCloudPolicyStoreChromeOS to DeviceCloudPolicyStoreAsh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/707d9d8
+
+### [CrOS ESim Policy] Create feature flag for ESim policy
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/60f02d50
+
+### network-diagnostics: add new API calls using RoutineResult
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbe2f0e
+
+### [webui] Fix crash for sync events after javascript disallowed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8513a3bd
+
+### Create flags for Photos NTP module
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d7e19fe
+
+### [Messages] Add feature flags for permission messages
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d61a0a
+
+### Disable TabEntersPresentationModeFromWindowed on linux-ozone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/732e152
+
+### [CrOS Device Name] Update DeviceNameStore to use DeviceNamePolicyHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14b92e2
+
+### [ozone/wayland] Initial touch-based tab dragging support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/512bbf3
+
+### [Publish] Cache failures to publish, and disable the feature then.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9cfb03f
+
+### Add dynamic tooltip of tab group name to tab group header.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e83c312
+
+### Remove the ColorChooser classes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fab13dd
+
+### [ozone/wayland] Refactor ZWPTextInputWrapper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc9ca26
+
+### Disable MultipleProfiles_DialogAccepted_WebAppLaunch_InScopeUrl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df19c271
+
+### Use scopers instead of SetIOAllowed() where scope is trivial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad33042
+
+### Setting ScrollView contents to null should not DCHECK.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/243a37d
+
+### Move chrome/browser/ash/login/signin/ to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a264c8c0
+
+### [STTS] Increase timeout duration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55f0d5a
+
+### Cleanup: don't build display manager on non-cros
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bee9567
+
+### [Dino Widget] Added a feature flag for the Dino Widget
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7972e5a3
+
+### WebUI: Add minimal TypeScript definitions for Mojo's core bindings.js.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0fe59ce
+
+### [GMNext][Color] Add attrs for default_icon_color*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dfd26b5
+
+### Clipboard: Read PNG data from image URIs on Android clipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39e59db
+
+### [Reland] [Refactor] Remove uses of @RemovableInRelease for runtime asserts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c33327a
+
+### Remember position of devtools window for reopening
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a0c3b4
+
+### Replace some TRACE_EVENT_ASYNCs with TRACE_EVENT_NESTABLE_ASYNCs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e5272e
+
+### [fuchsia][views] Add missing manifest fragments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f883d7d
+
+### [CrOS Bluetooth] Add UI surface displayed metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7abbf7
+
+### Change DidNavigateMainFramePostCommit for non-primary-main-frame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4090405
+
+### [cros_colors] Remove OS Settings one-offs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58bf9f7
+
+### System-web-apps: Prepare web_app_ui_manager for lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/651f08f
+
+### More IWYU fixes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2777ce
+
+### [Messages] Introduce save card message ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f9649a
+
+### Clipboard: Replace GetFooType() with FooType().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71a469a
+
+### Clipboard: Mention that clipboard is not in focus in unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50619d3
+
+### T&S Sentiment: Exclude managed settings from non-default settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ebb188
+
+### Make android:textColor* attributes color state lists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e99a410
+
+### Desktop PWAs for ChromeOS: Test icon and title not shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e82c8c0
+
+### Remove flag for custom file handling permissions prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eccec8e7a
+
+### ui: break browser_dialogs -> ChromeContentBrowserClient dep
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fda0aa3
+
+### [ozone/wayland] Plumb occlusion state to PlatformWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/248b862
+
+### Reland "DPWA: Merge web_applications/components/BUILD.gn into web_applications/BUILD.gn"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07a1f39
+
+### [Passwords] Move SmartBubbleStateStore to PasswordStoreImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/499f4f2
+
+### WebUI: Port CrContainerShadowBehavior to a Mixin.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8e5aed
+
+### Initial hover card should show placeholder if no thumbnail is available.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1644ca
+
+### Disable all URL elisions when a site has a certificate error.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7525cf5
+
+### Lens Chrome - Cache isLensEnabled result for omnibox entry point.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b9570d0
+
+### New maximum flex size rule: scale to maximum
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54582bf
+
+`);
+              </script>
+            </body>
+        </html>
