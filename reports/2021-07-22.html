@@ -1,0 +1,232 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-22
+### Avoid handling favicons when not required
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c20d99c
+
+### [CrOS Bluetooth] Add WebUI bluetooth surface metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06ba252
+
+### [Sharesheet] Fix URL name not working for non-ASCII
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93a8f453
+
+### [Clipboard API] Remove raw clipboard flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/861516b
+
+### Move //chrome/browser/{chromeos => ash}/policy [10/10]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82f15a1
+
+### chromeos: Speculative fix for crash in TouchSelectionMenuViews
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa20c03
+
+### Combine title/domain labels and fade-out labels into single views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/496ac28
+
+### [Previews] Format URL previews to be human readable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaead76
+
+### [Sharesheet] Support Nearby Share "Cancel" button event and close reason
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46abf2e
+
+### gpu: Destroy shared image overlay representation after scoped access
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15e30e9
+
+### [memories] Shows snackbar toast upon successful deletion of 1 visit only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/130f7b6
+
+### [Android][Test] Remove unused class FakeProfileDataSource
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db0987a
+
+### [fuchsia] Only log once in ScenicWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61924ec
+
+### Add chrome://flags feature flag for Lens Region Search.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/980a749
+
+### [FilesBanner] Introduce Banner interface in externs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de51696
+
+### serial: Only apply policy to affiliated users on Chrome OS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8314d7b
+
+### [FilesBanner] Add skeleton BannerController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7b398f
+
+### Add check marks to never translate site and language menu options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6017c7
+
+### Clicking the download item context button should close any open menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03f0063
+
+### Add metric to measure forced Incognito mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/669a8d0
+
+### Better fade-out for preview image when switching to/from active tab.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1dba146
+
+### Migrate c/b/ash/login/ui/ to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb734d8
+
+### ScenicClientNativePixmapFactory: make sure stride is int.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/829f636
+
+### Use input color space when processing video frames for overlays.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fab2b93
+
+### [Views] Fix UaF caused by TaskManagerView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51ab2b4
+
+### Cast2Class Skeleton WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a19d59a
+
+### [views] Fix global NativeTheme access in MenuItemView
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b80095d
+
+### Print Preview: Cleanup deprecated cloud print pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12e2b89
+
+### [Profiles] Remove unused Profile::CreateStatus values
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6745d338
+
+### ViewBuilder::Build() and ::BuildChildren() can only be called from an rvalue reference.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a9d5e0
+
+### Profile Picker: Migrate to TypeScript compiler, still using JS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de22758
+
+### Give GPU info gathering code more specific return types.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acfe9ab
+
+### Reland: AppListBubble: Use existing assistant page tests with bubble launcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eddc4cb
+
+### Adjust targeted color OWNERS rule use SIMPLE path expression.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b7b1d97
+
+### Prevent status change from causing incorrect hover card layout.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd978b0
+
+### Unused default_bg_color attr.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/529eb9e
+
+### Move alert to header in alternate view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2896403
+
+### Change Incognito NTP title from "New tab" to "New Incognito tab"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a660b7f
+
+### Remove unused includes from x11_util.*.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42fec99
+
+### [SmartLock] Add Smart Lock settings row to lock screen settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30cb2ee
+
+### [ntp][modules][driveV2][formatModules] Add header to drive module V2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d55b05d
+
+### Enable SwANGLE on headless ozone tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6db3b43
+
+### Observe theme changes in BubbleDialogDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f245790
+
+### Move and rename GetOpenApplicationCallback()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e97df6c67
+
+### IWYU: missing memory include for unique_ptr usage in class_property.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ae99ee
+
+### GMC: Move MediaSessionNotificationItem out of media_message_center
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d7bd57
+
+### cros: Fix a11y on Manage other people page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b0c1a3
+
+### Profile Picker: Migrate to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/013c362
+
+### Move //chrome/browser/{chromeos => ash}/policy [9/10]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d33fdb6
+
+### TabStrip: move usage of Browser to TabStripModelDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8ef0e3
+
+### [Lacros] Call WebAppProvider::GetForWebApps()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ae70f9
+
+### Remove NotificationAlertServiceBridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e00f2c
+
+### Files SWA: Disable JS notifications with flag on
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69c08df
+
+### Delete PermissionRequestImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5327d8b5
+
+`);
+              </script>
+            </body>
+        </html>
