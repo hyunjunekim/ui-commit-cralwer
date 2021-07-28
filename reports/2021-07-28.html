@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-28
+### Fix a few -Wunreachable-code-aggressive warnings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b487a83
+
+### hwr-nacl: add flag for hwr legacy path
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/88e039e
+
+### Desk_Template: Fix PWA launching as a chrome browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27d3c16
+
+### Remove expired cdm-factory-daemon feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/797ff7f
+
+### ozone: ID Collision Detection and Resolution
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be711a9
+
+### Plumb damage into overlay candidates.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4ccbd7
+
+### Fix regression crash issue in paint-as-active event handling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5b3375
+
+### [Launcher] Allow search backend to set icon size and shape
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4586e2a
+
+### PiP 1.5: Fix the overlaid text over the [Back to tab] button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7509903
+
+### TabMenu: Move usage of Browser to TabMenuModelDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/009cef9
+
+### Disable flaky PaymentRequestAutofillInstrumentUseStatsTest.RecordUse
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a23828
+
+### Fix some instances of -Wunused-but-set-variable: chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c68b0f
+
+### Add new class NotificationViewController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3289a387
+
+### Remove unneeded includes from net_internals_ui.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a731b39c
+
+### Draw FocusRing outline on top of prominent buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e959ab
+
+### SodaInstaller: Track download progress
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/484991e
+
+### Fix some instances of -Wdeprecated-copy: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9336710
+
+### Add StorageKey to FileSystemURL constructor, FileSystemContext CrackURL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c52e89
+
+### ax_script: print an attribute setting instruction into result tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e13bf3
+
+### Rename base::ClampToRange and annotate all remaining users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d29a091
+
+### crostini: Refactor the Force Close tests to use Exo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80dec16
+
+### [Messages] Display Chrome survey prompt as a message behind a feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74d9e311
+
+### [CrOS WebAPKs] Share files using a mime type derived from the files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ae5eec
+
+### Font Access: Fix thread-unsafe accesses to FontEnumerationCache.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4faf4b2f
+
+### [Mac] ProfilePicker window handles menu commands
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/497abb0
+
+### Install SODA when Dictation is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/303f278
+
+### Move animation builder to ui/views/animation from ui/views/examples
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0b2e62
+
+### Fix backspace event triggered twice problem.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b42834
+
+### Drag handlebar color to surface variant.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60b1357
+
+### [Telemetry] Introduce os.telemetry.getVpdInfo API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b501332
+
+### Add descriptive content to group tooltip, fix hover issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee2708e
+
+### Remove some debugging statements in print_preview_handler.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf9adfe
+
+### Test JavaScriptDialogCommitDeferringCondition race
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d0d408
+
+### WebUI: Hook-up WebUIBrandingUpdate flag on more surfaces.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd8b5a4
+
+### Add entry point query parameter to region search POST request.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99ef569
+
+### [DesktopScreenshots] Add post capture dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca613c3
+
+### Merge //base/util/values into //base/json
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f60c8d2
+
+### Convert from blink::manifest::FileHandler to apps::FileHandler earlier
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a10230b
+
+### Removing AffiliationFetcher since it's no longer used
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc638ec2
+
+### settings: add OS Settings subpage browser link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12f2209
+
+### [FilesBanner] Implement initialize method with smoke unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01f875e
+
+### [Files SWA] Enable feedback extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d9f250
+
+### Add feature flag 'WebKioskEnableLacros'
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ff476b0
+
+### Read later: make the add to reading list button stateful.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ada95d0
+
+### [ntp] Unit test doodle creation in NewTabPageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec4c7ba
+
+### [CBCM iOS] Implement Copy Policies as JSON
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd7b160
+
+### Consent logic changes.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b87ded0
+
+### [Lacros] Add warning in sync settings pages for lacros side-by-side
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ab9d95
+
+### Revert "[Telemetry] Introduce os.telemetry.getVpdInfo API"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8be71de6
+
+### Adjust filled button text color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8f1fae
+
+### [signin] Fix renderer leak in SigninViewControllerDelegateViews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7509ae2
+
+### ui/display: EDID display ID via DisplaySnapshot
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a06b5c0
+
+### [aura] Use native occlusion tracking on lacros.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c73daf4
+
+### Files app: Remove code that doesn't seem needed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12878b2
+
+### dwpas: Add flag support for Shortcut Menu on Mac and Linux
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1c3cd67
+
+### Audio WebUI Page: Initial Audio WebUI page for chrome://audio.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6491acf
+
+### [Start] Show carousel tab switcher in MRU order.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d3ca006
+
+### Fix Lacros tab key event duplication
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b14e5df
+
+### Moving Field class out of UserInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b903c933
+
+### Rename SaveUpdateWithAccountStoreBubbleController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f202089
+
+### Plumb damage from GbmSurfacelessWayland to WaylandBufferManagerHost.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b14ccb3
+
+### Auto-generate grd entries for chrome/browser/resources/signin.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/697b5a5
+
+### Rename PasswordSaveUpdateWithAccountStoreView to PasswordSaveUpdateView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f352b1
+
+### IWYU for resource_request.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3d43c6
+
+### Batch chrome.browser.ui tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a92c6dc
+
+### WebUI Coruscate: Always show logo in Bookmarks, Downloads.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b307dd5
+
+### Rename DeviceCloudPolicyManagerChromeOS to DeviceCloudPolicyManagerAsh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ead8b3c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ee2ede6
+
+### AccuracyTips: Add opt-out button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a42c414
+
+### Remove unused variables
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56add8c
+
+### Fix broken views_examples_with_content
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7260ad
+
+### [FilesBanner] Utility method to check allowed volume types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6f3670
+
+### [DesktopScreenshots] Add to about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cf3aa6e1
+
+### Reland "Have webapp omnibox icon observe app uninstallation"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03777af
+
+### WebUI Tab Strip: Remove feature flag WebUITabStripNewTabButtonInTabStrip
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fdd443c
+
+`);
+              </script>
+            </body>
+        </html>
