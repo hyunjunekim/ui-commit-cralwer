@@ -1,0 +1,224 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-30
+### Reland "[Files SWA]: Chrome App API cleanup"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ede2ab4
+
+### Revert "[Files SWA]: Chrome App API cleanup"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f27eb1
+
+### Reland "[memories] Removes chrome://memories"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b617f8
+
+### Add meaning attribute to disambiguate "Name" strings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06a8add
+
+### Do not open tabs from bookmarks in a tab group.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cee531b
+
+### Rename UserCloudPolicyManagerChromeOS to UserCloudPolicyManagerAsh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d4ccc5
+
+### Migrate autofill code to use base::clamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aea5a9f
+
+### [ozone/wayland] Cleaned up some code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/950d2f7
+
+### Migrate some uses of min/max in chrome/ to base::clamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc2dd0b3
+
+### Reland "[MPArch] Make SubresourceFilter per-Page"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c49241
+
+### Fixes the definition of a position at a line break and at a node with whitespace only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69d75b55
+
+### Update tablet tab strip colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8989e41
+
+### Revert "[memories] Removes chrome://memories"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8323895
+
+### Oobe Assistant: record setting type for activity control consent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e6ebc4
+
+### Make TooltipIcon focus ring pretty
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ebd06d
+
+### Remove unused HeuristicLanguageModel code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/af717c8
+
+### Add histograms for cancelling Assistant consent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba23806
+
+### [FilesBanner] Implement basic reconcile function with one check
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0cf25d4
+
+### [fuchsia] Build desktop/posix code on fuchsia when needed
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b5d88899d
+
+### DPWA: Retire unused includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f369ec
+
+### [lacros shelf] Use ShelfControllerHelper logic to get app ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57282aa
+
+### [ntp] Move PromoService to //chrome/browser/new_tab_page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53a0eab
+
+### Revert "[zoom-for-dsf] Scale focus ring by zoom."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8351b21
+
+### Fix unsequenced moves in //c/b/ui/ash/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05818bb
+
+### PWA identity update dialog: fix some layout issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5671fd5
+
+### sheriff: Disable WebAppBrowserTest.InScopePWAPopupsHaveCorrectSize
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06b1e420
+
+### Web Share Target: Support files from Arc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9c1857
+
+### Fix the automation node bounds on an external display
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/897bc11
+
+### Replace switch by feature flag on DelegatedInk prediction.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/947a3c7
+
+### Fixes comparisons between two positions that are in different subtrees
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38e9f84
+
+### Revert "Treat InitAndEnableFeature...() as not-from-command-line."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf708ad
+
+### Side panel: Add flag for drag and drop
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0d7ba33
+
+### [ntp] Populate several 1P theme properties in WebUI NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce22d56
+
+### multi-instance: Prevent creating more than max instances
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d02f87
+
+### Prevent BrowserView RestoreFocus() during modals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/011a98a
+
+### [zoom-for-dsf] Correctly scale scrollbar thumb min size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99af89c4
+
+### [CrOS Bluetooth] Generate Mojo bindings for CrosBluetoothConfig.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c9c70cc
+
+### CopyOutputRequest: refactor format to separate out the destination
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95d8f62
+
+### [Lacros] Add feature flag for mutli-profile account consistency
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4277770
+
+### FastPair: Add feature to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8e44814
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17cfdea
+
+### printing: Omit empty capabilities dictionary
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3a8bc7
+
+### GMC V2: Add device selector footer view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb08c8a
+
+### Fix some instances of -Wfinal-dtor-non-final-class: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4adbd0f
+
+### DPWA: Move up os_integration_manager.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ff1535
+
+### Force update the cached search engine URL for SearchWidget.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79633925
+
+### [floss]: Basic support for Floss
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f70b2fdb
+
+### WebUI: Check-in JS modules chrome/test/data/webui/js/cr/ui tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d6e701
+
+### Move //chrome/browser/{chromeos => ash}/input_method [2/3]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c039c6f1
+
+### [A11y] Improve StatusView's Accessibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b01b81
+
+### [CrOS Device Name] Add DeviceNameState enum and GetDeviceNameMetadata()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d612a35a
+
+### GetExtensionForTab never returns bookmark apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc0d55c
+
+`);
+              </script>
+            </body>
+        </html>
