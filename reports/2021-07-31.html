@@ -1,0 +1,156 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-07-31
+### VK API: added feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ad929a6
+
+### Settings: Migrate to TypeScript compiler, still using JS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36d4bff
+
+### WebUI: Check-in JS module version of more js/icon.js.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/096e9cf
+
+### CrExpandButton: Support specifying expand and collapse icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31b7c72
+
+### adding another option when you right click on a bookmarks folder to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96be957
+
+### [Dr-Dc] Add about flags to enable/disable DrDc.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7981a2d
+
+### media: Add DCOMPSurfaceRegistry mojom interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f50dbd
+
+### [CrOS Bluetooth] Add paired devices to summary page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1dcb6d9
+
+### Fix system_web_app_ui_utils.h includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f567a6df
+
+### Fix typo in event_utils.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75a10cb
+
+### oobe: Update account check error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63f6dbe
+
+### [fusebox] Add FuseBox feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c736eb3
+
+### Avoid using the global NativeTheme in EnterpriseStartupDialogView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b5ffbf
+
+### crostini: Allow installing bullseye
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9d0e95a
+
+### Add more granular ScreenCapture Enterprise Policies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8d12c1a
+
+### [Start] Stop using triggerUrlFocusAnimation() for expanding toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85f2608
+
+### Remove kMacCoreLocationImplementation flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2e3a5bd
+
+### Use "WebGPUService" feature instead of --enable-unsafe-webgpu-service
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a059a3a
+
+### [Launcher] Remove spaces in launcher apps grid
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a28f080
+
+### Add APP_LIST_RECOMMENDATION to ShelfLaunchSource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28817db1
+
+### [CrOS Bluetooth] Bind CrosBluetoothConfig to OSSettingsUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d31145
+
+### Remove superfluous View::border() accessors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb769ff
+
+### Add 3 more test cases for TranslateBubbleViewBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3eb4bab
+
+### [CrOS] Track if user has visited PlayStore within a week after OOBE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca9fcff
+
+### CrExpandButton: Support specifying icon size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/beb3982
+
+### Fix modal dialog focus after drag-and-drop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26f746b
+
+### [flatland] Add todos and remove linking
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8fad58
+
+### dpwas: Re-enable StartupBrowserWebAppProtocolHandlingTest tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b4d0443
+
+### Add browser test for bookmarks persistence on Incognito restart.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9685249
+
+### Remove success field from PrinterSetupResponse
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96cf1b63
+
+### Fix chewing numpad keys.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9437a6a
+
+### Enable size_t truncation warnings in most directories.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6552e4c
+
+### [VirtualCards] Do not show snackbar if manual fallback is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95af622
+
+### Add public accessor to FilteredGestureProvider from GestureProviderAura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/693107c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f54edef
+
+`);
+              </script>
+            </body>
+        </html>
