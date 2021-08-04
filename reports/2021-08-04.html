@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-08-04
+### Revert "[Media Router] Remove obsolete flags/features."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bbaf93c
+
+### [ozone/wayland] Cleaned up some more code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a129ee3
+
+### Fix root type for .(files|shortcut-targets)-by-id
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f6f23cb
+
+### ImmersiveModeBrowserViewTest in separate file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59817c3
+
+### [Sharesheet] Refactor SharesheetServiceDelegate System
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ede489
+
+### Add cookie_partition_key argument to CanonicalCookie::Create.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4a802b
+
+### Fixes the color verification issue on Windows and re-enable the test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4325a37
+
+### [Lacros] Create chrome/browser/lacros/account_manager directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9f4117
+
+### Integrate PhishGuard password reuse warnings with GAIA passwords
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/debe35c
+
+### Add flag for stylus handwriting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/90a3221
+
+### Prepares AXTextAttributes struct for use in AXRange
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c78cd72
+
+### Add unittest for PathComponent before making changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3075ea3
+
+### Only enable dynamic colors for ChromeTabbedActivity per param.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9823e37
+
+### OOBE: Show non-fatal error on failed offline login for non-existent user
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c34a73
+
+### DPWA: fix re-using manifest validation result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6f67d0
+
+### ozone: evdev: add Lenovo mice to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/079c0bd
+
+### Side panel: Don't mark reading list items as read when opened from the side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22e786e
+
+### Move "Provider type" and "Service name" to top in vpn configuration UI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e528952
+
+### Add .Then() skeleton and reorder methods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/751135d
+
+### ozone: evdev: add Logitech MX Anywhere 2 to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4337287
+
+### [Clipboard API] Clipboard Custom Formats implementation Part 5.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22a48f0
+
+### Migrate LocalStorageHelper to StorageKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eef42e7
+
+### Revert "Hook ClosedTabCache into the tab restore flow"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4750851
+
+### Always adjust text ranges that fall on ignored positions in the direction that shrinks the text range
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad51c4b
+
+### ozone/wayland: reposition popups
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1740566
+
+### Hook ClosedTabCache into the tab restore flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ee42a1c
+
+### Add AnimationBuilder skeletal callback support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d75223
+
+### Window Placement: content/.../display_util to ui/display
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ed3a64
+
+### SodaInstaller on CROS DCHECKs whether SODA is available.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d8e4da
+
+### Disable overscroll when prefers-reduced-motion is set.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7dbb9dc
+
+### Update ContentSettingBubbleContents to use ui::ImageModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae98d40
+
+### [AADC] Update privacy policy title in settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1f999c
+
+### Check getClassificationStatus() before getConfidenceScore()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0fa90e8
+
+### [CodeHealth] Remove NOTIFICATION_LOAD_START in ChromeMetricsServiceClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72f9420
+
+### Migrate some uses of min/max to base::clamp
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e043dd2
+
+### Renames AXNodeTextStyles to AXTextAttributes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70b6a5e
+
+### [TabCapture] Apply SameOrigin Policy to UI and Navigations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5afec78
+
+### Revert "[segmentation_platform] AdaptiveToolbarPreferenceFragmentUnitTest"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5acdcdd
+
+### [Media][DesktopCapture] Add enterprise policy warning to capture picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f12616
+
+### OOBE: Hide aria-labels for decorative illustations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58757eee
+
+### [FilesBanner] Implement showLimit functionality
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff324e1
+
+### [FilesBanner] Implement isBelowThreshold helper method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e49b7a5e
+
+### [DesktopScreenshots] Allow downloading captured image
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2341cbb6
+
+### Forward VK bounds information to the VK API via NotifyVirtualKeyboardOverlayRect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99f208e
+
+### Add support for sharing drive Shared with me to VMs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25e7466
+
+### [Media Router] Remove media router extension IDs from ui/file_manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b596f58
+
+### Revert "oobe assistant flow: Disable Voice Match based on new policy."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2f8e7b
+
+### Add ClickInfo struct for WindowOpenDisposition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37147d7
+
+### Fix PathComponent for .shortcut-targets-by-id shared shortcuts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59465551
+
+### ChromeVox reads the opening of tab strip context menus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df0d554
+
+### Reland "oobe assistant flow: Disable Voice Match based on new policy."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a72a106
+
+### Add chrome://flags for full dynamic colors.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/862a132
+
+### [Desktop PWAs] Revert split - AppBrowserController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/682fc48
+
+### Refactor printing restriction policies: color, duplex, pin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43fbda1
+
+### Download Progress Message: Setup initial structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44d07c3
+
+### Add `GetAllDownloads()` API to return all Lacros downloads.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72d4af1
+
+### Add reroute_info into download in-progress db.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd9851d
+
+### Add descriptions to permissions in borealis settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64e3d37f
+
+### PiP 1.5: Use "Back to tab" instead of the origin for back to tab button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a82851f
+
+### [CrOS Bluetooth] Create paired bluetooth list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/838bb23
+
+### [Sheriff] Disable test failing on Linux Ozone Wayland builder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc50f98
+
+### [FilesBanner] Rename maybeHideBanner_ to hideBannerIfShown_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5745db
+
+### [Media Router] Remove obsolete flags/features.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a04d299
+
+### ozone/wayland: Get rid of WaylandAuxiliaryWindow.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2c3621
+
+### [CSN] Add contentDescription to the dismiss button
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5669076
+
+### oobe assistant flow: Disable Voice Match based on new policy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3ed952
+
+### Read later: fix crash bug if web contents doesn't exist.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92c0dbe
+
+### Set 'PasswordImport' feature to never expire.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1b3b329
+
+### [LanguageSettings] Update string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d111152
+
+### Allow external protocol dialogs when reload button is clicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d872f5
+
+### [memories] Fix pagination looping through History forever
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26e4997
+
+### Revert "Revert "wallpaper: Expose GetFilesId to WallpaperControllerImpl""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebeab01
+
+### Chrome Apps Deprecation: block launching from OS shortcuts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdd21bb
+
+`);
+              </script>
+            </body>
+        </html>
