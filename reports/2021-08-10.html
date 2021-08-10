@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-08-10
+### [CrOS Bluetooth] Add bluetooth utils file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef0d857
+
+### Projector: Add launcher icon for SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/733c19a
+
+### Split Eche into trusted and untrusted(Rebased version).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a219885
+
+### Move activity launching code into the FeedManagementActivity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7fe299
+
+### Add GetEventList unit test for CalendarKeyedService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48d371c
+
+### Make MovePasswordToAccountStoreHelper reusable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b81f531
+
+### [lacros] Support "assigning window to desk"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0451e92
+
+### [wasm-simd] Remove WebAssemblySimd flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3e33c13
+
+### Android: prefer @CommandLineFlags annotation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed3111f9
+
+### Move remaining CAPI scopers into scoped_capi_types.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f14876
+
+### Convert AppServiceInstanceRegistry::OnInstances to use InstanceKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb8d668
+
+### Remove flag_descriptions not referenced by about_flags.cc
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d296d6
+
+### multi-instance: Close confirmation dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9422d13
+
+### Add a feature param for ContentLanguagesInLanguagePicker feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/12b7edc
+
+### PWA spoofing mitigation: show origin in title bar when style changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22e2391
+
+### Cleanup orphaned PersistedTabData
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5337e0a
+
+### [NTP] Removes chrome://flags/#ntp-repeatable-queries
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e8ca622
+
+### settings: Fix mojo receiver binding for App Notifications Subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70d6da4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17d04f3
+
+### content: Remove GetAsWebContents() usage in ClipboardHost.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee78b87
+
+### Tab Search: UX style review changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7862324
+
+### browsing_data: Remove bare operator new usage.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e2603e
+
+### TWA Payments: Hide the ARC Payment activity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c36b163
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0262568
+
+### Verify the translate bubble should work with variant conditions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b79917
+
+### Remove the Rest of the WebFooter Experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ef43e7
+
+### Remove browsertests that depend on FTP support.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32c62a7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd53d6b
+
+### Hard-disable FTP support by always setting disable_ftp_support to true
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/83f81725
+
+### [Signin] Remove MobileIdentityConsistencyVar feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7596051
+
+### Rename translate site-blocklist related methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b48eecf
+
+### ui/display:Extend HW Mirror Mode Flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfe93ad
+
+### settings: Deeplinking app notifications subpage and DND toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b77942
+
+### Remove all ResetShortcuts switch and feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5998ccc7
+
+### unit_tests: fix mock warnings in MediaSessionNotification tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d48408
+
+### Change namespace to ash for //ash/webui/sample_system_web_app_ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2570e79
+
+### Remove UpdateCellularActivationUI loadtime value and refs in strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35fc910c4
+
+### Revert "Split Eche into trusted and untrusted(Rebased version)."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb25aa2
+
+### [ZipFileCreator] Add ZipFileCreator.SetCompletionCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7689769
+
+### [DSH] adjust padding to match redline
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a005da
+
+### Purge expired EA chrome://flags and features
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e79d89
+
+### Trigger download shelf to update displayed file name.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81c573d
+
+### Remove InstallableInkDrop
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/77afc755
+
+### [Files App] Display "Complete" notification for ZIP creation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/461f436f
+
+### Reset a flag on first update event in a gesture
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6e4ea5d
+
+### Lookalikes: Implement character swap heuristic for top domains
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d45a730
+
+### Make Switches non-dynamic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/313f0e7
+
+### Verify suggestion index for possible out-of-bounds access.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0146c42
+
+### Privacy Review: promo card element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ad96baa
+
+### cros: Bento: Remove an expired flag ash-limit-alt-tab-to-active-desk
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/14f066c
+
+### Modify the menu items to close the full restore notification.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d70f89
+
+### Remove the kAppServiceAdaptiveIcon flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fb7436c
+
+### [VCN] Add tooltip for buttons in virtual card manual fallback bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/240dd56
+
+### [Lacros] Call WebAppProvider::GetForLocalApps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bff30a05
+
+### Window Placement: Show settings pages and entries regardless of flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a4bd29d
+
+### [DSH] fix RTL padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f056c5
+
+### [CSN] Fix uneven chip side paddings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e9ac06
+
+### Added support for geolocation in quiet ui permission prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aacc86
+
+### [TabCapture] Enforce SameOrigin Enterprise Policy for Extension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bf5527
+
+### Add Android setting for HTTPS-First Mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bb17bf
+
+### unit_tests: fix mock warnings in QueryResultManagerTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c63ef0
+
+### Commander: don't show nouns at top level
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af21293
+
+`);
+              </script>
+            </body>
+        </html>
