@@ -1,0 +1,212 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-08-14
+### Site Storage Controls: Add consolidation flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f49a213
+
+### Fix window focus bug on Windows due to a Linux fix.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6440e3f
+
+### [Lacros] Use WebAppProvider::GetForWebApps()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fee9b7
+
+### [Extensions Click-to-Script] Add flag for extensions menu access control
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d7cce42
+
+### [login] Remove WebContents::GetURL calls in Login tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de16ac1
+
+### Remove some SetProperty raw-pointer use
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/639a0f1
+
+### [GTK] Render native window frame
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fdf55e6
+
+### Remove stale copy of WaylandOutput
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef71a9f
+
+### [lacros shelf] Keep less state in BrowserAppsTracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42ad675
+
+### Fixed failure browser tests with real setTimeout 0
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b91bb5
+
+### Remove AppDataSearchProvider
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b0a5d44
+
+### [DSH] down arrow press causes focus to move to bubble from icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1fb57b
+
+### [DSH] disable on guest and incognito profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcdf6c7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab291f5
+
+### [App Management] Clean up of supported-links-item.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fca99c
+
+### Privacy Review: add clear on exit card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/903e779
+
+### Make GetAccessibleWindowRole() final for bubbles
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cd33f6
+
+### ozone: tooltips: calculate anchor for menu bounds. 3/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a549e0a
+
+### [Lacros] Plumb unassigned accounts information to the profile picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a145351
+
+### Add proper cleanup to OmniboxSuggestionsDropdown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb9f2d2
+
+### ozone: add a way to pass anchor information to ozone. 1/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/876238d
+
+### Add IPH tutorial close button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86b5dac
+
+### [Lacros] WebAppRegistrar hides system web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f85930b
+
+### [Web Payment] Trigger on-close callback for Esc key.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69966a2
+
+### [ozone/wayland] Enabled window transparency on Wayland.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/084e8ff
+
+### [omnibox] Clean up flags & features for pedals batch2 & colored icon
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/453513c0
+
+### Use WeakPtr instead of raw pointers in //components/payments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f75befe
+
+### ozone/wayland: use passed anchor rect information.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96b0a7a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a932184
+
+### dPWA: Build mac/win/linux specific tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9306026
+
+### Add a permission prompt for U2F API requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae7e43d7
+
+### [IncNTP] Add "Does do", "Doesn't do" and "Learn more" sections.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e6ae57b
+
+### [X11] Flush after colormap creation in XVisualManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0985c27
+
+### [LanguageSettings] Change Default language string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00dc65c
+
+### [Lacros] InitializeViewForWebApp reads from App Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f54eee3
+
+### Include windows.h where needed in chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8641db8
+
+### unit_tests: fix mock warnings in webui/settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7e7174
+
+### app_list: Fix arrow key navigation when app list bubble is scrollable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41c60eb
+
+### Fix TODO in AppMenu::GetLabelColor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d1471d
+
+### ozone: menu_controller: calculate anchor for menu bounds. 2/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddbcfd1
+
+### 🕸️ Create SiteEngagementHelperDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c57abb
+
+### Offline Dictation: A11y settings improvements for SODA downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8c1426
+
+### [AppIdentity]: Polish Desktop UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc4ce7e5e
+
+### Saved tab group bookmark bar chip front-end
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e6c2ea
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fe086d
+
+### Notification Perf: Use scroll with layers in notification list.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4d8202
+
+### [CrOS Bluetooth] Add bluetooth device detail UI elements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd1cdc0
+
+### Minor fix for empty damage primary plane
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d778dc6
+
+### [CrOS Bluetooth] Add device name and battery percentage to list item.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94d9b81
+
+`);
+              </script>
+            </body>
+        </html>
