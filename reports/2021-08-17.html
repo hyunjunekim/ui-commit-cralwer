@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-08-17
+### [segmentation_platform] Error handling for SignalKey conversion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/617968b
+
+### CrOS TrafficCounters: Fix callback lifetime
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e589639
+
+### Animation Builder: Add test support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/376d91b
+
+### [lacros shelf] Move BrowserAppInstanceTracker to AppServiceProxy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6497b6c
+
+### Read later: add metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23858cf
+
+### Ensure that notification controls has transparent background
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27cc236
+
+### Revert "Don't include hang_watcher.h from thread_restrictions.h"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e803a2c
+
+### personalization: close pipe before callbacks dropped
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0912cf74
+
+### Fix some -Wunreachable-code-aggressive warnings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2771b0f
+
+### [lacros shelf] Filter out updates to apps that don't run in WebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f8d012
+
+### [CrOS Bluetooth] Add change device name dialog to device details page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75c14529
+
+### Add `HoldingSpaceKeyedService` factory override for testing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1fd299
+
+### [IncNTP] Added Incognito NTP Revamp layout file for Desktop version.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d3438b
+
+### Adding static method ash::TabletMode::IsInTabletMode()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af62837
+
+### Adds a predicate for finding empty paragraphs and uses it for defining a new paragraph boundary for UIA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2123b3
+
+### Chrome Apps Deprecation: Add ChromeAppsEnabled enterprise policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d862d90
+
+### Rename scale_factor.h -> resource_scale_factor.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15732bc9
+
+### CrOS VCD: add a switch for HDRnet control override
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a3e6a16
+
+### Add nsAccessibility mappings for the ARIA feed role
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/734312a
+
+### Fix a crash in PresentationRequestNotificationProducer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab4d3eb
+
+### Don't include hang_watcher.h from thread_restrictions.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e67334
+
+### Migrate uses of WebContentsObserver to WeakPtr in c/b/ui/login
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71a2d94
+
+### [ntp] Listen for native theme changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d8fe62
+
+### [Lacros] Disable chrome://browser-switch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b2271f
+
+### [Lacros] Disable chrome://apps page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e807344
+
+### [tab strip] Update touch drag drop context menu toggle
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bae3889
+
+### Include windows.h where needed in ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/096fa5e
+
+### [CrOS Device Name] Add A11y labels to edit hostname dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6153c41
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8744e8
+
+### Prioritize "paused" state over "open when complete".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/928da44
+
+### Prevent ViewResourceInflater from detaching views mid-layout on destroy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93c2588
+
+### Fix flakiness in OriginTextVisibility browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6f91ee
+
+### [lacros shelf] Move browser apps tracker to app service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ace31e6
+
+### [Shopping] Add flag for shopping list
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5f151b7
+
+### [CrOS Device Name] Handle setting device name from edit hostname dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eea87a
+
+### Allow hit_test.h to be included without windows.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e069087
+
+### WebUI: Minor cleanup in WebUIAllowlist::GetRuleIterator().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1355c7
+
+### Reland: "Implement notificication view controller"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19986cf
+
+### [Sync consent] Make enterprise checks more robust
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d710b5c
+
+### Use the app service launch interface to launch the calculator app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2238c5
+
+### Send display logical size so Lacros can calculate dsf.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca7731b3
+
+### Read later: change "add current page" button from three states to two.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13c15b5
+
+### Add contextual accessible name to iph close button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/663e0fc
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e6cf65
+
+### [ntp] Remove custom background handling from instant NTPs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3a3ce9
+
+### Overview mode: Overview mode stays open when enabling ChromeVox.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec26938
+
+### Add Cast-specific owners to c/b/ui/global_media_controls/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/398dd7b
+
+### ozone/wayland: Support gtk-primary-selection in test compositor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db02d14
+
+### ozone/wayland: Add test cases for copypaste-only clipboard setup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c78518e
+
+### Close the restore notification when wallpaper is opened from shelf.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28f1d60
+
+### [omnibox] Move popup model ownership into edit model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c72e9955
+
+### [AppIdentity]: Fix a couple of minor issues with uninstall.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0c28bf
+
+### Add bounds check in WindowFrameProviderGtk::PaintWindowFrame
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/772404a
+
+### Make use of InitParams::bounds when creating a new window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/873d5c0
+
+### Allow windows created with noopener option to be closable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7ffea8
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3d24797
+
+### Privacy Sandbox Settings: Remove release 1 flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2b22615
+
+### ax_mac_merge: sync implementations of NSAccessibility protocol methods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8628edc
+
+### Update tablet toolbar placeholder for baseline colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfcb7f5
+
+### [BrowserSwitcher] Improve IESiteListMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c41a7e7d
+
+### Add null check for parent node in AXNode::IsInListMarker
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2900a8
+
+### personalization: Fix OnGoogleDriveMounted crash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/846ec2aa
+
+`);
+              </script>
+            </body>
+        </html>
