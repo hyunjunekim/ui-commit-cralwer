@@ -1,0 +1,240 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-08-18
+### CodeHealth: Remove use of Value::GetAsString.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91a5b4d
+
+### Safety check: weak password flag cleanup
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ba805c4
+
+### Use base::flat_map to store wayland output
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c451b19
+
+### [Lacros] Call WebAppProvider::GetForWebApps()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/764c126
+
+### Add StorageKey param to MountPoints::CrackURL, child classes, callers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01164488
+
+### [CodeHealth] Replace deprecated Value methods in people_handler.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31f8601
+
+### Add SmartLock HaTS survey trigger
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77cc105
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/923cfee
+
+### Sheriff: Disable flaky FocusDoesNotReturnToContentsOnReloadPrompt.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a460a5
+
+### Make Following feed order Finch and prefs controllable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/090a755
+
+### Implement the OnWillRepeat callback and move to AnimationSequence.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebc06f1
+
+### Fix hover button highlighting and update BubbleMenuItems to be HoverButtons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fc8918
+
+### Add tween type to animation builder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4d2f8d
+
+### Avoid windows.h in keyboard_codes_win.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8136871
+
+### [IntentHandling] Remove IntentHandlingSharing flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e734a87
+
+### Add new OpenscreenCastStreamingSession about:flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b3160b26
+
+### Revert translation when a user selects never translate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84c05c7
+
+### capture_mode_projector: Add entry point integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/577f948
+
+### Call WebAppProvider::GetForSystemWebApps()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/387d6dc
+
+### Enable -Wunreachable-code-aggressive in mac builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0a58750
+
+### Add icon to IPH bubbles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b77969
+
+### Reland "Enable -Wunreachable-code-aggressive in intel mac builds"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57e39ae
+
+### Fix some -Wunreachable-code-aggressive warnings in Chrome OS builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8f980fe
+
+### Fix some instances of -Wshadow.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a45490c
+
+### Include windows.h where needed in chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5078de5
+
+### [ozone/wayland] Draw client-side decorations.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea3eea7
+
+### Remove dead code in Password Bubble View
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eccf5ecb
+
+### Revert "Enable -Wunreachable-code-aggressive in mac builds"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee31495c
+
+### FlexLayout to handle height-for-width in all caases.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/469c8e9
+
+### [CrOS Bluetooth] Remove bluetooth-aggressive-appearance-filter.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c08ecd3
+
+### Fix window controls appearing in fullscreen web apps when CCT is visible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98a105f
+
+### [ozone/wayland] Set a crash key to WaylandEventWatcher::CheckForErrors()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1056252
+
+### [CrOS VPN] Do not show ARC VPN dialog when prohibited by policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/870c4c2
+
+### Revert "Add flag to enable Incognito New Tab Page Real Box"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/530b86b
+
+### [Lacros] WebAppInternals uses local web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0daeab4
+
+### Remove SupervisedUserSiteList
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/632a391
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7307989
+
+### Update OS Settings Side Nav styles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8df4a1e
+
+### [Messages] Introduce MessageDispatcherBridge::MapToJavaDrawableId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9947bf8
+
+### Fixed crash when adding all bookmarks to new group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/717e786
+
+### FSA: Show drive letter in UI if path is root
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69a39f1
+
+### Revert "DLP: Add Textfield::GetDropCallback"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a226ce6
+
+### Revert "Reland "Don't include hang_watcher.h from thread_restrictions.h""
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd24691
+
+### Revert "[Read Later] Add param to use the root folder as the default location"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c6e9509
+
+### Update UrlBar text cursor and selection handle colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4128659
+
+### Introduce ForWebBasedApp for constructing an InstanceKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42a8708
+
+### CodeHealth: Remove use of Value::GetAsString.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2613884
+
+### Make pen state in PenEventProcessor pointerid-specific.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9338cb3
+
+### Fixes ShortcutIconCorrectColor failure on win-asan/win-clang build.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77c1ef2
+
+### [Shortcuts Widget] Isolate SearchActivity shared preferences.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74555fc
+
+### Reland "Don't include hang_watcher.h from thread_restrictions.h"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/087f254
+
+### [Nearby Share] Add finch flag for ARC Nearby Share
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ddd00d
+
+### Collect metrics if the user gave out their user data to a site before
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a037aa2
+
+### Call WebAppProvider::GetForWebApps()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/957a59e
+
+### OOBE OsInstallScreen: Move confirm step to dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/648f1b8
+
+### Add Ctrl+F6 to directly move focus to web contents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e8455e
+
+`);
+              </script>
+            </body>
+        </html>
