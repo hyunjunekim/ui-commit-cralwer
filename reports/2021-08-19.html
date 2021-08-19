@@ -1,0 +1,244 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-08-19
+### [Settings][WebUI] Post launch content settings redesign cleanup
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c437e37
+
+### Call WebAppProvider::GetForWebApps()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a8cbdb
+
+### 🕸️ Move SiteEngagementHelper into components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60cab7c
+
+### [Win] Notify TextInputClient about input type change during Omnibox init
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e53dd93
+
+### Fix the button shape of ripple color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20acf49
+
+### Files SWA: Cloud Import fix constant for URL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1424b7d
+
+### [Lacros] Enable ActiveTabColorIsBackgroundColor test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5853e9
+
+### [WebID] Add basic data sharing consent text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/008683f
+
+### Open a new browser window without session restore for "New Window".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c19823d
+
+### Extracts PostMessageAPI to ui/webui/resources/js/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/958a0bf
+
+### [Categorical search] Remove debug output
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b94ddf3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0b5882
+
+### DPWA: Change all instances of 'bool success' to 'bool error' in OsIntegrationManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4aa5dec
+
+### [Launcher] Remove misc debug logging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6333d24
+
+### DLP: Add MenuController::GetDropCallback
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d7b128
+
+### Make the PERSISTENT filesystem use temporary quota.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dfcd193
+
+### [Magnifier] Send event on AXWindowObjWrapper on updated Caret Bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb4ba08
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a5610e
+
+### [Categorical search] Save ranking state into a profile subdir
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cd2e93
+
+### GMC V2 Add mute button to media notification.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f11c0f
+
+### [omnibox] Add all batch3 pedal classes and messages; enable all in 'en'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/291ebc1
+
+### Safety check: Chrome cleanup tool flag and code cleanup
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d371ea102
+
+### [CrOS Bluetooth] Add change device settings row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed9abad4
+
+### Remove suppression of alert from translate bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1949afd
+
+### Fix crash in TSFBridgeImpl destructor.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/053b81f
+
+### ui: make a couple of TODOs into bug links
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/005ac40
+
+### Fix accessibility issue on download shelf for item being rerouted.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fa0cb1
+
+### Add concept of hidden holding space progress.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f51165c
+
+### Sheriff: disable WebAppOpaqueBrowserFrameViewWindowControlsOverlayTest.WindowControlsOverlayDraggableRegions on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5d558b
+
+### Migrate uses of WebContentsObserver to WeakPtr in c/b/ui/views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e138ee0
+
+### [Files App] Remove old ZIP mounting system
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1cbb0b6
+
+### [WebID] Add UI for users to cancel auto sign in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96a104d
+
+### [Categorical search] Refactor category type and helpers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8afd2a
+
+### Fix lifetime issues in App Management.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf49c88
+
+### [CrOS Cellular] Remove comment references in old mobile setup code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/857e0fb9
+
+### crostini: remove class name hack in CrostiniAppRestartDialogTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44b1cef
+
+### Update chip's icon padding.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c89febc
+
+### [File SWA]: Enable use of Files SWA as File Chooser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8d6222
+
+### Focus the Omnibox if the Voice Search was unusccessful.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b43a8a8
+
+### [Coupon] Add feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/85f05c3
+
+### Use CharSequence for message on ModalDialogView
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/042dcb2
+
+### Convert grouped notifications back to singular notifications
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1ff48e
+
+### Use ash feature flag for fetching account capabilities for Chrome OS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a42f647
+
+### Webfeed: Add string "Waiting for content" for use by chrome feed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e451083
+
+### documentTransition: Add flag to slow down animation duration.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e47d649
+
+### Call WebAppProvider::GetForWebApps()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/959ded9
+
+### dPWA File Handling icons: metadata plumbing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbe5ca5
+
+### Animation Builder: Add tests for delayed start and two keyframes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e746881
+
+### DLP: Add BookmarkMenuDelegate::GetDropCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/680b7dae
+
+### Side panel: Add permissions for chrome.bookmarkManagerPrivate API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00cd926
+
+### Reland "Reland "Don't include hang_watcher.h from thread_restrictions.h""
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e754b1
+
+### Better tracking of sequence lifetimes for the observer.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32f71f3
+
+### Implement holding space incognito download integration behind a flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c419ac6
+
+### Always show the save password bubble with fresh data.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3517898
+
+### [Reland] chrome: Generalize night_light_slider to settings_scheduler_slider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f429ecc
+
+### [CrOS Bluetooth] Add a11y labels to Bluetooth device list item elements.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8048ed8
+
+### Create factory function InstanceKey::ForWindowBasedApp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3397f7
+
+`);
+              </script>
+            </body>
+        </html>
