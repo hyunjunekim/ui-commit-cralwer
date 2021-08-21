@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-08-21
+### [X11] Explain new behavior in CoalescePendingMotionEvents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/810525d5
+
+### Convert between Sync proto and ash::DeskTemplate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c5d976
+
+### [Sheriff] Disable SurveyShownAfterShowingTip on MSAN build
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49be30e
+
+### [CodeHealth] Modernize some Value API in CookiesTreeModelUtil
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6547aa
+
+### Sheriff: Disable ImmersiveModeControllerChromeosWebAppBrowserTest.FrameLayoutToggleTabletMode on CrOS in general
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ebb55
+
+### [accuracy tips] Display chip for accuracy tip bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7ec19c
+
+### DPWA: Making WebAppInstallObserver better (1/2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2692b3a
+
+### Added testing support to ensure LAO's are properly deleted.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02b21ea
+
+### [accuracy tips] Don't show tips for not secure connections
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8866f24
+
+### Treat resumed downloads as being in progress for holding space
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f8f3d0
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3b55e9
+
+### Clipboard: Add SVG to ReadAvailableTypes() on all platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6740cda1
+
+### DPWA: Making WebAppInstallObserver better (2/2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a7f68c
+
+### network-health: separate feedback page sources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9906ac
+
+### Add Canvas OOPR feature to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8faf695
+
+### [lacros] Enable switches::IsTouchDragDropEnabled()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ea8f45
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/311bac8
+
+### webauthn: have a caBLEv2 loading screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f66d81d
+
+### Clean old highlight code on Android
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f3f891
+
+### [Messages] Retain WindowAndroid in MessageWrapper for Dismiss
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0df4df4c
+
+### Add descriptive errors to desk client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59408ca
+
+### ozone/wayland: Fix wl_keyboard.repeat_info event handling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b4492a
+
+### multi-instance: Define metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75a2d0d
+
+### Diagnostics: add GetKeyboardVisualLayout call to InputDataProvider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/071f75f
+
+### Ash shelf: Make implicit dependencies of PinAppWithID explicit.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ba70b6
+
+### [Feedback] Add ScopedProfileKeepAlive in WebUI dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56206060
+
+### views: Remove checks added for crash in TouchSelectionMenuViews
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a264d3
+
+### [Sheriff] Disable ShowTooltipFromIFrameWithKeyboard on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11100bc
+
+### Add some temporary CHECKs to Compositor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1852e3c
+
+### Simplify AppBrowserController::GetTitle()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e8036d9
+
+### [Fuchsia] Fix test suites on Fuchsia FYI builder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/92965bc
+
+### MaybeCreateAppBrowserController() in web_app_launch_utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69104e5
+
+### [CrOS Bluetooth] add change name dialog input subtitle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/085b7a5b
+
+### [Live Caption] Introduce CaptionBubbleContext.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ba47d2
+
+### [printing] Add ENABLE_PRINTING guards in the body CanPrint()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b564338
+
+### [WebID] Implement sign in UI with explicit ask
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9d6c84
+
+### [X11] Coalesce mouse motion events when dragging
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c56f04
+
+### Remove the SearchActivityUtils dependency on the Omnibox component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be5fd31
+
+### Make two-line elision of filenames on hover cards smarter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b88a609
+
+### [fuchsia] Add font_capabilities.test_cmx to some test suites
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9019beb
+
+### Update desk template error messages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a14c2a7
+
+### Add touch_id to LatencyInfo for Touch events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a3cd84
+
+### [Live Caption] Pass a CaptionBubbleContext to the CaptionBubbleController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2805bd6
+
+### Map ARIA group role to AXApplicationGroup AXSubrole on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36371af8
+
+### Use correct profile in UsbChooserDialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cceaadc7
+
+### Add a new flag for Contextual Search new settings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/db813da
+
+### Fix cursor display in multiline textarea
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f99606
+
+### [Sheriff] Disable PopupBlockerBrowserTest.PrintPreviewPopUnder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b5f07d
+
+### [SH-Toggle] Add IPH for link toggle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abefe1f
+
+### Hack around missing a11y text for payments rows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cae700
+
+### [Sheriff] Disable flaky WaylandWindowDragControllerTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ed004b
+
+### Remove schemeful-same-site flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3b534d4
+
+### [CodeHealth] Modernize some Value API in gaia_screen_handler.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0031b1
+
+### [Sheriff] Disable NotificationViewMDTest.TestInlineReply
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/186a8c6
+
+### [Categorical search] Add category ranking based on top item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cb1b1d
+
+### [Sheriff] Disable NotificationViewMDTest.TestInlineReply
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2145954
+
+### [omnibox] Add plumbing for activate/deactivate search engines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/895f45ac
+
+### [CodeHealth] Modernize Value API in GetCupsPrinterInfo()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/173a760
+
+### add the feature flag RevenLogSource
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6fce0b8
+
+### OOBE - Polymer3 migration pre-work - CSS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f873b9a
+
+### Fix memory leak and add unit test for OnWillRepeat on AnimationBuilder.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d42ea3a
+
+### [Nearby Share] Delete the session object when Nearby Share bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fec6df
+
+### WaylandWindowDragControllerTest.DragInsideWindowAndDrop_TOUCH is flaky
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b03d457
+
+### webauthn: don't disable Bluetooth after enabling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caab660
+
+### Disable NotificationViewMDTest.TestInlineReply which fails on linux-lacros-tester-rel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f595d745
+
+### Reland "Local filenames do a two-line middle elide on hover cards."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ecc824
+
+### Remove window from IntentRequestTracker#onActivityResult() params
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a34e9fb
+
+### [Categorical search] Change handling of counts in score normalizer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e33bbdb
+
+### [ozone/wayland] Enable data drag-drop with touch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7eabb10
+
+### Add CHECK for Tab Group contiguity and add additional check on drag end
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ab9f05
+
+### [Ozone/Wayland]Set wl_log_handler to display wl_log during protocol errors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db5bab6
+
+`);
+              </script>
+            </body>
+        </html>
