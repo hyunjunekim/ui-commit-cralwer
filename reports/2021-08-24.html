@@ -1,0 +1,236 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-08-24
+### Add a flag + SWA Config for chrome://media-app to handle audio.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0c8376c
+
+### Call MarkSourceForDeletion to delete the UKM source id.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7092e9a
+
+### dPWA: Remove cap on registered file handlers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b0a462e8
+
+### Remove per menu item background color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7db00af
+
+### Fix run-time check for supported AtkRelationType
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbc8cfc
+
+### Make auto-hidden shelf appear when mouse is dragged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/537372d
+
+### Adding a static bool to check if a Dialog is already showing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7952805a
+
+### Move GetURLsFromCommandLine to StartupTabProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33c1710
+
+### qrcode: don't crash with bubble showing during browser quit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46906e8
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/078a197
+
+### Files SWA: Fix waitForWindow for SWA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/67fe3119
+
+### Enable Enhanced Network TTS flag by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8379f0
+
+### Menu styling to surface-3 in dark mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1cd0bb7
+
+### Clipboard: Add test helper for portable type checks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b65ee03
+
+### Reland "[accuracy tips] Display chip for accuracy tip bubble"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76fe911
+
+### Test calls WebAppProvider::GetForTest()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a614a5b
+
+### CodeHealth: Remove use of Value::GetAsString.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7336514
+
+### Update Apps Foundation OWNERS files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1541306
+
+### [Projector] Adds Test For ProjectorMessageHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f58ac6
+
+### Fix a UAF in ChromeAppDelegate::OnHide()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a0ccd6
+
+### Move //{chromeos => ash}/components/drivefs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f578ec
+
+### ax_mac_merge: implement isAccessibilityElement on BrowserAccessibilityCocoa
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2db1637
+
+### Revert "Safety check: Chrome cleanup tool flag and code cleanup"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5f646a5
+
+### feedback: Add questionnaire in feedback report
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1c5b083
+
+### Commander: Add to wrench menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f343705
+
+### Tab Search: Add UMA metric for Recently closed items toggle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ceab09c
+
+### Files app: Add closure type for appState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2979c9
+
+### Remove title from the URL format on Windows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0580f39
+
+### Revert "[accuracy tips] Display chip for accuracy tip bubble"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fb5ce6
+
+### flags: use base::span throughout test APIs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/323ab109
+
+### Fix a bug where sometimes ForWebBasedApp was called erroneously
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5066ed1
+
+### Remove more access to the Window() member of InstanceKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c868a7
+
+### Add ARC Input Overlay Flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d41b0c
+
+### [Projector] Enable Projector App To Request From WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7be2bc2
+
+### Change namespace to ash for //c/b/a/web_applications/help_app_ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f570626
+
+### Add an increment to floating-point comparison
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c06ec0
+
+### ash shelf: Remove PinAppWithID().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7d04b1
+
+### [Files SWA]: Enabling File Dialog tests for Files SWA.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d328d2
+
+### [ozone/wayland] Fixed the logic that enables decorations.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a174d0
+
+### Animation Builder: add more end-to-end tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be1dd52
+
+### [Launcher] Add skeleton of MRFU cache class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03d05e8
+
+### Enforce continuous ordinal ranges in ax_enums.mojom
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2138d4f
+
+### [ozone/wayland] Fixed setting geometry of popups on HiDPI.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d6bde42
+
+### [DesktopScreenshots] Fix crash when window closed mid-capture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ea1e7c
+
+### Revert "Clipboard: Add test helper for portable type checks"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e4f962
+
+### [chromeos] Move SigninScreenHandler::GetKeyboardRemappedPrefValue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7e3a10
+
+### [chromeos] Fix race in AppLaunchSplashScreenHandler::ToggleNetworkConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3c8eeb
+
+### [Files App] Remove last references to ZipArchiver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dcd9677
+
+### [Power Bookmarks] Add feature flag for the bookmarks visual refresh
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9fe3758
+
+### webui: make WebUIAllowlist and WebUIAllowlistProvider thread-safe
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56489e04
+
+### [Launcher] Add persistent proto class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b50bb36
+
+### SiteSettingsHandler reads AppCache for web app origins
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbe8351
+
+### Adding in the bool for "Save group" in the tab group class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd14aa1
+
+### Add domainSuffixMatch and subjectAltNameMatch to UI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f559d6
+
+### chrome: remove window naming feature & flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/78c83a2
+
+`);
+              </script>
+            </body>
+        </html>
