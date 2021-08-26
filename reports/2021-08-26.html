@@ -1,0 +1,248 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-08-26
+### [SH-Toggle] Update toasts with content-specific strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5729047
+
+### [SH-Toggle] Add params to enable links to images/screenshots by default.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3f17f329e
+
+### Add feature list override guard to TestGpuServiceHolder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e644265
+
+### Merge Browser Command proxies
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33ddffa
+
+### NotificationRevamp: Rename notification view classes.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1169e86
+
+### Remove site.com from hosted_app_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbea302
+
+### Fix missing TOOLKIT_VIEWS browser dialogs include
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41325d4
+
+### Chrome Apps Deprecation: Add UI to chrome://apps marking the deprecated apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1db172f
+
+### Build with -Wunreachable-code-aggressive in Chrome OS builds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e15ec16
+
+### [VirtualCards] Set the custom icon bitmap in autofill dropdown
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5370277
+
+### Improve capitalization for permission strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/469ca70
+
+### [internals] Add metrics type to the internals page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f19a0754
+
+### Revert "Prevent button visibility update calls from animation frames"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a30868
+
+### Remove references to kMobileIdentityConsistency experiment in Chrome.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c41aaf4
+
+### Move ShouldShowTabContextMenuShortcut() to SystemWebAppDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5087734
+
+### Reenable PrintPreviewPopUnder test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e47f234
+
+### Reland "Privacy Review: implement UI elements for the footer."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a54d81
+
+### Omnibox Suggestions: use outline to round images.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e98be38
+
+### Add a11y role and selection information to WebAppUrlHandlerHoverButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/699b8d2
+
+### WebUI: Add a few clarifying comments to WebUIAllowlist.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44c8e94
+
+### [Launcher] Add MRFU cache logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43d7a216
+
+### Move SystemWebAppDelegate into WebAppBrowserController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e6c63ff
+
+### Hypertext is empty on spin buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1fd1ab7
+
+### [fuchsia] Resolve relative resource pak paths against DIR_ASSETS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9defac2
+
+### Include sub-/super-script roles and elements in the accessibility tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4636b5f
+
+### Use SystemWebAppDelegate rather than SystemWebAppManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c03f79
+
+### [Magnifier] Move Caret Following from C++ to Javascript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf2af76
+
+### [Launcher] Fix accessible titles for Omnibox results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff30814
+
+### Use system-provided permission functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6280168
+
+### WebAppIdentityUpdateConfirmationView stores profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53b3d81
+
+### [Lacros] Remove the app service subscriber from lacros proxy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e80712
+
+### [CodeInclusion] Update terminology in autofill_gstatic_reader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ac00b4
+
+### Added UX light/dark mode colors for saved tab group bookmark chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12c0d5f
+
+### Computes and caches on the browser various unignored values as well as word, line and sentence boundaries
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e6a16a0
+
+### First pass at element tracking for Mac menus.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8af0100c
+
+### Audio WebUI: Add a feature to guard it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02d886e
+
+### Fix the browser window app id issue in AppService instance.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4eadf35
+
+### X11: remove redundant GetDisplayMatching calls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/175effc
+
+### [DesktopScreenshots] Capture entire window if using a screenreader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e17db5
+
+### Remove unnecessary Layout() call from SetFullscreen method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68d4e144
+
+### [CrOS Settings]: Show OS settings link for Secure DNS on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0feb53c
+
+### Support upgrading crostini to debian bullseye
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f84aa82
+
+### Replaces the use of data().role with AXNode::GetRole() in ui/accessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c824d648
+
+### Remove conversation starters V2 and launcher chip integration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf9e9d35
+
+### Delay shrinking the omnibox suggestion dropdown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c365dbe
+
+### Files app: Remove unused test function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b16413
+
+### Remove hardcoded "site.com" URLs from web_app_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db58a5d
+
+### Add new CastStreamingAv1 about:flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df768ce9
+
+### Adds error message (actual color) to the check for easier debugging.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62f3fa9
+
+### [Snooze IPH] Add a snooze button to UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87c32ed
+
+### Code Health: Rename/replace content::WebUI::RegisterMessageCallback().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/720e8ac
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55896a6d
+
+### Revert "Build with -Wunreachable-code-aggressive in Chrome OS builds"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d15a34f
+
+### Migrate Projector App to SPA.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bf16de
+
+### personalization: Respect Wallpaper Sync User Preferences
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5ffd91
+
+### Splinter TextAppearance.*.Primary.* colors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c137a2
+
+### [MPArch] Update SecurityInterstitialTabHelper for primary page only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f88ed98
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe2cce6
+
+`);
+              </script>
+            </body>
+        </html>
