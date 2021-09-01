@@ -1,0 +1,288 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-09-01
+### [Files App] Harden generateRemainingTimeMessage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de5c939
+
+### Use GetLastCommittedOrigin in Javascript dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3840723
+
+### [AndroidSPC] Add an about-flag to enable Android SPC
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f283461
+
+### Avoid hang in NSApp beginSheet
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c39b16f
+
+### ozone/wayland: Return the newest serial when multiple types are queried
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9580cfa
+
+### Add flags for download dialog
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4975ee35
+
+### Replace InterpolatedTransform animation with gfx::Transform animation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17d3717
+
+### Don't cancel the select file dialog if exporting the window handle fails
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0478d0
+
+### IntentPickerTabHelper uses local WebAppProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23ad149
+
+### Move size into the text in dangerous download dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfc91bc
+
+### [GMNext] Make default_text_color_hint_list dynamic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58839be
+
+### NotificationRevamp: Move NotificationViewBase to separate files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d055203
+
+### Remove a test-only function from ChromeShelfController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce14743
+
+### [Code Health] Convert ListValue::AppendString to Value::Append
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5ee6df
+
+### Adds one more gray color variant for Windows check.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54f6f0f8
+
+### Refactor ManagementService to use a bitset for management authorities
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7129b173
+
+### Add getDefaultPinnedApps method to autotestPrivate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abe7c48
+
+### AxPosition::AtEndOfAnchor should factor into embedded object
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bebf8ddc
+
+### Remove shallow method in AvatarToolbarButtonDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edc28b4
+
+### Remove ChromeShelfController::ActivateApp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95bf3e2
+
+### [omnibox] Start moving parts of OmniboxPopupModel into OmniboxEditModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edaaa9c
+
+### [ozone/wayland] Fixed a mismatch between the comment and the code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e716041
+
+### Add feature flag for back to the top of the feed
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c22a3ce
+
+### dPWAs: implement PwaInstallView::GetBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c0de73a
+
+### Bottom tab strip bg to Surface-3 in night mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73c2d3d5
+
+### Use hover card defaults as agreed by UX
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7879ecd
+
+### [Shortcuts Widget] Reflect feature availability on Widget surface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8ff75b1
+
+### [dPWA Testing] Fix all references to 'scope' which really mean 'site mode'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/460c5d0
+
+### [ozone/wayland] Duct-taped the fatal failure on opening a long data URL.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9c436ca
+
+### Revert "Log clients that keep CompositorAnimationObserver for too long (>15s)"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e20ef0
+
+### [linux] Changed the clip region radius to be measured in DIP.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a359733
+
+### codehealth omnibox: remove dead override of AboutToRequestFocusFromTabTraversal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56bc77e
+
+### [RSearches] New strings for the promo card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0f8cd1
+
+### desktop-sh: select QR code URL textfield's contents initially
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ea1264
+
+### Revert "personalization: Respect Wallpaper Sync User Preferences"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/698939d
+
+### Implement scroll capture API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9881eb6
+
+### dpwas: Add browser test for ShortcutsMenu on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e78d830b5
+
+### [dPWA] Fixing sync integration tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b7ae8c
+
+### Delay showing side panel IPH by 5 minutes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b891e61
+
+### Reland "NotificationRevamp: Class refactor and new layout for CrOS notification"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f628b1d
+
+### Update intent picker icon after "Open in Chrome" from PWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/921ec00
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6eb085
+
+### [Safe Browsing] Clean SafeBrowsingTabObserver of //chrome deps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd72629
+
+### Reland "DLP: Add Textfield::GetDropCallback"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc071b8
+
+### [Remote URL search] Add a chrome flag for remote URL search
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9a3d807
+
+### Add instructions for adding entries to about_flags.cc
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/50eb0e9
+
+### [GTK] Fix menu border rendering
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/471da26
+
+### Support TablePattern on all table-like nodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c0078633
+
+### Remove views::test::WidgetClosingObserver
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce0900f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30b352a
+
+### [IncNTP] Added Incognito does and doesn't do sections in desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c33de1f
+
+### [CrOS Settings] Remove deeplinking feature flag references.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/71a007d
+
+### ozone/wayland: Fix typo in WaylandWindow tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/786b500
+
+### Use correct modifierFlags when synthesize NSEvent of mouse click or drag
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b096e9a
+
+### Fix IWYU violations of base/gtest_prod_util.h.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4c3eab
+
+### Web Feed Snackbar - add message for offline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60b27e2
+
+### Add a test for cross tab drag and drop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9acef0
+
+### Use modifier key constants
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bda31cf
+
+### Add web app launch handler to about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6270489
+
+### [CrOS Settings] Guard flag for WireGuard
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d8ba6e
+
+### Rename CloseItem to ReplaceWithAppShortcutOrRemove
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b25cd61a
+
+### ime: Add default-disabled flag for using native IME for Chinese.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f1724a6
+
+### [Safe Browsing] Componentize SafeBrowsingTabObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5438556
+
+### ozone: evdev: add more fake keyboards to blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/687a65e
+
+### [App Service] Add preferred apps information to app-service-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75af9ce
+
+### [Shortcuts widget] Disable widget resizing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28a5fee
+
+### [App Management] Move the more settings and permissions link.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/247a5bc
+
+### [FilesBanner] Add the StateBanner type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36173ac8
+
+`);
+              </script>
+            </body>
+        </html>
