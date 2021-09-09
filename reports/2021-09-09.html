@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-09-09
+### ozone/wayland: fix software rendering with HiDPi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b808f88
+
+### Check for CCT before using new security indicator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0820146
+
+### Move //{chromeos/components => ash/webui}/print_management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9045d9f
+
+### flags: remove enable-use-aaudio-driver
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b2ddcbb
+
+### Set active desk index when visibleOnAllWorkspaces(false)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f0a817a
+
+### [TabStrip] Stop unneeded redraw of active tab on each mouse move
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0d6e6b0
+
+### Side panel: Move focus to side panel when opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a53ce67f
+
+### Null check delegate in RemoveAnimation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2c1d70
+
+### Add view for Lens side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/156e573
+
+### Add quiet chip into fieldtrial_testing_config.json.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b9fb7b
+
+### Revert "Add view for Lens side panel."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38f5f54
+
+### Wrap NavigateToURL(...) calls in ASSERT_TRUE or EXPECT_TRUE.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b78290c
+
+### [Profile creation] Split a compilation unit into two
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8077b51
+
+### [Messages] Fix missing "continue" text in save card messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75efdd0
+
+### Refactor WebAppLaunchManager::OpenApplication() to expose high level flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eb58cc
+
+### Move account_manager_facade_factory to components/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2abc60
+
+### Cros Reporting: Add RemoveUserReason to RemoveUser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1645591
+
+### MPArch: Ensure that prerendering doesn't update the starred state in BookmarkTabHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5da552a9
+
+### Make border of chips transparent when selected.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5a39333
+
+### Files SWA: Add appID and change browser test to identify Files SWA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c22feb
+
+### dpwas: Refactor protocol handling startup code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9650913
+
+### [LR] Add sharing hub entry point
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42ce73c
+
+### AppListSyncableService: Read oem install source
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89d05a3
+
+### Improvements to value string support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3849d1d
+
+### Ensure that EyeDropper is not created when the feature flag is disabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7329e1b
+
+### [FilesBanner] Implement banner animation CSS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8cced3
+
+### Add Eche feature to multidevice page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c40317
+
+### Prevent profile-unsafe access to AppServiceProxy in SiteSettingsHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f53bbca5
+
+### ax_mac_merge: connect mac ax node delegate with ax platform node
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/479db0e
+
+### [AF] Remove kAutofillAcceptSaveCreditCardPromptState pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91992b2
+
+### [memories] Add `duplicate_visit_ids` field to `ClusterVisit` struct
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dc54cc
+
+### Fix a couple of post-review nits
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9d873356
+
+### Lacros: Basic ash-side plumbing for shelf integration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b877e0f
+
+### Quick Answers V2: Fix crash in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83820011
+
+### [FilesBanner] Plumb the Crostini background object to BannerController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe7154b
+
+### [Sheriff] Disable flaky test AppRegistrarNotifiesProfileDeletion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4611d1
+
+### [Files SWA]: Replacing chorme.app.window.current for System Web Apps
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e9a7f2
+
+### flags: remove android-partner-customization-phenotype
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4edac60
+
+### personalization: Don't let DAILY updates stick around.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9c5a09
+
+### Move //chrome/browser/{chromeos => ash}/printing [1/2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a52715a
+
+### webauthn: update caBLEv2 QR codes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e83aad
+
+### [CrOS Bluetooth] Add new UI element bluetooth_pairing_device_item
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd02906
+
+### personalization: Reland respect Wallpaper Sync User Preferences
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77409f5
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39627fb
+
+### [Butter STTS] Adapt strings of "no target device" state on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d9efa93
+
+### [Launcher] Remove score normalizer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/126cae9b
+
+### [FilesBanner] Enhance the extra-button slot for chrome://os-settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7de08f20
+
+### [DesktopSharingHub] Add metric when the user opens omnibox sharing hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73d3806
+
+### [DesktopSharingHub] Anchor STTS and QRCode dialogs to sharing hub icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58399f0
+
+### Commander: dismiss on focus loss
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f2c55e
+
+### Revert "[client-hints] Calculate correct values for viewport width and height on"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5b854a8
+
+### Side panel: Fix some polish issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bee4973
+
+### wayland: add a custom impl of OSExchangeDataProvider for Wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b44732e
+
+### Wrap *more* NavigateToURL(...) calls in ASSERT_TRUE or EXPECT_TRUE.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3841cfd
+
+### [fuchsia] Clean up ScenicWindow and pretend to support full-screen.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd570f3
+
+### ozone/x11: Get rid of X11OSExchangeDataProviderOzone
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5ea49f
+
+### Files SWA: Fix ShowItemInFolder() opening a file in SWA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb63791
+
+### [CrOS Bluetooth] Move localized_link to cr_components/ folder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7dffa9b
+
+### [Sheriff] Disable flaky ProfilePicker test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b626c89
+
+### Unify ash::MoveToDesksMenuDelegate and MoveToDesksMenuDelegateLacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9753af36
+
+### Settings WebUIBrandingUpdate: Align logo and title with menu entries.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f48323f
+
+### [Messages] Remove unused java obj in save card message methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dd10f8c
+
+### [CrOSSharingHub] Close sharesheet if tab is closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0e1b452
+
+### [Profile creation] Minor clean-ups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8c14b3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81ce6d6
+
+`);
+              </script>
+            </body>
+        </html>
