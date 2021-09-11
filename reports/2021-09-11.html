@@ -1,0 +1,164 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-09-11
+### ambient: add chrome://flags for new url feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a32bf51
+
+### [Autofill] Fix using wrong PopupHidingReason
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0873b76
+
+### network-diagnostics: rework DnsResolverPresent routine problems
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc78ae82
+
+### [BMO] WebAppBrowserController without extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d482b90
+
+### Replace deprecated DictionaryValue/ListValue in descriptor serializer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f430b9
+
+### Use `AshNotificationView` for grouped notifications
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96cacad
+
+### Fix UAF in BrowserWindowTouchBarControllerTest.DestroyNotificationBridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e19bedd
+
+### Add flag for sorting in Web feed.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e949b3c
+
+### Enable accessibility for more UIA APIs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df7a76d7
+
+### [Autofill] Add mamir@ as an owner of c/b/ui/views/autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ffae60
+
+### Disable ArcAppModelIconTest.IconInvalidation/*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/662ab3ff
+
+### [Launcher] Fix the crash happening when recording launcher usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f42f87
+
+### dwpas: Remove duplicate entries from 'approved_launch_protocols'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cff589
+
+### [memories] Unflatten the duplicates in the Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab1451fe
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b26a59
+
+### [Fuchsia] Use VK_FUCHSIA_buffer_collection_x
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/966603d
+
+### [memories] Update mojom in WebUI handler to use new `duplicate_matches`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/799223d
+
+### [Autofill] Allow aligning Autofill suggestions to the field's center
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6cc3213
+
+### [Structured Metrics] Add mojo interface to record StructuredMetrics in Lacros.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee113d2
+
+### dpwas: Reset bounding_rect values mac WCO PWAs toolbar hides Full Screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fd892b
+
+### Extract functionality from PostMessageAPIServer to RequestHandler
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cda9ed7e
+
+### [TTS] The new consent dialog does not show more than 3 times
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0138285
+
+### [Ash] Remove avatar-toolbar-button from chrome://flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2fa3863
+
+### Settings TypeScript: Migrate privacy_page/ folder, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22aaf79
+
+### Revert "Reland "Add view for Lens side panel.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42005f0
+
+### What's New: Disable remote content/redirects in all tests by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccc16f8
+
+### Fix ArcAppModelIconTest.IconInvalidation flake
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ad50d4
+
+### [CrOS Bluetooth] Add learn more link to device pairing dialog
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eea44e49
+
+### cros: Fix security issue with fingerprint settings APIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57def0f
+
+### Revert "Disable ArcAppModelIconTest.IconInvalidation/*"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cd0245
+
+### Change namespace to ash for //ash/webui/print_management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d848ace0
+
+### [CrOS Settings] Add Notification subpage metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75da711
+
+### [omnibox] Collapse list on search engines page if longer than 5 entries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/428d5ed
+
+### Address clang-tidy warnings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19aeef3
+
+### dPWA: remove redundant string in URL handler dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6375327
+
+### [Shortcuts Widget] Adding user action for opening incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dbfea2
+
+### [Messages] Refactor autofill save card dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de56b42
+
+`);
+              </script>
+            </body>
+        </html>
