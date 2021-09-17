@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-09-17
+### Change namespace to ash for //c/b/ash/printing/* files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da53f44
+
+### Rename InputMethodChromeOS to InputMethodAsh
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7e4be3e
+
+### [Sheriff] Disable ExternalProtocolDialogBrowserTest.OriginNameTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef4ea3c
+
+### Add a flag to selectively include LAUNCH_ADJACENT on share hub shares.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/edcee15
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2298dae
+
+### Load Terminal-SSH as an extension rather than directly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddd8016
+
+### [tab strip] Fix the upper bounds for GetAttachedDragPoint()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/254a638
+
+### [FilesBanner] Add isolateBannerForTesting method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/273519a
+
+### [FilesBanner] Make holding space welcome banner test changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09f667e
+
+### Port the majority of ui/views/ to color pipeline.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80244cc
+
+### Add Bubble Owners for Tutorials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a601c747
+
+### Projector: Prevent third-party URLs from accessing trusted resources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2eb44a
+
+### Remove //printing/backend from //printing's public_deps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e947a64
+
+### Add an owner file for gfx/win
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56d81ab
+
+### [FilesBanner] Migrate Crostini / PluginVM banners to new framework
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50ac10e
+
+### Add Phone Hub Apps and Notifications setup item.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00a14e2
+
+### Ensure that observers are attached to sequences
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c45eb17
+
+### [omnibox] Refactor popup model, edit model, and view relations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ae2b59
+
+### Log clients that keep CompositorAnimationObserver for too long (>1m)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1739591
+
+### Starts migrating non-platform specific methods from AXPlatformNode to AXNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b16a543
+
+### QA Cleanup: Remove QuickAnswersTranslation feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f3b92fc
+
+### Make Esc close dialog if there's a close-x
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8854b99
+
+### Use DialogDelegate close callback on Esc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4cf3857
+
+### disable TrackParentWindowDestructionAfterViewCreation on all mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04c83ed
+
+### [CCT] Add bottom sheet Custom Tabs flags to about flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dabb3c2
+
+### Add checks in browser for knowing when to try using system-level updater
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50c1d6bbb
+
+### Add UMA metric for DWrite startup initialization time
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d746acb
+
+### Move top-level files from chrome/browser/ash/login/ to namespace ash [2/2]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88a8086
+
+### lacros: Re-enable browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1106290
+
+### multi-instance: testMaxNumberOfWindows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47d0678a
+
+### Side panel: Open reading list items in a new background tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/184b3a2
+
+### Add new entry point when opening LWD from new tab button in side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d67dcc7
+
+### [gfx::Rect] Stop unpacking Vector2d in calls to Offset(Vector2d&)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9f6b88
+
+### [omnibox] Fix issue of keyword deactivating when made default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb5ddad
+
+### [mparch] Add a test that prerender doesn't close the accuracy tip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/685967d
+
+### [RBD] Fix a typo in feature parameter
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7938e7a
+
+### Add logs and CHECK(false) to DownloadItemView::GetIcon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1f3e2b
+
+### desk_templates: Rename components/full_restore to c/app_restore p2.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c380e3
+
+### Rename ui/base/ime/{chromeos => ash}
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1220b39
+
+### Replace DISALLOW_COPY_AND_ASSIGN in ui/views/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0bddd41
+
+### Settings TypeScript: Migrate site_settings/ folder, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36c7621
+
+### ozone/wayland: do not detach buffers on hide if buffer management is not used.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fcf6d0d
+
+### Show the origin of the last redirecting server in external protocol handler dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f781748d
+
+### [lacros shelf] Move BrowserAppsTracker::kEnabled flag into the features file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6d0b0a
+
+### [Coupon] Add flag to control retail coupon experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/267ee24
+
+### Add get_manifest.html web app test utility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1516297
+
+### [ntp][modules][photos] Add support for dismiss and disable Photos module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/730b56d
+
+### Re-enable release fences.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b485ae
+
+### [Files SWA]: Background page fetching for Files SWA.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/716cea1
+
+### Preserve app window status when migrating platform apps to web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6e4d94a
+
+### [memories] Cleanup: Delete HistoryClustersHandler mock-clusters code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4d0053
+
+### [memories] Resolve semantics mismatch where we used base::Time() as null
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0644cd1
+
+### [mparch] Add a test that prerender doesn't close the safety tip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23f813c
+
+### connectivity-diagnostics: Hide ARC routines behind a flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6077e54
+
+### Fix color and RTL positioning of the Dino Widget text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d75ebd
+
+### chrome/browser/ui: include build/build_config.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96e2953
+
+### [FilesBanner] Update drive specific browser tests for new framework
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ce4b7b
+
+### Install rounded rect highlight path generator
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9411ff1
+
+### lacros: Supports "Move tab to another window" menu for lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fa4e70
+
+### ContentSettings: Add JNI methods to get or set content settings for URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41bfdd4
+
+### Fix Forced sign in interception happening when the feature is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afe525f
+
+### Settings TypeScript: Migrate site_settings/ folder, part 2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7add54a
+
+`);
+              </script>
+            </body>
+        </html>
