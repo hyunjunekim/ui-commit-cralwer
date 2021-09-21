@@ -1,0 +1,244 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-09-21
+### Simplify some plugin code in src/chrome now that ProcessHostOnUI is the only path.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b409d00
+
+### [AppIdentity] Enable flag for Desktop and Mobile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7da91ad
+
+### Use semantic color in `internet_page.html`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aadedc3
+
+### [reland] views: fixes menus repeatedly triggering painting
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed4c3d4
+
+### [SendTabToSelf] Fix DCHECK violation in DisplayNewEntries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce606d4
+
+### [FilesBanner] Update showGridViewDrive for new banners framework
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3c0568
+
+### Revert "[mparch] Add a test that prerender doesn't close the safety tip"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de0bc30d
+
+### network-diagnostics: migrate routine-group test to Polymer3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b967a36
+
+### Add DLP events count to management disclosures page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed752a9
+
+### Make DotIndicator respect system accent color by default.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e84faa
+
+### [omnibox] Rename and refactor Autocomplete methods for setting AQS param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f211bea
+
+### [Clipboard API] Clipboard Custom Formats implementation Part 7.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8aa9dc9
+
+### Fix dark mode colors in cellular_eid_dialog.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38f0b37b
+
+### [Start] Stop showing incognito homepage and remove the omnibox flash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02293c79
+
+### [chromeos] Improve invariants for account_manager::AccountAdditionResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e64d371
+
+### Moves most of the methods of accessing AXNodeData to AXNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e420abb
+
+### Remove windows.h from event_utils.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4835313
+
+### [Android] Enable by default for Swipe To Move Cursor
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/25378ce
+
+### [CrOS Bluetooth] Refactor Bluetooth pairing dialog creation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61ca68c
+
+### desktop-share-menu: move ShareSubmenuModel to correct directory
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4f73126
+
+### webauthn: rejig desktop QR flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d27bc95
+
+### FeedbackHandler: Use defined(OS_CHROMEOS)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00924d7
+
+### Fix ARC app window bounds lost issue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1de0e2
+
+### Fix DownloadItemView::GetIcon for DEEP_SCANNED_OPENED_DANGEROUS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f889922
+
+### Add the entire Squashed tutorials stack.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/370f64b
+
+### Add a flag to enable forcing the User-Agent string to M100
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3070c42
+
+### traffic_counters: Add units to last reset time
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88cab3e
+
+### desktop-sh: use menu background color for bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d770d9a
+
+### dwpas: Remove protocol registration at user request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83d33bd9
+
+### [FilesBanner] Fix box-shadow to match elevation spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/990df66
+
+### Remove SignedExchangePrefetchCacheForNavigations flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/81c6aac
+
+### [AF] Create flag for AutofillEnableOfferNotificationForPromoCodes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/702563e
+
+### vsplit: snap_state: Add Vertical Snap to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d6fe204
+
+### [ozone/wayland] Set the axis source when it is not sent explicitly.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2070df0
+
+### Revert "Add the API to create projector screencast container directory."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b380e0f
+
+### [gtk] Use GTK color values to set the |use_dark_colors| bit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7597f9f
+
+### Correctly track sequences for all blocks in AnimationBuilder::Observer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d25ddd
+
+### Cleanup CrOSAutoSelect flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4fb732fa
+
+### Update send button, update highlight
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58be06f
+
+### Creates an interface for a tree source annotator component
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6600010
+
+### Revert "[AutoDark] Add AutoDark app menu item"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79b4ee8
+
+### QA Cleanup: Remove QuickAnswersTranslationCloudAPI feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/af1107e
+
+### Reland "[AutoDark] Add AutoDark app menu item"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56d7c66
+
+### Add setting to enable/disable camera roll
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a65d4a9
+
+### desk_templates: Rename c/b/ash/full_restore to c/b/ash/app_restore.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2128582
+
+### [gtk] Eliminate use of NativeTheme::GetSystemColor() from GtkUi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/033829b
+
+### [FilesBanner] Fix holding space tablet mode display incorrectly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2004ccb
+
+### [omnibox] Remove WebUI omnibox popup flag from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/59828368
+
+### [Parent Access] Add directory structure for Parent Access UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c4f15d
+
+### network-diagnostics: add _'s to private routine-group properties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cd2dbb70
+
+### [Lacros] Outdated install to open settings safetyCheck page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e1ddda
+
+### Fix immersive mode tab strip background color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ad0692
+
+### [ntp][modules] Hide all module UI if user credentials are unavailable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/423be13
+
+### [FRE][Footer] Create Footer Dialog View
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c113d2c
+
+### [suggested files] Gate suggested Drive files behind a different flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41c2090f
+
+### Changes to support applying native occlusion to top-level windows
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75715d5
+
+### [os-settings] Migrate OS WebUI off SplitSettingsSync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7084ca
+
+`);
+              </script>
+            </body>
+        </html>
