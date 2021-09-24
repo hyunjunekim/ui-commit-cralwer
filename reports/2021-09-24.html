@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-09-24
+### Add OpenEyeDropper impl for ExtensionViewHost
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f78dd5
+
+### [exo] Add initial support to 'chromium/x-web-custom-data' mime type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6fdd023
+
+### [TTS] Update strings for consent dialog and settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4738058
+
+### Don't hide controls in PiP window with pillar-/letterboxed video
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa16da1
+
+### desk_templates: Change some file names to prefix app_restore.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34ae5eb
+
+### desktop-share-menu: add 3P share targets to desktop share context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c077865
+
+### [Launcher] Add another test to PersistentProto
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1473f4c
+
+### [CameraRoll] Provide progress when adding items to Tote
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/598bac8
+
+### [memories] Add a History.Clusters.ServiceLatency metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60de37a
+
+### [LensRegionSearch] Enable on MacOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05ebbf1d
+
+### capture_mode_settings: Implement backend of the save-to dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/766bac6
+
+### [Sharesheet] Remove obsolete Share SubMenu code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b62ba31
+
+### [side search] Part 6: Side contents cache control
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a56d6c0
+
+### [Autofill] Simplify width adjustment for password dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd6c4a3
+
+### Rename to use less ambiguous terminology for input method states.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/814940b
+
+### Disable flaky FullscreenControllerInteractiveTest tests on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59264df2
+
+### Fix glitching widget size on small and large devices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e16dcd1
+
+### [AppList Sync] Merge MoveItemToFolder() and SetItemFolderId()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/174ac80c
+
+### [BasicCardDeprecation] Remove ReturnGooglePayInBasicCard related tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eadc236c
+
+### [ozone/wayland] Postponed setting the geometry to the next frame update.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35b606e
+
+### Revert "Fix immersive mode tab strip background color."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b2c8d7
+
+### Move chrome/browser/{chromeos => ash}/device_sync/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f24ade
+
+### Rewrite hung renderer to take into account the entire active page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8219533
+
+### ozone/wayland: delete priority hint debug info
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d2e43f
+
+### ozone/wayland: pass priority hint from viz to browser
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c04f088
+
+### multi-instance: Allow for skipping close confirmation
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52db92b
+
+### [GMNext] Make TabLayout colors dynamic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f4c9c5
+
+### ozone/wayland: fix tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d71f51d
+
+### Update management UI for granular report policies.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91e49d2
+
+### Move chrome/browser/{chromeos => ash}/device_name/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7967dce
+
+### Revert "App Management: Set supported links preference through App Service"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5a700a
+
+### Move chrome/browser/{chromeos => ash}/multidevice_setup/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90799416
+
+### Launch HaTS survey for autofill dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/879cb19
+
+### Window Placement: Require a user gesture to prompt for permission
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec2eb43
+
+### Add a very aggressive warning for anyone still using stretch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a69288c
+
+### Re-enable formerly flaky HoldingSpaceClientImpl tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/785445f
+
+### [side search] Part 5: Side contents delegate overrides
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6437b2
+
+### ozone/x11: set scale factor before initialization.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8f7ed7
+
+### Cros Reporting: Refactored Device Hardware Status.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7f1cd1
+
+### [Autofill] Consistent icons for popup settings
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a1f9fc0
+
+### Picture-in-Picture: Handle space key only if play/pause button is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4343459
+
+### Port chrome/ to color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/398a78c
+
+### [DesktopSite] Request Desktop Site Global Setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34745fb
+
+### App Management: Set supported links preference through App Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75ef7ecd
+
+### [Extensions + a11y] Remove ExtensionLoadWaiterOneShot
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/024e9d8
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1d7bcf
+
+### Remove NOTIFICATION_NAV_ENTRY_PENDING.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66dab13
+
+### [side search] Part 4: Side Search header and close button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0c3e00
+
+### [side search] Part 3: Side Search toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3aefe2ad
+
+### [webauthn] Integrate Conditional UI with autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fcac01
+
+### Cleanup unused DesktopMediaListObserver params
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/784d87d
+
+### [AppList Sync] Refactor on ChromeAppListItem::SetFolderId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/247f69d
+
+### Disable Window Controls Overlay when the Infobar is visible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6d488f
+
+### [memories] Adds localized UI strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7c1b35
+
+### Reland "App Management: Set supported links preference through App Service"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2effdcc
+
+### wayland: fix crashes when starting data drag sessions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ee4360
+
+### Attach Unclaimed device to ARCVM
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/373770c7
+
+### DLP: Change DragDropController to drop if allowed
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd5ce86f
+
+### Reformat files owned by components/sync/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53785e5
+
+### Card Unmask Authentication Selection Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a0d7de
+
+### [Zenith] Show Dummy notifications on pages without a Favicon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba04675
+
+### Print Preview: Migrate advanced settings to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e92e05b
+
+### [Desktop PWAs] Retire attention badging flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/79a6c7d
+
+### Revert "Disable Window Controls Overlay when the Infobar is visible"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcc495c
+
+### [PhoneHub Camera Roll] Add Camera Roll to chrome://multidevice-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/509e55a0
+
+### [STTS] Register all Toolbar Icons as delegates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1147c29
+
+### Files SWA: Enable OpenSniffedFiles for Files SWA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ade7468
+
+### [DesktopSharingHub] Add back button for 1P actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b931c4
+
+### Remove SetNowForTesting() function from holding_space_util
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb31e11
+
+### [side search] Part 2: Navigation handling for Side Search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68dea47
+
+### Add new flag for InteractionSequence steps to always wait for an event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ea672a
+
+### [omnibox] Override action button icon colors; update all batch3 strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ae6418
+
+`);
+              </script>
+            </body>
+        </html>
