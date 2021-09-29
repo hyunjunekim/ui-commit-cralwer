@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-09-29
+### [Extensions] Shorten a couple ExtensionHostTestHelper methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a137f8c
+
+### [RBD] Fix a typo in feature parameter
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7938e7ad
+
+### [memories] Show history list/clusters pages as tabs in chrome://history
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4a77f2f
+
+### ozone: //ui/events: clean up from USE_X11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a62362f
+
+### [Autofill] Set max width for address suggestion instead of the dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d61bae00
+
+### aura/win: adds ability to evict root frame when compositor is hidden
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6727eec
+
+### [memories] Updates chrome://flag entries description and scope
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7cc900aa
+
+### lacros: Do not sync shelf items associated with chrome apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b453aa
+
+### Revert "[reland] [about this site] Add proto for "About this site" info"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0920caca
+
+### Sheriff: Disable VirtualCardManualFallbackBubbleViewsInteractiveUiTest.DismissBubbleUponNavigation on macOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f61723
+
+### NotificationRevamp: Move icon and setting background to NotificationView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf0c4d14
+
+### What's New: Show with NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dcd849
+
+### [Reland] Settings: Convert legacy Behaviors in controls/ folder to Mixins.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6bb7cc
+
+### [lacros shelf] remove crash probe from BrowserStatusMonitor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c1be751
+
+### [dPWA Testing] Improve shortcut override to be scoped
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85b5ae5
+
+### oobe: Cleanup old code after OOBE redesign
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a118cb2
+
+### Revert "Add logs to help debug touchpad stops working issue."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b72cbbe2
+
+### ChipView: fix incorrect font
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95a1c07
+
+### crypto: Fix GetSystemNSSKeySlot / IsTPMTokenReady()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b5e418
+
+### desktop-share-menu: log AnyShareStarted when sharing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d5a964
+
+### Reland "[dPWA Testing] Improve shortcut override to be scoped"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fafb9d
+
+### Update redirect chain initialization in FromNavigationHandle()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/836aa6d
+
+### [omnibox] Remove rich entities flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c495279
+
+### dpwas: Rename approved protocols to allowed protocols
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cee69c6
+
+### content: Remove DeprecatedGetWebContents() in BrowserWithTestWindowTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8041fbc
+
+### flags: remove 3 nearby-sharing flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/153325d
+
+### SetPaintAsActive for frame header OnUpdateFrameColor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/843342b
+
+### Keep initial chip icon if permission prompt is open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0538c8f
+
+### [dirmd] Use metadata mixins
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de11715
+
+### [ozone/wayland] Implemented support for xdg-foreign-v2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/222d6bb
+
+### desk_templates: Move re-used app windows to the right location.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a5814f
+
+### Enable UIA accessibility for UIA_IsControlElementPropertyId
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c097623
+
+### Rename apps::mojom::InstallSource to apps::mojom::InstallReason part 1.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ed2ee0
+
+### [VirtualCards] Add OTP verification dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b7cc3e
+
+### [AppList Sync] Refactor on setting ChromeAppListItem position
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36d0120
+
+### [Page Zoom] Move mock UI to the page info pop up on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66cff6a
+
+### Adding EDU test mode to Lacros - Part 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39a4110
+
+### Host Terminal SSH files within Terminal SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3a572e
+
+### [ntp][modules][photos] Update all strings to signed off version
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/689f156
+
+### [omnibox] Fix incorrect Omnibox metrics types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2766dc3
+
+### Remove GetScreenInfosNearestDisplay Fuchsia special case
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57caa0b5
+
+### [Files SWA] Define Files SWA untrusted page
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdbb911
+
+### Add flags for enabling all page content annotations and persistence
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9081cb3
+
+### [DesktopScreenshots] Remove edit button from bubble by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39a0e01
+
+### [reland] [about this site] Add proto for "About this site" info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d1bf03
+
+### Consolidate users of WindowPinType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67cb0a4
+
+### Improve SwapChainPresenter and DirectCompositionChildSurface labeling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acb124e
+
+### [AutoDark] Add Android auto dark metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd18c44
+
+### Forward more specific `creator_location` in WebView::CreateWebContents.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c67311e
+
+### Revert "Settings: Convert legacy Behaviors in controls/ folder to Mixins."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73b2115
+
+### WebUI: Check-in Polymer3 version of cr_policy_pref_behavior.js.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ff37f7
+
+### [ash-chrome] Migrate WallpaperControllerClientImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2474dbc
+
+### dpwas: Add support for disallowed protocols to settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fae811
+
+### [Messages] Introduce confirm save card dialog to save card messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d667db1
+
+### ax_mac_merge: merge accessibilityPlaceholderValue implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a82be65
+
+### Settings: Convert legacy Behaviors in controls/ folder to Mixins.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70f61bb
+
+### Rewrite the final usages of GetAllFrames in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed66163f
+
+### [Categorical search] Add documentation for score normalizer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a090add
+
+### [dPWA Testing] Fixing manifest update false trigger with identity update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b08ea58
+
+### Remove incorrect SetDefaultButton in PluginVmInstallerView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/637f12b4
+
+### Update bluetooth device icon and dialog title colors.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/216da812
+
+### [lacros shelf] BrowserAppShelfItemController: load menu item icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/399d2eb
+
+### [memories] Remove chrome://flags/#memories-debug
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/caec202
+
+### Revert "[dPWA Testing] Improve shortcut override to be scoped"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7995e5
+
+### [cr-tooltip-icon] Have named slot instead of default one
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc7f21a
+
+### NotificationRevamp: Add app icon view.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1edb959
+
+### sessions: add Profile* to restore callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/678ed16
+
+### Inline private used-once TranslateStringInternal() in input_method_util.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a54113f
+
+### Checkpoint: reorg of color provider initialization.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e959940
+
+### display: Delete unused display_list.mojom
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37447d3b
+
+### [ozone/wayland] Added a warning on forcing the DSF.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8ea1f2
+
+### [dPWA Testing] Deflake 'Create Shortcut' installation action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d060597c
+
+### Removing logic uses of server_status.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c78a5a
+
+### Expire safe-browsing-client-side-detection-android and enable-safe-browsing-per-profile-network-contexts
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f27ec023
+
+### Add a missing ConvertWindowPointToViewport() call for dragenter events.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50cf3ce
+
+### [lacros shelf] manage shelf using BrowserAppInstanceRegistry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61ec545
+
+### ash shelf: Refactor and add tests for legacy camera app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0adffd
+
+### Clean up checks for isChild for the supervised user error page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72836fd
+
+`);
+              </script>
+            </body>
+        </html>
