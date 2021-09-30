@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-09-30
+### ash shelf: Refactor and add more tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31ae9dd
+
+### OOBE: Update OS Install flow when started from welcome screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/707cad3
+
+### [Lacros] Use enum to represent the permission type in app service.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3466004
+
+### [signin] Remove AccountKey::IsValid()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81555ed
+
+### display: Remove current display from DisplayList
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23690d9
+
+### arc: Add feature flag to allow to keep ARC data during ARC turn-off
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c32e962
+
+### Lays down some foundational work for moving most of BrowserAccessibility implementation to AXNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b7ad9c3
+
+### [Switch Access] Remove flag for enabled Point Scanning feature
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4aee0ebb
+
+### [webui] Propagate user prefs to WebUI bubbles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce7b180
+
+### [Lacros] Don't show sync settings warning when Ash browser unavailable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0e2af1
+
+### ChipView selected text to baseline colors.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbb3abf
+
+### Settings: Rename _behavior.js to _mixin.js for a few Mixins.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11bd58cd
+
+### Use EGL_KHR_no_config_context for config compatibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5069d7
+
+### Fix sizing logic to properly respond to widget resize events.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbc8b5e
+
+### IWYU: add vector for std::vector in LinuxInputMethodContext
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6a57e2
+
+### oobe: Do not initialize partition for showing enrollment blocking error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e8178c
+
+### win: converts feature to using feature params
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/011626f
+
+### Inline private tiny used-once MaybeGetLegacyXkbId() in InputMethodUtil.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3270f2c
+
+### Revert "Fix Event to copy target"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f94358b
+
+### [Stylize] Add special accessibility description for 'Create card'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba7d16a
+
+### Revert "Add a missing ConvertWindowPointToViewport() call for dragenter events."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76f1e01
+
+### Fix bluetooth battery icon and text colors for dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da453d0
+
+### RawDraw: add raw draw flag in chrome://flags page
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0f7d7e
+
+### Save Projector files in the download directory in simulator mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6785dd
+
+### Fix cr-button disabled text color for dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/541d78b
+
+### Inline used-once TranslateString() into GetInputMethodLongNameInternal()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8b33dc
+
+### Don't enable UIA accessibility for non web content.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6438e4
+
+### [SH][Blink] Remove the TextFragmentColorChange feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/96ac1108
+
+### [memories] Refactor feature flags, "Memories" => "Journeys"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a142e2c
+
+### Mac: Remove ScreenTime integration (hopefully temporary)
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c254926
+
+### [GMNext] Fix omnibox suggestion colors in dark mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9118993
+
+### [Sharesheet] Fix Sharesheet button missing grey focus.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13e8204c
+
+### [FilesBanner] Update cr-button focus ring and remove tabindex
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5832b26
+
+### lacros: Implement close context menu for chrome apps in shelf.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c12b25b
+
+### [ChromeOS] OOBE: Migrate SyncConsent to Polymer3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ef55c
+
+### [Sharesheet] Remove obsolete more-actions code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a32f9d
+
+### Clipboard: Check for empty image when reading from Mac clipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddb22f5
+
+### [fuchsia] Fix about:version
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ca16c8
+
+### Configure menus with rounded corners for Windows 11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01d29e9
+
+### Revert "Migrate PassworManager classes to PasswordStoreInterface."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66a191d
+
+### vsplit: move kVerticalSnap flag from ash to chromeos
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1fd3bcb
+
+### Migrate PassworManager classes to PasswordStoreInterface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a142c5b
+
+### [Fuchsia] Fix InputMethodFuchsia to handle inputmode=none
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d354de6
+
+### Sheriff: Disable VirtualCardManualFallbackBubbleViewsInteractiveUiTest.DismissBubbleUponNavigation on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c465426
+
+### [color pipeline] Add ColorProviderSource/Observer to WebContents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/855c4bf3
+
+### PiP: Ensure controls show up on focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04fd272
+
+### [signin] Remove reauth duration histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0d135d
+
+### IPH: Make Mac z-order consistent with other platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e263944
+
+### midi: Add flag to disable the browser process components
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/679f59d
+
+### Remove SystemWebAppDelegate::IsUrlInSystemAppScope()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8692e0e
+
+### Move flaky InteractionSequence test to interactive ui tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f666e64
+
+### [Passwords] Introduce add password button in Settings on Desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e172836
+
+### Move chrome/browser/{chromeos => ash}/net/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d57c496
+
+### Fix NPE in ChromeOmniboxNavigationObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/616bce7
+
+### Disable OfferNotificationBubbleViewsInteractiveUiTest.Logging* on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fda99b6
+
+### [CrOS Bluetooth] Open Bluetooth settings on click.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/813a8c8
+
+### Highlight API: Add support for HighlightMarkers in UIA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b2450f
+
+### Reland "[dPWA] Enabling web app window prefixing by default"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ca06ab
+
+### Disable ProfilePickerInteractiveUITest.NavigateBackWithKeyboard on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a2feb1
+
+### Fix PiP window sizing for non-1 scaling factors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eb809c
+
+### [WebID] Clear dialog view on window closure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69d46add
+
+### Disable DismissBubbleUponNavigation on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5525e45
+
+### Enables AX computed node data throughout the codebase
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d83c910
+
+### Intents: Change intent picker to use all-or-nothing link capturing logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef28727
+
+`);
+              </script>
+            </body>
+        </html>
