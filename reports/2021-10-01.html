@@ -1,0 +1,288 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-01
+### ozone: evdev: add Logitech mice to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ab96eb
+
+### Media App: Delete VideoPlayer Chrome app on Chrome OS.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f2e2f8
+
+### [Android][Passwords] Remove feature for launched filling sheet
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e04c813
+
+### Refactor DownloadItemView::GetIcon "unreachable" branches
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58256ba3
+
+### [Sheriff] Disable multiple fullscreen tests on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aafc5ec4
+
+### [Launcher] Move the string manipulation utilities into a helper file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a8abbb
+
+### Move FeaturePromoBubbleParams to chrome/browser/ui/user_education
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87d087e
+
+### DPWA: Clean up BookmarkApp related fields in ExtensionSyncData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d15d3e
+
+### OOBE Consolidated Consent: Add GuestTosScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fa195f
+
+### ash: Rename feature AppListBubble to ProductivityLauncher
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b661f380
+
+### Update in-progress download a11y strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78c5c27
+
+### Got rid of unused method IsCellOrHeaderInAriaTable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05ed1f6
+
+### [Page Zoom] Add the feature flag for page zoom to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d9ce86c
+
+### Remove unused headers in settings_ui.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10a99165
+
+### [Extensions] CTS: Integrate feature flag to start new site access menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/791951d
+
+### [fuchsia] Fix some Fuchsia conditionals in grd files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e22ca0
+
+### Remove splitSettingsSyncEnabled mention from the settings_ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/610e4d1
+
+### Privacy Review: show only to non-managed users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39f337f
+
+### [CrOS Bluetooth] Bring dialog up to spec
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d01b4d
+
+### Download progress message UI : Fixed description text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18012c7
+
+### Revert "Add a flag + SWA Config for chrome://media-app to handle audio."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/37e9c2c
+
+### content: Remove DeprecatedGetWebContents() call in BrowserNavigatorTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86c2867
+
+### [omnibox] Make the manage passwords pedal require only "passwords"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4ec753
+
+### Implement CreateImageFromGpuMemoryHandle for Wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ff77ac
+
+### Retire the OmniboxCompactSuggestions flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1bdf658
+
+### Re-enable BrowserNavigatorTest.ReuseRVHWithWebUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98fd9d6
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c90b35
+
+### [suggested files] Swap the new flag from Drive to local.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b8ea02
+
+### Policies for cert selector on multiple matches
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69f72adb
+
+### GLSurfaceAdapter::PreserveChildSurfaceControls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc22bca
+
+### [Files quick view] Update preview data passed to sandboxed environment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91a5e61
+
+### [DesktopSharingHub] Fix UAF when share-context-menu is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef90a60
+
+### Revert "[fuchsia] Update strings provider to allow access to about:settings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52b5ffa
+
+### Retires `GetHyperlinkFromHypertextOffset` in favor of the hypertext implementation in AXNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c6ea30
+
+### [oobe test api] Add loginWithPin function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b11790f
+
+### [fuchsia] Update strings provider to allow access to about:settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9364b0
+
+### Use semantic colors in network icons.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93a5fd8f
+
+### dPWA: launch tabbed apps in existing windows on current display only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/371de26
+
+### [Lacros] Retire WebAppProvider::GetDeprecated call
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/737598ce
+
+### Sort user-facing "input methods" lists by localised display names.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f169b36
+
+### dpwas: Adjust WebAppFrameToolbarView height and y-pos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c94631c
+
+### Update base::DoNothing() / base::NullCallback() to use a type tag.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0fc463
+
+### [Messages] Migrate Window Error and Module Install infobars to snackbars
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dce39d4
+
+### Reland "[mparch] Add a test that prerender doesn't close the safety tip"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a673dc22
+
+### desks: Expose desks trackpad experiment to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b7a3bc5
+
+### Revert "Remove GetScreenInfosNearestDisplay Fuchsia special case"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf68c4f
+
+### ozone: //chrome/browser clean up from USE_X11
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/213ddfa
+
+### [omnibox] Eliminate OmniboxPopupModel by merging into OmniboxEditModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3da9d91
+
+### Side Search: Auto focus on side panel when it is open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff6f860
+
+### Add Win11 Style Menus to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/58d4a6e
+
+### [tab search] Close the IPH bubble immediately when showing tab search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/246fe0a
+
+### [fuchsia] Use platform-agnostic implementation of OSExchangeProvider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed2650c
+
+### [tracker shelf] Implement activation in BrowserShelfItemController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/700a208
+
+### Revert "Don't attempt to upgrade zero-suggest autocomplete inputs to HTTPS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c6d167
+
+### Widget: use icon that cannot be manipulated by launchers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e50b08
+
+### desk_templates: Allow launching ARC apps p4.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a15dc0
+
+### Settings TypeScript: Migrate controls/ folder, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56640da7
+
+### [CAS] Show Device Signals on internal page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2b66c2
+
+### Rename AppUpdate::InstallSource to AppUpdate::InstallReason(part 2).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3f71bd
+
+### display: Move display orientation and layout util from ash/ to chromeos/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/917d66e
+
+### [AppManagement] Use app service permission type enum.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f120e0e
+
+### Don't attempt to upgrade zero-suggest autocomplete inputs to HTTPS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5274c7
+
+### Promo code offers in manual fallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6684d2f
+
+### [omnibox] Eliminate OmniboxEditModel::popup_model() and update all tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e21a7f9
+
+### Avoid fallthrough to the global NativeTheme in CastToolbarButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da74de2
+
+### Add unit tests for UMA and completing capture on Lens Region Search.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3599ef7
+
+### [a11y] Set focus behavior of non-interactive ImageButton to NEVER
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2026de2
+
+### Rip out most of NativeTheme::ColorId, leaving only what's still used.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54da859
+
+`);
+              </script>
+            </body>
+        </html>
