@@ -1,0 +1,212 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-02
+### Use gfx::Rect/Size/Point/Vector2d[F] in blink platform paint and compositing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b4192a
+
+### [X11] Reset frame hints when using server side decorations
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06943dc
+
+### [side search] Add Enterprise policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5dd0cd
+
+### evdev: Add methods to detect number pads to EventDeviceInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea0a3070
+
+### [@layer] Add an about:flags entry for cascade layers
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/50eae47
+
+### Revert "[permissions] Fix chip UI interaction with the omnibox"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1fdee5
+
+### [Extensions Click-to-Script] Add site access button in toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c520b5d9
+
+### Disable multi-signon when lacros is primary.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0378134
+
+### flags: remove chrome-share-highlights-android & chrome-share-screenshots
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b4e7188
+
+### vsplit: Rename left/right snap to prim/secondary in chromeos and exo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ffc3961
+
+### Card Unmask OTP Input Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d3fdd5
+
+### [dPWA Testing] Adding intent picker (launch icon) action.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10952194
+
+### Make helper macros behave consistently for //content/public UserData types
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/383df85
+
+### Site Storage Controls: Combine clearing data & resetting permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1a55d5
+
+### Use hardware-accelerated clip for rounding TileView icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71a79da
+
+### Disable OfferNotificationBubbleViewsInteractiveUiTest.Logging_LostFocus on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f871960
+
+### Add support for chrome://net-export in WebLayer to debug network problems.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b560b7
+
+### [AppList Sync] Refactor on setting ChromeAppListItem name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/843b5f9
+
+### Migrate chrome/browser/ash/tether/ to namespace ash::tether
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/587c012
+
+### Fix use-after-free in SelectFileDialogImplPortal::CancelOpenOnMainThread
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e17e0e8
+
+### Remove omnibox-default-typed-navigations-to-https flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2512cd05
+
+### Rename DocumentServiceBase to DocumentService.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fb887f
+
+### What's New: Account for multiple milestones
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/438095e
+
+### Add feature flag for extension manifest version reporting.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/49c55abf
+
+### Choose OzoneBacking over GLImageBacking for CrOS Ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bc1f7f
+
+### Convert a few sites to TimeDelta factory functions by hand.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59b0fc08b8
+
+### Clipboard: Remove or transition uses of clipboard_test_util::ReadImage
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a20c157
+
+### Migrate "base::TimeDelta::FromX" to "base:X".
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5a38ed
+
+### Fix DeleteSurroundingText behavior in Lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4cb22e0
+
+### [AppMenu] Mark skipEquality to true for AppMenuClickHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb10a6ac
+
+### Fix primary-toggle text color on CrOS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72c94a8
+
+### Mark PrintPreview.PrintDocumentSize.* histograms as obsolete.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/462bdfc
+
+### Change vulkan.h to vulkan_core.h in ui/ozone
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f84873a
+
+### Reland "Migrate PassworManager classes to PasswordStoreInterface."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b369163
+
+### dpwas: A few small updates to protocol handler prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e201876
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c13c5bc
+
+### WebUI: Introduce I18nMixin, to be used instead of I18nBehavior.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3a3021
+
+### Removes flag for launched a11y image labels feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7ae54be
+
+### [Snooze IPH] Integrate snooze behind feature flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba401d05
+
+### Move and rename c/b/chromeos/*chromeos* to c/b/ash/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e656db
+
+### [MerchantTrust] Add store icon and related IPH to omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6942d6
+
+### [Side Search] Add IPH promo configuration and invocation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adc91e05
+
+### Ensure View subclasses call View::NotifyAccessibilityEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c952d4e
+
+### Revert "IPH: Make Mac z-order consistent with other platforms"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3679119
+
+### Cleanup/extend some Butter-related flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f2741703
+
+### [permissions] Fix chip UI interaction with the omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c7fb71
+
+### [side search] Do not show side search if the side panel SRP is unavailable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5eb65b
+
+### [ash] Change SplitSettings flag to control SyncSettingsCategorization
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e112ecc
+
+### Revert "Promo code offers in manual fallback"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6ebc6f
+
+`);
+              </script>
+            </body>
+        </html>
