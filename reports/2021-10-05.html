@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-05
+### Side Search: Implement metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec0c3d1
+
+### [FilesSWA] Don't send FSP mount UMA metrics in background page for SWA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9003511
+
+### [AF] Create promo code content for offer notification bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b79637a
+
+### [Read Later] "Add to Reading List" in app menu
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7e9cd82
+
+### [MultiDevice] Add a DoesMultiDeviceSetupClientExist metrics and logs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fdb8c9
+
+### Add a flag to show dialog for MixedContent download
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/058f4ae8
+
+### [Lacros] Add stability 'stable' switch choice
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c36aeeb
+
+### Migrate ImmersiveModeController away from kWindowPinType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a341db0
+
+### Move the remaining top-level files in c/b/{chromeos => ash}/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae84606
+
+### arc-notifications: Set background color based on activation status
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17a7e6b
+
+### Avatar Refresh: Update preview logic and cleanup
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/554a812
+
+### Side panel: Disable drag and drop if editing bookmarks is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff5551a
+
+### Show "New tab" item for Guest mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/543b0ce
+
+### dPWAs: Move File Handling permission prompt to before window creation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e8f26e
+
+### Recommit presentation area into InkVisual when swap chain is recreated.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a39f454
+
+### Remove expired flags from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e581e21d
+
+### Side panel: Add cut, copy, paste for bookmark context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07723eaa
+
+### [AutoDark] Add feature engagement system logic to user education message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c6cadc
+
+### Revert "Tests web app is correctly registered with different file extensions."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bb96fa
+
+### Remove DeprecateMenagerieAPI feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a40ed45
+
+### NoteTaking: Use AppService not WebApp Registrar so it works in LaCros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7477b68
+
+### Revert "Choose OzoneBacking over GLImageBacking for CrOS Ash"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cfd3e26
+
+### [ozone/wayland] Added a DCHECK on setting invalid surface scale.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2262326
+
+### Disable FullscreenControllerInteractiveTest.MouseLockAndFullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fa03a1
+
+### Remove unused param in l10n_util's GetAndActivateLoginKeyboardLayouts().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df6620b
+
+### [VirtualCards] Add progress bar dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/756fc6d
+
+### Fix quick unlock PIN keyboard error text color for dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b844bb6
+
+### [webid] Move the data sharing consent below the continue button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcf7362
+
+### [CrOS Bluetooth] Update bluetooth icon to use BluetoothDeviceProperties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c60487a
+
+### [DesktopSharingHub] Use platform specific share icons for Mac/Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7695791
+
+### Update MenuControllerCocoa to use ColorProvider for painting
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20262ce
+
+### Certificate Manager: Migrate from I18nBehavior to I18nMixin.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37853ec
+
+### Annotate the search query instead of the full text for SRP pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73e831ae
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddbbbbb3
+
+### [FilesSWA] Fix indentation of providers.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f21c939d
+
+### Update font for NotificationInputContainer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9d5024
+
+### [PhoneHub Camera Roll] Add rounded corners and video icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/022c3ca
+
+### ozone: //ui/views: clean up from USE_X11 2/2
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3741d2
+
+### Window Placement: support ScreenInfos plural in iframes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a35a268
+
+### [Passwords] Introduce add mode is password_edit_dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b59662
+
+### Add region search support for non-Google default search providers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/987b51a
+
+### Always use 'New Tab' when saving NTP to bookmarks for NTP.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79ae7d7
+
+### Fix: WCO apps should ignore app-region when CCT or InfoBar are visible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a743c2
+
+### projector: Add ProjectorAppClient::Observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d3423b
+
+### Revert "Add region search support for non-Google default search providers."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b16b5a1
+
+### Tests web app is correctly registered with different file extensions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0fd35f
+
+### [omnibox] Factor selection logic out of model; simplify & combine tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9341c2
+
+### sessions: moves ExitType out of Profile into separate service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0378e4
+
+### Fix potential cycle in Lacros a11y tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0169c5
+
+### [AF] Add option of Google super G to icon with separator view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b6d4de
+
+### [AutoDark] Add checkbox to appmenu item and update text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/732d4cd
+
+### desktop-share-hub: update background color on theme change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6a6794
+
+### TimeDelta factory function migration.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a366e4f
+
+### Allow emergency-close of non-critical promo bubbles in a  screen region
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5d5844
+
+### [reland] aura: test for change to NativeWindowOcclusionTrackerWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87622af2
+
+### [Clank CBCM] chrome://management on Clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9784992
+
+### Enable AppSessionService for lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1463d041
+
+### Disable flaky PromoCodeOffer test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da64f68
+
+### [AppIdentity]: Fix crash during uninstall.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc1247c
+
+### Open Projector App at the end of recording.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71e5581
+
+### NotificationRevamp: Refactor and fix header style
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af2c8f80
+
+### Mark BrowserFocusTest.PopupLocationBar as flaky on Linux.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/608c3d9
+
+### [Page Zoom] Add page zoom behind experimental UI on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1363e4a
+
+`);
+              </script>
+            </body>
+        </html>
