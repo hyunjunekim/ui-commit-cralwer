@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-06
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56a5104
+
+### [Mac A11y] Set the anchor_node_id and focus_node_id on the selection action.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/155091e
+
+### A <label> should not interfere with posinset/setsize computations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d87f33e
+
+### Expose increment/decrement actions in ATK.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f7e1057
+
+### Side Search: add pressed state and a11y texts to toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/155ec2b
+
+### Update grouped notifications UI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7ddd6f
+
+### Apply input device settings in LibInputEventConverter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06b59e7
+
+### Add AccessCodeCastEnabled & AccessCodeCastDeviceDuration policies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf99d99
+
+### Color provider init checkpoint: wire up custom themes.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5e4985
+
+### Prepare EventConverterEvdev class to delegate input settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51d9aee
+
+### Adding OWNERS to voice search-specific directories.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a3b799b
+
+### [Parent Access] Scaffolding code for the Unified Parent Access Widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73087c1
+
+### [ntp] Remove unused MV APIs from instant NTPs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c86cfc5b
+
+### [ntp] Remove Chrome Colors from instant NTPs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dd8808
+
+### Fix task manager multi-DPI size restore
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40a813a
+
+### Revert "Color provider init checkpoint: wire up custom themes."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c161ecdb
+
+### TimeDelta factory function migration.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53fd6ee
+
+### [paprika] make getactivetextinputcontrollayoutbounds work on ChromeOS (mostly)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/549e856
+
+### OOBE: Add pre-enrollment TPM check for devices with dynamic TPM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f101da
+
+### Consolidate usage of kWindowPinTypeKey in chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16b11ea6
+
+### System-apps: Fix blink by allowing a dark theme to be set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c39e2d
+
+### Hats Next: Move settings triggers over to use in-built same-origin logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b1f011
+
+### Ensure user sees chooser dialog when navigating to a different browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/098319b
+
+### Add StableVideoDecoder and StableVideoDecoderFactory mojo interfaces
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a75539b
+
+### [Categorical search] Add score normalization algorithm
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee86683
+
+### Refresh AppSearchProvider app list only when UI is open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c67aa8f
+
+### Preserve Surface frame timestamp attrib on resize
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a863a2
+
+### Introduce tab_strip_ui::ExtractTabData()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbe5a70
+
+### [side search] Fix focus issues and auto-open behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e3381d
+
+### System-apps: Duplicate windows no longer stack
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cef86733
+
+### [FilesSwa] Don't record device metrics when Files SWA enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83bc178
+
+### [Reland] Don't attempt to upgrade zero-suggest autocomplete inputs to HTTPS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cf5200
+
+### Open input device using libinput
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54e66fe
+
+### [Power Bookmarks] Add autodismiss behavior to the save flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6d16a2
+
+### [Profile creation] Delegate toolbar creation to DiceSignInProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1be7238
+
+### arc-notifications: Use AshColorProvider for getting color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81b53f7
+
+### [Files app] Release Object URLs generated in Quick View
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ee55a0
+
+### Handle pointer motion event from libinput
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40f5305
+
+### Show warning if needed on video capture stopped
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dba025
+
+### [FilesSWA] Record FSP mount UMA in event router when SWA enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c8eee7
+
+### [Start] Enable TabCount button to access GTS when there isn't a tab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f311d45
+
+### lacros: Add a transformation layer between shelf ids and sync ids.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e62383
+
+### QA Cleanup: Remove V2 flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0eb8d51
+
+### [CrOS Bluetooth] Add request pin functionality
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8790208
+
+### [cros login]: Make OobeTestApiTest support lazy WebUI loading.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13f5752
+
+### Change accessible role of OpaqueBrowserFrameView to Pane
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ca7c9b
+
+### Reland "Disable Window Controls Overlay when the Infobar is visible"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/078bc8b
+
+### Revert "[X11] Reset frame hints when using server side decorations"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4eb695f6
+
+### [mparch] Use PrimaryPageChanged in OfferNotificationHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f3e85a
+
+### Remove temporary QuotaManager handling in some extensions tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46846ca4
+
+### [Webfeed]: Add sort options panel to web feed header tab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8291050
+
+### [Bluetooth] Add Passkey prompt dialog for bonding.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4d1cf30
+
+### WebUI Rebrand: Update menus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52b5ac1
+
+### Add a11y name for tab preview image
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6e7730
+
+### Handle scroll event from libinput
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7769398
+
+### evdev: collect metrics for numberpad usages
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2348a2f
+
+### Add result code to complete capture callback to describe exit.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/227443a
+
+### Handle touchpad button event from libinput
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f38e678
+
+### multi-instance: Use Espresso for click on popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a052135
+
+### Projector: Add ProjectorAnnotatorController interface and impl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd2c525a
+
+### [Snooze IPH] Add metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77be62d
+
+### Color provider init checkpoint: wire up custom themes.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c28cd8f
+
+### Add a LibInputEventConverter as a new EventConverter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb0a9d8
+
+### Add a debug metrics to grammar checker
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b93c55d23
+
+### support-tool: Create chrome://support-tool WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/055e486
+
+### dpwa: Remove extensions/common dependency from web apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a20c07cd
+
+### Revert "evdev: collect metrics for numberpad usages"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a91289
+
+### Enable WipeDataOnChildAccountSignin by default.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0e5b39
+
+### Fetch events from an input device
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99aa843
+
+### personalization: Sync OnProfileCreated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a88b7206
+
+### Do not use square display in ash unittest part 6
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a97d1e5
+
+`);
+              </script>
+            </body>
+        </html>
