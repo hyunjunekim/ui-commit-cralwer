@@ -1,0 +1,400 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-08
+### Remove not used GLImageSurfaceTexture
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/917d86f5
+
+### Revert "[Reland] Don't attempt to upgrade zero-suggest autocomplete inputs to HTTPS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24feb75
+
+### [IncDW] Show Warning when downloading file in Incognito
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a8051b
+
+### IWYU: use of std::vector in card unmask code requires its include.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41e7689
+
+### sharing: wire all upcoming features to #upcoming-sharing-features
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f91a6e4
+
+### What's New: Close the tab if load fails, attempt 1x/milestone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b854e35
+
+### [unseasoned-pdf] Add chrome-untrusted://print
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc7753b
+
+### oobe: Migrate ManagementTransition screen to Polymer3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f989b35
+
+### [MerchantTrust] Add configurations for page info and IPH
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9b83ba0
+
+### Don't show IPH bubbles in inactive windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ac1d77
+
+### [omnibox] Updated strings and hover behavior for expand list button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ffb474
+
+### ozone/wayland: Skip vgem render nodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd7436b
+
+### Add CookiePartitionKeychain parameter to CookeManager.GetCookieList.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3c58f7
+
+### [Ozone/Wayland]Add surface states tracking to WaylandSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38c4c82
+
+### Delete SyncStatusActionType::kSignoutAndSignin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0426ebfe
+
+### [MerchantTrust] Highlight "Store info" row if opened from store icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab785a6
+
+### Introduce NewWindowDelegate::NewWindowForWebUITabDrop()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40900a3
+
+### AnimationBuilder: Fix OnEnded callback for zero duration animations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebbb5f6
+
+### [Dent] Make turn sync on helper compile with mirror
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/134e048
+
+### Allow disabling incognito menu item in tab switcher long press menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac497ae
+
+### [App Management] Remove use_browser from list of overlapping apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a77647
+
+### Remove not used GLImage::ScheduleOverlayPlane
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87925ec
+
+### [dPWA] Add flag for PWA windows uninstall integration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/36434484
+
+### [omnibox] Allow middle-click on action buttons and convey disposition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5364cc0
+
+### [VCN] Add progress bar dialog on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2470331
+
+### Download Home: Removed prefetch user settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1abcb14
+
+### OOBE CloudReady: Update strings for CloudReady
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2a8bdd
+
+### Record impl commit finish time on impl thread
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/847ff3c6
+
+### Record the amount of the time the shelf is visible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b04c2125
+
+### Replace TimeDelta::FromXXX() with namespace-scope functions.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b42abc4
+
+### [Categorical search] Add GetNormalized to MrfuCache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9da0d2
+
+### [realbox] Add Pedals to Realbox UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4dcd71
+
+### Reland "Promo code offers in manual fallback"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36837de
+
+### [ntp] Support queryless doodles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fbe4fd
+
+### Revert "notifications-refresh: Update the actions buttons"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f35759af
+
+### Introduce gfx::OverlayPlaneData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16b07386
+
+### ChromeOS: Floating window chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d4a103a
+
+### [CAS] Make SignalsService and SignalsDecorators Asynchronous
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c968cd3
+
+### [AF] Add tooltip and accessible text for copy promo code button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57549a5
+
+### [Coupon] Add IsUrlEligible function to CouponService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50cd5eb
+
+### [LongScreenshots] Add flag variations for autoscroll support.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b6f99330
+
+### Fix dark mode colors in `profile_discovery_list_item.html`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd63b43
+
+### GetActiveDeskIndex for a window assigned to all desks or unassigned.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0289b63
+
+### [CrOS Bluetooth] Update Bluetooth device battery info
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/948439f2
+
+### Reland "Add region search support for non-Google default search providers.".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4888449
+
+### Revert "[Zenith] Open the Cast feedback page from Zenith context menu"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eb207d
+
+### [Launcher] Add categories to search results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d53d70
+
+### Move ChromeShellDelegate::CreateBrowserForTabDrop() to ChromeNewWindowClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc37460
+
+### WebUI tab strip: Set kWebUITabStripContextMenuAfterTap default value
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7167ceeb
+
+### Fix dark mode colors in `confirmation_code_page.html.`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f77100a
+
+### Add a flag to enable libinput to handle touchpad
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/932c80a
+
+### What's New: Add a new feature param to control feedback button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f15f723
+
+### [Zenith] Open the Cast feedback page from Zenith context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33933cc
+
+### Reland "Add result code to complete capture callback to describe exit."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8b0e20
+
+### [Android][Refactor] Consolidate code related to color_helpers.cc 1/2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39110b6
+
+### [Emoji picker] Slightly increase padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/455a762
+
+### Move app icon related files to c/b/apps/app_service/app_icon directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57fb70db
+
+### Adds notification-permissions-setup-dialog to match the new UI design.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21161283
+
+### [Read Later] Menu items for Reading List and Bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4946cd1
+
+### [Passwords] Show store picker in add password dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdbad90
+
+### [AutoDark] Add dialog when user disables feature per-site multiple times
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c54c20c
+
+### sheriff: Disable WebAppBrowserTest tests on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24a3489
+
+### [side search] Add crash handling to side search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37b1e3b
+
+### Various WebUIs: Migrate from WebUIListenerBehavior to a Mixin.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae3f9d6
+
+### [AutoDark] Replace string place holders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb9dcd5
+
+### Prepare relaunch to update feature for 100% stable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23be872
+
+### Clean up PasswordStoreFactory::GetForProfile* methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d504d8
+
+### Split local web approvals flag and expose in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/344fa82
+
+### Remove "stretch" from the crostini container install flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0c0e0d1
+
+### [DesktopSharingHub] Record metric when user clicks app menu sharing hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6f4fa3
+
+### ambient: add http request headers option
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c921720
+
+### [CCT] Add flag for disabling resize by user gesture
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f82007c
+
+### [memories] Fixes a bug with Journeys visibility toggle on page load
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b236c41
+
+### Revert "[Coupon] Add IsUrlEligible function to CouponService"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/137bd75
+
+### Remove wait for idle run loop in holding space drag tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/707788e
+
+### [Power Bookmarks] Implement save-flow UI changes according to new spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/673f20d
+
+### Allow WebProtect for non-affiliated users on LaCros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b185124
+
+### feed: move android native code to module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef8ddd5
+
+### Revert "Enable Views OnPaint() A11y DCHECKs"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32985fb
+
+### sharesheet: ensure close callback is run on destruction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a232c3e
+
+### Add histogram to record shelf menu actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fb82d50
+
+### Remove Kid management scopes from allowlist of unconsented access.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4118c1c
+
+### [Sharesheet] Fix crash due to use after free.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/799805b
+
+### Revert "Reland "[X11] Reset frame hints when using server side decorations""
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/908d1fa
+
+### notifications-refresh: Update the actions buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e491f2c7
+
+### Do not use square display in ash_unittests, display_unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5025cc7
+
+### Add a Sentinel UMA for Windows 11 Style Menus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17794b0
+
+### GCC: fix brace-initialization with NoDestructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52a9607
+
+### Make search field use the same default as cr-input for input-placeholder-color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8625266
+
+### [Files app] Add Quick View closure types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5a9377
+
+### Revert "Reland "Add region search support for non-Google default search providers."."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3e61fd
+
+### Reland "Enable Views OnPaint() A11y DCHECKs"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a62d2ce
+
+### Projector: Fix edge case with multiple annotators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8e5b86
+
+### Input: Create feature flag for touchpad haptic feedback
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b294999
+
+### [Switch Access] Update final strings in Setup Guide
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bae81bc
+
+### [AutoDark] Add metrics for changes from site settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e8fa444
+
+`);
+              </script>
+            </body>
+        </html>
