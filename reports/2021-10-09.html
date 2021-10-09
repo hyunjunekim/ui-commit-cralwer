@@ -1,0 +1,240 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-09
+### DPWA: record num_of_default_apps in NTP tiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35ee995
+
+### WebUI Rebrand: Update card styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/024634c
+
+### Sheriff: Disable flaky tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d61360a4
+
+### Add feature flag: EcheSWADebugMode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fac2819
+
+### [UIA] Expose generated image annotation to UIA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0a001b
+
+### Remove real time extension request feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a47ed3f
+
+### Eliminate unnecessary reference to window property.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8db0d1c
+
+### Convert ink-drop animations to use AnimationBuilder.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b246a2
+
+### Plumb color space from MediaCodec to MCVD.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3ec05cf
+
+### [CAS] Retrieve Model And Manufacturer Names From SysInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0754524
+
+### Run migration when ash is restarting to apply flags from chrome://flags.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d9adff
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef83328
+
+### Clean up relaunch to update feature code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31c7b090
+
+### Expose text-input-type on date and time related objects
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56a96ba
+
+### Consolidate EXPECT_* for ui/gfx/geometry types
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6786d4
+
+### prerender: Create feature flag for Omnibox trigger prerendering
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4035ebb
+
+### Make PaymentRequest a DocumentService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a819f7
+
+### Fix cellular setup base page title color for dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c01a692
+
+### Side Panel: make sure correct tests are run when side panel is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dde0adb
+
+### [suggested files] Add some ItemSuggest metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83ce86d
+
+### Side Panel: update focus rings to have correct contrast and respect accent color settings.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95a3da50
+
+### Adding URL redirect for Lacros (Flags) Part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a605127
+
+### [AF] Add metrics for copy promo code button in offer notif bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8218c28
+
+### vsplit: snap_state: Support top/bottom snap from window title bar
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de493a2
+
+### Move metrics related files to c/b/apps/app_service/metrics directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/811fe4f
+
+### Reland "Reland "[X11] Reset frame hints when using server side decorations""
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d45b599
+
+### app-service: Fix ARC app is not launchable from tast.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a855eb4
+
+### Fix ClosedTabCache issues with beforeunload events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f53a48
+
+### Replace task-related headers to their equivalent in base/task/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d7d7092
+
+### Revert "[Ozone/Wayland]Add surface states tracking to WaylandSurface"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df910b9
+
+### Fix SIM lock dialog error colors for dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/259214a
+
+### [segmentation_platform] Updated version number for discrete mapping fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa3467e
+
+### Implementation of preconfigured desk templates policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc552c6
+
+### [CrOS Bluetooth] Implement connect, disconnect and forget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd9448c
+
+### [CredManager] Add safety check bucket to ManagerPasswordsReferrer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90d14e1
+
+### [AutoDark] Record UKM for AutoDark
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ec27d7c
+
+### [Nearby] Disable BG Scanning UX changes when hardware is not supported
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50beb83
+
+### [mparch] Use PrimaryPageChanged in PageInfoBubbleViewBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3429958
+
+### Add Lacros support for text to speech: unify voices.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fcf6f0e
+
+### Add default-enabled feature flag disabling stacked tabs.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7d8cf47
+
+### Allow drag and drop of image from browser to CrOS FilesApp
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb8bf50
+
+### Sheriff: Disable flaky test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d0249c
+
+### Fix roaming icon color in dark mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8dd3cfa7
+
+### Fix add SMB file share error icon and text colors for dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b089e5
+
+### [Sharesheet] Remove FileBrowser.Share metrics code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d4d44d
+
+### [Desktop PWAs] Shelf updates in response to web app policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bb7e3d6
+
+### [CrOS PhoneHub] Identify the recent app from which profile via UserId.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c744996
+
+### Reland "[Coupon] Add IsUrlEligible function to CouponService"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/222597e
+
+### Add info to CHECK failure loading a resource
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/616eddf
+
+### Sheriff: Disable flaky test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3febfa
+
+### [Start] Show new tab button on the left.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea530fa
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f4eb0a
+
+### desktop-share-menu: wire into omnibox context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb2eda2
+
+### ozone: fix gtk_unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5abea9
+
+### NotificationRevamp: Fix layout and title view width limit.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e1dd077
+
+### Make several Wait* methods return whether the waiting succeeded.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1247bb
+
+`);
+              </script>
+            </body>
+        </html>
