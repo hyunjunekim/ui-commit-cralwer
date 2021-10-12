@@ -1,0 +1,212 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-12
+### Enable PasswordCheckIntegrationForSavedPasswordsAndroid by default.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee708b8
+
+### Fix some nits in CrOS download code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8b283f
+
+### [AppList Sync] Refactor on sync position ownership
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30901df
+
+### Fix UseRealColorSpaceForAndroidVideo in about://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2cacdc08
+
+### [Filesapp] Update layout when toolbar width exceeds viewport
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4387a02
+
+### [unseasoned-pdf] Remove "noPlugin" string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9df715fa
+
+### PolicyCertService: remove dependency on user manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/067562c
+
+### [Launcher] Move zero-state files to the Continue section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c29a1ac
+
+### CodeHealth: Modernize base::Value code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a87522a
+
+### [BMO] NewWindow launches PWAs without extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/642e5b6
+
+### [mparch] Use PrimaryPageChanged in OfferNotificationBubbleControllerImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3aaa13f
+
+### Remove all references to cr-toggle-color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54eca22
+
+### [Filesapp] Move getCaller outside repeatUntil scope
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2aedf69
+
+### IPH accessibility: update close button alt text and add icon alt text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f942e8d
+
+### Add launcher nudge feature flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/37829579
+
+### [Privacy Review] Add HaTS feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79d1680
+
+### Revert "Make PaymentRequest a DocumentService"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc0f937
+
+### Web apps: Extract is_new_browser logic from LaunchProcess::EnsureBrowser()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fc6b1f
+
+### desk_templates: Allow launching ARC apps p7.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5acdca
+
+### [Sheriff] Disable WebAppBrowserTest.WebAppCreateAndDeleteShortcut
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b67c97
+
+### [omnibox] Added "and site search" to "Manage Search Engines" strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/169aa8ff
+
+### capture_mode_settings: Implement the folder selection UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79ee806
+
+### Move DLP Rules Manager into a shared directory for both ash and lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d90cfc
+
+### Revert "[Messages] Migrate Window Error and Module Install infobars to snackbars"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/794177a
+
+### Avoid New Badge promos interfering with each other.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7efb003
+
+### Move DLP Screen Capture notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbe75cb
+
+### [Switch Access] Enable Switch Access Setup Guide for all users
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a4853d7cb
+
+### Privacy Review: bold text in clear-on-exit description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d7aef7
+
+### Fix checkmark position when page direction is right-to-left
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8424697
+
+### ElementTrackerMac - Remove spurious DCHECK
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9399a85
+
+### Expand Views a11y on-paint checks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e13100
+
+### Change ClipboardOzone to support DLP restrictions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3164785
+
+### [VCN] Update virtual card manual fallback bubble texts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1cbdba1
+
+### Offline Dictation: Update strings for launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ad1ee8
+
+### [lacros] Wayland fractional scale factor support.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2bc381
+
+### Add traffic counters adapter class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d07939e
+
+### [Power Bookmarks] Put the bookmarks visual refresh behind a param
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f203eee
+
+### Set tree row label with cr.ui.tree label setter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d501b9c
+
+### Fix SIM locked "PIN required" message text color for dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c7a478
+
+### Rename the "Force Dark Mode" chrome://flag entry, adjust the defaults
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dcd5d96
+
+### Add nativeIME flag for Japanese
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8b2131f
+
+### dlp: Move DlpContentTabHelper to a Chrome OS shared directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5210cf3f
+
+### [Lacros] Run multi profile feature tests with Lacros disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/042f50d
+
+### dPWAs: add a field to WebApp that gates access to File Handling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcd5272
+
+### [Parent Access] Change consent flag from kSignin to kSync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/054e4f6
+
+### Add "const" to the getters in web app LaunchProcess
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9090589
+
+### ambient: allow fetching multiple access tokens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8210c02
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cf99882
+
+### IWYU: add string.h for memcmp in ui::DrmRenderNodePathFinder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2641740
+
+`);
+              </script>
+            </body>
+        </html>
