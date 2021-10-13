@@ -1,0 +1,352 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-13
+### WebUI: Introduce FindShortcutMixin, to replace FindShortcutBehavior.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44f3875
+
+### Add last step differentiation to Tutorials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce2ad3d
+
+### Add feature flag: PhoneHubCallNotification
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1dee4a1
+
+### GMC: Move core UI pieces into components/global_media_controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/925a3bb
+
+### [Profile picker] Remove test dependency on Dice toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fec5ffb
+
+### Code Health Rotation: Remove ListValue::GetBoolean().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8e136b3
+
+### [Parent Access] Add ParentAccess C++ browser test suites and tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b1e670
+
+### [Parent Access] Add production parent access OAuth Scopes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b889c2
+
+### [Cast2Class] Refactor WebUI to work on desktop platforms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/978c970
+
+### Reset `focused_window_` when it is gone
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/faa86b0
+
+### [side search] Split config params into a per-profile class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5222309
+
+### Migrate DISABLE_REMOTELY_FOR_MALWARE to kPrefOmahaBlocklistState.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e27722
+
+### [Copy To Clipboard] Add feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d7b37afd
+
+### Prevent exposing empty actions via AtkAction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b9a0ee
+
+### Privacy Review Android: added welcome screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eadf0bb3
+
+### [Files app] Separate chrome-untrusted resources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2288a6b
+
+### [Read Later] Final string updates for M96
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14b40e1
+
+### Desktop PWAs: browser tests wait for web apps system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad22185
+
+### [GLX] Fix null dereference after glXChooseFBConfig()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e70b9c
+
+### Move window_name_prompt outside c/b/ui/views
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b91d43c
+
+### Fix -Wunusued-but-set-variable: /chrome/browser/ui/cocoa
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc13146
+
+### Add Projector native XHR sender.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00af000
+
+### Convert uses of TimeDelta::FromXXX() to base::XXX().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1e0c06
+
+### [Nearby] SFUL usage for Background Scanning.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a6b779
+
+### Move DLP Reporting Manager into the browser/chromeos directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cba2f54
+
+### Accessibility sprint: Add flag for SA multistep automation
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/344385d
+
+### Fix -Wunusued-but-set-variable: /ui/events/ozone
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2fdfae6
+
+### Desktop PWA browser tests: Wait for system ready
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/566bf6f
+
+### ozone/wayland: pass rounded corners via overlay.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0854ce2
+
+### Move gfx rect related unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f49daad
+
+### Add state change notification when Window Controls Overlay is toggled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b5be3f
+
+### Fix -Wunusued-but-set-variable: /chrome/browser/ui/app_list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6ea5a4
+
+### Rename DialogModel callbacks to avoid confusion
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81fd990
+
+### Input: Create pref for touchpad haptic feedback
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c567824
+
+### desktop-share-hub: wire features to upcoming-sharing-features
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7138e58
+
+### desk_templates: Allow launching ARC apps p8.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95f92a8
+
+### ash: Support for microphone mute toggle keyboard key
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35bc8ad
+
+### WebUI tab strip: sign up with Chrome Labs for Windows
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4d0b941fc
+
+### TipMarqueeView: Don't do size computation when not visible.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/787089e
+
+### AppListSortBrowserTest: LacrosSupport expectations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d8061a
+
+### Add a close button and dismiss callback to TutorialBubbles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6826d43
+
+### ozone/wayland: pass rounded corners via surface augmenter protocol
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d684a0
+
+### Consolidate code related to colors in color_utils_android.cc 2/2
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecdbbc7
+
+### [dPWA] Flakiness speculative fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2768182
+
+### Extensions: Use structured cloning for MV3 extension messaging.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0b9dfee
+
+### Reland "[reland] [about this site] Add proto for "About this site" info"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/136e2d1
+
+### Reland "[tab search] Add test config entries for entrypoint update"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5b3b45
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/717e41d
+
+### [ash] Deprecate HIDDetection.TimesDialogShownPerOOBECompleted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dd18ef1
+
+### Add function in notifications_list to get by origin url
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a2debc
+
+### [AutoDark] Record SettingsChangeSource to correct histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9056bb2
+
+### [Files App] Fix ZIP browser tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4868ae0
+
+### [Launcher] Add category ranks to search model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3654284
+
+### NotificationRevamp: Add message view in expanded mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b9c3e59
+
+### Revert "[Files app] Separate chrome-untrusted resources"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d11744
+
+### [ozone][wayland] Updated getters for wayland current window focus.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/376ceb2
+
+### [VCN] Wireup progress dialog with backend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23c4c16f
+
+### Changed tab context menu in Right to Left UI direction mode from 'Close tabs to right' to 'Close tabs to left'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2be9879
+
+### [Lacros] Make permission value an union instead of int.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd6f2e0
+
+### [Categorical search] Add categories to ranker API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/343cba35
+
+### Fix -Wunusued-but-set-variable: /ui/views/widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e85d26a5
+
+### [lacros fractional scale factor] change scale factor to float.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5264478
+
+### Enforce not including windows.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36fba74
+
+### drm: Disable not-preferred connected CRTCs to Connectors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c3c434
+
+### AppInfoSummaryPanel: Retire support for bookmark apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c95a5fc
+
+### [FilesSwa] Disable background inspection via SWA window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8df84d8
+
+### [Categorical search] Update category enum with final values
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4fb20b
+
+### [DisplayLink] Semi-speculative fix for crasher in CVCGDL::getDisplayTimes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5959b23
+
+### Fix -Wunusued-but-set-variable: /ui/views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3aca4b4c
+
+### capture_mode_settings: Parent the folder selection dialog correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34db55b
+
+### System-apps: Fix theme color dark mode semantics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3faada7
+
+### [Android] [Incognito Reauth] Add incognito reauth layout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93482ad
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39654f1
+
+### WebUI: Migrate from FindShortcutBehavior to FindShortcutMixin.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35febcf
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f17e98
+
+### Revert "Desktop PWAs: browser tests wait for web apps system"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/886727ef
+
+### [Lacors] Remove the permission value type.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/976bb3f
+
+### Sheriff: Disable the flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/808e260
+
+### [CAS] Make IMEI and MEID signals repeated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c24d2d
+
+### [CrOS Bluetooth] Add scanning indicator to base page
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f670c4
+
+### [side search] Fix browser tests to use the embedded test server
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aec0f204
+
+### Add logging for tab metrics widths
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99f9f61
+
+### WebAppIntegrationBrowserTest: Wait in setup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98d6c07
+
+### System-apps: Add a dark mode background color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/141ac08d
+
+`);
+              </script>
+            </body>
+        </html>
