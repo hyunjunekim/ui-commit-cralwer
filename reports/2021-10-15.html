@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-15
+### Check IsDocumentOnLoadCompletedInMainFrame for FileSystemAccess request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5722c62
+
+### [CrossDevice] Remove UnlockKey management from chrome://proximity-auth.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c1082d21
+
+### [lacros] Add "Request mobile site" to 3-dot menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d058a12c2
+
+### Use last committed URL to open new tab links in side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/112a25c1
+
+### Add a prototype Side Panel border under experiment
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3b9755d
+
+### Revert "sessions: change logic of when ExitTypeService marks session as clean"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3466077
+
+### Switch to using Origin calls rather than converting URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/305a0c2
+
+### [Copy To Clipboard] Add Copy To Clipboard Stub + sharesheet cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd66f65a
+
+### Add a flag for chrome://media-app to handle audio.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8cf69d3
+
+### Deprecate returning a GURL from GURL::GetOrigin().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/800532c
+
+### Eliminate in DictionaryValue::GetInteger chrome/browser/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce4d2a7
+
+### [CAS] Show the ZeroTrustConnector tab based on the feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b07c24
+
+### Unwind kLegacyTLSEnforced feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1746a92
+
+### ozone: drop PlatformProperties::ignore_screen_bounds_for_menus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b81380
+
+### Reland "ime: Confirm composition when a key is not handled by the IME."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/463ca9a
+
+### [Coupon] Add rate control for FLC bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5640d8cc
+
+### [AppMenu] Support tint the menu item icon to blue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a3f39a
+
+### [Media Router] Fix origin display for the Cast dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1695128
+
+### [omnibox] [rich-autocompletion] Extend and update flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/91e87d9
+
+### Fix spinner color in dark mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b14e2fe
+
+### [memories] Simplifies Cluster mojom definition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0f78d3
+
+### PageInfo: Add dullweber@ as AboutThisSite owner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1e8bc3
+
+### Revert "views: remove AnimatedImageView"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e08af23
+
+### [cros_styles] Add core colors and update references.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8111f12
+
+### Settings: Migrate from ListUpdatePropertyBehavior to a Mixin.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3d1909
+
+### crostini: Hook up the UseLxd4 flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/63fcc69
+
+### cros: Remove kAccountManagementFlowsV2 flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/55b34f0
+
+### [CrOS Bluetooth] Add confirm pairing UI element
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca994cc
+
+### [side search] Use the monochrome icon for side search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ecb9de
+
+### Clean up kAutofillPreventMixedFormsFilling feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0ff2fcbb
+
+### [Categorical search] Add GetAll helpers to MrfuCache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3b84fb
+
+### Cache key trace cookie and language profile cookie for each TSFTextStore
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca4de4e2
+
+### Add test for maximized window occluded by fullscreen window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bce9e9a
+
+### Replace deprecated instances of DictionaryValue::Iterator() with
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d71f6f9
+
+### [Extensions][Reland] Replace NOTIFICATION_EXTENSION_REMOVED in ExternalInstallManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09ce2669
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab81617
+
+### [Files SWA] Add remaining Quick View tests for SWA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9631f8a
+
+### Re-enable score normalization experiment.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9de199e
+
+### Files app: Fix concurrency between startup and mount event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d9f8f7
+
+### ozone/wayland: mixed dpi: fix visual size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c207f79
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ad00ec
+
+### [Spaced] Add Spaced client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee74f04
+
+### [memories] Fix bug where too many related visits are shown above fold
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f3e88e
+
+### Modify device_ check while creating X11 buffer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f09c0f6
+
+### [CrOS Network] Add flag for Quick Settings Network revamp.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c98dc38
+
+### [exo] Support lacros WebUI tab-drop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8601b5c7
+
+### Reland: evdev: collect metrics for numberpad usages
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9f45b4
+
+### WebAppBrowserTest: Disable various flaky tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9dc613
+
+### [Android UI] Update FedCM bottomsheet header to match mock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75ac387
+
+### Use chrome-untrusted: for Print Preview content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce0deb4
+
+### Add UseRealColorSpaceForAndroidVideo feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47adf06
+
+### [VirtualCards] Add JNI glue to authenticator selection dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35e14e1
+
+### Crostini: Invalidate callback weak ptrs when JS is disallowed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5cbb8d
+
+### Web apps: Fix user_display_mode: kTabbed installs not popping out the installed tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4519e95
+
+### sessions: change logic of when ExitTypeService marks session as clean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51a209b
+
+### [Files SWA]: Enable Files SWA to replace the legacy File Manager.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba4c6e4
+
+### ax_mac_merge: merge implementations of ARIA live attributes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8bb735
+
+### Extract tab matcher logic to dedicated translation units.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/281da3f
+
+### Revert "[Coupon] Add rate control for FLC bubble"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0cb006
+
+### Revert "[side search] Use the monochrome icon for side search"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85b1c49
+
+### Move ShowDirectSocketsConnectionDialog from views/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0f4b8e
+
+### Add constrained_window::ShowBrowserModal()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31f49a7
+
+### [Lacros] Creation of secondary profiles with account consistency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b506977
+
+### Reland "[Ozone/Wayland]Add surface states tracking to WaylandSurface"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4516e51e
+
+### desk_templates: Allow launching ARC apps p9.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d777092
+
+### [Files SWA] Adapt Quick View tests for SWA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/745113b
+
+### dpwas: ClientView in WCO PWAs should cover frame in fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96bf317
+
+`);
+              </script>
+            </body>
+        </html>
