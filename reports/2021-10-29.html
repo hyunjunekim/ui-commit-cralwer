@@ -1,0 +1,384 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-29
+### Fix MouseLockController test callback usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/162b2d5
+
+### [fuchsia][a11y] Add platform accessibility support for fuchsia.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/172e6ef
+
+### Deprecate |ariaInvalidValue| in favor of |invalidState|.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41f46eb
+
+### Add the flag of controlling VP9 k-SVC HW decoding to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/22eb73a
+
+### Use RenderViewHostTestEnabler in additional unit tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de61450
+
+### Disable release fences since they caused a graphical glitch in lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f5f35c
+
+### Revert "OobeTestApi: Introduce advanceToScreen & skipPostLoginScreens functions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09f88080
+
+### [dPWA Testing] Method reordering & cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/572ac33
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7e3ab4
+
+### Fix control buttons and expand button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/247b349
+
+### [Files SWA]: Add metrics for reporting glitches.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8dfac8c
+
+### Highlight API: Expose HighlightType to AT and UIA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9dffde6
+
+### [Start] Clean up ReturnToChromeExperimentsUtil methods and change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f85061
+
+### Deny file system access permission from MPArch frames and Fenced Frames
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b642f6d
+
+### Disabled ExperimentalFullscreenControllerInteractiveTest.SwapActivatesWindow and ExperimentalFullscreenControllerInteractiveTest.SwapWithoutUserActivation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a8a7a8
+
+### [Mac Modifier Keys] Rename "fn" modifier key desc to "(fn)"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/789f1681
+
+### Fix AnimationTracker leak when it is not active
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d33035
+
+### Fix WebView events with overlapping layers on Aura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/877c224
+
+### [File SWA]: Cleanup follow-up to crrev.com/c/3233855
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45f1b2ced
+
+### Add cc::CommitState to snapshot state for compositor commit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40f911d
+
+### wayland: use a callback to notify selection offers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f0f580
+
+### Remove 'teamfood only' restriction from password-change-support flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/818e70a
+
+### [WebAppProvider] Add is_uninstalling to database, cleanup on startup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/467efbd
+
+### [style_var_gen] Set up shadow government.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5034e3b
+
+### [FilesDarkMode] Update box-shadow with semantic name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd6da74d
+
+### [lacros] remove xdg support feature flag.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5283cc1
+
+### [omnibox] Hide the Delete option for pre-populated search engines.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7389b21
+
+### Do not open the second prompt bubble for PermissionChip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/417079c
+
+### Ensure cros_shadows.json5 is available for semantic color presubmit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d3a9337
+
+### Remove GridLayout from address_editor_view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1ba9e8
+
+### Move AdjustBorderWidthByZoom from native_theme_base to native_theme
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e8f433
+
+### Fix bg_color_dropped_elevation_1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cccf6d6
+
+### [dPWA Testing] Renaming WebAppIntegrationBrowserTestBase -> TestDriver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5697d36
+
+### wayland: clipboard: support overlapping read requests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6746bbb
+
+### Add theme-background support for side-panel border
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaccd74
+
+### [reland] Use correct source_site_instance if navigating via context menu
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49e30ea
+
+### [AppMenu]icons should be shown as disabled when the menuitem is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2aae283
+
+### [Power Bookmarks] Add shopping-specific elements to the save flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb2bf3c
+
+### Reland "[fuchsia][a11y] Rename fuchsia types to avoid naming collisions."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c39d60c
+
+### Update prediction database on omnibox revert.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22d7e06
+
+### Revert "[fuchsia][a11y] Add platform accessibility support for fuchsia."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15206b0
+
+### [ntp] Fix daily background refresh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab72c9a
+
+### WebUI: Limit cr_components/chromeos/cr_camera/ targets to CrOS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc043d8
+
+### Clean up skottie support build flag.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de146e2
+
+### Mac: don't leave room for menubar in fullscreen reveal on notched screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ef1284
+
+### Bring Bluetooth PIN / passkey dialog up to spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a7b261
+
+### Fix timezone list leak
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2ea6662
+
+### [Magnifier] Enable Continuous Magnifier Panning mode in A11y settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af65c0d
+
+### Add NOTREACHED() to NativeViewHost::OnMousePressed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f280974
+
+### android: Send DidCompleteSwapWithSize when needed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b0ec1d
+
+### Correctly send dnd_finished events to delegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2dc93b8
+
+### [Launcher] Rename OmniboxZeroStateAction to SearchResultActionType.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbb0463
+
+### [FilesDarkMode] Update readonly chip text and icon color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b34a041
+
+### Ensure indeterminate progress bars are visible in JAWS/NVDA buffers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b91ae55
+
+### Enable window controls overlay on LaCrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19bdf1f
+
+### [Launcher] Get AppListController through AppListController::Get()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ec9301
+
+### [Dr-Dc] Chrome changes to use angle context virtualization.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90cdf44
+
+### capture_mode: Check DLP restrictions at the end of recording
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c123e77
+
+### [omnibox] Restructure grit data & draft batch3 strings with instructions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/893f423
+
+### Change namespace to ash for //ash/webui/projector_app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fffeb11
+
+### remove ISequence::StepBuilder as a class member
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59f0984
+
+### Window Placement: Remove fullscreen display swap without gesture tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25de21d
+
+### Change namespace to ash for //ash/webui/eche_app_ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b1a698b
+
+### NotificationRevamp: Refactor inline settings in NotificationViewBase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ffdc11d
+
+### Update OpenCalculator() to specify PWA ID instead of Chrome App ID.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e44454c9
+
+### Removes the last remnants of inappropriate calls to AXNodeData::Get...Attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0b1960
+
+### [fuchsia] Simulate state transitions for input capture in ScenicWindow.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1c5c18
+
+### Move //{chromeos/components => ash/webui}/system_apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37bc18eb
+
+### app_list: Add flag for productivity launcher animation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3fe11fc1
+
+### desk_templates: Allow launching ARC apps p12.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e96c997
+
+### [Autofill] Defalke SaveUpdateAddress...Test.CloseTabWhileBubbleIsOpen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8be783e
+
+### Assistant Cleanup: Refactor AssistantWebView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f80ae7
+
+### ui: Fix improper scaling of Lottie assets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b617d4
+
+### Remove GridLayout usage in favor of TableLayout.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fee260f
+
+### [CrOS Cellular] Remove cellular per-network roaming flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/edfacc2
+
+### Swap WindowPinType for WindowStateType in Ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4a031d
+
+### Reland "OobeTestApi: Introduce advanceToScreen & skipPostLoginScreens functions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b85e070
+
+### Clean up permission related chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d9c5dfa
+
+### Disable flakey WebAppIntegrationBrowserTest test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a9cde4
+
+### [CrOSSharingHub] Prevent UAF callback to destructed controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/617f27e
+
+### Replace SurfaceColorOvalView with SurfaceColorDrawable.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8d30aa
+
+### Fix side-panel-border inner stroke
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3f4c49
+
+### sheriff: Disable flaky ShelfWebAppBrowserTest.WindowedPwasHaveActivityIndicatorSet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b930b51
+
+### borealis: enable big gl for borealis
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dd3ef94
+
+### ash: Remove AppListView::SetShortAnimationForTesting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbd2d1b
+
+### [Read Later] Allow reading list type swapping to bookmarks
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/42fa57e
+
+### [FilesDarkMode] Make directory tree dark mode compliant
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64490bf4
+
+### [VCN] Feature Hotfix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fdc56f
+
+### [TTS] Add a Flag for Delayed Intelligence
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5ca582ea
+
+### IWYU: missing cstdint include for usage of uint8_t in clipboard test util.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3f1763
+
+### Remove GridLayout usage from global_error_bubble_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/658a817
+
+### Move the tutorial_registry to TutorialServiceManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d83a98
+
+`);
+              </script>
+            </body>
+        </html>
