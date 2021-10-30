@@ -1,0 +1,244 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-10-30
+### Fix leaks in sharesheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd79ea4
+
+### Add a skeleton for implementing the parent access after screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/835d4893
+
+### Window Placement: rename getScreens to getScreenDetails
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d5ff5e
+
+### Fix Combobox UAF in CvcUnmaskViewController
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66b54d7
+
+### Expose "indeterminate" ATK state on progress bars which lack a value
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3f211d
+
+### Add custom configuration support for view builder.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eaa8738
+
+### arc: Set ro.boot.arc_dalvik_memory_profile for ARCVM
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cb74c44
+
+### Introduce AppListModelProvider - part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8014351
+
+### [Zenith] Add unit tests to GMC toolbar button’s context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df85ffa
+
+### [dPWA Testing] Moving before and after action method calls into driver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7450cc7
+
+### [CrOS Bluetooth] Add display pin and display passkey UI element
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c47310
+
+### [CrOS Network]Add flag to bypass connectivity check when install eSIM
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9ec87775
+
+### Don't try to animate tab indicator if a tabbed pane isn't on a widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3daf00
+
+### [X11] Remove menu registrar
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e141a22
+
+### Delete DummyUiChromeActivityTestCase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0321e2c
+
+### Desk Templates: Expose feature flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f823bf6
+
+### [image decoding] Use base::span as argument to image decoding functions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1441bd4
+
+### Tab Search: setup chrome flags and testing field trial for fuzzy search
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/59d1d30
+
+### lacros: Hide some chrome app context menu items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56cf15f
+
+### Android: Add @Mock to tests where required by upcoming R8 roll
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f329e60
+
+### [A11y][AF] Add content descriptions for month and year spinners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ec04e6f3
+
+### Privacy Review Android: added bullet points on the MSBB page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fa544f
+
+### Fix invalid condition while checking whether to use libinput
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75d37c6
+
+### Create a c/b/ui/lacros folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e53957
+
+### sheriff: Disable flaky WebAppIntegration_InstPlcyWinShctSiteA_InListWinSiteA_NavPWASiteAToSiteB_CloseToolbar_IsAtStartUrl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbe25e8
+
+### Remove GridLayout from intent_picker_bubble_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c3f120
+
+### Remove GridLayout from login_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be68cdb2
+
+### [Tests] Rename functions in secondary_account_helper.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38f1176
+
+### [Sheriff] Disable flaky BFCache test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bfb78f
+
+### [Start] Use LogoView#getDefaultLogo for Start surface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3728e54
+
+### Updated reading list focus rings to meet contrast requirements in light and dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0163d52
+
+### PrivacyReview: Add Safe Browsing Card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c04723a
+
+### Clean up intent_picker_bubble_view.cc ahead of removing GridLayout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b2fbcf9
+
+### [Ozone/Drm]Use unretained ptr of OzonePlatformDrm when task is expected
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ea7f9a
+
+### ax_mac_merge: merge accessibilityColumnHeaderUIElements implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f7b039
+
+### [System Extensions] Add about flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d8708c3
+
+### Fix DnD icon scaling on ozone/Wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f7342c
+
+### [Android] [IncognitoReauth] Remove title from Incognito reauth page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c10c5b5
+
+### Check possibility of browser creation in OpenApplicationTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56eb4e84
+
+### desk_templates: Retrieve icons from desk templates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7999686
+
+### Reset ComopsitorAnimationObsever's start time upon resume
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b9257a
+
+### [UIA] Ensure text range stays valid after node deletion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13f43d9
+
+### Fix crash in LayerAnimator when destroyed due to stopping animation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4304b5a
+
+### [Autofill] Don't show Autofill dropdown if overlaps with permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33a9247
+
+### Modernize some code in IconUtil
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b3fc0b
+
+### [ui/gtk] Support GTK IME under ozone/wayland when using GTK 4
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23978de
+
+### Fix link color for webui network components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ad278f
+
+### Fix default_contents_view_ leak in WidgetDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0ff2f8
+
+### dPWA: Reorganize Web App startup logic into a class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d80f489
+
+### [Lacros] Enable Mirror for secondary profiles in browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/157cd3b
+
+### [X11] Stop selecting for SubstructureNotify events on the root window
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6718ac0
+
+### Check if EyeDropperViewMac object is alive when NSColorSampler handler is called.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5237981
+
+### [side panel] Ensure the side panel starts hidden
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9ea39e
+
+### Make errors in pin setup keyboard be assertive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5f815b
+
+### [MultiDevice] Add new feature state and new feature map.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da87a19
+
+### Use AccessibilityManager#getRecommendedTimeoutMillis() on Q+ for Snackbars
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c25d89
+
+### [FilesDarkMode] Make drag drop chips dark mode compliant
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b11e791
+
+`);
+              </script>
+            </body>
+        </html>
