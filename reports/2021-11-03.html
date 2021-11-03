@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-03
+### bookmarks: removes unnecessary code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87f1f2e
+
+### [Autofill] Change More Action button title in the chrome:settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5714aa5
+
+### personalization: add new flag for personalization hub
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/60fc9c0d
+
+### Use AXNodeID rather than AXNode* in AXEventGenerator tree events.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1c1ec1
+
+### Remove PropertyHandler inheritance for BDD
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2dc50c
+
+### capture_mode_settings: Add chrome flag for capture advanced settings view
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/82a9128
+
+### [sheriff] Disable MovingWindowNotConsideredInCalculations test on Win
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f47e17d
+
+### windows: adds kApplyNativeOccludedRegionToWindowTracker
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53091cdb2
+
+### Remove GridLayout from crypto_module_password_dialog_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cecbf097
+
+### Move kWindowPinTypeKey to lacros only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a62c199
+
+### Add separate dispositon for a non-animated permission prompt.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/420efac
+
+### ax_mac_merge: expose AXAccessKey on all control elements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d68c7e
+
+### Revert "ime: Add DCHECKs to validate surrounding text."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10d44ab
+
+### Print NativeViewHost info in OnMousePressed()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ba05db
+
+### [VirtualCards][Bugfix] Store confirmation message in local variable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d837ddf
+
+### Make 'open in new tab' and 'open in new tab in group' order configurable
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5194ca3
+
+### Revert "DCHECK on AddChildView() if a table layout does not have enough cells"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/318a6b1
+
+### [Files SWA] Fix Quick View audio album preview
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0485be
+
+### More PageInfoBubbleView reorg.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ee93aa
+
+### Remove EnterpriseDisplayDomain from the GaiaScreenHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c906bd5
+
+### Fix side-panel border-stroke subpixel alignment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27f869e
+
+### Eliminate GridLayout from page_info_bubble_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/315673d
+
+### [image decoding] Adjust callers of ImageDecoder to avoid a copy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34eab25
+
+### [FeaturePromo] Shared Highlighting Promo Desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72f02568
+
+### Remove the Settings app fingerprint recognition animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfb6ea9
+
+### [ash-chrome] Allow Ctrl+Alt+Z combination on the Pin input
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a5fd7d9
+
+### Removes some unnecessary wrappers in BrowserAccessibility and fixes a few lints
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f276bc2
+
+### [RBD] Support product ID extraction for more sites (2)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d17c727
+
+### Add enterprise escape hatch for updated GREASE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f19012
+
+### What's New: Update page load for M97
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7261f2
+
+### arc: Implement long press right click emulation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/35e2e1d
+
+### lp: add flag to enable language packs for all lang
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c35777c
+
+### Highlight side-panel button to match visibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c0a9bdc
+
+### code-health: remove ListValue::GetBoolean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/184bdffc
+
+### Make sure PiP video frame sink always have only one parent frame sink
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e0eb70
+
+### Add icons for permissions blocked state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/779ac35
+
+### Revert "Replace SurfaceColorOvalView with SurfaceColorDrawable."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/478b5149
+
+### Update comment for WindowShowState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cee9b2c
+
+### [Android][FRE] Extend the metric MobileFreProgress for the new FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11c1566
+
+### Files SWA: Wire up the Copy and Move operation to feedback panel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81d2ed2
+
+### Migrate chromeos/services/network_health/ and c/b/ash/net/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e432eab
+
+### Move UseRealVideoColorSpaceForDisplay to viz
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/652225e
+
+### [MPArch] AppsNavigationThrottles work with non-primary pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7397e0
+
+### Fix draggable regions in Window Controls Overlay apps on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a37dc39d
+
+### [Files SWA]: Disable Chrome App File Manager if Files SWA is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6876a4
+
+### arc: Move arc_service_manager.(cc|h)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2be2d6b
+
+### CodeHealth: Remove use of DictionaryValue::SetString in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfc90c9
+
+### DCHECK on AddChildView() if a table layout does not have enough cells
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e01985
+
+### Fix -Wshadow instances: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0555d7f
+
+### [Auto-disable accessibility] Expose feature behind a public-facing flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e010329
+
+### Add interactive tests for the PermissionChip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12f018c
+
+### [page info] Clean up PageInfoV2Desktop flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fdf5d8e
+
+### [lacros shelf] Selecting from app list should focus existing instance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffaaa07
+
+### Fix up drag image is not shown from bookmark bar
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7c8dd8
+
+### Web apps: Enqueue LaunchParams for launch_handler web app launches
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4091e0
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a2f79e
+
+### [wayland] Deprecates surface_submission_in_pixel_coordinates on zaura-shell
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd90f6f
+
+### [Ash] IdentityManager uses AccountManagerFacade instead of AccountManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ff3148
+
+### Revert "Roll Android NDK to 23"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbfe6fb
+
+### code-health: remove ListValue::GetBoolean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddc5b3d
+
+### ax_mac_merge: merge AXDetailsElement attribute implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3eb627
+
+### flag: remove select-to-speak-navigation-control
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f08ee38
+
+### [AccountPicker] Rename DismissalCount APIs to mention web-signin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/763ad49
+
+### [fuchsia] Use enable_hidpi for ResourceBundle max scale factor.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f094c5dd
+
+### [wayland] Aura-shell interface addition.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d45608
+
+### Revert "[Copy To Clipboard] Add filename copying."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/771ee38
+
+### Remove GridLayout from page_info_hover_button.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f44318b
+
+`);
+              </script>
+            </body>
+        </html>
