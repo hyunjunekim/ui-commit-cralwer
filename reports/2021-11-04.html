@@ -1,0 +1,352 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-04
+### Revert "[DesktopSharingHub] Fix icon highlight when first party dialog is opened"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e942107
+
+### shortcuts: Add policy to control I18n shortcut mapping
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64d2c63
+
+### Remove TabStrip machinery for toggling stacked tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71e144a
+
+### Reland "[Promo] Add histograms to track Sync Promo interaction"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b579df9
+
+### Files SWA: Add move, delete and zip operations to feedback panels.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd20441
+
+### Assistant OptIn: Delete i18n_template_process.js
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70bfcad
+
+### Remove GridLayout from security_information_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29fcb0e
+
+### Reland "[Copy To Clipboard] Add filename copying."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b0bbe83
+
+### Fix divide by zero in tabstrip layout calculations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74d60d0
+
+### [AccountPicker] Introduce "entry point" enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc1e957
+
+### Removed use of GridLayout in favor of BoxLayout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c17ff5c
+
+### Mount xz files in the CrOS Files.app
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8286235
+
+### Add separate disposition for a chip with auto popup prompt bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cf5f40
+
+### [DesktopSharingHub] Do not update icon on close for 1P actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fe274dd
+
+### Remove GridLayout from sad_tab_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f63cce7
+
+### [Files SWA] Improve Quick View tests error report
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/381538c
+
+### Add support for child-index in View Builder.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a643766
+
+### media: grabs lock to ensure video output when occluded
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de840c0
+
+### Improve handling of transforms with perspective when computing 2D scales / raster scales.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f6dae8
+
+### Add location item to addresses in suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af94edd
+
+### CHECK WebContents removal in UnloadController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/495df1f
+
+### Give native view access to BubbleBorder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67cfe25
+
+### [omnibox] Update and reland: restructure grit data, draft batch3 strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8a0ecd
+
+### [CrOS Bluetooth] Add FastPairDelegate and move initialization point
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdad434
+
+### Replace GridLayout with BoxLayout in PaymentSheetHeaderView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25bbd26
+
+### dpwa: Correct hover behavior for caption buttons & '...' button on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79c7e53
+
+### Replace GridLayout with BoxLayout for PaymentRequestItem
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d54dbd8
+
+### Read later: enable add from dialog by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4d3a55
+
+### dPWA: add new file handling launch dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43c7806
+
+### Clean up after fixing crbug.com/1223022
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2181cc
+
+### [about this site] Show section only for secure connection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ca1d15
+
+### Revert "[chromeos] Remove deprecated cros-regions-mode flag."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce220c9
+
+### [Autofill] Use mono-color product icon for the autofill dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b1240d7
+
+### Deprecate the local browser preference for stacked tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e3e0ee
+
+### Use WeakPtr to prevent using the ptr out of scope
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6b23b5
+
+### UI nit: fix lockscreen reauth dialog size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7246399
+
+### ozone: get rid of dwth refactor leftovers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9b2e6f
+
+### Files app: Remove unused variable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ac9917
+
+### Remove GridLayout from page_info_main_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/178a66a8
+
+### [memories] Add additional fields to the debug console
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acf43b5
+
+### aura: adds WindowTreeHost::VideoCaptureLock
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff3dfdc
+
+### [suggested files] Add unit tests for ZS Drive metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b860d6e
+
+### Add Tag property to Button and metadata/builders to some subclasses.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14266d6
+
+### native_theme: Fix typo in comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d8d119
+
+### Add flag for desktop screenshot edit
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/80b5dbb
+
+### cros: Add rounded corner to LargeImageView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4f25d1
+
+### [Extensions] Increase contrast of text fields for extension shortcuts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8b0944
+
+### Allow CompositeLayoutTests to run on system where animation is disabled.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f5a5d47
+
+### Sheriff: Disable some PageInfo tests on win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f765319
+
+### Replace most references to AppServiceProxyChromeOs with AppServiceProxy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cb72ca
+
+### Migrate chrome/browser/ash/* to namespace ash (1/3)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3639895
+
+### scanning: Remove expired sticky settings flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/62c4042
+
+### Remove public APIs dealing with toggling stacked tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80cfcb0
+
+### Revert "Add separate disposition for a chip with auto popup prompt bubble."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf85410
+
+### Move temporary element identifier to ElementTracker, make more generic.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58aeca7
+
+### Record UI dismissal metrics for form submissions on form clearing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0459915
+
+### [about this site] Add UKM for proto validation status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34999d8
+
+### Extend DownloadRestrictions policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eeba9a
+
+### Lacros: Implement chrome://settings/certificates
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9a627e
+
+### Revert use of enterprise User-Agent GREASE override
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1aaa37
+
+### Added bubble placement utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/220c8b2
+
+### [dPWA Testing] Moved docs and added test addition how-to.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27a6bd0
+
+### [PaymentHandler] Remove features::kPaymentHandlerSecurityIcon and related code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/379f94d
+
+### [ntp] Remove custom script-src CSP from chrome://new-tab-page/... pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb78547
+
+### Adds ability to add arrow to bubble without displacing it.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68f82d3
+
+### Hook up cancelIOTask to feedback panel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a05518c
+
+### dpwas: Allow --app and --incognito to work together
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f521b7
+
+### [Categorical search] Add category assignments to search results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23fc243
+
+### [memories] Adds policy to control visibility of history clusters
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8e5d83e
+
+### Remove GridLayout from editor_view_controller.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e383038
+
+### [Privacy Review] Add trigger to the completed page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1839aed
+
+### capture_mode_settings: Add a metric to track uses of the save-to options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab46b1c
+
+### Files SWA: Fix keyboard shortcut to open the SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5eb4c5
+
+### WebUI: replace banned COIL terms with preferred replacements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac4dec6
+
+### [page info] Clean up permission combobox code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca401771
+
+### Remove old InsertDsfIntoList() transitional function.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4780653
+
+### [oobe test api] Add more methods to HIDDetectionScreenTester
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09f95ce
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cd71f1
+
+### desktop-sh: configure colors on "Share link to..." label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecc452b
+
+### [chromeos] Remove deprecated cros-regions-mode flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/86eb3f6
+
+### [VirtualCards] Add margin between authenticator icon and description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81026888
+
+### Add support to view Builder for manually constructing a view instance.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cdf6a666
+
+### Lens Region Search - Fix the margin for the Lens instruction view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56c3092
+
+### [VCN] Add metrics for otp input dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c11c26
+
+`);
+              </script>
+            </body>
+        </html>
