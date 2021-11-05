@@ -1,0 +1,380 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-05
+### Rewrite PopunderPreventer to use WeakPtr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c514b5c
+
+### Revert "arc: Add feature flag to allow to keep ARC data during ARC turn-off"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/25ba0ed
+
+### Card Unmask Authentication Selection Dialog Metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/587838be
+
+### personalization: enable transparent SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e21c18a
+
+### Hide the password bubble when the tab controller changes its state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/057e949
+
+### [Extensions] start new subpage for site access, if feature flag enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdf739f
+
+### [Zenith] Change the "Select a device" button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e79b5a3
+
+### Move //{chromeos/components => ash/webui}/web_applications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96fdb96
+
+### crostini: Fix a typo keeping a flag from working
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fc7c14d
+
+### code-health: remove ListValue::GetBoolean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f8e3a06
+
+### [CrOS Network] Replace globe roaming icon with "R" icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47ed164
+
+### scanning: Remove expired scan app media link flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/95774ee5
+
+### [sync] Support Javascript APIs during signed-in profile creation flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca34306
+
+### Adds an arrow to centered Autofill bubbles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b7cd98
+
+### Fix integer overflow for -intmin in Vector2d
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7478c56
+
+### Remove Arc.AdaptiveIconLoad.From* metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a569bb5e3
+
+### [Zenith] Use correct url::Origin display for PresentationRequest header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e31d69e
+
+### base: typo fix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7885d6b
+
+### Files SWA: Fix ChromeNewWindowClient::OpenDownloadsFolder()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5c379a6
+
+### Consistently use #if defined(OS_FOO) in chrome/.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/718f59e
+
+### ozone: //ui/aura: clean up from USE_X11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8f7fad
+
+### Removed light mode opacity for focus ring color in the side panel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3211b04a
+
+### [about this site] Fix flakiness of the dialog tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26105d2
+
+### [Android][FRE] Removing all accounts should dismiss the account picker dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e452910
+
+### [CrOSSharingHub] Close sharesheet when the user swaps to another tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd706dd
+
+### Move AppListModel ownership to ChromeAppListModelUpdater
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fcc803
+
+### Add a few new functions to Automation API.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0dd789b
+
+### [lacros] Call WaylandConnection::ScheduleFlush() from SetDraggedWindow()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31bee01
+
+### ozone: //ui/compositor: clean up from USE_X11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9435cd
+
+### [FilesDarkMode] Add missing colors for Switch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/259e736
+
+### ozone/wayland: commit solid color overlays using solid color wl_buffers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cda549
+
+### Reland "[iOS][Swift] Port SafetyCheck settings panel to Swift."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37e6ca6
+
+### Files app and SWA: Change callers sites of xfm.storage to avoid chrome.runtime.lastError
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d70e28a4
+
+### [Start] Register update menu observer for Start surface menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/692502c3
+
+### Open SearchResult by Lacros if it is primary.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a9810c
+
+### Ozone: Disable Render Buffer Compression on external displays.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43234df
+
+### Remove PrintPreviewPdfGeneratedBrowserTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b7cf96
+
+### Unwind SecurityStyleExplanations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9084f6
+
+### Add the implementation of the local web approvals after screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb199dc
+
+### Create classes to handle page info highlight
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6142f83
+
+### Privacy Review: Add Completion Card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/972bbf5
+
+### Reland "Reland "Increase chip's tracking granularity.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a97d6c6
+
+### [Sharesheet] Fix regression using down instead of up arrow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/819dd4f
+
+### Disable lacros until profile migration is successful.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/408ba21
+
+### Update Android accessibility classname for switch roles to Toggle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e01119b8
+
+### [fuchsia][a11y] Adds AccessibilityBridgeFuchsiaRegistry.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39b8d570
+
+### Remove stacked tabs support from tab dragging.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8ab8b36
+
+### Adds finch parameter to control popup placement specifics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd475f4
+
+### ozone/x11: clean up //ui/gtk from use_x11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e9dd67
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/150977e
+
+### ozone/x11: move x11 switches to //ui/gfx:gfx_switches
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b59923
+
+### Disable forced mirror mode in tablet mode when manually exited.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b95f37d
+
+### zoom: refactor ChromeZoomLevelPrefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f487dcf
+
+### Revert "Android: Delete VerifiesOn* annotations"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93cb099
+
+### flags: remove autofill-prune-suggestions
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0d2fa62
+
+### Add method to find optimal bubble placement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4628689
+
+### [LR] Add about flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f468e1e
+
+### Make NativeViewHost clipping repaint with transparent color by default.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07f75d9
+
+### [Parent Access] Add Mojo method for handling parent access result.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fed08f4
+
+### [Sharesheet] Fix the body height on arabic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fda594a
+
+### Add fullscreen dialog support.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80d1951
+
+### [FRE][Signin] Create landscape view for the signin FRE welcome screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61c8146
+
+### [sync] Support Javascript APIs during sign-in reauth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29be661
+
+### Migrate chrome/browser/ash/* to namespace ash (2/3)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/def18c2
+
+### [Launcher Sort] Temporary sort - part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff457cd
+
+### [linux/wayland] Enabled the test that should not be flaky anymore.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c83dd02
+
+### [Passwords] Showing affiliated matches in the fallback sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f83e1e0
+
+### [SPC] Implement devtools protocol support for setSPCTransactionMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3d64f2
+
+### Remove FTP special-case for LoginTabHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/538d1c9
+
+### Updates mojom and implements skeleton for page_handler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96e98e52
+
+### Android: Delete VerifiesOn* annotations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acfedd6
+
+### avatar: show current image when user dismiss file picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dee3672
+
+### Privacy Review Android: added sync step UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd8f9f3
+
+### Removed duplicated tests for the permission chip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/589f7e8
+
+### Remove stacked tabs from the rest of TabStrip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc1aac7
+
+### Move platform Type and TypeConstant to ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f7ce63
+
+### Bring eSIM activation page up to spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b38f38d
+
+### ozone: x11: clean up ui/base/clipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6750de0
+
+### CodeHealth: Remove use of DictionaryValue::SetString in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a64c01c
+
+### [DesktopScreenshot] Maintain image's aspect ratio.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0eb3231
+
+### [Sharesheet] Reposition Sharesheet when entering/exiting Tablet Mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5806131
+
+### SwitchToTab: improve performance of the feature on Android platform.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57d1d4b
+
+### Reland "Add separate disposition for a chip with auto popup prompt bubble."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/179fe12
+
+### Toggle the side panel if Lens is showing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ea8c42
+
+### [about this site] Add TimeOpen histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f43c8b2
+
+### [memories] Adjusts and refactors landing page colors in dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/851306e
+
+### Make minor adjustments to the parent access dialog UI's dimensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/495e40a1
+
+### ozone/wayland: speculative fix of "Crash Report - GetWindowsOnOutput"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b6df40
+
+### Remove usage of WebContentsObserver to track WebContents ptr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b994cab
+
+### Revert "[Launcher Sort] Temporary sort - part 2"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d15dc5
+
+### dPWAs: Use WebApp setting to control file handling API by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e802b3a
+
+`);
+              </script>
+            </body>
+        </html>
