@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-06
+### dpwas: Announce state change when toggling WCO on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f2e9a3
+
+### [linux/wayland] Fixed how scale factor is calculated for the output.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/500286c
+
+### [RDS] Override User Agent with a new WebContentsObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5756fa42
+
+### ozone/x11: clean up //ui/gtk from USE_OZONE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c330dae
+
+### [Start] Add an incognito tab model observer for Start surface toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4509a336
+
+### ozone: //ui/gfx: clean up from USE_X11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9643186
+
+### [STTS] Unregister ReceivingUiHandlers on shutdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4499084
+
+### Enable restore++ by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b344de
+
+### Site Storage Controls: Add remove metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64b2293
+
+### ozone: add haptic touchpad function stubs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0dbf027
+
+### [Start] Move per-file owners to sub dir top/toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/159bcab6
+
+### [MerchantTrust] Don't show IPH when user swipes the message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c17df27
+
+### [Launcher Sort] Implemented context menu on AppsGridView as sort UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c4aac1
+
+### ozone: //ui/base/cursor: clean up from USE_X11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c983695
+
+### Use WeakPtr to prevent using the ptr out of scope
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6b23b58
+
+### Disable AlertAccessibleEvent test for Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/539d637
+
+### [Passwords] Cleanup mass-migration password feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e8f955
+
+### Add crashkey to BitmapFormatToSkColorType
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41f1288
+
+### [memories] Enforce that HistoryClustersHandler never returns no clusters
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05a6b2eb
+
+### Enable PostMessageAPI to pass rejected promise calls.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93f9660
+
+### ime/CharacterComposer: fix Compose key not working
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb04a7c
+
+### Revert "Ozone: Disable Render Buffer Compression on external displays."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43ae6c0
+
+### crostini: always launch terminal asynchronously
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e101e6
+
+### Remove the use of GridLayout in favor of TableLayout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c960930d
+
+### ime/CharacterComposer: show preedit string in sequence mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00e6672
+
+### Revert "zoom: refactor ChromeZoomLevelPrefs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f448df
+
+### Add Menu Item Checkbox to AxRoleProperties::IsCheckBox.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07c9377
+
+### shortcuts: Add AcceleratorKeys mojom
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58d3ca4
+
+### ui: Update comment on ImageModel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1127564e
+
+### [chrome://policy] Display policy precedence order.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/129ad8c
+
+### OOBE: Take ownership of the TPM before enrollment if --tpm-is-dynamic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4237725
+
+### ozone: //ui/base/clipboard: clean up from USE_X11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8004146
+
+### Remove obsolete EduCoexistenceFlowV2 flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/011a312d
+
+### crostini: Experimental Settings UI for extra containers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bf50e1
+
+### ax_cleanup: make AXPlatformNodeDelegate::GetParent() const
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72e04f5
+
+### [Code Health] Remove use of ListValue::GetDictionary()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3519a2d
+
+### desk_templates: Allow launching ARC apps p11.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32c3eba
+
+### Put SFUniversalLink integration behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0095f55
+
+### Use new PWA file handling dialog on Chrome OS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79f9324
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/266ca4e
+
+### Remove usage of WebContentsObserver in favor of WeakPtr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7119ad4
+
+### EditContext: introduce character bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d50b5b8
+
+### Add synced device count by device type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56799e3
+
+### ozone: //ui/base: clean up from USE_X11 1/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b98fed
+
+### Remove WebContentsObserver from TabStripModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c818010
+
+### Rewrite SendTabToSelfSubMenuModel to use WeakPtr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ffa55b
+
+### [Launcher] Fix OnAppListItemUpdated() not called after setting position
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea265d0
+
+### ozone/x11: clean //ui/gl from USE_X11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/290f7a51
+
+### ozone/wayland: remove IsUsingOzonePlatform from Wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/935588e
+
+### Fix color of bubble border in dark mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23107d3
+
+### [Launcher Sort] Temporary sort - part 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/568a3fc
+
+### Align tab-group-stroke thickness with FocusRing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f39bc1
+
+### Convert from using GridLayout to TableLayout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a7f5f9
+
+### desk_templates: Adds a browser test for testing native UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76cb571
+
+### cros_healthd: Fix dependency error for healthd and chromeos_unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18bc557
+
+### Revert "[linux/wayland] Enabled the test that should not be flaky anymore."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec64491
+
+### Revert "Reland "[iOS][Swift] Port SafetyCheck settings panel to Swift.""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d9ac63
+
+### desk_templates: Add icon previews for unsupported apps in dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcc8879
+
+### Settings TypeScript: Migrate clear_browsing_data_test.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de802ddb
+
+### [Fuchsia] Hide overlays views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85d54ae8
+
+`);
+              </script>
+            </body>
+        </html>
