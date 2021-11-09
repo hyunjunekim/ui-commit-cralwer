@@ -1,0 +1,228 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-09
+### autotest: Add getDisplaySmoothness API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97b1312
+
+### Warn that sRGB might be required in ImageTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03207411
+
+### Add #include "base/macros.h" for ignore_result()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a3f943
+
+### Hook Files App to quota retrieval functions for Drive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5008555
+
+### Add images to render in skottie animation frame to Canvas API.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4cf51cc
+
+### ozone: Ignore modifiers for video buffers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fd876d
+
+### Offline Dictation: Add progress ring around dictation button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9241e31
+
+### Rename enterprise_util::HasBrowserPoliciesApplied to IsBrowserManaged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e45dbd6
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c11aa2
+
+### Replace GetApplicationNameAndFileExtensions with GetAppName
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6a0672
+
+### Reland "[permissions] Fix chip UI interaction with the omnibox"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61b2e442
+
+### ax_script: support 'document' keyword to refer a top level accessible
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98a9da57
+
+### Update WaitUntilRenderFrameDeleted to be `WARN_UNUSED_RESULT bool`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d52b14f
+
+### ax_cleanup: implement AXPlatformNodeDelegate::IsWebAreaForPresentationalIframe
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aaaa6c8
+
+### Add flags for Crostini IME and VK support
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/05b4d59f
+
+### [Lacros] Disable more Dice-specific unittests when Dice is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b485a14
+
+### [Lacros][Tests] Rename profiles to "Default" in a few tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdec693
+
+### [FilesDarkMode] Add missing colors for textfield
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66ed6998
+
+### [fuchsia] Disable tests which use modified emoji on Fuchsia.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a9b5ea
+
+### [clipboard] Remove unused code from //chrome/browser/ui/ash/clipboard_util.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73d3e00
+
+### IWYU: add algorithm for std::find in ui::WaylandGLEGLUtility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fba698f
+
+### Fix CHECK in TabStripModel::CloseAllTabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d11441b
+
+### [memories] Adds option to dropdown menu to open visits in a tab group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d6140b7
+
+### Remove unnecessary include
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd06a87
+
+### Rename AccountPickerDelegateImpl to WebSigninAccountPickerDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b30e03
+
+### Fixes Mac accessibility crash related to tables
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d30aef
+
+### Profile Picker: Migrate remaining tests to chrome://webui-test data source.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5500937
+
+### [Extensions] Drag/drop pinned extensions only when the extension exists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92cf863b
+
+### [page info] Move focus tests to interactive ui suite
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/239c4cd0
+
+### Move c/b/lacros/window_utility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c87815
+
+### [Media Tabs] Get TabAlertState and send through mojo
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1423fe6
+
+### Revert "[Media Tabs] Get TabAlertState and send through mojo"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f221e3
+
+### ax_mac_merge: move accessibility role description strings into ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2016eb
+
+### Revert "[Sharesheet] Fix the body height on arabic."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c89bba5
+
+### [Lacros] Rename /chromeos/features/ to /chromes/constants/
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/885fb15b
+
+### Remove use of GridLayout in favor of TableLayoutView and view builders.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa1f3ad
+
+### [about this site] Fix dialog tests flakiness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dfe464
+
+### Reland "DCHECK on AddChildView() if a table layout does not have enough cells"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c95888f
+
+### [Magnifier] Add feature flag to allow resizing the Docked Magnifier
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/22b5da2
+
+### Merge SwapPromiseMonitor into LatencyInfoSwapPromiseMonitor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13dab1a3
+
+### Privacy Review Android: added Safe Browsing and cookies steps UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6be029
+
+### [AF] Initial refactor of autofill metrics/ folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/add1aa7
+
+### [Android] Remove flag for bottom sheet install.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c327386
+
+### Gate SidePanelButtonHighlighter on toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06ebca7
+
+### [Lacros] Use identity test environment in several unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d08ec62
+
+### Make NTP background image preview match general theme logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/560c4b8
+
+### Add a flag for per desk wallpaper
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d8791e3
+
+### GCC: make gfx::Point::operator== constexpr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4aa3a62
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f038e8
+
+### [FilesDarkMode] Make offline dark mode compliant
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08d0927
+
+### Enforce kSystemFeaturesDisableList in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7353736
+
+### Clean up TabRestoreSubMenus feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df7ecf73
+
+### ime: Delete ImeMojoDecoder flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cb684e3
+
+`);
+              </script>
+            </body>
+        </html>
