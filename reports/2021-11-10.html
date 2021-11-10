@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-10
+### Add a NoLeakWithNoAnimationStart test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10e76b9
+
+### [Lacros] Disable Lacros for Ash web app browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/353d65f
+
+### [memories] Fixes bug with results marked as 'continuation' by mistake
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/515e55d
+
+### Reland "[chromeos] Remove deprecated cros-regions-mode flag."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f9f81b4
+
+### WebUI: Update toolbar search input text color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1157f05
+
+### Add basic iph bubble webui component and demo flag
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea3c29b
+
+### [Power Bookmark] Add strings for upcoming price-tracking features
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c91822
+
+### ax_mac_merge: move NSAccessibilityInvalidAttribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83a57b6
+
+### [FilesDarkMode] Set outline to solid instead of auto
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a76166
+
+### wayland: move clipboard data reading out of ui thread
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bdc5667
+
+### Scale focus ring by zoom
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0279d6a
+
+### Files app: Remove reference to GPLUS Photos
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7f3098
+
+### Change namespace to ash for //ash/components/settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6e9d4a
+
+### Revert "[UIA] Ensure text range stays valid after node deletion"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04128c3
+
+### Fix comment that stated that InlineLoginDialogChromeOS is movable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0773fe
+
+### Correctly track page scale changes due to navigation in the browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3183a779
+
+### Update checks on when to add kColorSetNative in ColorMixer for macOS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31d821e
+
+### Fix the crash issue when selecting 'New Window' from the search box.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25800a3
+
+### Reland: Replace deprecated ListValue::GetString() in chrome/browser/ui/webui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec36f00
+
+### Revert "Disallow cross-origin same-page image drag-drop"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7375578
+
+### Returning cyan@ responsibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/561a2b3
+
+### dPWA: remove File Handling origin trial code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9d44e52
+
+### OOBE: Update welcome screen and os-install buttons for CloudReady
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/323308f
+
+### FrameSinkManagerImpl: clean up constructor (always use InitParams)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e154bde
+
+### Simplify IPH configuration to always use one of three templates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/334ab81
+
+### arc: Remove image copy paste compat flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/593be76
+
+### [Omnibox] Clipboard can set and detect URL mime type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84da449
+
+### Make the NssCertDatabaseGetter a Keyed Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38e9842
+
+### Move common element ids to browser_element_identifiers.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7db768a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6003c50
+
+### Leak warning: Only show "Change password" button if script is available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/634156b
+
+### Add a WPT for pointerevent user activation trigger.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34b3146
+
+### Remove expired flag from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1288c1b
+
+### bento: Add shortcuts for activating desks and assigning to all desks.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab099c5c
+
+### ime: Remove launched latin system PK flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3b40bd6
+
+### ozone/wayland: made WaylandBufferManagerGpu work on the main gpu thread
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aeb9cd3
+
+### ProfilePicker/Signin: Migrate tests files to TypeScript, part2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c941b1
+
+### Fix Mac Eisu Kana key events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc705bb5
+
+### multiword: add MultiwordLacrosSupport flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f591950
+
+### [a11y/mac] Don't autorelease an already-autoreleased NSArray.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94b810c
+
+### Move //{chromeos => ash}/services/ime
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe01541
+
+### Revert "ozone/wayland: made WaylandBufferManagerGpu work on the main gpu thread"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99280e8
+
+### [FilesDarkMode] Dark mode for file row
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09dad30f
+
+### Hide the save & generate password bubbles more easily.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/155a965
+
+### [FilesDarkMode] Expose variables from cr-toggle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f502ab
+
+### Extensions WebUI: Force 'Developer mode' to never wrap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e176439
+
+### Read later: fix bug where add current page button starts in wrong state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7065d7a5
+
+### Refactored AppsGridView to clean up context menu members.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9753058
+
+### Wrap namespaced l10n helpers so they are accessible from Swift.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5d128a
+
+### [FRE] Add a transition animation between view changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcfefdd
+
+### Fix crash in ShowLockScreenNetworkDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81663f4
+
+### System-apps: Add ability for delegates to dedup windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85f9fcd
+
+### [Lacros] Merge IdentityBrowserTestBase into InProcessBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5d0e7e
+
+### [Lacros] Migrate secondary profiles from Dice to Mirror
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ef2a7
+
+### personalization: add new root page for hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b914ce
+
+### [Web Payment] Clean up disabled feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1c0aa4
+
+### [FilesDarkMode] Adopt new cr-toggle variables
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d5dc6c
+
+### Add ability to safely retrieve ElementIdentifiers by name.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c40a11
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2339e6
+
+### Stop sending the securityStateChanged event and unwind
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a90fd8
+
+### [Passwords] Show password button description says which account it's for
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6407410
+
+### Reland "Disallow cross-origin same-page image drag-drop"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f58a398
+
+### Ensure accessible name for DesktopMediaSourceView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a05090
+
+### Disallow cross-origin same-page image drag-drop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f62c364
+
+### personalization: migration a few simple js files to ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b39e0f2
+
+### Pass force_high_performace_gpu to gl_surface/ANGLE.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d17388
+
+### [ui] Add `continue` for clarity in ClipboardOzone::GetStandardFormats
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2ab351
+
+### Remove insetting from TabGroupHeader anchor bounds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95a5f3f
+
+### Changes content urls so that the full path is shown rather than just 'content:'.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fffd3ad
+
+### [Tab Search] On Closing item, show it in Recently Closed section.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25742e24
+
+### [FRE][UI] Fix uma dialog ui for the new fre signin page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57925cadb
+
+### personalization: Re-encode to PNG in parallel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0db4872
+
+### Remove all the references of legacy camera app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/799de53
+
+### ozone: test_clipboard: remove kMimeTypeTextUtf8
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e6baf7
+
+### [permissions] Add tests for chip UI interaction with the omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e89dfb4
+
+### Update ScrollContentsRegionToBeVisible() with a sync Layout() call
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e99763d
+
+### Settings TypeScript: Migrate appearance_page/ tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78b71b80
+
+### Disable interactive ui test Drag*ImageBetweenFrames on linux-asan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f9f1e8
+
+`);
+              </script>
+            </body>
+        </html>
