@@ -1,0 +1,248 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-11
+### WebAppProvider::GetForTest() waits for registry ready
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5484b49
+
+### [FilesDarkMode] Dark mode for inline rename
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76db7ebe
+
+### [A11Y] Make AddSupervisionDialog reposition after screen size changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8073355
+
+### [Passwords] Validate missing TLD in add password dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76d5cdc
+
+### Fix a few more instances of -Wshadow.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0f54496
+
+### Remove GridLayout in favor of TableLayoutView. Use BoxLayoutView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dda98696
+
+### Remove authenticator attachment flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aaea7db
+
+### [Autofill] Fixes issues with the bubble placement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ea25200
+
+### Remove blink::features::kCompositeAfterPaint
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2900fc4
+
+### Ignore X DragWidget when doing drag-drop image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e74eea4
+
+### cros: Round the notification icon conditionally
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10e8910
+
+### prerender: Enable Prerender2 in AutocompleteActionPredictor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c37fb58
+
+### [Avatar button] Dim the button when the window is in background
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a004286
+
+### [Extensions c2s] Add a Extensions Tabbed Menu skeleton implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c734d61
+
+### Add anchor element to webui iph bubble
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba978cf
+
+### Open lens side panel clicks in New Tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74a88f3
+
+### cros: Remove old routes for People section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a7d9df
+
+### [Lacros] Update profile picker strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2da4a0
+
+### [lacros shelf] add existing instances to BrowserAppShelfItemController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c14c284
+
+### [ozone/wayland]Event watcher's shutdown_cb_ should invoke on UI thread
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd4163e
+
+### [Clank CBCM] Set chrome://management as focusable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/328362e
+
+### Prevent pinning of the Eche application to the shelf
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e49994b
+
+### [Signin] Add triploblastic as owner for chrome/browser/ui/android/signin/ directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61d29d7
+
+### ResourceBundle: use correct base::StringPiece overload for comparison
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d9909bc
+
+### Add null checks in Get1xPNGBytesFromNSImage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d590ce54
+
+### Replace RegisterDeprecatedMessageCallback on lock.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3aae48f
+
+### ozone/drm: Add additional state tracing for modesetting in DRM.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eedbe61
+
+### Settings: Migrate cookies_page_test.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43ebb7f
+
+### ax_mac: regulate access to AXPlatformNode instantiation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bb0c96
+
+### [Media Router] Unregister profile observer after it's no longer needed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89d6719
+
+### Add camera roll in phone hub setup flow
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fe5f54
+
+### Migrate chrome/browser/ash/* to namespace ash (3/3)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b21d14
+
+### feedback: add outline to the Cancel and Submit buttons when focused
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1edfbf6
+
+### [Lacros] Fix reauth action in the avatar menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abaefd8
+
+### Fix text truncation on PageInfo bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dff84a
+
+### [Sheriff] Disable ExtensionsTabbedMenuViewInteractiveUITest.ExtensionsButtonOpensInstalledExtensionsTab on Windows and Linux.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cefbe52
+
+### Enable SidePanelBorder by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2872d31
+
+### [content] Make ContentMainParams and MainFunctionParams move-only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fbeeb1c
+
+### Replace GridLayout with TableLayout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df5ebda
+
+### [Projector] Add support for setting user pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b693016
+
+### [Parent Access] Allow dialog to reposition after screen size changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26289db
+
+### [fuchsia][a11y] Add code path to send node data updates to fuchsia.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9a84a5
+
+### Download: Add flag for arbitrary range request support.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a8d6b27
+
+### Share one vulkan VkDevice and VkQueue with ANGLE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e88d3d278
+
+### Disable interactive ui test Drag*ImageBetweenFrames on linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e818e05
+
+### Files SWA: Disable Cloud Import for the SWA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/774814a
+
+### dpwas: Fix crash in protocol handlers settings page on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3dcdf9
+
+### [VirtualCards] OTP verification dialog UI improvements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d232aa2
+
+### Add TODO for bug to address inconsistent dialog repositioning behavior.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cd4aa6
+
+### [fuchsia] Disable DisablePrintOnCrashedTab test if printing unsupported.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/319384a
+
+### Switch to using ElementIdentifier for IPH anchor views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d50bedd
+
+### ozone/drm: Use aggregate initialization in tests to improve readability
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51bc068
+
+### [dPWA] Sub Apps - core install logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c638d4
+
+### Privacy Review: Add External Links to Completion Card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef0fe9c
+
+### Change namespace to ash for //ash/services/ime
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ee029d
+
+### Exposes Apps access status to JS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acbfec20
+
+### [Reland][Launcher Sort] Temporary sort - part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8db4f22
+
+### Hide avatar icon in public session on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d56bcce9
+
+`);
+              </script>
+            </body>
+        </html>
