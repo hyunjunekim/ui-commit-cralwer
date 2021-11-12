@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-12
+### Default Apps: Remove legacy pinned apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9a1c1d
+
+### desk_templates: Introduce DesksTemplatesDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1439229
+
+### Fix OTP Input Dialog A11y
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/feb4e79
+
+### [omnibox] Exclude sharing hub pedal on ChromeOS and update pedals data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eeca25a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a87bf8
+
+### Fix the crash issue when selecting 'New Window' from the search box.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b39cca9d3
+
+### Re:Final propagation of buffer opaqueness for ozone wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acbe447
+
+### Reland "Change namespace to ash for //ash/services/ime"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc4fe8b
+
+### [CrOS Cellular] Add and use "roaming required" subtext.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/608f6fb
+
+### Revert "Add a WPT for pointerevent user activation trigger."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9872337
+
+### Revert "[Extensions c2s] Add a Extensions Tabbed Menu skeleton implementation"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc0e178
+
+### Add a flag for for controlling Canvas resource when its in background
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bee4563
+
+### Call CleanupDrag() at completion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/676b61d
+
+### Remove GridLayout from deep_scanning_failure_modal_dialog.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/464312a
+
+### Fix regression in cr-tooltip-icon.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c27ec90
+
+### Rename to_different_document to should_show_loading_ui in LoadingStateChanged() callbacks
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9aabf5f
+
+### Implement VSync provider for WaylandSurfaceCanvas
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f3afff6
+
+### QA Cleanup: Move UI related logics to c/b/ui/ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50fafc1
+
+### Reland "OOBE: Remove WebContentsLoadFinishedWaiter from EULA browsertest"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c39929a
+
+### [memories] Accumulate keywords over 30 days of visits instead of 90.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d9f5fa
+
+### Remove GridLayout from send_tab_to_self_bubble_view_impl.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e9fc2d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8f4e5a
+
+### System-apps: Dedupe LaunchAndNavigateSystemWebApp() code with ash and core
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba8f9ae
+
+### [Code Health] Remove ListValue::GetDictionary() usage under chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ed1d11
+
+### [Read Later] Reading list folder should be at the top of the list
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/15482cd
+
+### [Start] Clean up unnecessary codes in StartSurfaceToolbar*.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fee97f92a2
+
+### [Web Payment] Remove never-enabled flag for strict basic-card.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efded18
+
+### [Lacros] Hide 'No thanks' button in profile creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1f3a63
+
+### [Side Search] Window and Tab state restoration logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa79458
+
+### [Lacros] Disable web apps on secondary profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0932c6a
+
+### Implement AXMathBase on mmultiscripts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6f40d0
+
+### Update AXApiType string cast for IA2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0123ddd
+
+### [Launcher Sort] Temporary sort - part 4
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e92cfd
+
+### ozone: move ScopedEnvironmentVariableOverride to base
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24d31b6
+
+### Remove unused "base/macros.h" in chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0c5772
+
+### Remove GridLayout from order_summary_view_controller.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/147e5e9
+
+### ime: Use FakeTextInputClient instead of DummyTextInputClient.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1a51db6
+
+### Rewrite GetMainFrame check to use IsInPrimaryMainFrame check instead.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e68ee3
+
+### Remove WaitForSelectionBoundingBoxUpdate from browser_test_utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6e0d04
+
+### Completely skip AXEventGenerator::OnAtomicUpdateFinished on Mac for AXTableInfo::UpdateExtraMacNodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f716d2d
+
+### Content setting list items should be given the full popup width.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a70a928
+
+### [Cast2Class] Add button to Chrome cast menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5230a1e
+
+### Remove WebContentsObserver usage from Payments code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe66edc
+
+### Avoid crashes when TabGroupViews is re-entered during destruction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41e52c4a
+
+### Remove GridLayout from prompt_for_scanning_modal_dialog.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5fe851
+
+### [Live Caption] Show the selected language next to the Live Caption
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffc19bf
+
+### OOBE: Nuke SCREEN_CREATE_SUPERVISED_USER_FLOW_DEPRECATED
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cae2a19d
+
+### Disable test, builder failing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d23dca
+
+### [FilesBanner] Add the DriveLowSpaceBanner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/602c569
+
+### [Live Caption] Remove the New Badge now that the feature has been
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8689f5a
+
+### Revert "Fix leaks in sharesheet"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aadd4e
+
+### Revert "Reland "Change namespace to ash for //ash/services/ime""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0458986
+
+### Fix document range optimization for end position
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0c615f
+
+### Remove unused "base/macros.h" in ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac80cee
+
+### capture_mode: Support DLP warning mode at session init
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53d003d
+
+### Web apps: Alter LaunchParams enqueuing conditions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e2e754e
+
+### Revert "Enable -Wshadow by default for the "chromium code" config."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fadf6d
+
+### personalization: Rename backdrop_wallpaper_handlers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0740e09
+
+### Revert "Change namespace to ash for //ash/services/ime"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc494c0
+
+### windows: updates kApplyNativeOcclusionToCompositor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55bef1d
+
+### desk_templates: Hook up the unsupported apps dialog's buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b031c26
+
+### Make some visual adjustments for IPH.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f94396e
+
+### Enable -Wshadow by default for the "chromium code" config.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bc6f71
+
+### Move {chromeos => ash}/components/phonehub/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47615b2
+
+`);
+              </script>
+            </body>
+        </html>
