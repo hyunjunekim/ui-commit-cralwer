@@ -1,0 +1,208 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-13
+### Rename "base/macros.h" => "base/ignore_result.h"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e6be14
+
+### ozone: remove features::IsUsingOzonePlatform.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d0f7a9
+
+### Make PW generation bubble placement consistent with Autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6824833
+
+### [linux] Improved the window sizer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2fc2b0
+
+### Update callsites to use WIN_-prefixed base::File flags.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ad6729c
+
+### ime: Use FakeTextInputClient for dictation tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a46b8eb
+
+### dpwa: [Test] Ensure WebAppOpaqueBFVWCOTests are for OpaqueBFV
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e01239
+
+### [Launcher] Add RemovedResultsRanker unit tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a4c590
+
+### [realbox] Refactor Accessibility Label in Realbox to Match Omnibox UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dca67522
+
+### Migrate ash/components/phonehub/ to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91fb61d
+
+### Add a chrome://flags/#files-archivemount2 flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2de7f41
+
+### ax_mac_merge: expose AXInvalid on only control elements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbbcba8
+
+### Remove WebContentsLifetimeHelper in favor of WeakPtr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0827d3a
+
+### Remove unused TabReloader code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6b88263
+
+### Implemented native headless mode on Windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e5bfc22
+
+### Fix views_examples on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a371fc4
+
+### Removed Tab Groups Send Feedback flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d3a666e
+
+### ozone/x11: reset display with ScopedEnvironmentVariableOverride
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03de820
+
+### Call constructor that takes a WebContents for WebContentsUserData.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e2b046
+
+### Replace GridLayout in EnterpriseStartupDialogView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9082991
+
+### Clipboard: Migrate off of deprecated TIFF type on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f58325e
+
+### Settings: Migrate security_keys_subpage_test.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c92fc3a
+
+### Fix dependencies for tabs/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb1eaa2
+
+### Call constructor that takes a WebContents for WebContentsUserData.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eec70c0
+
+### [accuracy tips] Close tip after a permission was requested
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2f38e6
+
+### [Read Later] Android should fetch larger favicons
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/90927fd
+
+### [fuchsia][a11y] Send focus updates to fuchsia.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/612b9b5
+
+### [Reader Mode] Introduce Reader Mode view in the Side Panel behind a flag.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc74419
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7a1f46
+
+### [about this site] Log kUnknown when hints fetching is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09ca53b
+
+### DLP: Invalidate Drop callback on pinned actions change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdfae22
+
+### [Link Capturing] Add flag to control new default link capturing behavior
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2345c19
+
+### Dynamically create the side-panel-border layer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b035a2b
+
+### Clipboard: Read images as PNGs on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c68c5e7
+
+### Uses the correct terminology when retrieving a node's text content
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76ca42d
+
+### drm: Disable not-preferred connected CRTCs to Connectors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1261e48
+
+### ax_cleanup: make AXPlatformNodeDelegate::ToString() const
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c54a6d
+
+### Fix ResizeUsingMin() to avoid overwriting ViewStates.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d88f798
+
+### aura: minor fix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f88488d9
+
+### Declare kCanAttachToAnotherWindowKey in chromeos/ui/base/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c1f5d5
+
+### ExternalVkImageBacking: Updated to ANGLE_external_objects_flags
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e63ea18
+
+### Revert "[Live Caption] Remove the New Badge now that the feature has been"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3bd0ba
+
+### [CrOS Bluetooth] Initialize BluetoothPowerController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7b5631
+
+### Reland "[Media Tabs] Get TabAlertState and send through mojo"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cfbb4a5
+
+### QuickUnlock - Export some constants
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66fcff92
+
+### Correctly parent the bulleted list.  This fixes its positioning.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64d258b
+
+### [Autofill] Fixed AutofillPopupControllerImpl crashes on ChromeOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6ad6b6
+
+### Removed unused references to SupervisedUserService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/137258b7
+
+`);
+              </script>
+            </body>
+        </html>
