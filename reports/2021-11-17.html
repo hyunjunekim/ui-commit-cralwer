@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-17
+### [flags] Add Fuchsia to the list of OS for flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e446caff
+
+### [iOS] Fix tests hanging when kAutofillEnableAccountWalletStorage enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c3f132
+
+### [ChromeOS] Update language list in OOBE after welcome screen is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb77a94
+
+### Introduce ContentBrowserClient::AttachUniversalWebContentsObservers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1830290
+
+### [Query Tiles] Remove searchBoxCoordinator from QueryTileSection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/006549132
+
+### haptics: Add haptic feedback to window snap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c7c855b
+
+### Web apps: Move free functions from web_app_launch_manager.h to web_app_launch_utils.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91b771a
+
+### [RDS] Move Request Desktop Site per-site changes behind new feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eabbb90
+
+### QA Cleanup: Migrate ash usages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1480779
+
+### arc: [12/N] Move //{ => ash}/components/arc/c*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6803bc
+
+### Move SidePanel to c/b/ui/views/side_panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2195a209
+
+### Make --custom-devtools-frontend take precedence over the remote loading
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d92dc5a
+
+### input: publish IdentifyKeyboard from EventRewriterChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2a9e28
+
+### Record app launches from Recent Apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1df6735
+
+### Revert "[omnibox] Move trademarked icons to vector_icons/google_chrome"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1d807ad
+
+### Revert "projector: Add PendingScreencastManager"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaf19ce
+
+### 🛃 Protect against general exceptions while inflating RemoteViews.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3aaab11
+
+### [motionmark] Avoid unnecessary IPC on mac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3eff0e1
+
+### Fix crash by not having accessible name for notification button.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7445fbbe
+
+### [Projector] Remove mocking Projector Controller in browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d87533d
+
+### [Lacros] Add browser test for profile menu reauth action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96bca0e
+
+### [LR] Add loading view during GIF generation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25066117
+
+### [GMNext] Migrate divider_line_bg_color to dynamic colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a2b49a
+
+### Call constructor that takes a WebContents for WebContentsUserData.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eeb6879
+
+### [Lacros] AddAccountHelper waits for an account to be upserted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cda6c9
+
+### [LR] Add accessibility and file name strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa14031
+
+### arc: [9/N] Move //{ => ash}/components/arc : arc_metrics_constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac52663
+
+### [signin] Move ShowExtensionLoginPrompt out of LoginUIService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d2dfa1
+
+### [ash-chrome] Nuke redundant WebUI messages from SigninScreenHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb0a2c24
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20c1479
+
+### [ash] Make kProjectorCreationFlowEnabled SYNCABLE_OS_PREF
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b303d50
+
+### [FilesDarkMode] Dark mode for grid view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec22496
+
+### [CrOS Settings] Notification row descriptor specify when DND enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a04b85c
+
+### arc: [8/N] Move //{ => ash}/components/arc : arc_test_support target
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d57fb5fa
+
+### Make (PointF|SizeF|Vector2dF)::ToString more concise
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7afc7cc
+
+### [omnibox] Move trademarked icons to vector_icons/google_chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b0f94bb
+
+### Modify tests for the non mojom LoadIconFromIconKey interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02e69a6
+
+### Separate SizeF/PointF/Vector2dF unit tests into their own files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8d8af7
+
+### [lacros] enables fractional scale support.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1c9c0c
+
+### Add position and arrow to webui iph bubble
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66278f0
+
+### Disable OfferNotificationBubbleViewsBrowserTest.BubbleNotShowingOnDuplicateTabtest only from linux OS due to flaky linux-wayland-rel tryjob.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe0c3cd6
+
+### Reland: updated GREASE enterprise policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1a8d79
+
+### Settings: Migrate site_settings/ tests to TypeScript, part1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/020c566
+
+### [Lacros] Move selected Bluetooth features consts from Ash to Chromeos.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e561d45
+
+### [CameraRoll] Support resetting the onboarding UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c688411
+
+### Remove FocusWindow() from DesktopNativeWidgetAura::InitNativeWidget()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/826702f7
+
+### Adding URL redirect for Lacros (Flags) Part 9
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebd14f1f
+
+### Remove kNewDragSpec app list feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/038224d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/189571d
+
+### Avoid crashes when fading out widget.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c00a16
+
+### Implement new Preload Pages settings Android UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e015de
+
+### Revert "Add dialog invoke UI test and remove GridLayout in favor of the simpler BoxLayout."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0cabeb
+
+### Fix hover opacity being nonsensical (or even NaN) for non-standard minimum tab widths.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df6e7ae
+
+### [Launcher Sort] Append sort options in context menus on AppListItemView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c48264e
+
+### Reland "[mparch] Use PrimaryPageChanged in VirtualCardManualFallbackBubbleControllerImpl"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4022f6
+
+### [Snooping protection] Implemented real settings page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b497ef6
+
+### Remove GridLayout from profile_menu_view_base.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d30f309
+
+### [Lacros] Show dialog when deleting primary profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0169ff
+
+### Call the non mojom LoadIcon interface to load icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e410ce7
+
+### Call the non mojom LoadIconFromIconKey to load icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acf3d59
+
+### Side panel/read later: add tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94f7135
+
+### Remove expired gdi-text-printing flag and associated code.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4ca5f55
+
+### Call constructor that takes a WebContents for WebContentsUserData.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7903d5a
+
+### [Start] Hide toolbar phone layout when Start surface should be shown at startup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25148914
+
+### [AppMenu] Add render tests for App Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51f2891
+
+### [Zenith] Replace the Device button with a dropdown icon button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7212209
+
+`);
+              </script>
+            </body>
+        </html>
