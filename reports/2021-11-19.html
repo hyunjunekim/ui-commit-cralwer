@@ -1,0 +1,252 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-19
+### Add feature flag for ARC account restrictions
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/376a3d5
+
+### Prevent redirecting to .well-know/change-password urls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a24d80
+
+### Avoid SyncServiceImplHarness::Create() in local_card_migration_* test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25d4db7
+
+### Fixed a crash when a new tab group was created when the tab group save
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccbdd134
+
+### Add resetHoldingSpace to autotestPrivate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89710e4
+
+### Fix emoji UI bubble contents wrapper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38396e81
+
+### lacros: Define USE_CRAS if and only if use_cras is true.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a63f19
+
+### Remove GridLayout from ReadOnlyOriginView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8186765
+
+### Add some comments about different mirror modes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10b4b4b
+
+### Reland "Add dialog invoke UI test and remove GridLayout in favor of the simpler BoxLayout."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93b0702
+
+### appcache: remove cookie info resources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6255a29
+
+### [CrOS Bluetooth] Migrate Bluetooth enterprise policy D-Bus client code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51c8df0
+
+### [Snooping protection] Added setting and search concepts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fc49d2
+
+### Extract: Add chrome://flags/#files-extract-archive flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/22b6b9c
+
+### [Reader Mode] Check that data is renderer-provided.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/679906c
+
+### [ZPS] Adds Feature, Feature Param, and flag entry for ZPS prefetching
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4d6f27b
+
+### PWAs: Don't mix up file handling and file share intent launches
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/191953d
+
+### ash: Add QS tile for shelf party mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2041a09
+
+### [Projector] Create delegate for projector and populate isDevChannel with real data.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d99b44
+
+### Migrate tests: payment_request_can_make_payment_metrics_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5181f84
+
+### Remove unused PNG files under ui/webui.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6fd5490a
+
+### [ash] Make prefs::kShelfDefaultPinLayoutRolls SYNCABLE_OS_PRIORITY_PREF
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb9c134
+
+### [LR] Add error strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8bca37
+
+### Reland "Adding URL redirect for Lacros (Flags) Part 9"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f897673
+
+### flags: remove enable-layout-ng
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e2ed68
+
+### Android FedCM UI - Add close button to bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a412803
+
+### Add aria-current to UIA_AriaPropertiesProperty value
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/995224b3
+
+### [ozone/wayland] Set ui_task_runner once in wayland event watcher
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/48c8d23e
+
+### Update callsites to use WIN_-prefixed base::File flags.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9be67bd5
+
+### Remove WebContentsObserver that tracks lifetime of the initiator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00bee48
+
+### Desktop PWAs: AppLauncherHandler uses standalone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d24ee7
+
+### Extract: Remove unused ZIP unpack flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9a88932
+
+### Revert "Hide skip button for 20 seconds."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c6245c
+
+### ash: Add AppListClient::StartZeroStateSearch() method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20d743bb
+
+### ozone/wayland: fix re-initialization of WBMG
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c309c5c
+
+### Reland "[omnibox] Move trademarked icons to vector_icons/google_chrome"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ad2be34
+
+### Add feature params to control what to show above the fold for a cluster
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9348ed
+
+### Add flag for enabling restricted APIs from specified origins
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/482ee2e
+
+### cert viewer: remove "verified usages" section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e12de3
+
+### Reland "Refactor metrics consent UI to handle more complex per-user logic."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a480f0
+
+### Slight Modifications for Card Unmask OTP Input Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dda0a59
+
+### What's New: Disable on LaCros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa13f53
+
+### Update notifier: change extension installed notification to toast.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92161086
+
+### Fix No Credentials on SK bug in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a3e9bc
+
+### Remove vector for the OnInstance interface parameter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15e0152
+
+### Move BitmapCursorFactoryOzone to ui/ozone/common/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3d6e37
+
+### Add ability to name an element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f6ec86
+
+### arc: [14/N] Move //{ => ash}/components/arc/i*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f99d00a4
+
+### [Live Caption] Never download SODA during media dialog view browsertests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/387c4e6
+
+### x11: fix a regression in navigator.keyboard.getLayoutMap()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82bd1483
+
+### Adjust PageTransition to be AUTO_SUBFRAME for mparch fenced frames.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87696ae
+
+### Web apps: Pull WebAppLaunchProcess out of WebAppLaunchManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19d7cbbd
+
+### Implement message shown on Android for unconsented users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0c3e7f
+
+### Firmware UI: Launch from settings about page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d11e7d
+
+### [Copy To Clipboard] Don't close bubble after Copy selected.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19e79adb
+
+### QA Lacros: Move //{ash => chromeos}/components/quick_answers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49d788e
+
+### Stop using Cocoa to animate scrollbars in Blink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d19ea4
+
+### Migrate tests: payment_request_completion_status_metrics_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4cb15b9
+
+### Remove flag preemptive-link-to-text-generation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/71d2f6a
+
+`);
+              </script>
+            </body>
+        </html>
