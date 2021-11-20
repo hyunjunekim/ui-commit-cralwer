@@ -1,0 +1,196 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-20
+### Improve UI of the LBS internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fa68cd
+
+### Clean up legacy non-ThemeRefactorAndroid code now that the feature has launched.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5448b1a
+
+### ozone/wayland: Use stdint.h instead of bits/stdint-intn.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02bf4d4
+
+### Revert "Reland "[omnibox] Move trademarked icons to vector_icons/google_chrome""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/975b486
+
+### Remove IsForWebBasedApp from InstanceKey.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65804c8
+
+### dPWAs: Switch File handling from permissions to settings. (Chrome OS)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08cafc97
+
+### [AutoDark] Remove category tag & context from feedback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1d21f5
+
+### Reland "QA Lacros: Move //{ash => chromeos}/components/quick_answers"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0da5bf
+
+### desk_templates: Separate unsupported app type from supported window api
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e820cf
+
+### Revert "[Sheriff] Revert "QA Lacros: Move //{ash => chromeos}/../quick_answers""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cd8e78
+
+### Leak warning: Introduce strings for "Change automatically" case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6b18d4
+
+### Disable flaky WebAppBrowserTest.UninstallMenuOption
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f815af0
+
+### [Sheriff] Revert "Remove vector for the OnInstance interface parameter."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e9f29f
+
+### Disable InlineLoginHelperBrowserTest.InvokeUi_default on Mac due to 60% failure rate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80e1295
+
+### Use a WeakPtr to pass a reference a reply callback.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34edd91
+
+### [Lacros] Move target use_real_dbus_clients_config to //chromeos/dbus/config.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/563a651
+
+### Disable WebAppBrowserTest_FileHandler.WebAppFileHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d44c20131
+
+### Check presence of startup tabs without profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a2ffe3
+
+### [Sheriff] Revert "QA Lacros: Move //{ash => chromeos}/../quick_answers"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68e5d69
+
+### Reland "[Lacros] Move selected Bluetooth features consts from Ash to Chromeos."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/81b7b32
+
+### Remove use of GridLayout and use views::Builder. Simplified code using BoxLayout
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b2b516
+
+### x11: remove the USE_X11 define.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd3d129
+
+### NotificationRevamp: Animations for action buttons and inline reply.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2bf888d9
+
+### Disable various MediaDialogViewBrowserTest tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6657c45
+
+### QA Lacros: Move ash/public/cpp/quick_answers/ to chromeos/components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d74a070
+
+### Enables calculating line, word and sentence boundaries on the browser
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0cbd95e
+
+### Only create inkdrops in AnimateToState() when necessary
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/569a311
+
+### add transition_only_on_event to tutorials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a0884a4
+
+### [location_bar] Add olesiamarukhno as a full OWNER of this directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc84650
+
+### [FilesBanner] Debounce the onDirectorySizeChanged event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97de01d
+
+### Add OWNERS to c/b/ui/views/side_panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a425174
+
+### arc: [19/N] Move back //{ash => }/components/arc/intent_helper/*_unittest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb5cbe4
+
+### Make cross-origin dragged images not accessible in dragstart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3acd3b0
+
+### [Fre] Add a new footer string for supervised accounts for the new signin fre page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db47c3a
+
+### Retain the existing capture if a change to a new source is rejected.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/764fad5
+
+### Shimless: Create Chrome delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27c66c3
+
+### Rename ReadLaterToolbarButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4939843
+
+### Use PageInfoHighlight class to handle highlight info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/795bfb8
+
+### Remove unneeded base/compiler_specific.h includes in //chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48f407c1
+
+### Revert "QA Lacros: Move //{ash => chromeos}/components/quick_answers"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3761ef5
+
+### desk_templates: Replace NTP favicon with Chrome logo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f9bf56
+
+### Create dynamic color scaffolding for default_bg_color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/175ac89
+
+### Prefer simpler GURL::Replacements::Set...Str methods().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40b515a
+
+### Enable Windows Browser Tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e875c2c2
+
+### Record Continue Tasks launch metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7978c42
+
+`);
+              </script>
+            </body>
+        </html>
