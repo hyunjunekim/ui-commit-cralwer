@@ -1,0 +1,228 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-24
+### [FRE] Make the new signin FRE page scrollable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95312b9
+
+### desk_templates: Some style fixes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c92069
+
+### Add kRestrictedApiOrigins to bad flags to show security warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9f69ff
+
+### [Sheriff] Disable BrowserNavigatorTest.ReuseRVHWithWebUI on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e94df0
+
+### [Launcher Sort] Move sorting functions to a separate file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/497854a
+
+### [Launcher sort] Implemented context menu on folder item view as sort UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c72eeafa
+
+### Web apps: Implement navigate_existing_client: never behaviour for launch_handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36bdb0ee
+
+### [fuchsia] Add PointerEventsHandler to handle flatland Mouse and Touch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1ae7ab
+
+### Remove Value::GetAsList() from chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4538367
+
+### [Profile picker] Enable browser tests on lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da9da23
+
+### [Fast Pair] Update settings battery with multiple batteries.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf691c81
+
+### Disable presubmit for semantic colors until fixed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eabb4f9
+
+### InstanceRegistry: disable updates via old code paths for Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd0ca9b
+
+### Revert "[Profile creation] Clean up unused profiles in aborted flows"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/418508c
+
+### [CodeHealth] Remove DictionaryValue::GetBoolean()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94aef64
+
+### Remove SortButton that was used for sort testing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1e495b
+
+### Revert "Web apps: Implement navigate_existing_client: never behaviour for launch_handler"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f782595
+
+### Fix various close buttons to have a tooltip text of "close".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2929366
+
+### [linux/wayland] Replaced the annoying DCHECK with WARNING.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a5912e
+
+### Enables shortcut creation in web app integration tests and adds shortcut to AppState.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eedeaf4
+
+### Introduce OobeCrLottie animation element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be6080b
+
+### clipboard: add thomas as an owner of ozone clipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d32b7d6
+
+### Respect explicit flat pixel structure.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a950d7
+
+### ReadLater: Migrate to Mojo JS modules.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/856dffb
+
+### [fuchsia] Remove DIR_MODULE & FILE_MODULE from cross-platform code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d798600
+
+### UAF protection for promo launched from callback.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/371e656
+
+### [AutoDark] Migrate autodark flag to components/
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0f571b
+
+### Restore SDR conversion for HLG content.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b71923
+
+### desk_templates: Add unavailable app api and toast.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53a0ee5
+
+### Do not allocate GPU memory buffers for tiles when RawDraw is used.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f3d435
+
+### ash: Move app list and shelf strings out of //ui into //ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f1d07e
+
+### WebUI: Delete cr.defineProperty() and replace with Object.defineProperty.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b4b7bd
+
+### Fixed empty bookmark bar crashing when tab group save flag is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bb4e9a
+
+### Clamp in gfx::ScaleTo*Rect() and fix bug
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51c9108
+
+### flags: remove align-font-display-auto-lcp
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a4b135c
+
+### Modify InstanceRegistry to create instance with instance id.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ba3e0e
+
+### [CodeHealth] Remove DictionaryValue::GetBoolean()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64a5e40d
+
+### [CodeHealth] Remove DictionaryValue::GetBoolean()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f642bda
+
+### [CloudReady][OOBE] Add hardware data collection notice screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2624f9
+
+### Add basic versions of UnifiedSidePanel classes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01c1963
+
+### Fix clang plugin style errors for MiraclePtr Big Rewrite
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbd9cfa
+
+### Fixed browser from crashing when permanent bookmark nodes are clicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec35322
+
+### Revert "[Profile picker] Enable browser tests on lacros"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9e670f
+
+### Web apps: Clean up WebAppDeclarativeLinkCapturingOriginTrialBrowserTest.OriginTrialDisabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22712a9
+
+### [Passwords] Pushed PasswordStoreConsumer's WeakPtrFactory into leaf classes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/587460e
+
+### GCC: make some gfx::PointF operators constexpr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bef8c71
+
+### ozone: fix out-of-date ClipboardOzone description
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28cc595
+
+### OOBE Consolidated Consent: Hide ToS for managed users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81635b9
+
+### [style_var_gen] Make ui/chromeos/styles presubmit check semantic colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b40b82e
+
+### [Profile creation] Clean up unused profiles in aborted flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad1d086
+
+### [omnibox] Add whole-phrase synonym group specs for non-English use
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7f9453
+
+### Remove copy in IdentityDialogController::ShowAccountsDialog()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c351173a
+
+### [ZT] Expose DTKeyManager Is Fully Initialized in Internals Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da0e3b4
+
+`);
+              </script>
+            </body>
+        </html>
