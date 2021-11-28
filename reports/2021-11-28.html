@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked(`# Daily reports for Desktop folks
+## 2021-11-28
+### Rewrite most `Foo* field_` pointer fields to `raw_ptr<Foo> field_`.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e45c02
+
+### Speculative fix for a lacros_all_tast_tests_eve failure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3fab6b
+
+`);
+              </script>
+            </body>
+        </html>
