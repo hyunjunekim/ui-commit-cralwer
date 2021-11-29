@@ -99,7 +99,7 @@ if __name__ == "__main__":
             </head>
             <body>
               <div id="content"></div>
-              <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
               <script>
                  document.getElementById("content").innerHTML = marked.parse(`{}`);
               </script>
