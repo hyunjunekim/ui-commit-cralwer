@@ -101,7 +101,7 @@ if __name__ == "__main__":
               <div id="content"></div>
               <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
               <script>
-                 document.getElementById("content").innerHTML = marked(`{}`);
+                 document.getElementById("content").innerHTML = marked.parse(`{}`);
               </script>
             </body>
         </html>'''
