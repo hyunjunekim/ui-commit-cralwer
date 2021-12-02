@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2021-12-02
+### Use AnnounceText to present loading message when back/forward pressed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9776367
+
+### [CodeHealth] Remove DictionaryValue::GetBoolean()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bf3fa5
+
+### Disable Available Offline for for files which can't be pinned
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc8fe6c
+
+### Revert "[linux/wayland] Enabled the (maybe already not) flaky test."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab1e4b1
+
+### [CrOS Bluetooth] Update device-specific pairing to match normal flow.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85880cd
+
+### [Remove FeaturePolicyForClientHints] (2) Remove lifetime argument
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93a1f4f
+
+### [FilesDarkMode] Dark mode for add-smb-share-dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0359d857
+
+### Clean up includes in content/public/common/child_process_host.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e004cb
+
+### Files app: Remove unused code/styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8a7795
+
+### [Projector] Add user preferences to track Onboarding flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e284e1
+
+### [RBD] Support product ID extraction for more sites (3)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4bdc3c1
+
+### [fuchsia] Change chrome's touch response to YES
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/266f79a
+
+### QA Lacros: Move string consts from //ash to //chromeos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc98afa
+
+### Simplify construction of AccountManagerTestRule.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e1a74b
+
+### [Extensions Refactor] Use ExtensionsToolbarUnitTest and move tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0435723
+
+### ml: Use predefined const add instead of raw "2" in Neural Palm.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0576dcf
+
+### [answers] Rename the kCard DisplayType to kAnswerCard.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8965553
+
+### Do not fire parent-changed event on ignored nodes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f13f84
+
+### settings: link to personalization hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa8dd295
+
+### Print Preview: Migrate invalid settings and header tests to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94be7b7
+
+### Clamp <length> in InterpolableLength::CreateLength and add DCHECK in Length constructors, add clamping in cubic-bezier
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff5df674
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/762d198
+
+### Initialize Ozone in aura_demo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04a9ab0
+
+### Revised B4P opt-in flow: Update strings in the reauth flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00e3679
+
+### [FilesDarkMode] Fix toggle opacity/ripple color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c3cc35
+
+### Show UMA toggle as a link in Ash browser settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4f43a8
+
+### Support Manage USB devices in settings for ARCVM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2088fe3
+
+### Revert "Add guards and WCO observer updates to payments code"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d12292f
+
+### [Launcher] Refactor on AppListModel methods for deletion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c2b10d
+
+### ozone/drm: Use ids to refer to crtcs instead of indices
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77f8305
+
+### Remove macro parameter that's no longer necessary.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cac5640
+
+### Migrate 3 tests: payment_request_can_make_payment_metrics_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/881e46d7
+
+### Remove bg from unified-side-panel control buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7770ab
+
+### Side Panel: Add screenreader alerts for created, moved, deleted bookmark
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52fe17b
+
+### [Extensions] Don't allow moving force-pinned extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d1152d
+
+### [FilesDarkMode] Dark mode for smb related dialogs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a49489690
+
+### Avoid SyncServiceImplHarness::Create() in page_info_bubble_view_* test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7f90ae
+
+### [Copy To Clipboard] Remove Copy action for non native File System Types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ba4cf6
+
+### Enable tab scrolling for ChromeOS (all desktop platforms)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6e8eef6
+
+### Add type-checking functions to SessionStartupPref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1a1d04
+
+### [omnibox] Move trademarked icons to vector_icons/google_chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fed08b
+
+### [Passwords] Switch to existing entry when password to add is duplicated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3058672
+
+### Cleanup EnterpriseReportingApiKeychainRecreation feature and flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fe6d6b44
+
+### [AutoDark] Clean up WebContentsDarkModeController
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1443d5c
+
+### [Widget] Add extra-small fallback widget variant
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df58344
+
+### Settings: Migrate autofill_page/ tests to TypeScript, part 3.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c59b006
+
+### X11 and Ozone: rework topwindowfinder tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b36a3292
+
+### Revert "[linux/wayland] Tentatively fixed the flaky fullscreen test."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fca76831
+
+### Show infobars in web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6243e5
+
+### ax_mac_merge: merge AXURL attribute implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cdc769f
+
+### [Lacros] Rename AppServiceProxyChromeOs to AppServiceProxyAsh.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5faf4aa
+
+### Sanitize app list paging after updating app in productivity launcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/229db13a
+
+### Remove flag kForceDisableStackedTabs
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7ae8e95
+
+### [lacros] Add null check of ArcPipBridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc5e8d5
+
+### system-web-app: Add an accessible app name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93ec32c3
+
+### [send-tab-to-self/context-menu] Make ShareSubmenuModel immutable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82a64ca
+
+### [Extensions Metrics] Update ExtensionToolbarModel metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d14baca
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecfa1e0
+
+### [Applist Sync] Refactor AppListModelUpdater methods for deletion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a9a82e
+
+### [Launcher Sort] Handle app uninstallation under temporary sort
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/164983f
+
+`);
+              </script>
+            </body>
+        </html>
