@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2021-12-03
+### Revert "Fix state inconsistencies when |EnterFullscreenModeForTab| fails"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f3047e
+
+### ozone: evdev: Add quirk to identify 0x18d1:0x505B as internal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4063aa7
+
+### Make lottie resource unscaled image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0fede03
+
+### dpwa: Do not clear draggable regions for SameDocument Navigation for WCO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f44a34d
+
+### [Lacros] Add unit test for ProfilePickerHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b07abc3d
+
+### [GMNext] Remove Material attribute definitions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f98147
+
+### [RBD] Support product ID extraction for more sites (4)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6fef6ba
+
+### WebUI tab strip: fix invalid pointer access for edit group bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/276a8bd1
+
+### [Widget] Detect and respond to configuration changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5db282
+
+### Revert "[RBD] Support product ID extraction for more sites (3)"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c96c2ee
+
+### [Files app] Use pdf/buildflags.h to check Chrome PDF support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d8265a
+
+### Fix NO_FLAGS not reported to chrome://extension-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2be4d8f
+
+### OOBE Consolidated Consent: Add browsertests for ARC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df85473
+
+### What's New: Add code to potentially trigger HATS after a delay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/051ff15
+
+### [Lacros] Define ENABLE_MIRROR and undefine ENABLE_DICE_SUPPORT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c15fa2
+
+### [answers] Add a skeleton Answer ranker.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/728b8064
+
+### [ozone/wayland] Bogus DCHECK in WaylandSurface::SetSurfaceBufferScale()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6074bb
+
+### desk_templates: Add browser test for launching SWAs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce898b94
+
+### [Widget] Remove the Height resize limit restriction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97da25608
+
+### Send download danger and mixed content types to ash from lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb1cf91
+
+### [UIA] Ensure text range endpoints are valid when subtree is deleted
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3da6ca
+
+### Fix tabModelSelector initialization assertion error in IncognitoToggleTabLayout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/281a507
+
+### [Autofill] Ignore clicks on initially hovered, unexited suggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43d9f11
+
+### [chromeos] Update a few comments to match the code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/07cf657
+
+### ax_inspect: move mac inspect util files under ui/accessibility umbrella
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7853577
+
+### [Lacros] Add Bluetooth support by enabling code path used by Ash.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/471ff9c
+
+### arc: [36/N] //{ => ash}/components/arc/ post-move deps clean-up
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a6b842
+
+### Merge interface IMEBridge with private sole impl class IMEBridgeImpl.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e16bda8
+
+### Reland "[RBD] Support product ID extraction for more sites (3)"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fd8fe08
+
+### Adding the simplified Assistant voice search consent UI.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d9bf13d
+
+### [Lacros] Fix signin-related logic in PeopleHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b08d58d3
+
+### Disable virtual keyboard in Fuchsia builds.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f96bb18
+
+### Files SWA: Fix date translation to use locale from browser process
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/339e830
+
+### breadcrumbs: add desktop browser agent tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/982f5db
+
+### Remove chromeos::features::kVirtualKeyboardApi.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a4268c
+
+### Added Edit > Transformations menu on macOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee2976e
+
+### Revert "[Lacros] Define ENABLE_MIRROR and undefine ENABLE_DICE_SUPPORT"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af51f82
+
+### Change radio group id to 0 to match id assigned in constructor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73ec6274
+
+### [Widget] Catch up with Mock updates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5bb70d
+
+### ash: Support for keyboard backlight toggle key
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b97bb7
+
+### [Snooze IPH] Add support for automatic snooze
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/da8371b6
+
+### arc: [34/N] Move //{ => ash}/components/arc/mojom:mojom : batch 8
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d6f802
+
+### Fix state inconsistencies when |EnterFullscreenModeForTab| fails
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ad513aa
+
+### Add per mode variables for color_prominent.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c947b63
+
+### [Lacros] Prepare for non-Dice platforms in ProfileMenuView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f0266e
+
+### Add dedicated flag in chrome://flags for FedCM interception
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/980079f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c33dd2
+
+### [Ozone/Wayland]Move frame management capabilities out of WBMH
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/639573a
+
+### [DesktopSite] Persist tab level user agent setting to disk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cbdc91
+
+### Revised B4P opt-in flow: Integration tests for new strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ca26882
+
+### [Coupon] Hide coupon UI when coupon is no longer valid
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbdc630
+
+### [ZT] Show Loaded Key Type and Trust Level on Internal Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d74e9d6
+
+### gpu: Log allowed GL/ANGLE impls when init fails
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4da1fe5
+
+### personalization: prepare launch wallpaper feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ac3794c
+
+### Add BUILD.gn in //chromeos/printing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd98b50
+
+### Revert "Speculative fix for a lacros_all_tast_tests_eve failure"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e53fe69
+
+### arc: [35/N] Move //{ => ash}/components/arc/mojom:mojom : clean-up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4128cb2
+
+### [CrOS Settings] Validate WireGuard peer preshared key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e69cee
+
+### Fix bug breaking consent toggle caused by refactor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b82e9a
+
+### Delete multipaste related flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/210a453
+
+### Mac: restore ScreenTime
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2e90921
+
+### Support all device choosers in Chrome App windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28a972b
+
+### [style_var_gen] Fix CSS variable checking tools.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd420e1
+
+### "Create shortcut" dialog will only open once per tab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdfb109
+
+### HaTS: Consider non-committed navigations as cross-origin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/360d1e7
+
+### Remove unneeded base/containers/contains.h includes.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e7d9d7
+
+### [CrOS Bluetooth] Do not show error text when user cancels pairing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77c23f0
+
+### [fuchsia][a11y] Use AXUniqueIDs as fuchsia node IDs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05ab031
+
+### Update Lens Side Panel Header Buttons to be 18px
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f49e80814
+
+### Create separate html files for unified side panel entries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ff38925
+
+`);
+              </script>
+            </body>
+        </html>
