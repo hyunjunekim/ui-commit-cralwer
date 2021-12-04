@@ -1,0 +1,200 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2021-12-04
+### [Query Tiles] Remove query tiles code from omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5257a20
+
+### Revert "Delete multipaste related flags."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cfcebab
+
+### [lacros shelf] Update the right window property
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/554a89f
+
+### Add various missing STL includes in headers.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f738cd
+
+### [GMNext] Make active and normal control colors dynamic
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66d2b4d25
+
+### Expose download scanning state in Tote.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5577f3e
+
+### [FedCM] Implement an intermediate bottom sheet during sign-up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dd2e3d7
+
+### Migrate 7 tests: payment_request_can_make_payment_metrics_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bab640b
+
+### [page info] Move core classes into a layer
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/46ccd43
+
+### [Transactions] Change processing of suggestion items to create Views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07e59d7
+
+### Add ES2 fallback for EGL_KHR_no_config_context
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f271749
+
+### ash: Remove dump without crashing from InsertAppItem().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0e6e31
+
+### [HPS] Hook up setting for quick dim.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd7b46d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbd9904
+
+### Turn a11y paint CHECKs into DCHECKs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/409b167a
+
+### Reland: Make PaymentRequest a DocumentService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b57ac1d
+
+### [TTS] Add Flags for Contextual Triggers
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4c4f5673
+
+### Files SWA: Allow the dialog to be movable and re-sizable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b38b993b
+
+### [Zenith] Add unit tests to the Zenith dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/429466b
+
+### TabSearch: Migrate to TypeScript part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/746d0e8
+
+### [cros oobe] Add skeleton and feature flag for the QuickStart screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c715a0
+
+### Add JankyTimePercentage metric, this tracks the average over all scrolling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a46799
+
+### Reland "Fix state inconsistencies when |EnterFullscreenModeForTab| fails"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/640cff7
+
+### Remove unused WebContentsObserver for instant pages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ec218e
+
+### Connect android Preload Pages UI with prefs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e74bbb6
+
+### Exclude OS_WIN .url shortcuts from DataTransfer.files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/745a389
+
+### Remove WrongDirection UMA and Transfer InputPrediction UMA ownership
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/455dd64
+
+### Rename Chip's theme.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f07a27
+
+### ozone/drm: Refactor ePS Stack to Validate Set Success
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/835c9af
+
+### Fix Drive notifications not appearing for Files SWA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28e27347
+
+### [Autofill] Added icon infront of 'Clear form' suggestion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd4115b9
+
+### ozone/drm: Cache Privacy Screen Prop in DrmDisplay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7929aa7
+
+### Migrate payment_request_update_with_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5fb7bb9
+
+### Fix color space conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6dc8248
+
+### [Zenith] Ensure Zenith+Cast phase 2 feature depends on MediaRouter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe1390a
+
+### ozone/wayland: send the entire rounded clip bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28c0a74
+
+### [Launcher Sort] Add data structures to support color syncing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4609bf6
+
+### [Transactions] Change which suggestions are footers or normal items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/129792a
+
+### Remove File Handling permissions code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ef2a85
+
+### [Omnibox] Displays match (sub)types reported in AQS param in debug page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d508b195
+
+### Modify AppService instance for chrome app window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa6b076
+
+### Cros: Animate expand of notification in the QS Bubble
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3496eb3f
+
+### GCC: add constexpr in gfx::PointF and gfx::SizeF
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce3684a
+
+### Code health: port away from deprecated ListValue::GetString
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d5da4a
+
+### Apps that user can't uninstall also register to Windows OS settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/447268a
+
+### Add trace events for investigating WebUI RSS compression
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af67dff
+
+`);
+              </script>
+            </body>
+        </html>
