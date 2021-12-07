@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2021-12-07
+### [AutoDark] Add support for opt-in experiment arm
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6806684
+
+### Ensure terminal opens on correct display
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7a07f3
+
+### [Files App] Add wenbojie to OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e4357c
+
+### Update metadata and view builder support on PaymentRequestRowItem.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80cd926
+
+### Make PdfPrinterHandlerPosixTest work independent of the system umask.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec8b8b5
+
+### Fix Browser::RendererResponsive() crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8481650
+
+### ax_inspect: cleanup the mess around mac's AXTreeIndexer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b22b451
+
+### IWYU: add limits for std::numeric_limits in gfx::CubicBezier
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d4a285
+
+### ui: Refactor image resource loading
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0468a0d
+
+### [Sheriff] Disable SerialChooserControllerTest.Blocklist
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f431c7
+
+### Change how context menu visibility is checked on rename
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fe6af2
+
+### [Mac] Observe PrimaryPageChanged in Screentime tab helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ab1900
+
+### Add killswitch for tab-share blue-border for specific circumstances
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4813100
+
+### WebUI: Add ui/gfx/geometry to preprocessed mojo js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc958f0
+
+### [Side Search] Session state restoration logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d9ab14
+
+### cros: Fix crash in ~InlineLoginDialogChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c2d537
+
+### CrOS VCD: Add a switch for auto-framing control override
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/61605a5
+
+### Privacy Review: add handler + browser proxy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/746a739
+
+### Remove use of GridLayout for the payment sheet view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8e475a
+
+### Clipboard: Don't encode the same bitmap multiple times on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f069ed
+
+### WebUI: Prevent CrA11yAnnouncer's live region from adding space
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01018d9
+
+### [Reland] CodeHealth: Remove ListValue:GetBoolean()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b4780d
+
+### Revert "[DesktopSite] Persist tab level user agent setting to disk"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4819e8d
+
+### Settings: Remove SettingsLandingPageRedesign feature flag, part 2.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bb3823
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d472296
+
+### Fix behavior of tab-capture-blue-border for multi-capture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99204309
+
+### Rename kExtension to kChromeApp.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a679e3
+
+### Add 'Ntp Modules Redesigned Layout' flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/57933b8
+
+### Fix memory leak in CalendarKeyedServiceTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/518914b
+
+### Fix the crash issue when click 'Options' menu item from the search box.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27583a5
+
+### Android: Track Chrome multi-instance state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/598fe25
+
+### [settings] Hide sk edit button if not supported
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb8b980
+
+### Add flag for VK dark mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8fdbe0e
+
+### Extensions: A11y confirmation when extension is pinned to the toolbar
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cc4f8d3
+
+### [FilesDarkMode] Fix ripple color for toggle/checkbox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3bc44d
+
+### Fix typos in comments in chromium/src/ui/events/ozone/evdev
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d1b3dc
+
+### [HPS] Show/hide settings for only enabled features.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2259fe05
+
+### [DesktopScreenshot] Create a mojo interface for the image editor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e51e8d
+
+### Revert "Web apps: Use dark mode theme color and background color in non ash."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d0c100
+
+### personalization: Ash.Wallpaper.Source metric is not captured correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36e230a
+
+### Fix usage of ScopedFeatureList in serial_chooser_controller_unittest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71a0641
+
+### [cros-styles] Rename button_background_color_primary_hover_overlay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6ec742d
+
+### [lacros] Fix "More settings and permissions" for Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74ecc67
+
+### Clipboard: Allow more flexibility in when PNGs are encoded on Chrome OS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc60932
+
+### Revert "Reland "[Lacros] Define ENABLE_MIRROR and undefine ENABLE_DICE_SUPPORT""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2db9929
+
+### personalization: handle D/L wallpapers syncing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df776e9
+
+### Implemented finding sentence boundaries on all platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10c66f6
+
+### Fixed ownership in widget interactive UI tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/657500a
+
+### Revert "Settings: Remove SettingsLandingPageRedesign feature flag, part 2."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02ed565
+
+### Make button_background_color_primary_hover_overlay black 8%
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f696ed
+
+### Web apps: Use dark mode theme color and background color in non ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/772e59f
+
+### [Refactor] Clean AppListSortBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aedfc1e
+
+### Extensions WebUI: Add details to back button's aria label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bac76a6
+
+### Remove Profile::IsSupervised method from webui directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d0de63
+
+### Fix memory leak in SearchResultRankerTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c8d6d6
+
+### Reland "[Lacros] Define ENABLE_MIRROR and undefine ENABLE_DICE_SUPPORT"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b983d90
+
+### Prevent traversal of ignored nodes of RequestAXTreeSnapshot result.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/404f17e
+
+### Reland "Add guards and WCO observer updates to payments code"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42157bb
+
+### [Widget] Relocate compound RemoteViews creation to ProviderDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd69c33
+
+### Add heurstics to fetch reauth token only when needed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ea6370
+
+### [Segmentation] Get the service status for the segmentation internal page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2e1762
+
+### [fuchsia] Do not pack device_id and pointer_id for touch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a59c96d
+
+### [Mac] Restore ScreenTime tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ba2b8a
+
+### Settings: Remove SettingsLandingPageRedesign feature flag, part 1.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6aa6ed54
+
+### Fix build when drm_commit_properties_on_page_flip=true
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9476b45
+
+### TabSearch: Migrate to TypeScript part 2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/942da4b
+
+### ax_mac_merge: move AXARIAPosInSet and AXARIASetSize
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/29292b8
+
+`);
+              </script>
+            </body>
+        </html>
