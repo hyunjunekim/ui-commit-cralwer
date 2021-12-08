@@ -88,6 +88,8 @@ if __name__ == "__main__":
     else:
         markdown += "* Nothing has been commited today :)\n"
 
+    markdown = markdown.replace("`", "\\`");
+
     page_path = os.path.join(script_dir, "reports/{}.html".format(today))
 
     with open(page_path, 'w') as page:
