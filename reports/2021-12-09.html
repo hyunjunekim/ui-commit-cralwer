@@ -1,0 +1,384 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2021-12-09
+### Call the WebContentsUserData ctor as well for TabHelper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9fde1f
+
+### Revert "Record new metric for first render time on profile picker startup"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49b37d62
+
+### [Launcher Sort] Implement reorder undo toast under clamshell mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28b08f4
+
+### Revert "[VCN] Add desktop iph bubble for virtual card option"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d95777
+
+### Fix new page creation in launcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db8a407
+
+### Switch default_bg_color_elev_0 to macro/default_bg_color.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbd7fda
+
+### crostini: Remove brittle RestartOptions hack.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b7ec4b
+
+### [Read Later] Choose custom or regular tabs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ebc0f2b
+
+### [Autofill] Exchange a colored border of footer items with a separator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33ef428
+
+### Fix crash in the  ash::NonClientFrameViewAsh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/938c7c3
+
+### Adding tab groups behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/003e096
+
+### Change OnPerformDrop from pure virtual
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/21a9597
+
+### Migrate default_bg_color to dynamic colors in ^chrome/*.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26d19ea
+
+### [AutoDark] Add feedback source for auto dark
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f602d57
+
+### sheriff: Disable failing WebAppIntegrationBrowserTest test on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ce540b
+
+### Add backspace vector icon. Use it for 'Clear Form' in Autofill.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc29658
+
+### Revert "Add the kExtension app type to present browser extensions."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a552ce5
+
+### Web apps: Add more metrics for default app duplication
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d11222
+
+### Cleanup: Remove the GlobalMediaControlsForCast feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46d631b
+
+### [Fast Pair] Correct settings low battery color to red.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1797d8
+
+### [FilesDarkMode] Make change default dialog dark mode compliant
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6932944
+
+### [GMNext] Make CheckBox and RadioButton dynamic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4182ef0e
+
+### ax_cleanup: unify AXPlatformNodeDelegate GetBoundsRect derivative utils
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea4deab
+
+### [omnibox] clean up on device head suggest flags and fieldtrials.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4b30078
+
+### NotificationRevamp: Fix UI style of new expanded notification view.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34341e4
+
+### [omnibox] Reuse common logic for sharing hub icon selection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91252d9c
+
+### Delete LiteVideos codebase since this feature is now disabled.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d5783ff
+
+### NotificationRevamp: Fix header row style and behavior.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c923f92
+
+### Revert "Only filter out subsettings with lower scores."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0db824b
+
+### Include build/chromeos_buildflags.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e433002
+
+### Change wording of scanning indication in Tote.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/914184d
+
+### WebUI: Migrate CrA11yAnnouncer to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99aac2b
+
+### Add a promo slinger entry for the Privacy Review
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e70a1c
+
+### [Widget] Modify the advertised size of the widget to list it as 4x1.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c494eb8
+
+### settings: update security key credential management strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63a1c25
+
+### [FedCM] Fix continue button text when given name is unavailable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0245f3b
+
+### Given an Access Code, lookup receiver record from PIN server
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfe5bf5c
+
+### Reland "Privacy Review: fix test feature_list initialization"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd35b50
+
+### [DesktopScreenshots] Add histogram to be called by mojo interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/993e72a
+
+### Save some display configuration when in tablet mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfc638b
+
+### Not show full screen notification when the URL is exempt by user pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bac9bd4
+
+### Quick Answers: Update UI logic for managed prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ede33a8
+
+### [Segmentation] Move handlings of internal page into a proxy class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/697ab99
+
+### Intents: Add metric for interactions with the intent picker icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9faeb7
+
+### Do some basic null checks in callback to avoid crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24e8ad4
+
+### [VCN] Group error label together with the textfield a11y data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/155e03d
+
+### Make color_analysis_fuzzer generate sane HSL inputs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0da9318
+
+### Fixes random typos and some documentation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf56430
+
+### Remove comment from animation builder.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52332b2d
+
+### Always replace initial empty document's session history entry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3163cf4
+
+### [Fast Pair] Update UI Trigger tab for notifications.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/080aeda
+
+### Factor out AccentColorObserver.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e63a2e18
+
+### [linux/wayland] Fixed the flaky test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4fa82a5
+
+### [Autofill] Fix background of item separator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfae726
+
+### Disable overlap of hover cards and omnibox dropdown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/378d312
+
+### DLP: Use MainFrame origin to create endpoints
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4df6e6
+
+### Fix wrong domain redirection on lockscreen reauth flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f8bdd1
+
+### Rename windowControlsOverlay.getBoundingClientRect->getTitlebarAreaRect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9f7d08b
+
+### Increase frame buffer for 90hz from 3 to 4
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/227bb6f
+
+### mac_merge: specify which roles allow required attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bb3214
+
+### [Magnifier] Fix enable-docked-magnifier-resizing flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/19f8aa5
+
+### Record new metric for first render time on profile picker startup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51e414a
+
+### Improve icon contrast in the tab group editor bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/124bca2
+
+### [memories] Make all callsites to use the locale-specific feature check
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0167c4d
+
+### Create --pervasive-system-accent-color for Windows and hook it up.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f341dad
+
+### Remove enable-experimental-accessibility-switch-access-setup-guide flag
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b7b3507
+
+### system-extensions: Add system-extensions-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dabe981
+
+### sheriff: Disable WindowControlsOverlayDraggableRegions test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a32b8b6
+
+### [Power Bookmarks] Add snackbars for price-tracking
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de37938
+
+### ax_mac: no DCHECKs for input parameters in NSAccessibility methods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd67320
+
+### Announce to the screenreader when translation completes or fails.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0f2390
+
+### [SH] Clean up kSharedHighlightingUseBlocklist
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d795bf
+
+### ax_mac_merge: merge AXHasPopup and AXPopupValue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a69d76c36
+
+### Not exit full screen mode on session lock/unlock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae93d86
+
+### Fix selected app index for URL Handling app picker dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea5ce24
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f05988d2
+
+### Revert "system-extensions: Add system-extensions-internals"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c481c2
+
+### ui: include build/build_config.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f91a53
+
+### [CrOS Bluetooth] A11y in bluetooth pairing device list
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2591b8
+
+### Reland "Only filter out subsettings with lower scores."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd3f3e4
+
+### [Autofill] Defer deletion of AutofillPopupControllerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7738d6
+
+### Move //{chromeos => ash}/components/tether
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a6edaa
+
+### [fuchsia] Implement ChromeViewsDelegate::CreateNativeWidget()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2908450
+
+### WebUI: Migrate mouse_hoverable_mixin.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a8154e
+
+### [Projector] Better messaging about speech recognition availability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f7f77a
+
+### Add Consented Desktop Notifications for Tailored Security
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5905630
+
+### [realbox] Add chrome://flags entry for formatting Tail Suggest
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6904208
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30c155a4
+
+### Lacros URL redirect: Avoiding duplication of remote launched apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac35d89
+
+### Add URL observer for tailored security
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f47f95
+
+### Replace default_bg_color attr with macro.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ecddf7c
+
+### Cleanup: Remove Emoji Suggest Addition flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5b9b55c
+
+`);
+              </script>
+            </body>
+        </html>
