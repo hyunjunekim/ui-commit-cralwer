@@ -1,0 +1,196 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2021-12-16
+### Remove unused NTPUserDataLogger from search_tab_helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba6b009f
+
+### IWYU improvements for usage of base/no_destructor.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de533fce
+
+### [Sheriff]: Disable flaky tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f3aa46
+
+### terminal: add chrome flag terminal-tmux-integration.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/61a351f
+
+### Fix the crash issue when active an app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eb1999
+
+### [memories] Consolidate history_clusters:: structs in favor of history::
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b86356
+
+### Cmdline switch to avoid blocking dev mode by policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc244cc
+
+### Revert "Print Preview: Finish migrating tests to TypeScript"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4abe91d
+
+### Print Preview: Finish migrating tests to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34e4973
+
+### CHIPS: Add partitioned cookie support to collected cookies view
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20b6952
+
+### Revert "[CrOS Bluetooth] A11y in bluetooth pairing device list"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71a3d8e
+
+### support-tool: Add OWNERS file for Support Tool folders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/949fb8c6
+
+### [LR] Add max reactions reached error message.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9ddb65
+
+### [mparch] Use PrimaryPageChanged in SameOriginObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1ce0bb
+
+### [Autofill] Fixed invalidated WeakPtr<AutofillPopupControllerImpl> deref.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0eca2ac
+
+### crosapi: Remove two deprecated fields from BrowserInitParams
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/145de12
+
+### [GMNext] Prepare link text for dynamic color experiment
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caa4c19
+
+### Use StringPiece in GetKey and GetValue in QueryIterator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ecaa65
+
+### Ensure WaylandPopup can be linked for accessibility properly in Lacros
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4450d94
+
+### Add admin policy for enabling Projector.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4e85eb
+
+### Clipboard: Read non-PNG images as bitmaps on Android
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/323e30f
+
+### AngleVulkan: refine the function and variable names in GLSurfaceEGL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f15c0fc
+
+### [Sharesheet] Remove obsolete FileBrowser.Share.FileType metric.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b41fd1f
+
+### Add trace events for NTP metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75141f62
+
+### CrOS: Migrate chrome://sys-internals to JS modules.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0276eba
+
+### input: Add keyboard details, top row, to input diagnostics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de046eb
+
+### [Extensions c2s] Create Site Access sections in menu and populate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1cdb83
+
+### Dismantle IMEBridge::Initialize() and related lifecycle requirement.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/738c40ca
+
+### Rename WebLaunchFilesHelper and eliminate some todos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea34ce4b
+
+### Update SyncedTabDelegate interface to use Profile::IsChild terminology.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8da7ce7
+
+### [Omnibox] Enable pedals data on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b795f5cb
+
+### Remove checks for USE_LIBINPUT in EventDeviceInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/caf396e
+
+### Move //{chromeos => ash/components}/login/auth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/517a6be
+
+### Remove SyncConsentOptional and OsSyncFeatureEnabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cf8f62
+
+### [Snooping protection] Replaced outdated radio list with a toggle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e56267b
+
+### omnibox: close menu when invalidating parts of its model
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3393ce
+
+### Move kDarkLightMode feature from ash to chromeos.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c59b1c5
+
+### [Extensions Refactor] Migrate ExtensionsMenuView unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/739b54f
+
+### [Projector] Calculate the New Screencast Precondition.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f78f9c
+
+### Add icon to tailored security unconsented modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac8ea33
+
+### [Omnibox] Enable pedals on native side for Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4de3730
+
+### BrowserRootView::OnDragEntered: Handle a root view with no tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21417c5
+
+### Revert "input: Add keyboard details, top row, to input diagnostics"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10abc32
+
+### Implement VirtualKeyboardController on wayland.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d44fe8
+
+### ash: Enable test WindowSizerTest.OpenBrowserUsingShelfItem
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b425c00
+
+`);
+              </script>
+            </body>
+        </html>
