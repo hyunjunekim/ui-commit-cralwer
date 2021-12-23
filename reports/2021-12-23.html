@@ -1,0 +1,220 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2021-12-23
+### Tutorial promo mode for IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb0c437
+
+### gpu: Fix direct composition device leak
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b3c240
+
+### Use ImageDecoder to avoid a superfluous network traffic annotation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d325fd01
+
+### [CrOS Cellular] Guard eSIM policy Setting UI changes with feature flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60abe21
+
+### Deflake MergingItemsResetsSortOrder test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78a41867
+
+### WebUI: Migrate cr_components/most_visited/ tests to TypeScript, part2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3b8a3e
+
+### [Launcher pop-in] Separate new result arrival from ranking/publishing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e96eab92
+
+### Make Transform::TransformRRectF tolerate values within kEpsilon of 0.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea0514b
+
+### CHIPS: Integration with the desktop All Sites page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35e5493
+
+### [Launcher pop-in] Add Chrome flag for query search burn-in period.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5f352bb
+
+### [dPWA] Sub Apps - refactoring and adding tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e703e5
+
+### app_restore: Add flag for ARC window predictor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8133897
+
+### [lacros shelf] Update window properties on shelf item add/remove
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0a330d
+
+### [ozone/wayland] Fix wrong size increase in ScopedWlArray::AddStateToWlArray
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03655d6
+
+### Revert "[Extensions] start new subpage for site access, if feature flag enabled"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0873e53
+
+### [FilesDarkMode] File picker/saver dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ffcfc10e
+
+### Create GetVoiceOverString function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/298a272
+
+### [ui/gtk] Correctly set key group on Ozone/Wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8eec48
+
+### Force major version into minor version in the UA string.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/86e75cf
+
+### Simplify the impl of input_method::{Initialize, Shutdown}().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50c08616
+
+### [FedCM] Fix crash due to invalid call to on_account_selection_ callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7c2647
+
+### [Power Bookmarks] Update price-drop chip according to specs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a4a3222
+
+### Better voice over text for passwords
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bfcec2
+
+### Revert "[dPWA] Sub Apps - refactoring and adding tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22e03d8
+
+### Ensure Respond(Error) called even when WebContents closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a92ec2
+
+### Remove Event.FractionOfTimeWithoutUserInput histogram
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/819c71b
+
+### Support dragging upwards to detach a tab (with touch)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1958b5be
+
+### Fix ChromeVox for Autofill/Password Manager dropdowns
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1786d3
+
+### Add a "toolbar_text" theme color.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ddfe5e
+
+### User policies legend in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36321f4d3
+
+### [Android] Add IDP badge to FedCM bottom sheet continue button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/766f4b06
+
+### desk_templates: Adds an option to launch templates with a delay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f107214
+
+### SigninWebDialogUI base class is optional for sign-in dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b32e60146
+
+### Enable Windows 11 Menus by Default for Windows 11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bc7025
+
+### Fix crash in chrome://lock-network.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4ea33d5
+
+### View: Fix the crash when Bookmark Button has no name.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81c0c70
+
+### Dismantle ::ShutDown() and make IMEBridge a true global singleton.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0455826
+
+### [MPArch] Target the external protocol error at the responsible frame.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04ad4e3
+
+### [CrOS] Fix ChromeVox on MGS language and keyboard selection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09f4532
+
+### [Extensions c2s] Create site access items only when needed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1404261
+
+### [FilesDarkMode] Make Toast dark mode compliant
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed6a192
+
+### Revert "Android: Custom Toast view for fullscreen"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a62652a
+
+### Add direct file-manager and scanning url redirect to app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e62ab6
+
+### Fix shell surface state setting methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bc03dc0
+
+### [Categorical search] Pre-group search results by category
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68fe86c
+
+### [Code Health] base::Value cleanup after PrefService refactor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d023e4e
+
+### Files app: Move file rename functions out of util.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a18447
+
+### Revert "desk_templates: Adds an option to launch templates with a delay."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98cdf97
+
+### Do not close modal dialog from SyncConfirmationHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d299d693
+
+### webauthn: renew our about:flags entry for QR linking.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cba2d60
+
+### [Code Health] base::Value cleanup after PrefService refactor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ae6f78
+
+`);
+              </script>
+            </body>
+        </html>
