@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-01-05
+### Fix how AppListSyncModelSanitizer handles duplicate ordinals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76bcb0a
+
+### [Launcher pop-in] Add long burn-in period options to flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/25e1152
+
+### [Cast2Class] Use cr-dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7579e7
+
+### [ULP] Add ULP language model bridge code and create model at startup
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/63c5a95
+
+### [Read Later] Make "back" go back to Reading List
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bd74a5
+
+### Update Big Copy cursor to resemble regular Copy cursor.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b673ad
+
+### Fix the arc::GetWindowTaskOrSessionId crash issue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d148233
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/869069d
+
+### ui: Remove unnecessary friend classes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1851f5a
+
+### NotificationRevamp: Implement big picture expand/collapse animation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e08571e
+
+### Revert "Remove GLSurfaceEGLReadbackX11"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/543a2721
+
+### Revert "Remove unused PNG files under ui/webui."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca7fcb8
+
+### Fix AppListRemoveSpaceSyncCompatibilityTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80017c7
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c16dbd0
+
+### OOBE - Make keyboard_utils accessible via JS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/254840c
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9950d39
+
+### [Extensions] Remove BackgroundPageWatcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fb9245
+
+### [Gtk] Remove libgtk from the link-line
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cff9e39
+
+### Remove unused IsCaptureModeInitRestricted() method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dfa847
+
+### ime: Delete unused "children" member.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9bf570e
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c25d63c
+
+### Use UTF-16 variants of URL constants in /chrome/browser/ui/views/payments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a69f34e
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/050a7d56
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b59ed9
+
+### [startup] Remove WebContents::GetURL calls in //chrome startup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb47089
+
+### [Code Health] base::Value cleanup after PrefService refactor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d134ae
+
+### NotificationRevamp: Animation for toggle inline settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5391d9
+
+### [Shelf] A test that removes an unpinned icon by closing the app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc37c41
+
+### Use UTF-16 variants of URL constants in /chrome/browser/ui/omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06de35b
+
+### PiP: Remove unnecessary 'views' namespacing from c/b/ui/v/overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d30323
+
+### multiword: remove legacy predictive writing setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cc74e6
+
+### PiP: Add inkdrop and pointer cursor to PiP window buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88648ae
+
+### Remove unused IsScreenshotRestricted() method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdbe4de
+
+### [CameraRoll] Update chrome://multidevice-internals for new features.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be552b0
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1bb3341
+
+### Move arc_web_contents_data to //chrome/browser/chromeos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a366fe9
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ec7c28
+
+### Have png_codec use tryAllocPixels to handle oom.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12dbb17
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5664142
+
+### ozone: evdev: add MatchDMIProduct for gesture configurations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e29db85
+
+### Remove unnecessary policy dependency from metrics folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c02955
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8b1294
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/400612a
+
+### Mac: Use base::Feature for overlay features
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e38f6f
+
+### [a11y] Fix tablet bookmark button color in incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8db2c32
+
+### Check equality of data instead of ToString in display unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2f0e19
+
+### [Sheriff] Disable IgnorePreviewUpdatesForUnselectedSource on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f128b01
+
+### ash: Add back dump without crashing from InsertAppItem().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3233f2
+
+### [GMNext] Fix CCT and global theme attributes mismatch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/819caaa
+
+### Add feature flag for cleaning undecryptable passwords during initial
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cc3ab4b
+
+### [omnibox] [shortcuts] Aggregate shortcuts by destination URL.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d9801bf
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e46ccc8
+
+### Migrate 3rd party NewTabPage to use Mojo JS modules.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2da04f5
+
+### Code health: port away from deprecated DictionaryValue::HasKey in /chrome/browser/ui/webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec1cad3
+
+### OOBE - Expose constants of offline_ad_login
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15e8ccf
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4db7209a2
+
+### Flag to enable Usb Notification Controller in ash
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/90628c3
+
+### Migrate 3rd party NewTabPage to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63fc080
+
+### Reland "Delete multipaste related flags."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/669a26b
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91fd36a
+
+### [fuchsia] Provide no-op reply callback in PresentImage() call
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/164a649
+
+### ozone/wayland: do not use post task if on the same sequence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b727ab
+
+### [Nearby] Fix ARIA label for Background Scanning notification toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2faa9c0
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33f9945
+
+### ozone: evdev: add Logitech M170 to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73fbdf7
+
+### Remove usage of PostCancelableDelayedTask in AutofillPopupControllerImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8be9f3c9
+
+### [AutoDark] Update opt-in message primary action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb56fc25
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d531bd6cb
+
+### Add LacrosSaveHandler class and kLacrosWindowId property.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bec45f
+
+### multiword: add new predictive writing setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d481e72
+
+### s/NULL/nullptr in ui/base/ime/ash/* and chrome/browser/ash/input_method.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96c5943
+
+### Remove GLSurfaceEGLReadbackX11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/208a1ee
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7c745d
+
+### WebUI: Migrate cr_elements/ tests to TypeScript, part 6.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bae09b
+
+`);
+              </script>
+            </body>
+        </html>
