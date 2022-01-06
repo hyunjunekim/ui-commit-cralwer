@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-01-06
+### Dictation: Convert extension switch into a feature
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d0d1bf19
+
+### [X11] Fix tag dragging in Mutter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3806f28
+
+### desktop-sh: use better tooltip for back button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/337aee0
+
+### gfx::Insets[F]::SetToMax()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5508a89
+
+### Fix old search results briefly appearing on new search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad9fd85
+
+### [PaymentRequest] Remove invalid DCHECK in PaymentHandlerWebFlowViewController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/beb24d5f
+
+### Separate gfx::InsetsF unit tests into insets_f_unittest.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c66dfe
+
+### [X11] Fix tag dragging in KWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52d0ad25
+
+### sttsv2: remove desktop v1 implementation
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6fde14c
+
+### [FilesDarkMode] Replace all PNGs in Files to SVG
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b03be22
+
+### Revert "[web apps] Remove WebContents::GetURL calls in //chrome web_apps"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f77a35
+
+### Remove edu_login_params parameter from CompleteLogin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00af312
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/647b56d
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf3d00c4e
+
+### ax_mac_merge: merge AXDomClassList implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09abf82
+
+### Prevent Omnibox Suggestions from revealing internal pages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74d6015
+
+### Add flag to enable debug logging for NaCl
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0d6568b
+
+### [linux/wayland] Improved the way the app ID is set for the window.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2193149f
+
+### Remove VSyncMonitor.isInsideVSync
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb8919a
+
+### [dPWA Testing] Fix bug for app window check, and update coverage #s.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a416a48
+
+### cros: Set ARC availability after account addition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee1d043
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b32175d3
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85664b2
+
+### shimless: Set Shimless dialog class name for TAST
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b44c93f
+
+### [AutoDark] Change feedback source to boolean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf19377
+
+### [sheriff] Disable flaky test AppMenuBrowserTest.ShowWithRecentlyClosedWindow on linux-lacros-rel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ad9760
+
+### [serial] Specify \`--enable-bluetooth-spp-in-serial-api\` for desktop.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/57923e2
+
+### Fix uninitialized default font access
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9dc1c59
+
+### Add gfx::Point3F::IsOrigin() and OffsetFromOrigin()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a611a94f
+
+### [Interstitial] Remove WebContents::GetURL calls in chrome interstitials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff81425
+
+### MPArch: Ensure that prerendering loads do not update the title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51074bd
+
+### Fix crash on apps page dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88fb6ab
+
+### Intent Picker: Don't allow kDevice app entries to be persisted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cb7eb9
+
+### Allow TabModel#setIndex() to skip loading the Tab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fbb3bb
+
+### [DevTools] Prevent Commander's 'Merge into...' for DevTools windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/696ee6c4
+
+### [Profile creation] Add trace events for the end of the creation flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95c78f5
+
+### Manage frame sink hierarchy when moving the PiP window to different
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56d5a09
+
+### [launcher]: Add padding to scroll view with gradient mask
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0d65a8
+
+### Allow C++17's nested namespaces
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/efca412
+
+### Replace blink::FloatBox with gfx::BoxF
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/265467d
+
+### [signin] Remove WebContents::GetURL calls in //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d976cd2
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d722fa
+
+### Revert "[Read Later] Make "back" go back to Reading List"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1d38a0b
+
+### personalization: rename to PersonalizationAppWallpaperProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06a039a
+
+### [ntp] Unit test doodle logging in NewTabPageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c1986c
+
+### Display toast after copying a password to clipboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c7058bc
+
+### wallpaper: Save to drivefs task runner should have MayBlock trait.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15a73b1
+
+### Move InlineLoginHandler::CompleteLogin params to a struct
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f78ff16
+
+### Updates the logic of checking shortcut existence on Windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c55d31
+
+### arc: Prevent using empty extra params in intent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/febf298
+
+### OOBE / WebUI - i18n_template_no_process
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9dda852
+
+### Clear-Site-Data support for partitioned cookies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/108a4192
+
+### [fuchsia][a11y] Add AXPlatformNode::Create() override for fuchsia.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d40240a7
+
+### [web apps] Remove WebContents::GetURL calls in //chrome web_apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3723412
+
+### Lacros: Use correct color for PWA/shortcut window frames.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23e66ea
+
+### lacros: Fix existing test-only race condition in WaylandEventWatcher.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/818ff9d
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/561a1a8
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21b9a58
+
+### [Categorical search] Implement StartZeroState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/764e183
+
+### Remove VSyncMonitor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aaf19d7
+
+### Reland "Android: Custom Toast view for fullscreen"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/affba65e
+
+### WebUI: Migrate cr_elements/ tests to TypeScript, part 7.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b81cd62
+
+### Implement CreateNativePixmapFromHandle for Scenic/Flatland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c5d5d2
+
+### Use %g in Point3F::ToString() and Vector3dF::ToString()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8369eaa
+
+### WebUI: Enable rebranding feature by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24227e5f
+
+### Fix memory leaks in EditableComboboxTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7b51929
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f830f6f
+
+### desk_templates: Use icon standardizer on favicons/app icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ff7ed3
+
+### Fix the invalid file path in comments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/394e96b
+
+### QA Lacros: Move out of ash namespace
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a312569
+
+### [VCN] Add Finch Flag for M2
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f98de02
+
+### Cleanup OOP raster feature/switches
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b9aed389
+
+### Modify full restore to restore Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0574dd3
+
+`);
+              </script>
+            </body>
+        </html>
