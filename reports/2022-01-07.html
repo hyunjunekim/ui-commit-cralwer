@@ -1,0 +1,204 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-01-07
+### Make gfx::InsetsF::Scale() a mutating method
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f8ee05
+
+### [Modal Dialog] Limit number of title lines.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cbfedd
+
+### [GMNext] Migrate default_bg_color_light_elev_N to dynamic colors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50f9b1a
+
+### Desk templates: Move existing templates metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89ba78f
+
+### Fix out-of-bounds crashes in TableView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc6c21a
+
+### Use EventMetrics to calculate AverageLag metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dfec489
+
+### IWYU for base/threading/platform_thread.h.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/275b0b8
+
+### PWA: migrate app_management to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c171462
+
+### [trusted vault] Update strings in opt-in UI except for iOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2ea1aa
+
+### lacros: Switch to a non-copy initializer for std::atomic.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66bd624
+
+### Remove the kDoNotOpenWindow checking for Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8baa42
+
+### Rename DocumentOnLoadCompletedInMainFrame to DocumentOnLoadCompletedInPrimaryMainFrame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8134758
+
+### [PaymentRequest] Add activation for show() call in some browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c932a7ba
+
+### [Extensions] Use ActionInfo::Type in ExtensionBuilder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22da37f
+
+### [Side Search] IPH bug fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/124c594
+
+### [Extensions] Start extension site permissions management page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d18e213
+
+### Create new NewScreencastPrecondition state for SODA installation errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4136eb
+
+### Add gfx::QuadF methods needed by blink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c69eabba
+
+### cros: Send isAvailableInArc flag from add account flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ab5cdf
+
+### content: make use of WindowPositionInRootMonitor in content
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7caed9b7
+
+### Disable DCHECK in palm detection that occurs on long press
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1386a60
+
+### Files App: Test and fix partition renaming from File List
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/233d666
+
+### [Launcher] Browser tests to protect item reordering with drag-and-drop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e33b764
+
+### [Eche] Process Apps setup flow in JS layer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57a8f3f
+
+### assistant: Clean up feature kEnableAssistantSearch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/83c9bcc
+
+### [CrOS Bluetooth] Add message displayed in HID's detail pages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73b2408f
+
+### [Code Health] Remove Value::GetAsDictionary from policy_ui_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ef00265
+
+### Reland "[GMNext] Update ThemeColorProvider to use OmniboxTheme"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53c0faa
+
+### Provide a default toast duration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38063f3
+
+### Don't initialize webui tab strip synchronously during AXMode changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1ce12c
+
+### hps: change quick dim variations.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/00895bb
+
+### Remove some unnecessary base/bind.h includes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80e35e9
+
+### Extensions: Retire Extension::from_bookmark()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e30513
+
+### [Extensions] Clean up unnecessary Extensions API include.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11f568c
+
+### [Profiles] Skip ProfilePicker when Chrome is launched with no window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba6727fb
+
+### Move and rename StartupBrowserCreatorImpl::ShouldLaunch() to StartupBrowserCreator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14df45b
+
+### libstdc++: fix DCHECK_NE in ui::WaylandFrameManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/806e4aa
+
+### [Extensions] Add a warning that MV2 is deprecated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a338c62e
+
+### Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce51232
+
+### [ozone/wayland] Skip frames that have lost buffers and drives playback loop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/936c7e2
+
+### [ozone/wayland] Adding fangzhoug to OWNERS of ozone/wayland.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e84553
+
+### [Jank] Add a feature to measure disabling composited progress bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f04851d
+
+### LSC: Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff2683d
+
+### android: Use configuration for display size on S
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ead3b4
+
+### [fuchsia][a11y] Fix SemanticProvider action handler bug.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/675b0256
+
+### Abort thumbnail loading early for unsupported file types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4cec86d
+
+### Make gfx::Insets::Offset() a mutating method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/443e5a6
+
+`);
+              </script>
+            </body>
+        </html>
