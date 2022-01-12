@@ -1,0 +1,324 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-01-12
+### Expose default foreground color via accessible text attributes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b271466
+
+### Reland "[Projector] Pass transcription stopped callback."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edaf343
+
+### [Sheriff] Disable STTSBubbleViewImplTest.ButtonPressed on Linux TSAN.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af6cc8c
+
+### Add browser session id and restored session id to browser app instance.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4e7ef3
+
+### Remove targetApi="21"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a40e2dd
+
+### [trusted vault] Prepend clarifying sentence to strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2342278
+
+### WebUI: Move geometry dependency outside of is_chromeos_ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/304b6131
+
+### Plumb the new value of IsFirstPartySetsEnabled() down to all callers of
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c9b4e41
+
+### [mparch]Refactor the class ContentSettingMediaStreamBubbleModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa4b698
+
+### personalization: display username and email
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a91aca
+
+### Treat reparenting as a launch from the perspective of the browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2315281
+
+### GCC: prevent usage of raw_ptr ->* operator to workaround GCC compiler crash
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbfd823
+
+### WebUI tab strip: do not allow tab dropped into non-privileged WebContents
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/159f4b8c
+
+### [Fast Pair Device Images] Use device image in paired device list
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07d7f0a
+
+### [fuchsia] Select the correct EventPointerType for mouse
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d26884f
+
+### [PaymentRequest] Add activation for show() call in a few more tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6f872a
+
+### prerender: Cancel prerendering properly in AutocompleteActionPredictor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/262adbc
+
+### NotificationRevamp: Match buttons color with app icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d9aa3e
+
+### [CrOS Bluetooth] Announce when bluetooth is enabled/disabled in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28b1aad
+
+### [mparch]Refactor the derived classes of ContentSettingBubbleModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1aa83f
+
+### ax_inspect: no content dependency for win event recorder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0f4da3
+
+### [Categorical search] Disable omnibox zero-state queries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fec37a8
+
+### Refactor Chrome Labs to use Model-View-Controller (MVC) design pattern
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9da5d8
+
+### Set dpi_ correctly during main window creation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1aa9b09
+
+### Use RenderFrameHost::GetMainFrame instead of WebContents::GetMainFrame.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d25d68fd
+
+### [X11] Fix tag dragging in i3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e907a7a
+
+### Window Placement: Update site settings template
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b1b99e
+
+### Enforce 1st party Ash keep list for extensions and platform apps.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0c298e4
+
+### Begin ScopedUserPrefUpdate migration to modern base::Value
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82f2898b
+
+### Migrate 7 tests: payment_request_completion_status_metrics_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d26d26
+
+### Revert "Check whether Widget is closed in AppInfoFooterPanel's create shortcuts handler"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/970872e
+
+### WebUI: Add dependency for mojo from ui/webui/resources:generate_definitions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65f672f
+
+### Ability to add validated cast sinks to the media router.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a08021d
+
+### [feedback] Stop using ProfileManager::GetActiveUserProfile()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13cfc04
+
+### Replace FALLTHROUGH macro with C++17 [[fallthrough]] attribute
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0d465f
+
+### Remove subresource redirect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a1dfe8
+
+### Remove use of GridLayout in favor of TableLayout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce628ce
+
+### [GMNext] Make default_icon_color_secondary dynamic
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/135ae33
+
+### ozone/drm: Templatize DRM <-> Internal Type Utils
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93ea92f
+
+### WebUI tab strip: migrate more APIs to mojom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d26e1b6
+
+### Remove usage of unique_ptr<Value> in chrome/browser/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3572b94
+
+### WebUI: Add ui/gfx/range to preprocessed mojo js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74e9154
+
+### Feed: fix color of ghost cards in dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f870ab
+
+### Make kLacrosProfileMigrationForceOff a flag on chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a575d4
+
+### View-Source entry points should be controlled by DevTools policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55e51590
+
+### multi-instance: Record multi-instance session metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a45c958
+
+### [GMNext] Migrate default_bg_color_dark_elev_N
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/391590f
+
+### Fire accessibility event on focused view in Tab::OnFocus()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e75bdfa
+
+### Use new permission API for WINDOW_PLACEMENT permission verification.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78293eb
+
+### PWA: move more-permissions-item to shared components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/345cb15
+
+### Add Afrikaans and Zulu to CrOS builds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c3222a
+
+### [trusted vault] Fix typo in strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1ec7331
+
+### Add experiment for ambient animations.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6c91276
+
+### [fuchsia] Clean up SemanticProvider tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f99f63
+
+### ax_inspect: move win ax event recorder under ui umbrella
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f031f4
+
+### [Sheriff] Disable flaky WebAppFileHandler on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08a0497
+
+### Reland "Make AccountAvatarFetcher to use URLLoaderFactory for the site."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/693742d
+
+### [CrOS Network] Create a disabled state for network lists
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b70511
+
+### Remove data saver main menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55edb3b
+
+### webauthn: add settings page to manage linked phones.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/861e909e
+
+### DPWA: remove recording NewTabPage.NumberOfPreinstalledApps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ee9aec
+
+### [Fast Pair Device Images] Add Device Images to BluetoothDeviceProperties
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95dd264
+
+### Revert "Implemented finding sentence boundaries on all platforms"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76fa40b
+
+### [NewSAML][OOBE]: Remove SAML interstitial step from gaia-signin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a26bdc6
+
+### Use non-mojom AppType for the ui code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eef75c
+
+### Fix tracing bug in DrmOverlayManagerGpu.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a036ffd
+
+### CHIPS: Ensure entries for "self-partitioned" cookies are created
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/742b75d
+
+### Add migration of policies to force install Chrome apps.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2195056
+
+### Remove Force Disable Stacked Tabs flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c90246
+
+### Add gfx::Outsets[F]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1aa055
+
+### [GMNext] Clean up default_icon_color_disabled_inverse
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6be0c40
+
+### Remove kSendWebUIJavaScriptErrorReports feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c4205cb
+
+### Fix flaky browser tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8aa0ffbd
+
+### [signin] Refactor signin modal dialog class structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b26ba68
+
+### Add setter methods in gfx::Insets[F] for blink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81a4880
+
+### [CrOS setting] Showing a placeholder for configured wireguard peer preshared key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a811fe75
+
+### [FilesDarkMode] Autocomplete suggestion list (updated)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0fcbbea
+
+`);
+              </script>
+            </body>
+        </html>
