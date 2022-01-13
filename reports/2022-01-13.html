@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-01-13
+### Convert ColorChooser away from GridLayout.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4277863
+
+### Keep full screen on unlock when allowed by user pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b05822
+
+### [GMNext] Make default_icon_color_disabled dynamic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0de6970c
+
+### [omnibox] Clean up keyword search button feature flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a55a75d6
+
+### StorageBuckets: Remove QuotaManagerImpl::GetCachedStorageKeys
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5874a5
+
+### dPWA File Handling: Grant app a read/writeable handle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95ebad6
+
+### Remove UseULPLanguagesInChrome flag code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e799763
+
+### desk_templates: Port tests used by extension to use native UI p1.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d0735e
+
+### [linux/wayland] Fixed the pinch zoom.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d27d0fa
+
+### [Lacros] Avoid redirecting to chrome://apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0eab995
+
+### [Sheriff] Disable flaky tests on macOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca7cfdd
+
+### Pass profile as arg to \`PostProfileInit\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81c4a83
+
+### ax_max_merge: Move AXBlockQuoteLevel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbf2813
+
+### Dictation: Add learn more url to settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f31171
+
+### Move //chrome/browser/ui/webui/extensions/{chromeos=>ash}
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e94b6b9
+
+### Disable flaky test FullscreenInteractiveBrowserTest.NotifyFullscreenAcquired on Chrome OS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bf87ac
+
+### CodeHealth: Remove deprecated content_settings::ValueToContentSetting method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/714022a
+
+### feedback: Remove Questionnaire feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fa13e8b
+
+### Change chromeos:: to ash:: for ProfileHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36f21d54
+
+### [Launcher] Change Drive search ranking to use mtime
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd69793
+
+### [CrOS Bluetooth] Fix flaky BluetoothPairingUi tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/070f0b2
+
+### [Paint Preview] A11y Hit Testing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bb74a0
+
+### HDR: Add max luminance to gfx::DisplayColorSpaces
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9b0df8
+
+### [omnibox] Make Shortcuts deletable if History is not deletable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29efeb0
+
+### [basic-card] Migrate PaymentRequestShippingAddressInstanceTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7829959
+
+### [FilesDarkMode] Remove breadcrumbs menu sheen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/090c572
+
+### [ZPS] Extends about:flags entry for trending zps and adds variations
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f2c226
+
+### [profiles] Convert LoadProfileAsync to OnceCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0812921
+
+### Remove Win11 Menu Variation Configuration
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eb6a18e
+
+### Use primary browser in ChromeShellDelegate::OpenKeyboardShortcutHelpPage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fd1a52
+
+### cc: Support dynamic coloration of Lottie assets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc01059f
+
+### CodeHealth: Convert HostContentSettingsMap::GetWebsiteSetting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78b77a6
+
+### [Sheriff] Disable flaky test on M flaky test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d971f11
+
+### x11: fix declaration shadows a local variable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/113cfa5
+
+### Intents: Remove obsolete app-service-external-protocol flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e801e39
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8622293
+
+### wayland: fix pickled data exchange in drag-and-drop sessions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb7b6dd
+
+### Files app: merge external drive and regular file/folder renaming
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d4921a
+
+### [Extensions] Allow reordering pinned extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a56dac
+
+### Handle the case that the name of the folder is empty during sorting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a9cb37
+
+### Migrate MediaLicenseInfo to StorageUsageInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84c6e08
+
+### Revert "[PaymentRequest] Add activation for show() call in a few more tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66c81706
+
+### [Launcher pop-in] Sort post-burn-in categories by arrival order.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/596acaf
+
+### Fix stack overflow in scrollable tab strip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b0c8fbb
+
+### ime: Rename toplevel_window_handle_ to attached_window_handle_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acafa1e1
+
+### Fix timing issue of OpenUrl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffd96c3
+
+### Remove chrome://flags entries for SendTabToSelfWhenSignedIn
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/14939469
+
+### CodeHealth: Convert HostContentSettingsMap::SetWebsiteSettingDefaultScope
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab7c49e
+
+### Be more frugal with source code, and avoid an inappropriate cast
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34349fe
+
+### Removing two system pages which got forwarded from Lacros to Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0245eaf3
+
+### [Fast Pair] Add 'Learn More' button to Discovery notification.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a795ba9
+
+### Remove ideal_bounds() from TabStrip public API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/425b653
+
+### Files Manager WebUI: Replace old color variable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73abffc
+
+### Cleanup: Remove Java flags for launched features.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/917d1e7
+
+### Expose modes for highlight_color and text_highlight_color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84e7207
+
+### [Cast2Class] Extend browser proxy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7f001d
+
+### Migrate 9 tests: payment_request_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4859e6d
+
+### Replace base::ListValue in EvalJsResult::ExtractList()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbd5dd4a
+
+### [webui] Omit cookies in SanitizedImageSource
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3767eaa
+
+### Use base::ValuesEquivalent outside of Blink code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/223daa5
+
+### [FilesDarkMode] Use mask-image for file icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/772ca035
+
+### [CrOS Bluetooth] Fix flaky BluetoothPairingUi test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a18941c
+
+### Adding new URL redirect for Lacros to Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9eddc5
+
+`);
+              </script>
+            </body>
+        </html>
