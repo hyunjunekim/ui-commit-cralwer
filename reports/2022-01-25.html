@@ -1,0 +1,232 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-01-25
+### [Messages] Add feature flag for Instant Apps infobar migration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c664dc0
+
+### [Omnibox] Implement click handling for Omnibox pedals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b95f0e
+
+### [GMNext] Update omnibox security icon and tab switcher button tint
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/568ebf5
+
+### Move {chromeos => ash/components}/cryptohome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5ac4d4ca
+
+### Rename gfx::ColorSpace constants to be easier to understand
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c9cfff0
+
+### Remove the APK shell from AppRegistryCache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a672efd
+
+### cros: Introduce New Shadow Style For Chrome OS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c176db6
+
+### Add Legacy Looper Annotation to tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29179a1
+
+### terminal: Style the TerminalSystemAppMenu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16026ab
+
+### Protect initial NavigationEntry creation behind a flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2322f4f8
+
+### ui: Change a const to a constexpr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aefc907
+
+### Window Placement: Gate fullscreen on screenschange on new runtime feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6cccbc
+
+### [GMNext] Temporarily revert app menu header dynamic color
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c898bbe
+
+### [Launcher Sort] Add a reorder animation status enum type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14e7d38
+
+### [Passwords] Add kTouchToFillPasswordSubmission feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e4e54dc
+
+### Prerender: Update prerender2-related comments in omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e6a810c
+
+### Preserve LacrosAvailabilityPolicy via feature flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ded6e5b
+
+### Revert "projector: Improve the pending screencast test"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12a3874
+
+### Files app: Improve error logging getSizeStats()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ce6746
+
+### ash: Calendar event launching
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/395a234
+
+### Deprecate ShowDirectSocketsConnectionDialog for Coralfish.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62ec31a
+
+### [lacros shelf] BrowserAppShelfController browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d094c95
+
+### [realbox] Update Match Omnibox Theme Flag to have multiple variations
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c1ecb48
+
+### Revert "Reland "ozone/wayland: enable ANGLE.""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a02dee2
+
+### [Passwords] Introduce PasswordDomainCapabilitiesFetching flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d17787a
+
+### capture_selfie_cam: Build initial skeleton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8e6f8a
+
+### Allow unresizable resize-locked window to be snapped with constraint
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c0ec08ab
+
+### PWA: fix permission_item member declaration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7f9eeb
+
+### [FilesDarkMode] Scrollbar color for quick view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eda1001
+
+### [privacy sandbox settings] Create page info subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5881b37
+
+### [lacros] server side implementation for frame throttling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9edcefd
+
+### lottie: Simplify parameter type for ParseLottieAsStillImage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab48df9
+
+### Remove data saver UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6b415a
+
+### [Extensions] Minor UI refactor for no site permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c4be315
+
+### fix adding to group that is deleted from the tab_menu_model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e276e7
+
+### Reland: Restore stored focused object in linux accessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e793f1
+
+### [ZPS] Adds feature param to allow prefetch requests to bypass HTTP cache
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/87c70ed
+
+### [Extension c2s] Move PageInteractionStatus to SitePermissionsHelper class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04ed53e
+
+### [FastPair] Add flag for low power mode.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ea88229
+
+### [fuchsia] fix Flatland mouse event handling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45bb2dc
+
+### dlp: Move and enable print browsertests for DlpContentManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5644d3c
+
+### Privacy Review: "History sync" string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c53420af
+
+### DLP: Localise files app toast strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e047331
+
+### Add connection between browser and ChromiumUpdater system level helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/769424b
+
+### ExploreSitesInternals: Migrate to JS modules.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2e767ce
+
+### Clean up Incognito brand consistency for desktop flags.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c99db70
+
+### Use structured bindings more: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d4cd60
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c72675
+
+### Remove SwiftShader on Ozone flatland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d28d57
+
+### Remove full restore flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df68b72
+
+### Revert "Move directories in //chrome/browser/ui/webui/settings/chromeos to ash"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25629a4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5b4c39
+
+### ax_cleanup: move mac script statement invoker under ui umbrella
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/519af94
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94caf047
+
+`);
+              </script>
+            </body>
+        </html>
