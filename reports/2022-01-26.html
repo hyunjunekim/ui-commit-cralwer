@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-01-26
+### Add flag for tab muting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e454a13
+
+### Convert caret browsing extension to an ES6 style class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59c2a4a
+
+### Use base::ClampAdd in gfx::Rect and gfx::InsetsOutsetsBase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f0bb5c
+
+### C++17-ify the ui\base\interaction code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a78fbf09
+
+### dark_mode: Add AshColorMixer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad0e98d5
+
+### [mparch] Ensure SafeBrowsingTriggeredPopupBlocker uses the right frame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83664154
+
+### Replace out parameters in printing::ParseDataPath()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34561a7
+
+### [signin] Customize sync confirmation webUI through URL parameters
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e1aade
+
+### fix xsurface metrics reporting about flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e456f52
+
+### [Extensions] Add discover more button in extensions tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6e99a0
+
+### Update color enhancer extension to manifest v3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84793353
+
+### Use forward declarations in //ui/gfx/animation/tween.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba0cea4
+
+### [MPArch] CardUnmaskOtp...rollerImpl need not be a WebContentsObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55363df
+
+### ax_mac_merge: merge isAccessibilityElement implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca7f483
+
+### [Extensions] Don't trigger unload event for already unloaded extension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ba46e15
+
+### Disable CARenderer when capturing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d5b95f
+
+### Showing new tab variant when Incognito is triggered first
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e0e9a0
+
+### Fixes handling of empty and all whitespace objects in AXPosition and AXRange
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f189da
+
+### known_user: Replace GetBooleanPref with FindBoolPath
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fe0161
+
+### Remove unneeded includes from mojo's serialization_util.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2686b5
+
+### LSC: Apply clang-tidy's modernize-use-bool-literals
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d04a155
+
+### Remove unneeded <map> includes in various headers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93c1ab0
+
+### Deflake WaylandWindowDragControllerTest.DragToOtherWindowSnapDragDrop_TOUCH
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5edaf0f5
+
+### [ChromeOS][OOBE] Add more logs for login issues investigations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41b89f5
+
+### IWYU: add cstring for std::strerror in ui::WaylandEventWatcher
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe09e7f
+
+### Push primary plane damage for Wayland rather than pull
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50d26990
+
+### Fix race condition in colorenhancer extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a9b30db
+
+### Eliminate GetSystemColor() for overlay scrollbars
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/874c4ff
+
+### Remove NativeTheme reference from AccessibilityFocusHighlight
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcf5b8e6
+
+### sheriff: disable flaky ThumbnailTabHelperInteractiveTest test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad31e7b
+
+### ozone/wayland: support new tab dragging fallback
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f51c1c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f8af27e
+
+### ozone/wayland: subpixel positioning - make viz pass fractional display rect.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85c1be3
+
+### Remove flag for incognito profile integration w/ holding space.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ebb251
+
+### Fix error in color enhancer extension console
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7847edd
+
+### [Sheriff] Disable flaky HelpBubbleFactoryViewsBrowsertest.ToggleFocusForAccessibility test on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9b419a
+
+### Remove reference to nonexistent file in color enhancer extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d68802
+
+### Fix some out of order base/memory/raw_ptr.h includes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bb13b6
+
+### crostini_upgrader: Update to match UI feedback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/196a48b
+
+### Reland "[Fuchsia] Hide view content when detached from scene"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c445428
+
+### DPWA: add web app settings page initial setup
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce4ecd9e
+
+### Refactor tutorial and IPH presentation layer.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf8c214
+
+### Stop using NotificationService in ContentStabilityMetricsProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d9db55
+
+### Enable tab muting behind a flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f27f7ff
+
+### sheriff: disable flaky ShowWithRecentlyClosedWindow test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b558278
+
+### webauthn: allow setting a screen-lock and rewrite caBLE UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e95a867
+
+### cros_network_config: Use an enum for IPConfig.type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5e360c3
+
+### Captive Portal support for lock screen reauth flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cbf57c
+
+### Disable two flaky tests in AppListSortBrowserTest on CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0c01a5e
+
+### Migrate color enhancer extension from var to const/let
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/deb9faf
+
+### Update Incognito NTP strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b349f6
+
+### Avoid long timeouts when auto-starting DBus services
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65eac9a
+
+### desk_templates: Use more inclusive language.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/692faab
+
+### desk_templates: Add a feedback button to bring up feedback dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/830924d
+
+### ozone/x11: move code from //ui/p/x11 to //ui/ozone/p/x11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6e6b04
+
+### Convert color enhancer extension popup code to ES6 class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a65507cb
+
+### [M2] Add learn more link to VCN Enrollment Bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64088aa
+
+### Dictation: Add feature flag for bubble UI hints implementation
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e973b91
+
+### [GTK] Add stub GtkUiPlatform so GTK can be used without initializing ozone
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72e15bc
+
+### [fuchsia] Create specific target for each filter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e3cb336
+
+### arc: Refactor AppInfo to Ptr style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62cd12f
+
+### Use SwANGLE for WebGL on all platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca83d487
+
+### Update caret browsing extension to replace var with const/let
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05cb1be
+
+### Add GetLacrosRestoreWindowId to set the lacros window id.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a3f917
+
+### desk_templates: Nudge template grid item name when a template is saved.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e49fba
+
+### Detect and Prevent re-scheduling Autocomplete jobs from within self.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b9ad387
+
+`);
+              </script>
+            </body>
+        </html>
