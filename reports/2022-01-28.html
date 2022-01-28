@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-01-28
+### Introduced WindowOpenDisposition param to OpenUrl crosapi.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/46742a8
+
+### [DragDrop] Add DragData JNI for #startDragAndDrop
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0655a8a
+
+### Remove unused variable from color enhancer extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb1e52e
+
+### Reland "[CrOSSharingHub] Add test for triggering the sharesheet"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d5353e
+
+### Quota Internals: Move new chrome://quota-internals-2 code to chrome://quota-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f687dd
+
+### [CodeHealth] Remove uses of ListValue::CreateDeepCopy() in /chrome/browser/ui/webui/print_preview.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf28b6f
+
+### Reland "[lacros] enables fractional scale support."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50257f2
+
+### cros: Update strings in Add account dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae0ca28
+
+### [basic-card] Migrate PaymentRequestModifiersTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04d2ba64
+
+### [launcher] Update app icon dimensions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88f84a0
+
+### Sheriff: disable PopupBlockerBrowserTest.CtrlEnterKey on windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1565473
+
+### [M2] Learn more link for Virtual Card Manual Fallback Bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32d56937
+
+### [cros_styles] Update Roboto font definition to accommodate tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fcdd732
+
+### [launcher] Add icon dimension constants to a util file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb399c7
+
+### cros: Add account to ARC from account picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/170dc08a4
+
+### mac_merge: move AXElementBusy attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c65a9f42
+
+### cros: Show accounts on ARC account picker screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/060f525
+
+### [Clank CBCM] Adjust chrome://management UX sizing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46521889
+
+### Fix renderer crash during file upload when external intent sends malformed uri.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/981017b
+
+### [Clank CBCM] Better chrome://management dynamic padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/229fdef
+
+### [FedCM] Remove FedCM related flags on desktop
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a1f815c
+
+### [FedCM] Update account chooser header padding to match mock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42d73a5
+
+### Revert "input: Add keyboard event observation to input diagnostics"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfe4da6
+
+### arc: Save initial window layout info in AppInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9b16bd
+
+### Adding a modal version of the Assistant voice search consent dialog.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee2d183
+
+### mac_merge: merge AXGrabbed implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80161d61
+
+### Switch to use default color for Lens Side Panel divider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4399fdc
+
+### OmniboxTestUtils: wait until animations complete.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1daa64
+
+### Improve efficiency of color enhancer extension storage access
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0c67ca
+
+### [privacy sandbox settings] Open privacy sandbox settings from page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f5c926
+
+### Revert "[TTS] Remove the LiteralSearchTap Feature"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d62da27
+
+### [launcher] Migrate to use icon_constants for icon dimensions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/957ee3f
+
+### Move flaky test to interactive UI tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b1dea1
+
+### Fix always-on highlight in tab context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/258aa7f
+
+### [GMNext] Make Switch colors dynamic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d5c604
+
+### PiP: Prevent crash on small displays
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d5b9ef
+
+### [CrOS Bluetooth] Stop discovery session when dialog is closed.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d420b9
+
+### Refactor GL bindings for Skia
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ef39cd
+
+### Change GPay logo color in dark mode from grey 500 to white.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec14674
+
+### Refactor matrix code in color enhancer extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2c34ee
+
+### Migrate PaymentRequestRetryTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2215da
+
+### [realbox] Add Match Searchbox Flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a00e2f9
+
+### Remove uses of kColorId_Throbber*Color.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77b272d
+
+### Add metrics for tab muting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b4c8cc
+
+### Privacy Sandbox Settings: Add native dialog + WebUI resources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d7c169
+
+### Remove more now-unused native theme colors.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a92315
+
+### Revert flag added for controlling Canvas resource when its in background
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/881c135
+
+### Feature flag for tab strip improvement changes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0ccccae
+
+### [FilesBanner] Remove flag and old implementation
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cf17186
+
+### Switch FedCM account chooser header text to match mock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd790e0
+
+### Delete MenuDelegate::OnPerformDrop
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5d82ee
+
+### WebUI: Add mojo/public safe_base_name.mojom to preprocessed mojo js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/597e64e
+
+### [Lacros] Remove BrowserAppLauncher::LaunchAppWithParams() from tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dc88d7
+
+### Add PreinstalledWebAppDuplicationFixer feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b85c0d2
+
+### ozone/wayland: client can use a non-integer display rect
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a57e74
+
+### Compute PosInSet and SetSize for TreeGrid rows when no value
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8ef5f0a
+
+### Refactor cc::Layer bit flags, and make them ProtectedSequenceReadable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2cec268
+
+### personalization: IsAmbientModeEnabled mojo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52ada6b
+
+### Convert color enhancer background code to an ES6 style class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0deb729
+
+### Fix nits in ChromeLabsViewController code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33419d7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e06739c
+
+### arc: Launch ghost window if window predictor enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c95c2dbb
+
+### Remove remaining NativeTheme::GetSystemColor() machinery.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4343333
+
+### Lacros: Fix BrowserAppShelfItemController to assign Lacros icon when
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac05f204c
+
+### Split Projector annotator into a separate origin.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe6f52c
+
+### [fuchsia] Track capture in FlatlandWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e5fc0e8
+
+### Dictation: Add \`hints\` parameter to UpdateDictationBubble() API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e37282
+
+### ozone/wayland: fix deadlocks happening during copy/paste
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/664cb870
+
+### Remove AccountPoliciesLoadedWithoutSync feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c975dc17
+
+### Add TreeNode APIs to reorder children
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e83917a
+
+`);
+              </script>
+            </body>
+        </html>
