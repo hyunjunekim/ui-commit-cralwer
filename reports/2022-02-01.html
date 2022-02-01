@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-01
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/151f5de7
+
+### IWYU: add algorithm for std::max and std::min
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38a4d80
+
+### [VCN][RELAND] Add desktop iph bubble for virtual card option
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e4aba2
+
+### Don't open Lacros on ctrl+shift+n when incognito is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22c10e0
+
+### [Shortcuts] Add skeleton class KeyboardShortcutProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4aef4f
+
+### Migrate High Contrast extension to chrome.storage API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8030b97
+
+### Reland "[dPWA] Check for shortcut icon in web app integration tests."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8bd009
+
+### [dPWA] Re-enable the browser tests that are flaky on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b520b9e
+
+### [headless] Added native headless mode for Mac.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e4c7db
+
+### Convert use of deprecated macro
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/461f50d
+
+### Add legacy Looper to tests for Robolectric 4.6
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02e39ff
+
+### [attribution_reporting] Rename chrome://conversion-internals to attribution-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/761a185
+
+### Accelerators: Add support for new KEY_DICTATE
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8274b07
+
+### Use forward declaration of Browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4664a86
+
+### [launcher] Always set the icon dimension.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/925bd06
+
+### [Files SWA]: Use WeakPtr to prevent a possible UAR bug.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a4ede6
+
+### Revert "Compute the value attribute of a content editable on the browser"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d57ecd
+
+### Accelerators: Support KEY_EMOJI_PICKER
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a30efa6
+
+### Reland "input: Add keyboard event observation to input diagnostics"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/944183a
+
+### Add an privileged API for CARenderer mode on Mac - Part 2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c39ea5
+
+### Move non-GTK select file dialog implementations out of //ui/gtk
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/454db03
+
+### Privacy Sandbox Settings: Make consent / notice distinction available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/665034c
+
+### [Sharesheet] Dark Mode : Update text colors.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c15b96
+
+### sheriff: Disable OfferNotificationBubbleViewsInteractiveUiTest.Navigation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84f0720
+
+### ime: Delete obsolete Korean System PK flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/97a33ab
+
+### OOBE: Add test API for the guest tos screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41b1ff8
+
+### New palm rejection model and adaptive hold
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/43ddc20
+
+### Convert color enhancer content script to an ES6 style class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6cb47bfa
+
+### [feature_notification_guide] Added flag to skip segmentation check
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6c4afcde
+
+### desk_templates: Fix crash with swiping to close up quickly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95e5ada
+
+### Reenable OobeDisplayChooserTest.RemovingPrimaryDisplaySanityCheck
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fdac2f
+
+### Privacy Sandbox Settings: Add settings view for blocked topics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/607291e
+
+### Compute the value attribute of a content editable on the browser
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a61452f
+
+### [signin] Signin intercept FRE dialog follow-up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcf2df5
+
+### [Extensions + Apps] Migrate c/b/ui to use app_constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d914801
+
+### Replace WidgetObserver::OnWidgetClosing() with OnWidgetDestroying()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4535fe2
+
+### [Sync] Undeprecate syncSetup page in OS Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d17141f
+
+### Migrate animation policy extension from var to const/let
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb07a02
+
+### webauthn: switch our about:flags entry to the next flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5cee388
+
+### Pass ManagedSessionService instance in DeviceStatusCollector ctor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d96ca0
+
+### projector: Fix crash caused by pending screencast manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/906dc8d
+
+### [Code Health] Remove use of ListValue::GetDictionary()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e5d3c3
+
+### infobars: Use correct startup function for kApp,kAppId tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3550b9d0
+
+### Remove references to deleted file in high contrast extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/efa7bc00
+
+### Make UI context provider support OOP-R
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f985160
+
+### [Sync] Move SyncErrorNotifier to c/b/ash/sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aae235
+
+### Revert "Move non-GTK select file dialog implementations out of //ui/gtk"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f39027
+
+### OOBE: Always show language pack privacy notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c90a8c
+
+### mac_merge: merge is AXIsMultiSelectable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d7fc10
+
+### [Sheriff] Disable BrowserNonClientFrameViewChromeOSTestNoWebUiTabStrip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c1d951
+
+### Use std::make_unique instead of base::WrapUnique
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99460ab
+
+### launcher: Adjust alphabetical sort for folders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac45e00f
+
+### ime: Add flag for transliteration system PK.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/41e7ab4
+
+### [Dynamic Colors] Add stub WebUI for chrome://color-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40c31d3
+
+### Accelerators: Support AC New and AC Close
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c56a331
+
+### cc: adds features for more aggressively releasing tile resources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65ec166
+
+### Remove AllowSyncXHRDuringPageDismissal.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9adf1d0
+
+### [VCN] Add a flag for desktop settings page change
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a8b9a0bc
+
+### Use correct language pack flags for language settings privacy notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39c94d2
+
+### Remove StoragePartitionId.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8015afc
+
+### Fix bug where color enhancer content scripts were loaded repeatedly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea8719d
+
+### Fix an AddTabAtIndex call in a test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aefbfc
+
+### Remove ProfileSigninConfirmationDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bacedbf
+
+### Privacy Sandbox Settings: Add ad personalization view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f479e3b
+
+### Files SWA: File picker test for closing the Dialog before the WebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12172c1d
+
+### Check the return value of AddTabAtIndex(ToBrowser) in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c07b748
+
+### [FilesRecentFilter] Add UMA for recent filter buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf2be79
+
+`);
+              </script>
+            </body>
+        </html>
