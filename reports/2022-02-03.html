@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-03
+### Migrate base::Value::TakeList() to base::Value::TakeListDeprecated().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acce691
+
+### Privacy Sandbox Settings: Show Snackbar when adding/removing topics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a8299e
+
+### Prerender: Don't run Speculation Rules prerendering if users disable preload setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ae11b8
+
+### [Ozone/Wayland][Exo]Reduce the cases where lacros damage is extended
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e9ebfa
+
+### dark_mode: Rename USE_TOUCHABLE_LAYOUT
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bc2955
+
+### Update #productivity-launcher chrome flag with params
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/630ca62
+
+### [FedCM] Update the data sharing consent item to be left aligned
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f1010c
+
+### [Shortcuts] Add dependency on //ash/shortcut_viewer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82b0d78
+
+### Migrate base::Value::GetList() to base::Value::GetListDeprecated(): 1/N.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/354945d
+
+### Toolbar capture suppression prototype
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fa5abf9
+
+### [launcher] Deduplicate Omnibox results with the same id/URL.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12658e5
+
+### Always rank Drive above local files in Continue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a53d1cdc
+
+### Unregister Accelerators when AccessiblePaneView is destroyed.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7125ad1
+
+### oobe: Cleanup old code after OOBE redesign
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b70a828a4
+
+### Re-run default web app migration if old Chrome app is still installed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8527009f
+
+### Add basic access controls to cc::PropertyTrees
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c820d19
+
+### Add about flag for full-user-agent
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c6eab7e
+
+### [Cast2Class] Update UI based on latest mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acf112a
+
+### Disable ZS files for old launcher and control with param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49aca39
+
+### Reland "Desk Templates: Allow updating and deleting grid items"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb996db
+
+### Always populate NavigationHandle#pageTransition()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e40296d
+
+### Add about flag entries for two undecryptable passwords bug features
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/64bdf05
+
+### WebAppSettings: add more permission items to app settings page.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8516abb
+
+### Remove AccessibilityExposeDisplayNone runtime feature.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9fa0cd57
+
+### Add strings for OnPrintEnterpriseConnector UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21c3f11
+
+### [Cast2Class] Update access code cast button text, add qr code icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abb1cca
+
+### Files app: Reduce log noise for Save As dialog
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6bb371
+
+### [Omnibox] Implement pedal button for the omnibox pedal in Clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86bd599
+
+### ax_inspect: move ax mac tree formatter under ui umbrella
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b1c289
+
+### [answers] Notify rankers when the burn-in period elapses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2452892
+
+### PWA: app settings test setup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6163e1ec
+
+### [Nearby][WifiCreds] Add feature flag for receiving WiFi credentials
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5baff65
+
+### Add flag for bruschetta (third party vms)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/762bf32
+
+### cros: Open Guest mode window from Add account flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a816660
+
+### Update \`error_1x.png\` and \`error_2x.png\`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07d1c80
+
+### cros: Show a Guest mode link in Add account flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd98105
+
+### Add in-product help for tab muting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab387bf
+
+### [TTS] Remove the SecondTap Feature and Flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/734d6dc
+
+### [VCN] Implement confirmation dialog on VCN unenrollment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e6b9ba
+
+### [signin] Include SigninViewControllerDelegateViews in Views hierarchy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86c4ae4
+
+### [Auto-disable accessibility] Move auto-disable accessibility flag to be on Android as well
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/402301cb
+
+### [Extensions UI] Small popup trigger cleanups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/805013e
+
+### Privacy Sandbox Settings: Restructure sandbox page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3c9bc8
+
+### Update \`sim_detect_error.svg\`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a84c35b
+
+### Files app: Change API call to check lastError
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6dda321
+
+### Update \`final_page_success_1x.png\` and \`final_page_success_2x.png\`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6638870
+
+### [realbox] Add Realbox Background Variations
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/be536d3
+
+### Remove legacy SwiftShader from all ChromeOS Ozone platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd1ed7e
+
+### [Lacros] Make sync consent (for additional profiles) optional
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db5ca84
+
+### Prerender: Allow triggers to define their predicates of url matching
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21d9feb
+
+### [CrOS] Prepare recommended apps revamp feature by duplicating files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bb5500
+
+### Reland "Move non-GTK select file dialog implementations out of //ui/gtk"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/530e420
+
+### Add Web Bluetooth flag for Linux
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7aace81
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b08e34
+
+### lacros: Add NewGuestWindow API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c03c171
+
+### [mparch] Use PrimaryPageChanged in ReaderModeIconView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecee4993
+
+### [Omnibox] Update the icons for pedals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3556398
+
+### Convert high contrast background code to an ES6 style class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/29e91cb
+
+### [answers] Make SearchController::Publish() public.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9d0583
+
+### webappsettings: enable for fuchsia
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/753094f
+
+### Observe fewer signals for zero state local files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a28b78
+
+### known_user: Replace GetIntegerPref with FindIntPath
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e6f2c3e
+
+### [App Management] Adding aria descriptions to toggles to convey meaning better.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8439ce
+
+### Privacy Settings: Add single location for non-Tree model deletions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdbf9d3
+
+### Eliminate GetThemeProviderForProfile() in tab strip UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4610a0e
+
+`);
+              </script>
+            </body>
+        </html>
