@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-06
+### [Code Health] Use RegisterMessageCallback in OfflineInternalsUIMessageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c54b977
+
+### Fix Chrome branded build.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6fa5d0
+
+### [VoiceOver] Fix increment/decrement actions not working on sliders
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4edd565
+
+`);
+              </script>
+            </body>
+        </html>
