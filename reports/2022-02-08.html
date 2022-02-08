@@ -1,0 +1,336 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-08
+### Retire enable-desktop-pwas-app-icon-shortcuts-menu-ui
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/05e0865
+
+### Pass details to FileResults and add justifications to ZS files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f2449f
+
+### Clean up promises in the color enhancer extension storage class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e18d3f0
+
+### [Code Health] Remove uses of Value::CreateDeepCopy()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83b954f
+
+### Lookalikes: Fix flakes and re-enable Safety Tips histogram tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bef503
+
+### mac_merge: move AXEditableAncestor and AXHighestEditableAncestor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8347385
+
+### Move the Protocol Handler related message IDs to //component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e94b7cb
+
+### Display parent app name as details for arc shortcuts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25b6dc9
+
+### [Fast Pair Device Images] Add True Wireless component to settings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ac6ef9
+
+### Add folder as details text to local file search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea29683b
+
+### Update features in Collections field trial
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/110e530
+
+### Arc: Remove usages of deprecated permissions mojo field
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18cd9dc
+
+### [Code Health] Use RegisterMessageCallback in net_internals_ui.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f688dfa
+
+### Fix the close menu item issue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bab39de
+
+### arc: Fix read initial window layout from pref dict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec77abc
+
+### [journeys] Caps the number of related searches to 5
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71d5260c
+
+### Extend custom event support to InteractionSequence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12f2d9b
+
+### Fix DCHECK on startup due to file justification strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5746f32
+
+### DLP: Disables share-this-tab-instead button if forbidden by policies.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c7cb8e
+
+### [Fast Pair] Hide Fast Pair toggle when no hardware support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f15c6ca
+
+### Add flag to enable the EnableUserCloudSigninRestrictionPolicyFetcher feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/716d1de
+
+### [fuchsia] Fix missing pure virtual function definition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d455915
+
+### Fix Chrome branded build.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c70e62af
+
+### [WebUITabStrip] Active tab title UX changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/beeec6c
+
+### Move tabs into TabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2ba5c5
+
+### Remove --force-major-version-to-100 and --force-minor-version-to-100.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d32f01a
+
+### Get rid of map members from ArcOpenUrlDelegateImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cacfbf0
+
+### Privacy Sandbox Settings: Add the notice dialog and the logic for it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7afc0a3
+
+### [privacy sandbox settings] Pass dialog actions to the service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a036ee9
+
+### Consistently use popup instead of bubble in Autofill filling UI comments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e5f137
+
+### Add custom event support for ElementTracker[Views]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b37ba91
+
+### [Extensions] Remove 'Options' entry from context menu if no options page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6379f12
+
+### [GMNext] Make ChipView colors dynamic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91f1656
+
+### [FilesSemantic] Update file selection box to semantic colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de93b9e
+
+### Add missing includes of //base/observer_list.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97aac0de
+
+### Disable flaky X11WindowTest.ToggleMinimizePropogateToPlatformWindow*.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e2f3e8c
+
+### [App Management] Remove expired intent settings flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f8592a1
+
+### [LR] Update progress bar accessibility to only notify user at the start.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b32cfbe
+
+### Remove X11UiThread
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05dc57f
+
+### [feature_notification_guide] Fixed text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ac66ea
+
+### Added in TabStrip ChromeColorIds and update frame color mixers.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ace9190
+
+### [CrOS Connectivity] Update DIR_METADATA files.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80f0254b
+
+### [privacy sandbox settings] Add dialog actions handling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d3edb05
+
+### Reland "Re-run default web app migration if old Chrome app is still installed"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbe525e9
+
+### [dPWA Testing] Added WebAppIntegrationBrowserTest.UninstallFromOS test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/903c8a5
+
+### Page info bubble: link to app settings instead of site settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d39d356
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ece71f
+
+### Less use of GetThemeProviderForProfile() in InstantService.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1268675c
+
+### Add tutorial support (w/tests) for custom events.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d105553
+
+### [headless] Changed Windows headless to use Widget::InitParams
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87e4dba
+
+### [Extensions] Show dialog if going away from SPECIFIC_SITES
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc72b1e
+
+### color_picker: restore macOS color picker (2/?)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/732656d3
+
+### Skip failing file dialog tests on the Mac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d290227
+
+### [HPS] Final settings UI strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/579181a
+
+### Fix Chrome branded build.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdc92a76
+
+### GestureDetector: add support for a short-press gesture.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35d65326
+
+### [cr-card-radio-button]: Update hover and focus style for radio card
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30687b17
+
+### [DragDrop] Dismiss Context Menu when drag leaves triggering point
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6669d818
+
+### md_select_css: Use cr-primary-text-color consistently
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/edc0a37
+
+### Make ui::Layer::StackRelativeTo do less work.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb766a9
+
+### tabdrag: do not use work area to decide to maximize detached tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2283ed9
+
+### Dynamic colors for CircularProgressView.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0bd6d1
+
+### [XProto] Move send_event into x11::Event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65512f4
+
+### Remove use of HasCustomColor in TabStrip and use ColorProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23a6ae6
+
+### Change DropHelper::OnDrop to call GetDropCallback
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fc99d6
+
+### gpu: Refactor vulkan init
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/625f7b2
+
+### [FilesSemantic] Make file_manager.css semantic compliant
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f932c54
+
+### [Shortcuts] Set details text to be KSV app name.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18c6251
+
+### Fix UAF in BookmarkAppFrameColorCustomThemeNoThemeColor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/003291a
+
+### Ozone - Add flag for native pixmaps support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8b385e
+
+### Add checks to formalize startup mode & flag deps for ProcessCmdLineImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84b261d
+
+### [Omnibox] Implement metrics for the Omnibox pedals on Clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b44efb
+
+### [StatusAreaWidget][OOBE]: Fix linear ChromeVox navigation for StatusArea
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1546b88e
+
+### Update textfield cursor position on blink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99d3fc5
+
+### [Color Pipeline] Replace GetThemeProviderForProfile with widget based
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47c5e0cc
+
+### [fuchsia] Make //chrome's browser_tests runnable on Fuchsia.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e51ba9a
+
+### Cleanup ScrollCapture flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4c93c3b
+
+### Add utility for file justifications.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/847db09
+
+### ime: Delete unused is_selection_item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1e84729
+
+### Make HideHelper set the compositor for animations so they stop ticking.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a59195
+
+`);
+              </script>
+            </body>
+        </html>
