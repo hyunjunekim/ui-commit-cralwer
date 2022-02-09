@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-09
+### Paint group views at the right z-level during post-drag animation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e16b8bd
+
+### Move //chrome/browser/ui/webui/settings/{chromeos=>ash} [1/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c38c9f1
+
+### [GMNext] Migrate dialog_bg_color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/86e6815
+
+### ax_mac_merge: merge accessibilityIsIgnored implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dd9809
+
+### [Sheriff] Disabled failing test in FreUMADialogTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8157854
+
+### GestureShortPress: Add minimal event plumbing in Blink.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d213be
+
+### PIP20: add a new DocumentOverlayWindowViews subtype
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d821943
+
+### Add internals page for optimization guide
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d190b3
+
+### Move gpu/vulkan/x to ui/ozone/platform/x11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f03d5934
+
+### AddGuestOsFiles flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d07ba6b
+
+### dPWA: ignore same-doc navigations for launchQueue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9983e38
+
+### flags: remove detect-target-embedding-lookalikes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f8bb07b
+
+### [Android] Change order for Keep Data Separate and Combine data radio buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d5c3dd
+
+### Remove Custom Clipboard format from about:flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a9d3c5
+
+### WebUI: Remove WebUIBrandingUpdate flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4de55a6
+
+### Migrate to base::Value in network_connect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1e4660
+
+### [dPWA] Sub Apps - Uninstall corresponding subapps during parent app uninstall
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9942cad
+
+### Use GetLocalizedStringForRoleDescription for Mac accessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5657a42
+
+### Revert "Less use of GetThemeProviderForProfile() in InstantService."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/142e3b5
+
+### Additional tweaks and polish to support Tab Groups tutorial promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f21cf26
+
+### [Offer notification] Add cross-tab tracking for notification UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b800eee
+
+### [FilesDarkMode] Remove ::backdrop from files quick view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd5a718
+
+### [CrOS Settings] Remove Polymer2 cr_components/chromeos JS targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/915c4b3
+
+### Removed all @TargetApi for very old APIs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0351b3a
+
+### [Extensions c2s] Add permissions combobox to site access menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c23fa9d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb7c475c
+
+### This change adds billing customer number to GetUploadDetailsRequest.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bf97b0d
+
+### Add RebootNotificationController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d598de
+
+### [sync] Remove obsolete kSyncConsiderEmptyWindowsSyncable flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b71ea635
+
+### arc: Restrict window predictor on ARC R
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e64b797
+
+### WebUI: Remove enable-branding-update from cr-toolbar-search-field
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5e38ee
+
+### Add chrome-untrusted webui for desktop feed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0017cd
+
+### Desk Templates: Fix duplicate launch metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9bf29b
+
+### Disable Crosh link depending on the policy value
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/643a88a
+
+### [CrOS] Branch recommend app screens to feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d09dc7
+
+### Remove PersistedTabData maintenance flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f828452
+
+### OOBE Consolidated Consent: Update WizardController tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e774753
+
+### ozone/wayland: do not attach null buffer to root config on error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30ad186
+
+### Add a query length threshold to shared drive file search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1edb966
+
+### Disables share-this-tab-instead-button if blocked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08d5f6e
+
+### DLP: Remove Textfield::OnPerformDrop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d5ebfe
+
+### Disable TabbedPaneAccessibilityMacTest.AttributesMatchAppKit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/804706a
+
+### Add name to GestureConsumer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ccf050
+
+### [CrOS Cellular] Add disable eSIM profile function in network debug page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dd0a72
+
+### [Code Health] Use RegisterMessageCallback in InspectMessageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/505a3023
+
+### [Code Health] Use RegisterMessageCallback in CertificatesHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdafa80
+
+### dPWA: Disable InstallPolicyApp tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ab5f37
+
+### CodeHealth: Avoid GetStringASCII() in chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a8afd5
+
+### mac_merge: move AXOwns implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ea666c
+
+### Remove extraneous parameter from Tutorial, add test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39fe4b0
+
+### [VCN] Change VCN enroll bubble cancel button text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6acf551
+
+### [Shortcuts] Launch the KSV app on KeyboardShortcutResult::Open().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29051bbd
+
+### crostini_upgrader: Split up the ERROR state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2eac0e
+
+### Lookalikes: Enable character swap using a gradual rollout config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9b25d5
+
+### CCA: Let chrome-untrusted://camera-app has its own WebUI controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0acd41
+
+### [Extensions UI] Introduce a extension_popup_types file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/248ca59
+
+### Use AppPtr and Apps for std::unique_ptr<App> and std::vector<AppPtr>.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fe6b41
+
+### Fix CHECK when menu items are validated during browser startup on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d0ccf44
+
+### [Passwords] Add dismiss password button and dismissed passwords section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b83589
+
+### RM some logic around default on flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f0853d0
+
+### [FedCM] Update bottom sheet to match mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80fa1ea
+
+### [Extensions UI] Simplify the flow of programmatically showing popups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/072b6bf
+
+### Cleanup DetectedSourceLanguageOption flag and feature code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a97d714
+
+### [Profiles] Enable DestroyProfileOnBrowserClose by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86c7dc91
+
+### PageInfo: Add feature param for permission icon timeout
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2b2f02a
+
+### [fuchsia] Use SDK provided gn templates for ozone_demo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc5d646
+
+### [View] AnimationAbortHandle handles layer destruction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74b2a6a
+
+### Don't iterate RenderFrameHosts when the WebContents is being destroyed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7fc6d05
+
+### [FilesRecentFilter] Reset filter to All after leaving Recent directory
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95267b40
+
+### shimless: Add RMA session state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15114c2
+
+### Fix regular mixers added after post-processing mixer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f3ff40
+
+### Better integration between IPH and tutorials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48eae9f5
+
+### Update CSP and add a feature param to disable it for testing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaec347
+
+### Return VT_EMPTY when internal role matches the UIA Control type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07fcd2b
+
+### Privacy Sandbox Settings: Update empty-state logic in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6acdd2e
+
+### CodeHealth: Remove base::ListValue::Get()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89948ea
+
+### Turn AccessCodeCastUI feature on by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a7f2f2
+
+### Make HideHelper's setting of the compositor for animations affect new animations.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83ba63e4
+
+### Fix ignored return type qualifier warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20b5e5e
+
+### Spin off DragDropClientObserver::OnDragEnded() hook
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b550a79
+
+### [locales] Rename locales to platform_pak_locales
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8f7da5b
+
+`);
+              </script>
+            </body>
+        </html>
