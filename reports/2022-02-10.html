@@ -1,0 +1,348 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-10
+### [A11y] CastDialogSinkButton status update not sent to the screen reader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67a5560
+
+### Move //{chromeos=>ash}/resources/multidevice_resources.grdp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b60b5a9
+
+### webappsettings: show settings but not app info on mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9569d45
+
+### [CrOS Cellular] Update isBlockedByPolicy in internet subpage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/512b1b4
+
+### Removed ThemeProvider::HasCustomColor, all overrides and uses.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fff8b50
+
+### Use syncer namespace in c/sync/base/{features,command_line_switches}.*
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3cd7ae9
+
+### Replace DragAndDrop content flag with TouchDragAndContextMenu
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a130fec
+
+### Add method to translate animation within AnimatedImageView.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78bab6c
+
+### [fuchsia] Make CFv2 the default for tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e4f41f
+
+### Fix shell_dialogs_unittests on Monterey
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b5e2f9
+
+### Rename GetOptimalBubbleArrowSide to GetOptimalArrowSide.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4146a14
+
+### [Nearby Onboarding] Added html and js for new one-page onboarding view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa27acd
+
+### Use setPreventsCapture on software protected content
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c30bd6a
+
+### Display additional OpenVPN properties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8472b72
+
+### [Offer] Remove experiment flag for offer
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/461ad1b
+
+### [dPWA] Sub Apps - Add WPT tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/862afe3
+
+### [privacy sandbox strings] Add strings placeholders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/693e9257
+
+### GetThemeProvider() should use GetPrimaryWindowWidget()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7507473
+
+### [App List] Add icon for SWA context menu "New Window" item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae301ae
+
+### Add structure for Download Bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eab857a
+
+### Always handle the border accent colors to fix test on Win7.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d769ad4
+
+### [Nearby][WifiCreds] Add Wi-Fi credentials attachment class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3314fec
+
+### Split model flags that get annotated on page content
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8d50067
+
+### Move the RegisterProtocolHandlerPermissionRequest to //components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa806602
+
+### [Fuchsia] Enable SwANGLE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae661b0
+
+### dark_mode: Fix colors of context menu inside system UI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/409171a
+
+### [ConsentV2] Add a flag for the Discount Consent v2 work
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/36e41a5
+
+### Replace x509_certificate_model_nss PKCS #7 cert export with boringssl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/223551f
+
+### mac_merge: merge AXVisited implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b6b687
+
+### Add option for cr-auto-img to send cookies when requesting image data
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b9ca3e
+
+### [signin] Signin intercept FRE: wait for synced theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00ee000
+
+### Return a null InitializerSupplier* for incognito mode windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/944621ab
+
+### Reland "Less use of GetThemeProviderForProfile() in InstantService."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9a2b16
+
+### [Media Tabs] Accessibility for media alert indicators and simplify
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93ea369
+
+### Handle finding the BrowserWindow for non-active tab contents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbaa469
+
+### Remove unneeded base/file_descriptor_posix.h includes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/67fdda9
+
+### [privacy sandbox settings] Handle dialog sizing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8434492
+
+### emoji-picker: add feature flag for search extension
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7a578183
+
+### [FilesDarkMode] Update format panel text color and comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e99b97c
+
+### Re-add justification strings to Continue files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdaa5c9
+
+### prerender: Make AutocompleteActionPredictor use PrerenderManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d825ba
+
+### [CrOS Bluetooth] Add subtitle for connecting devices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c42b6a5
+
+### [Nearby] Handle keyboard events in NearbyShareDialogUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d9e826
+
+### Privacy Sandbox Settings: Add learn more dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e28e1bc
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c018286f
+
+### Remove unused case in AXNode::SetRoleMatchesItemRole
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09b98ee
+
+### [sheriff] Disable BrowserAppShelfControllerBrowserTest.ActivateAndMinimizeWindows on Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fc0996
+
+### [XProto] Move send_event into x11::Event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65512f4b
+
+### [Link Capturing] Add Intent Chip to the Omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4474c0d
+
+### borealis: Make borealis' allowedness checks conform to b/181809118
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37c6c6e
+
+### Add logic to track suggestions list scroll events.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b964b99
+
+### Remove the use of HasCustomColor from BookmarkBarView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02a4a74b
+
+### Gate Continue behind the Disable Google Drive setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ede0823
+
+### Use forward declaration of cc::PaintCanvas
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae283273
+
+### Eliminate GetThemeProviderForProfile() from NTPResourceCache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/910e6f0
+
+### webappsettings: add more metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/171a05e
+
+### [signin] Refactor ProfileCustomizationBubbleSyncController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd5dae3
+
+### [Extensions UI] Plumb a ShowPopupCallback through calls to show popups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d72257
+
+### Win: Don't keep maximized state on tab drop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6609948a
+
+### [VCN] Add virtual card unenroll dialog in settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63c04cf
+
+### Rename DummyUiActivity to BlankUiTestActivity
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1d37e7
+
+### Remove toolbar top separator from terminal settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/434b9c3
+
+### [Shortcuts] Determine accessible name for KeyboardShortcutResult.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d03b98d
+
+### in_session_auth: Support password as auth method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac95e076
+
+### [ozone/wayland] Propagate drag cancellations to upper layers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab844f0
+
+### Removed download progress infobar UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60719c9
+
+### [CodeHealth] Remove the use of deprecated GetAsString in //chrome/browser/ui/webui/settings/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4db13bfe
+
+### exo: Prompt to use Overview to exit pointer lock/fullscreen in Borealis
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d061561
+
+### Revert "[Offer notification] Add cross-tab tracking for notification UI"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e282a44
+
+### mac_merge: merge AXKeyShortcutsValue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d84ca137
+
+### Moved permissions UI files to different package
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80523ba
+
+### apps_service: Prevent crostini_tracker from claiming borealis windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22e9a342
+
+### Update header UI of Lens side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/577b943
+
+### Generalize layout showing logic in new public method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf740a4
+
+### M2 Bubble content fix.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57b52f6
+
+### Add ContinueResultCount metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2785991
+
+### [Zenith] Make "Cast to a device" label clickable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af573e6
+
+### files app: Display correct icon and description for archives
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/879762f
+
+### [dPWA Testing] Shortening all test names due to hard limit of 256.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76c1ae5
+
+### [CrOS Network] Gray out blocked WiFi network in internet subpage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ebf1dd
+
+### crostini_upgrader: Remove disk space check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1b1260
+
+### Split components/sync/*switches* into features and CLI switches
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a48aa01c
+
+### [Dr-Dc] Add logging to debug context MakeCurrent failure.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a32fb3d
+
+`);
+              </script>
+            </body>
+        </html>
