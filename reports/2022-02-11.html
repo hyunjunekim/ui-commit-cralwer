@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-11
+### [CrOSSharingHub] Clean up feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/046d1aa
+
+### [dPWA] Sub Apps - Stop uninstall of upgraded sub-apps during
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3d2555
+
+### Allow SWAs to prefer manifest background colors over web contents'.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db505e6
+
+### [realbox] Update background hovered to match omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/173fb5d
+
+### [BrowserSwitcher] Use a WeakPtr when closing chrome://browser-switch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce87670
+
+### [FilesBanner] Update the "unrecognized file system" panel to banners
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0ef37e
+
+### Intents: Do not show Intent Picker icon on error pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdfe2f2
+
+### App Service: Add simple integration test for app-service-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/390288a
+
+### Removed DownloadInfoBarController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c388861
+
+### Sheriff: Disable flaky NotificationViewBaseTest on fuchsia
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f0c435
+
+### Reland "[Clank CBCM] Disable UMA controls on pre-MICe FRE when policy disables metrics"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e8996c
+
+### Don't use the transparent color for creating an icon color mask.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2c176b
+
+### Chrome UI color definition cleanup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd7d5d1
+
+### Sharesheet: source set for constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35ea0f2e
+
+### Add a stateDescription for radio buttons for Android accessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/48135d13
+
+### Reland "Remove legacy SwiftShader from all ChromeOS Ozone platforms"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/025e09d
+
+### Lookalikes: Use 100% rollout in tests to fix failures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3f46ab9
+
+### CodeHealth: Avoid DictionaryValue::GetString() in chrome/browser/ui/webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7f6dd2
+
+### [Clank CBCM] Disclose privacy implications of being on a managed browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/375e4b2
+
+### Toolbar tablet - enter and exit animation for switcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7636386
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b670c83
+
+### [fuchsia] Use ViewController to synchronize closing action with the shell
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38f8fdc
+
+### Fine-tune phone permissions onboarding dialog UI based on the spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1ecbb0
+
+### Using non-mojom app type for Crosapi.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44a239b
+
+### Render FAKE_CREDENTIAL as stars in network details
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eff8510
+
+### Partial revert of lacros: Fix existing test-only race condition ...
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee98165b
+
+### personalization: extract useful webcam utilities
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84d520a
+
+### Add flags for improving reader mode prompt
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/960e103
+
+### Audio new privacy string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74f45bf
+
+### Revert "borealis: Make borealis' allowedness checks conform to b/181809118"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdbbfd1f
+
+### CodeHealth: Modernize DictionaryValue::Set*() in chrome/browser/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f7e1e17
+
+### Reland "borealis: Make borealis' allowedness checks conform to b/181809118"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5c7875
+
+### Add missing params from NavigationParams to NavigationHandle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fca5b9
+
+### Sheriff: Disable ActivateAndMinimizeWindows on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c78024
+
+### Add tab dragging fallback implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/996f457e
+
+### GTK: respect DSF when looking up icons from system theme.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f0d477
+
+### [ARC Migration: Lacros to ARC] Remove Chrome entry if it's listed as a candidate in bubble view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c9c2a1
+
+### Change namespace to ash for //chrome/browser/ash/printing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47a6a14
+
+### [privacy sandbox settings] Handle remaining dialog actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7bfd93
+
+### Privacy guide cleanup: remove handler + one browser proxy function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d33586b
+
+### [Color Pipeline] Remove GetThemeProviderForProfile from ProfilePickerDiceSignInProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2877ee2
+
+### [FRE] Add logic to change the signed-in user from the MICE FRE page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c0d98d
+
+### Add a ring progress bar in the download toolbar button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49c120f
+
+### Move all code checking child account to use ChildAccountStatus.isChild
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4c92dc
+
+### [CrOSSharingHub] Emit share vital metric on click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87ba3a8
+
+### Add chrome://flags/#block-migrated-default-chrome-app-sync
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e9c92964
+
+### CodeHealth: Modernize DictionaryValue::Set*() in c/b/ui/webui/chromeos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/149ff9a
+
+### NotificationRevamp: Record notification hover metrics.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f57e52f
+
+### Sheriff: disable flaky test WindowControlsOverlayDraggableRegions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51796ba
+
+### Revert "Reland "[Clank CBCM] Disable UMA controls on pre-MICe FRE when policy disables metrics""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaa8a57
+
+### [FilesSWA] Fix unit test failure when FilesSWA enabled by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33545fb
+
+### [FilesPerf] Introduce new UMA for load time of directory listing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/521230f
+
+### Prevent exiting full-screen in Web Kiosk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7da1e4
+
+### stts: speculative re-enable for flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0cb3d35
+
+### personalization: detect webcam presence
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3306100
+
+### Privacy Sandbox Settings: Add ad measurement dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70989fa
+
+### [fuchsia][a11y] Add code path to instantiate v2 accessibility bridge.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78c1a67
+
+### Fix mistake in exposing Auto Disable accessibility flag to Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7a5cf4f
+
+### Enable ANGLE_rgbx_internal_format extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4429923
+
+### Don't display experiment flags for ambient animation if not supported.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1a030c2
+
+### Define kArcIntentHelperPackageName in a single place
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed166c6
+
+### Privacy Sandbox Settings: Add spam and fraud dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c742d25
+
+### emoji-picker: pass search flag value to emoji-picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/833f805
+
+### [VCN] Fix unenroll dialog translation screenshots
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b341d3d
+
+### [App Management] Adding App Details feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b7f4338
+
+### Fix use-after-move in arc_app_utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65109ac
+
+### cbui: disable synchronous relaunch notification test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69aec6ad
+
+### cleanup: remove enable-input-noise-cancellation-ui flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b11690e
+
+### Extract independent node/selection functions in caret browsing extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17e1505
+
+### [Passwords] Clean up old password edit code
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce7dc06
+
+### [lacros shelf] Fix the wait condition in BrowserAppShelfControllerBrowserTest.ActivateAndMinimizeWindows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca5331c
+
+### [feature_notification_guide] Added new notification channel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ceea30
+
+### [privacy sandbox settings] Delay showing the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67d936b
+
+### [fuchsia] Remove USB HID keyboard code workaround
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1dfbb0e
+
+### Revert "Generalize layout showing logic in new public method"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bedff8f
+
+`);
+              </script>
+            </body>
+        </html>
