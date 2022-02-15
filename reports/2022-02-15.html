@@ -1,0 +1,424 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-15
+### Change WebAppSettingsUI to use WebAppInstallManagerObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15dba64
+
+### Swapping out @TargetApi for @RequiresApi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d9dce07
+
+### crostini_upgrader: Only create one log file per dialogue instance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a191548
+
+### Add logging for Access Code Casting.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cc9760
+
+### Calendar: Add keyboard shortcut to show calendar widget.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7320aa3
+
+### base: Return by value from FilePath::GetComponents instead of out-param.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ec5db9
+
+### Update TabGroupTutorial based on Implementation Doc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/765440e
+
+### [GMNext] Migrate sheet_bg_color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7ae6c6
+
+### Reland "Reland "Move non-GTK select file dialog implementations out of //ui/gtk""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16cc972
+
+### Add feature flag for "CrOS autocorrect params tuning".
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/395c169c7
+
+### [sync] Remove some obsolete feature toggles
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b966d05
+
+### desk_templates: Add chromevox alert when entering desk templates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1232d148df
+
+### Reorder GTK color mixer definitions.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31e6057
+
+### Move kRestrictedApiOrigins parsing logic to SiteIsolationPolicy::ShouldUrlUseApplicationIsolationLevel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fa4c936
+
+### PIP20: use permanent top controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/644a4df
+
+### Add in branding strings and build flag for Reven
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57f6b26
+
+### CodeHealth: Modernize DictionaryValue::Set in c/b/ui/webui/policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02617f9
+
+### [Launcher Sort] Fix small issues related to color sync flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eabfaee
+
+### known_user: Migrate off deprecated *ProfileRequiresPolicy functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da7ce09
+
+### Added dialog to explain notification permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59f7ac7
+
+### WebUI: Make enable-branding-update styles default on cr-toolbar
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/457863a
+
+### Don't show shortcuts for queries < 3 chars
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1add8b9
+
+### [X11] Add window cache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ff33a8
+
+### [EditContext] Add EditContext flag to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ecc5739
+
+### Revert "Make TabContainer calculate its own child view indices."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dadad84
+
+### Change IntentPickerTabHelper to use WebAppInstallManagerObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f40e76
+
+### [Privacy Guide][WebUI] Rename Privacy review to Privacy Guide in code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a27aa4
+
+### Gate keyboard shortcuts behind a finch param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7a2825
+
+### [Shortcuts] Set details text of KeyboardShortcutResult.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/221a5c8
+
+### Ensures that the accessibility tree is stable before firing observers in "extra Mac nodes"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2b371b3
+
+### Privacy Sandbox Settings: Add ad personalization dialog empty state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cac58d96
+
+### CodeHealth: Modernize DictionaryValue::Set in chrome/browser/ui/webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b18e482
+
+### Split out native accessors from GTK color mappings.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a14128
+
+### ChromeOS: Update icons in chrome://downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91b50f5
+
+### [Cast2Class] Address accessibility blockers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7be41e0
+
+### ArcIntentHelper: Remove reference to deprecated LaunchIntentFile field
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc43c67
+
+### GCC: Fix conversion from base::StringPiece to std::string
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/366ad20a
+
+### Remove glGetError() from GLImageEGL::BindTexImage() for release build
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ecc5a019
+
+### Change Continue metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e3ae89
+
+### [Profiles] Adapt profile creation enterprise disclaimer on lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5fa415
+
+### Move the insertion of devices to ACCSS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c0fdc2
+
+### [Files app] Initial Web Drive support implementation for Office files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb1781a
+
+### Add a check for use_gtk before using a dbus-dependent implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40bca284
+
+### [Launcher Sort] Record the events that reset pref sort order
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcf73c50
+
+### [open tabs] Handle the Open Tab metrics types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8380f85
+
+### Add theme change animation to CrOS Settings app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/593746c
+
+### Begin cleaning up GTK color mixers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dd9cc01
+
+### Update search metrics for productivity launcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cff641a
+
+### [Launcher Sort] Generalize the methods to calculate position in order
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3569ba
+
+### Add Keyboard Shortcut support to new search results UI.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0425551
+
+### [Files app] Fix tasks integration tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71d926c
+
+### [TabletGTS] Create new Feature flag param in GridTabSwitcherForTablets
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/00ce7301
+
+### exo: Adjust Overview prompt when top rows send function keys.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a5ed446
+
+### views: document DialogDelegate best practices
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a5d664
+
+### [Android] Clean up DisableAnimationsTestRule redundancies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b48270
+
+### Move PresentationTimeRecorder from ash/public/cpp to ui/compositor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6b2b62
+
+### [CrOS Bluetooth] Add test when attempting pair to nonexistent device
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3624501e
+
+### Do not add ChromeApp if Lacros is only browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c6343b
+
+### [Autofill] Reset dangling AutofillPopupControllerImpl::view_.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cf029b
+
+### [Android FedCM] Add progress bar to "verifying" sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09271b6
+
+### webappsettings: add app settings navigation actions to integration tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0a10ce
+
+### CodeHealth: Modernize DictionaryValue::Set in c/b/ui/webui/ntp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29361d55
+
+### Prevent UAF in aura::Window::CleanupGestureState.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a2a306
+
+### Refactor highcontrast/storage.js and add tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d00e19
+
+### Fix various unit tests under productivity launcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/943929e9
+
+### Privacy Guide: rename strings from privacy review to privacy guide
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e36f331d
+
+### Enable ForceMaximizeOnFirstRun policy in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6cd26b
+
+### Add scrolling behavior to the Assistant voice search consent modal.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0e4837
+
+### PIP20: Fix bad DCHECK for re-opening document PiP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e881022
+
+### CodeHealth: Modernize DictionaryValue::Set in c/b/ui/webui/webapks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d2aafa
+
+### Reland "[Clank CBCM] Disable UMA controls on pre-MICe FRE when policy disables metrics"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f84487b
+
+### Convert a few NTP colors, primarily to provide a GTK mixer stub.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35d3490
+
+### Migrate kUsersLastInputMethod values into the known_user system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f3ccc8
+
+### [Cloud Service] Clean up prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb2cb51ce
+
+### Revert "Remove legacy SwiftShader"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e85aeaa
+
+### Dedupe GetStartupProfileInfo[Path]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60a1f2a7
+
+### Make TabContainer calculate its own child view indices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9173e93
+
+### Revert "[Desktop Screenshots] Add untrusted JavaScript and Mojo."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74e822b
+
+### Intents: Fix crash in IntentPickerBubbleView::ShowBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e6f05e8
+
+### Fix few browser tests with productivity launcher on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d42f372
+
+### Clear metrics data when enabling metrics reporting from settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cacb525
+
+### [Launcher Sort] Add tests to verify the fade in animation interruption
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/980e5aba
+
+### [Desktop Screenshots] Add untrusted JavaScript and Mojo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38e715e6
+
+### [Fast Pair] Add Turn on Fast Pair search results and deep links
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee3e370
+
+### ozone/wayland: fix [wayland_frame_manager.cc(521)] Check failed: ...
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2864c59
+
+### WebUI: Make enable-branding-update styles default on cr-drawer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb72aae
+
+### files app: fix extensions associated with the archivemount flags
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0bd43c
+
+### Link Capturing: Don't auto display the intent picker in chip-style UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f92b67
+
+### [Omnibox] Update minimal height for pedal suggestions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81d97f6
+
+### Fix color for links within cr-tooltip-icon elements on CrOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06d5e9f
+
+### Fix crash in KeyboardShortcutProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a93a8a
+
+### dpwas: Remove WebAppSyncBridge::SetAppRunOnOsLoginMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff79721
+
+### Remove dynamic color from widget search box.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10c703d
+
+### Change uninstall dialog view to use WebAppInstallManagerObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/588d80f
+
+### Seriff: Disable flaky ExtensionsTabbedMenuViewInteractiveUITest test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17cdb24
+
+### ax_inspect: move win event recorder under ui umbrella
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7529f3f8
+
+### Add ConvertImage to ColorConversionSkFilterCache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11e27c8
+
+### Change identity confirmation view use WebAppInstallManagerObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf1a9088
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/323a73d
+
+### AngleVulkan: make AngleVulkan work on Windows VM
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/840ed428
+
+### Change WebAppBrowserController to use WebAppInstallManagerObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/167ac55
+
+### Provide a UI for showing IPH from internals/user_education
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c38fcb
+
+`);
+              </script>
+            </body>
+        </html>
