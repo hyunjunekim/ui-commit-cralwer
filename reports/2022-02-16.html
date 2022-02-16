@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-16
+### content: informs blink of active state of widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd0272c
+
+### [Sharesheet] Add Preview tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9641f49
+
+### Add smart anchoring around input rect for AnchoredPopupWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c51ecd
+
+### [dPWA Testing] Fixing global name lookup maps in testing suite
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dc5fd5
+
+### [Launcher Sort] Functions that get position in order accepts metadata
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07ead1e
+
+### Clean up SendTabToSelfWhenSignedIn feature toggles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d243ec3
+
+### [Color Pipeline] Generate CSS style sheet from color provider colors in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b930fa7
+
+### [CrOS Bluetooth] Update BluetoothPairingUi to use FetchDevice().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/712743e
+
+### Privacy Sandbox Settings: Add FLEDGE handler functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90f7fe6
+
+### [Password] Add a footer to Password Save Prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca334bc0
+
+### [open tabs] Update the omnibox enum handling for open tab results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a370af
+
+### Update HomeButton to ListMenuButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6545045
+
+### Rename gfx::Transform::Scale2d() to To2dScale() etc.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e3e411
+
+### Privacy Sandbox Settings: Add formatting for 'learn more' content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e787cb
+
+### Remove a histogram and extend expiry for one.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86b4a3d
+
+### webappsettings: add policy indicator string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8a3c652
+
+### [Messages] Add metrics for comparing quiet notification prompt ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c2129b
+
+### PhoneHub: Notification restriction policy reason
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6419a1
+
+### [Fuchsia] Fix invalid DCHECK in scenic_surface.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/709396f
+
+### Side panel: Add user actions for opening bookmarks using context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f50e04f
+
+### known_user: Migrate off deprecated *IsUsingSAMLPrincipalsAPI functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6f69c0
+
+### NotificationRevamp: Add metrics for notification view type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44fe44f
+
+### dPWA: File Handling - tweak cosmetics of launch dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d90b9ea
+
+### [Start] Polish Feeds' header.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef10957
+
+### Systematize GTK colors.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42689121
+
+### [M2] Sync avatar animation with VCN enrollment bubble for upstream flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbbb9af
+
+### [VCN][M2] Add virtual card enrollment dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9fb059
+
+### Show LowBattery message on LacrosDataMigration UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e39ce591
+
+### dpwas: Move PolicyChanged notification to the AppRegistrarObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a442bfc
+
+### Sheriff: Disable AXSystemCaretWinTest.TestCaretMSAAEvents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1baec3db
+
+### [Shortcuts] Introduce a keyboard shortcuts icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/393f21e
+
+### [Start] Fix the scrolling toolbar animation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0ddd60
+
+### [Omnibox] Update Pedal color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ee8803a
+
+### Privacy Guide: rename privacy guide HaTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6acb292
+
+### Add a tablet variant to the context menu search in about_flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e128133
+
+### [CrOS Settings] Change VPN type should update certs list
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d900db
+
+### cros: apply new shadow style to system windows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/214141a
+
+### [FedCM] Adjust branding icon size to match mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae619db
+
+### cros: Add WebUI for Sign-in Restrictions in-session flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3758ff4
+
+### [FedCM] Fix ManifestIconSelector::FindBestMatchingIcon() DCHECK on ldpi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26d73af
+
+### [Omnibox] Only show Pedals when on top 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58ea27c2
+
+### mac_merge: update AXVisited to match Safari values
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d1eee3
+
+### [CrOS Bluetooth]Fix devicePairingHandler_ not set before pairing attempt
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78aceeb2
+
+### [Passwords] Clean up password check edit UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c1ff22
+
+### [lacros] Fix Session Restore for Lacros Primary
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f31c0fbf
+
+### Reland "Make TabContainer calculate its own child view indices."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d77f83
+
+### Nuke dead login code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf83f3e
+
+### [Fast Pair] Update Discovery notification to show user email
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f34a4c
+
+### Properly lock cursor config map when clearing.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4fc0f28
+
+### [open tabs] Add open tab handling to the launcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d5e035
+
+### Privacy Sandbox Settings: Implement required dialog type logic
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4f832bf7
+
+### [dPWA] Sub Apps - add code for list() API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0be04a
+
+### Consolidate InstallOsHooks() usage in WebAppInstallFinalizer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5be08c
+
+### Improve default omnibox result icons contrast in new launcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6b6a42
+
+### Delete ChildAccountStatus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77ab9f4
+
+### Crosapi service for Sharesheet
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/911b59d
+
+### [omnibox] Add and use Android-specific pedals UI label string variations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/738fc428
+
+### [Android] Cleanup SigninFirstRunMediator.getFooterString
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2dbcbf
+
+### [DBB][#7] Blue border falls back to all tab if cropped-to zero pixels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/726424f
+
+### Simplify HtmlRequestTracker in inline_login_ui_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da2576d
+
+### Dispatch one event at a time in X11EventWatcherFdWatch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/185ef49
+
+### Fix an edge case bug in Windows TSF1 implementation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ab2e8d
+
+### [Cast2Class] Revert to 6 boxes with some accessibility fixes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cff555ca
+
+### Introduce OobeAPI.loginAsGuest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8a4118a
+
+### [lacros pwa install] {web_app->webapps}::InstallResultCode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48a8d4e
+
+### Launch the passthrough command decoder on Mac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e1b340
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b518dcc
+
+### android: Fling optimization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1d1a18
+
+### Allow credentials to be passed in ImageDownloader.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7c9146
+
+### Add KeyboardShortcutTextVector to search results and use in provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84f3ec4
+
+### Move most of GTK color mixers to ui/color/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f04bd0
+
+### Privacy Sandbox Settings: Add privacy sandbox flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/665b756
+
+### [A11y Settings Revamp] Add feature flag for improved settings visibility
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7507099
+
+### Add InitialNavigationEntry to about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5278f79
+
+### Privacy Guide: rename URLs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/634612c9
+
+### [DragDrop] Position context menu to drag shadow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a799d9
+
+### launcher: Add metric for time from installation to first launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66323ff
+
+### WebUI: Update TypeScript compiler to 4.5.5
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f875565b
+
+`);
+              </script>
+            </body>
+        </html>
