@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-19
+### Move PaintChildren override down into TabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9038e3
+
+### [Lacros] Remove is_platform_app() check in MaybeGetExtension().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c96bde
+
+### Add soft opt out flag to chrome flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3939bcb
+
+### Revert "[Tab Switcher] Refactor - moved aspect ratio determination to helper method"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9c18f6e
+
+### [locales] Add Android xml pseudolocales
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f2b8e4
+
+### This CL creates an additional SaveCreditCardPromptResult metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d39e2c
+
+### Nuke ClearAndEnablePassword and resetSigninUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4f1b84
+
+### Move //{chromeos=>ash}/services/multidevice_setup [1/2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6594a8d
+
+### Fix OobeAPI.loginAsGuest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a7c616
+
+### Port colors for toolbar classes to color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5de79a
+
+### [linux/wayland/sway] Fixed constraining the window bounds.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28694c0
+
+### dPWA: Remmove flakiness comment for policy app tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e509d64
+
+### Map accessible BUSY_CHANGED event to AXElementBusyChanged on macOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ba1e07c
+
+### Remove feature::kOopRasterizationDDL
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/23b9be7
+
+### Support multi-monitors in SystemInputInjector::MoveCursorTo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d676b65
+
+### Convert the browser frame view colors for move to ColorPipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4f0a91
+
+### projector: support profile switch for pending screencasts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f48ba9
+
+### Adds a class that sets and properly resets the update state of the accessibility tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8eb31fc
+
+### Fire AtkState change event when aria-busy changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d3f2fd
+
+### Convert high contrast extension content script to an ES6 style class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd0c1af
+
+### Treat DohConfigs as opaque strings in the UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45db3eb
+
+### [Ozone/Wayland]root_window_->ShouldUseNativeFrame() only affects its
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a67eff3
+
+### dPWA: Web App Settings - hide page until data is available
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5cc620
+
+### [Resource File Sharing] Add chrome://flags entry for Resoruce File Sharing in Lacros
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6901043f7
+
+### Reland "Add ability to control DSP based audio effects in CrAS via field-trials"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bbd35403
+
+### Privacy Sandbox Settings: 'Removed interests' page of ad personalization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03f18e7
+
+### Use ETLD+1 for RP and IDP in FedCM bottomsheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e28c8d
+
+### Finish cleaning up uses of std::optional
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42bea4d
+
+### Fix typo in menu_item_view.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbd8ba2
+
+### personalization: confirm webcam photo before setting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2700c73
+
+### Use SkM44 instead of skia::Matrix44 for color matrix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/239702f
+
+### Disable SigninViewControllerDelegateViewsBrowserTest.ResizeBeforeDisplay on mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb6e1d8
+
+### Fix sibling deletion for AXPlatformNodeTextRangeProviderWin endpoints
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79f1199
+
+### Move group_views_ down into TabContainer (and some methods that can immediately be moved).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4881131b
+
+### dlp: Remove DesktopNativeWidgetAura::OnPerformDrop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77aec02
+
+### Speculative custom drawable file adjustment.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1eeb153
+
+### Reland "Add internals page for history clusters"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8159b05
+
+### Handle Windows high contrast omnibox colors correctly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c9723a
+
+### Remove obsolete redundant way of handling tabs closing mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f28ec776
+
+### Revert "dlp: Synchronize Drag and Drop source metadata from Lacros to Ash."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88edcfa
+
+### [dpwa] Implements the action to open a web app in Chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/933a590
+
+### [Download Progress Message UI] Fixed text for scheduled downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1ffba8f
+
+### Remove old, unused tab animation framework.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec06952
+
+### Refactor StartSigninScreen to avoid going through SigninScreenHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f43cfa
+
+### Add missing pieces for already-ported colors.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0177b0
+
+### Update interactoin and user_education tests to use interaction_util.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a2be74
+
+### linux: Don't make tab drag maximize new window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bd4870
+
+### Gate js2gtest targets behind is_chromeos_ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c60ffa
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fbc4f3
+
+### CrOS: Migrate chrome://slow to JS Modules.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59c480a
+
+### Projector: Remove blank tabs left behind after clicking links
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d24f604c
+
+### [Password] Add note section to edit dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b059c3d
+
+### Don't persist/sync initial NavigationEntry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c187810
+
+### [Stylize] Added a feature flag for WebNotes Dynamic Templates.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a13fcab
+
+### Added new opt-in title emphasizing on trips.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c0fb284
+
+### Start moving tabstrip animation code into TabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c9765c3
+
+### WebUI: Migrate chrome/test/data/webui/js tests to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c822804
+
+### [Extensions] Add edit functionality for user specified sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb29a822
+
+### Add a chrome://flag for DownloadBubble
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e493d2b2
+
+### Remove tree dump from AutomationManagerAura crash logging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65b6837d
+
+`);
+              </script>
+            </body>
+        </html>
