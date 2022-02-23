@@ -1,0 +1,204 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-23
+### HDR: Specify a HDR maximum luminance on all platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c9095d7
+
+### Move SAML public session launch into the GaiaScreenHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9838a72
+
+### Split Clipboard.java into two files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50cfbcb
+
+### [Tab Switcher] Refactor - moved aspect ratio determination to helper method. Added static aspect ratio for tablet. Added a couple unit tests for new method in TabUtils
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d51190
+
+### [VCN] Clank upstream and downstream flow (infobar).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93470c6
+
+### Paint the separator color explicitly rather than blending the color beforehand.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/696d9978
+
+### [Media Router] Simplify media_router::MediaRouterBase.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dac2c3
+
+### [Extensions Refactor] Use views::Builder in ExtensionsTabbedMenuView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e574024
+
+### Use the ColorProvider for all colors in the TypographyProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cfce46
+
+### Show download toolbar button when created based on last complete time.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ccb7ad0
+
+### Revert "[Launcher Sort] Handle item icon update in color order"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75710659
+
+### Revert "dPWA: File Handling - tweak cosmetics of launch dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a5d8c6
+
+### webauthn: add internal enterprise policy for universal WebAuthn access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7aa4f9
+
+### Revert "ime/CharacterComposer: show preedit string in sequence mode"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9a559a
+
+### [A11y Settings Revamp] Move Accessibility out of Advanced section
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d44b26a
+
+### Add missing includes of //base/observer_list.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/646a03e
+
+### [ToolbarManager] Add trace for getUrlBarData for jank investigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bfd4f2
+
+### dPWA: Remove url_handlers_handler WebUI backend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d8ba5c
+
+### [SearchHistoryLink][WebUI] Remove search history link flag for desktop
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2587c23e
+
+### file_manager: Integration tests for guest os
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06862f2
+
+### [ChromeOS OOBE] Nuke SetClientAreaSize function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6f4905
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26c394a
+
+### Ensure update is requested properly when showing a layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/741fb7e
+
+### [journeys] Fix aligning toolbar and tabs in history for RTL mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54580d8
+
+### Remove code with no effect.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f6989e
+
+### Fix typo in high contrast extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7bf13bb
+
+### Remove kLacrosAllowOnStableChannel.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/34d367f
+
+### [CrOS Bluetooth] Create feature flag for OOB HID Detection Revamp.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2c79d04
+
+### [eche] Eche bubble view
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/58e2adb
+
+### Use forward declarations of base::RefCountedMemory
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fee53b
+
+### PSM libs: p6. Fix signed vs unsigned comparison warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79b4cec
+
+### [GMNext] Revert web content selection handle color to baseline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fcc50d8
+
+### [answers] Add dark mode icons for Omnibox answers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7182ba6
+
+### Plumb SkottiePropertyTextValueMap through rendering pipeline.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c743571
+
+### [DragDrop] Get delay from finch param for drag image clearing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/173e146a
+
+### [Desktop] Clean up Incognito clear browsing data dialog feature flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/33c3005
+
+### [journeys] Add padding to properly center toolbar
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75fb981
+
+### Prevent duplicate Ash App Uninstall Dialogs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdd3894
+
+### Updating Download location dialog title in Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbb98d1
+
+### Revert "Dispatch one event at a time in X11EventWatcherFdWatch"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1000d4a
+
+### Add aria-label for password check action menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85dc393d
+
+### [omnibox] Launch and remove OmniboxPedalsBatch3 feature & flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8261b37
+
+### Refactor ShowAllowlistCheckFailedError callstack
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b27060f
+
+### [Sheriff] Really disable ResizeBeforeDisplay test on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cc7177
+
+### [ChromeOS] Sync consent audit: Remember all the strings loaded
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dae61ba
+
+### [Sheriff] Disable flaky HotseatShelfAppBrowserTest.EnableChromeVox test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1be0e8
+
+### [Sheriff] Disable flaky ColorPanelCocoaTest tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d25c371
+
+`);
+              </script>
+            </body>
+        </html>
