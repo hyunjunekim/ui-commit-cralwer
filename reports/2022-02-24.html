@@ -1,0 +1,228 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-24
+### Emit milliseconds for Event.Jank.ScrollUpdate.TotalJankyAndNonJankyDuration2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa385a8
+
+### [dpwa] Adds an action to update the manifest display property to 'browser'.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9eeef2
+
+### Fix flaky assistant voice search render tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5625fbf
+
+### mac_merge: merge AXLoadingProgress and AXLoaded implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b5f6236
+
+### Removing the Search Prefetch Service feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5f23814
+
+### [Passwords] Add enableSendPasswords boolean to settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c1bdad
+
+### [Clank CBCM] Use isUsageReportingPermitted instead of isUsageReportingPermittedByUser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf9faff
+
+### Re-enable DragAndDropBrowserTest.DropForbiddenUrlFromOutside on TSAN.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65e6485
+
+### [App Details] Adding app type to details.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d128967
+
+### Revert "[Tab Switcher] Refactor - moved aspect ratio determination to helper method. Added static aspect ratio for tablet. Added a couple unit tests for new method in TabUtils"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/95295404
+
+### GLImageNativePixmap: specify YUV color space.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1052e58
+
+### [Desktop] [IncognitoCBD] Update c/b/ui/views/OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba89684
+
+### [VCN] Delay showing the bubble if webcontent is not active
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1595120
+
+### Nuke SigninScreenHandler::UIState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f1b668
+
+### Privacy Sandbox Settings: Move component service into namespace
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cda280
+
+### media: update MediaGalleriesInteractiveDialogTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f02e8345
+
+### Use String IDs for Tutorial Body/Title text, fix windows display bug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e89c291
+
+### [fuchsia] Implement artificial fullscreen toggle for StubWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fe868316
+
+### [side search] Exclude Side Search from UMA and UKM page load metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9baba63
+
+### Remove USE_AURA usage in ui/display/mac/screen_mac.mm.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b424ef
+
+### Migrate high contrast extension from var to const/let
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a67e5b
+
+### Reland: Fix notification grouping on multiple screens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c9d80f
+
+### Privacy Sandbox Settings: Move FLoC to Topics API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c4b23ea
+
+### Refactor showAllowlistCheckFailedError on the javascript side
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86d3a68
+
+### [Widget] Clean up Widget feature flags.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d998631
+
+### Send the reduced MINOR.BUILD.PATCH version in the User-Agent string
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1e3fc346
+
+### Specify client type for Print Backend Service Manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7ba4243
+
+### Modify AppUpdate::Readiness to return the non mojom Readiness enum.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a3ae8f
+
+### Add feature flag for SecondaryGoogleAccountUsage
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/09abdd5
+
+### Focus the open dialog if one exists for app_id when uninstalling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9722dc
+
+### webappsettings: merge build flag conditionals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/906a270d
+
+### Revert "[Widget] Clean up Widget feature flags."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0a9a9ce4
+
+### [Fast Pair]: Add two new notifications related to the companion app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efb944d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18c30210
+
+### [SharingHub] Change menu item color when hovered to "highlighted"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de569ed
+
+### RGB Keyboard: Add feature flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9d1307e
+
+### DevTools: Show automation info bar when automation override is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fbab06
+
+### [Code Health] Use base::Reversed in ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ee4a2f
+
+### desk_templates: Remove auto name generation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/814f6417
+
+### Make ProjectorClientImpl implement ProjectorAnnotatorController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/519b376
+
+### [Fast Pair] Change default image size in paired device list
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ceb39db
+
+### Delete kShareMenu feature code
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d4265ea
+
+### [ConsentV2] Add consent dialog element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16c9e453
+
+### [Desktop] [IncognitoCBD] Add metrics on action type.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff4d2f1
+
+### Remove mojo::InterfacePtr<T> and mojo::InterfacePtrInfo<T>.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0efcf95
+
+### Remove the dependency on types.mojom for app_notification.mojom.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4643b10
+
+### Lacros: Test Web Share Target using Web Share intents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/391eca9
+
+### [realbox] Add icons for batch 3 pedals in realbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a40f72a
+
+### Desktop PWAs: Address various clang-tidy messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf99d47
+
+### dpwas: Clean up protocol handling flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d93b42
+
+### Add option to close reboot dialog and notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a4f981f1
+
+### Touch Event: Correct touch event pointer type from xEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81717ab
+
+### [Omnibox] Highlight the pedal if the suggestion is selected by keyboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b63eed
+
+`);
+              </script>
+            </body>
+        </html>
