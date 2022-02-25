@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-25
+### Reland "Lacros: Use AppService info to determine pinned web apps in Ash."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e196f3f
+
+### Do IWYU for base/bits.h, mostly outside of base/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ba044e
+
+### Revert "[motionmark] Avoid unnecessary IPC on mac."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be623b0f4
+
+### [App Details] Adding installation source to App Management mojom/backend
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a1992a
+
+### [Clank CBCM] Remove ConstraintLayout dependency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d1e56f
+
+### Fix various @typescript-eslint/no-unused-vars ESLint rule violations.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b40fed
+
+### [Sharesheet] Remove extra whitespace.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f82515c
+
+### Dictation: Remove offline dictation feature
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/26a37ab
+
+### [CameraRoll]Use notification onboarding dialog to set up camera roll
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b63373e
+
+### Move //chrome/browser/ui/webui/settings/{chromeos=>ash} [2/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c04530a
+
+### Revert "Move //chrome/browser/ui/webui/settings/{chromeos=>ash} [2/N]"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a441b77
+
+### [UIA] Fix format boundary with aria-invalid
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d656d3
+
+### Replace url::Replacements<T> with GURL::Replacements in /chrome/browser/ui/web_applications.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fecc84
+
+### Allow TabContainer to notify the TabHoverCardController of tabstrip changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a56fe1
+
+### [Extensions] (Hopefully) fix an extension popup crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e353dc2
+
+### [Passwords] Add send password button in passwords list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb08039
+
+### Remove unused include of //cc/paint/paint_recorder.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d48e9881
+
+### [QrCodeGenerator] Check if dialog is already open and remove Unretained callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a9d155
+
+### [Fuchsia] Make ScenicOverlayView re-usable with a new ScenicSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dfd84fc
+
+### [Lacros] Add callback after account selection in web signin flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/748a5d6
+
+### Consolidate Secure DNS UI probing setup code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2467e0
+
+### [CrOS Settings] Move authentication type out of VPN types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/930d1f15
+
+### [Omnibox] Update PedalView layout direction as BaseSuggestionView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/941fd5b
+
+### Remove unused flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/62a1fda
+
+### Handle empty URL when muting tab sound
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b94c082
+
+### Desktop PWAs: Avoid making variables const where that prevents moving
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a804cab
+
+### Lacros: Use AppService info to determine pinned web apps in Ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f44da94
+
+### Move tabs closing mode into TabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbb31ac
+
+### [Sharesheet] A11y fix - Share header unnecessarily receiving focus.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b106bed2
+
+### DLP: change DataTransferEndpoint to use URLs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30cdfae
+
+### Revert "desk_templates: Remove auto name generation."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbf2ba0
+
+### clank-sh: remove ShareUsageRanking disabled path
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2989e90
+
+### Fix tilt conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61ab9b9
+
+### [FedCM Refactor] Delete unused FedCM HTTP interception code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/378009a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af80cd9
+
+### Move SetTabSlotVisibility into TabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fdb839
+
+### [Sheriff] Disable ProfileMenuClickTest_SyncPaused on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bb5475f
+
+### webappsettings: add uninstall action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3bfb6a
+
+### PSM libs: p8. Fix unittests signed vs unsigned comparison warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b975414b
+
+### Replace url::Replacements<T> with GURL::Replacements in /chrome/browser/ui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba7b968
+
+### Fix glitch where the user deletes a tab while typing in the Omnibox.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d435541
+
+### Reland "desk_templates: Remove auto name generation."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11d0b79
+
+### Add even more safeguards to prevent access of invalid tab data.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01ff7d8
+
+### [dPWA Testing] Adding action logging for easier debugging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7402f72
+
+### Update metadata files to proper buganizer components
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5842a87
+
+### wayland: include keyboard flags in touch events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb456e1
+
+### [aura] Fix activation propagation in DesktopNativeWidgetAura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d66cea
+
+### Add feature flag for DeviceScheduledReboot policy
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a1e5cd8
+
+### Privacy Sandbox Settings: Connect Topics and Fledge lists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63b1846
+
+### [VCN] Fix manual fallback bubble layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/316dd9c
+
+### Move available width calculations from TabStrip into TabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3335b0b7
+
+### Use tab strip region as anchor for Tab Group IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8b331dc
+
+### WebUI: Migrate cr_components/managed_footnote/ to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/429a529
+
+### Revert "[App Details] Adding installation source to App Management mojom/backend"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5263a0
+
+### [ConsentV2] Update the string in ntp consent
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a696d227
+
+### Add fake recovery service implementation for browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7738b14
+
+### [HPS] new default parameters for lock-on-leave
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9c097c0
+
+### Revert "Lacros: Use AppService info to determine pinned web apps in Ash."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66dd2e06
+
+### [DragDrop] Add Android.DragDrop.FromWebContent.* metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8fb595
+
+### Fix menu highlighting in Tutorial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7295b0a
+
+### Enable non-URL DTE serializer unit tests for Lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/429e607
+
+### Reland "Reland "Merge common areas of icudtl.dat in Lacros and Ash""
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e14d8fd8
+
+### Use one name for all Set*Wallpaper callbacks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec76cb6
+
+`);
+              </script>
+            </body>
+        </html>
