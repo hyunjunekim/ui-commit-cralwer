@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-02-26
+### [dpwa] Re-enabled the disabled integration browser tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bcf8b9
+
+### [GMNext] Update NoUnderlineClickableSpan to take Context
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe16f1d
+
+### EditContext: add traces
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37cf2cbf
+
+### Replace url::Replacements<T> with GURL::Replacements in /chrome/browser/ui/webui/print_preview.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c33105
+
+### webappsettings: add uninstall CUJs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc3841c
+
+### [CodeHealth] Deprecate WebUI::RegisterMessageCallback()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fe8981
+
+### [GMNext] Add feature flag for CTA experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/78ed269
+
+### [Color Pipeline] Correctly set ContrastMode in color provider key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/718c201
+
+### Optimazation for TabStripModel destructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6eba6cf
+
+### Check IsSyncFeatureEnabled in ChromeShelfPrefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2784406
+
+### Revert "Define 2 new tab width experiments"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7763f86
+
+### [UIA] Don't fire generated LiveRegionChanged events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a18ad5
+
+### [CrOS Settings] Remove "Do not check" option in server CA for L2TP/IPsec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3064402
+
+### ozone/wayland: fix output transform to display orientation conversion.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ce0313
+
+### [mparch] Return early for a fenced frame navigation in SBTPopupBlocker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/903941d
+
+### [CrOS Networks] Update A11y label for managed networks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c18393
+
+### Define 2 new tab width experiments
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c0a753d
+
+### Migrate Print Preview WebUIs to latest RegisterMessageCallback version.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2e90a7
+
+### Change includes of //ui/gfx/image/image_skia_rep_default.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6b6475
+
+### cleanup: remove enable-pci-guard-ui flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/63ff408
+
+### [Extensions Refactor] Use views::Builder in Extensions Menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9267e0c
+
+### [Office] Disable Web Drive Office task when offline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/686bc27
+
+### Fix UIA content/control view for table structures
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6850790f
+
+### [Extensions Refactor] Divide extensions menu items into two classes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ceeb77
+
+### WebUI: Make new toolbar color default, update use of background color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cc728ad
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/956ce1a
+
+### Disabling flaky test TopControlsSlideControllerTest.TestFocusEditableElements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb17b761
+
+### Disable mouse warping for mouse events from SystemInputInjector
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3398d5b
+
+### Add class to set attribution text in ambient animations.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6476994
+
+### ash: Clean up unnecessary EqualsTraits<gfx::ImageSkia> in session code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19c46e9
+
+### Fix fingerprint enrollment animations for dark mode (Part 2 of N)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22db2dd
+
+### Always anchor tutorial bubble to new tab group header.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f148a89
+
+### Complete the set of tab group color definitions for the ColorProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ceea2f3
+
+### Help bubbles will now auto-position on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b06485d
+
+### [Clank CBCM] Don't announce enterprise icon in chrome://management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0758dec
+
+### Support dark color-scheme in Files app
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0be5af5
+
+### Additional safeguards to prevent crashes during delayed hover card show.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4554af9
+
+### Clean up Mojo serialization helpers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7aa026
+
+### [Clank CBCM] Improve announced text for the chrome://management top image
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6641077
+
+### [Nearby] Implement periodic visibility reminder for Nearby Share
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/48ea4f0
+
+### Reland "[Tab Switcher] Refactor - moved aspect ratio determination to helper method. Added static aspect ratio for tablet. Added a couple unit tests for new method in TabUtils"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/889456d
+
+### Get max supported overlays from DRM, to limit candidates we attempt
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42cb67a
+
+### Add desk template launch performance metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/012f737
+
+### [Fuchsia] Fix SCANOUT_CPU_READ_WRITE handling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bedf7fc
+
+### dPWA: File Handling - add stub settings control
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b79c7e1
+
+### Ensure SelectFileDialogLacros::IsRunning returns a valid response
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78ceb6d
+
+### Extract: Enable extraction command UI for single file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd0dc58
+
+### webappsettings: decouple run_on_os_login policy from policy install
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38aabae
+
+### [Omnibox] Update pedal icon size and text alignment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c09608e
+
+### [CodeHealth] Introduce new WebUI::MessageCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de590186
+
+### ash: Make app icon tiles wider for productivity launcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52a25cb
+
+### [Sheriff] Revert "[Sheriff] Disable flaky ColorPanelCocoaTest tests."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a17377b46
+
+### [ConsentV2] Add variation params and register strings
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5415f2d
+
+### Mark GURLs in NavigationHandle NonNull
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a386d30
+
+### Add support for suggestion tile deletion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/148e9c8
+
+### Replace url::Replacements<T> with GURL::Replacements in /chrome/browser/ui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba7b9682
+
+### Stop sending events before Exo starts shutdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db7961b
+
+### [Autofill] Add missing namespace scopes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c64cfa3
+
+### webappsettings: initialize the web apps publisher with run_on_os_login
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99b6d76
+
+### [X11] Add window name and _GTK_FRAME_EXTENTS properties to window cache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c91f8de
+
+`);
+              </script>
+            </body>
+        </html>
