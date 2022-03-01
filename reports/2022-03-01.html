@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-01
+### Reuse the same native wrapper in the accessibility tree when a node in the DOM tree gets reparented
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd499dc
+
+### Replace AppUpdate::GetPaused with AppUpdate::Paused.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecee6093
+
+### lacros: Add integration test for chrome app uinstall.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ebbb34
+
+### Privacy Sandbox Settings: Add fledge removed sites row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85ac067
+
+### Do not generate any events when extra Mac nodes are created or deleted
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d5fa8b
+
+### Revert "Define 2 new tab width experiments"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e74101d
+
+### filesapp: deflake breadcrumbs elider menu Tab key tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36d5f19
+
+### dark_mode: Remove #webui-dark-mode from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/97c8297
+
+### [unseasoned-pdf] Remove #pdf-unseasoned flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2f57da0
+
+### Remove unneeded copies in StructTraits by returning by const reference.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/139522a
+
+### personalization: Expose Google Photos wallpaper integration flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/946176f
+
+### Replace AppUpdate::GetIsPlatformApp with AppUpdate::IsPlatformApp.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/793af28
+
+### personalization: Add ambient albums subpage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d53ba25
+
+### Revert "[Power Bookmarks] Add a compact version of the new bookmark row"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bcd7cf1
+
+### Choose correct GPU on the iMac 12,2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10a7c423
+
+### Replace AppUpdate::GetAllowUninstall with AppUpdate::AllowUninstall.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a334ce8
+
+### Remove incorrect width/height adjustments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ed58f4
+
+### Desktop PWAs: Function declarations avoid const in by-value arguments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85d97ea
+
+### Reland "dPWA: File Handling - tweak cosmetics of launch dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1060a6
+
+### Init WebAppFrameToolbarView when opening a popup from a WCO app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24d3690
+
+### WebUI: Remove enable-branding-update attribute
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8b4b9c
+
+### Enable Family Link support in LaCrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caf8c97
+
+### Hide copy menu item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/434965e9
+
+### Re-Add Calculate-Native-Win-Occlusion to about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/49f4608
+
+### WebUI: Migrate cr_components/customize_themes/ tests to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/653c9355
+
+### Fix IA2:colindex, rowindex only when aria-col/rowindex differ.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02399de0
+
+### [CodeHealth] Remove RegisterDeprecatedMessageCallback2() in c/b/ui/webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca4b47d1
+
+### [Power Bookmarks] Add a compact version of the new bookmark row
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8b96a67
+
+### GCC: make GLImplementationParts constructors constexpr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4b867fb
+
+### ax_mac: streamline accessibilityTitleUIElement implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/949d64d8
+
+### [MPArch] Fenced frames shouldn't display intent picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1f5366
+
+### Replace AppUpdate::GetSearchable with AppUpdate::Searchable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f67009e
+
+### Remove chrome/common/cloud_print.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3708280
+
+### Intents: Collapse the Intent Chip on the 4th time it is shown per origin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a20add4
+
+### [App Management] Add App Management owners to the WML implementation.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/175794c
+
+### WebUI: Remove leftovers of long removed a11y axs_testing.js tests.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2e6580
+
+### [sheriff] Disable flaky menu item view interactive ui test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45ec87b
+
+### Create system colors for the FlyingIndicator and prep for ColorProvider move.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db04fa5
+
+### Remove unneeded includes in extensions/common/extension.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35da1c2
+
+### Clear annotator canvas between annotation sessions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/139fc34
+
+### views: Ensure CloseNow() followed by Close() early outs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f18c3fb
+
+### Extract: Trigger IOTask for 'extract-all' command
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56b97a79
+
+### Define 2 new tab width experiments
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a12900d
+
+### WebUI: Migrate cr_components/managed_dialog/ to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1fd5fd3
+
+### dpwa: Remove URL handler related code in launch path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c80e769
+
+### Replace AppUpdate::GetRecommendable with AppUpdate::Recommendable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8be4a20
+
+### [bfcache] Add ScreenReader support for bfcache flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/312b843
+
+### DCHECK that events have shutdown before Shell destruction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8cfd96
+
+### Fix integer-overflow UB in render text
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/294f002
+
+### Add a feature flag for virtio-blk /data
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4e1c996
+
+### [dpwa] Adds new tests generated for 'manifest_update_display_browser'.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/620ccfc
+
+### Add menu item to follow a site for desktop feed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9a227c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/659e94e
+
+### Replace AppUpdate::GetShowInManagement with AppUpdate::ShowInManagement.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d60b8b
+
+### Make chrome://profile-customization loadable in normal tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/803e8c20
+
+### personalization: Implement Google Photos metadata fetching and image downloading
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1808ee6
+
+### [Sheriff] Revert "dpwa: Remove URL handler related code in launch path"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e646316
+
+### SWAs: Use correct name in comment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8d6e1b
+
+### [fuchsia] Add build conditions where kPrintingEnabled is used
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25c7b70
+
+### Add a flag to control preinstallation of Messages PWA.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f67d2fb
+
+`);
+              </script>
+            </body>
+        </html>
