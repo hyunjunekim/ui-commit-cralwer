@@ -1,0 +1,248 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-02
+### Fix ProfilePicker* failing browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36e519a
+
+### Update sync toggle strings to include offers data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f80d454
+
+### [Sharesheet] Get dark mode color for file icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c13138
+
+### Add post reboot notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0dbd6c08
+
+### [Phone Hub] Support monochrome notification icons.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a632894
+
+### Change borealis settings strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff7c0d40
+
+### Add DCHECK for compressed strings to ResourceBundle::GetLocalizedString
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd84936
+
+### Rename calls for elevated privilege print drivers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04d86a5
+
+### [includes] Fix transitive includes of SkImageEncoder
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/319c2f3
+
+### PSM libs: p9. Fix unittests signed vs unsigned comparison warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/359f873
+
+### WebUI: Migrate ui/webui/resources/js/browser_command to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3412024
+
+### Deferred Shaping: Add a chrome://flags/ entry
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/903dbf0
+
+### Add guard against racy feature list overrides on CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/277e281
+
+### Type conversion: 2-1. Add prevent_unsafe_narrowing to default_compiler_configs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0857a0
+
+### Reland "[Power Bookmarks] Add a compact version of the new bookmark row"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/adcffae
+
+### DLP: Remove BrowserRootView::OnPerformDrop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2faf20a
+
+### Revert "[Mac Touch Bar] Avoid Touch Bar rebuild on every tab switch"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a34218
+
+### [CrOS Network] Add more detail to known networks menu button a11y.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e74369a
+
+### Misc. cleanup for infobar view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1e387d
+
+### [LaCros] Abstract signed-in flow controller for reuse for first run
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fe9975
+
+### Refactor ArcAccountPickerAppElement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d486c4
+
+### Fix fingerprint enrollment animations for dark mode (Part 3 of N)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20a0778
+
+### Update c/b/ui/views/profiles/ to point to UI>Browser>Profiles component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/159cc07
+
+### Disable PaymentRequestPaymentAppTest.NotSupportedError on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f1c4a6f
+
+### ozone: Add Lenovo Legion M300 to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2edebbf
+
+### bento: Add "current" desk label to "Move Tab to Another Window" menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7435751
+
+### Remove widget argument in WaylandBufferManagerHost::DestroyBuffer()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d689e82d
+
+### Introduce IsPercentBasedScrollingEnabled method in uifeatures
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/975716d
+
+### Update SignInInterceptionBubble Pixel test names
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e79f02c
+
+### Reland "Android: Delete VerifiesOn* annotations"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b3f750
+
+### [ConsentV2] Add x button on the inline card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b65f6da
+
+### Define 2 new tab width experiments
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/00e7623
+
+### Reland "Add support for suggestion tile deletion"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aefa76a
+
+### [DragDrop] Add two DropInWebContent histograms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f50b342
+
+### [Live Caption] Pass a LanguageCode to OnSodaProgress.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/259db70
+
+### Privacy Sandbox Settings: Make page inaccessible for restricted users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bd9ec7
+
+### [FilesRecentFilter] support *.mov file in Recent filter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/055062ff
+
+### [FilesRecentFilter] use generated json as file type data source
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22cb538
+
+### wayland: tabdrag: no longer dcheck for chromium/x-window mime type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dba8abb
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28730e53
+
+### [Live Caption] Pass a LanguageCode to OnSodaInstalled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3a424e
+
+### [TabletGTS] Hide tab stack button in grid tab switcher for tablet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efdee3a
+
+### [Desktop] [IncognitoCBD] Create an interface incognito_clear_browsing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ded208
+
+### Move localized_link.js to cross-platform cr_components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5101cf
+
+### [Mac Touch Bar] Avoid Touch Bar rebuild on every tab switch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/216912a
+
+### Use static struct to store history cluster feature params
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7651bd6
+
+### Add color pipeline color for OpaqueBrowserFrameView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5ce92a
+
+### support-tool: Add support case ID field to initial page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5702b9c0
+
+### [X11] Implement WindowCache::GetWindowAtPoint()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07a5ceb
+
+### [omnibox] Add some triggers in English for dino and accessibility pedals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11b6ce3
+
+### [Live Caption] Pass a LanguageCode to OnSodaError.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/791ce9a1
+
+### [dpwa] Adds new generated test for the action "open_in_chrome".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a1f82d
+
+### chrome: removes unnecessary PostTask during Browser shutdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccc10ec
+
+### Revert "oobe: Enable network skipping if ethernet is connected"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6a5ae8
+
+### [CodeHealth] Remove RegisterDeprecatedMessageCallback2() in cros webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3d6272
+
+### Add infobar colors for color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd47798
+
+### Add character count to the extension request justification field.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2129779
+
+### Add the material "Celebration" Icon for User Education Tutorials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d76d1b
+
+`);
+              </script>
+            </body>
+        </html>
