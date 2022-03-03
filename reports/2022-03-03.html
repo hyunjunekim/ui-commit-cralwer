@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-03
+### Move tab scrolling animation into TabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/123aa9b
+
+### Adds a feature flag for PDF OCR
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/98906870
+
+### Extract: Enable UI for multiple selection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4891d0b
+
+### [launcher] Fix query highlighting overwriting bug.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f50f217
+
+### Implement the V2 Signin Intercept Bubble header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fc960c
+
+### [Code Health] Remove deprecated didCloseTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4ee1eb
+
+### Add Channel to chrome://version on Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a994b44
+
+### Define window control button colors for ColorProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/761080de
+
+### Revert "Display fetch and policy timestamps separately"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e6ac66
+
+### Use ColorProvider for theme colors in DownloadItemView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23e693f
+
+### Revert "Quick Answers: Fix timing issue on view destruction"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9beeea
+
+### TestHelpBubble should close itself after simulating a button press.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3e5b83
+
+### Avoid direct SkMatrix44 usage in display::TouchTransformController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a808a2
+
+### [FedCM Refactor] Delete unused code paths in federated_auth_request_impl.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb8ef28
+
+### Tweak "Press Overview" messages when external keyboard attached.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ffee99d
+
+### [FedCM] Add a string for when TOS is not present
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fd70521
+
+### Desktop PWAs: remove redundant 'using'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5de1905
+
+### Add color pipeline versions of WebUI tabstrip colors.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b8d69b
+
+### views-a11y: store next|previous focus as WeakPtrs in ViewAccessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42dd6d5a
+
+### [VCN] Fix enroll bubble icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8973212
+
+### Attempt to clean up color handling code in contents_web_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/483b7a9d2
+
+### [color pipeline] Introduce toolbar and tabstrip separator colors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca0c876f
+
+### What's New: Allow tests to disable with --no-first-run flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1812da7
+
+### Fix xkb_keysym reverse look up for Lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9eef87
+
+### Avoid direct reference to skia::Matrix44 in gfx::InterpolatedTransform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c119e45
+
+### Add tests for popups from WCO apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/278b775
+
+### [dpwa] Adds new generated test for the action "launch_from_menu_option".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aef7528
+
+### Fix up dragged image is not shown on WIN
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52a491b
+
+### Flesh out NTP colors for color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/264ea31
+
+### Desktop PWAs: Reduce copying during function calls (part 2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4245f56
+
+### Move the ProtocolHandler class to //component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa6aa088
+
+### Add tests for the 'Last fetched' status on chrome://policy page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a7f454
+
+### Remove unnecessary include of skia_matrix_44.h from ui/ozone
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44dddb2
+
+### [TabletGTS] Only show toolbar divider on scroll for tablet GTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee51d5f
+
+### Display fetch and policy timestamps separately
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f519af
+
+### ozone/drm: handle unknown panel orientation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ff8b9f
+
+### [Ozone/Wayland]Use frame_id to track frame submissions and feedbacks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/196f8da
+
+### [ConsentV2] Integrate DiscountConsentCard to Cart module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f212ce
+
+### [Eche] Implement a DisplayStreamHandler interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fb401a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7420584
+
+### [IncDow] Incognito download warning string change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24e458f
+
+### [Nearby Onboarding] Add onboarding user flow metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2aafec7
+
+### Change borealis splash screen to look more like UI specs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/951bd867
+
+### Support Vulkan in headless configurations on Linux.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b83ed0d
+
+### Update test to not use mock of view.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f08e15a
+
+### [Color Pipeline] Omnibox high contrast colors specific handling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f994692
+
+### desk_templates: Add Chromevox readout for desk template grid icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1199012
+
+### Reland "dpwa: Remove URL handler related code in launch path"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/698ea45
+
+### Define the \`kLacrosPrimaryProfileFirstRun\` Profile Picker entry point
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c07e15
+
+### Revert "Fix ProfilePicker* failing browser tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5630be9
+
+### Revert "Add tests for popups from WCO apps"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20a58c5
+
+### Quick Answers: Fix timing issue on view destruction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c822d7f
+
+### Add one extra check for Tab validity + tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/747d4be1
+
+### Fix some cases of group contiguity DCHECKing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b38d061
+
+### [CrOS Network] Add OnPoliciesApplied to CrosNetworkConfigObserver
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9da7d4
+
+### Desktop PWAs: Simplify code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a71be1
+
+### Move {chromeos => ash}/services/cellular_setup/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef86fe7
+
+### [Resource file sharing] Move ScopedFileWriter from anonymous namespace
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8044303
+
+### Display the saved group buttons into the bookmarks bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8f55db1
+
+### [Files SWA]: Replicate Chrome App policy for SWA app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08388da4a
+
+### Disabling toolbar changes when tab switcher polish is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19aafd2
+
+### Move kScreenAI from content features to accessibility features.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02bba7b
+
+### borealis: Add a borealis-credits page to about://chrome-urls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b27934d
+
+`);
+              </script>
+            </body>
+        </html>
