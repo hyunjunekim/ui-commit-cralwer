@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-04
+### Add a helper function to draw a progress ring.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6d82b2
+
+### [Snooping protection] Decreased detection threshold.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/017d428
+
+### Fix UAF in apps page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64f02e6
+
+### Removed feature flag and its usage for download infobar controller
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ee4e64
+
+### Add hover card colors for color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e2d3332
+
+### [Color Pipeline] Rearrange colors and log more info in IncreaseLightness transform.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b5e362
+
+### Update owners of messages and its histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2db07a6
+
+### Handle situations where DriveFS may restart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb35b4a
+
+### Reland "dPWA: File Handling settings UI - implement types overflow dialog"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ad157f
+
+### [CrOS Cellular] Fix spinner in eSIM loading page
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1248831c
+
+### Migrate ash/services/cellular_setup/ to namespace ash
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d67dc1d
+
+### Remove calamity@chromium.org from chrome/browser/ui/app_list/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9153468
+
+### Revert "dPWA: File Handling settings UI - implement types overflow dialog"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9535155
+
+### [unseasoned-pdf] Don't serve PDF from chrome://print
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1f0aa5f
+
+### dPWA: iterate File Handling settings UI
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8285b14
+
+### [CrOS Settings] Add IKEv2 VPN in settings UI (part 1)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42a5d0c
+
+### Quick Answers: Pass WeakPtr instead of raw pointer of UI controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/616c160
+
+### Remove GetThemeProviderForProfile() from 3rd party NTPUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/249d405
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60599d60
+
+### Remove weili@chromium.org from ui/views/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/508adef
+
+### Prerender: move the impl of prerender from AAP to PrerenderManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d00717
+
+### [Office] Improve getFileTasks for Web Drive Office support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5fff501
+
+### [privacy sandbox settings] Add dialog pixel tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c083f2
+
+### [Extensions] Add dialog to edit settings for a site
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40d1ecac
+
+### Speed up search result animations for faster users.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1cd0faa
+
+### Clean up camera roll opt-in view state and loading view state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8ea6e5
+
+### Revert "[dpwa] Adds new generated test for the action "launch_from_menu_option"."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4da7cc94
+
+### Batch Pedal tests and address flakes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8005e84
+
+### Update overlay window max size when display work area changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b28c0d5
+
+### Remove pavely@chromium.org from chrome/browser/ui/messages/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b715a821
+
+### [Resource file sharing] Allow AddDataPack() to get ResourceHandle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13026d6
+
+### Peripherals privacy string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/462eb21
+
+### [feature_notification_guide] Fixed a string change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7937bc3
+
+### Reland "Add tests for popups from WCO apps"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea84b3f
+
+### PSM libs: p10. Fix remaining leaked warning issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8cba1c
+
+### Fix loading app list item parent Id from local storage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d62bcc4
+
+### Remove kinuko@chromium.org from chrome/browser/ui/webui/sync_file_system_internals/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b17c462
+
+### [Cast2Class] Add learnMore link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcc52cd
+
+### [Reland][App Details] Add installation source to App Management backend.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b599c4de
+
+### [vrr][drm] Add utility functions to read from DRM whether VRR is
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a051f74
+
+### dPWA: File Handling settings UI - implement types overflow dialog
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8611ac
+
+### profiles: create ScopedKeepAlive when activating another profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1c4932
+
+### guest_os: file_manager: Tests control mock guests from JS instead of C++
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ef28b1
+
+### personalization: remove iframes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30ed8c9
+
+### Quick Answers: Use ViewTracker to avoid issue on view destruction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24747a4
+
+### [Topics] Update CanonicalTopic::topic_id_ to StrongAlias<int>
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0baad4
+
+### Remove myy from OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a58a5c0
+
+### Desktop PWAs: remove redundant includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9056c5
+
+### Remove bdea@chromium.org from chrome/browser/ui/views/user_education/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c01a8340
+
+### Revert "[fuchsia][a11y] Disables semantic provider tests."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40f0167
+
+### [App Details] Adding installation source to App Management frontend.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eae5dd
+
+### borealis: Add a flag to control enablement
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/97500cc
+
+### Revert "Prerender: move the impl of prerender from AAP to PrerenderManager"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e58ae35
+
+### Unified side panel: add test file for SidePanelCoordinator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1409b22
+
+### Add about flags for content clustering and labeling variations
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9f2f071
+
+### Force Intel GPU when using ANGLE/Metal backend
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f35df3e
+
+### Revert "Reland "[Start] Make logo smaller and remove top margin of fake search box.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e385fa
+
+### Add mojo::OptionalAsPointer<T> to reduce copies in serialization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b38154b3
+
+### [Eche] Remove feature flag: PhoneHubRecentApps
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/468a3ca
+
+### [CrOS Cellular] Add more validation to activation code page.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/972995b
+
+### Hide media and cast dialogs before showing another
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b4ba39
+
+### [FileTypesData] use "translationKey" instead of the "name"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aeeb3bb
+
+`);
+              </script>
+            </body>
+        </html>
