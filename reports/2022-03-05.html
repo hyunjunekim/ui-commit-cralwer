@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-05
+### Settings: Remove incorrect logic from HandleAddStartupPage.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83c1fe8
+
+### Revert "Reland "Add tests for popups from WCO apps""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b81e0f1
+
+### [CrOS Settings] Add IKEv2 VPN in settings UI (part 3)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f449335
+
+### Display notification and app streaming setup UI on the phone hub tray.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb6567e
+
+### [fuchsia] enable_basic_printing = true
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed2ac5c2
+
+### [side search] Remove the per-window functionality and flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3e9329b
+
+### [DT] Fix managed profile crash in DT connector code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18d1634
+
+### Add content area separator colors for other panels/bars.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1ee9a7a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efa3841
+
+### Quick commands: use std::partial_sort
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d73e2c8
+
+### [CrOS Settings] Add IKEv2 VPN in settings UI (part 2)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90f2efbb
+
+### Update all CloudReady references to ChromeOS Flex
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32de0cff
+
+### [sheriff] Disable flaky AppListSortBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f821421
+
+### Include platform-specific headers only when needed in //chrome/browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db0c087
+
+### [answers] Fix some missing Omnibox answer tags.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7291112
+
+### [Extensions c2s] Use builder in ExtensionsTabbedMenuView constructor
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a86c42e
+
+### [MirrorSync] Enable/Disable MirrorSync from chrome://drive-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7635a39
+
+### Lacros: Sync some methods in SystemTrayClient with lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6336c0fb
+
+### Use webapps::UninstallResultCode in WebAppInstallFinalizer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48fb280d
+
+### [notifications] Added text variation for the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc8842f
+
+### [Color Pipeline]Add ToolbarTopSeparatorFrameActive to mac high contrast colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da50978c
+
+### Desktop PWAs: Avoid crash on immersive mode change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd76b29
+
+### [Password] Implement viewing in password edit dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f67ee9e
+
+### [Extensions c2s] Add message when no extensions have access in menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/258f3e26
+
+### [color pipeline] Add toolbar and tab separator colors to chrome mixers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56fb1ae
+
+### Fix omnibox answer search quality issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4316b69
+
+### [TabletGTS] Define tab switcher in new view hierarchy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6403ca0
+
+### Refactor bubble border in TrayBubbleView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1bc3ec
+
+### Quick Commands: renew flag and rename user-facing strings
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e2b8fe9
+
+### Modify app_management.mojom to add the mojom permission.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bab699c
+
+### Dynamic colors and day night to Toasts.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0836f57
+
+### Fix ProfilePicker* failing tests fail by ensuring no platform management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abe214d
+
+### Fix wayland clipboard tests resource creation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/323f6e3f
+
+### [Fuchsia] Fix white frame flash in ScenicScreen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d7adcd
+
+### Reland "[Launcher Sort] Handle item icon update in color order"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46eab549
+
+### [Journeys] DeLorean on Android JNI bridge and feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ba99e8a
+
+### Always register display properties in DisplayManagerTestApi::UpdateDisplay.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc7bb33
+
+### Remove strings from old screenshot code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15a2b70
+
+### Make the status bubble always match background tab colors.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca50871
+
+### UAF in ViewsAXTreeManager follow up
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08ba9f8
+
+### Use OobeCrLottie element for assistant voice match OOBE animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab25df3
+
+### file_manager: Handle GuestOs addition/removal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c44dec9
+
+### Wrap some Android-only includes in the right conditional.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e9791b6
+
+### Support inactive state in download toolbar icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a293a57
+
+### Revert "Display notification and app streaming setup UI on the phone hub tray."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c68980
+
+### [Eche] Remove feature flag: EcheSWAResizing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/845418a
+
+### [launcher]: Add flag for resetting nudge prefs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/211961e
+
+### [CrOS Connectivity] Remove Monorail component metadata.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/565f571
+
+### Revert "[Password] Implement viewing in password edit dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cce262
+
+### Remove calamity@chromium.org from chrome/browser/ui/webui/bookmarks/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/080156e
+
+### [FedCM] Remove |privacyPolicySpan| null check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3be3ad1
+
+### [Extensions c2s] Style labels with current site in the menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a98db7e
+
+### Remove web-bluetooth-request-larger-mtu flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c21b2fb
+
+### Fixed tab group save feature flag from crashing in incognito and guest modes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91cb6e3
+
+### [Messages] Implement Bad Flags snackbar for Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eafccfe
+
+### [TabletGTS] Enabling incognito toggle layout for polish version. This will be similar to phone UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d12fbaa
+
+### Migrate //ash/services/multidevice_setup to namespace ash [1/3]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98f3ec56
+
+### Privacy Settings: Correctly handle placeholders in site settings delete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cc1438
+
+### Reland: [Password] Implement viewing in password edit dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba97019
+
+### Only include Windows-specific headers on Windows.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a94536
+
+### Remove unused Crostini installer strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/273b4d1
+
+### borealis: Don't show borealis in the launcher and fix shelf integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8080d34
+
+`);
+              </script>
+            </body>
+        </html>
