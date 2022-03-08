@@ -1,0 +1,196 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-08
+### Change borealis installer strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0806685
+
+### Replace AppUpdate::GetRunOnOsLogin with AppUpdate::RunOnOsLogin.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/878ccb6
+
+### Port omnibox chip to color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eddc02
+
+### Settings WebUI: Don't scroll when moving focus to last element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fec8cc0
+
+### Replace AppUpdate::GetInstallReason with AppUpdate::InstallReason.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16df68c
+
+### Deflake clipboard history ShouldPasteHistoryAsPlainText test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43538dc
+
+### Commenting and consistency for signout metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33eaf2b
+
+### Replace AppUpdate::GetWindowMode with AppUpdate::WindowMode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85bbdbb
+
+### ax_inspect: implement print tree feature in ax scripting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bca7aa
+
+### [Files]: Deflake fileDisplayWithHiddenVolume test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/036c51e
+
+### Make Answers in Suggest colors have sufficient contrast in dark mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ea90aa
+
+### [Ozone/Wayland]Only remove pending_configure if it's sent to
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f41b56b
+
+### Clean up headers in location_bar_view.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43bd67e
+
+### [CodeHealth] Remove remainder of RegisterDeprecatedMessageCallback2()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59d29062
+
+### Fix memory leak in calls to CreateTouchBarButton.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8ae601
+
+### Revert "[privacy sandbox settings] Add dialog pixel tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e7be91
+
+### Add WindowMode to app_management.mojom.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1496bf85
+
+### [Provisioning] Add flag for static server.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b77b96f
+
+### Don't support navigator.subApps API in Fenced Frames
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7c5945
+
+### Positioning of default button handled by platform-specific code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb2c108
+
+### Reset RedirectHandler for Page Activations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/203b7afc
+
+### [X11] Move Future::Wait to FutureBase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0406072
+
+### Exclude OzoneGpuTestHelper from the default //ui/ozone build target
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03ad5b92
+
+### Reland "Prerender: move the impl of prerender from AAP to PrerenderManager"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96fd0d14
+
+### chrome: early out in Tab is destroyed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64c00cb
+
+### [AppIdentity]: Separate the app identity flag into two.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5283557
+
+### [FedCM] Do not announce "double click to activate" when sheet is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e80b099
+
+### [locals] Build all locale resources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ab73d8
+
+### Revert "Support ChromeOS external protocol dialog for Fenced Frame navigations"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fcb46c
+
+### Replace AppUpdate::GetInstallSource with AppUpdate::InstallSource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbdf1fd
+
+### [Launcher Sort] Improve reorder animation performance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be232520
+
+### Support ChromeOS external protocol dialog for Fenced Frame navigations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56fb5f7
+
+### Create system colors for DownloadShelfView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d53ffe1
+
+### Move //{chromeos=>ash}/services/device_sync [2/3]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94d1a8c
+
+### Replace AppUpdate::GetResizeLocked with AppUpdate::ResizeLocked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9dfce73
+
+### [Clank CBCM] Enable policy_ui_browsertest.cc on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dc3cf2
+
+### borealis: Prevent dcheck crash in the installer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cad433
+
+### Sync owners of ash/clipboard and c/b/ui/ash/clipboard_history*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c81166c
+
+### Remove the dependency on AppService mojom for app management mojom.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ab70c4
+
+### Reland "[dpwa] Adds new generated test for the action "launch_from_menu_option"."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19dc9b4
+
+### Remove the 1000 files verified in DirectoryListLoad browser test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64796be7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50c7b4b
+
+### projector: Add Drive umount reason: mount failed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc173c1
+
+### Update download toolbar icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ce041e
+
+### Code format optimization.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c8eb8f
+
+`);
+              </script>
+            </body>
+        </html>
