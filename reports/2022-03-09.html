@@ -1,0 +1,232 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-09
+### desk_templates: Preserve window state when launching template.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c24d17c
+
+### ACCS: Terminate active route before discovery completion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a39acc6
+
+### Add nigeltao@chromium.org to ui/file_manager/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5bb1e0e7
+
+### Revert "dPWA: Create container for deprecated app dialog view"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ccf5d3
+
+### Modify AppUpdate::ShowInXXX to get value from the non mojom App struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bf05a4
+
+### [open tabs] Add and use "Go to this tab" string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99c064d
+
+### Revert "Support multi-monitors in SystemInputInjector::MoveCursorTo"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c850533
+
+### Move skia::Matrix44 into ui/gfx
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96132e6
+
+### Modify InstalledInternally to return bool.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14f1125
+
+### Apps Shortcut not enabled for Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67edc444
+
+### [Privacy Sandbox][HaTS] Add product specific data and hooks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/483447c
+
+### Do not set OnClickListener until ListMenuButtonDelegate is set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe40452
+
+### Convert omnibox colors to color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a37bd34
+
+### Fix UAF in AXAuraObjCache destruction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbaf781
+
+### [journeys] Begin implementing labeled clusters in WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dbd72e
+
+### Modify AppServiceAppResult::app_type_ to use the non mojom AppType.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f14623
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7581226
+
+### Support odd sized video width in CreateHardwareFrame on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c5a42e
+
+### [ntp] Add 'Ntp Modules First Run Experience' flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d25542d
+
+### Stop getHoldingSpaceState errors from bubbling up
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be23c00
+
+### [X11] Track Futures in WindowCache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b60fcd
+
+### Reland "dlp: Synchronize Drag and Drop source metadata from Lacros to Ash."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e2d005
+
+### [ash] Allow NonClientFrameViewAsh to track system color scheme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/075f057
+
+### [FilesRecentFilter] Remove unnecessary element selectors in tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bf035d
+
+### [CameraRoll] Update UX for permissions dialog to show multiple features.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82e05e2
+
+### ThemeProperties::GetDefaultColor() -> ThemeProvider::GetColor()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/790168c
+
+### Added SetImage overloads to views::Builder decl for ImageButton.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ffdf076
+
+### Revert "Support odd sized video width in CreateHardwareFrame on Mac"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13a1e845
+
+### known_user: Migrate off deprecated functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80a1b6e
+
+### [FedCM] Make UI strings translatable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae72c1e
+
+### [Autofill Assistant] Move favicon dimens to components/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b67526
+
+### [Sheriff] Disable SwitchingTabsHandlesFocusCorrectly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/289b95f
+
+### [CrOS Cellular] Do not show click to activate for eSIM networks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c508e91
+
+### crostini: forbid re-creation of existing containers in UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea07d52
+
+### [CrOS Cellular] Handle unactivated eSIM profiles in Settings UI.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4baaaede
+
+### [open tabs] Enable open tab search by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca344f9
+
+### dPWA: Create container for deprecated app dialog view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15a9195
+
+### [Fix Flakiness] A speculative fixing for the fade out interruption test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bad6ebde
+
+### Propagate sync error to WebUi.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ad1170
+
+### HttpAuth SchemeHostPort 3: Switch over AuthChallengeInfo::challenger.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/873d7a0
+
+### Add UXStudy1.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/366873d
+
+### [DragDrop] Add 5 image processing metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1c185f
+
+### [Cast2Class] Fix issues with dialog border
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b70f3c9
+
+### Privacy Sandbox Settings: Display accessed Topics in PageInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b55cdf
+
+### Fix FedCM crash due to view being recycled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2a0a814
+
+### Web Share API: Use SafeBaseName
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26f39ea
+
+### [Snooping protection] Add buttons to HPS notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0dfccee
+
+### [dPWA/AppIdentity]: De-flake the integration test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/118e5e0
+
+### Zero-copy capture: add UI flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0fe1463
+
+### Reland "Display fetch and policy timestamps separately"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff0a940
+
+### [base] Replace default parameter with dedicated function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb64a75a
+
+### [open tabs] Update text for open tab results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd6a7dc
+
+### Add unthrottled-nested-timeout Chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/247abce
+
+### Fix transitive Skia dependencies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5772405
+
+`);
+              </script>
+            </body>
+        </html>
