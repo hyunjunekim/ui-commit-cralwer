@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-10
+### support-tool: Add email address option and description to UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/870aacd
+
+### [ozone/wayland] Modal dialogs can crash on touch up
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/289400c
+
+### Don't close app list folders when committing sort order
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec940f6
+
+### Feature flag: WebFeedOnboarding
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/06a50ba
+
+### Fix some ChromeOS conditionals in c/b/ui/webui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09964fc
+
+### Remove ThemeProperties::GetDefaultColor() in profile_picker_handler.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2f48d99
+
+### wallpaper: remove a hack to clear old images
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3773b71f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86973b6
+
+### [Android] Add more share related UKM metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16d5d70
+
+### Modify AppServiceProxy internal interfaces to use the non mojom AppType.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/001477c
+
+### ozone/wayland: do not crash the browser if Wayland compositor ...
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85b642e
+
+### [FedCM] Add setting to disable FedCM API in browser UI part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90c0dc22
+
+### Clean up clipboard history browser tests (Part 1 of N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b48ba1e
+
+### Update \`CrAutoImgElement\` cookies behavior.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/862b1ea
+
+### Update HomeButton animation style for Tablet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cf7bac
+
+### Fix WebGPU/Compat prototype.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56824b9
+
+### [GMNext] Set up dynamic CTA button and link experiment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fefb943
+
+### ax_mac: streamline accessibilityLabel implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d7fedc
+
+### Swap collinbaker@ for dfried@ in user_education OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e3dd4d
+
+### Wrong IDS_FOO used in BookmarkEditorView::GetMenuModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13a27af
+
+### Revert "Add NativeWidgetNSWindowFullscreenController"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a83d0e8
+
+### Revert "[mparch] Use PrimaryPageChanged in HandoffActiveURLObserver"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e34ccd6
+
+### Reland "Support ChromeOS external protocol dialog for Fenced Frame navigations"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/596154d
+
+### [UI] Make AnimationBuilder own AnimationSequenceBlock
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14e4063
+
+### [FilesRecentFilter] Focus on "All" button after filter is reset
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ddd9db
+
+### Privacy Sandbox Settings: Add ad personalization learn more tooltips
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85964fc
+
+### [Office] Define separate tasks for Word/Excel/PowerPoint
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/040550d6
+
+### [side search] Remove Google Search references from browser_tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c022d24
+
+### Delete ToolbarButton subclass for new tab button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e2716408
+
+### [Autofill Assistant] Move menu_refresh string to components/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eae5fcd
+
+### Web apps: Fix browser side race condition in LaunchQueue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9e2b0c
+
+### chromeos: Remove manual extension reload from SelectFileDialogExtension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/214db6b
+
+### [Autofill Assistant] Move settings string to components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f7cc15a
+
+### [mparch] Use PrimaryPageChanged in HandoffActiveURLObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50ba088
+
+### [Sheriff]Disable InspectUITest.LaunchUIDevtools on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8a53d2
+
+### Add NativeWidgetNSWindowFullscreenController
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d30eb6
+
+### [Fast Pair] Use Default device image in True Wireless Images
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b700aca
+
+### wayland: use frame callback to draw onto drag icon surface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37b5cf2e
+
+### [favicon] Enforce max size to chrome://favicon2/ requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ac0297
+
+### [side search] Add support for participating default search engines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ded3ea4d
+
+### [locales] Refactor locales for ios
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63121fc
+
+### Convert DCHECK to CHECK in CertificatesHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e782490
+
+### Do not crash on AXTree destructor if language detection manager is attached
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5d9826b
+
+### Revert "[dPWA/AppIdentity]: Add integration test for icon updates."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a53232ae
+
+### Remove use of ThemeProperties::GetDefaultColor() from tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0025a1a
+
+### Reland "[Mac Touch Bar] Avoid Touch Bar rebuild on every tab switch"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e01eb42
+
+### [Extensions c2s] Add site setting button callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77e6857
+
+### Create macro for declaring a Builder overloaded method.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4b8739
+
+### Migrate //ash/services/multidevice_setup to namespace ash [2/3]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a474815
+
+### clank-sh: remove row swap experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/808bd62f
+
+### [Lacros] Enable GetChromeOSDeviceName
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c85c3e
+
+### [LaCrOS] Expeditious upgrade check for safety check settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e47ed892
+
+### [dPWA/AppIdentity]: Add integration test for icon updates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49b1515
+
+### Side Panel: enable by default on TOT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/637e7d69
+
+### [LR] Add a11y announcement after reaction is moved.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fba088fa
+
+### Disable flaky AppListSortBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a59f64
+
+### Add Projector about flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/122b785
+
+### [Files app] Update name and icon for Docs and Office tasks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f60861d
+
+### [LR] Add a11y announcement after reaction is changed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcf9b9f
+
+### [Autofill] Close all popups in UI tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1ea47fae
+
+### Creates a mediator for Download Interstitials.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/149abd7
+
+### [DragDrop] Handle null pointer when MimeTypeMap fails to map the format
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/67cd748
+
+### [LR] Add a11y announcement after reaction is deleted.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1495e3b
+
+### Revert "ax_mac: streamline accessibilityLabel implementation"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a4f804
+
+### [Fast Pair] Add default image test for Bluetooth Icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/765cb06
+
+### crostini_upgrader: Update strings and screenshots for UI review
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3558354
+
+### [side search] Remove Google Search references from unit_tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f5b563
+
+### Privacy Sandbox Settings: Fix nullptr access in handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93bc8e3
+
+### Remove most browser-side plugin-side PPAPI PDF interfaces.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91a602d8
+
+### Reland "Display notification and app streaming setup UI on the phone hub tray."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89066e7
+
+`);
+              </script>
+            </body>
+        </html>
