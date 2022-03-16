@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-16
+### Remove interest groups as part of NonTreeModel site data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93e1fdc
+
+### Revert "[ChromeOS Login] Remove 'login_visible' message"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88ea4d7
+
+### Enable LauncherFolderRenameKeepsSortOrder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e43fd8b0
+
+### Welcome WebUI: Update logo with new image
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fda7c3
+
+### Password Manager: Add flag for branding updates on Desktop
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bff72ade
+
+### Make a bunch of accessibility fixes for Tutorials.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/047dcd5
+
+### [Cast2Class] Return to using onblur
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e15cbfe
+
+### Privacy Sandbox Settings: Add strings that depend on trials pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7819890
+
+### [UrlParamFilter] Add cross-otr WebContentsObserver, replacing the throttle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ae7168
+
+### [ChromeOS Login] Remove SigninScreenHandler::HandleLoginUIStateChanged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c99c6de
+
+### Eliminate hardcoded colors from windows_10_caption_button.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fe4b5d
+
+### sys-internals is getting properly called from Lacros now
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f03b9998
+
+### Feedback UI: Remove flattenhtml usage in sys_info.html.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4c9339
+
+### [lacros] Fetch URLs via crosapi and save them to AppLaunchInfo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7facc3f
+
+### Update color kColorDownloadToolbarButtonInactive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09a5e57
+
+### GPU: fix selection of EGLConfig on X11 (for --use-gl=egl).
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b5170d
+
+### [lacros] Add screen-coordinate feature flag to chrome://flags
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/857191b
+
+### [Files styleguide] Remove JS line continuation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d17d06
+
+### Add a chrome://flag kOmitCorsClientCert
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/da18aeb
+
+### Unified side panel: support contextual entries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8db7eb
+
+### [ChromeOS Login] Remove 'login_visible' message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/457dd7c
+
+### Extract: Expand menu tests for multiple selection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c72999f
+
+### Class to fetch SecondaryGoogleAccountUsage policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bb3bc4
+
+### [side search] Add DSE support to about_flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/468fb38
+
+### Reland "[ChromeOS Login] Remove 'login_visible' message"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0b7c18
+
+### [side search] Update the service check request annotation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cae943c9
+
+### [Launcher Sort] Change the reorder animation velocity
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/744f3c0
+
+### Reland "Reland "Have the message primary action callback decide if it should be dismissed.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a177e6
+
+### Fix DCHECK on TYPE_DRAG widget creation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70a794ec
+
+### Privacy Sandbox Settings: Add feature param for sample data
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e63069d
+
+### Remove hardcoded color from signin_view_controller_delegate_views.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cf6cbe
+
+### Extract: Generate completion feedback panels
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/421d53e
+
+### [Cast2Class] Remove custom Windows height
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b805542
+
+### Eliminate one more hardcoded color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/613d5a6
+
+### ax_mac: unify accessibilityTitle implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2b8673
+
+### Reland: [TTS] Remove the LiteralSearchTap Feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1b6dc92
+
+### Remove another unused Cloud Print resource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7115bc9
+
+### Reland "Have the message primary action callback decide if it should be dismissed."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e741b71
+
+### Privacy Sandbox Settings: Add tab for confirmation dialog if required
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87b21c5
+
+### Fix download notifications
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02270d7
+
+### Enable OddWidthMultiPlanarBuffers feature by default on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26ca845
+
+### personalization: Support changing layouts for Google Photos wallpapers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b24283c6
+
+### Fix bug where focus traversal does not always start with the right child view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/29bfbbc
+
+### Changing settings and os-settings handling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d87b54
+
+### [lacros] Introduced a method for creating the browser from template.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2855dd
+
+### [Extensions] Fix a crash with extension unloading while under inspection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2770b55
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fe199b
+
+### Move full themes to /browser_ui/theme/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d727684
+
+### [side search] Have SideSearchConfig track the latest DSE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c27044
+
+### [FRE] Disable the signin/out buttons when signin/out is in progress in signin FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3693a1
+
+### [side search] Update SideSearchIconView to track the current DSE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c85f3b
+
+### [side search] Enable browser tests with kSideSearchDSESupport enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7de6291
+
+### [side search] Update tooltip and accessibility strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e58aed8
+
+### [side search] Add a SideSearchConfig::Observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c250d54
+
+### Eliminate hardcoded colors from extension_install_..._dialog_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30fd890
+
+### Add autotest API to get data for cryptohome recovery
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79d65d9
+
+### [FedCM] Enable swipe to dismiss
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/450c7b6
+
+### [Android Tab Restore] Delegate restore to TabRestoreService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcbe437
+
+### Fix UAF in AXVirtualViewWrapper when added to multiple AXAuraObjCaches
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4cfa13
+
+### Revert "Reland "Have the message primary action callback decide if it should be dismissed.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49d15ef
+
+### [FilesRecentFilter] Test RAW image support for recent filter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/400e0b5
+
+### [Messages] Optimize Save Card dialog layout and strings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee650597
+
+### Add a clarifying comment and refactor for simplicity.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72443b8
+
+### [Sub Apps] Disabling Sub App API for prendered pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea87386
+
+### Revert "Welcome WebUI: Update logo with new image"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8946e41
+
+### Privacy Sandbox Settings: Prevent consent being closed without decision
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc5a495
+
+### [realbox] Change shadow and border for dark mode in realbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06bb4fb
+
+### [Sheriff] Disable ThumbnailTabHelperInteractiveTest on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/302c32d6
+
+### Treat closing parent permission dialog as cancel instead of error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/125b470
+
+### Remove FakeMultideviceFeatureAccessManager virtual method default arg.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/995622e97
+
+### Log a trace for long Event.Latency.OS2.* periods.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e71a9058
+
+### Fix theme state change notifications in omnibox colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdc354c
+
+### Remove hardcoded colors from extension_install_dialog_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8980a3
+
+### Use a focus ring color that draws attention for help bubble close button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01f5acb1
+
+### Remove dead code for requesting assistant screen context
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f83f13c9
+
+### Add views::FullscreenControllerMac feature
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4b6a15
+
+`);
+              </script>
+            </body>
+        </html>
