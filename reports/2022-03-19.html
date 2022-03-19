@@ -1,0 +1,236 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-19
+### Make DomCode ordering test failure more explicit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65bb8e85
+
+### Moving screen reader focus to WebView does not close modal dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/008a4cb4
+
+### [signin] Add metrics to sign-in intercept fre dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab9d29a
+
+### CertProvisioning: Move anti-spam notification code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf293c7d
+
+### Reland "Dispatch one event at a time in X11EventWatcherFdWatch"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7a1a51
+
+### Convert Notification::icon() to ImageModel.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d563a7
+
+### Revert Switch Access accessibility sprint code
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a291a2
+
+### WebUI: Migrate cr-splitter shared element to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a3d7c9a
+
+### [MirrorSync] Enable adding / deleting sync paths from drive-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/242f734
+
+### [Android/MediaPicker]: Catch up with late changes to the SDK.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7951a45
+
+### Move @style/OutlinedButton to components.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1350bc
+
+### Remove unused DRP flags and directories
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3bc9df3
+
+### Move {chromeos => ash}/components/multidevice/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e694d21
+
+### Include bug component in render tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e304c58
+
+### [side search] Update side panel title font size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b042c1df
+
+### Privacy Guide: Add a new feature flag for upcoming PG UI updates
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fc1aefa0
+
+### Add system/DSP AEC logic to audio_manager_cras
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e46eb599
+
+### [asan] Properly clean up state in aura::Window::CleanupGestureState.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9cab337
+
+### Add some components to render tests
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f0d4be
+
+### [Invalidation] Cleanup after making handler owner names unique
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04fac41
+
+### Add the IsSupportedLinkForApp interface for the IntentFilter struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ce54c9
+
+### lacros: show shadow for html dropdown menu from select element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9427ad5
+
+### Record odd size and odd offset histograms for Video.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cfce42d
+
+### VersionHandlerChromeOS: Invalidate weak ptrs when JS is disallowed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d81580a
+
+### Reland: FullscreenControllerMac: Enable by default
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be7e831
+
+### [side search] Ensure DSE icons appear correctly in RTL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e6a81c
+
+### Fixes the use after free bug when creating multiple saved tab group buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2d3c07
+
+### Revert "FullscreenControllerMac: Enable by default"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2054234
+
+### [FedCM] Fix bottom sheet disclosure text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7945a5a
+
+### Revert "Hide default Google Update policies on chrome://policy"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eefe4b7
+
+### FullscreenControllerMac: Enable by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27af4c69
+
+### Mac: add page title to the NSUserActivity used for Handoff and some
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adfc2b5
+
+### Move c/b/{chromeos => ash}/chromebox_for_meetings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f19d4e
+
+### Add Offline items to DownloadBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/569d07d
+
+### Modify AppUpdate::IntentFilters to return the non mojom IntentFilter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bac3c9
+
+### [CrOS Bluetooth] Hide links in pairing dialog if session is not active.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5483ef6
+
+### [Read Anything] Rename feature code from reader_mode to read_anything
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e049f82
+
+### [omnibox] Delete contextual web on-clobber in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/70b663e
+
+### [M2] Hide icon if it is visible when beginning virtual card enrollment for a new card.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee3e8f4
+
+### [GMNext] Clean up default_bg_color
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1df6f22
+
+### Passwords WebUI: Update strings for passwords section in Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c30914
+
+### Rework menu_bg_tinted to not span deps.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58ceb53
+
+### Move {chromeos => ash/components}/tpm/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d4b459
+
+### [side search] Fix visual artifacts in the side panel when dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/816aeac3
+
+### Remove the WebRtcEnableCaptureMultiChannelApm flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3958cae
+
+### [side search] Remove ChromeOS user-agent override
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcb6558
+
+### Convert Notification::icon_ to ui::ImageModel.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b20885e
+
+### Unified Side Panel: remove entries from the combobox when they're deregistered.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f64095e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/102e4d47
+
+### Remove actioned upon items from partial view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0fc52b
+
+### [CSN] Remove expired flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/36d1930
+
+### [side search] Use kSearchIcon as a fallback for the DSE's favicon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dfea93f
+
+### [M2] UI metrics for interacting with VCN enrollment bubble links.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a049a7f5
+
+### Remove the extra_icu feature split
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb1ff7c
+
+### For a11y events, don't select radio-buttons on focus.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb64b4f
+
+`);
+              </script>
+            </body>
+        </html>
