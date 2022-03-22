@@ -1,0 +1,224 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-22
+### Fix corner case in InteractionSequence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20a715d
+
+### Split histograms into 4 quadrants.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5861d17
+
+### Accelerators: Add support for new KEY_ALL_APPLICATIONS
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07b908c
+
+### Clobber side search side panels if other side panel is open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7705d2a
+
+### Add chrome://flags#enable-log-controller-for-diagnostics-app
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6fb42c2e
+
+### Remove group/pin tabs options for devtools windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77119fc
+
+### Move bool methods from BrowserAccessibilityAndroid to ax_role_properties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/704eb63
+
+### WebUI: Turn on @typescript-eslint/semi ESLint check.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5df2304
+
+### Eliminate absl::optional when used in combination with AccountInfo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/453b2825
+
+### [Fast Pair] Change QuickPairHandler to decode images by URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a09a4629
+
+### Modify AppRegistryCache::GetAppType to return the non mojom AppType.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2fcc07
+
+### Remove Kid Management scope from EDU Coexistence flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a308a4b
+
+### Revert "Web apps: Fix browser side race condition in LaunchQueue"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1221d4d
+
+### Clean up flag enable-android-layout-change-tab-reparenting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9197e8a
+
+### Add feature to display Open Link As Profile menu when profile is not open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e156b1
+
+### [dpwa] Adds icon checks for Linux and ChromeOS using WebAppIconManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b5d0fd
+
+### Use Color Pipeline machinery for PWA ContentsWebView backgrounds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/428150f
+
+### Replace InsecureCredential in FormFetcher and all its users.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/416aa7c
+
+### [Desktop] Remove features::kEnableIncognitoShortcutOnDesktop.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3dfb14d
+
+### Move basic animations into TabContainer, plus some cleanup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb51944
+
+### [Offline indicator V2] Clean up expired feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/acc8b6f
+
+### Custom themes should override native color definitions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5594b39b
+
+### Privacy Sandbox Settings: Fix typo in removed interests view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f36831
+
+### hps: Move configuration to a component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9313ae8
+
+### RawDraw: add feature param UsingMSAA for feature::kRawDraw
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4248f93
+
+### [omnibox] Launch long shortcuts feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d8c16d
+
+### Remove kChromeIconGrey from more places.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd60f7c1
+
+### Call ClearResultsSilently on Start() for zero-state providers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d0fdcb
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66fe463
+
+### [ubsan] Handle window being destroyed while hiding.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72fec4b
+
+### apps: disable WebAppIntegration_33SiteA_12SiteA_39SiteB_27_14
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93a409a
+
+### app_restore: Rename FullRestoreInfo to AppRestoreInfo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d540170e
+
+### Increment by correct amount for row in CalculateBackgroundColorGroup()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ce6e460
+
+### [GMNext] Fix TabbedNavigationBarColorControllerTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29a33a9
+
+### hps: Add internal debug page for HPS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b52c45
+
+### Check if POWER_SERVICE is available in isScreenLocked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bfb503a
+
+### WebUI: Migrate cr-tabs shared element to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a195300
+
+### [SPC] Add payeeName option
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0b1a99a
+
+### [ChromeOS Login] Migrate 'showAddUser' message into the test handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a06eccb
+
+### Reland "Hide default Google Update policies on chrome://policy"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42866cd
+
+### WebUI: Migrate cr-toolbar-selection-overlay element to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/537e1c0
+
+### Remove unused include in tab_renderer_data.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae4da5b
+
+### PSCS: Collapse multiple methods into a single StorageAccessed method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75c2ebf
+
+### Remove X11TopmostWindowFinder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62fc260
+
+### Don't include ostream in lock_impl.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f718af8
+
+### Notification: Only synthesize mouse move event when widget is open.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12ffe9e
+
+### [OOBE WebUI] Remove record all js events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58276c99
+
+### Clean up some drag drop and gesture code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b33196
+
+### Intents: Add flag to enable app icons in the link capturing intent chip
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b1ba003d
+
+### Adjust for window min and max size when applying configured bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/433f444
+
+### Maintain an x11::WindowCache during drag operations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00031a6
+
+### sheriff: Disable WebAppLaunchHandlerBrowserTest.RouteToExistingClientNavigateNever
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8db9452
+
+`);
+              </script>
+            </body>
+        </html>
