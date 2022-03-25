@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-25
+### webauthn: add error message for discoverable requests on Android caBLE.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c13ef4
+
+### Add new experiment configuration for Attribution Reporting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d6e4b5c
+
+### [GMNext] Clean up and rename Theme.Chromium.AlertDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/765e02f5
+
+### [launcher-lacros] Add a flag for launcher lacros support.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/29efa07
+
+### Convert some instances of WebUI::DeprecatedMessageCallback to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f0d9b2
+
+### [OOBE WebUI] Migrate to RegisterHandlerCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78429dc
+
+### Remove expired homepage promo flag entry
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/31f5f5e0
+
+### Provide an initiator_origin if navigation is renderer initiated in Lens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20887675
+
+### Quick commands: explicitly set as translucent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca1a7ec
+
+### [Passwords] Add UPM Icon to the saved passwords bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7623986
+
+### Add gfx::Insets[F]::TLBR() and gfx::Insets[F]::VH()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cebc2b4
+
+### Set SENSITIVE_DATA bit on wayland's input_method hint.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1e1c48
+
+### Highlight submenu items when the submenu contains a highlighted item.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2805170
+
+### Convert some instances of WebUI::DeprecatedMessageCallback to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/004f0f9
+
+### Some minor cleanups around hardcoded colors.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d37384c
+
+### personalization: remove os-settings personalization results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/693d487
+
+### Extract EndpointFetcher from Handler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/874148c
+
+### Extract: Test ZIP extraction into duplicated folders
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa613de8
+
+### [ZPS] Compares counterfactual response against in-memory-cached one
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d4b7e96
+
+### read proxy config by GSettings for Kylinos;
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3ecbfa
+
+### Convert some instances of WebUI::DeprecatedMessageCallback to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/040ab86
+
+### [FilesRecentFilter] Adjust filter button size/padding
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cec515f
+
+### dPWA: Add File Handling settings controls to Chrome OS settings page.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1459c17
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abbeaf5
+
+### [Sherrif] Disable ContextMenuNoFocusedFrame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f440e23b
+
+### Refresh ViewRectProvider for inset / mIncludePadding / view size changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5a022f
+
+### viz: Enable SkiaRenderer unconditionally on CrOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91289ce
+
+### Allow the ProtocolHandlerRegistry to operate without a pref storage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7db8a1
+
+### dpwas: Convert WebAppSettings policy schema to an array
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a310869
+
+### [SPC] Fix aspect ratio of default instrument icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3b7a09c
+
+### [side search] Implements clobbering+ logic for RHS side panels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b119af9
+
+### Revert "Reland "[CameraRoll] Trigger FeatureSetupRequest from permissions setup dialog.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ed8080
+
+### personalization: Do not show screensaver if not allowed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed685a8
+
+### support-tool: Add data collector selection to UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f80671
+
+### Convert some instances of WebUI::DeprecatedMessageCallback to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a05eb5
+
+### [launcher-lacros] Add a skeleton launcher provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64b8551
+
+### Mark some ARC printing code as ChromeOS (Ash) only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15cfab5
+
+### [game search] Add skeleton of search provider and result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8dad27
+
+### Remove nonstandard kGoogleXXDark colors from color_palette
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9f93d6
+
+### [Passwords] Add UPM Icon to the setting entry in the Autofill dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/284a9539
+
+### cros: add chromeos shadow style to bubble border
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65247c1
+
+### [Passwords] Rename Suggestion.store_indicator_icon to trailing_icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d598e9
+
+### Show error message in the caption bubble when using Moho
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e3849d
+
+### support-tool: Get SupportToolHandler to collect data for support case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49414f5
+
+### Revert "Refactor web app launch paths"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd1b7cb
+
+### Revert "Anchor the tab search bubble with a rect anchor when in fullscreen"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cab795
+
+### Fix flaky PaymentRequestPaymentAppTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fde25c
+
+### codehealth: Replace deprecated base::Value Set and Find calls in cbui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55ea36c
+
+### Remove duplicate definition of frame colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e0dc11
+
+### lacros-amd64-generic-rel builds browser_tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd1413c
+
+### Add final bug components to Android render tests
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ae4de4
+
+### Notification: Fix logic of HasInlineReply in NotificationViewBase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/311cfb5a
+
+### [side search] Animates in the side search chip label when first shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec5d5b4
+
+### [ui] Handle late ACKed touch events more properly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2fdb99
+
+### Convert various uses of Google Blue to color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c7a670
+
+### [CodeHealth] Remove some NOTIFICATION_LOAD_STOP from chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e0c4c61
+
+### Remove Cloud Print virtual_driver code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5561c29
+
+### Add a pref observer of screen lock to update the latest status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34e2405
+
+### Add flag for multitouch virtual keyboard
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1569cf3
+
+### Extract: Test ZIP extraction into directory
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/130731a
+
+### Modify SiteSettingsHandlerTest to use the non mojom App struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ede29c
+
+### Remove hard-coded color from AccessibilityFocusHighlight.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5c4ec1a
+
+### Modify ChromeShelfControllerTest to use the non mojom App struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/351da63
+
+### codehealth: Replace deprecated base::Value methods in cbui/webui/c*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/619b1b7
+
+### [omnibox] [entity-latency] Obsolete histograms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/140d15e
+
+### DLP: Remove BookmarkMenuDelegate::OnPerformDrop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9658d3f
+
+### Quick Answers: Add Spell checker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1696ae4
+
+### Unified Side Panel: cache entry views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61ba32d3
+
+### Implement Lacros Data Migration error page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/515a55f4
+
+### Reland "[Passwords] Add UPM Icon in Password Save/Update Bubbles"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44d48790
+
+### Add bug components to Android render tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4935e0d
+
+### Remove 'arc-mouse-wheel-smooth-scroll' feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/924b1f2
+
+### Intents: Fix Lacros version check in IntentChipButtonBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e3b28f
+
+### [GMNext] Catch Resources.NotFoundException in UrlBarViewBinder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0380144
+
+### Move ArcAccountPickerAppElement to resources/chromeos/arc_account_picker/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5b24049
+
+### Convert some instances of WebUI::DeprecatedMessageCallback to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/faeef00
+
+### [Oobe WebUI] Migrate off BaseWebUIHandler::AddRawCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d88b18
+
+### Modify AppSearchProviderTest to use the non mojom App struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc74a654
+
+`);
+              </script>
+            </body>
+        </html>
