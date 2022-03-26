@@ -1,0 +1,260 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-26
+### Cast Refactor: separate presentation setup/teardown from controllers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfb9a18
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/862c3ee
+
+### [Cleanup] Cleanup code for google issued cards
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2cec41d
+
+### Migrate most #getColor() calls to go through Context.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f2a9a6
+
+### Revert "[reland] [privacy sandbox settings] Add dialog pixel tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a49d44
+
+### PiP: Add more padding to hover effect and make the effect circular
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b53275
+
+### Modify MicrophoneMuteNotificationDelegateTest to use the non mojom App.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c96255
+
+### cros: apply new shadow style to system menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b90c864
+
+### [Zenith] Adds a menu item to show/hide remote Cast sessions from Zenith
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8683d7b
+
+### Reland "Refactor web app launch paths"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8781b2b
+
+### [Cast2Class] Fix dialog border on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0773d8
+
+### Fix feature list in ads apis about:flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e76d5f7
+
+### Add link data checkbox on enterprise interception dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae369e7
+
+### Make gfx::Matrix44 API similar to SkM44: Remove Matrix44::set3x3()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22ebcff4
+
+### Modify MediaClientTest to use the non mojom App struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a867a8f0
+
+### [journeys] Remove header string in the query state for WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a7806a
+
+### [side search] Add a chrome://flags entry for improved clobbering
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/54ddbd2
+
+### Reland "[OOBE] - Remove letters from the pin-keyboard"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/695d4b8
+
+### Side Panel: Enable drag & drop bookmarks by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48ab2bb
+
+### [Zenith] Control other Cast sessions' visibility from the context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2801dc
+
+### [M2] Card art image loaded metric for virtual card enroll bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5ed0cda
+
+### DLP: Remove View::OnPerformDrop
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/907de486
+
+### Mac: add tab search to Tab menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74a6e0c
+
+### Add ChromeWideEchoCancellation to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b49345a
+
+### [Omnibox] Only count input as paste if length increase more that 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ba963b
+
+### DPWA: add accessibility string for learn more link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5e19ff
+
+### [CodeHealth] Remove uses of ListValue::Append() in /chrome/browser/ui/webui/chromeos/login.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2381c45
+
+### [Notes] Add the user note UI coordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25178e4
+
+### Revert "Remove defunct flag expiring in M101 and associated code."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e7abcdf9
+
+### [Oobe WebUI] Make the screen switch go through CoreOobeHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96936854
+
+### Use SigninChoice for the enterprise welcome dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a0f11fa
+
+### Fix themed NTP background flashing under multi profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8b9bb5b
+
+### Ability to temporarily pin a bubble so it doesn't go away on blur.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1577879
+
+### Make gfx::Matrix44 API similar to SkM44: conversion to/from SkMatrix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43d924a
+
+### [Extensions refactor] Add method to install extension with permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bfd5a8
+
+### Remove deprecated base::Value methods in cbui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da0d60b
+
+### [Passwords] Update account store reauth illustration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8a5098f
+
+### Add Start Surface variations for Incognito logo on tab switcher.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a57553f9
+
+### Convert various uses of Google Grey to color pipeline.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/092e232
+
+### Remove defunct flag expiring in M101 and associated code.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8c585f9
+
+### [X11] Update xcbproto
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/523a0fc
+
+### Reland "Convert various uses of Google Blue to color pipeline."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e15539
+
+### Eliminate SkColorSetA from download_item_view.cc, add relevant colors to mixers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af71c1b5
+
+### Remove the new macOS USB backend from about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b33323
+
+### capture_selfie_cam: Add a chrome flag for the feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a1b5dd6
+
+### Window Placement: Prototype fullscreen companion window support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d28ca4b5
+
+### Prevent the creation of a duplicate dialog in CupsPrintersHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/004c2a2
+
+### Migrate PermissionManagerFactory callsites to PermissionController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57d65b8a
+
+### Use correct images for toggled button painting.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ec3b7c
+
+### Modify AppNotificationHandlerTest to use the non mojom App struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acf0d84
+
+### [GMNext] Make contextual search handle and progress bar dynamic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c83636b
+
+### Reland "Reland "[CameraRoll] Trigger FeatureSetupRequest from permissions setup dialog.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3f2fe7b
+
+### geolocation: Add the controller to shell and update tests to use factory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e703a8
+
+### Revert "Convert various uses of Google Blue to color pipeline."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3df5588
+
+### Remove methods which override without changing functionality.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf5e573a
+
+### [dpwa] Adds new generated test for the action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f11f6db8
+
+### Make gfx::Matrix44 API similar to SkM44: 4x4 conversion/construction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/528ba93d
+
+### [reland] [privacy sandbox settings] Add dialog pixel tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3f53ba
+
+### Migrate favicon #getColor() to Context.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40f7938
+
+### Exclude flaky MenuItemViewTest* fixtures on Linux Wayland
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f93e1ff
+
+### Reland "Move SigninChoice to c/b/u/webui/signin/signin_utils.h"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59076b8
+
+`);
+              </script>
+            </body>
+        </html>
