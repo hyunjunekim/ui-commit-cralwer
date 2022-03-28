@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-28
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f19741c
+
+### [lacros pwa install] Use app service to find web app by URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/160a13b
+
+### Remove DCHECK requiring unique app IDs from GetAppsPinnedByPolicy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fe9c1d8
+
+### Revert "capture_selfie_cam: Render camera frames (CL3)"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1b58a5
+
+`);
+              </script>
+            </body>
+        </html>
