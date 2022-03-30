@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-30
+### Combine VK dark mode flag with generic dark mode flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e388a1d
+
+### ui: Include chromeos_buildflags
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af025a3
+
+### [page info] Clean up page info unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bb6f06
+
+### [fuchsia] Build Chrome's interactive_ui_tests
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4108a6
+
+### fusebox: filter out read-only earlier in filtered volume manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f7c201
+
+### Remove Navigation Predictor flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ec54410
+
+### crOS: Fetch and handle secondary account restrictions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62bc550
+
+### Update profiles::IsKioskApp function for Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6cc179
+
+### [reland] [privacy sandbox settings] Add dialog pixel tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f74096
+
+### Don't point to a specific tab when talking about the entire tabstrip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecb915b
+
+### Support OOPIF fullscreen while other process is in fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3dead3
+
+### Move drop index test to TabContainerTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3c9138
+
+### cleanup: diagnostics-app-navigation flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/439dc1d
+
+### fusebox: detect if SelectFileAsh is opening the file app dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bda1f8
+
+### cleanup: remove scan-app-searchable-pdf flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ca85e39
+
+### cleanup: remove enable-reven-log-source flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/78e79e58
+
+### [testing][fuchsia] Add GN constant for exec target suffix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/621c507
+
+### [Cast2Class] Add DIR_METADATA to AccessCodeCast directories
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e26ffa0
+
+### [Reland] WebUI: Migrate cr-action-menu shared element to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9154917
+
+### WebUI: Fix VoiceOver reading messages multiple times
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd11825
+
+### Histogram for recording when keyboard is used to focus a help bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8cdc15
+
+### Remove holding space in-progress downloads integration flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5b48849
+
+### arc: Add Arc.AppCount.* UMA metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c9bd5c
+
+### More kGoogleXXX color removal.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05b4427
+
+### [Lacros] Change profile picker startup visibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cce8a8c
+
+### webauthn: add a flag and switch for allowing enterprise attestation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4c607076
+
+### Drag events: avoid converting coordinates to integers at the JNI layer.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/179cfe5
+
+### [Extensions c2s] Reset layout manager after site access button animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44dd08a
+
+### [Oobe WebUI] Remove shared between handlers JSCallsContainer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49a6054d
+
+### Convert some hardcoded colors to color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4615b37
+
+### codehealth: Modernize base::Value usage in cbui/webui/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/faa3378
+
+### [Profile] Enable turn sync off button on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/851b9b1
+
+### Remove outdated comments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85692ad
+
+### Fix Autofill from IME
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b85c6d9
+
+### Save and Recall: Initial support for opening a saved desk.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f5b412
+
+### Change to use SK_ColorWHITE for an image mask for consistency.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/333c713
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb25756
+
+### [pulsing-blocks]: Refresh Pulsing blocks appearance
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/39dfbe5
+
+### Respond to --no-startup-window on process start too
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b7d53d
+
+### DPWA: add test inspection for Mac run_on_os_login
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1b2a75
+
+### Avoiding ImageReader creation for invalid dimensions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7e3f95
+
+### Add trace events to suspect WebContentObservers for jank investigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/821c88a
+
+### Diagnostics: report top right key through InputDataProvider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3adc88bd2
+
+### Allow windows without source contents to be closable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1dc35b
+
+### Tests an interaction sequence that uses both Views and WebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/333da68
+
+### SearchEnginesHandler: Add CHECKs for validating frontend arguments.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d30ba01
+
+### [privacy sandbox settings] Open correct settings view from the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/932ce9b
+
+### [page info] Enable history pixel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd2f187
+
+### [profiles] Stop using Get{Primary,Active}UserProfile in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea7bae6
+
+### Remove set but otherwise unused variables
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3c3498
+
+### Reland "Use gfx::Insets[F]::TLBR() and gfx::Insets[F]::VH() in the rest of Chrome"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da5e830
+
+### Search Prefetch: unify search prefetch/prerender's trigger path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef3ba483
+
+### DPWA: use different strings for preinstalled app deprecation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5eb5e23
+
+### Refactor virtual_card_enroll_bubble_views_interactive_uitest.cc under one parameterized test class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a21ad5c
+
+### hid: Add exclusionFilters option to requestDevice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c655f4e
+
+### Set ShowAppsShortcutInBookmarkBar flag as false by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6222854
+
+### fusebox: send volumeFilter launch param to FilteredVolumeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b26e46d
+
+### [ConsentV2] Add ShoppingPrompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88e758a
+
+### support-tool: Add DBusDataCollector to SupportToolHandler and UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24bba40
+
+### dPWA: Show default app associations UI on Windows
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27084557
+
+`);
+              </script>
+            </body>
+        </html>
