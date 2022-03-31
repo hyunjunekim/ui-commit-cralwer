@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-03-31
+### cros: Simplify some GN conditionals.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d73c9038
+
+### CrOS Labs: Change Float flag to use Cros Labs flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f6a7196
+
+### dPWA: Deprecated Apps Dialog Accessibility Upgrade
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c8c78a
+
+### Fix FLEDGE for chrome://flags/#privacy-sandbox-ads-apis.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f7e921546
+
+### dPWA: Add link to show deprecated app dialog on chrome://apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a40ab07
+
+### [games search] Add feature flag and gate behind suggested content
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e50bce9a
+
+### desk_templates: Remove metrics code for extensions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5956dfe1
+
+### codehealth: modernize base::Value usage in cbui/webui and related dirs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ee72af
+
+### [base] IWYU for base::Time
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d87f10f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81249baa
+
+### Add flag to enable nonced partitioned cookies
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4ab423e
+
+### Vulkan: support high refresh rate monitors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c2f53c6
+
+### [privacy sandbox settings] Add test for topics order
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11e5c02
+
+### Added support for tab title and favicons in saved tab group.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d10093c
+
+### Disable flaky InvokeUi_Consent test on windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/316cea3a
+
+### Implement TSF GUID_PROP_URL.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53d64ac
+
+### Revert "Reland "[Tab Switcher] Refactor - moved aspect ratio determination to helper method. Added static aspect ratio for tablet. Added a couple unit tests for new method in TabUtils""
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1ca0bdc
+
+### Window Placement: Disable flaky FullscreenCompanionWindow test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e883a45
+
+### [VoiceRecognitionHandler] Put isVoiceSearchEnabled cache behind feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cbdbe4
+
+### [game search] Integrate with app discovery service api
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7df3e6bf
+
+### Show 'Theme' instead of 'Theme & Wallpaper' in sync settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b32309
+
+### Limit to at most 3 shortcut results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bdd88e
+
+### [FilesRecentFilter] Add ripple effects for active filter button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbfae2f
+
+### personalization: color mode setting should link to hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdf6063
+
+### [fuchsia] enable_paint_preview = true
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fef6bd2
+
+### Ensure EyeDropperView does not access a destroyed window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27e89c3
+
+### capture_selfie_cam: Respect managed camera policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d195096
+
+### support-tool: Add PII selection page to UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e7eabe
+
+### WebUI: Leverage WebAnimation API's finished() method in cr-view-manager.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cd1a67
+
+### WebUI: Replace dark mode logo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/529f2f56
+
+### Privacy Sandbox Settings: Connect settings controls to Topics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/683a5e4
+
+### Make operator Insets::InsetsF() explicit
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f35c3441
+
+### desk_templates: MRU order isn't being restored properly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb7b6c39
+
+### [UIA] Expose text children of Role::kGroup as UIA controls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f03385
+
+### Re-enable play store search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d60d382
+
+### codehealth: fix deprecated base::Value methods in cbui/nearby_internal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f5c09b4
+
+### cros: Simplify some more GN conditionals.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/791b51a8b
+
+### [launcher] Adjust deduplication between Open Tab and Drive results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10196ee
+
+### Enable LacrosMergeIcuDataFile flag by default
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a947c2
+
+### dPWA file handling: hook up launch type to launch code paths
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/412915a
+
+### android: remove BuildInfo.isAtLeastS references.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db976ce
+
+### Move group views focus order test to TabContainerTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88d3b61
+
+### Fix function signature in AnyWidgetObserver docs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/183b8ec9
+
+### Add unit tests for the IsTruthy() method.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/171bbab
+
+### Fix emitting multi mouse drag when multi mouse button pressing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b975cf6
+
+### [journeys] Separate Labels From Entities into its own flag and loop
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f6f0505
+
+### Use event source-id to filter out remote CRD input
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89e6a4d
+
+### [ntp][fre] Add prefs that track when modules are shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc9ecb5
+
+### webauthn: include credential ID in pre-discovery data.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a329e9b
+
+### Fix the UninstallDuringLastBrowserWindow test for the non mojom AppService.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a163fa4
+
+### dpwas: Add feature flag to gate parsing WebAppSettings policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/457e8819
+
+### Remove remote URL fetcher
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f89e195
+
+### [Android Tab Restore] Introduce TabModelObserver#didCloseTabs()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c84682
+
+### [lacros] Implemented restoring Lacros windows from the desk template.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7aa1f5a
+
+### Mark the Privet PrinterType as deprecated.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a72975
+
+### Scale the mouse wheel delta from tick to pixel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7908aee
+
+### [dpwa] Adds new tests for the action "check_platform_shortcut_and_icon".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5876608
+
+### [Tutorials] Hover cards always show above help bubbles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50c7624
+
+### Record time interval between clipboard data commit and data read.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6da651b7
+
+### [Read Anything] Set tooltip text on the settings button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/551335a
+
+### codehealth: modernize base::Value handling in cbui\webui\management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1ba8b2
+
+### Eliminate MediaSource default constructor and
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5869b9f
+
+### Convert DlpContentRestriction and SystemFeature enum to enum class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dc4f7a0
+
+### [Fast Pair] Add Subsequent Pairing UX feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5c6f8b1
+
+### Added strings and UI for warnings and failures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95de0e5
+
+### Add Conditional Matching Comments to color_id_macros.inc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e114329
+
+### Eliminate SkColorSet from try_chrome_dialog.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2642a35
+
+`);
+              </script>
+            </body>
+        </html>
