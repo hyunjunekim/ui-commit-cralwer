@@ -1,0 +1,220 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-04-05
+### ambient: clean up new url feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/343bbbcd
+
+### Removing #eche-swa-in-background flag as it is not used anymore.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4b9e158
+
+### [Oobe WebUI] Remove EnableAdbSideloadingScreen::OnViewDestroyed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8822fa
+
+### Retire raymes from OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85f883c
+
+### [color pipeline] Add fieldtrial testing config entry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b6c05db
+
+### Implement internals page for Automated Password Change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6eec5c
+
+### Cleanup: Remove Keyboard-based-display-arrangement-in-settings feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/457dc61
+
+### saved_desks: Hooking up DeskTemplateType when saving a template.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cab0b5
+
+### Update omnibox junit tests to use baserobolectrictestrunner.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e586a0
+
+### Immediately test all valid overlay planes in DrmOverlayValidator
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe98b64
+
+### [answers] Move °C/°F text into the big title superscript.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74ddecfa
+
+### Fix ui\views include-order errors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0279b9e
+
+### WebUI: Fix several violations of lowerCamelCase or UPPER_CASE naming.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b721d28
+
+### [Oobe WebUI] Start deprecation of set_user_acted_method_path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cebcb66
+
+### Android: Set use_xkbcommon=false
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cfe636
+
+### WebUI: Migrate cr-link-row shared element to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0879fd2
+
+### Remove Hardcoded Marker Color from ColorChooserView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61d9b60e
+
+### Add BoxLayout support for kViewIgnoredByLayoutKey, and use it.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec12745
+
+### Revert "Add tests to closure compile in test/data/webui/inline_login/"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dabef7
+
+### [answers] Add a big title superscript field.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22e05ee
+
+### Do IWYU for //base/observer_list.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/685ead8
+
+### WebUI: Migrate remaining cr-toolbar/ shared elements to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7198bb
+
+### Revert "sheriff: disable consistently failing WebAppIntegrationBrowserTestMacWinLinux"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71e265b
+
+### [launcher] Special-case the screenshot shortcut result.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/696afd5
+
+### Add missing includes of //base/memory/ptr_util.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27d3205
+
+### Add warning shown metric to download bubble, and update descriptions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c77370
+
+### Use ClampedNumerics in RenderText::SetDisplayOffset
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/faf85ba
+
+### ozone/wayland: Remove Wayland thread priority flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b1a96d1
+
+### Make temporary CHECKs for bug investigation permanent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d828a4f
+
+### [Sub Apps] Remove API call should reject invalid app_id arg
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8db4a99
+
+### [fuchsia] Add missing manifest fragment for views_examples_unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa912e1
+
+### ime: fix misbehaving autocorrect behaviour
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b38c0a
+
+### Implement persistent storage for ACC devices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fda0261
+
+### NtRefresh: Use D/L mode-aware color provider for background
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9a0bbe
+
+### Add tests to closure compile in test/data/webui/inline_login/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ab6c0b9
+
+### Update bluetooth power via BluetoothConfigService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59cd045
+
+### syncfs_internals: Use WeakPtr for DumpDatabaseHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6405ab0
+
+### [CrOS Cellular] Rename flag UseExternalEuicc to UseSecondEuicc
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/26cacea
+
+### remove demo mode language and keyboard selection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d9b11c
+
+### Fix fingerprint enrollment animations for dark mode (Part 4 of N)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fde8d70
+
+### [journeys] Add hostname based labels to clusters
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f28c4d3
+
+### Avoid multi-parameter version of gfx::Rect[F]::Inset(), automatic part
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/549ddc4
+
+### Grit: Align chromeos/lacros variable names with GN's, in more folders.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed2c02e6
+
+### [color pipeline] Fix classic theme in redirection
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ae890e
+
+### [Oobe WebUI] Deprecate BaseScreenHandler::SetBaseScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3202f4b9
+
+### [Passwords] Remove jdoerrie@ as OWNER
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72160e0
+
+### [side search] Reduce the frequency of the Side Search label animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2d4158
+
+### [realbox] Adds (optional) border to realbox when matching omnibox theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d2a9572
+
+### Fallback to use tts player for quick answers results without phonetics audio
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f8932a
+
+### Intents: Simplify implementation of Intent Picker Auto Display prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c943d06
+
+### certificate manager: ignore handlers that are called while a previous request is still in-flight
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40ca686
+
+`);
+              </script>
+            </body>
+        </html>
