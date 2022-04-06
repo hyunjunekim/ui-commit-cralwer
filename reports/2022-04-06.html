@@ -1,0 +1,232 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-04-06
+### Move chrome://apc-internals from components/autofill to chrome/browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2558783
+
+### Update tests to use BaseRobolectricTestRunner.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c83419
+
+### Clean up UpdateHistoryEntryPointsInIncognito flags in Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6a5a64
+
+### [ash] Switch the theme on the login screen based on the focused pod
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d61038
+
+### DisplayChangeObserver: Respect --force-color-profile
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac50690
+
+### [Note] Connect UserNoteUICoordinator to SidePanelCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/403d9e9
+
+### Remove multi-parameter version of gfx::Rect[F]::Inset()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7f1222
+
+### [lacros] Remove superfluous parentheses around is_linux || is_chromeos_lacros
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42f9890
+
+### Reland "DPWA: add run_on_os_login CUJs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc01943
+
+### [cros_styles] Make app_shield_40 generate per mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72e4d55
+
+### Quick Answers: Add feature flag for expanding to more locales
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/69f6027
+
+### [Sub Apps] Rename parent_app_id to calling_app_id in Impl::Remove
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b9f2f45
+
+### WebUI: Migrate cr_search_field/ shared elements to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c755d9
+
+### WebUI: Migrate cr-menu-selector, cr_profile_avatar_selector to TS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9cc7781
+
+### ozone: Add Corsair Sabre Pro Champion to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6fd9843
+
+### Avoid multi-parameter version of gfx::Rect[F]::Inset(), manual part
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/453ea8a
+
+### [Messages] Add flags for stacking animation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0e049c4
+
+### Lens Camera Assisted Search on Tablet
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/42a4ea6
+
+### Add EventLatency tracing to the browser process
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4318ca
+
+### [Oobe WebUI] Introduce BaseScreenHandler::CallExternalAPI function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/595c3eac
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4180bb
+
+### Remove GridLayout from app_info_permissions_panel.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b7ca44
+
+### Toast anchor to always read screen size.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc7ef0c
+
+### lacros: set sensitive hint on !should_do_learning
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a6d3c2
+
+### [journeys] Add flag to \`drop_hidden_visits\`
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e38a0c8
+
+### LacrosDataMigrator: Update the delay to show skip button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb619cd
+
+### ShareToTargetBrowserTest: Cleanup after test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/381005f6
+
+### CloseAll: Add DesksCloseAll flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dab2fe9
+
+### Move interaction test util and interaciton browsertests to chrome/test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcbdf9aa
+
+### [Passwords] Update the footer for Save/Update Password Bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/248158e
+
+### What's New: Localize title and remove unused strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc8abe4
+
+### Intents: Disable flaky test on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb8b122
+
+### [Oobe WebUI] Start cleanup of the show_on_init logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/044ec0d
+
+### [CrOS SLP] Create feature flag for SIM Lock Policy.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/444f954
+
+### Disable flaky InvokeUi_CookiesBlocked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bae2cab
+
+### Prevent multiple SelectFileDialog in PdfPrinterHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2396213
+
+### codehealth: remove uses of DictionaryValue in cbui/webui
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31c293c
+
+### Remove Android Screen Capture Flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/62c6103
+
+### Remove unused flags related to optimization guide
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ca4fae3
+
+### [Notes] Create UserNotesTabHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a288ef2
+
+### Remove expired enable-browsing-data-lifetime-manager flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aaa6b1e
+
+### Remove Cloud Print access token code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8e3818
+
+### Download Bubble UI fixes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a924171
+
+### [Adaptive charging] Added initial setting UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/846f3ab
+
+### share: add feature & flag for desktop share preview
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/af0a33b
+
+### Speculative change to improve Mac accessibility performance
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb1f2fc
+
+### Create feature flag for Chrome App Kiosk Lacros
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/441a84c
+
+### [Android] [IncognitoReauth] Introduce priority to ModalDialog.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b3e058
+
+### [cr-card-radio-button]: Fix check mark for RTL languages
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b89a5662
+
+### Revert "Fix an edge case bug in Windows TSF1 implementation."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49f9112
+
+### Update Chrome Labs Coordinator Close() to CloseWithReason() with reason kUnspecified
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32b32f6
+
+### Reland "OOBE Consolidated Consent: Update skipping conditions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/894e937d
+
+### Move SetTabSwitchStartTime call outside of feature check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b700435
+
+### [omnibox] Finish launching OmniboxPedals{Batch2NonEnglish,TranslationConsole}
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/68550a4
+
+`);
+              </script>
+            </body>
+        </html>
