@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-04-07
+### WebUI: Convert cr-searchable-dropdown to Polymer's class-based syntax.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a17a35a
+
+### Remove apps shortcut default off flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/438bc2c
+
+### Use forward decl to remove include in //ui/gfx/render_text.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3f8c495
+
+### [fuchsia] Report Ozone windows as maximized by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bb2dfc
+
+### Add state of feature parameters to chrome://apc-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/138286e
+
+### Add support for an OnBubbleClosed callback and closing the sharesheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da45764
+
+### [journeys] Have the locale allowlist be * if users turn on Journeys via chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5b5e737
+
+### [Mac Occlusion Checker] Prevent event cycles during occlusion checking
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6323671
+
+### [fusebox] implement 'fusebox-only' filter for SelectFileAsh file picker
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd369c3
+
+### [Sync][Lacros] Add chrome://flags entry for custom passphrase sharing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/70a77cb
+
+### Move //chromeos/{=>ash/components}/dbus/{authpolicy,upstart}
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ff86fd
+
+### Enable WebGPU video 0-copy import on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5adbf3b
+
+### [dPWA Testing] More logging during teardown for debugging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5bab93
+
+### Add tab-reordering shortcuts to the Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/329a222f
+
+### Reland "[linux/wayland] Added tests for window size constraints."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb995a6
+
+### [DragDrop] Use filename with extension for image dragging
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7174eb
+
+### media/gpu/v4l2: use flag for libYUV image processor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0770f5c
+
+### cros: apply shadow to launcher folder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c26ca1
+
+### [HPS] new parameters for lock on leave.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bd4abf4
+
+### Create MediaRouteStarter to abstract logic of creating routes from UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4868f08c
+
+### WebUI: Migrate cr-searchable-drop-down shared element to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18d9cd7
+
+### Remove legacy SwiftShader from all ChromeOS Ozone platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d0d005
+
+### [ConsentV2] Add an empty tab helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/091cbfb
+
+### [Autofill] Eliminate WebContents members from LocalCardMigration[Error]DialogView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b78464d
+
+### QA Lacros: Forward related ash profile prefs through CrosApi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14702bb4
+
+### Assistant - Fix in-session WebUi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb87ffe
+
+### Avoid UAF when bookmark icon changes repeatedly while dragging.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29459d6
+
+### DLP: Remove DragDropDelegate::OnPerformDrop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8071437
+
+### Add deep scanning state in download toolbar button.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af5815f
+
+### Add ChromeWideEchoCancellation chrome://flags flag on Linux
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e819494
+
+### [Extensions c2s] Display request button when extensions request access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7d2f93
+
+### [dpwa] Re-enable the web app file handler tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc8ad75
+
+### [Test Automation] Support WebUI pages not in tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a9a3b4
+
+### Fix views_examples to enable rendering.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9274e9d
+
+### Intents: Add app icon to intent chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9990389b
+
+### [ntp][fre] Replace FRE-based impression/time prefs w/ module-based prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5e4385
+
+### [Oobe WebUI] Check if observers are set before removing them
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c847cbe
+
+### Create chrome://profile-internals page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/776faf8
+
+### [Sheriff] Disable flaky ProfilePicker tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd5c4e0
+
+### Revert "[linux/wayland] Added tests for window size constraints."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2992fb4
+
+### Reland "Add tests to closure compile in test/data/webui/inline_login/"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f18f05
+
+### [Oobe WebUI] Remove page_is_ready_ from the handlers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13a27a6
+
+### MPArch: Remove TODO in FocusTabAfterNavigationHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8392592
+
+### Prevent multiple SelectFileDialog in PasswordManagerPorter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72706a0
+
+### sharing: implement desktop share preview stub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb519b0
+
+### Use forward decls to remove includes in installable_metrics.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f350e6
+
+### Decouple AnchoredPopupWindow#updatePopupLayout into static functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e048b47
+
+### wayland: fix how data sources are set in test wayland compositor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c678ff
+
+### ozone: add HyperX Pulsefire Haste to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e1fe838
+
+### Re-enable Send Tab To Self DialogBrowserTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39c12f4
+
+### [Launcher health] Check Continue section provider type via switch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e533847
+
+### Add tab-reordering shortcuts to Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e37bc7d
+
+### Update Download Bubble UI info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3733d7
+
+### X11: Not handle ConfigureNotifyEvent for child window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/016b6ce
+
+### Add Welsh outputs to all GRD files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07a5d70
+
+### ax_mac: support NSAccessibility parameterized attribute testing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0562ac6
+
+### projector: Check app client before using it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cb2bdf
+
+### [linux/wayland] Added tests for window size constraints.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f6eb80
+
+### WebUI: Add an event to CrA11yAnnouncer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c474bb4
+
+### SharesheetAshBrowserTest: Cleanup after test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c6d37d
+
+### [Provisioning] Change ResultCallback to take const ref results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dc0000
+
+### Grit: Align chromeos/lacros variable names with GN's, in *.grd(p) files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc2ad7c3
+
+### [Oobe WebUI] Remove redundant AllowJavascript
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86396ae
+
+### Remove GridLayout from sharesheet_bubble_view.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14f235b
+
+### Clean up clipboard history browser tests (Part 2 of N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3439c75
+
+### Prepare translation files for the addition of Welsh
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/287f955
+
+### Use storage prefs to open new channels.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e58813de
+
+### [dPWA Testing] Use new GetAppIdBySiteMode method where useful
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64b5a1d
+
+### [Launcher health] Move sorting lambdas into separate file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74451847
+
+### IWYU: add memory for std::unique_ptr in view_utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5760b7
+
+### [Lacros] Fix "Turn On Sync" button for existing account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b77de24
+
+### [Cast2Class] Use keyboard icon instead of qr icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e6d2e81
+
+### Prevent multiple SelectFileDialog in CertificatesHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdba2ff
+
+### System-web-apps: Add support for chrome-untrusted:// service workers
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3633303
+
+`);
+              </script>
+            </body>
+        </html>
