@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-04-08
+### personalization: always show PersonalizationHub flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2cdc3de
+
+### Delete capture_links manifest field and behaviour
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0dfceb8
+
+### Add a flag for the beta model
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eb8a946
+
+### Restore new header flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1141d783
+
+### Add menu item to unfollow a site for desktop feed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cc7bfd
+
+### Replaced an error in CursorLoader with a warning.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8fe049
+
+### Diagnostics: hide external keyboards unless flag is set
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6deecd8
+
+### Fix ash browser crashes when the current tab closes during drag and drop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a49b599
+
+### [side search] Add a Side Search PLMO for the browser side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c8c869
+
+### [Cast feedback] Add a checkbox to indicate user permission to send email
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75b6d1b
+
+### [Android][UPM] Introduce variation for local password management
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e9ed943
+
+### desktop-share-hub: align with latest redlines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7788ae
+
+### [Sheriff] Disable GLImageNativePixmapScanoutBGRA.GLImageTest on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6965882
+
+### [dPWA] Explicitly pass source to uninstall, and require install source.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19a34bf
+
+### [macos omnibox] Work around omnibox cursor causing bookmark bar redraw
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eab42bb
+
+### [GMNext] Migrate default_text_color_inverse to dynamic colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/86d58fc
+
+### Vulkan: remove a no-op flush() in VulkanSurfaceX11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e16aa79
+
+### Create GLDisplay class to wrap each display.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb2b7cf9
+
+### [Read Anything] Add font style dropdown/combobox to toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69c218ea
+
+### Implement mouse back and forward button handling for tast API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18af349
+
+### ShareToTargetBrowserTest: Close app windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b352a3c
+
+### Remove expired enable-sync-requires-policies-loaded flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0baec0c
+
+### [journeys] Add flag to Attach Action Chip to Omnibox URL Matches
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/721981e
+
+### Revert "[dpwa] Re-enable the web app file handler tests."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/457296b
+
+### [Metadata] Add flag for virtual card metadata
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/003243c
+
+### oobe: Add Kiosk SKU enrollment button to GAIA dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f8adf3
+
+### [Fast Pair] Remove DCHECK to enable nearby-internals for guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2efd2291
+
+### Remove unused supervised URL filter type FilteringBehavior::WARN.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50abaff
+
+### cleanup: allow-disable-mouse-acceleration flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/82184d3
+
+### [Read Anything] Add Read Anything to the context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d90ab9
+
+### Added context menu class for SavedTabGroups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8973234
+
+### [FRE] Add a progress spinner for sign(in/out) in signin FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6c4b562
+
+### Print Preview: Remove user account handling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/525220e
+
+### [GMNext] Make Manage windows colors dynamic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f19c76e
+
+### [Oobe WebUI] Enhance BaseScreen::OnUserAction to take a list of args
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a91204
+
+### [FilesRecentFilter] Add support for recent documents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a78b844
+
+### [STTS] Flaky test previously fixed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89c6aacb2
+
+### [GMNext] Make App menu footer chip dynamic behind flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39bed95
+
+### Print Preview: Remove cloud printers from sticky settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/069a882
+
+### codehealth: remove DictionaryValue usage in cbui/webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ead449e
+
+### Diagnostics: Add separate flags for touchscreen and touchpad sections
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bc694180
+
+### ax_inspect: support AXAttributedStringForText parameterized attributes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7444290
+
+### Give textfields in layout examples accessible names.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6926b9f
+
+### [FilesRecentFilter] 2px width for all focus ring
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e163de
+
+### Flatten send-tab-to-self options in omnibox and tab menus
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20bf057
+
+### Fix transitive includes of SkColorSpace
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/040667a
+
+### Add supervised_user/ as OWNERS for family_link_user_internals in WebUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98725f4
+
+### [Passwords] Save/Update bubble footer should be different for Sync users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39a80c6
+
+### [Sheriff] Disable DoesntCrashOnEscapeWithRemovedView on ASan LSan build
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/094f2b3
+
+### Quick Answers: Notify ApplicationLocaleReady on observer initialize
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84f3b22
+
+### Print Preview: Remove invalid certificate code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a25e2c3
+
+### Fix crash in Chrome Labs due to downloads in progress during restart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/532c1f2
+
+### [Adaptive charging] Added search concepts for settings UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2d73b2
+
+### Remove legacy SwiftShader
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f383e7b
+
+### fixup! [ozone/wayland] Reimplement WaylandEventSource::OnTouchFocusChanged()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94b2ab2
+
+### [dPWA] Refactor Source::Type into WebAppManagement.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b92644
+
+### Enable chrome://flags for the entities model on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ec7e07de
+
+### Reland "Fix an edge case bug in Windows TSF1 implementation."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7448b28
+
+### WebUI: Turn on TypeScript check disallowing unreachable code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73efbd5
+
+### [side search] Extend the duration the page action icon label is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdcde31
+
+### [VCN] Add flag for adding delay between offer
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ff02e74
+
+### OOBE: Remove SplitSettingsSync code and strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edf292c
+
+### Revert "Use storage prefs to open new channels."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0340a82
+
+### Add Autofill Assistant country code to chrome://apc-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15ee0bd
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08a8caf
+
+### Create a feature flag DirectCompositionVerifyDrawOffset
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e68d3a3
+
+### WebUI: Convert localized-link to Polymer's class-based syntax.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/082fe2c
+
+### webauthn: remove feature flag kWebAuthCableSecondFactor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/165e1fa
+
+### [grit] Use \`toolkit_views\` for desktop resources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee151bc
+
+### Read later: make sure the model is loaded before marking items as seen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d414040
+
+`);
+              </script>
+            </body>
+        </html>
