@@ -1,0 +1,240 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-04-09
+### [color pipeline] Remove hardcoded color macros from image_button_factory
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef8fd1f
+
+### Introduce CopyOrMoveHookDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/113d93b
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/299124e
+
+### [FedCM] Implement desktop UI part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b90290
+
+### [side search] Integrate the side panel with FromGWSPageLoadMetricsLogger
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9db155b
+
+### Fix step timing function with maximum number of steps
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4778967
+
+### support-tool: Export collected data into selected file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a9f38d
+
+### WebUI: Replace expect*() test functions with assert*() equivalents.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22d381a8
+
+### Temporarily disable failing tests on ChromeOS Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/180f6a2
+
+### [side search] Defer the service check until after first paint
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dda913fd
+
+### Break apart scoped fd creation and dup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0d6a43
+
+### stts: don't hold raw view->controller pointer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88d4801
+
+### WebUI: Migrate localized_link shared element to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1da6d40
+
+### [DragDrop] Customize drag shadow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db7da5c
+
+### Speculative fix for crash in SelectFileDialogLacros::SelectFileImpl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af29e7e
+
+### Show enterprise dialog for all managed signins, allow users to link data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa1aced
+
+### Change toolbar from GONE to INVISIBLE in #updateViewsForTabSwitcherMode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fb0709
+
+### Feature flag - Web Feed Awareness
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/55cbb16
+
+### Revert "WebUI: Replace expect*() test functions with assert*() equivalents."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5929b2f
+
+### Fail if the display spec (in string) is invalid.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fe31cf
+
+### [Cast2Class] Observe activation change to close dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8875c4
+
+### [dPWA Testing] Adding window controls overlay related actions & manual tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3c75c3
+
+### oobe: Add new enrollment step for Kiosk SKU enrollment.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7d1b6c
+
+### [Passwords] Introduce new illustration for password save/update bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/689849d
+
+### [ozone/wayland] Harden the logic that chooses the window being dragged
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85e0a5c3
+
+### Projector: Potentially fix destructor crash bugs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5834df5
+
+### Replace launch_handler: {route_to: existing-client} with existing-client-navigate and existing-client-retain
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87b1485
+
+### ozone: evdev: Refactor input_device_factory_evdev
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9492db3
+
+### Create the starter for desktop on tab creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e7d1fb
+
+### [mparch] Update FencedFrameFileSystemAccessBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aedd9e6
+
+### [Download Bubble] Instruct only one window to show partial view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad2f71bf
+
+### Revert "Wait for policies to load before checking for UrlBlocklistNavigationThrottle"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bc3ab9a
+
+### [OOBE] - Add language change metric to the WelcomeScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b36a05
+
+### system-web-apps: make AppList context menu "Open New Window" work
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57876c6
+
+### [UPM] Update password generation dialog title and description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/375e288b
+
+### [Note] Add scroll view and contents view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25759a9
+
+### Add the ability to focus and recall Saved Tab Groups from the tab group button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf80c5f
+
+### QA Lacros: Refactor QuickAnswersState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7135b85
+
+### Fix ash-chrome MSAN errors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbe4499
+
+### Use PrimaryPageChanged in BrowserAppInstanceTracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97a97bf
+
+### [PwdSettings] Add new prefs for password manager settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e7925c
+
+### Lacros: support os://help-app URL.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54dfc513
+
+### Revert "[side search] Defer the service check until after first paint"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7960c9f
+
+### QA Lacros: Add user consent logics for lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b1f9f1
+
+### Revert "[color pipeline] Remove hardcoded color macros from image_button_factory"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28a8dda
+
+### sharing: add share hub preview metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2abf01c
+
+### Revert "WebUI: Migrate localized_link shared element to TypeScript."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/274c78a
+
+### Move a11y index and event targeting tests to TabContainerTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8669357
+
+### Fix line endings for several generators
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db531c351
+
+### [UrlParamFilter] Enable url_param_filter on android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f508d491
+
+### Fix fingerprint enrollment animations for dark mode (Part 5 of N)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aaa65bb
+
+### [history] Implement querying history by host name only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9f7b4f
+
+### share-preview: elide long title/URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e6f5b99
+
+### [Lacros] Change strings on turn off sync page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d706b67
+
+### [side search] Update SRP availability after successful SRP commit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cccf63b
+
+### webui: Add WebUI Service Workers for chrome-untrusted:// flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/feb77d2
+
+`);
+              </script>
+            </body>
+        </html>
