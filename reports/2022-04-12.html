@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-04-12
+### Add DIR_METADATA to Files team directories.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a20a82
+
+### Flags: remove dns-over-https
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/841ac76
+
+### [Sheriff] Disable DesksTemplatesClientTest.SystemUIPreventBrowserSessionRestoreTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c02f308
+
+### Intents: Disable flaky ShowsAppIconInChip test on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aedec0c
+
+### [Note] Create UserNoteView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff96d4d
+
+### Close Download Bubble when empty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1185579
+
+### OOBE - Polymer3 preparations - Keyboard Utilities
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31d8be1
+
+### ui: Remove optional LinearGradient from MaskFilterInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74d5c2e
+
+### AboutThisSite: Remove infobar UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5d4151
+
+### [Reland] WebUI: Migrate localized_link shared element to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4474901
+
+### WebUI: Consolidate html_to_js() targets for shared TS elements.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7249cd5
+
+### Side panel: restructure folder hierarchy after side panel launch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd49c4ae
+
+### Extract: Handle encoding detection for ZIP unpack
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e66a41
+
+### WebUI: Move last shared WebUI resources off of webui_resources.grd.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb32d0b8
+
+### [Oobe WebUI] Remove ActiveDirectoryLoginScreen::OnViewDestroyed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16261f0
+
+### Settings WebUI: Replace IronA11yAnnouncer with CrA11yAnnouncer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e97bbd6
+
+### [FilesRecentFilter] Center the icon after 2px border change
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/787a050
+
+### Add metrics recorded for both save card infobar & messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c05d01
+
+### [Signin] Modularize SyncConsentFragmentBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aca5d96
+
+### Include utility where needed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abddf8a
+
+### Use DIP in DesktopWnidowTreeHostPlatform::CenterWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe8253fc
+
+### Lacros FRE: Add triggers through mojo API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d6213b
+
+### personalization: custom search provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/400b4d1
+
+### [omnibox] Remove pedal_processor generated trigger test cases
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/331e984
+
+### [Passwords] Remove account store checks from  SaveUpdateBubbleCtrlTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5359df0
+
+### [OOBE]: Add theme selection screen to OOBE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ffee45
+
+### delete shopping task module support
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9cce852
+
+### Remove unused cloud_devices code.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d8b32f9c
+
+### Extract: Add test for a11y of extract-all menu item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea521fa
+
+### Revert "ozone: evdev: Refactor input_device_factory_evdev"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d59935
+
+### enrollment: Add type of license to enrollment request.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69a2279a
+
+### [Read Anything] Show full paragraphs in Reader UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/277fe7c2
+
+### [Local Fonts] Rename Site Settings names from FONT_ACCESS to LOCAL_FONTS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/131b8f4
+
+### Shimless: Create flag for enabling the standalone Shimless RMA app
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fa6aee5
+
+### Reland "keysym look up with modifiers."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d21ca3a
+
+### Enable robust resource init on pBuffers with SwANGLE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce5b67b
+
+### Intents: Fix crash showing External Protocol Dialog in Intent Chip UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/047c47f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/718da65d
+
+### Fix red bar color in the Butter opt-in dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0072cca2
+
+### Lacros: Disable app launch for secondary profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dce5b53
+
+### QA Lacros: Track A11y spoken feedback status in QuickAnswersState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dccb342
+
+### [Local Fonts] Rename ContentSettings name from FONT_ACCESS to LOCAL_FONTS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc538cb
+
+### [Reland] WebUI: Replace expect*() test functions with assert*() equivalents.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff62004
+
+### Increase visibility of Profile Picker testing utility methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ade8fdb
+
+### Clean up unused DesktopPWAsTabStripLinkCapturing flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/83cde109
+
+### CrOS Labs: UI experiment for floating window.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/542c5d7
+
+### Expose follow/unfollow functionalities in sharing hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ff924
+
+### [Passwords] Refactoring: rename ShouldShowChangePasswordButton to ShouldShowAutomaticChangePasswordButton.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c7467e1
+
+### Add geofflang as an owner of ui/gl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aaa54af
+
+### Print Preview: Remove more cloud print code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c36d1b88
+
+### WebUI: Remove last usages of Grit's flattenhtml in webui_resources.grd.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9fc288d
+
+### Enable sync immediately during Android FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b501108
+
+### oobe: Add accelerator for kiosk enollment.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3822504
+
+### OOBE - Polymer3 - Clean up legacy JS files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1487b4b
+
+### [PaymentRequest] Add activation for show() in Android browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a37eac1
+
+### [App Details] Add store link for apps installed from Chrome Web Store.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2084ca8
+
+### [Download Bubble] Show Download Bubble on completed downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f173852
+
+### add missing brackets to Widget::Close
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b589dd
+
+### Speculative fix for read exception in BrowserAccessibility::SetNode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3296c189
+
+### Enable FullscreenBookmarkBar test on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ec6510
+
+### Web apps: Fix browser side race condition in LaunchQueue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e1261c
+
+### Linux-wayland: Update input type on focus change.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e949670
+
+### Implement backing code for 'Turn off sync' setting action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44bcb52
+
+### [IncDow] Added warning message to duplicate download dialog.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26062c8
+
+`);
+              </script>
+            </body>
+        </html>
