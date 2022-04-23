@@ -1,0 +1,188 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-04-23
+### [fusebox] Add FuseBoxDebug feature flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03c6903
+
+### Validate mojom attributes before generation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0563ec
+
+### [Lacros] Enable non-syncing profiles by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca93c5e
+
+### Convert SHOUTY_CASE Mojo union tags to kCamelCase in //ui/accessibility/mojom.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b79eae5
+
+### [FedCM] Add cool down logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae649ee
+
+### Remove LockIconInAddressBarEnabled policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f234ceae
+
+### Don't expose the busy state on loading pages on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a86dd857
+
+### [SharingHub] Use 3-dot share icon for Linux and Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e34e451f
+
+### Remove "hide continue section" from tablet mode launcher context menus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea8c2c1
+
+### [Camera Roll]Add UMA metrics for new onboarding flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72265f1f
+
+### Reland "ScrollView use LAYER_NOT_DRAWN type for layer of
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa4597d
+
+### [Safety Tips] Remove Security.SafetyTips.OpenTime.* histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/419014d
+
+### Desk Template: Add desk type to constructor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a185eed
+
+### [Extensions refactor] Remove allow pinning from site access menu button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b1d101
+
+### [Payments] Fix invisible overflowed legal message in Migration dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4df959
+
+### ozone: evdev: Fake Keyboard Heuristic Implementation
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9d1605f
+
+### Replace SanitizedImageSource cookie option with auth token option.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a96295c
+
+### Fix PermissionChip's animation callback.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1eb32d9f
+
+### [mparch] Clean up TODO for the primary page for TopControlsSlideTabObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de67e32
+
+### wayland-drm: Authentication is only required for drm primary node
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6f606f7
+
+### [AGUA] Announcing presence of suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e626803
+
+### Update icon labels to optionally paint over a solid background
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3741eaf
+
+### Reland "Refactoring: Replace \`DisplayMode\` by \`UserDisplayMode\` for user display mode settings."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb3929f
+
+### Make ReuseRVHWithWebUI a content browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b675e45
+
+### Do not show favicon when on a security interstitial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0183eb
+
+### [DownloadBubble] Use visibility instead of construction/destruction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f58d3a3
+
+### Implement last-fetch-timestamp for device policy in LaCrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4243c3
+
+### Convert SHOUTY_CASE Mojo union tags to kCamelCase in //ui/webui/resources/cr_components/app_management.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c8d84c
+
+### [linux] Do not stop event propagation for touch-driven interactive window moves
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c3a2ea7
+
+### Remove net wrappers around base/strings/escape.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f3bd3d
+
+### Add desktop feed to unified side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78341f67d
+
+### Do not allow fullscreening during a drag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26594d7
+
+### Add localized strings for launcher show/hide continue section UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0705de0
+
+### build: Fix wrong OS defines
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3348793
+
+### Replace ukm::GetSourceIdForWebContentsDocument in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0647101
+
+### capture_stop_button: Drop count down to stop button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04ca8b2
+
+### Reland "cros: blur ChromeOS system context menu backrgound"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d526f7
+
+### Revert "Switch document Picture in Picture (v2) to popup"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02ff8a65
+
+### [AGUA] Plumb notification about final AutocompleteResult to Java UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1a2ac0
+
+### projector: Add PendingScreencastBatchIOTaskDuration metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5d36ca
+
+### ozone/wayland: can reuse the same buffer handle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6c9bca
+
+### [Extensions c2s] Remove item's combobox when extension can't be customized
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10f0adc8
+
+### Reland "[Cleanup] Cache the display ids for connected display"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa7d359
+
+`);
+              </script>
+            </body>
+        </html>
