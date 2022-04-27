@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-04-27
+### Shared Storage: Add to SiteSettingsHandler::RemoveNonTreeModelData().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86cbd2ac
+
+### //chrome: Include chromeos_buildflags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6551156
+
+### [sync] Add render tests for Android sync promos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fa182a
+
+### Remove unused variable 'heading_container_' in ProfileMenuViewBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f90440d
+
+### [Resource file sharing]: Store some lacros init params inside chromeos/lacros
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/710910a
+
+### [color pipeline] Fix mismatched GTK colors and enable direction test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edf4f6d
+
+### NotificationRevamp: Move HeaderRowPressed and test to NotificationView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b9ef33c
+
+### wallpaper: callback to SetDefaultWallpaper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f5641b
+
+### Wayland/X11::CanImportGMB add DmaBuf/DrmMod ext check
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a36335
+
+### Update popup timers when a grouped notification is displayed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d7c8c1
+
+### Delete block-external-form-redirects-no-gesture
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b710cef
+
+### [mparch] Restrict PaymentHandlerWebFlowViewController::DidFinishNavigation primary-only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61a4675
+
+### settings: shorten names in search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/490552a
+
+### Lacros: Supports SetInputType extension API.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6d06b6
+
+### Add histogram to collect clipboard image read duration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/778d902
+
+### [PwdMessageDialog] Updates UI for password edit dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f034262
+
+### Sharing: remove WebContents/WebContentsUserData redundancy in APIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22cf205
+
+### [side search] Hide Side Search for all WebUI pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ae70b5
+
+### Remove SessionStateWaiter class in HoldingSpaceBrowserTestBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88a8467
+
+### Obsolete the AudioPlayer Chrome App.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f197017
+
+### Use impression observer to track when release notes chip is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15f4551
+
+### Remove hardcoded "blue" accent colors in ui_color_mixer.cc.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f28c31
+
+### Fixed creating new tab group with multiple tabs context menu bug.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/988b728
+
+### [Lacros] Show list of accounts in turn sync on settings account picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3fb9bd
+
+### [Provisioning] Pass publisher through from proto.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef88b74
+
+### Mac: don't make dragged fullscreen tabs re-fullscreen on complete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b845488
+
+### [Resource cleanup]: Return null for GetDefaultWindowIcon on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b91d6b6
+
+### Remove dangling VideoPlayer references.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4864e3
+
+### [mparch] Use PrimaryPageChanged in ManagePasswordsUIController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51ece0a
+
+### [dPWA Testing] Adding file handling CUJs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c64b367
+
+### //ui: Use BUILDFLAG(IS_CHROMEOS)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6893507
+
+### [Refactor] Autofill tests to use a common FakeModalDialogManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f65cb2d
+
+### [App Details] Icon with hover to URL for apps installed from browser.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1ac759
+
+### Handle null images in Skottie animations gracefully.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9e59fe
+
+### Update SharedImage DMABufSupport UMA to include GLX
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fbf7ea5
+
+### support-tool: Show the generated URL to user in UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b81025
+
+### DPWA: remove WebApp.InstallIphPromo.Result metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/856e753
+
+### [cros-elements] Remove build_mwc_app infrastructure.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/461ef1d
+
+### Clarify Comment by GetBrowserCount()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14869318
+
+### [launcher] Don't update the ItemSuggest cache for classic launcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c075ed
+
+### [Human presence] Improved feature code paths (c.f. identifiers).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c813e9
+
+### [M2] Remove disabled_link_wrapping for StyledLabel
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b1b9b5
+
+### CrOS Settings: Migrate network health/diagnostics Mojo to JS modules
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e406e00
+
+### Always set source and destination message on IO task status
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/240b75ab
+
+### webui: Remove UntrustedWebUIControllerFactory
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3ee3dd
+
+### Move //chromeos/{=>ash/components}/dbus/system_clock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/625a5c3
+
+### What's New: Add a metric for startup logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0720a76
+
+### Apply system shadow style to web system dialogs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebdbf25
+
+### WebUI: Update TypeScript compiler to 4.6.3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de3e3a9
+
+### Fenced Frames: Ensure embedder-initiated navigations are https or about:blank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e724b533
+
+### [Clank CBCM] Release chrome://management for Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/29f9e52
+
+### Android: Inline android_support_v7_appcompat_java
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/648267dc
+
+### [New Deal] Consumer Auto Update Toggle in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4494a7e
+
+### Fix a few more GetSourceIdForWebContentsDocument.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00e2ba1f
+
+### HDCP: Create an IPC call to CDM Factory Daemon to get HDCP Key.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3a7f16
+
+### Support networks behind proxy during lock sreen reauth flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd4f01f
+
+### Favor OnWidgetDestroying over OnWidgetClosing, since the former is always called.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/855b63f
+
+### Verify that is-google-photos image downloads are for Google Photos URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76051b7
+
+### dark_mode: Update browser tests to support default AUTO mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c90595
+
+### Enable unsetting preferred view sizes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3abe39dc
+
+### ES lint fixes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/daa51e0
+
+### Simplify TabContainer's child view order management.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9a3388
+
+### Move tab group tests to TabContainerTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e99f0cf
+
+### WebUI Gallery: Add skeleton for switching between different demos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84e9c37
+
+### Move static functions from GLSurfaceEGL to GLDisplayEGL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2445433
+
+### WebUI: Add missing -webkit-image-set() in widgets.css.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e253a6
+
+### [Resource file sharing]: Skip regeneratin shared resource if Lacros is
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/580989c
+
+### Update supported platform list for FontAccess flag in about_flags, and update the expiry milestone.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7e68b1e
+
+### [side search] Increase side panel header padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed0ca90
+
+### Add flag for predictive back gesture api
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce2f572
+
+### Better handle continue section in AppListNotifier
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a97dd9d
+
+### Reland "Remove unused supervised URL filter type FilteringBehavior::WARN."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ea54a2
+
+`);
+              </script>
+            </body>
+        </html>
