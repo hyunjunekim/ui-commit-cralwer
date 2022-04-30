@@ -1,0 +1,248 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-04-30
+### Android: Depend on jni_java explicitly
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a196c16
+
+### [App Details] UI spacing fixes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5914060
+
+### Remove last usages of GetSourceIdForWebContentsDocument.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4da6d58
+
+### [Passwords] Reduce the space after the icon in the generation prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a183c1d
+
+### Deflake and re-enable HoldingSpaceUiDragAndDropBrowserTest.DragAndDrop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a26fba84
+
+### Revert "Optimize ui/webui/resources .svg files"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1900085
+
+### ChromeOS PiP: Don't allow focus on the resize handle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c041da63
+
+### Move feed side panel mojo into main.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0641eb3
+
+### Remove chrome::RecordDialogCreation().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11093ec
+
+### [open tabs] Revise matching algorithm.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c62bd648
+
+### dark_mode: Remove dark mode from Settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21c6573
+
+### bluetooth: Show Android notification when site is connected or scanning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c38276a
+
+### Remove //crypto:platform
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c457a7
+
+### Suppress Lacros FRE for Kiosk, Public & Guest sessions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f189a3d
+
+### sharing hub: don't UaF during window close
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da4e27e
+
+### InteractionSequence::Builder::AddStep accept StepBuilder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77c4ffe
+
+### [Test] Enable FreUMADialogTest#testTurningOnAllowCrashUploadWhenCrashUploadByNotAllowedDefault
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b54f224
+
+### Reland "Switch document Picture in Picture (v2) to popup"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef7df05
+
+### Do not create PermissionRequestChip in fullscreen mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ee270c
+
+### [games] Don't display platforms if they are empty.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0958c2c
+
+### capture_selfie_cam: Focusable camera preview in video recording
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2cd118a
+
+### fix Android build to compile with gn flag enable_supervised_users=false
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e26b418
+
+### [Signin][Android] Use proper signout reason in web sign-in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b19e2a5
+
+### [PaymentRequest] Fix red header for payment handlers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a054cb94
+
+### [webrtc] Migrate system_media_permissions away from deprecated base::PostTask
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e93e465
+
+### Fix mouse movement in CRD across multiple monitors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45dd409
+
+### [launcher] Update assistant unittest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68949de1
+
+### [Jank] Disable IPH to assess performance impact
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdf9e06
+
+### Revert "dPWA: Enable File Handling by default"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7ef449
+
+### DeskModel::GetAllEntries to return vector<const ash::DeskTemplate*>
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a66733
+
+### Refresh NTP when reload button is clicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35e60f4
+
+### Media history: Update to cr-tab-box
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ed27b7
+
+### Add more information to console when picker does not display HID device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36caf29
+
+### [Lacros] Support cancel sync on settings sync setup UI closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c25eccb
+
+### [base] Remove remaining post_task.h includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b084634
+
+### [Topics] Add chrome://topics-internals page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21f1faa
+
+### ax_test: support platform dependent @WAIT-FOR instructions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c920521f
+
+### Re-enable previously disabled tests on ChromeOS MSAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/717169c
+
+### Add a flag for the generic GuestOS installer
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2078c17
+
+### Update strings for release notes chip in continue section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc4f015
+
+### [SavedTabGroup] Interactive button states implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3addfce
+
+### personalization: Add missing functionality for Google Photos Daily Refresh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bf6d32
+
+### full_restore: Do not pass restore info for Lacros windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34f427c
+
+### [Toolbar Tablet] Update touch target sizes for toolbar elements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b03152
+
+### [FedCM] Fix displaying names with accents in desktop FedCM prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a600078
+
+### webappcommand: add tests for FetchManifestAndInstallCommand and enable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd89986
+
+### ui/display: Retry logic to consider refresh rates
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66a97bc
+
+### Reland "[Read Later] Make "back" go back to Reading List"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6ae0b5
+
+### Add button to prewarm cache to chrome://apc-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c44c9fb
+
+### Add DomainCapabilitiesFetching as a flag to Desktop.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5444e5c
+
+### [Passwords] Run PasswordBubbleBrowserTest for sync'ing users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e77b5e0
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07a3859
+
+### assistant: Do not log to file in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/322d480
+
+### Split out help app provider for zero state search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e7f3d08
+
+### [FedCM] Close bubble when tab is detached from its TabStripModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de2be5a
+
+### [Lacros] Remove checks for profile separation policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d869c08
+
+### [send-tab-to-self] Remove unused plumbing for navigation_time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/757a57c
+
+### [Passwords] Run the GPM-branded password manager desktop pixel tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/434850e
+
+`);
+              </script>
+            </body>
+        </html>
