@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-03
+### Introduce WindowEventFilterLacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e9a641
+
+### [APC Desktop] Add trigger point from leak warning on login.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9f37dd0
+
+### Web Feed Awareness - add variations to the flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/564dee2
+
+### Port linux impls that were missing in crrev.com/c/3599900
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/277ef1c
+
+### Dictation: Remove commands and hints flags
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f1e9199
+
+### [DevTools] Disallow quick commands for DevTools windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7926342
+
+### Separate DesktopWindowTreeHost{Lacros, Linux}
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af4b723f
+
+### Provide AXSelectedRows implementation for Mac Accessibility API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a20bde
+
+### webauthn: remove old feature flags.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cf9d4c1
+
+### Rename display_util.h ->display_manager_util.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96ff454
+
+### [Oobe Test Api] Add OobeTestApi.skipToLoginForTesting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/418fb0c
+
+### Disable flaky WindowTreeHostWithThrottleTest.*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/164527e
+
+### multipaste: Do not default to plaintext when pasting via accelerator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0467fc
+
+### File handling: remove settings controls from Chrome OS apps page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/184b91cb
+
+### Revive chrome://flags/#enable-async-dns on Windows
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ca8ecfe
+
+### Re-enable HoldingSpaceUiDragAndDropBrowserTest.DragAndDropToPin.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5bf97a
+
+### webauthn: add experiments for improving caBLE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/110b62a
+
+### [FedCM] Launch Privacy Policy FedCM prompt link in a chrome custom tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87d89b0
+
+### [side search] Prepare Side Search on ChromeOS Ash for launch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a86d8018
+
+### Redirect and Remove HelpBubbleViews::OnWidgetClosing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a29ac88a
+
+### dpwas: Protocol Handling clean up - rename intent picker view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d386d1
+
+### InteractionSequence: transition on element shown in any context.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f1c01d
+
+### Profile interception: Fix crash when closing a modal twice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0276ee1
+
+### Disable flaky ExtensionsToolbarControlsUnitTest tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cfe3f1
+
+### [OOBE]: Make WC::SkipPostLoginScreenForTesting non static
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0df890
+
+### Reland "Mac: add enterprise policy to disable Screen Time integration"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/812af7a
+
+### Rename EnableLockScreenLayouts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c24621
+
+### ChromeOS Gaia: Remove GaiaCloseViewMessage feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0898a22
+
+### feedback: remove the obsolete Feedback extension app - part 1
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d51577
+
+### [Oobe WebUI] Remove functions from the CoreOobeView interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ac96cf
+
+### Reland "Add a Separate View for Saved Tab Groups in the bookmarks bar."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3aa470b
+
+### HDR: Do tone mapping in space with Rec2020 primaries
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74bbb561
+
+### Implement WindowEventFilterLinux::OnGestureEvent()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b60971
+
+### Disable MenuController{,UI}Test for Win11
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/306fc245
+
+### Fix tools/resources/svgo_presubmit.py violations in ui/webui/resources/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3e881f
+
+### webui-ts: Remove use_typescript_sources from feed mojo target
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7188e8
+
+### Disable more flaky tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc7c10ad
+
+### crOS: Change fake account emails on tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f74309e
+
+### lacros: Use a consistent mechanism for syncing lacros app id in shelf.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/102be15
+
+### Extend all chrome://apc-internals content to Desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b5830d
+
+### [X11] Ignore errors when selecting for shape input
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0cd4a8e
+
+### Allow upper-case file extensions in SelectFileDialogLinuxPortal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75be7b3
+
+### Adds Device Saved feature to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/37338b7
+
+### [Lacros] Improve ProfilePicker window re-use
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e051fda0
+
+### [Launcher Sort] Commit the temporary sort order when closing the toast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d6f6eb
+
+### [Signin] Do not require full AccountInfo in EnableSyncFrom.*AccountPromo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14de645
+
+### Expose additional feature in chrome://apc-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46d5987
+
+### dark_mode: Remove dark mode icon from settings search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f997e8a
+
+### [Provisioning] Pass deeplink through from proto.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15d46546
+
+### [content] No longer hand-off whole MainFunctionParams to BrowserMainParts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c1897a
+
+### [Signin] Add an extra layer on top of DICE and Lacros sign-in flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9004c4
+
+### Windows HDR: Plumb DXGIInfo instead of boolean
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3ae6ff
+
+### dpwas: Update protocol check to validate against specific webapp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01980c0
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9484620
+
+### [FedCM] Crop user avatars in desktop FedCM prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47470bd
+
+### ozone/drm: Add a page flipping integration test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c72179f
+
+### Reland "dPWA: Enable File Handling by default"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9650121
+
+### [Oobe WebUI] Encapsulate keyboard functions observer inside core handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e64804b
+
+### Revert "Re-enable ArcAppPinCrossPlatformWorkflow test"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29fa661
+
+### [FedCM] Dismiss FedCM prompt when the Android soft keyboard is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e814e7
+
+`);
+              </script>
+            </body>
+        </html>
