@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-04
+### [journeys] Register entry and create callback for side panel journeys
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3131d726
+
+### Remove base::in_place and base::in_place_type_t
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc6545f
+
+### [Files] Disable contextmenu globally
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6049ef6
+
+### [Ozone/Wayland]Remove the extra subsurface->Show()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac880ac
+
+### Hide New Incognito Window App Menu item for Guest Mode only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2703aae
+
+### Remove feature flag/param for v2 holding space animations.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4972fc130
+
+### [journeys] Do not show omnibox action on URLs from noisy visits (behind flag)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d2f399
+
+### WebUI tab strip: enable WebUITabStrip feature flag by default for Chrome OS ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fb57599
+
+### Add profiles list and attributes to chrome://profile-internals/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ff7a7a
+
+### [Cast Convergence] Remove is_chromecast from //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/604ce39
+
+### [Autofill] Remove debugging constructor of BrowserAutofillManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0dab437
+
+### ozone/drm: Support upstream AFBC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4fefc4
+
+### Defer companion window popups until after fullscreen transition completes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ed6b8c
+
+### Fix various tests with productivity launcher enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de1f523
+
+### [Metadata] Update Suggestion.h structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b4afe6
+
+### Explicitly #include <string> in integration_test_helpers.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84a452f6
+
+### Add feature flag for launcher "hide continue suggestions" context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/882ce8b4
+
+### media: Update Protected Content IDs setting UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54e71eb
+
+### [FedCM] Add desktop settings for FedCM 1/2
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c3eee05
+
+### Load model version and store in model config
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0350e67
+
+### Replace role map with switch statement for AXPlatformNodeCocoa
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5e175d
+
+### CustomizeThemes: Import HTML templates at runtime, stop inlining at buildtime.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6992504
+
+### Support Lacros Guest mode during browser creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d450a99
+
+### AboutThisSite: Add metric for language support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57b1601
+
+### Quick Answers: Add Dogfood feedback button for internal users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e031583b
+
+### Use DXGI APIs to pick high performance vs low power GPUs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5938b488
+
+### Use DIP in Get{Minimum|Maximium}SizeForWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b65bf546
+
+### Android: Remove unused base_java deps
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4748384
+
+### [5/x]Clean up offline code - Remove Offline Enrollment Config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ffc14bc
+
+### Create DesktopScreenOzone in desktop_screen_ozone.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1985523
+
+### Don't override the base throbber color from theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/851ca36
+
+### document-transition: Remove flag to slow down animations.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b9796b5
+
+### [color pipeline] Clean up thumbnail tab strip colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9bc3f2
+
+### MostVisited: Import HTML templates at runtime, stop inlining at buildtime.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f88896
+
+### Cert Manager: Import HTML templates at runtime, stop inlining at buildtime.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da3a826
+
+### [privacy sandbox settings] Show notice bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/682d04c
+
+### //ui: Include chromeos_buildflags
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7582a2e1
+
+### CertificateManager: Refactor BUILD.gn so that each file is listed once.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4814098
+
+### Add the Move Method implementation to SavedTabGroups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edfbad55
+
+### Add View Builder support to TableView.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bde2023
+
+### Refactor LayoutManager to use the new back press API -- Phase 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e759ba
+
+### flags: remove sharing-send-via-sync and sharing-prefer-vapid
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e57b6b38
+
+### [Lacros] Implement unrecoverable Sync error action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7289636
+
+### [7/x]Clean up offline code - Remove demo mode offline UI component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d06d21
+
+### [FedCM] Fix shape of button and apply colors correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d95b365
+
+### [Autofill Assistant] Add missing dependencies to the headless client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1899b8
+
+### Add OWNERS and DIR_METADATA Component for SavedTabGroups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11b26b5
+
+### [4/x]Clean up offline code - Remove demo mode offline enrollment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4abef42b
+
+### Fix use after free in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8b9e49
+
+### Adding a new feature flag for the save card ui experiment.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7830cc0
+
+### [CrOSSharingHub] Add Lacros support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e375ee
+
+### Speculative Crash Fix: Reset RequestSender sooner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e305fa7
+
+### Show the same modifier key on lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31d1b50
+
+### Allow smaller callback signatures for step start and end.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a179b97
+
+### Remove IsMachineExternallyManaged() in favor of more accurate methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d72dfb
+
+### AppManagement: Import HTML templates at runtime, stop inlining at buildtime.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c752ae
+
+### personalization: Expose wallpaper fast refresh flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/292cfc4
+
+### ax_mac: check ax position text length before substringing the text
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6b8249
+
+### Better tracking and reporting of InteractionSequence failures
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c65e025a
+
+### PageInfo: Record all actions as UserActions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c6de24
+
+### [Android] Migrate canOfferExtendedSyncPromos to the new API for sync consent promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73c4d5f
+
+### Use DP in WmDropHandler
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8049f85
+
+### Revert "[journeys] Implement a simple History.Clusters.WebUISessionDuration"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf3877f
+
+### OOBE - Fix cancel message on update dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5aad990
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9013764
+
+### [Passwords] Don't elide obscured long passwords in saved passwords bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8c7e614
+
+### Privacy Guide: only show when PS is available in Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aec91c29
+
+### [Ozone/Wayland]Change SetViewportSource to SetBufferCrop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9881a1
+
+### [Projector] Add synced pref ash.projector.skip_transcript_dialog_shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a857a5
+
+### Fix 'grab' cursor on Ubuntu 20.04
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/619eb60b
+
+### Send the info card acknowledgement tracking capability in feed request
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e41ddcb
+
+### chrome/browser/resources/media: Fully autogenerate grd
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b03e7f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c83c6532
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/sync_file_system_internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f75e8b
+
+### Recover thomasanderson's OWNERship in //ui/v/w/desktop_aura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d12911
+
+### [FRE] Remove privacy link from the signin FRE screen for child accounts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22ebca8
+
+### [Passwords] Introduce separate dialog trait implementations based on LeakDialogType.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dea4465
+
+### [Provisioning] Make sure GameResult only accepts game Results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/166c742
+
+### [QT] Introduce ui/views/linux_ui/linux_ui_factory.*
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80d3ad4
+
+### rgbkbd: Add experimental-rgb-keyboard-patterns flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/26110cc9
+
+### [Settings code health] settings_ui.cc: Fix variable name code style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0120a31
+
+`);
+              </script>
+            </body>
+        </html>
