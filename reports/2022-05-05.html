@@ -1,0 +1,236 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-05
+### BrowserAppShelfController: Add CHECK
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c652ad
+
+### Add amandadeacon@ to launcher OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33920d38
+
+### Cleaning up after landing feed mojo change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7045d5f
+
+### DLP: Apply restrictions on clipboard data types size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c4525a0
+
+### wallpaper: allow selecting device default image
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0f8e859
+
+### crOS: Update SecureConnect API Oauth2 scope
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/196b060
+
+### [headless] Win: fix native headless screenshooting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74d586b
+
+### [Signin] Unify more sign-in flows between DICE and Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be1ccbb
+
+### [ChromeOS login] Remove GaiaScreenHandler::gaia_silent* fields
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7306b16
+
+### Quick Answers: Fix settings search tags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c314c4
+
+### Reland "[CloudReady][OOBE]: Show new terms to device users after update"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4586c567
+
+### CrTabBox: Rename slots
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11198cd
+
+### Update tests to work with TerminalSSH enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6af5b97
+
+### Fix searchDownloadsClearSearchKeyDown tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed2a4dae
+
+### personalization: Add Google Photos token fetcher to WallpaperControllerClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17c8c66
+
+### [ntp] Check if sync is enabled before showing Drive module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/139681b
+
+### lacros: ozone/wayland: pass overlay background information
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a21df4c
+
+### [bookmarks] Plumb through bookmark_id for sidepanel webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b0302a
+
+### Add gfx::ColorSpace::TransferID::SCRGB_LINEAR_80_NITS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/987fb53
+
+### WebUI: Reduce min-height cr-nav-menu-item entries from 48px to 40px.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d93dcbf6
+
+### Quick answers: Handle settings button click in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc459cf
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/chromeos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbcab2cb
+
+### [Signin] Update recent tabs sync promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80289a4
+
+### Migrate TakeDictDeprecated/GetListDeprecated in PeopleHandler test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb5b5c5
+
+### personalization: search results in os-settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4719ae
+
+### [Desktop UI] Notify the delegate when user closes FedCM bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/766cabc
+
+### Update ScreenAI service to include Main Content Extraction function.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eddadb6
+
+### [DownloadBubble] Properly reset subpage elements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cffd84
+
+### [send-tab-to-self/desktop] Expose enum for 2 promo states
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0d3db4d
+
+### Support double-tap in WindowEventFilter{Linux|Lacros}::OnGestureEvent()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/242ed0b
+
+### [OOBE] Migrate app launch accelerators from js to the C++ side
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23619b6
+
+### [Read Anything] When user changes tabs, Read Anything UI updates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e2b3d4
+
+### [lacros] Enabled the explicit grab for menus.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f0dbe9
+
+### Make 'original opener' functions a bit clearer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a48ae4
+
+### [Lacros] Warn when deleting managed accounts only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bcc776
+
+### [Launcher] Add default category rankings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fc18b1
+
+### [TTS] Remove obsolete Flags, update others
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/32fd248
+
+### webui: Add ortuno to owners with a backend-only note
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd5069f5
+
+### Unified Side Panel: prevent entries with duplicate ids in the same registry.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55d3eb6
+
+### Fix tab hover card overlapping animation edge case
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43af289
+
+### Maintain NSWindow activation state when ordering to the front.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4b55be2
+
+### Remember if window is on current virtual desktop.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74f625c
+
+### [SharedHighlighting] Add feature flag for blocklist work
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c4d7361
+
+### [Extensions refactor] Clean ToolbarActionsBarBubbleViewsTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b313b34
+
+### Fix GetAllProfilesAttributesSortedByLocalProfileName typo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02715f3
+
+### [Oobe WebUI] Update AppDownloadingScreen(Handler)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d27084d
+
+### [Files app] Define sendFeedback fileManagerPrivate function
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29aaf68
+
+### [sync] Add support for single-button design promos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef6ff17
+
+### [Passwords] Update password generation offer title for GPM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df585fb
+
+### ui/display: Fix Refresh Rate and Resolutiuon UMAs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8b8c4ed
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cbc1d7
+
+### [launcher] Fix file search race condition.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9c50d7
+
+### [Android][UPM] Add a custom button bar to the modal dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/674bf1c1
+
+### Revert "[headless] Win: fix native headless screenshooting"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e79c121
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/print_preview.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7692f14
+
+`);
+              </script>
+            </body>
+        </html>
