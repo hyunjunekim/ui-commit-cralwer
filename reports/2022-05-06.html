@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-06
+### Remove SharedHighlightingV2 flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/69519b5
+
+### gfx: Move CreateDisplayColorSpaces into ui/display/util/display_util.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f500de3
+
+### Remove input methods enablement from SetAllowedInputMethods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/257f9d4
+
+### [Files] Rename LocationLine to BreadcrumbController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d20334
+
+### Identity internals: Remove use of deprecated cr/ui.m.js
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d094f1e
+
+### Reverse Notifications Order
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32d3d91
+
+### [PCCT] Add customization for start icon app menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cfd421
+
+### Add UMA for enterprise extension request dialog action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d05fde3
+
+### Fix "New" badge labels being too low.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79a40a6
+
+### ozone/wayland: do not issue glFlush if image flush is available.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05e2751
+
+### Disable PopupInWindow_IsWindowTrue on CrOS a well.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc555c9
+
+### Each GLSurfaceEGL should be passed a pointer to a GLDisplayEGL.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35aed6c
+
+### Revert "[FilesRecentFilter] Documents filter for ARC"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a148db
+
+### Update Search Result Action buttons to be Icon Buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f359e2d
+
+### Migrate DemoMode SWA to use WebUIConfig for registration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5207bfe
+
+### [FilesRecentFilter] Add integration test for ARC source
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e5524b
+
+### FullscreenController: Remove remnants
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d70a97
+
+### Remove Cookie Theft Experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36f80e6
+
+### ozone/wayland: check fences retired
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d02dcd3
+
+### [OOBE] Handle reset screen accelerator at the browser level
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdf0a02f
+
+### [SharedHighlighting] Add seperate experimental blocklist
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ac9a9c0
+
+### wayland: fix a typo and improve comment in WaylandWindow::SetBoundsDip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ca92cd
+
+### Add separate icon for "hide continue suggestions" context menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50308c6
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/008a85e
+
+### ui: Fix nits for performance regression
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5e460471
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/settings/chromeos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e681665
+
+### [games] Put game icons inside a white circle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a9ab7c3
+
+### [FilesRecentFilter] Documents filter for ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26edf35
+
+### oobe: Update images and icons for kiosk flow, fix a11y issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23e8c78
+
+### [dPWA] Update internals page to have better display format
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a325c6cb
+
+### Check if \`navigation_or_document_\` is null in OnAuthRequired()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fee0cd
+
+### Change metrics settings string to include crash reports for all users.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0025900
+
+### Shimless: Prevent install of Shimless RMA app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b31b694
+
+### [OOBE] Remove WizardController::login_screen_started_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6a4cca6
+
+### Revert "[FilesRecentFilter] Add integration test for ARC source"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f9d0672
+
+### capture_mode: Implement a waiter for video capture countdown end
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4abf175
+
+### dlp: Set system modal from Lacros (through aura-shell).
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b981e91
+
+### [Cast2Class] Add checks for media_route_starter_ into pageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b94d210
+
+### Identity Internals: Migrate to TypeScript and autogenerate grd file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/843005bd
+
+### [PCCT] Polish app menu icon row animation for customizations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/277b0af
+
+### Update splash screen to new spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e42d4e
+
+### [New Deal] Limit showing toggle to EU
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76a535a
+
+### Adjust FedCM prompt padding around disclosure to match mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dd3b35
+
+### [games] Don't display platform names in details.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bf1154
+
+### [FedCM] Resize the IDP logo to the correct size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e91468
+
+### Sync Filesystem Internals: Migrate to cr-tab-box
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57b3643
+
+### Avoid launching a process for each image decode on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49ba4d4
+
+### saved_desks: Renaming DesksTemplatesDialog* to SavedDeskDialog*.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed07bef
+
+### webappcommand: add use_fallback to FetchManifestAndInstallCommand
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01c89ae
+
+### Fix AssistantBrowserTests for ProductivityLauncher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d0755e
+
+### Files app: Add more startup logs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c6a2e6
+
+### cros: Enable VLOG(1) for ozone/drm
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/346b9bf
+
+### Save and recall: Update local storage for saved desk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bc5a7e
+
+### [Note] Implement Invalidate in UserNoteUICoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08121e6
+
+### Implement Saved Tab Group Bar into BBV and remove old implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/daec2bf
+
+### saved_desks: Rename desks_templates_{animations,util} to saved_desk_{.}.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3203dbc
+
+### Fix IS_WIN flag check for disabling MenuControllerTest tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3c31d7d
+
+### Disable DiceWebSigninInterceptionBubbleSyncPromoPixelTest.InvokeUi_default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bafa946
+
+### cros: Enable VLOG(1) for OOBE/login related files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c1fa5a
+
+### Keep RootView saved handlers when views are reparented.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f2ced1
+
+### WebUI: Import HTML templates at runtime for TS cr-elements.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c5fc103
+
+### [MSC] Refactoring to make one stream with one audio + video device explicit.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/574cecf
+
+### webappcommand: migrate InstallWebAppFromManifestWithFallback to command
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a1eb0cf
+
+### [Read Anything] When user navigates to a new page, UI updates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4639cb4
+
+### Quick answers: Update frame buttons spacing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26782a0
+
+### Restrict BackGestureContextualNudgeDelegate to the primary frame tree
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7837769
+
+`);
+              </script>
+            </body>
+        </html>
