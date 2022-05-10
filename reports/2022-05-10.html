@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-10
+### [privacy sandbox settings] Create bubble notice view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c39d038
+
+### [Launcher Sort] Record sort discovery duration after session activation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fe3a54e
+
+### New Autofill suggestion ranking formula + VCN boost
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d46a369
+
+### [Desktop Settings] Display FedCM content setting as blocked in embargo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08d300e
+
+### [Ozone/Wayland]Wrap fence fd in ScopedFD in WaylandSurface::FencedRelease
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd0abb6
+
+### [Resource file sharing] Move chrome://flags entry for resource sharing to Ash-chrome
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/efef425
+
+### Wayland: use keyboard-shortcut-inhibit if available.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac0160a
+
+### HDR: Add ToneMappingV2 feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e3dac06
+
+### BubbleFrameView: Add "ignored" state to unused Close, Minimize buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef887c4
+
+### mac: adds experiment to use 60hz on 120hz devices
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8073e2d0
+
+### [Cloud gaming] Separated out non-launcher feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ad5b2e
+
+### ColorSpace: Replace IsPQOrHLG with more specific functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/350f21c
+
+### [journeys] Move related searches coalescing from WebUI to cross-platform
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc3904e
+
+### Fix uninstantiated Separator view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba9f711
+
+### [Offers] Feature flag for Offer Notification Infobar migration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8031d64
+
+### Move //chromeos/{=>ash/components}/dbus/cicerone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00ebac8
+
+### [sync] Add support for title design promos
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7b3c022
+
+### Connect ApcClient to PasswordsClientUiDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dbe052
+
+### [Files] Fix TestEntryInfo related types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2b322b
+
+### HDR: Add HLG OOTF to gfx::ColorTransform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c162c9
+
+### Replace usage of strcpy() with snprintf() in linux_ui.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c982ba38
+
+### [Saved Tab Group] Fix bug where saved tab group buttons no longer opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff044a6
+
+### files app: Propagate archive cancellation errors from cros-disks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45cc022
+
+### [answers] Use accessibility label for weather answers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cac4c4
+
+### Record accessibility.ModeFlag properly on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d00e6bf
+
+### [Signin] Add feature flag for Tangible Sync
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9746958
+
+### Remove ui/views/linux_ui/window_button_order_provider.cc
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b155de4
+
+### [Code Health] base::Value cleanup after PrefService refactor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50b9e33
+
+### Update screenshot notification to specs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24bf8da7
+
+### Clean up skia_utils_mac
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4db15fc
+
+### Lacros: Send ack_key on unhandled KeyEvent.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3125229
+
+### [FedCM] Improve desktop single account chooser to its final state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c470d55
+
+### ime: fix GetSurroundingTextInfo crashes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d6edba4
+
+### [Topics] topics-internals: support querying the topics for hosts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b633ef
+
+### Revert "Fix UaF in media router dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92457133
+
+### [privacy sandbox settings] Move informing HaTS to the service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82bd891
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a64fcb4
+
+### [fuchsia] Move \`os: FUCHSIA\` into COMMON_METADATA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41450fca
+
+### [Resource file sharing] Pass ash resource file sharing flag to lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a9177d
+
+### Migrate //chromeos/ash/dbus/concierge to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b868f7
+
+### Disable failing tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b67e952
+
+### [Resource cleanup][lacros] Use Chrome OS fonts on app locale in Lacros when translated
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02e229b
+
+### crostini: Fix crash construction ContainerId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d69c0f
+
+### Privacy Sandbox Settings: Defensively disallow Javascript in handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a44290
+
+### [privacy sandbox settings] Handle different closing reasons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbdf2e4
+
+### HighlightBorder: Fix issues with TrayBubbleView layers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/facb31a
+
+### Fix UaF in media router dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bb2523
+
+### Reland "[FilesRecentFilter] Add integration test for ARC source"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c99a5e7
+
+### [Signin][Android] Clean up sync promo ImpressionsTilXButton metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd73a97
+
+### [OOBE WebUI] Update Demo Setup screen and handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a47e3b9
+
+### [OOBE WebUI] Update Demo Preferences screen and handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69aca8b8
+
+### Fix comment in FedCmAccountSelectionView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdd73eb
+
+### [NTP][RecipesV1.1] remove 3 day option of recipes v1.1 experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0a94135
+
+### HDR/Windows: Do not specify SDR white level in gfx::ColorSpace
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f103a9c
+
+### Add ScreenAIDebugMode feature to enable logging.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f65298b
+
+### Cleanup ~Browser() weakptr invalidation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0838c11
+
+### Remove jkrcal@chromium.org from chrome/browser/ui/views/profiles/OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1940b51
+
+### [journeys] Move history clusters components to cr_components
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18a7d7d
+
+### Reland "[FilesRecentFilter] Documents filter for ARC"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b78ddd0d
+
+### personalization: conditionally create search_handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdb8144
+
+### Add "ignored" accessible state to FocusRing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c65a888
+
+### [FedCM] Change the style of email on the HoverButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8b85d8
+
+### inputs: Fix DIR_METADATA directories for code owned by Essential Inputs.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b417d720
+
+### multipaste: Add metric for plaintext pastes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0c3f02c
+
+### [TabletGTS] A11y focus omnibox upon entering NTP on tablet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ead7c78
+
+`);
+              </script>
+            </body>
+        </html>
