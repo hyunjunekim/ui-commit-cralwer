@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-11
+### Update device trust service flow to use new signals dict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1773a4
+
+### WebUI: Enforce function naming style with ESLint checks for TS files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b17f3beb
+
+### Intents: Remove special focus handling from IntentPickerBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d100ef7
+
+### [Phone Hub] Based on final strings to update onboarding UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0682253
+
+### [Crow] Add IPH string.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/beac50a
+
+### App Service: Do not use a self-owned receiver on AppServiceInternals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8524364
+
+### Save And Recall: Create desk model wrapper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e5c472
+
+### Revert "[signin] Update strings for signin intercept bubble"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a36e0d09
+
+### Port Ash tablet-mode rendering to Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/603c721
+
+### WebUI: Import HTML templates at runtime for TS cr_components/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1bd1794
+
+### [PhoneHub] Feature flags should properly affect Apps and CameraRoll items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac33b8b
+
+### ax_mac: no direct NSAccessibilityImageRole check
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00a07ade
+
+### Remove bluetooth-advertisement-monitoring flag and associated cleanup
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/84ef1a3
+
+### Update to non-deprecated constants
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8be8111
+
+### ax_test: dump AXSubrole by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f58387ff
+
+### Prevent TaskManagerView from hiding all columns
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8292215
+
+### [mparch] Skip OnGaiaReauthPageNavigated for non primary pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e21b46a
+
+### MessageBoxView: Prune unused checkbox from the accessibility tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdee248
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1e00a7
+
+### Linux: Do not generate VKEY_PROCESSKEY keydown twice on commit for Japanese.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a545e37
+
+### [omnibox] [rich-autocompletion] Prefix match shortcut texts.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bf7c60f
+
+### [privacy sandbox settings] Add image for the new notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17b9393
+
+### Componentize user education.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/764e635
+
+### Revert "[journeys] Move related searches coalescing from WebUI to cross-platform"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/618ed21
+
+### [send-tab-to-self/desktop] Add desktop promos UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ca5c34
+
+### Revert "Add ToValueDict() and ToValueList() functions to PolicyConversions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c69cb1
+
+### [Phone Hub] Update settings ui based on phone's enterprise policy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e9e6df
+
+### [Launcher health] Change floats to doubles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb19d97
+
+### [privacy sandbox settings] Add NoticeLearnMore action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02896f1
+
+### [Cast2Class] Add dialog load time metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/183b60d
+
+### [journeys] Import iron list js file to clusters
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bb732d2
+
+### [Jank] Separate isVoiceSearchEnabled caching to a different flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f56e3c
+
+### App Service: Disable chrome://app-service-internals in Incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d06fb9
+
+### crOS: Update strings for crOS sign-in restriction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3677e63
+
+### Fixes for C++20 support.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5380f8a7
+
+### Intents: Move ArcIntentHelper filtering to ArcExternalProtocolDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/158f245
+
+### crOS: Add URL switch for SecondaryGoogleUsagePolicy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6892fc
+
+### Android: Remove unnecessary androidx annotations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1098f6
+
+### [PartialTranslateBubbleView] Use OnWidgetDestroying instead of OnWidgetClosing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ef4684
+
+### [#eche] Removing EcheCustomWidget flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/602b52af
+
+### [Refactor] Don't recreate the header view in FedCM bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0cd5b3
+
+### [PwdSettings] Use the settings service to check prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78b28f4
+
+### [Launcher health] Encapsulate burn-in logic in new BurnInController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6164b5
+
+### Parameterize DesktopWindowTreeHostPlatformImplTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53ee003
+
+### Adds a command line flag for customizing touch slop distance
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec8aaed
+
+### Reland "[headless] Win: fix native headless screenshooting"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22849263
+
+### [games] Use an unretained pointer for the subscription.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebf4f5f
+
+### Privacy Sandbox Settings: Add bottom sheet prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26ee1f6
+
+### Remove duplicate method.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fdea0d
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/offline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/398dde0
+
+### [Android][UPM] Allow modal dialogs to use full screen height
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e5aa02
+
+### Projector: Close and disable app if admin disables policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90263e9
+
+### Remove DeprecatedDictionaryValue usage from print.mojom.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1808895
+
+### ozone: Add PEDPro to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b0806c4
+
+### [side search] Track whether the icon label is visible when toggled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6447a6
+
+### [journeys] More visual polish changes as requested from UX
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80d1bbe
+
+### Add keepAlives to chrome://profile-internals debug page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d70c15a
+
+### [games] Pipe icon masking through from proto.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e215af1
+
+### WebUI: Use css_to_wrapper() for shared cr_elements/ Polymer styles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acd9769
+
+### [FedCM] Add desktop settings for FedCM 2/2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c520ad88
+
+### Add features::IsScreenAIServiceNeeded to cover ScreenAI and Screen2x.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f57d8c09
+
+### [SavedTabGroup] Add circular buttons when no group title.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/199ac7f
+
+### Rename method names in WindowTreeHost to be more accurate.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e3695ce
+
+### [Launcher] Add default suggested apps ranking.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5421b5
+
+### OOBE: Skip ARC ToS pre-loading for managed devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/effc48c
+
+### [cros gaia] Remove onBeforeLoad call which slows down Gaia load
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a44fa80
+
+### Add rrsilva@ to some owners files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f60a0a1
+
+### [signin] Update strings for signin intercept bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/379e3ff
+
+### sharing: show high-quality preview images in share hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dae8f5c
+
+### Reland "Clean up legacy non-ThemeRefactorAndroid code now that the feature has launched."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/011e562
+
+### [Enrollment] Move EnrollmentStatus to enrollment directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7d38115
+
+### ax_dump_tree: support API specific directives in filters file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c50e0b
+
+### [Resource file sharing] Clear or move shared resource file on lacros launch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4363d39
+
+### [Lacros] Prepare for fixing Sync error from profile menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff568f33
+
+### Various code cleanups for obsolete macOSes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c45f85f
+
+### [mac occlusion checker] Fix occlusion updates to always check view hidden
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1755e15
+
+### cros_healthd: Change public to sources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6d2c93
+
+### [FedCM] Fix HoverButton's email contrast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a8d654
+
+### [UIA] Don't expose the TableProvider for layout tables
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf19c189
+
+### Add ToValueDict() and ToValueList() functions to PolicyConversions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd11c29
+
+### Fixes for C++20 support.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eef552b
+
+### Remove network::features::kDisableKeepaliveFetch
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dd85a03
+
+### Show the link data checkbox in all interception dialogs if no policy is set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1617550
+
+### ScrollView: Prune disabled ScrollBar views from accessibility tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbb5d7f5
+
+### [linux/wayland] Added some DCHECKs in the output handling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5aa732f
+
+`);
+              </script>
+            </body>
+        </html>
