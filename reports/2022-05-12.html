@@ -1,0 +1,332 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-12
+### Move PartialTranslateBubbleModel under pure virtual base class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd12cfa2c
+
+### [FedCM] Announce bubble title in VoiceOver when rebuilding bubbles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f08d28f
+
+### Revert "[dpwa] Adds the DeletePlatformShortcut action and the manual browser test."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7554988
+
+### [ScheduledRebootDialog] Favor OnWidgetDestroying since OnWidgetClosing is slated for removal.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfe4d7b
+
+### Use web_contents() call instead of WebContentsDestroyed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f10f8a2
+
+### [OOBE][UpdateScreen]: Remove OnViewDestroyed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f0359c
+
+### [privacy sandbox settings] Rename DialogType to PromptType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9d1b4eb
+
+### WebUI: Delete unused leftovers of the Feedback Chrome App.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08f5659
+
+### [privacy sandbox settings] Don't force open NTP for new notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8330f6e
+
+### [sheriff] Disable failing test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edf1a17
+
+### [SharingHub] Add share icon to omnibox in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7470b43
+
+### [Files app] Call cancelMounting on cancel button press
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa52254
+
+### Implement a way for users to provide justification to bypass download warnings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c289fc
+
+### Explicitly disable metrics reporting if user closes first run dialog with X button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/648963e
+
+### ozone: use a set for the keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71cd112
+
+### Fix setting AXSelectedTextRange attribute on atomic text fields.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0118ad2
+
+### Add DialogModel-to-MenuModel adapter
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcd59c4
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/conflicts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac8a529
+
+### HDR: Ensure an HLG signal of 0.75 matches a PQ signal of 0.581
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ec54d5
+
+### [UPM] Add timeout for the password manager GMS Core UI loading dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed54af6
+
+### personalization: add helper method to create PersonalizationAppUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c425da9
+
+### Unified side panel: make sure observed contextual registry is updated correctly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e950ba
+
+### [Signin][Android] Clean up sync promo ImpressionsTilSigninButton metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a73421
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/126d4c9
+
+### Revert "Add border to Example Menu Button to more clearly indicate that it is a"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a18422
+
+### Add border to Example Menu Button to more clearly indicate that it is a button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e6344c
+
+### Revert "[DownloadBubble] Add browsertest for partial/full/subpage views"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5228055
+
+### saved_desks: Renaming desks_templates test/metrics files to saved desks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/532f494
+
+### Only set one side of highlight border when no rounded corner on shelf
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6904b6
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/views/profiles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd09be9
+
+### [Cast2Class] Add managed device footnote
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39b635c
+
+### Use RegisterMessageCallback in c/b/u/w/net_internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05a75f7
+
+### projector: Add pending screencasts changes interval metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1fb163
+
+### ash: CalendarModel debug mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/64dbbb5
+
+### [DownloadBubble] Add browsertest for partial/full/subpage views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b689ab3
+
+### Ensure removing FedCmAccountSelectionView from observers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69e4f50
+
+### Do not use a self-owned receiver on chrome://internals/user-education
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f009a6a
+
+### Expose kEnableMultiMonitorsInCrd through chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9b816f0
+
+### Migrate callers to new and safer API to verify Gaia origin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/171071a
+
+### dPWA: Introduce UserUninstalledPreinstalledWebAppPrefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46ebd277
+
+### Side Search: fix build flag typo
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/48cf225e
+
+### Remove obsolete use of ash:features::AreDesksTemplatesEnabled()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de461fff
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/ash/keyboard.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44326f3
+
+### HDR: Switch HDR tone mapping to V2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f49b1c9
+
+### Add InitialNavigationEntry to fieldtrial_testing_config.json
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebfa7f5
+
+### WebUI: Move shared css/common.css to the last place it is used.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9ab5de
+
+### ozone: Add all SteelSeries mice to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b474e3b
+
+### [FedCM] Fix RTL alignment of the disclosure text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/724e0a5
+
+### [Files App] Fix error handling in volume_manager_impl.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/147b3c9
+
+### Add initial separator support to DialogModel
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82cc966
+
+### [privacy sandbox settings] Add handling NoticeLearnMore action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92c9c0d
+
+### [Lacros] Add callback to reauth operations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54d89c8
+
+### Refocus on previously selected tab for GTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0e0946
+
+### Revert "[privacy sandbox settings] Rename DialogType to PromptType"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5ce926
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/views/bookmarks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ce85fc
+
+### Fix IconWithBadgeImageSource UAF after NativeTheme update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84200754
+
+### [FedCM] Fix alignment of FedCM bubble header title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62adcf0
+
+### [side search] Record how long it takes users to open the side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4765896
+
+### ozone/wayland: remove @ + id from the crash key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e59f9b2
+
+### Remove usage of std::iterator in ax_event_generator.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c40a8c4
+
+### [FedCM] Focus continue button in FedCM bubble single account view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34b94f2a
+
+### [dpwa] Adds the DeletePlatformShortcut action and the manual browser test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff4471f
+
+### webappcommand: Add InstallFromInfoCommand
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1cb31f
+
+### [FedCM] Degrade gracefully when client metadata is not provided
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6642c62
+
+### Hide download toolbar button when download list is empty.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fba0625
+
+### system-web-apps: update web app launch code to handle aborted SWA launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0771ec0
+
+### [WebUI] MetricsReporter test support enhancement
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f985a6b
+
+### Migrate //chromeos/ash/dbus/cicerone to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af3e215
+
+### [HPS] add new parameters options for HPS.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/78c7e88
+
+### [FedCM] Enable FedCM desktop settings by default
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ed8d0c7
+
+### [Android Tab Restore] Update Recent Tabs Page UX for bulk restore
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f38a926a
+
+### Revert "[Ozone/Wayland]Change SetViewportSource to SetBufferCrop"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60bb9b9
+
+### send-tab-to-self/desktop: Use WC::GetLastCommittedURL()/WC::GetTitle()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/706aaf7
+
+### FSA: Update outdated comment in dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d0032c
+
+### Revert "[IncDW] Show Warning when downloading file in Incognito"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5b0e0af1
+
+### [APC Desktop] Implement onboarding controller and view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1feda06
+
+### Remove flags to restrict Crostini on experimental kernels
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/783304f
+
+### Privacy Guide: fix completion card WAA link (show to signed-in users)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66f01bd
+
+### [ntp][fre] Log implicit opt in when FRE is visible prior to being hidden
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f659c157
+
+`);
+              </script>
+            </body>
+        </html>
