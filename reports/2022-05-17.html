@@ -1,0 +1,288 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-17
+### [webauthn] Remove Conditional UI bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58a021d
+
+### Fix security owners check to be compatible with presubmit --files/--all
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d882444
+
+### [FedCM] Fix NullPointerException when there is no brand icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b59150e
+
+### Signin UIs: Import Polymer templates at runtime.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff0c333
+
+### [Extensions refactor] Create BlockedActionDialogView using DialogModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c85501b7
+
+### [flatland] Remove to-be-deprecated pixel_scale field use
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d28b3f2
+
+### Revert "[OSCrypt] Remove free function interface"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3398a81
+
+### Update OWNERS files related to APC on Desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5dcbfb
+
+### [RQ] Adds feature, params, and about:flags entry for repeatable queries
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/359d072
+
+### Update OWNERS file for chrome://apc-internals files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9add62c
+
+### [Accessibility] Fix toolbar focus order on NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c1764d
+
+### QT font configuration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/990f1d0
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f1d5ca
+
+### Disable tab capture blue border on lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81aefa8
+
+### Make Lacros respect the \`EnableSyncConsent\` policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bf46c1
+
+### Rename PlatformWindow::Get|SetBounds to BoundsInPixels
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bde046d9
+
+### [Windows] Fix flaky timeouts in TryChromeDialog browser tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4b6d7e0
+
+### [OSCrypt] Remove free function interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22701ff
+
+### [Note] Add tests for UserNoteUICoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c14e2299
+
+### IWYU: add memory for std::unique_ptr in gl::GLDisplayManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9be97fd2
+
+### Modify event_device_info ev dev bits to use std::array
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70c3f60
+
+### Re-enable the passthrough command decoder on MacOS 10.15
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7c811a
+
+### swa: Move web_app::SystemAppType to ash::SystemWebAppType.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e0e92c
+
+### human_presence_internals: Display firmware manifest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/659ee25
+
+### [Extensions] Remove enterprise web store component app remnants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b83106c
+
+### [clang-tidy/sync] Run google-readability-braces-around-statements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a6b10a
+
+### Extract: Add test for insufficient disk space
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3aa1d5
+
+### ui/display: Quick Style Cleanup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7ca9fc
+
+### [fuchsia] Remove BrowserTest.FaviconChange
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30da44d
+
+### [Lacros] Enable In-Product-Help in ProfileMenuViewController tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10c61c1
+
+### WebUI tab strip: gracefully handle tab id not found cases after drop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b9d8f1
+
+### [side search] Update fieldtrial config for ChromeOS DSE rollout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/316c278
+
+### [chromeos] Remove dependency on \`is_linux\` in .js and .ts files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7033ae6
+
+### Update flags related to prefetch proxy.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aedf07c
+
+### Add hasOffTheRecord parameter to ProfileState in profile-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cf8349
+
+### ui/display: Try all Displays Together During Retry
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/472925e
+
+### [Launcher] Split sort discovery duration after reorder nudge shows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a57ec2
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/family_link_user_internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec5b7686
+
+### Revert "Intents: Simplify IntentPickerBubbleView tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48714ad1
+
+### [grit][chromeos] Do not define \`is_linux\` when processing files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7ada41
+
+### [Color Pipeline] Fix extensions badge contrast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6add9a1
+
+### [Notes] Implement the note creation process in the service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e8966d
+
+### Make macOS 10.13 the minimum required macOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1debcc6
+
+### Limit gfx::ColorSpace::HasExtendedSkTransferFn to non-RGB color spaces
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1dbb59
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/startup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89465e7
+
+### Make sure screen object is created once in tests.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94433a5
+
+### Recording ManagePasswordsReferrer metrics from link redirect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db7aa49
+
+### Lacros: Enable sync bubble view in bookmark
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0391190
+
+### Fixes the crash https://crbug.com/1278429.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b124d42
+
+### sharing: pass share attempt data through to the sharing hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bf11e3
+
+### remove unused context-menu-translate-with-google-lens flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/41cd39b
+
+### [Android] Clean up redundant field in SyncConsentFragmentBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa930fd
+
+### sad_tab: remove help link from sad_tab for Kiosk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b112e5b
+
+### Make Lacros silently turn on Sync on startup if required
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b562051
+
+### Potential workaround for lacros crash in RemoveDisplay.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a211f9c
+
+### Intents: Simplify IntentPickerBubbleView tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af3a07e
+
+### [Ozone/Wayland]Send background_color only if not solid_color buffer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52596c6
+
+### Record metric for toolbar bitmap captures.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/079af03
+
+### [Oobe] Remove user_count from different js and c++ sides
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c40baf1
+
+### Run default clang-tidy fixes in sync code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ecc1d6
+
+### Add a flag to disable shelf gestures when VK is shown
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/91ced13
+
+### Revert "[Lacros] Update first run experience UI"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77e37411
+
+### Add flag for VK round corners
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/489eda92
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdd2ae05
+
+### Suffix progress_bar_bg_color with _list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62e14d9
+
+### Use WidgetDestroyedWaiter instead of the local bespoke version.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32a6ab85
+
+### Android: Remove unused deps on build_java
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a164927
+
+### Reland "Use only a single CrostiniRestarter per ContainerId"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/607d61e7
+
+`);
+              </script>
+            </body>
+        </html>
