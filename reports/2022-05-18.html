@@ -1,0 +1,232 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-18
+### Revert "Make sure screen object is created once in tests."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15297eaf
+
+### Add annotations to ToolbarSnapshotState.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f93aafa
+
+### Remove the X button in upper right corner of MultiDevice setup flow dialog window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e220f3
+
+### swa: Move web_app::SystemWebAppDelegate to ash::SystemWebAppDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fff7a6b
+
+### [Ozone/Wayland]WaylandScreenCoordinatesEnabled takes no effect if server
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c1756c
+
+### Remove some base::ListValue usage from printing code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20fcdea
+
+### Add views::DialogModelContextMenuController
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecc5c8b3
+
+### Remove OS X 10.11 and macOS 10.12 code from ui/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b1d3dd
+
+### Clean up MenuRunnerImplCocoa
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68d5623
+
+### personalization: block wallpaper search for enterprise
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2c8233
+
+### [TouchSelectionControllerImpl] Use OnWidgetDestroying instead of OnWidgetClosing.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65fd89a
+
+### Improve ValidateCddForPrintPreview() DPI handling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bfce2cf
+
+### CrOS Settings: Make type annotation for store interface state generic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d030ccc
+
+### WebUITabStrip: Turn on the feature for Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/903ce8b
+
+### Speculative fix for client cert guest view crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf1e5f7
+
+### ozone: Reduce ERROR Noise in DrmGpuDisplayManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b6588d
+
+### Lacros: Relax startup URL restrictions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e113c73
+
+### Reland "Add ToValueDict() and ToValueList() functions to PolicyConversions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea8700c
+
+### Add IPH for the web feed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07e39b9
+
+### [QT] Remove NOTIMPLEMENTED()s for methods that are not applicable to QT
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6727241
+
+### [headless] Win: Fixed maximized native headless window visibility.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e1c168
+
+### support-tool: Add metadata file to exported support packet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1781ccd
+
+### Remove stray OS X 10.10 code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5240baf9
+
+### Introduce Assistant side panel coordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45cd3e4
+
+### Translate internals: Migrate off of deprecated cr/ui.m.js, cr/ui/tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10fd2ec
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a77f5f0
+
+### Add tests for SnackbarManager#setParentView()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5139d6f
+
+### Remove LinuxUI::NotifyWindowManagerStartupComplete
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6aa58c
+
+### Change SearchByImageInNewTab to send PNG images instead of JPEG.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b534a8
+
+### [Extensions c2s] Dialog test for ExtensionsRequestAccessButtonHoverCard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ad22c36
+
+### usb: Show Android notification when site is connected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4eb9a11
+
+### [DragDrop] Add finch param for drop in Chrome
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3aaabf4
+
+### Remove LinuxUI::CreateNativeBorder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2748b87
+
+### [Extensions c2s] Show request access button dialog on hover
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03ce925
+
+### multipaste: Remove clipboard history feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9d190bba
+
+### [Test] Change SignOutDialogFragmentTest to use ChromeJUnit4ClassRunner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2609228
+
+### Set correct DPI expectations in PrintPreviewUtilsTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ae258f
+
+### [omnibox] Add feature flag for OmniboxFuzzyUrlSuggestions
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/291b0a3
+
+### Change PrinterHandler::AddedPrintersCallback to own the printer list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b1dc6de
+
+### Fix the check for empty username
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a08725
+
+### Change PrinterHandler::GetCapabilityCallback to take base::Value::Dict.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49f646b
+
+### [omnibox] Add "history" synonym in 'en' locale for VIEW_CHROME_HISTORY
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9f1750
+
+### [DesktopScreenshots] Fix crash on rapidly clicking Edit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f2abd5
+
+### [FRE] Remove newline between terms of service and uma link in the signin FRE footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb4a0c0
+
+### [side search] Add per-tab, per-window and per-profile label triggers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9e42d4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dae321a
+
+### Extract some common functionality from GtkUi to LinuxUI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d82d782
+
+### Remove AppKit polyfills
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0815c9
+
+### [APC Desktop] Add more detailed model for onboarding dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a156041
+
+### Refactor JsonGenerationParams and GenerateJson
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/890e78c
+
+### Fixed regression in webapp omnibox icon observer on app uninstallation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ab2eb6
+
+### [ViewAXTreeManager] Use only OnWidgetDestroying.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2edca82e
+
+### Propagate ev_dev key bits to ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13ed6fa
+
+### Remove OnWidgetClosing from PermissionPromptBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bda43a45
+
+`);
+              </script>
+            </body>
+        </html>
