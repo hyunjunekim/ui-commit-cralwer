@@ -1,0 +1,240 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-19
+### Reland "Intents: Simplify IntentPickerBubbleView tests"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7058fb9
+
+### [linux/wayland] Removed the redundant parameter.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58ef24d
+
+### [TryChromeDialog] Use only OnWidgetDestroying for dialog cleanup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b90689e
+
+### Cleanup: Remove always-empty redirects param from OnURLVisited methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/368ec1c
+
+### [Android] Clean up metric ImpressioinsTillDismissHistogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f08d7ab
+
+### Add border to Example Menu Button to more clearly indicate that it is a button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f174d0b
+
+### Remove OnWidgetClosing from PermissionPromptImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6daaaf8
+
+### Remove unused methods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a27434c8
+
+### [Eche] Removing EchePhoneHubPermissionsOnboarding flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d2cc09a
+
+### Reset popup timers when a grouped notification is added or removed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb2a50e
+
+### Move ConvertOsLoginMode() out of WebAppPublisherHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/776a2a4
+
+### [Shopping Service] Add tab helper to monitor web contents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35466e2
+
+### [CodeHealth] Remove uses of ListValue::Append in /chrome/browser/ui/webui/chromeos/login.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e97fb9
+
+### projector: Get Drive file id as ".projector" file uploaded
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfdb029
+
+### [mparch] Use IsInPrimaryMainFrame in ChromeKeyboardWebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2168480
+
+### Revert "Make CustomViewFactory final"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a34f1a
+
+### Revert "Make AnchoredPopupWindow update the popup layout when the view does."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/081203aa
+
+### [ExtensionsToolbarContainer] Use only OnWidgetDestroying.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b747b6a
+
+### Disable animation duration check in some cases
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f6c5bd
+
+### [sync] Change the title of the NTP content suggestion sync promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6943b2a
+
+### Fix nits in ToggleIntelVpSuperResolution
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5938f591
+
+### AppShortcutShelfItemController: no GetDeprecated()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b50962d
+
+### [VCN] Fix enrollment dialog closes when links are clicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54faa52
+
+### [Extensions c2s] Add new strings for blocked action dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1d72f1
+
+### Revert "Suffix selection_control_button_tint with _list."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4006886
+
+### [Lacros] Do not use System profile to get available accounts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04d698b
+
+### IWYU: Add <memory> for std::unique_ptr in AssistantSidePanelCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf80ec1
+
+### MediaApp: Expose both light and dark mode focus ring colors.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0898e4a
+
+### GCC: Avoid symbol clash in AssistantSidePanelCoordinatorImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c5757a
+
+### Set clearer expectations in PrintPreviewUtilsTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d899fa9
+
+### Remove GridLayout.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/235c558
+
+### personalization: clean up profile/feature checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/850615d3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec73658
+
+### Make CustomViewFactory final
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a802d7
+
+### Certificate Manager: Fix certificate provisioning last_update timestamp
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd8d81e
+
+### Mirror bounds for RTL transform on animation canceled/ended
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0df5610
+
+### [Android] [IncognitoReauth] Add TopToolbarInteractabilityManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13f300e
+
+### support-tool: Show only filename in data export done page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e206a18
+
+### Fix tab drag window pos for RTL and multi-monitor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee9a608
+
+### Do not display managed UI for Family Link users in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75677b4
+
+### [Note] Add a new user note
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61d3dc24
+
+### Suffix selection_control_button_tint with _list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10e69ad6
+
+### ARC account picker for EDU coexistense dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78e9a53
+
+### Plumb through display labels and add initial mac (>=10.15) implementation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87dc102a
+
+### [PHONE HUB] Update string for phone's enterprise policy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4588565
+
+### Remove AddressFieldToServerFieldType in favour of i18n::TypeForField.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9927e8
+
+### app_service: Make Lacros open new tab instead of new window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0ee49c
+
+### [Cast2Class] Add metrics recorded from the UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13ed02a
+
+### [Files app] Redact PII from mounting-related JS logs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31bd66b
+
+### Side panel: Remove bookmarks drag and drop flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/41ca6e4
+
+### [Shopping Service] Move PDP metrics into service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71295ff
+
+### Clone Event on demand in UpdateCursorPositionFromEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d642092
+
+### Use only OnWidgetDestroying in AXWidgetObjWrapper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c18d28e
+
+### Introduce SigninProfileHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfb9241
+
+### Add dgn@ to OWNERS for profile picker and FRE changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55b801e
+
+### Add chrome flags for hiding single-domain history clusters.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/71b0337
+
+`);
+              </script>
+            </body>
+        </html>
