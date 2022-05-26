@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-26
+### [Note] Implement UserNoteUICoordinator::Show
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86b3b78
+
+### [RELAND][Note] Implement StartCreationFlow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d0f49d
+
+### lacros: add autocorrect and grammar api to lacros code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d95ee1f
+
+### lacros: check digital asset links for web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c6a01c
+
+### Files app: Add initial build config for TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a962a55
+
+### Add about:flags entry for "hide continue section" feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b4b4aaa
+
+### dark_mode: Fix tests failure after enabling the feature -part 5
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1556804
+
+### Don't crash when accessing user education internals page in incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2f5b87
+
+### Updating target URL to open chrome://settings/password
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6fe7e4
+
+### [Adaptive charging] Add testing functionality for developer
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f5e2f92
+
+### rename check_saved_tab_groups_separator and check for existence
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc1595f
+
+### [OOBE WebUI] Remove cr.ui.Oobe.showAPIKeysNotice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e10649
+
+### [Extensions c2s] Display message in menu when restricted site
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d3bcca
+
+### Remove TranslateIconView::OnPressed and deprecate related TranslateBubbleUiEvents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/555b3e2
+
+### Fix ui/accessibility/PRESUBMIT.py to work after TS migration.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9fd544c4
+
+### Explicitly defocus the Omnibox upon navigation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d407128
+
+### [ConsentV2] Update dialog button text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24a6fcc
+
+### Move securityTokenPin out of //Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfd3b744
+
+### Make ContentAnalysisDialog a DownloadItem::Observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82e52aa
+
+### dPWA: Read is_placeholder info from web_app DB instead of external prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6f98d5
+
+### [Extensions] Convert (most of) ui test message listener uses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/636539f
+
+### [omnibox][search_engines] Disable delete for starter pack engines.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab06185e
+
+### More tab switch metric fixes:
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a521755f
+
+### [SPC] Add opt-out link to no-matching-creds dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19d0f14
+
+### [performance manager] Add PageNode type.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/894325c
+
+### Support dark mode for ToS in signin FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4d8cb54
+
+### [games] Use fuzzy search for games.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db57e3f
+
+### ozone: chrome_dev.conf flag for DRM modeset logs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c603fb75
+
+### multipaste: Clean up clipboard history browser tests (Part 4 of N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb349f3
+
+### Update comments in ConfirmImportSyncDataDialogCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cac7991
+
+### multipaste: Implement clipboard history reorder on paste behind a flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adbfb08
+
+### Log Lacros FRE outcome when the user quits on the second screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dacb31d9
+
+### Sheriff: Disable failing tests on Linux ASAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63e440d
+
+### Use DP in window dragging code path
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68fd048
+
+### Add UKM for password leak warning dialogs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1398b683
+
+### [DownloadBubble] Update tests and field trial config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38cee78
+
+### crostini: enable restoring to non-default containers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdc3de2
+
+### Reland: Report total event latency metrics to UI compositor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54b3b33
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/397ca78
+
+### [Files App] Don't display error if trying to unmount already-unmounted volume
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dc9ec07
+
+### [Android Tab Restore] Add more verbose content descriptions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3b70b5
+
+### swa: Replace WebAppProvider::system_web_app_manager() with Get().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cecb82a
+
+### Set -ffile-reproducible for Windows builds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bf3275
+
+### Integrate MerchantPromoCodeManager for Infrastructure Enhancements To
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b14734
+
+### Add settings UI for Bruschetta USB sharing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/febdf173a
+
+### chrome://policy: Remove use of deprecated cr/ui.m.js
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/952de22
+
+### [PwdMessageDialog] Move FakeModalDialogManager to general place to be
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7449d56
+
+### Remove unnecessary BoxLayout in SendTabToSelfDevicePickerBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2d9040
+
+### grammar: make GetGrammarFragmentAtIndex const
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ca6e24
+
+### [Android] [IncognitoReauth] Integrate TopToolbarInteractabilityManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/850b3519
+
+### Remove android-detailed-langauge-settings flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c386918
+
+### Polymer: Remove iron-flex-layout.js along with a few more CSS mixins.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cfa20bd
+
+### Remove chrome/ feature flag for DMToken deletion.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4982da25
+
+### [Libcast-In-Chrome #1] Refactor FrameSender
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/79e8ba7
+
+### Settings UI: Password View: Show no note added when note empty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/166adfd
+
+### [Files App] Redact PII from mounting-related JS logs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3180729
+
+### [APC Desktop] Add separator line to onboarding dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a000246
+
+### [segmentation] Update the output of segmentation to SegmentId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7c3c8d
+
+### multipaste: Clean up clipboard history browser tests (Part 3 of N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1764d2ea
+
+### [headless] Win: Fixed minimized/restored browser window visibility.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b7510f
+
+### dark_mode: Fix tests failure after enabling the feature - part 4
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06f28d0
+
+### Disable certain UserNoteUICoordinatorTest cases on CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5027605
+
+### Re-enable DocumentPictureInPictureWindowControllerImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1be82bd
+
+### ax_mac: alternative implementation of accessible name for alerts on mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45f25646
+
+### Revert "[Adaptive charging] Add testing functionality for developer"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4e394a8
+
+### WebUI: Remove early additions of cr_tree*.html
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f81f12f
+
+### Grey out dropdown button of DownloadItemView during review
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9953293
+
+### Revert "[Libcast-In-Chrome #1] Refactor FrameSender"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/32fbc928
+
+### [APC Desktop] Introduce password change run files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc0c54e
+
+### Prerender: Let Prefetch Service trigger Prerender
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b1c4b5
+
+`);
+              </script>
+            </body>
+        </html>
