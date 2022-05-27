@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-05-27
+### Enable quickoffice component extension for Lacros.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0f8cb4f
+
+### [journeys] Make the WebUI respect AllowDeletingBrowserHistory policy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d30d77
+
+### swa: Delete WebAppProvider::GetForSystemWebApps helper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50792c1
+
+### cros: add highlight border to web app windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a10fac0
+
+### [Launcher health] Move sync logic to new synchronization controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b20f1e0
+
+### [wasm] Adding experimental stack switching flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f354883
+
+### Shimless: create a flag for the OS Update page
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1917b87
+
+### Revert "Reland "[Libcast-In-Chrome #1] Refactor FrameSender""
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7e056d9
+
+### arc: Remove native_bridge_64bit_support_experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/73bda3e
+
+### Web Share Target accepts file URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c956f13
+
+### File handling: Hide controls on Chrome OS settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6facfb
+
+### Add flag to enable Lens fullscreen search on Chrome Desktop.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce81f236
+
+### One cgroup per renderer on Chrome OS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c732bf8
+
+### [Cast2Class] Fix crash from incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db9587f
+
+### Expose close all functionality through the private API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e481dd
+
+### Change rvalue in SetGamepadKeyBitsMapping params to lvalue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/364380d
+
+### [Files App] Add testCancelMountingArchive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a83209c
+
+### [QT] Implement GetIconForContentType
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37d5ef9
+
+### [Journeys] Refactor action histograms with browser logger.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fd33a88
+
+### Move BookmarksBar Init to only run after constructor configuration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7e72fc
+
+### Remove unused method ShowSingletonTabRespectRef()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5803c629
+
+### [style_var_gen] Move files into directories.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8d4dbb
+
+### personalization: block os-settings search for guest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ca6ff4d
+
+### dark_mode: Fix tests failure after enabling the feature - part 6
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35f1134
+
+### Move //chromeos/{=>ash/components}/network [3/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5bfbee
+
+### [Extensions c2s] Format urls in extensions menu and dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c704cc1
+
+### Reland "[Libcast-In-Chrome #1] Refactor FrameSender"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/097d05c
+
+### Request refreshing available voices when opening os tts settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7650e06
+
+### Allow tabs to be dragged out of the rightmost group in a full tabstrip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ee22c03
+
+### Revert "ime: Anchor multiword window based on caret position not composition."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a945e424
+
+### [Files App] Change a few console.error to console.warn
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e1bc4cf
+
+### Reland "[Adaptive charging] Add testing functionality for developer"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6b4c585
+
+### Move //chromeos/{=>ash}/components/cros_elements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7012be
+
+### Shared Storage: Hook up to PrivacySandbox about:flag and OT
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/793b793
+
+### [FeedPosition] Add feature flag for Feed Position experiment.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8e1b245
+
+### Convert LacrosService::init_params() to BrowserInitParams::Get()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c355d97
+
+### [lacros] Add skeleton for supporting zcr_touch_stylus_v2 protocol
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2344fb0d
+
+### Add about:flags entry for <webview> site isolation.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1a4dd09
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b9b3f20
+
+### Revert "[Launcher health] Move sync logic to new synchronization controller."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d58e56b
+
+### Revert "chrome://policy: Remove use of deprecated cr/ui.m.js"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3456fed
+
+### Unified side panel: update layout logic for header.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48e2874
+
+### [Human presence] Added "learn more" settings link.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35a9085
+
+### ax_mac: svg root element should be exposed as image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22e3c8b
+
+### Fix displaying of cursors in remote cocoa windows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5a6169
+
+### [dPWA] Install from sync command without the install task.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b11424
+
+### crostini: Fix a comment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef11713
+
+### Remove RenderFrameHost::IsRenderFrameCreated from various places in code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/459cac8
+
+### Remove BUILDFLAG(IS_WIN) in ozone
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/454e1184
+
+### multipaste: Expose flag to reorder clipboard history on paste
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0dcc3b02
+
+### [Files]: Cleanup: removes unused class field.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50fbf73
+
+### [FluentScrollbars] Add Fluent scrollbar base feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7748609
+
+### [Journeys] Add a TabLayout that toggles between Journeys and History
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4fcdec
+
+### [Extensions UI] Add emiliapaz@ to c/b/ui/extensions/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73c5fef
+
+### Update file and omnibox answer results for system theming.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1940c58
+
+### [TabletGTS] Fix GTS menu options showing instead of regular menu options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb365b9
+
+### Remove flattenhtml=true usage from about_conflicts.html.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a4d01a
+
+### [games] Add a Finch parameter to allow dogfooding.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce6b01b
+
+### ime: Anchor multiword window based on caret position not composition.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/575b97c
+
+### Adds prototype of Preconfigured Containers using Restart Options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67dfc94
+
+### Reland "[FilesRecentFilter] Browser tests for delete/rename/cut in Recent"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55221c7
+
+### Uncomment prevent_unsafe_narrowing and change from opt-out to opt-in.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc7469c
+
+`);
+              </script>
+            </body>
+        </html>
