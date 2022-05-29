@@ -69,7 +69,8 @@ if __name__ == "__main__":
                     continue
 
                 if sha not in NEW_COMMITS:
-                    title = item.select_one(':nth-child(2)').get_text()
+                    anchor_elements = item.select('a');
+                    title = anchor_elements[1].get_text()
                     NEW_COMMITS[sha] = Commit(sha, target, title)
                 else:
                     NEW_COMMITS[sha].add_target(target)
@@ -129,7 +130,7 @@ if __name__ == "__main__":
         message += "* New commits: {}\n".format(len(NEW_COMMITS))
     else:
         message += "* There's no commit today :)\n"
-    message += "https://sangwoo108.github.io/ui-commit-cralwer/reports/{}.html".format(today)
+    message += "https://hyunjunekim.github.io/ui-commit-cralwer/reports/{}.html".format(today)
 
     if DRY_RUN:
         print(markdown)
