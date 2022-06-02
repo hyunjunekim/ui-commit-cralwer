@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-02
+### Remove GLRenderer related GL extensions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/009417a
+
+### [DragDrop] Include dropData as localState to startDragAndDrop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e98197a
+
+### Revert "Make sure screen object is created once in tests."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c588769b
+
+### Reland "ime: Anchor multiword window based on caret position not composition."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7086b9b5
+
+### Fix constness of some wayland output helper functions.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad340eac
+
+### Revert "[lacros] Fix output origin and logical size handling."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b46cc4a
+
+### ozone: evdev: Add Metric for Keyboards blocked by Blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6a678ef
+
+### [lacros] Fix output origin and logical size handling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e6a1056
+
+### [lacros] Fix portrait panel orientation handling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0a4ff6
+
+### [lacros] Add ability for exo to send output insets info to lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60d521d
+
+### ime: Redo Blur/Focus when input type/mode/flags change.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aaf88d8
+
+### Eliminate base::LowerCaseEqualsASCII in /ui/base/l10n
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7f406a
+
+### Make sure screen object is created once in tests.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e68c6a6
+
+### Revert "Switches to using the correct type for AXNode IDs"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2bbcc22
+
+### Fix crash when back gesture is performed after tab modal dialog is dismissed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/848f209
+
+### Switches to using the correct type for AXNode IDs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f4299f
+
+### USB Internals: Remove use of deprecated cr/ui/tabs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef8132a
+
+### Refactors Screen AI proto converters in preparation for parsing OCR results
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab3cd4c
+
+### WebUI: Import HTML templates at runtime for non-Polymer shared elements.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bcc6edb
+
+### Fix close buttons' default for modal DialogModels
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/287aa9c
+
+### Resize BubbleDialogModelHost when fields are added
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a35efc2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b303b57
+
+### Don't try to convert if a surface doesn't have a window.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41a49d6b
+
+### Clean up flag for extended OpenVPN settings
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6e93429
+
+### fusebox: add FilteredVolumeManager isFuseBoxOnlyFilterEnabled getter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ac15eb
+
+### Assert DialogModel-textfields a11y string presence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e104b49
+
+### Changes necessary to pass tests with screen coordinate support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7e9c4e
+
+### Revert "Expose modes for highlight_color and text_highlight_color."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30f4bcc
+
+### [Extensions] Add dialog for toggling host permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ed22ac
+
+### [Extensions] Apply user host restrictions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a19848
+
+### Don't maximize in browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63a9ef8
+
+### swa: Restore handy SystemWebAppManager::GetWebAppProvider getter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c317159
+
+### Update NetLog network service API to use mojom::DictionaryValue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d951dbc
+
+### [ Bug Fix ] Add tab to group.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f3c631
+
+### Revert "[lacros] Prevent self-maximize when drag finishes"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbf0e14
+
+### Fix dragging out of a maximized window in RTL and on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf42016
+
+### [TabScrolling] Treat the tab scrolling buttons as outside of the Window Caption. In the case tab scrolling feature is enabled, defer to the scroll container to determine if the rect is part of window caption if it is in that area.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/730a42e
+
+### [Jank] Defer fetching from resources when creating IPHCommand objects
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ef5de3
+
+### crosapi: Add path_behavior parameter to OpenUrlParams
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/13c3aba
+
+### Side Search: Disable flaky browser tests on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cc464f
+
+### MPArch: Adjust initial SiteInstance for Fenced Frames
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fd1546
+
+### [Profiles] Enable ProfileHelperTest.DeleteActiveProfile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0037d5c
+
+### Stop building CoreAccountId from email on non-ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4261be4
+
+### multipaste: Sync clipboard to clipboard history when items are deleted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df0a29cb
+
+### support-tool: Update PII type definition strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98bea03
+
+### [APC desktop] Introduce prompt handling methods signature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2d76f1
+
+### [Note] Invalidate - RemoveAllChildViews only when contents have children
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c86cd8b
+
+### [Sidepanel] Fix race condition when deregistering entry on being hidden.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76ec643
+
+### [OOBE WebUI] Update Quick Start screen and handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78eb89b
+
+### [ntp] Add @tluk and @romanarora to webui new tab page OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fff8352
+
+### Revert "[Lacros] Add sublabel to "Clear Cookie On Exit" setting"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42d7c70
+
+### [TerminationNotification] Convert task_manager_mac.h/mm to use callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/812f1801
+
+### Dynamically enable/disable Kerberos in SmbService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff199a7
+
+### [Lacros] Add sublabel to "Clear Cookie On Exit" setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/157a72a
+
+### Expose kSyncPromoAfterSigninIntercept feature state to webUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2c72a6
+
+### Fix a microphone permission request on NTP.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3db2280
+
+### [APC Desktop] Implement top icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f49820
+
+### [OOBE] Use native icons for the assistant flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edbabdc
+
+### hid: Do not exclude HID device with no collections
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99718a74
+
+### [HiDPI] Add chrome://flags entry for HiDPI tab capture
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/90b7803
+
+### Delete GLRenderer and related classes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/18a2fff
+
+### Rename "file ops brokering on disk cache" feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/92bdfa2
+
+### Expose kEnableMultiMonitorsInCrd through chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9b816f05
+
+`);
+              </script>
+            </body>
+        </html>
