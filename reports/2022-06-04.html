@@ -1,0 +1,212 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-04
+### [Cast Convergence] Clean up logic in //ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57250b0c
+
+### Remove most Linux UI color IDs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e2c395
+
+### [A11y] Prevent contenteditable to affect non-richly editable elements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5852ee4
+
+### Move native_color_mixers_linux.cc to //ui/gtk
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3a12fe4
+
+### NotificationRevamp: Disable DarkLightMode in NotificationViewTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7857cd3
+
+### [Cast Convergence] Correct prior changes of \`is_chromecast\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42a16df
+
+### Add resize animation for grouped notification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3306e8b
+
+### [reland] Pass GLDisplay pointer between gl_display init and gpu_init.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0672fc
+
+### Add display label for x11 displays.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fbafb9d
+
+### ui/base/test/skia_gold_pixel_diff.cc: Remove use of Value::DictStorage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c2fc06
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b59a517
+
+### [ozone/wayland] Comply with wl_touch::frame event in touch motion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f530da
+
+### [cr-checkbox]: Add an ability to set checkbox background color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e060ffa
+
+### [Files]: Move call to chooseEntry to the foreground page.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b3cfb3
+
+### Revert "mac_merge: remove BrowserAccessibilityCocoa accessibilityFrame in favor of AXPlatformNodeCocoa"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e722a310
+
+### Extract: Enable password unpack for ZIPs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/551209e
+
+### [Files App] Use Archive icon for .lz and .lzo files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82c4a644
+
+### [lacros] Fix portrait panel orientation handling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0a4ff62
+
+### Cache cluster keyword data in history cluster service.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ca68e2
+
+### Optionally force feed-query requests through snippets-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8331089
+
+### Change AutofillOfferData from a struct to a class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dddbe5c
+
+### Omnibox HTTPS Upgrades: Move metrics code to components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db2eed5
+
+### [FedCM] Fix fetching manifest list for localhost
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d65718
+
+### [realbox] Add journeys icon to action in realbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40f6788a
+
+### Revert "DPWA: fix UAF on launch --uninstall-app-id"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/918794f
+
+### [SPC] Replace opt-out link with longer text string.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b934d3
+
+### Remove WebUI downloads shelf
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3996b2b
+
+### DPWA: fix UAF on launch --uninstall-app-id
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40316d774
+
+### x509_certificate_model: signature / algorithm processing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a89ecb58
+
+### [Note] Remove invalidate from OnTabStripModelChanged for now
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0be002
+
+### sharing: remove shared clipboard, part 1
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/92d87a1
+
+### Make mojom::WebUIHost::Send use a mojom::ListValue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d6b31c
+
+### Add remote apps to the end of the app list by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bae97c0
+
+### Remove CoreOobeHandler::HandleSkipToLoginForTesting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dceb7a0
+
+### Revert "[Chrome App Deprecation] Adding 'launch anyways' button"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02335e1
+
+### support-tool: Add NetworkRoutesDataCollector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad139b8
+
+### Cleaning up owners of flags, histograms, and policies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fda5c04
+
+### [Sheriff] Disable failing test InvokeUi_NotWorkingClicked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/327ac82
+
+### [OOBE] Remove (on)FocusReturned logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ae29bd
+
+### Move //chromeos/{=>ash}/services/assistant [3/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1049e64
+
+### Remove base::DictionaryValue from components/policy/core/browser/cloud
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71beb101
+
+### Rename string ids for signout dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7c8a63
+
+### Update WaitForNotification callers to check return value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57ce2b5
+
+### [OOBE][ChildAccount]: Reuse local user type on GAIA done timeout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf0bc74
+
+### Simplify ProfileHelper for testing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95133d9b
+
+### Add settings pref that controls consent to use Autofill Assistant.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/603199c
+
+### [SH] Add flag for Shared Highlighting Manager
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/006ab4e
+
+### metrics: Fix variation flag loading on ash-chrome
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef405f66e
+
+### Add feature flag for DMToken deletion.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c0a8845
+
+`);
+              </script>
+            </body>
+        </html>
