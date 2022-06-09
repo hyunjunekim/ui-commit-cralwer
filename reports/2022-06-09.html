@@ -1,0 +1,260 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-09
+### CARendererLayerTree: Allow using pointers to address layers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/277f32ce
+
+### [QT] Provide core and platform-specific UI colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0371fd
+
+### Fix \`gn analyze\` errors in //ui/resources/webui_generated_resources_grd
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e626dc6
+
+### [DragDrop] Support link dragging to create new Chrome instance
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1956d27
+
+### FakeDisplayDelegate: fix width/height mixup in comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0f94bc55
+
+### Add support for disabled menu items in DialogModel
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f21671d
+
+### CrOS Settings: Convert internet page to class-based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d51b775
+
+### Fix notifications scroll behavior when touch interacting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93e74a5
+
+### [Cast Convergence] Update is_castos to require is_linux
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87b96ac1
+
+### ax_win: implement IAccessibleTextSelectionContainer::setSelections
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/273747ff
+
+### [A11y] Expose read-only as supported on gridcells
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a80a74e
+
+### [lacros] Fix memory double free in WaylandScreenTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f17b26b
+
+### [Assistant] Update voice match animations
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6a5c5e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/473df1e7
+
+### [linux/wayland] Added the conditionals to handle null outputs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40ad953
+
+### Extract: Add support for multiple password dialogs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1dcb4783
+
+### Fix expand-by-unit for line, paragraph and page for UIA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14205c7c
+
+### Revert "Migrate Tab Group off ThemeProvider to ColorProvider"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/571004f
+
+### Remove printing PostTask usage of IO thread
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/564fa1d8
+
+### Ensure restore window works correct for TYPE_APP_POUP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38c3389
+
+### [Default Apps] Clean up app order definitions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24b7458
+
+### Contextual Page Actions: Implemented ContextualPageActionController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41c8c99
+
+### Migrate Tab Group off ThemeProvider to ColorProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f4c3ab
+
+### [FedCM] Fix wide icons on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f43748
+
+### Add LaunchDesk method into chrome.wmDesksPrivate API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91864db9
+
+### [Extensions c2s] Open RequestAccessHoverCard on top of active dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b84e484
+
+### Add alternate accelerator for IDC_BASIC_PRINT and deprecate the old one
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d2d2b8
+
+### Contextual Page Actions: Added price tracking button controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f513a18
+
+### Add AutofillOfferData::OfferType::GPAY_PROMO_CODE_OFFER enum.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/106fc6a
+
+### Reland "dPWA: Read app_id and install_url for external apps from web_app DB"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cb22f9
+
+### Revert "multipaste: Sync clipboard to clipboard history when items are deleted"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99efb48
+
+### [Start] Stop showing logo fade-in animation on Start surface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67f3756
+
+### [MagicSetup] Relocate oobe_quick_start directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d8fddf
+
+### Use makeLaunchIntoPip where available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6c07d2
+
+### Replace composite SVG with broken down images, to support i18n
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82202f7
+
+### [Offers] Migrate Offer Notification Infobar to a Message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcccd56
+
+### [Extensions c2s] Add kActiveTab to site interaction enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4903eb37
+
+### [OOBE][RecommendApps]: Update styles and aria attributes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93f2264
+
+### [Bluetooth][Win/Linux] Add bluetooth pair confirmation prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a71ce49
+
+### Add localized string for Skip button in Profile Customization dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/249fbdc8
+
+### [Chrome Apps Deprecation] Adding tests for launch-anyways button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77d37d34
+
+### Don't send spurious 0,0 size for video PiP window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae7e3f7
+
+### Replace expired Download.Shelf.DragEvent histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6256e8b
+
+### Wire up battery saver mode to chrome://discards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/615c0ed
+
+### Change title in Profile Customization dialog for Sync Promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50db11a
+
+### [Lacros] Add sublabel to "Clear Cookie On Exit" setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/453b906
+
+### Remove Signin_Impressions{With|Without}Account_From* user actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f29a44
+
+### AboutThisSite: Add experiment to directly open 'more about' site
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5647e66
+
+### Removing the flag check for UPM when redirecting to Passwords
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f27f01
+
+### [signin] signin_ui_util functions no longer require a browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd873f3
+
+### [Privacy Hub] Add camera toggle to the dummy UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecfdcfb
+
+### [Privacy Hub] Add an empty settings subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b636f2
+
+### [Default Apps] Define pinned apps for cloud gaming devices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38693276
+
+### Fullscreen Capability Delegation: Refine activation consumption & tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7389f6
+
+### [android] Stop blocking sign-in if FRE isn't done
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e294c44
+
+### [Privacy Hub] Define route constants for dummy UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a73c30
+
+### Separate the StatusPolicyProviders from PolicyUiHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9556c6a
+
+### Revert "[dpwa] Adds the action to check a site can(not) handle file."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86aca9a
+
+### [VCN] Clean up launched experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/51e9ed0
+
+### [VCN] Clean up launched feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/994703a
+
+### Add default model for contextual page action price tracking
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3ad070fe
+
+`);
+              </script>
+            </body>
+        </html>
