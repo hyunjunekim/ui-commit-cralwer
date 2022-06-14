@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-14
+### Ensure fullscreen notification toast always appears on top
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df6fcb6
+
+### [style_var_gen] Add cros.ref and cros.sys color tokens.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65d9870
+
+### [dom][events] DOM Code conversion cleanups
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31103fa
+
+### Favicon: Use camelCase params instead of snake_case in JS context
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78e45e1
+
+### gfx::ColorTransform: Remove unused old tone mapping
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c7650c
+
+### Android: Create robolectric_library template for on host tests
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b83653
+
+### Add EDID labels for displays on Windows platform.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba47397
+
+### Fix screen lock detection for Gnome, MATE, and XFCE4.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fea5c9b
+
+### [QT] Draw native titlebar
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6457f7a
+
+### DanglingPtr: Mark all of them as untriaged [1/N]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c9cdac
+
+### wayland: ack and suggest bounds upon 0x0 configure event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dabcfde
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3797561
+
+### [Fixit] Migrate components/browser_ui/widget/android:javatest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fedfb78
+
+### crostini_manager.h: Remove unused headers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ce58cb
+
+### Remove the kAppServiceLoadIconWithoutMojom flag part III.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/693098b
+
+### App Service: clang-tidy fixups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4de0555
+
+### Remove the kAppServiceLoadIconWithoutMojom flag part II.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0bb92e
+
+### fwupd: Add firmware updates badge in about page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/637da25
+
+### [DownloadBubble]Add REVIEW button to prompt the enterprise review dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d7b4b5
+
+### Remove custom favicon code for Terminal System App for multi-profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41ea5db
+
+### guest_os: Standardize our DIR_METADATA files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16fd35c
+
+### Add string for price drop discoverability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76a4260
+
+### x509_certificate_model: Use new implementation in cert viewer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/651522a
+
+### USB Internals: Migrate descriptor panel to TS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8266ec6
+
+### [TTS] Clean up the flag ContextualSearchNewSettings
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/50aefec
+
+### browser: make favicon its own build target
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54b4280
+
+### [FedCM] Make FedCM brand icon downloading logic more consistent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da6a2dd
+
+### Reland "Revert "Optionally force feed-query requests through snippets-internals""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec41881
+
+### Move ThemeProvider::GetColor(COLOR_LOCATION_BAR_BORDER and ..._OPAQUE) to the ColorProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1bcc46
+
+### Reland "[Android] Depend on chrome_java_integration_test_support or _unit_"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58f4172
+
+### [ntp] Add 'Middle Slot Promo Dismissal' flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1ed5300
+
+### 👩‍🔧 Move SnackbarTest to chrome_public_unit_test_apk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56864e3
+
+### [TTS] Clean up the ContextualSearchLongpressResolve
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f4e00e
+
+### Revert "Revert "Optionally force feed-query requests through snippets-internals""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c144617
+
+### Add usecounter for tab sharing bar switch tab buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d12128fa
+
+### saved_desks: Fix crash with saving lacros chrome apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/438e479
+
+### Remove OnWidgetDestroying from RelaunchNotificationControllerPlatformImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/378be15
+
+### Prevent crash in primeLocationForGeoHeaderIfEnabled if profile is null
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f9779d
+
+### Fix geolocation header tests and add new ones around header priming
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f45248ef
+
+### Move to exclusive use of ColorProvider from ThemeProvider for colors.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/114c866
+
+### Move ThemeProvider::GetColor(COLOR_TOOLBAR_BUTTON_[BORDER|TEXT]) to the ColorProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85b2b32
+
+### Modify calculation of minimum_size and preferred_size of overflow view.Space for indicator view should not be reserved when overflow view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ba185a
+
+### Add "Review" button to download page for relevant enterprise warnings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb763be9
+
+### Remove personalized promos user actions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30501ff
+
+### [APC Desktop] Add a starting screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89229b2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e4cc83
+
+### Revert "Move //chromeos/{=>ash}/services/assistant [4/N]"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e07e9f8
+
+### Privacy Sandbox Settings: Add Fledge to AdPersonalizationRemovedFragment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec5fc2d2
+
+### Drop second sentence from Account picker signin bottom sheet subtitle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48b6fd9
+
+### Privacy Sandbox Settings: Add Fledge to Android consent and settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/129e48d
+
+### [Settings] Fix "Turn Off Sync" dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/556849c
+
+### [android] Hide the sync promo illustration if there is no device account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a90e47
+
+### Convert ConfirmSyncDataStateMachineDelegate tests into instrumentation tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2a792b
+
+### [APC Desktop] Add view and controller support for prompts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bef616a
+
+### [Passwords] Add passwords import dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d92210
+
+### Fullscreen Capability Delegation: Enable by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b490342
+
+### Move //chromeos/{=>ash}/services/assistant [4/N]
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a7fae8b
+
+### Revert "Source Demo Mode SWA content from downloaded demo-mode-app Chrome Component"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a2de1c
+
+### Add flag for get details for enroll parsing in upload card response
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ed31c4f
+
+### [ChromeCart][Android] Add feature for commerce hint android experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/25d7296
+
+### [AndroidScreenshots] Added a flag for additional screenshot features.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ff5bd5f
+
+### [DesktopSite] Clean up / extend feature flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3496136
+
+### [Password Manager] Cleanup mute-compromised-passwords about flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0e1d779
+
+`);
+              </script>
+            </body>
+        </html>
