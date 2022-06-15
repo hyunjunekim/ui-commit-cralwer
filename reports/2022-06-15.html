@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-15
+### WebUI: Change generate_grd() to accept testonly=true
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34c7378
+
+### [Files App] Simplify translations for archive file types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/989d45f
+
+### EA: Add semantic colors for Nudge component
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2db5a4c
+
+### WebUI: Limit various deprecated pre-JS modules files to CrOS-only.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1f823a3
+
+### WebUI: Remove i18n_template_no_process.js from non-CrOS builds.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97cb70ce
+
+### Remove LinuxUI::GetTint
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83c7592
+
+### Reland "[cros_styles]: Change color_warning light mode to google_yellow_900."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/398d88d
+
+### [QT] Implement misc time-based settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15a5498e
+
+### [QT] Implement web color getters
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad263976
+
+### Use ScopedObservation in widget waiters
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04b5ded
+
+### Clean up GLDisplayEGL's extension bits.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5f0d07
+
+### Only notify when size acutally changed in OnHostResizedInPixels
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6038cd3
+
+### [CrOS SLP] Plumb global network configuration to NetworkSiminfo.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76a255d9
+
+### Remove backer@chromium.org from ui/gl/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fcebc4c4
+
+### Unified side panel: make combobox match webui delays.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1af28a9
+
+### CertProvisioning: Enable UI for Lacros
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00966834
+
+### CertProvisioning: Add mojo layer between UI and the main code
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a616f8e4
+
+### Extract: Propagate out of disk space error to feedback panels.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f65b46
+
+### Quick Answers: Notify preferred languages changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4482a64
+
+### USB Internals: Migrate to TypeScript, part 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/893fdbd
+
+### Delete chrome://domain-reliability-internals debug UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08d2d1d
+
+### Relocate ClipboardSuggestionProcessorUnitTest to JUnitTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d770a57
+
+### Window Placement: Fix and reenable FullscreenCompanionWindow test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa7b015
+
+### Revert "Replace a handful of ThemeProvider::GetColor locations with"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af3c944e
+
+### Relocate CachedZeroSuggestionsManagerUnitTest to JUnitTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e95780
+
+### Lacros PWAs: Crosapi test for web app shortcuts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8a201e9
+
+### Relocate DropdownItemViewInfoList.*UnitTest to JUnitTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f28f7c
+
+### [Start] Revert focus omnibox on new tab for Finale 2.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47e1d6b8
+
+### Remove the kAppServiceLoadIconWithoutMojom flag part IV.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73b8a807
+
+### Reland "👩‍🔧 Add //chrome/browser/ui/appmenu to on-device unit test target"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/856676e
+
+### [cleanup] update PrintBackend::EnumeratePrinters to use reference
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b92927f
+
+### Reland "[dpwa] Adds the action to check a site can(not) handle file."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e16edcb
+
+### [omnibox] Update "location bar model" tests with additional test cases
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c87944b
+
+### Revert "Reland "Revert "Optionally force feed-query requests through snippets-internals"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c49ae60
+
+### [Fixit] Relocate BasicSuggestionProcessor back to JUnit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f98bca
+
+### Revert "👩‍🔧 Add //chrome/browser/ui/appmenu to on-device unit test target"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abe6749
+
+### desktop-sh: break dep between view and concrete controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17a5822
+
+### Convert more printing code to avoid deprecated base::Value APIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1e7b84
+
+### Rename GetMainFrame to GetPrimaryMainFrame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9570f7
+
+### [Privacy Hub] Add webui handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45dacaf
+
+### Log entry points for the Lacros FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91c83c5
+
+### Move ThemeProvider::GetColor(COLOR_TOOLBAR_TOP_SEPARATOR_FRAME_[IN]ACTIVE) to the ColorProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f5a702
+
+### Limit GetPreviousMainFrameURL to primary pages outside of content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b49d2b8
+
+### Replace a handful of ThemeProvider::GetColor locations with
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/133c420e
+
+### Move ThemeProvider::GetColor(COLOR_TOOLBAR_INK_DROP) to the ColorProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b55cb7
+
+### Refactor gaia_action_buttons/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31557c3
+
+### Fixed adaptive toolbar button long press
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c804119
+
+### Reland "Source Demo Mode SWA content from downloaded demo-mode-app Chrome Component"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d31030
+
+### 👩‍🔧 Add //chrome/browser/ui/appmenu to on-device unit test target
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85cdaf0d
+
+### Disable ExtensionPopupInteractiveUiTest.ExtensionPopupOverPermissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31cdbe5
+
+### Disable PermissionBubbleInteractiveUITest.SwitchTabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62ff27e
+
+### [Password Manager] Refactor porter load/store into import/export.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a27fbd6
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa5bc50
+
+### Remove ModalDialogManager#destroy() calls from signin dialog coordinators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0641827
+
+### Set 16dp top and bottom padding for the button in signin uma dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99a8172
+
+### Revert "[Fixit] Migrate components/browser_ui/widget/android:javatest"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/880cd99
+
+### Disable OpenVisitUrlsInTabGroupHardCap
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20534f2
+
+### Adjust icon and string for onboarding PIN set up page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c7928f
+
+### Disable ThumbnailTabHelperInteractiveTest.TabLoadTriggersScreenshot
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2ef136
+
+### [Sharesheet] Add test for share action.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91a6687
+
+### [OOBE] Start deprecation of setUpOnlineDemoModeForTesting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ce0efd
+
+### Creates base integration testing for Access Code Casting.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b267b42
+
+### [omnibox] [shortcuts] Expand last word in input for shortcut text.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f641451
+
+### Added feature flag for rounded display.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/82fa0107
+
+### Add allow=federated-credentials permission policy
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bffd518
+
+### Remove PlaybackSpeedButton media feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/41a77d56
+
+`);
+              </script>
+            </body>
+        </html>
