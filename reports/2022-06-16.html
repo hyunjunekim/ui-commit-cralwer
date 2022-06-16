@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-16
+### Divide by resolution rather than multiply
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/141e112
+
+### RELAND: Files: Add first action and its factory
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96458c7
+
+### Remove unneeded testonly and robolectric deps from robolectric_library
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0bc9ec
+
+### WebUI: Enforce 'private' if a class method ends with '_', in TS files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7286e8
+
+### RELAND: WebUI & Files app: Change Files app to use chrome://webui-test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4536f439
+
+### Increase timeout of WidgetActivationWaiter for mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ded1f91
+
+### Move a whole bunch of colors from ThemeProvider to ColorProvider.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f589a6c78
+
+### Revert "Prevent unsafe narrowing: base/strings"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/224425dc
+
+### Revert "Allowing JNI ForTesting methods to be stripped"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f6983b
+
+### WebUI: Move files only used in file manager to ui/file_manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76ae4ab
+
+### CrSplitter: Remove use of Polymer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/193475c
+
+### Add documentation for ui/ozone/platform.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96f8314
+
+### Prevent unsafe narrowing: base/strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2df0c9
+
+### Migrate chrome://ukm to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7aaba4b
+
+### Sanitize default file name in windows select file dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9cdce354
+
+### Remove sadrul@chromium.org from ui/base/prediction/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f409f2b
+
+### Remove sadrul@chromium.org from ui/latency/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fb5efb
+
+### Allowing JNI ForTesting methods to be stripped
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8337d90
+
+### Remove sadrul@chromium.org from ui/aura/gestures/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09cf2c6
+
+### Revert "[sheriff] Revert "Clean up GLDisplayEGL's extension bits.""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9f211e7
+
+### Revert "CARendererLayerTree: Allow using pointers to address layers"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5a292a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85fdd37b
+
+### Revert "CARendererLayerTree: Move layer matching algorithm to separate function"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9f43a4
+
+### [sheriff] Revert "WebUI & Files app: Change Files app to use chrome://webui-test"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bd5177
+
+### [sheriff] Revert "Files: Add first action and its factory"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b70989
+
+### Re-enable native frame and disable screen coordinates.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06ede5f
+
+### DLP: Add DlpMetadataProvider.get() logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a11cef
+
+### Files: Add first action and its factory
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1a65c2
+
+### [sheriff] Revert "Clean up GLDisplayEGL's extension bits."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c144ba
+
+### WebUI & Files app: Change Files app to use chrome://webui-test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16ad3d9
+
+### [FilesRecentFilter] Add util function to get recent date bucket
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6af820a
+
+### [Extensions c2s] Update BlockedActionBubble content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29c4883
+
+### Revert "Start Expiration Timer When Route Has Been Added."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f7acf5
+
+### Move crostini::ContainerId to guest_os::GuestId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca108384
+
+### Reland "multipaste: Sync clipboard to clipboard history when items are deleted"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88a3e84
+
+### [Fast Pair] Add link row for saved devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a148568b
+
+### Migrated LoadProgressMediatorTest to robolectric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/feec404
+
+### Set kUseWindowBoundsForShadow based on frame type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1523f57
+
+### Relocate AnswerSuggestionProcessorUnitTest to JUnitTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dda69b
+
+### Relocate EntitySuggestionsProcessorUnitTest to JUnitTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2bd185
+
+### [MV][RQ] Extract and improve mechanism fetching favicons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/218c7ce
+
+### Saved Desks: Add capture and launch support for tab groups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/588605d
+
+### [ToolbarTablet] Add unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/167719b116
+
+### Use crostini::DefaultContainerId() rather than ContainerId::GetDefault()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29606bb
+
+### Move ContentsSeparator to Use CreateThemedSolidBackground
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b85ca82b
+
+### [Sheriff] Disable testDialogIsDismissedWhenRecreated on O+
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b470ef05
+
+### chromeos: Remove VmPluginDispatcherClient from DBusThreadManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/310b3e9
+
+### Replace COLOR_NTP_* ThemeProvider::GetColor with ColorProvider::GetColor()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b3cb63
+
+### Log caption bubble errors separately
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fc5b7e
+
+### sharing: remove shared clipboard, part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ad1c1e
+
+### Move ThemeProvider::GetColor(COLOR_TOOLBAR_CONTENT_AREA_SEPARATOR) to the ColorProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5921707
+
+### Disable the hover card while tab scrolling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86dab54
+
+### Feature to stop rendering loading animation when window is hidden.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2e8fba
+
+### Revert "Disable ExtensionPopupInteractiveUiTest.ExtensionPopupOverPermissions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbcf265
+
+### Remove WebContents::GetMainFrame.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e35a87
+
+### Migrate FlagState::GetFlagFeatureEntries to Value::List and Value::Dict.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4d77757
+
+### [Code Health][Fixit] Remove chrome/browser/continuous_search/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c525f23
+
+### [OOBE Test Api] Introduce OobeAPI.showGaiaDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e3c207
+
+### [Start] Revert Finale toolbar animation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/723086f
+
+### [sheriff] Disable flaky TabMoveTest on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d68fceb
+
+### Don't block buttons in signin fre in case of sync error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3099436
+
+### [Signin] Add action on Skip button in Profile Customization dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f903217
+
+### swa: Make SystemWebAppManager a KeyedService.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7c44bf
+
+### BrowserAppShelfController depends on App Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93681c9
+
+### Revert "Disable PermissionBubbleInteractiveUITest.SwitchTabs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8064f4e
+
+### Remove Autofill IE toolbar importer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55e864c
+
+### Fix interactive UI tests for PermissionChip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebc35bb
+
+### [dPWA] Display directory structure with bytes instead of kbs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/420b59b
+
+### [Extensions c2s] Update request access button based on user site setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a90e825
+
+### Remove the IconValue mojom struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9ff135
+
+### [Nearby][WifiCreds] Cleanup flag metadata
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/56a410b0e
+
+### Add a WebGPU Developer Features flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2ebd9a6
+
+### Set up about:flags entries for ECH
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/371481f
+
+### [omnibox][rich-autocompletion] Prune split and no-space params.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/022a11a
+
+### ime: Enable multiword for lacros.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce8369f
+
+### Remove expired CrOS Language Settings V2 Update 2 chrome://flags flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7b27d487
+
+`);
+              </script>
+            </body>
+        </html>
