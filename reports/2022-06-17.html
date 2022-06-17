@@ -1,0 +1,232 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-17
+### Plumb color space to gl::GLImageNativePixmap.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e55555
+
+### WebUI: Move cr/ui/splitter and test to last user (file_manager)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61481dab
+
+### WebUI: Update cr_elements README
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd62c58
+
+### Remove dead code from gfx::Matrix44
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7e06b1
+
+### Enable WebGPU software video frame import on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e2f77b
+
+### Use NativePixmapGLBinding to bind NativePixmap in Ozone
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72325c7
+
+### [DragDrop] Use DropDataAndroid as data content for DragEventAndroid
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66d3759
+
+### Switch to NSSpeechSynthesizer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84c4b88
+
+### Fuzz AXNodePosition with a fuzzer-generated AXTree.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d2a5fb
+
+### [CrOS SLP] Add building icon when policy restricts SIM PIN Locking.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce75faa
+
+### Remove Closure Compiler type checking from chrome://apps.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/faced451
+
+### Reland "Prevent unsafe narrowing: base/strings"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bb45c2
+
+### [Fixit] Migrate UI javatests to on-device unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb5de7b
+
+### File Handling: make settings page compatible with lacros
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64d6f891
+
+### Fix incorrect text itemization for \r codepoint
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eee0c5c
+
+### ax_test: introduce TestAXTreeUpdate helper class for ax tree unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2bb709e
+
+### [Cast Convergence] Remove is_chromecast from missed places
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb02150
+
+### [NFC] Cleanup redundant RenderText instance
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1657071
+
+### Remove |context_simple_| from InputMethodAuraLinux.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68e8187
+
+### Reland "Move //chrome/browser/ui/webui/settings/{chromeos=>ash} [2/N]"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e279c5
+
+### Rewrite more raw pointer fields to use raw_ptr<T>
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44d4f4e9
+
+### Reland "Add VmType to GuestId"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d643e40a
+
+### [FastCheckout] Create feature C++ controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c73d588
+
+### win: Dump w/o crashing on 0,0 mouse pos event in tab drag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f8dbf1
+
+### Intents: Allow selection through arrow keys in grid-style Intent Picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88de4c1f
+
+### [FedCM] Ensure that the FedCM continue button dialog text is readable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50ed6e0
+
+### Revert "Add VmType to GuestId"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0d75d3b
+
+### Add VmType to GuestId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bf9f66
+
+### Move ContainerId pref logic to guest_os
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcc56a29
+
+### [FastCheckout] Create Android feature folder for Fast Checkout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6381f95
+
+### [Extensions c2s] Show reload page dialog when revoking permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe10d36d
+
+### Migrate search activity tests to unit test apk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/838ac14
+
+### [ntp] Remove scrim for the remaining set of Pride Month themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecc580f3
+
+### Lacros: Always show browser window on NewTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e04b0f6
+
+### Update VmType references to remove ApplicationList
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/634447d
+
+### Update launcher "hide continue section" to new UX spec, part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a972d0e
+
+### Relocate StatusViewRenderTest to on-device unittests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cc7172
+
+### Revert "Reland "Move //chromeos/{=>ash}/services/assistant [4/N]""
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/18cfd25
+
+### [ios] Connect HTTPS upgrade code to omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/796e0629
+
+### Relocate StatusMediatorUnitTest to JUnitTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31e73b6
+
+### Relocate AutocompleteMediatorUnitTests to JUnitTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/539042e
+
+### 👩‍🔧 Add on-device unit test target for signin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b66e239b
+
+### Relocate BaseSuggestionProcessorUnitTest to JUnitTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ee3fcd5
+
+### Relocate EditUrlSuggestionUnitTest to JUnitTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/366872e
+
+### chromeos: Remove UpdateEngineClient from DBusClientsBrowser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cddec3c
+
+### Avoid \`TurnSyncOnHelper\` waiting for sync startup forever if offline
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/515dad7
+
+### Reland "Move //chromeos/{=>ash}/services/assistant [4/N]"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7b1a8df
+
+### [Phone Hub] Handling Onboarding Cancellation/Failure Results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5430580
+
+### [APC Desktop] Stop flow when side panel entry is hidden.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01cfa06
+
+### Fix full screen sync promos show logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff20330a
+
+### Retire kDesktopPWAsWebAppSettingsPage flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a6f61c
+
+### dpwa: Extract system_web_apps GN source set.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe7f56c
+
+### Added feature flag for Hidden SSID Implementation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6509038
+
+### Shimless: Add flag to disable dark mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9800016
+
+`);
+              </script>
+            </body>
+        </html>
