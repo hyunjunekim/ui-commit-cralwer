@@ -1,0 +1,192 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-18
+### WebUI: Migrate couple more tests to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/372bc32
+
+### WebUI: Remove unused files from Desktop builds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4cba00b
+
+### Avoid generating tests with incompatible eliding behaviors and styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22234f7
+
+### Avoid generating invalid IsValidDisplayRange calls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a066f55
+
+### [Fixit] Improve unit test coverage for DragAndDropDelegateImpl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a323f1
+
+### Revert "[Fixit] Migrate UI javatests to on-device unit tests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae43516
+
+### Revert "Only notify when size acutally changed in OnHostResizedInPixels"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb3197d
+
+### Fix an issue that content URI can be used to upload files under app dir
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c90687d
+
+### Add stricter DCHECKs for breaklist iterators
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3090dc2
+
+### Changed Color to ColorId property on FocusRing.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ca72cde
+
+### Make cc/trees/* use Skcolor4f
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7335ba
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60fc1826
+
+### Add Skia bindings for glCopyBufferSubData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a0606c
+
+### Revert "Feature to stop rendering loading animation when window is hidden."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a43e90
+
+### Add triggering full page translate from partial translate bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1147107
+
+### Add PartialTranslateBubbleView unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17fc9b3
+
+### Revert "Replace BrowserNonClientFrameView frame colors with ColorProvider::GetColor"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30e3a4b
+
+### Update expiry for tab scrolling flag and remove the tab scrolling buttons flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dcf3fae
+
+### Disable TopControlsSlideControllerTest.TestDropDowns for flakiness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d71d799
+
+### Migrate ThemeSettingsFragmentTest to on device unit test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cdcf88
+
+### [Messages][SaveCard] Reset metric recording related variables.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4e581c
+
+### Update TranslateBubbleViewTest suite and add logging checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ffdd9b
+
+### Move NetworkStateHandlerObserver clients in chrome/browser to base::ScopedObservation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/117146de
+
+### [DownloadBubble]Support drag and drop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91586b6b8
+
+### Remove dead code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65cb2996
+
+### Remove base::raw_ptr for use cases where they should be regular pointers in components/autofill/core/browser/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0824954
+
+### Revert "👩‍🔧 Add on-device unit test target for signin"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a007a34
+
+### Sync Internals: Replace cr/ui/list with a simple custom list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b9204d
+
+### [Search Resumption] Add search resumption module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba7658d
+
+### Update spinner size in follow management and update its color to dynamic instead of custom feed theme.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b481be7
+
+### End drags before a tab is removed instead of after.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f1db59
+
+### [Start] Revert home button on GTS and its IPH.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3290855f
+
+### Clean up scattered Omnibox test support files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0faa470
+
+### Replace BrowserNonClientFrameView frame colors with ColorProvider::GetColor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6759359
+
+### [FedCM] Change anchor of bubble, and add offset
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/917ae35
+
+### [FastCheckout] Implement FastCheckoutView for Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a7b565
+
+### [Password Manager] Remove exporter_for_testing_ member variable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc5d6f11
+
+### [CodeHealth] Remove base::DictionaryValue from SearchEnginesHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ad20ee
+
+### [Signin] Add header illustration in Profile Customization dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b5fe554
+
+### Quick Answers: Cleanup launched feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4fa707e
+
+### [Bluetooth][Win/Linux] Add confirm pairing mode support runtime flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3443b9b
+
+### [omnibox] Add back on device head suggestions flags for Win
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7762ef3
+
+### media: Enable to switch on/off HW VBR encoding by chrome://flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5a3450c
+
+### Privacy Sandbox Settings: Add Fledge features to Android flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/95fbe5b
+
+`);
+              </script>
+            </body>
+        </html>
