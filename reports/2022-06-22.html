@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-22
+### More wiring for the dual GPU rendering.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b841d8c
+
+### Implement UIA BuildNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d9ffcd
+
+### Unify simple and non-simple InputMethodContextImplGtk.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30c1e42
+
+### win: ignore drag events far from cursor pos
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43a897a
+
+### Files app: Replace chrome://test with chrome://webui-test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3da2dd
+
+### Safe browsing: Fix tab overflows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff6132d
+
+### Revert "[DragDrop] Use DropDataAndroid as data content for DragEventAndroid"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90b5210
+
+### Reland "Reland "ozone/wayland: enable ANGLE."""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96a9f0a
+
+### Reland "[Fixit] Migrate UI javatests to on-device unit tests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e04c000
+
+### Clean up for GLDisplay.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/007bfe3
+
+### Remove break after return to fix failure in AFL fuzzer builds.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/adf8c7bb
+
+### Reland: CARendererLayerTree: Move layer matching to separate function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/747f94cf
+
+### Rollback GetRootTransform change and dependent changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/808f40a
+
+### [Android] Migrate browser/language on-device tests to robolectric
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4969953
+
+### [ozone/wayland] Support stylus tool info sent after the respective touch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec71bc6
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa2ad7a
+
+### Use Mock fonts on Linux/CrOs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f35076
+
+### Rewrite raw pointer fields to use raw_ptr<T> for linux
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f28f4f8
+
+### Files NewArch: Add integration tests for new breadcrumbs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9355ea1
+
+### ozone/wayland: access buffer creation objects via a single factory.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/220ab69
+
+### Files NewArch: Enable the new Breadcrumbs & Store behind a flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70f008e8
+
+### Revert "Shefiff: Disable failing tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b740fa
+
+### Revert "HostedOrWebAppTest waits for browser activation"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a153f2
+
+### Shefiff: Disable failing tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06b0893
+
+### WebAppOpaqueBrowserFrameViewTest: simplify conditions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fe3783
+
+### Created notif. tester with configurable title and body.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f826d54
+
+### Don't always pause video in android video PiP.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f7c6ec
+
+### Observe windows to reset ArcAppWindowInfo::window_.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2006ac3
+
+### Reland "Replace BrowserNonClientFrameView frame colors with ColorProvider::GetColor"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e0dba5
+
+### CustomTabBarViewBrowserTest observes browser list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f02099f
+
+### Revert "Avoid #setTheme in tests, prefer activity with a theme."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7069cce8
+
+### Fix ash-initialized signal emission.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e3a6c3
+
+### Add "not android" assertions in c/b/ui/webui/side_panel/ BUILD.gn files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd9f071
+
+### HelpMenuModel: Remove redundant #if
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4eab65
+
+### Migrated ToolbarProgressBarTest to robolectric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b990f8f
+
+### HostedOrWebAppTest waits for browser activation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/292f023
+
+### chromeos: Remove UpdateEngineClient from DBusThreadManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfed89a
+
+### [Read Anything] Don't include side panel files in android build.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee00e4b
+
+### Add support for 'any context' with IPH specifications.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c70b2f
+
+### Use WeakPtr in ForcedEnterpriseSigninInterceptionHandle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11cf86f
+
+### swa: Move SystemWebAppBrowserTestBase to system_web_apps/test_support/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e284a9
+
+### Avoid #setTheme in tests, prefer activity with a theme.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/218254e
+
+### Fix tab group color regression
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b35f59
+
+### Reland "👩‍🔧 Add on-device unit test target for signin"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75d74e2
+
+### Move chromeos/{ => ash}/components/chromebox_for_meetings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be42001a
+
+### Intents: Clean up TODOs for launched Intent Picker Persistence feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd63a026
+
+### Revert "win: Dump w/o crashing on 0,0 mouse pos event in tab drag"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4814a26d
+
+### [memories] Add HistoryClusterProvider
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/37c4875
+
+### Removing the use PasswordForm in IsSyncAccountCredential
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9657572
+
+### Lacros app window system menus omit Close
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c13fa6b
+
+### [Refactor] Clarify AccountSelectionMediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d672da
+
+### [APC Desktop] Add results processing for base prompt.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3074670
+
+### [sync] Remove colored header from sync confirmation screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/645ea0d
+
+### Update clear all button string to react on filter applied.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a86335
+
+### Revert "Unify/Correct ProfileDestroyer implementation."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a23837
+
+### Update total usage strings on filtering sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ba0682
+
+### [OOBE][SAML]: Turn camera off if device is locked in tablet mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/157fb30
+
+### [OOBE][OfflineLoginScreen]: Update screen/handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d1f096
+
+### [OOBE WebUI] Update TPMError screen and handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/641d715
+
+### [sheriff] Disable flaky Popup browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef9b75da
+
+### [sheriff] Disable flaky HoldingSpaceUI browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9a049d
+
+### [continue-section]: Remove feedback dialog related code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7508a2a
+
+`);
+              </script>
+            </body>
+        </html>
