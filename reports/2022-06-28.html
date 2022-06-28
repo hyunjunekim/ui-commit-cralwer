@@ -1,0 +1,252 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-06-28
+### Convert gfx::Range to size_t.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43fddaa
+
+### Make right click -> emoji work in lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb85363
+
+### Moves the Rounded display feature from ash features to ui features as it is needs to be used in //ui code e.g //ui/../display_change_observer.cc.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/20d0ed9
+
+### Revert "Move system printing functions to LinuxUI"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/643e758
+
+### [GTK] Remove native scrollbar rendering
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed5aedf
+
+### Enable overlay scrollbars on desktop Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5eb5e75
+
+### Move system printing functions to LinuxUI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68140055
+
+### Move {Initialize|Shutdown}OneOff from GLSurfaceEGL to GLDisplayEGL.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0c7618
+
+### ui: Nits, fix LinearGradient references
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2270a62
+
+### Add option for severals Links to be connected.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/945e941
+
+### Use screen coordinate when sending pointer_motion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14191d3
+
+### bluetooth-internals: Pass .js files through TypeScript compiler
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55530aa
+
+### Add tracer events for skottie usage in graphics pipeline.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c69306b
+
+### Refactor DynamicResources to support pushing bitmaps.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77e7e3b
+
+### Migrate coulpe more shared WebUI elements tests to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78c9dfe
+
+### HDR/Windows: SDR displays must have 80 nits
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5fc4be
+
+### ui,gfx: Reland "gfx: Add LinearGradient to MaskFilterInfo"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f93ac89
+
+### [Graphics] Remove CHROMIUM_texture_storage_image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ae0cfa
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12ea2390
+
+### Set EventTarget to Event and use it to convert the event location
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50829fd1
+
+### Revert "Prevent unsafe narrowing: base/"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d13a4ea
+
+### DanglingPtr: Mark all of them as untriaged [2/N]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b99722f
+
+### [fuchsia] Build/run some more tests as CFv2 components.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bced7fbc
+
+### [bookmarks] Add metrics for time since added
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d75ab2
+
+### Modify AppLaunchInfo to use the non mojom Intent struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96858fd
+
+### [Extensions Offscreen Documents] Restrict API access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbf8f8f
+
+### Modify AppLaunchParams to use the non mojom Intent struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e64e2b
+
+### Add guard for null browser_ and revert suspected crash culprit CL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8359203
+
+### Fix inactive tab colors for GTK+ theme and system title bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c18c2fe
+
+### wallpaper: remove chrome app collection id migration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d44842e
+
+### float: Fix unintentional change in immersive_mode_controller_chromeos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7a30c7e
+
+### Allow flags to be shown on Lacros while hidden on ChromeOS
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aa33a2f0
+
+### Unifed side panel: add metric recording how long the side panel is open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0461388
+
+### Move UserGestureDetails into its own class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dbbfa5b
+
+### wallpaper: remove old extension preview handling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d00524c5
+
+### Configure OS geolocation permission to be granted for GeolocationHeaderTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94709dd
+
+### webauthn: show BLE permissions dialog on macOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6a7dc2
+
+### Replace ThemeProvider::GetColor with ColorProvider::GetColor in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60fb68e1
+
+### Unified side panel: add metric recording what triggered the side panel to open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80b0368
+
+### [FastCheckout] Add java side of the bridge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c3f6ae
+
+### float: Add title bar and resizer for tablet browser and chrome apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3b3573a7
+
+### chromeos: Remove ChunneldClient from DBusThreadManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1d9284
+
+### [Extensions] Disable flaky ExtensionsRequestAccessDialogView test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb01d88
+
+### [Lookalikes] Add allowlist scoping support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8a84a9
+
+### [Signin] Show profile customization in a dialog instead of a bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f8c7d1a
+
+### Migrate Demo Mode App SWA from chrome:// to chrome-untrusted://
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7f0da2
+
+### Partitioned Storage: Use Quota nodes for Quota managed storage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/837b3c8
+
+### Fix a few UI glitches in chrome://autofill-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26a8e71
+
+### Update UI of Gaia password changed screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86e8666
+
+### [OOBE]: Update Marketing-opt-in Screen for Blazey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35f8b1e
+
+### [CrOS] Add fake impl for AuthFactorConfig mojo service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be8b62a
+
+### [FastCheckout] Add Java interface and implementation for coordinator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d6a7e6
+
+### Lacros: disable chrome://certificate-manager page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbd7086b
+
+### Enable CustomTabBarView browser test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/868e6e4
+
+### //chrome/browser/ui/web_applications: unit_tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96bbab4
+
+### Update Lens feature flags to prepare for upcoming Lens experiments.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/057fbc4
+
+### Expose kIgnoreSyncEncryptionKeysLongMissing in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/020f8dc
+
+### [omnibox][rich-autocompletion] Fix flag typos.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/748798f
+
+### CrOS: memory: Zram writeback control code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/297843f
+
+`);
+              </script>
+            </body>
+        </html>
