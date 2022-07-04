@@ -1,0 +1,40 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-04
+### Files app: Remove unnecessary nohover style
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc5c218
+
+### Move //chromeos/{=>ash/components}/network [9/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdfd145
+
+### crostini: Unmount sftp mount on container shutdown
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52216a4d
+
+### Move //chromeos/{=>ash/components}/dbus/chunneld
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7537084
+
+### win: Long press on titlebar show context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80356e0
+
+### Support HTTP/3 protocol upgrade for HTTPS DNS records
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d8114960
+
+`);
+              </script>
+            </body>
+        </html>
