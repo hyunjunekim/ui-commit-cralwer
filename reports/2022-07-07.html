@@ -1,0 +1,220 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-07
+### Simplify MetadataItem initialization and don't create invalid Dates
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddcdf54
+
+### Create base::ThreadType to replace base::ThreadPriority
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9e4a00
+
+### [journeys] Add context menu to Journeys in Side Panel
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37437962
+
+### [CrOS SLP] Hide PIN inputs in PUK unlock dialog when policy is on.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2aad08
+
+### WebUI: Enforce Array<T> vs T[] using ESLint's array-type, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e067b7f4
+
+### Revert "Do not fire events in detached child frames"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/537e7fd5
+
+### Add missing c++ includes causing build errors when using system libraries on linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1042206
+
+### cros: expand bubble border shadow cache key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5152359
+
+### Use base::Value::Dict in WebUI helpers where appropriate.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c36427
+
+### [Files]: Add protection against null volume or location info.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4930712
+
+### Clarify/enforce rules around child trees
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76dfaaa
+
+### WebUI: Respect |visibility| in optimize_webui.gni.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4027a0a
+
+### Add IdlePollingService::SetTaskRunnerForTest()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/86416ae
+
+### [Ozone/Wayland]Remove buffer existence check for CommitOverlays()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f930a30
+
+### lacros: Fix tiny cursor regression.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df4dcdc
+
+### MTECheckedPtr: Un-rewrite select members
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3879bd24
+
+### MTECheckedPtr: Un-rewrite select members
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b96ad33
+
+### [AndroidPermissionsDelegateWithRequester] Cache all permissions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9e0469
+
+### [Ozone/Wayland]Do not call zaura_toplevel_xx without host enablement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5e75529
+
+### Do not fire events in detached child frames
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e97e86
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71f083f
+
+### Do not set empty description as the RootViews' accessible name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6478591
+
+### [Office] Add Upload to Drive task
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e806a8e
+
+### [GPU] Remove unused includes of gl_image.h in //ui/gl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec496ad3
+
+### Files app TS: Rename the Breadcrumbs to Breadcrumb
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7c052c
+
+### [FilesRecentFilter] Add browser test for time-period headings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66353f1
+
+### OOBE: Prevent OOBE WebUI creation inside the session
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/023519fd
+
+### [Code health] Convert /chrome/browser/ui/webui/chromeos/edu_coexistence away from WebUI::RegisterDeprecatedMessageCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3960122
+
+### Intents: Change intent picker persistence text to "Remember this choice"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cf6877
+
+### [String matching] Return relevance directly from Calculate().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9161eba
+
+### swa: Move UI utils to chrome/browser/ui/ash/system_web_apps/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/895987f
+
+### [CCTBrand] Update the power by Chrome footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/475ff36
+
+### [Code health] Convert /chrome/browser/ui/webui/nearby_internals away from WebUI::RegisterDeprecatedMessageCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/309e82e
+
+### Use unique names for test extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fb3eb1
+
+### [PCCT] Adjust app menu height to fit in the visible area
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27d1d8a
+
+### [journeys] Implement HaTs survey for Journeys
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b270c4
+
+### [Code health] Convert /chrome/browser/ui/webui/media_router away from WebUI::RegisterDeprecatedMessageCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce8eb97
+
+### [TabSwitcher][Tablet] Create start surface on first switcher load instead of on startup
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5162b6e7
+
+### [ZPS] Prevents empty header rows from ever appearing in omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63d0027
+
+### [Code Health] Replace base::DictionaryValue for components/invalidation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edd42f4
+
+### Revert "Intents: Launch directly into app from Intent Chip for preferred apps"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78a78d1
+
+### [OOBE][UpdateRequired]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c7f8e5
+
+### WebAppLaunchProcess: Use share target url
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7dfaa7
+
+### swa: Do not create SystemWebAppManager keyed service on WML and Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f27e636
+
+### [CodeHealth] Delete the NewTabTile code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e96955b24c
+
+### [ZPS] Removes unused params and make changes to ZSProvider metrics
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c391a3d4
+
+### [SearchResumption] Add the search resumption module on NTP.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/502b089
+
+### [task] Add align-wakeups Chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b6e0b67
+
+### Intents: Add flag to control intent picker auto display
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a596e2f
+
+### borealis: add flag for storage ballooning
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/573ad37
+
+### Move //chromeos/{=>ash}/services/assistant [4/N]
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a7fae8ba
+
+`);
+              </script>
+            </body>
+        </html>
