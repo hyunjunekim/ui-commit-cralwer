@@ -1,0 +1,248 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-08
+### WebUI: Remove cr/ui/list and friends on Desktop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c2d047
+
+### Dispatch release key events.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0b229e
+
+### Disable the validating command decoder when the passthrough is launched
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4305767
+
+### win: add stat for drag events before 0,0 move event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5558e70
+
+### [Android]: Integrate new Android Media Picker.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7bd14e8
+
+### Refactor \`FocusManager::FindFocusableView()\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f400ea
+
+### [WebUI IPH] Add WebUI help bubble title.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef54f607
+
+### WebUI: Respect |visibility| in generate_grd(), ts_library() GN actions.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3400976
+
+### [WebUI IPH] Add close button to help bubbles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9c5cca
+
+### PiP 2.0: Enforce aspect-ratio locking
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c81f938
+
+### Implement/Fix accurate display labels for ChromeOS/Lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38d866c
+
+### Explicitly disable PBS for WebInputEventTest.WheelEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae78d01
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db7b31efed
+
+### GLOzoneEGL - Update native pixmap import extension check
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/310ba56
+
+### MTECheckedPtr: Un-rewrite select members
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88c3450
+
+### Revert refreshrate to default if browser lost focus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/752735a
+
+### Fix some unsafe narrowing warnings, primarily with tables.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2c9583
+
+### personalization: CurrentWallpaper key not identify custom wallpapers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/343b601
+
+### Move //chromeos/{=>ash}/services/assistant [6/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db8f2c1
+
+### Remove min size restriction of split view on Lacros Tablet Mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/521bd4c
+
+### swa: Move system_web_app_delegate_ui_impl.cc to /ui/ash/system_web_apps/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3eb92c77
+
+### ash: Display ChannelIndicatorView in login screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f01d873
+
+### [ Side Panel ] Add prefs and side switch options to appearance page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a96ef19
+
+### [Read Anything] Add ReadAnythingToolbarView unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5f7dd5
+
+### lacros: Use same floss state as ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a6cacf
+
+### [Read Anything] Add ReadAnythingModel unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/112979bf
+
+### [Bluetooth][Win] Refactor pairing prompt code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f610013
+
+### Fix underline bounds not updating when dragging tab out of group.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ba6cc3
+
+### Sheriff: Disable flaky KeyboardLock test on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce703cd1
+
+### Added handlers for RichNotificationData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91015db
+
+### [APC Desktop] Refresh password scripts cache on password section load.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b9107f
+
+### Update tab membership based on the group_id of the first selected tab during dragging.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a6d029
+
+### [Extensions] Change how ExtensionHosts handle delegate calls to close
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36eecdae0
+
+### CHECK when a group is added twice to the same TabGroupModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eb1144
+
+### Revert "[privacy sandbox settings] Add tests for expanded consent dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bef320b
+
+### Revert "webauthn: allow preselecting discoverable credentials for mac platform"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ca0475
+
+### [Read Anything] Implement text size scaling buttons in read anything toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3d816a
+
+### [Fast Pair] Use icon_png bytes instead of url for SavedDevices WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/636e20e
+
+### webauthn: allow preselecting discoverable credentials for mac platform
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88f53cd
+
+### [Note] Fix opening StartNoteCreation and FocusNote
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea785d5
+
+### TestWebUI: Make CallData args iterable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/030525c
+
+### Replace raw_ptr with raw_ref in DocumentService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c70aec1f
+
+### [WebUITabStrip] Crash @CrosapiNewWindowDelegate::WindowObserver::SetWindowID()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0375117
+
+### Move chromeos/{ => ash}/components/local_search_service/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9e2aaf
+
+### [privacy sandbox settings] Add tests for expanded consent dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc07e707
+
+### [Signin] Add disclaimer for managed profile in signin intercept bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae9096b
+
+### [Privacy Hub] Add hardware microphone toggle info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a0cc6e
+
+### [mparch] Ensure WebAppTabHelper works with a primary page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c8c87a
+
+### Make brunobraga an owner of automated password change directories.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e613ffe
+
+### swa: Fix OWNERS files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afdc1d1
+
+### [String matching] Refactor IsRelevant() to Relevance().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a275c44
+
+### Settings: Remove unused ResolveFontList,MaybeGetLocalizedFontName helpers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e6b7eda
+
+### [Launcher health] Remove kEnableLauncherSearchNormalization flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a965be4
+
+### [Feed Position] Read result from segmentation platform for enabling Feed Position.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1891d9e
+
+### Removed expired launcher nudge chrome flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f7685c8
+
+### PiP 2.0: Add entry into chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c79b2e0
+
+### Add feature flag for enabling biometric authentication in settings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3f6a816
+
+### Add missing macOS platform support to WebShare feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fa0757a
+
+`);
+              </script>
+            </body>
+        </html>
