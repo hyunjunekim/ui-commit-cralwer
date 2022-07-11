@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-11
+### Revert "[Exo]Unbind data for other wl_resources when ~WaylandDisplayHandler"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de4d7de
+
+### Make adaptive hold default
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/739efcef
+
+### Make CPA drive segmentation on-demand
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcff472
+
+### Resurrect the GlobalMediaControlsForCast feature flag on CrOS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c266c3f
+
+`);
+              </script>
+            </body>
+        </html>
