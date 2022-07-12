@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-12
+### [fuchsia][input] Support new fields for touchpad pan gesture
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0303944
+
+### [Read Anything] Implement custom MenuModel and Combobox for font name
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bca6858
+
+### CanvasHDR: Add proposal API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e615e67
+
+### Remove old SurfaceSync dchecks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2fa82ee
+
+### Move render_accessibility.mojom to blink/public/mojom
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2fe06ad
+
+### Revert "Fix issues related to ViewAccessibility::OverrideName/Description"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c29cece
+
+### Skip processing touch event if the target no longer exists
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1f2686
+
+### MacViews: Remove Cocoa version of ScopedFakeNSWindowFullscreen
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04e1d21
+
+### Reland "[Exo]Unbind data for other wl_resources when ~WaylandDisplayHandler"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28c69516
+
+### Fix issues related to ViewAccessibility::OverrideName/Description
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bcc451
+
+### ime: Implement autocorrect related APIs for Lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60ff445
+
+### Remove michaelpg from WebUI OWNERS files
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/518e6c7
+
+### Allow constructing UniqueWidgetPtr from a subclass instance of Widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ebe1e1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3fe173
+
+### Use new skcms location
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/efd439a
+
+### Move //chromeos/{=>ash/components}/network [10/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/643dead
+
+### [FilesRecentFilter] Filter disallowed volumes in recent view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97423aa4
+
+### Add all required attributes to Screen2xSnapshotToViewHierarchy.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c046d88
+
+### Change InputMethodAuraLinux result_text_ to an optional string.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28bfd09
+
+### Reland: Do not fire events in detached child frames
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c3550f
+
+### lacros: Fix tiny cursor regression.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df4dcdc9
+
+### [Omnibox] Removed launched Feature kActiveSearchEngines.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2f1698e
+
+### Saved Desks: Capture and Launch browsers with pinned tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6bc27b
+
+### Use dimensions and position when creating noopener popups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fdd2a9
+
+### [CrOS WebAPKs] Share files from ARC WebAPKs to Web Apps using Fusebox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ad079e8
+
+### [Code Health Rotation] Remove NOTIFICATION_EXTENSION_PERMISSIONS_UPDATED
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/197ea0d
+
+### win: Enable maximize button in touch mode when not maximized
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02b5571
+
+### Reland "personalization: CurrentWallpaper key not identify custom wallpapers"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6c9f05
+
+### Create CastMediaNotificationProducerKeyedService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/398c73dc
+
+### [ZPS] Extends suggestion groups to all providers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ad9469
+
+### [journeys] Check for 0 visits when opening visits in tab group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bad3b3
+
+### Rewrite CameraPresenceNotifier to be per-instance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f27175
+
+### Reland "Intents: Launch directly into app from Intent Chip for preferred apps"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d50d5ed
+
+### Fix cart db proto dependency in Mac build
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e49924
+
+### Update base::Value list code in chrome/browser/ui/ash/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39d1a62
+
+### Reland "Revert "Move approve/deny bottom sheet to chromium repo, step 3/3""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6889ca
+
+### Fix UAF in CloseBubbleOnTabActivationHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c20977
+
+### [dPWA Command]: Change callsites to use Run On OS Login commands
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fabe36f
+
+### [Android] Fix deps on private chrome/test/android test_support targets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c27b25d
+
+### Migrate chromeos/ash/components/local_search_service/ to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52a6f484
+
+### saved_desks: Eliminate most uses of IsFullRestoreRunning.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/736ef59
+
+### Add IdleProfileCloseTimeout policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88283a00
+
+### PrivacyIndicators: Rename MicrophoneMuteNotificationDelegateImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad367c2
+
+### [fileSystem API] Handle close event for requestFileSystem() consent dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfd3f82
+
+### Modified ToolbarPhone to integrate new OptionalButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e550da0
+
+### Simulate server for mocking access code casts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51b8882
+
+### Move utility functions from web_app_constants.h to web_app_utils.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f978ba
+
+### lacros: Disable app muxing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0876fb73
+
+### Turn Projector Policy ON by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36f2991
+
+### sharing: remove shared clipboard Android UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f94180
+
+### [Shelf] Remove LoginShelfGestureController and its related code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71ce394
+
+### [Sheriff] Disable more flaky side search tests on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f81234b
+
+### Revert "Revert "Move approve/deny bottom sheet to chromium repo, step 3/3""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d592163
+
+### Properly initialize members of TabGroupChange::VisualsChange
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a48168
+
+### [Signin] Add WebContentsDelegate to DiceWebSigninInterceptionBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a272d679
+
+### Improve enterprise management detection for Lacros FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8231eee
+
+### [UPM] Add reset UPM eviction button to password manager internals webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de58c07
+
+### Avoid using |delegate_| after the PermissionPromptBubbleView constructor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c85c07
+
+### support-tool: Include PII in exported logs by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02a0e26b6
+
+### [APC Desktop] Store resource ids instead of strings in onboarding model.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/383d4a2
+
+### swa: Make system_web_apps/test_support Ash-only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c5aceb
+
+### Revert "[Multipaste] Re-enable the browser test that verifies HTML rendering"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6354293
+
+### [Start Refactor] Instantiate TabSwitcher in CTA instead of by StartSurface when start is disabled.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eba989e
+
+### Add flag for Custom APN profiles enhancement
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/916fcb7
+
+### arc: Remove compat snap flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5d8e15a
+
+### [launcher] Expose an ItemSuggest long delay parameter.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bde90d7
+
+`);
+              </script>
+            </body>
+        </html>
