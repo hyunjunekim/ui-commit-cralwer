@@ -1,0 +1,248 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-13
+### Fix some more narrowing failures.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f3e2a5
+
+### [Files App] Add strings for Pooled Storage on Files App
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c699d45
+
+### Refactor capture mechanism in ViewResourceAdapter.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac543db
+
+### Reland "Reland "Make sure to dispatch an event to the target only.""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe29d5d
+
+### WebUI: Make cr-toggle visible when High Contrast Mode is active.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/956b1ab
+
+### Convert ListModel to size_t.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36c95e9
+
+### WebUI: Make <cr-icon-button class="..."> work with High Contrast Mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7aab778
+
+### [Code health] Convert away from WebUI::RegisterDeprecatedMessageCallback
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbd26476
+
+### [fuchsia][scenic] Break potential metrics event deadlock
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65190c6
+
+### wayland: include window origin when handling initial configure sequence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5517d8
+
+### WebUI: Fix a few focus indicators and borders in Windows HCM.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4a49bd
+
+### Prefer DCHECK implementation of SANITIZER_CHECK
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/458559af
+
+### Remove aberrant semicolon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/223dda3
+
+### Views Unification: Moves GetHtmlAttribute to AXNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cdf38f4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a0c3dd
+
+### Revert "Reland "Make sure to dispatch an event to the target only.""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ceb7d4
+
+### Reland "Make sure to dispatch an event to the target only."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7201539
+
+### [Stylus Handwriting] Implement Android logic for stylus recognition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51fa53f
+
+### Change ClipboardOzone to use GetSourceAndCheckIfReadIsAllowed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee2c03c
+
+### Fix color change updater query params.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bdb390d
+
+### Files app: Change UMA DirectoryListLoad to account for the DOM update
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90e2492
+
+### Revert "Make sure to dispatch an event to the target only."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb0a2d9
+
+### Make sure to dispatch an event to the target only.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6f23c5
+
+### files_app: Bruschetta uses the Crostini icon for now
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/429c9c1
+
+### Revert "Add lens icon to the combo box drop down."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc6a731
+
+### Add lens icon to the combo box drop down.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5ea448
+
+### Revert "Create Following Feed NTP module for desktop feed prototype"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/512c641
+
+### Intents: Add ChromeOS device type to Intent Chip IPH bubble string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05998d2
+
+### Create Following Feed NTP module for desktop feed prototype
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80e660a
+
+### cros: Fix wallpaper sometimes showing behind tab strip on window restore
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e3e7dc
+
+### move logic into latency recorder and use UserGestureDetails
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b33c79e1
+
+### desks_api: Implement private API to set and unset all-desk window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/917f6dd
+
+### SidePanel: Create empty directories for "Customize Chrome" panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/000013f
+
+### Disable ExtensionsTabbedMenuViewUnitTest.SiteAccessTab_ActiveTabExtension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c0388f
+
+### desktop-share-preview: redlines v3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5b32ef
+
+### [CodeHealth] remove last use of NOTIFICATION_APP_TERMINATING in //c/b/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8503263
+
+### [VCN][M2] Update vcn enrollment description text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2865ec
+
+### Enable all dynamic color features/params by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e8351c
+
+### Drop feature \`kWebAuthCable\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebfd987
+
+### [ToolbarPhone] Remove duplicate update for expansion animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6a844e3
+
+### [LanguageSettings] Update preferred languages title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf77564
+
+### [CodeHealth] Stop Using deprecated base::Value::* list methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b407ae3
+
+### [Read Anything] Save user font size choice to user prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/617e730
+
+### [Notes] Trigger notes when user navigates to a page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc3dfaf5
+
+### [Sheriff] Disable flaky ProfileCustomizationDialogBrowserTest.IPH on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/905fbfd
+
+### [Lacros] Update StartupBrowserCreator*Test to no require sync account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db96ab7
+
+### Lacros FRE: Ensure that managed users see the enterprise flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6be368ba
+
+### [APC Desktop] Record consent in backend.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1f8777
+
+### [OOBE][PackagedLicense]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47a37ba0
+
+### [OOBE][WrongHWID]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab0e7687
+
+### Reland "webauthn: allow preselecting discoverable credentials for mac platform authenticator"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3689d0
+
+### [Lacros] Support os://app-service-internals page in Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd3162ff
+
+### Revert "Migrate chromeos/ash/components/local_search_service/ to namespace ash"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15ffa9f
+
+### Remove ash::features::kEnableWireGuard flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f931aba
+
+### Add fieldtrial_testing_config.json and about_flags entries for FeedCloseRefresh
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6cf75a8
+
+### Reland "[Start Refactor] Instantiate TabSwitcher in CTA instead of by StartSurface when start is disabled."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/921dbdf4
+
+### Send reduced platform and oscpu in the desktop User-Agent string
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c3fc2d8
+
+### Revert "[Start Refactor] Instantiate TabSwitcher in CTA instead of by StartSurface when start is disabled."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c8ced37d
+
+`);
+              </script>
+            </body>
+        </html>
