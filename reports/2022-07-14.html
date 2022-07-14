@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-14
+### Make tracking_id const inside PalmFilterStroke
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73e2869
+
+### [FilesRecentFilter] Show "no files" message in Recent view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7dd57b68
+
+### fusebox: disable Close context menu for fusebox FSP volumes in Lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b792e6
+
+### NTP: Fix several High Contrast Mode issues.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8b7e44
+
+### Set supports_global_screen_coordinates to true on lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bdf1ce9
+
+### autotest: Wire display smoothness to GetPercentDroppedFrames
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c39c1ea0
+
+### wayland: Commit surface after configure with same size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32e27b7
+
+### Surface tabpanel label in description rather than title
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e508f5c
+
+### [CT][EngagementSignals] Add plumbing for onVerticalScrollDirectionChanged signal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c332a1c
+
+### Adding new kWindowsScrollingPersonality feature flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8baf013
+
+### HardwareDraw now pushes bitmaps on completion.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e3f382
+
+### Use ScopeObservation to track VirtualKeyboardControllerObserver.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bda9e7b
+
+### libstdc++: std::vector cannot have const members in ListSelectionModel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d3e1f2
+
+### Expose title + message of JavaScript alert as window accessibilityLabel
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbfe16b
+
+### Prevent unsafe narrowing: base/ for Android
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a4bf14
+
+### DanglingPtr: Fix dangling ptr in AnimationDelegateViews
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4bb10e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bd315f7
+
+### Move //chromeos/{=>ash/components}/dbus/hermes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36116ab
+
+### [omnibox] Capture escape keys when popup is open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39a15f7
+
+### swa: Make system_web_apps Ash-only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31587bb
+
+### Move //chromeos/{=>ash/components}/network [11/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/264cd6d
+
+### DPWA: add custom scroll views for detailed install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0370fd
+
+### [CrOS Audio] Create output slider in settings-audio.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a407cd7
+
+### [side search] Update the UnifiedSideSearchController with DSE icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82adf4ee
+
+### [DownloadBubble] Add Incognito Behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/610f636
+
+### Make GetActiveUserWallpaperInfo return an optional<>.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72410b2
+
+### [side search] Update DefaultSearchIconSource to be BrowserUserData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fed918
+
+### Intents: Close Supported Links InfoBar when the app is opened in Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a24117
+
+### Revert "Reland "Add lens icon to the combo box drop down.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b762b5f
+
+### Disable PrivacySandboxDialogViewInteractiveUiTest.EscapeClosesNotice on all release bots
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d8701c
+
+### Use Coordinator pattern for ExtensionsTabbedMenuCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c677aa
+
+### Nullify MediaRouter after shutdown and add no-op checks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5540978
+
+### SidePanel: Create empty chrome://customize-chrome-side-panel.top-chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fdc1a0
+
+### Reland "Add lens icon to the combo box drop down."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/745bc19
+
+### Revert "Implementing DataDecoder ValueOrError with base::expected"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74d2127b
+
+### Stop generating unsupported policies on android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06a4a320
+
+### multipaste: Add metrics for clipboard history list reorders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f13ac06
+
+### UserNotes: Implement "Add a Note" context menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e048e7
+
+### Change color for security icon when website security is warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/976ae68
+
+### Move where ToolbarPhone updates its snapshot state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ee3d2f
+
+### [FedCM] Add scroller to desktop account picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/443c38f
+
+### [ios][UserPolicy]🏢 Show domains in chrome://management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d331925d
+
+### Fix logic error in search engine handler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f025b8
+
+### Metrics for promo code autofill suggestions popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dddc58f
+
+### Settings: Fix missing entry from settings hierarchy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4254089
+
+### [RQ] Allow MV Tiles text to span across two lines.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0be2add
+
+### [MediaRouter] Remove issue_{manager,observer} files from Android builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5657b20
+
+### [Extensions] Resize menu contents when necessary
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5b4060
+
+### [Notes] Get rid of ui/views dependency in chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f2fa98
+
+### [CodeHealth] Remove Dictionary and List Values from site settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2929f6d
+
+### Implementing DataDecoder ValueOrError with base::expected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/479ba74
+
+### [CodeHealth] Remove all DictionaryValue usage in site settings UT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e71adf
+
+### CrOS Settings: Generate ash search Mojo WebUI bindings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71e834f
+
+### [CrOS Audio]: Create settings-audio subpage in device-settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28bbc1f4
+
+### Convert HomePageUndoBubble to coordinator pattern.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d57852c
+
+### Revert "[APC Desktop] Record consent in backend."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/836536a
+
+### [Signin] Ignore return value from ExecJs in TryCompleteProfileCustomizationDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2ffd2e
+
+### Give unnamed bookmark folders a default name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd10e6f4
+
+### [APC Desktop] Do not render buttons when choice is not chip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a5ebb2
+
+### Don't set up partition for attestation enrollment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f965b75
+
+### support-tool: Update data collector description strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/186d7b0
+
+### Revert "Reland "Revert "Move approve/deny bottom sheet to chromium repo, step 3/3"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f44b49b5
+
+### [CodeHealth] Cleanup remaining ListValue usage in site_settings UT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb54f1a
+
+### [System-apps]: Support os:// urls for SWAs called in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af1e96fd
+
+### Use ash feature flag to disable/enable tts lacros support.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6bdaa16
+
+### Add feature flag for seamless refresh rate switching
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef72571
+
+### [NTP][RecipesV1.1] Add triggering ids for recipes flag variations
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1b513b3
+
+### [Downstream Metrics] Add feature flag to protect changes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3194bda
+
+### [VCN] Remove launched experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/120c09d5
+
+### Add feature flag to enable LL Privacy feature in bluetooth
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/706c227
+
+`);
+              </script>
+            </body>
+        </html>
