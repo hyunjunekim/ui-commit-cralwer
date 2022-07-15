@@ -1,0 +1,324 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-15
+### WebUI: Enforce trailing commas for arrays and objects, part 9.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3f2cbe
+
+### [FilesRecentFilter] Add browser test for empty folder message
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e496a41
+
+### Add elainechien@ and kerenzhu@ to ui/views/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d01a32
+
+### Revert "HardwareDraw now pushes bitmaps on completion."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fd9345
+
+### Merge CursorThemeManager into LinuxUi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a49b45a
+
+### Merge ShellDialogLinux into LinuxUi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d83c90
+
+### Add text based audio descriptions experiment flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6ac817
+
+### Merge PrintingContextLinuxDelegate into LinuxUi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db24588
+
+### Remove LinuxUi::{GetAvailable,List}SystemThemeName{s,}ForTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df712ef
+
+### Rename views::LinuxUI to ui::LinuxUi
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/992d987
+
+### Move LinuxUI from //ui/views/linux_ui to //ui/linux
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ee8374
+
+### Make cc/Paint/paint_shader.h use SkColor4f
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c22a3aa
+
+### WebUI: Enforce trailing commas for arrays and objects, part 8.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c579480
+
+### HDR: Use metadata for PQ tone mapping
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8e14b4
+
+### Remove NameFrom::kUninitialized as an accessible name source
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ce1e3eb
+
+### lacros: Do not call weston_test_activate_surface in EmulatePointerMotion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/788c4fb2
+
+### Remove ShadowRecordHistogram usage as it is no longer needed.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79d87c5
+
+### mac: removes experiment to force 60hz
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5ce0369
+
+### [Android]: Correct capture mode for video/*.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a98ee8b1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/144e06bf
+
+### Remove the use of WIDGET_OWNS_NATIVE_WIDGET & cleanup.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0762401d
+
+### Remove use of WIDGET_OWNS_NATIVE_WIDGET & cleanup in tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4213afd
+
+### HDR Metadata: Remove IOSurface IPC side channel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3d665e
+
+### HDR Metadata: Plumb metadata using CALayerOverlay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e67a04
+
+### DLP: Show managed icon for files under DLP
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd7fa250
+
+### Remove unused banner strings and unnecessary TODOs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9db2de9
+
+### OOBE: Fix the CVox on NetworkSelectScreen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea9c8fdf
+
+### Extract: Fix progress message for multiple extraction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e70c300
+
+### [side search] Refactor Side Search tests p1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cb5b49
+
+### Reland "Dynamically enable/disable Kerberos in SmbService"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/744245f
+
+### [games] Add status metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4401909
+
+### [launcher] Add a long delay configuration to ItemSuggest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/974f5e31
+
+### [Office] Define WebUI dialog for the upload to cloud workflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35aa5f4c
+
+### swa: Move SWA features to ash::features::
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3907d03f
+
+### Modify the app metrics code to use the non mojom LaunchSource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c7cc7d
+
+### Don't DCHECK when unrelated tabs are closed during drag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24e8381
+
+### [Fast Pair] Log the number of devices saved to a user's account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d01105
+
+### Intents: Re-enable IntentPickerDialogTest on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de64e61
+
+### Modify AppLaunchParams to use the non mojom LaunchSource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e86ff1f
+
+### [Fast Pair] Log the load time for the Saved Devices page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb5a367
+
+### Refactor: removed all instances of renotify.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f88a46f
+
+### SavedDesks: Update saved desk buttons when activating desk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/062e6eb
+
+### [Bluetooth][Win] Add Bluetooth confirm-pin-match pairing mode prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d4738e
+
+### [Preloading] Integrate Prerender DirectURLInput logging with precog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac12140
+
+### Use a weak pointer when generating a SystemNudge's icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ef10616
+
+### Fixed button not updating when reusing ButtonData instances
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc6e6a2
+
+### [GTS for tablets] Fix a couple of minor bugs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26b25b3
+
+### Add a shortcut to toggle the marker when a Projector session is active
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6772b923
+
+### [ntp] Remove NtpModules feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e4171b4
+
+### Reland "Implementing DataDecoder ValueOrError with base::expected"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2afab4
+
+### Fix bugs with QR code generator ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce7eeda
+
+### [Cross Device] Enable os:// URLs on LaCros for debugging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0083b8b
+
+### Add new user interaction events for interacting with the lens entry in the unified side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cee130f
+
+### [side panel] Add an identifier for the side panel close button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39b555f
+
+### [Fast Pair] Log result of removing a Saved Device from Footprints
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4973082
+
+### Pass Type into Progress Dialog Metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6471cf
+
+### Fix logic error in logic error fix.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2033a78
+
+### [Multipaste] Collect stack trace from the failed flaky tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56d2e65
+
+### saved_desks: Add restore window id to launched browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/622c08b
+
+### partial_split: Add WindowSnapWMEvent type for events with snap ratio.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26c2412
+
+### [side search] Add helper to check for browser support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c69b8bf
+
+### Reland "Create Following Feed NTP module for desktop feed prototype"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdd29f7
+
+### [A11y Settings Revamp] Add alternate search tags for new subpages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a8bcbb
+
+### [UPM] Add outdated GMS dialog for Password Manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16f3c4e
+
+### CookieControls: Avoid potential UAF by adding WeakPtr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09f521bc
+
+### Adding net-export forwarder to Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c70df052
+
+### Sign out instead of crash if screen lock timeout reached
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ab871ab
+
+### [launcher-lacros] Added comprehensive tests for the OmniboxResult class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ee822f
+
+### Revert "[omnibox] Capture escape keys when popup is open."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c324abc
+
+### [APC Desktop] introduce scrim manager to help users focusing on the flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5fab3db
+
+### Reland "[APC Desktop] Record consent in backend."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4aa6147
+
+### Revert "Stop generating unsupported policies on android"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2aad9d1
+
+### [A11y Settings Revamp] Make Display, Keyboard, Cursor, Audio Subpages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4c5115
+
+### [Clipboard API] Adding clipboard read/write unsanitized content flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2266c11
+
+### [Android][SafeMode] Gate SafeMode on cached flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aa6c314
+
+### [MSC] Added chrome://flags for getDisplayMediaSet related functionality
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c5aed196
+
+### Site Data Improvements: Add flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5794f89
+
+`);
+              </script>
+            </body>
+        </html>
