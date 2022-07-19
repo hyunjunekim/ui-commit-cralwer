@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-19
+### Remove calamity@ from OWNERS and add replacements.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e468c29
+
+### Revert "Reland "Reland "Reland "MSWP Automated Tests: Add virtual display for mac tests""""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cef277e
+
+### fusebox: enable FuseBox FSP volume "Close" menu in files app
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cca923f
+
+### Allow iframe to use ARIA role without triggering DCHECK
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d912c0a
+
+### Fix CaptureControllerTest.UpdateCaptureDestroysOldCaptureWindow.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c31e572fc
+
+### WebUI: Enforce trailing commas for arrays and objects, part 12 (last).
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4d85572
+
+### Revert "mac_merge: remove BrowserAccessibilityCocoa AXPosition in favor of AXPlatformNodeCocoa"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1abe6b
+
+### Replace undefined std::vector<const T> with std::vector<T>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ae8085
+
+### Use DIP/scren coordinates in mouse anchor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9618d4
+
+### Add RefreshRateThrottleController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/efec322
+
+### WebUI: Import Polymer templates at runtime for cr_picture/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a3f9de
+
+### Refactor CaptureController WindowTracker.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62efafb
+
+### Speculative fix for IsValidCodePointInIndex() range crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4d1ce62
+
+### mac_merge: remove BrowserAccessibilityCocoa AXPosition in favor of AXPlatformNodeCocoa
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa7d44d
+
+### views: fix updating selection state when adding ImageView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b245d06
+
+### Roll src/buildtools/third_party/libc++/trunk/ b1269813e..88bf40704 (417 commits)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f93fc028
+
+### [asan] Fix UAF when capture window is cancelled by UpdateCapture.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0645067
+
+### Fix ScopedJavaSurface leak during move
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9eb4b6e
+
+### [Read Anything] Remove ui/accessibility mojo files from use in WebUI.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd42abcd
+
+### Remove use of WIDGET_OWNS_NATIVE_WIDGET in NativeWidgetAura tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/290f970
+
+### Remove redundant generated load start/complete events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49896fc
+
+### Reland "Reland "Reland "MSWP Automated Tests: Add virtual display for mac tests"""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4d794a
+
+### Add more test cases for Screen2x proto conversion unittest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/850c0a8
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ded465
+
+### Changed test utility methods to simplify the test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04681da
+
+### Mac: unload GL libraries in cleanup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d1ad60
+
+### [Files] Align the padding for list/grid view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41149cdc
+
+### Make ScopedFeatureList::InitFromCommandLine scope field trials.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3c20d4
+
+### Deduplicate context menu options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87acdc0
+
+### [DownloadBubble] Add Quick/On-hover actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21be1d45
+
+### dark_mode: Add highlight border for non-browser windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95d9661
+
+### Deflake MediaRouterUIBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bf317a9
+
+### [Read Anything] Only distill AXTree when UI exists.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e12de6d
+
+### projector: Add ScreencastManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11766bf
+
+### [dPWA] Adding user actions to install dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2efecfd
+
+### Initialize AnnotatorMessageHandler to nullptr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bd8d65
+
+### Intents: Always show intent chip as expanded if the app is preferred
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c7662c
+
+### [Read Anything] Remove duplicate calls to DistillAXTree.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64d2af4
+
+### [Extensions] Run toolbar tests if extensions are enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8a011732
+
+### Add an additional lens flag (\`kEnableLensSidePanelFooter\`) to disable footer that can be controlled using finch experiments. The footer is enabled by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a320453
+
+### Fix wrong underline bounds when dragging a tab group in a window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48ec42f
+
+### [Read Anything] Add accessibility labels for toolbar and polish UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/240a9af
+
+### Add the non mojom launch interface in AppServiceProxy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a65763
+
+### [side search] Update side panel v2 text with hosted content domain
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/556570d6
+
+### [dPWA Testing] Adding source internals to test output on failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6151859
+
+### Remove DownloadLaterDialog java classes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/118827a
+
+### Revert "[ToolbarTablet] Reland of using cached feature flag"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3ed57e
+
+### Move MutedReason num to tab_enums file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4f7d24
+
+### [side search] Refactor Side Search tests p4
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6466909
+
+### [A11y Settings Revamp] Add search result icon for ChromeVox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc3dfd64
+
+### [side search] Refactor Side Search tests p3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6425abe
+
+### [dPWA] Expose window-controls-overlay in display-mode CSS media query
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/213891205
+
+### arc: Disable firing apps on locked screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/741c6f9
+
+### Lookalikes: Add browser test for Combo Squatting heuristic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce69a27
+
+### Intents: Flip intent chip logic to be based around 'expanded' state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b05dc83
+
+### [side search] Refactor Side Search tests p2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf45e3c
+
+### Speed up compilation of unittests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8045a83
+
+### [PCCT] Adjust app menu height to fit in the visible area (2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abd06a0
+
+### Unified side panel: add per entry metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbd0175
+
+### Refactor SavedTabGroup and SavedTabGroupModel to support base::GUIDs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77542f6
+
+### lacros: Disable ui tests with a scale factor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a50075
+
+### [Code health] Convert /chrome/browser/ui/webui/family_link_user_internals away from WebUI::RegisterDeprecatedMessageCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f90738be
+
+### [basic-card] Remove payment_request_journey_logger_browsertest.cc basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d6f411
+
+### [basic-card] Remove PaymentRequestNoUpdateWithTest basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e82324c
+
+### [basic-card] Remove PaymentRequestCompletionStatusMetricsTest basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3a7a45
+
+### user-notes: Store original text in UTF-16
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffbafe6
+
+### [Code health] Convert /chrome/browser/ui/webui/browser_switch away from WebUI::RegisterDeprecatedMessageCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa8ee62
+
+### [basic-card] Remove PaymentRequestContactInfoEditorTest basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5581447
+
+### [basic-card] Remove cvc_unmask_view_controller_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa420e3
+
+### [OOBE][EnableDebugging]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1048e2
+
+### [OOBE][TermsOfService]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f875f65
+
+### [OOBE][ResetScreen]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/911550c
+
+### Let Lacros to access the PowerManager DBus service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c839fda
+
+### Allow tabbed web apps to set a custom new tab URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/741ba7f
+
+### Add ash/webui/PLATFORM_OWNERS to ChromeOS WebUI directories.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d956b79
+
+### Revert "[privacy sandbox settings] Enable pixel test for consent"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ff482e
+
+### Sheriff: Disable ReadAnythingCoordinatorTest* tests on Mac ASAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fc91514
+
+### [launcher-lacros] Added text tag OmniboxResult tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7be0aab3
+
+`);
+              </script>
+            </body>
+        </html>
