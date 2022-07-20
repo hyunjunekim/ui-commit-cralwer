@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-20
+### Move //chromeos/{=>ash/components}/network [13/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/deeacaf
+
+### [Files App] update gear menu with Pooled Storage changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb5a02c
+
+### Bluetooth Internals: Remove use of deprecated array_data_model
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c1f486
+
+### Convert MenuModel to size_t.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3d90e3
+
+### Fix incorrect generation of homogeneous tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9736e8b
+
+### Add a shortcut path to exit from ContentMainDelegate APIs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b0d75a
+
+### Support multi-threading GPU Switch for DCLayerOverlay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e03ef6c
+
+### Implement seamless refresh rate throttling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7cd4dd8
+
+### lacros: Remove weston_test_activate_surface from WaylandInputEmulate.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab86580
+
+### Use activity as context in dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b5ad68
+
+### [a11y-during-render] Compute bounds and serialize AX objects in Blink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1619aa4
+
+### ui,viz: Add gradient mask implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acd97f40
+
+### Revert "Remove WIDGET_OWNS_NATIVE_WIDGET from ui/views/accessibility"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff33403
+
+### [CrOS] Expose the mojo auth factor config services to os settings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bc842d
+
+### Make cc/Paint/paint_worklet_input.h and filter_operation.h use SkColor4f
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05d248b
+
+### [Cast Convergence] Remove is_chromecast from more missed places
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06a88b1
+
+### ozone/display: Plumb Internal Modeset Flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd4c2c0
+
+### [color pipeline] Remove increased contrast theme supplier
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/237392805
+
+### Reland "HardwareDraw now pushes bitmaps on completion."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31d1962
+
+### Remove WIDGET_OWNS_NATIVE_WIDGET from ui/views/accessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e09ab3c
+
+### Move LinuxUiDelegate to the same component as LinuxUi
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c55789
+
+### Merge LinuxInputMethodContextFactory into LinuxUi
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3f74fd
+
+### Fix RenderText API fuzzer runnign on CrOs over Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd5e89b
+
+### [linux][lacros] Converting the tab hover card bubble into a tooltip...
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f51d804
+
+### Remove sadrul@chromium.org from ui/views/touchui/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c5f463
+
+### Fixed reparenting test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/018a165b
+
+### [x11][ozone] Fix X11 screensaver suspension.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e61f08f
+
+### MTECheckedPtr: Disarm select members
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fd6ee3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/829218e
+
+### Exo: Extend popup protocol to support menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc5c8e1
+
+### [UIA] Suppress embedded object character on UIA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02f81a2
+
+### Modify ViewTracker in ExtensionsTabbedMenuCoordinator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cdf27e
+
+### [Settings] Update Spell check toggle string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c2895c56
+
+### MTECheckedPtr: Disarm select members
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49a30057
+
+### Revert "ash: Add channel indicator UI to quick settings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4420875
+
+### Move //chromeos/{=>ash/components}/dbus/cros_disks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8f9bc7
+
+### webui: Migrate NotificationTesterUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d15037fa
+
+### Migrate //chromeos/ash/components/network to namespace ash [1/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2996d48
+
+### [Sheriff] Disable DetachToBrowserTabDragControllerTest.DragUngroupedTabGroupedTabOutsideGroup on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/655d833
+
+### Adds reporting current ansible status message to the configuration dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c58956d
+
+### webui: Pass GURL instead of a string to GetMimeType()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66512d5
+
+### Added chrome://flags option to set action chip mode for price tracking
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cd7b24bb
+
+### Borealis: Add a description for borealis installation failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea3d20ea
+
+### Added warning level customization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd8c4f0
+
+### Hide and later cancel untouched ephemeral warning downloads on bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/964ba54
+
+### [Multipaste] Get the stack trace of capture change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f938a68
+
+### Use the non mojom Launch Source in ShelfLaunchSourceToAppsLaunchSource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9a1f31
+
+### Chrome Root Store UI: Change Manage Certificates options on win and
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3765fd1
+
+### Settings: Change card title from "Languages" to "Preferred languages"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/710ae6e
+
+### MTECheckedPtr: Disarm select members
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7532f8e
+
+### ash: Add channel indicator UI to quick settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72312ed
+
+### PrivacyIndicators: Add notifications when camera or mic is in used.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1b75c1
+
+### Record metrics for types of reused- and created suggestion types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6df1301
+
+### [Side Panel] Side switch feature implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1183a7f
+
+### Improve casting for PrintPreviewUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a82dc4
+
+### [Sheriff] Disable even more flaky side search tests on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7d87bd
+
+### Animate tab scrolling with the scroll buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ebcfa9
+
+### Revise limits of the Recycled suggestion types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c4dd05
+
+### personalization: prevent ambient crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc34e8c
+
+### sharing hub: add unit tests for SharingHubBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0498b270
+
+### Adjust wording for IDS_COMPONENTS_EVT_STATUS_ALREADY_UP_TO_DATE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfae18d
+
+### [basic-card] Remove PaymentRequestModifiersTest basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c703690
+
+### Move chrome/browser/prerender directory to chrome/browser/preloading/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26ce369
+
+### [basic-card] Remove payment_request_use_stats_browsertest.cc basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/168a27e
+
+### Reland "Stop generating unsupported policies on android"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/727acdb
+
+### Side Panel v2: Add more open trigger types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fb766a
+
+### [FedCM] Clip the multiple account chooser height based on row height
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9854df
+
+### [basic-card] Remove some more basic-card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6301246
+
+### [basic-card] Remove PaymentRequestUpdateWithTest basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22cbf0d
+
+### [basic-card] Remove PaymentRequestRetryTest basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08e401e
+
+### [basic-card] Remove PaymentRequestMissingFieldsMetricsTest basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36f2def
+
+### [basic-card] Remove payment_request_payment_response_browsertest.cc basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5466668
+
+### Refactoring: Move permission view related classes out of location_bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/751b0686
+
+### Refactor PermissionPromptImpl to have one class per UI flavor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b75c0f1
+
+### Implement DeviceAutofillSAMLUsername policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7708677
+
+### Revert "Make ScopedFeatureList::InitFromCommandLine scope field trials."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e3edce
+
+### [OOBE][MarketingOptIn]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc24e58
+
+### Revert "dark_mode: Add highlight border for non-browser windows"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddd3e71
+
+### swa: Fix test owners.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c644ab29
+
+### swa: Make system_app() getter in AppBrowserController Ash-only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bced57b
+
+### [Region Capture] Support all HTMLElements
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a27db81
+
+### Delete old code paths for permission delegation.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6efcd39
+
+`);
+              </script>
+            </body>
+        </html>
