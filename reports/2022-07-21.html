@@ -1,0 +1,364 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-21
+### Make some structs aggregates in C++20.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1b66a39e
+
+### [Launch Lacros at login screen] Introduce proxy class BrowserParamsProxy
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66066fcd
+
+### [Files App] Temporary fix for low storage banner copy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5638192
+
+### Views Unification: Move all tree traversal methods to \`AXNode\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06a6876
+
+### SharedImage: Add IOSurface support for RGBX_8888 and BGRX_8888
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c4eb53
+
+### Prevent unsafe narrowing: ui/views/controls/menu
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/981bb27ed
+
+### Initial support for waitable swap chains on Windows.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b4250489
+
+### ax: remove //ui/base from //ui/accessibility:ax_base
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5ca8f91
+
+### [Mac key equiv tests] Add missing test coverage for regression
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2d4b90
+
+### Move NativeTheme dependency from LinuxUi to LinuxUiBase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2f69df
+
+### What's New: Add browser commands for tutorial and settings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/129383c1
+
+### Add null-pointer check in BubbleDialogDelegate::GetAnchorRect()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e0bb73
+
+### wayland: implement zcr_color_manager for lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/460f513
+
+### Merge TextEditKeyBindingsDelegateAuraLinux into LinuxUi
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37fe687
+
+### Reland "Convert MenuModel to size_t."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/283ef6e
+
+### Revert "Reland: "mac_merge: remove BrowserAccessibilityCocoa accessibilityFrame in favor of AXPlatformNodeCocoa""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9d2d58
+
+### WebUI: Enforce one variable declaration per line with ESLint.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d631d17
+
+### Revert "Reland "MSWP Automated Tests: Add virtual display for mac tests""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8b1ff8
+
+### Reland "Remove WIDGET_OWNS_NATIVE_WIDGET from ui/views/accessibility"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0823641
+
+### Make GetCurrentProgress() more robust and consistent.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/850f6db
+
+### Set accessible name for BookmarkEditorView's TreeView editor.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec39da1
+
+### Reland "MSWP Automated Tests: Add virtual display for mac tests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c78e397
+
+### Add observer notification for when lottie animation is destroyed.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ea92b8
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4410c1e
+
+### Files DLP: Disable DLP Metadata behind the flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/798e5d2
+
+### Move ui/aura/cursor/ to ui/wm/core/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df0f6ea
+
+### Revert "Convert MenuModel to size_t."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aea7d02
+
+### Revert "[Files App] update gear menu with Pooled Storage changes"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6ac147
+
+### Enable use_backup_ref_ptr for linux/mac/chromeos
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8cb0ae
+
+### Use GetManager() from AXPosition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c624cb
+
+### Files App: Workaround CSS attribute selector bug
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1af45fc
+
+### Remove dangling no-longer-used LinuxInputMethodContextWrapper.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac3ee0a
+
+### Migrate //chromeos/ash/components/network to namespace ash [3/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf3e6ee
+
+### Modify Crostini launch interfaces to use the non mojom Intent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b7dea5
+
+### Use non mojom launch interface to launch apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17f3d02
+
+### webui: Introduce SystemWebAppUIConfig for System Web App WebUIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3810de5
+
+### webui-chromeos: Consolidate ChromeOS WebUI owners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0030f0a
+
+### system-web-apps: Always create all SystemWebAppDelegates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5067eb
+
+### [CPA] Fixed dynamic actions having a long click handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24d8ff3
+
+### Side Search: fix side panel web contents cache not clear up correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf3609b
+
+### webui: Migrate /chrome/browser/ui/webui/interstitials URLDataSources to GetMimeType(GURL)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d8307e9
+
+### Move no_state_prefetch & zero_suggest_prefetch directories to //preloading/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab9948ab
+
+### CloseAll: Skip cancelling browser close on Close-All
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a2af1b
+
+### Import custom element HTML templates at runtime in chrome://policy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b2ed28
+
+### Disable persistently failing assert in SuggestionsMetrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0727ef0
+
+### Change the "OK" button text to read "Got it" on the disable modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/891d3db
+
+### [DownloadBubble] Show download notification in fullscreen mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7acae54
+
+### Update base::Value usage in components/gcm_driver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/282c878
+
+### [Sheriff] Disable flaky SessionCrashedBubbleViewTest.CanFocusBubbleWithRotatePaneFocusHotkey test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bb51d7
+
+### webui: Migrate /chrome/browser/ui/webui URLDataSources to GetMimeType(GURL)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa9fe38
+
+### [omnibox] Change want_asynchronous_matches to omit_asynchronous_matches
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a016dc5
+
+### android/stts: Split strings for "signed out" & "no target devices"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a759e0b
+
+### Request launcher search from search box view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/783d949
+
+### saved_desks: Adds a lacros browsertest for desk templates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10e520c
+
+### Reland "dark_mode: Add highlight border for non-browser windows"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36b9c6b8
+
+### Migration of all cached flags from the Chrome/browser folder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a11842
+
+### [dPWA Testing] Deflake browser activation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9186f5
+
+### Update loading animation to be resizable to prepare for the resizable side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74a9048
+
+### [ntp] Allow POST for OGB
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/380173d
+
+### Pass URL params from Projector URL to the untrusted context.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e5e030
+
+### desktop/stts: Split strings for "signed out" & "no target devices"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4417450
+
+### Implement desktop dialogs for ESB and Tailored Security
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9433fe1
+
+### Fixed NTP issues caused by transition that never ended
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1d2cf4
+
+### about_ui: share credits.css with os-credits
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90bde5b
+
+### webui: Migrate /chrome/browser/ui/webui/chromeos URLDataSources to GetMimeType(GURL)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e23f800
+
+### Remove plumbing to record search results for logging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8fba45
+
+### Projector: Miscellaneous cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d0fb367
+
+### Consent-less flow for Assistant recognition (no personalization).
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b4f6ed8
+
+### webui: Migrate /chrome/browser/ui/webui/ntp URLDataSources to GetMimeType(GURL)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b017d97
+
+### Revert "[Multipaste] Get the stack trace of capture change"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8ed328
+
+### [basic-card] Remove PaymentSheetViewControllerNoShippingTest basic card tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25345e4
+
+### [Note] Clicking on a Note scrolls the corresponding highlight into view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df27690
+
+### [FastCheckout] Implement fast checkout view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4915850
+
+### Cancel unlock animation if power button pressed in tablet mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6836f49
+
+### [WebUI] Special handling of Android credentials inside edit dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abdff73
+
+### [APC desktop] Hide scrim/overlay on showCast called
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05fdfc1
+
+### Adapt history Synced Tabs displayed strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/133abd3d
+
+### [OOBE][MultiDeviceSetup]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa35e4b
+
+### Revert "Hide PWA install icon in the web site which is not surported pwa."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab6ed75
+
+### Revert "Adds reporting current ansible status message to the configuration dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3faae2e
+
+### app_restore: Rename ArcWindowHandler to ArcGhostWindowHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d234520
+
+### Hide PWA install icon in the web site which is not surported pwa.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c61fb060
+
+### Migrate //chromeos/ash/components/network to namespace ash [2/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26afb02
+
+### Skip PreinstalledWebAppManager startup in test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4850e2
+
+### [Omnibox] Removed feature kOmniboxSpareRenderer.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c78a302c
+
+### Move kStorageAccessAPI feature from blink::features to net::features.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eb69bde
+
+### Add feature flag for enabling password strength indicator
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ddb9d42
+
+`);
+              </script>
+            </body>
+        </html>
