@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-22
+### CrTreeItem: a11y improvements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/46b5475f
+
+### Another batch of ui/views narrowing fixes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93480f6a
+
+### Merge AnimationSettingsProviderLinux into LinuxUi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30fc467
+
+### Add NotificationCatalog SystemNotification.Added metric
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8f3d34
+
+### Merge SkiaFontDelegate into LinuxUi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7463fbd
+
+### Revert "Use DIP/scren coordinates in mouse anchor"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c6d254
+
+### [Mac] Give status bubble help tag a11y role
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96929a9
+
+### OzoneBacking - Remove support for GLX/EGLX11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/074d0c1
+
+### Enable mic mute switch for guest users
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5fe633a
+
+### Ensure refresh rates are throttled seamlessly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7636a46
+
+### Consolidate aura::Env::GetLastPointerPoint()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cf3b2e
+
+### WebUI: Migrate focus_grid and drag_wrapper to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7122bcd
+
+### Reland "MSWP Automated Tests: Add virtual display for mac tests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec1e742
+
+### Remove use of WIDGET_OWNS_NATIVE_WIDGET and other cleanup.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/399aede
+
+### Bundle playback parameters for lottie animations into a struct.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dfbad2c
+
+### DanglingPtr: triage dangling ptrs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5c8b16
+
+### Remove SkColor methods from paint_canvas.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/420bedc
+
+### Add fullscreen mode flag to DCLayerOverlay.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7830421
+
+### Move some Actions code from ATK to AXPlatformNodeDelegate.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/542da8f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e42c66
+
+### Adds search fields to BrowserAccessibility object validation and ensures that there is always an input type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9711deee
+
+### [Office] Upload to Drive depends on Web Drive Office
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d43c57
+
+### [Android][IncognitoReauth] Add incognito reauth promo elements.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/535cd86
+
+### [FilesTrash] Make TrashContentScanner and add UMAs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fb60fe
+
+### webui: Migrate /chrome/browser/ui/webui/web_app_internals URLDataSources to GetMimeType(GURL)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18842e0
+
+### [FedCM] Add metric for reason account picker was dismissed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48eaa14
+
+### [A11y Settings Revamp] Update OS A11y Settings titles and descriptions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13d2549
+
+### [CrOS Audio] Create CrosAudioConfig JavaScript Wrapper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/882206f
+
+### Move  chrome/prefetch/search_prefetch to chrome//browser/preloading/prefetch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8e18ae
+
+### Cleanup: delete dead search prerender code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f653b4f9
+
+### Migrate //chromeos/ash/services/assistant to namespace ash [1/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0ef295
+
+### Updating corner radius of maximize caption button icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30a32e6
+
+### Updated STGModelListener destructor to use proper remove observer loop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b73d90
+
+### BrowserView: Let Lacros handle some accelerator commands
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/993ce72
+
+### Consolidate the use of ui::mojom::DragEventSource in TabDragController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7aad6cd
+
+### Migrate //chromeos/ash/components/network to namespace ash [4/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a11457f
+
+### CPA: Update IPH text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf7bf74
+
+### ActivityScenario to ActivityScenarioRule for tests without close().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd323c0
+
+### Revert "Re-enabling flaky holding space test. I could not reproduce failure locally."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e24abc
+
+### [Multipaste] Speculative fix for \`VerifyHTMLRendering\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0575bca
+
+### DPWA: add more tests for detailed install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f27923b
+
+### [UPM] Handle outdated PasswordCheckup backend in safety check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15fc695
+
+### [CardMetadata] Show credit card icon at the start of autofill suggestion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bf4e930
+
+### [Launcher] Reland: fix the issue that placeholder icons do not show
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cbd548
+
+### Adds Access Code Casting full CUJ to ChromeOS browsertests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6eb9e9
+
+### [omnibox] Order suggestion groups based on predetermined priorities
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0243ee69
+
+### Revert "[Launcher] Fix the issue that placeholder icons do not show"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cfd2f1
+
+### [Launcher] Fix the issue that placeholder icons do not show
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72d0d0a
+
+### Wait for app registry becomes available to set app disabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b017c95c
+
+### Side Search v2: show side panel with open trigger
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c07932
+
+### Add test to verify that the caption bubble doesn't disappear when focused
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56551f72
+
+### [A11y Settings Revamp] Add Autoclick through Switch Access search icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f72795
+
+### Prerender2: Ability to turn off depending on installed Extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/957ec9e
+
+### webui: Migrate /chrome/browser/ui/webui/new_tab_page URLDataSources to GetMimeType(GURL)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a293738
+
+### Migrate Framebust Clank Infobar to a Message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df3510c
+
+### Revert "[DownloadBubble] Support bubble in the new extension download API"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa2ffd1
+
+### Re-enabling flaky holding space test. I could not reproduce failure locally.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4105b868
+
+### Optimize some of the history path for page content annotations service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d971ca
+
+### [PageInfo] Add flag for hiding site settings
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f9c6ae
+
+### chromeos: Remove DebugDaemonClient from DBusThreadManager, part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b9e2a4
+
+### Remove the obsolete/harmful call from unit tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02f0f3d
+
+### Introduce PolicyValueProvider class and ExtensionPoliciesValueProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14f529e
+
+### chromeos: Remove DebugDaemonClient from DBusThreadManager, part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f307885
+
+### New Tab Page: Enable recipe tasks module on ToT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/473d2c0
+
+### Side Panel v2: Implement SidePanel.{SidePanelEntries}.ShowTriggered metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08c9c60
+
+### enterprise: Introduce kKioskSkuName to cloud policy constant
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5066ba
+
+### settings: fix personalization search crash for public account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61d1420
+
+### [UPM] Display an error notification when store backend calls fail
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/533aba9
+
+### Use non mojom intent for CreateAppIdLaunchParamsWithEventFlags.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00efa2c
+
+### [OOBE][ManagementTransition]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/870e73d
+
+### Privacy Review Android: Updated UI strings and icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/819923ca
+
+### [Signin] Add Scope error to GoogleServiceAuthError
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b70b093
+
+### [games] Simplify policy logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5297215d
+
+### swa: Cleanup BUILDFLAG usage in Ash only SWA files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/daa7318
+
+### [games] Add unit tests for game search policy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5514c6
+
+### [games] Only enable game search for the productivity launcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6f4fcc1
+
+### [DownloadBubble] Support bubble in the new extension download API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9aed66
+
+### Create chrome flag called enable-tailored-security-desktop-notice
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/80cabeb
+
+### CrOS: Add feature flag for Dynamic Cgroup
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bbb5dec
+
+### SearchPre*: prepare for finch exp
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f3f3fe7
+
+### 🖊️ Add flags to enable the Stylus writing feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/840f96c
+
+### [ZPS] Refactors remote ZPS eligibility checks
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/28768e2
+
+`);
+              </script>
+            </body>
+        </html>
