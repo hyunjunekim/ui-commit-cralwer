@@ -1,0 +1,212 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-23
+### WebUI: Minify HTML/CSS when optimize_webui=true for TS cr_elements/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9427f8
+
+### Fixes the side panel combobox wrong background color bug.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c35fe6c
+
+### [RDSA] Calculate and compare device primary display size with threshold size to default-enable global setting
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3d0bd21
+
+### ozone: evdev: Fix SteelSeries Stratus+ in ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/685e5a7
+
+### [Ozone/Wayland][Exo]Add destructors to aura-shell interfaces
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1642493
+
+### WebUI: Refactor ui/webui/resources/cr_elements/BUILD.gn.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91ee380
+
+### Prevent unsafe narrowing: ui/views/ for Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e01dd23
+
+### Relandx2 "Allowing JNI ForTesting methods to be stripped"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03a2cbb
+
+### Add logging and adjust testStartBitmapCapture_raceCondition.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f93d84
+
+### Remove code testing for 10.7–10.12 features
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ad8085
+
+### ui/display: Modeset only once during retry
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f7fa018
+
+### Add context label to profile manager color chooser.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88c124b
+
+### [macOS] Fix flaky AppController unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66379a0
+
+### Fix GLDisplayManager in component build
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1de7ff9
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fddcfca
+
+### Skip container node offset in bounds computation for Lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7bf30c3c
+
+### wayland: log last system error when connection fails
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1938515
+
+### ime: Rename ui::internal::InputMethodDelegate to ui::ImeKeyEventDispatcher.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/710aec6
+
+### Reland "ash: Add channel indicator UI to quick settings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc55d769
+
+### Update IncognitoClearBrowsingDataDialog to use the Coordinator pattern
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca8aaa8
+
+### hid: Move HID test utilities to //services/device/public
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11d261c
+
+### Make minimal BUILD.gn fixes for enable_ppapi=false
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46aabb28
+
+### [Code Health] Rename didCloseTab(s) to reflect Tab lifecycle state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c683ca
+
+### Add a Search Image button to Chrome Screenshot sharing feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d8f1a0
+
+### Remove suggestion header text capitalization
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/229e3a6
+
+### [Extensions c2s] Move UserSiteSetting update to permissions manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f36ead
+
+### Android pip: fix control not working properly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0dbc5384
+
+### Reland "Avoid #setTheme in tests, prefer activity with a theme."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7199e3
+
+### cbui: add unit tests for singleton tab machinery
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19c4db4
+
+### [Extensions c2s] Set background color for toolbar extension controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6469d54
+
+### Revert "Stop generating unsupported policies on Chrome OS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e043df
+
+### [CPA] Implemented alternative color on action chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf4f546
+
+### Intents: Don't record Stay in Chrome events in LinkCapturingEvent metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/626812a1
+
+### Blocked optional button animations when tab switcher is closing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db617d9
+
+### Stop generating unsupported policies on Chrome OS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc88398
+
+### Revert "saved_desks: Adds a lacros browsertest for desk templates."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3671caa3
+
+### Side Panel v2: reset side panel entry active state if renderer crashes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be48540
+
+### [OOBE][EncryptionMigration]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c364fb
+
+### Add feature to avoid logging deprecated geolocation histograms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9aa28454
+
+### [FastCheckout] Implement C++ notifications for FastCheckoutBridge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d40d17c
+
+### Drop setNativeLibrariesLoaded() from AdaptiveToolbarStatePredictorTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/383c50f
+
+### Move cros display config API from ash to crosapi.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2113532
+
+### [PageInfo] Add creating cookies subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a333d77
+
+### [PageInfo] Prototype of PageInfoCookiesContentView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0069f87d
+
+### [sync] Expose Javascript API for adding recovery methods on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/090aebe8
+
+### Revert "[Launcher] Reland: fix the issue that placeholder icons do not show"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ff51e8c
+
+### [MV/RQ] Allow NTP Tiles Title text to wrap to second line.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e5a866
+
+### Add new share hub target for Google Collections.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/61e89492
+
+### [SH] Add SafetyCheckPermissions flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cdd69f78
+
+`);
+              </script>
+            </body>
+        </html>
