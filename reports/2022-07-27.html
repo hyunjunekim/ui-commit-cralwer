@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-27
+### Migrate //chromeos/ash/components/network to namespace ash [5/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f67948
+
+### gpu: Split direct composition setup and support code from surface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88aa3ab
+
+### Prevent unsafe narrowing: ui/views/ for Windows
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/070111c
+
+### Speculative fix for crash when notifications popups are closed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01a82db7
+
+### CrTreeItem: Click handling fix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12d4a6a
+
+### cc/paint: Use std::unique_ptr to wrap paths in PaintOps
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85aae9f
+
+### Change bounds in PWD::BoundsChange to origin_changed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/410e5dc
+
+### wayland_output: Get output name from xdg_output interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d2eb1c6
+
+### Allows view::GetPreferredSize() to accept a size constraint
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91b134f
+
+### lacros: HDR solid color support for delegated compositing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/edecbc1
+
+### Reland WebUI: Migrate cr/ui/store to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab3a6be
+
+### lacros: Make ui_controls more deterministic.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d55101e4
+
+### Views Unification: Moves IsWebAreaForPresentationalIframe to AXNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7c284fd
+
+### Revert "WebUI: Migrate cr/ui/store to TypeScript"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ae5114
+
+### WebUI: Migrate cr/ui/store to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5988588
+
+### Pass snapshot color space to Display
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a5a5e9b
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c994fb0
+
+### Remove unused RecyclableCompositorMacFactory class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/362aeca
+
+### Remove unused methods in site_settings_helper.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df0acfa
+
+### [GPUMemoryBuffer] Remove GPUMemoryBuffer::AsClientBuffer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/809b312
+
+### fusebox: suffix fusebox filtered_volume_manager.js methods with _
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94a72f1
+
+### [Fast Pair] Add a11y labels for saved devices list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f28a4e6
+
+### [Fast Pair] Add forget bluetooth device dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d58a31
+
+### [launcher-lacros] Construct open tab results from crosapi mojom.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99d65cfb
+
+### [Fast Pair] Add dialog for removing saved device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bc378d7
+
+### CrOS: Import Polymer templates at runtime in chrome://set-time.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70f140d
+
+### assistant: Open ChromeOS Camera App at Ash side
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f23a9f2
+
+### [Bluetooth][Win] Add Bluetooth ConfirmPinMatch pairing for winrt device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bab887b
+
+### Add PictureInPictureBrowserFrameView for PiP 2.0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27bbedde
+
+### Add the non mojom LaunchAppWithUrl interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f689d3
+
+### [launcher] Remove unused flags for suggested files.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/90da85c
+
+### [Extensions] Add extension sites and counts to all sites page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d3f3d1ca
+
+### [Fast Pair] Tell user when no saved devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05f74bd
+
+### [Fast Pair] Add Saved Devices list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6ea6a2
+
+### More accurately obtain fullscreen display ID in WebContentsImpl::ForSecurityDropFullscreen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d34d25
+
+### [ZPS] More robust parsing and using server-provided suggestion groups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5566bf7
+
+### Split TabContainer interface and implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/861d8c6
+
+### Android PIP: Handle replay action for pip window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8451ba1
+
+### [Password Manager] Use SavedPasswordsPresenter in password imports.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2702c2b
+
+### capture_mode_polish: Clean up Selfie Cam feature and flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/485763c
+
+### Fix memory leak when closing the lens side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc419b4
+
+### Rename the omnibox background color variable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/089171c8
+
+### dark_mode: Apply highlight border to chrome pip window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3caf020
+
+### Window Placement: Fix cross-screen fullscreen of snapped windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40646ab0
+
+### [ChromeOS] Run WebUIWebViewBrowserTest in the OOBE context
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d709778
+
+### Use gstatic html url instead of hardcoding the data url for easier modifications and decoupling these changes from Chromium release cycle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac554a8d
+
+### [Autofill] Upload crashdump if popup or view is destroyed during Show().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ffc3b6cd
+
+### [Passwords] Add basic import success dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ef6c8c
+
+### webui: Migrate /chrome/browser/ui/webui/extensions URLDataSources to GetMimeType(GURL)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/163605b
+
+### [Refactor] Convert DataSharingConsentProperties members to GURL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7657305
+
+### Remove launched DynamicColors features.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74c6794
+
+### web time limits: remove web time limits code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7276910
+
+### [OOBE][FamilyLinkNoticeScreen]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92570c0
+
+### [Autofill] Handle view_ = nullptr in AutofillPopupControllerImpl::Show().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d731fb6
+
+### [Sync] Add disclaimer to OS apps sync toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15da9d6
+
+### [Sherriff] Disable AccessibilitySelectedEvent on TSan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e244de
+
+### [Settings] Replacing InsecureCredential with PasswordUiEntry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a49273f
+
+### Move chromeos/{ => ash}/components/string_matching/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d211c1f
+
+### [CoF] CVC single field flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/13ca204
+
+### Add Chrome flag for Blink feature ThirdPartyStoragePartitioning.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/320cf31
+
+### [Nearby] Remove visibility reminder flag and death tests
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/535c3332
+
+### [ZPS] Add feature flag to toggle Zero-Prefix Suggest prefetching on SRP
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e26e696
+
+### Feature flag for autofill fill iban fields. Bug: 1344590
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/30bf4ca
+
+### Rename conversions-debug-mode flag to attribution-reporting-debug-mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/11afa4e
+
+### [dcheck] Make DCHECK_IS_CONFIGURABLE a buildflag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/02cedeba
+
+### Revert "Moving ContextualSearchDelegate to //components/contextual_search."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8deaa26
+
+`);
+              </script>
+            </body>
+        </html>
