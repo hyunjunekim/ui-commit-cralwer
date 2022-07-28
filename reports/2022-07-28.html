@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-28
+### Simplify Blink selection code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b84725c
+
+### Use a single variant for PermissionValue's underlying value
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf83d97
+
+### Badging is no longer a runtime-enabled feature
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a77270
+
+### WebUI: Add part attribute to cr-icon-button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04ea492
+
+### WebUI: Migrate search_highlight_utils to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe920e0
+
+### WebUI: Remove unnecessary closure targets on Desktop in js/cr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95f8a58
+
+### Window Placement: Enable VirtualDisplayMacUtil on Mac 11
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01e4404
+
+### Deprecated NOTIFICATION_TYPE_BASE_FORMAT for NOTIFICATION_TYPE_SIMPLE.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/199502e4
+
+### WebUI: Add is_chromeos_ash assertion in cr_picture/BUILD.gn.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79bf331a
+
+### Change ConfirmCompositionText() from uint32_t to size_t.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5bf318a
+
+### Bare Controller for Accessibility Page Colors Feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81948fd3
+
+### Add comments to color_id .inc repeat includes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad1c02e
+
+### WebUI: Check-in Polymer3 version of cr-lazy-render.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4cecdacf
+
+### Revert "Speculative fix for crash when notifications popups are closed"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70dc413c
+
+### WebUI: Enforce "interface" usage for object types with ESLint, part 2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1a935f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15b0be0
+
+### Add canResolveActivity util method to PackageMangerUtils
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d37c86
+
+### Import Polymer templates at runtime in ash/webui/common/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7fd0c99
+
+### Check if a HWND is cloaked before expensive Virtual Desktop API call
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cab4cac
+
+### Refactor unit tests to use PrefService::GetValueDict
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/570a01c4
+
+### Move //chromeos/{=>ash/components}/dbus/debug_daemon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c4d74b
+
+### [dPWA Testing] Updating integration test comments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a14aa1c
+
+### arc: Remove deprecated methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11f6b15d
+
+### Dismiss lock screen on resume from hibernate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/babdf36
+
+### [Lacros] Moving chromeos/dbus/util to chromeos/version
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/699bd37e
+
+### Migrate //chromeos/ash/components/network to namespace ash [6/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0b242f
+
+### Convey the pinned state of a tab in its a11y label.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/feb9ea3
+
+### multipaste: Disable reorder-on-paste experiment in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d84c477
+
+### network ui: Call shill network properties without guid
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dba2a16
+
+### [CodeHealth] Removing unnecessary base::Value conversion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63f3f449
+
+### [Autofill] Dump without crashing if AutofillPopupControllerImpl::Show() calls HideViewAndDie().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7869a4e0
+
+### [CodeHealth] Take base::ValueView for JS runtime call
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1df7ba
+
+### [files] Small cosmetic fixes for consistency.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d714a1
+
+### Quick Answers: truncate card title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ed70e0
+
+### Use Coordinator pattern for MediaRemotingDialogView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12af440
+
+### Update header documentation for TabContainer and TabContainerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ea95b3
+
+### Revert "[Autofill] Upload crashdump if popup or view is destroyed during Show()."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f373c22
+
+### Revert "[Sherriff] Disable AccessibilitySelectedEvent on TSan"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/745b952
+
+### SidePanel: Set up mojom interface for customize chrome side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5da7d5
+
+### [basic-card] Remove desktop AutofillPaymentApp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ede1ef
+
+### Intents: Use platform focus behavior for Intent Chip Button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e273bbb
+
+### Projector: Convert ScreencastManagerTest into a browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93c3e28
+
+### [Phone Hub] Prevent UAF in chrome://multidevice-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc95042
+
+### [Multipaste] Verify that copying a big web page works as expected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa629f2
+
+### Stop generating unsupported policies code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b87f264
+
+### Window Placement: Fix PopupBrowserTest flaky
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c50d717
+
+### [Launcher] Reland: fix the issue that placeholder icons do not show
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cda3ae
+
+### [CrOS cellular] Display Service Provider Name if nickname is empty.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d598724
+
+### Disable open in new tab for v1 side panel. Refactored the common code for validating the URL to lens helper to reduce duplication.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8aeee06
+
+### Add logging to track sources of Lacros FRE exit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1ae14a
+
+### saved_desks: Launch lacros chrome apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf3526a4
+
+### [Signin] Add dark mode images for Signin Intercept and Profile Customization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/916778a
+
+### [OOBE][GestureNavigation]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62f744e
+
+### Display new error message when DM Server is unreachable or can't synchronize clock system during auto-enrollment.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e90cac0
+
+### [Signin][Android] Move UMA dialog handling to SigninFirstRunMediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dc0133
+
+### [Password Manager] Remove redundant class PasswordImportConsumer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/909f63b
+
+### Disable load results in new tab when URL is not valid.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/473f11e
+
+### [CPA] Limited scope of transition animations to prevent NTP issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/697ec43
+
+### Use CancelableCallback in ForcedProfileSwitchInterceptionHandle to avoid use-after-free
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fec4acb
+
+### Move CloseTypes into enums
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df79d1e
+
+### cros: Cleanup enableGaiaActionButtons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee5fbd4
+
+### [Signin] Add welcome title with placeholder in Sync Confirmation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c981df9
+
+### system-web-apps: rename Untrusted<SWA>UI to <SWA>UntrustedUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb2a553
+
+### Updated argument type in AppWindow constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c412ce2
+
+### [Signin] Replace Sync Confirmation header image for Signin Intercept
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b1fe07
+
+### cros: Remove kArcAccountRestrictions flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/927335d
+
+### [Signin] Don't recreate SigninFirstRunCoordinator on orientation changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e609a8
+
+### [APC Desktop] Add some missing UI improvements.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0896e5
+
+### [Password Manager] Create a separate BUILD file for import module.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4b0383b
+
+### [PageInfo] Change cookie button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b903765
+
+### [Multi Apps] Reject add() call promise in case of error(s)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42ca8da
+
+### [dPWA] Pass borderless display mode to app_browser_controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d539d4f
+
+### Show FILE_TRANSFER connector on chrome://management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cf1cba
+
+### Lacros: Add a few error log lines on first run failures.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9645278
+
+### remove NOTREACHED from FingerprintHandler::AuthScanDone()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/184d546
+
+### [PageInfo] Add OpenCookiesPage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19a467f
+
+### [MirrorSync] Add GetChildFolders method to chrome://manage-mirrorsync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78b64f6
+
+### Preloads: Clean up calculator web app preinstall flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/91ceeac
+
+### Add kOsCrOS to enable-unsafe-webgpu and enable-webgpu-developer-features flag entries
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b3a962f
+
+### [TTS][PCCT] Set a minimum Base Page Height for TTS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/05a5b99
+
+### Remove unused context-menu-shop-with-google-lens flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/54f453f
+
+### Remove chip feature flag from chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d2887c
+
+### [omnibox] Preserve styling for fuzzy matches (not dim); flag -> kOsAll
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee8947fd
+
+### Add chrome://flags entry for desktop Partial Translate
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e410985
+
+### Rename flag TerminalAlternativeRenderer to ...Emulator
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/30ea2619c
+
+`);
+              </script>
+            </body>
+        </html>
