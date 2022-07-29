@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-29
+### Avoid streaming a char16_t to a (narrow) stream.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/669dcea1
+
+### Remove ui/file_manager/base/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15af2be
+
+### Files app: Add UMA for updating the File Tasks in the DOM
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78f7c305
+
+### [Files]: Replace ConcurrentQueue implementation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7a0558
+
+### Revert "Reland "Speculative fix for crash when notifications popups are closed""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5bcc867
+
+### Files SWA: Add Labs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f28a36f
+
+### WebUI: Fix cr-tabs keyboard focus outline to work the first time.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6918a99
+
+### Add penghuang@chromium.org into //ui/gl/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd4602b
+
+### Notification Catalog Popup Metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7c1820
+
+### [reland] More wiring for the dual GPU rendering.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be35fa5
+
+### Reland "Speculative fix for crash when notifications popups are closed"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e3da6d
+
+### Add missing deps from //ui/file_manager to //base
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52fa8b79
+
+### [mac] Fix occluded info bubble in fullscreen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b777d173
+
+### [TableLayout] Resize cells that span both resizable and fixed columns
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28aa316
+
+### GLOzoneEGLX11 - Add support for importing dmabufs using EXT_image_dma_buf_import
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/843f645
+
+### Window Placement: Enable VirtualDisplayMacUtil on Mac 10.15
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5caebb5
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/440a732
+
+### [fuchsia] Introduce present_view.shard.test-cml.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d5cf38
+
+### Add callback usage notes to animation builder docs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ee33317
+
+### menus: Ignore Ctrl keydown events for menus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb5ad14
+
+### Lacros: implement ConfirmCompositionText using CursorPosition and CommitString.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebb6ede
+
+### [launcher] Add a URL for the launcher internals page in ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/105ca7b
+
+### Fix the AttachControllerToTask crash issue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eb5be5
+
+### [launcher] Remove unused result fields.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7116d03
+
+### Fix invalid downcast in send-tab-to-self omnibox button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3452787
+
+### [NTP][RecipesV1.1] Add new string for recipes v1.1 info dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6fe363
+
+### [ZPS] Update ZeroSuggestProvider to enable ZPS prefetching on SRP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fceda9c
+
+### Add browser test for loading ink canvas in Projector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e00959
+
+### [CrOS Hotspot] Add hotspot debug UI tab and tethering capability section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e97ee3b
+
+### Refactor unit tests to use PrefService::GetValueDict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ebc268
+
+### [Copy To Clipboard] Remove flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fa6408c
+
+### Update ExistingTabGroupSubMenuModel to always show tab groups across all browser windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3fddbc
+
+### CompleteSafeBrowsingScan should be under safe_browsing condition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/853e093
+
+### Revert "Add basic browser test for Screen AI service."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2a96035
+
+### Removes all if checks since feature is enabled by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ede10f
+
+### [Fast Pair] update saved devices strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee7a5f235
+
+### Check pointers before using.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5851a94
+
+### Add a policy to pre-select the keep browsing data state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbfe3f0
+
+### chromeos: Remove unneeded calls to DBusThreadManager::Initialize, pt 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d5451c
+
+### desktop-sh: match section heading font to redlines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ade9d46
+
+### Fix aborting unlock and fingerprint icon state when unlock is aborted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b27efec
+
+### SidePanel: Get rid of Browser parameter in SidePanelWebUIView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18c3958
+
+### Move cert removal to a worker thread
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f59d1c9
+
+### Add basic browser test for Screen AI service.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae5904c
+
+### Fix bubble appearing off screen in fullscreen mode on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed7f8d46
+
+### Removing credentials from OnInsecureCredentialsChanged event
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a78b73
+
+### [basic-card] Remove CvcUnmaskViewController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1467d61
+
+### [CodeHealth] WebUIIOS::FireWebUIListener using ValueView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3adc049
+
+### [dPWA] Expose borderless in display-mode CSS media query
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f01e5e
+
+### [OOBE][ParentalHandoff]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98a3a2d
+
+### [OOBE][SignInFatalError]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b7a8f7
+
+### HistoryService::AddPage: Remove floc_allowed param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/054b433
+
+### Eliminate chrome://oobe/login page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10fb552
+
+### [OOBE][PinSetup]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff179a4
+
+### Speculatively reenable some WebUIWebViewBrowserTest on cros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e40f7d
+
+### [dPWA] Implement borderless mode for Linux & ChromeOS
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a4c9371
+
+### Make SigninView class and its method package private
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65008f27
+
+### [A11y Settings Revamp] Inline Captions subpage into Audio and Captions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fff2dc2
+
+### [PhoneHub] Set up flag for Phone Hub feature setup error handling
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1306f64
+
+### Remove enable-desktop-pwas-url-handling from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/37a253c
+
+### Retire pwa-uninstall-in-windows-os flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e90ad7
+
+### [TTS] Remove the Translations Flag and Feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/12cff1a
+
+### Remove unused content-menu-search-and-shop flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a125561b
+
+### Add per-document mode to kIsolateSandboxedIframes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/37dd4aade
+
+`);
+              </script>
+            </body>
+        </html>
