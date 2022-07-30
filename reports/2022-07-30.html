@@ -1,0 +1,292 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-07-30
+### Revert "Remove back button from SearchBoxViewBase"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12d2580
+
+### Remove back button from SearchBoxViewBase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12f691a7
+
+### Update UIA role mapping for graphics-object
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4d1156
+
+### NotificationRevamp: Show timestamp in different line and minor fixes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c12081
+
+### WebUI: Make more closure targets CrOS only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbe0b5b
+
+### [WebUI IPH] Progress indicators for tutorials.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47f48e111
+
+### WebUI: Trim down util.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/528017d
+
+### Move //build/util/version.gni -> //chrome/version.gni
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19a00ca
+
+### Fix insertion point line numbers in text fields on MacOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b20063
+
+### ozone: evdev: Add Microsoft Ocean Plastic Mouse to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c433a41
+
+### [linux/lacros] Propagate rounded corners to the buffer queue.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66dcc62
+
+### Fix issue with views::ScrollBar for dark mode on Windows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12246d77
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96616d9
+
+### Disable flaky ChangeFocusDuringDispatch test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b16f4cb
+
+### WebUI: Move cr_picture/ from ui/webui/resources to ash/webui/common/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8c6ebd
+
+### WebUI: Fix cr-tabs selected tab indicator in Windows HCM.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f214db2
+
+### Remove url_origin from encoded DTE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0007c8
+
+### [Files App] Add Pooled Storage banners
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95be8ab
+
+### Revert "[Files]: Replace ConcurrentQueue implementation."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b0ee4a
+
+### Revert "Window Placement: Enable VirtualDisplayMacUtil on Mac 10.15"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0932c58
+
+### Remove unused variable max_sequence_start_count_for_inference
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6fc7cd22
+
+### Move the maintenance of AnnotatorMessageHandler to ProjectorAppClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25f55e8
+
+### Don't exit tab closing mode while a tab group editor bubble is open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c3198f
+
+### [lens] Fix LensRegionSearchControllerTest test failures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb2a195
+
+### [CrOS Hotspot] Add tethering status and config section in hotspot tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1424dd9
+
+### Fixed bug causing Lens webpage to sometimes not render correctly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5edbe8
+
+### Give PWAs their own version of the "always show toolbar in fullscreen" pref.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e928e1e3
+
+### Add missing tests for ExistingTabGroupSubMenuModel::ShouldShowSubmenu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/511a0a6
+
+### Lookalikes: Use site engagement data to find brands for Combo Squatting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bbad32
+
+### Add basic browser test for Screen AI service and update Mac screenshot.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69cf8ae
+
+### Quick Answers: Update URL for translation result card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d83553
+
+### DPWA: parse and use screenshots platform
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ae5186
+
+### Get org_name should check if ChromePasswordProtectionService null firstly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04bcbac
+
+### Add IPH Metric for starting a tutorial from chrome://whats-new Page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/964e7ef
+
+### Revert "Stop using NotificationService in ContentStabilityMetrics..."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de46742
+
+### [Autofill] Simplify AutofillPopupControllerImpl::Show().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7784d27d
+
+### [TTFCC] Review Touch To Fill surface hiding conditions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d692d90
+
+### [Status Chip] Remove feature logic
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d5fbd4
+
+### Fix WebAppLaunchProcess's handling of CURRENT_TAB disposition.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/815a65c
+
+### Settings CrOS: Remove banner redirecting to OS Settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ad51013
+
+### Add side panel resizing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/071f663
+
+### Revert "[Autofill] Dump without crashing if AutofillPopupControllerImpl::Show() calls HideViewAndDie()."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a2c7f5f
+
+### Settings: Remove link to OS Settings from chrome://settings/help.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb279ee
+
+### [Prefetch] Include WebContents in MaybePrefetchURL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3405ce2
+
+### Migrate several omnibox testse to ActivityScenarioRule.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc643f6
+
+### OS Settings: Add role description to Play Store button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59b9aea
+
+### Side Panel v2: Add enabled group to fieldtrial_test_config.json
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3de04011
+
+### Move native initialization handling to SigninFirstRunMediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9398ec2
+
+### Lacros: Add device reporting information in chrome:management page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7382f7
+
+### [APC Desktop] Add animations to icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8008484
+
+### [TTFCC] Introduce TouchToFillCreditCard{Controller,View}
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1ad426
+
+### AboutThisSite: Add SidePanel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fdeb61
+
+### Fixing improper redirect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2dd8566
+
+### [Signin][BottomSheet] Update signin bottomsheet subtitle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f578c64
+
+### [OOBE][KioskEnable]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92eec95f
+
+### [PageInfo] Add link to cookies description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cbef43
+
+### [PageInfo] Add the cookie dialog button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3a2869
+
+### [PageInfo] Add cookies description to the subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2de97eb
+
+### [launcher-lacros] Simplify nested switch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9985da
+
+### [launcher-lacros] Fix Omnibox type error.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c524e02
+
+### [launcher] Stop making non-answers from answers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70ab927
+
+### [fileSystem API] Make requestFileSystem() UI code available to Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9588c9
+
+### [omnibox] Make AutocompleteController aware of CrOS launcher status.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a87ac032
+
+### Adding additional experiment arm and user avatar/email for all the experiments.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4e174567
+
+### Add settings for diacritics on longpress
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ff94e0
+
+### [CrOS WiFi] Add MAC address randomization feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cdab936
+
+### Reland "Moving ContextualSearchDelegate to //components/contextual_search."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f2851f5
+
+### [Start] Fix typo in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5f2854c1
+
+### Add Most visited tiles suggestion to omnibox new search suggestions
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c219478
+
+`);
+              </script>
+            </body>
+        </html>
