@@ -1,0 +1,244 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-03
+### Remove ui::Event::Clone() static method.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d10bc8b
+
+### Rename OnScreenKeyboard to VirtualKeyboard for consistency.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af3f441
+
+### [ntp] Add fake middle slot promo feature
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f0a215d8
+
+### [Files] Uses wait for selection rather than one shot selection.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bcd35f
+
+### [lacros] Add support for virtual keyboard occluded bounds.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6fba6bc0
+
+### Window Placement: Refactor VirtualDisplayMacUtil
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab9cdfc
+
+### [lacros] Fix opening browser app menu not dismissing virtual keyboard.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8398462
+
+### WebUI: Migrate cr-lazy-render to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1291ec
+
+### Replace centralized ui::Event::Clone() implementation with virtual method.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f4429e
+
+### [journeys] History clusters side panel design updates
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d912cbc0
+
+### ax_test: improve AXUIElement helper method organization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dd3b46c
+
+### lacros: Add dropped frame percent UMA for browser UI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0920d63
+
+### Disable the -Wmax-tokens experiment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed2126e
+
+### DLP: Add 'Restriction details' fileManager translation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7acc719
+
+### Revert "Reland "Reland "Speculative fix for crash when notifications popups are closed"""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50d3b876
+
+### Reland "[Files]: Replace ConcurrentQueue implementation."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56f412d8
+
+### Reland "Adds reporting current ansible status message to the configuration dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e1a83f
+
+### dark_mode: Update highlight border's corner radius for pip windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/301410c6
+
+### Migrate //chromeos/ash/components/cros_disks to namespace ash [3/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b99e70
+
+### Use AccountId to get fake user id hash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85396c3
+
+### Revert "Disable continue section by default"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3a11db
+
+### [DownloadBubble] Enable multiline labels in the row view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ce8368
+
+### [FastCheckout] Add FastCheckout controller Show impl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40609b2
+
+### Fix pinned tabs stuck at the wrong index when dragged in from the left.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6167285
+
+### Add ShillDataCollector to collect Shill data for SupportTool
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d99de7
+
+### Refactor offer notification metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27b58f3
+
+### [dpwa] Linux support for the action CheckSite(Not)HandlesFile().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81854cb
+
+### Migrate PrefService::Get to PrefService::GetValueList
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa2ddecb
+
+### Fix toolbar draw on new tab creation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d30a33
+
+### Migrate PrefService::Get to PrefService::GetValueList
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de537205
+
+### Revert "Adding metrics to 'Cookies in use' dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6be655
+
+### float: Introduce FloatControllerLacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd6ff2d
+
+### [Lacros] Support os://bluetooth-internals page on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db21f76
+
+### [User Education] Fix Tutorials histogram.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b8a051
+
+### [settings] Fix UaF bug in Chrome Settings Import Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99db808
+
+### AboutThisSite: Keep track of last OpenURLParams
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a7992b
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad3ad4a
+
+### Add KerberosDomainAutocomplete policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3888a18
+
+### Switch shopping list to use the shopping service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed61c85
+
+### Update OOBE WebUI owners files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d87fb20
+
+### Adding metrics to 'Cookies in use' dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fbdd42
+
+### [Privacy Hub] Move flag to ash
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/28195e4
+
+### Fix cookies transfer during online authentication on the lock screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af791bd
+
+### [APC Desktop] Remove outdated TODOs in PasswordChangeRunView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f3f1bdd
+
+### Set enableGaiaActionButtons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c29c0d
+
+### Privacy Guide: Rename "Privacy Review" -> "Privacy Guide"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6afb5c7
+
+### Safety check owner update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c9e0cd
+
+### Refactor app_list to use PrefService::GetValueDict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32f2896
+
+### [launcher] Disable zero-state files in classic launcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab90094
+
+### [PageInfo] Remove EnsureCookies from PageInfoUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38491ec
+
+### [files] Reduce the number of async calls by the ZS file provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f011b78
+
+### Migrate //chromeos/ash/services/assistant to namespace ash [2/N]
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/65c73cc
+
+### [Metadata] Feature flag for showing card product name in Payments UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/89303a9
+
+### CustomizeChrome: Create feature flags for customize chrome side panel
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c934f4f
+
+### Add feature flag for biometric authentication before filling on Mac and Windows.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c5e3da65
+
+### [Passwords] Remove UFF flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/59cb767
+
+### [launcher] Remove the categorical search flag from UI.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c6c24bd
+
+`);
+              </script>
+            </body>
+        </html>
