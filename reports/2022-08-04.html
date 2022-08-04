@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-04
+### Ensure gfx::Rect::Union() contains the original rects
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa5554c
+
+### WebUI Gallery: Add cr-tab-box demo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/521726f
+
+### WebVTT: Remove paddings around ::cue boxes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/730e20a
+
+### [fuchsia] Refactor provider of test fonts.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f31952
+
+### viz,ui: Correct gradient computation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8be0d80
+
+### WebUI: Migrate cr_fingerprint/ to Polymer class based syntax.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f413878
+
+### [linux/wayland] Removed some unused code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57402fe
+
+### Revert "[journeys] History clusters side panel design updates"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e98bdbe
+
+### Remove WIDGET_OWNS_NATIVE_WIDGET from Views Focus Traversal Unit Tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36b251a4
+
+### Add new cros.sys.surface* colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cdc15d5c
+
+### Cert viewer a11y: ensure field value is read when field name selected
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b8e475c
+
+### Add ability to start at arbitrary timestamp in lottie animation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17b7fd4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac8621c
+
+### Make tab dragging work in immersive fullscreen mode on Mac.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86f211c
+
+### ax_test: templatize NSInvocation calls in ax_scripting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a049ec
+
+### Files app: Remove unused files/code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb877e2
+
+### Extract: Fix exception when opening multiple archives
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3e22347
+
+### DanglingPtr: fix dangling ptr in XlibDisplay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5468991
+
+### WebUI: Check-in Polymer3 version of cr_fingerprint/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9625c2b
+
+### Views Unification: Added the ability to cache AXNode::IsChildOfLeaf and GetUnignoredParent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/001ca9b8
+
+### [MirrorSync] Add GetSyncingPaths method for chrome://manage-mirrorsync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e9a76c
+
+### [CodeHealth] base::Value refactor for webui/chromeos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c995948
+
+### [ChromeCart] Enable ChromeCart on ToT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaae88ba
+
+### [Extensions refactor] Move extensions dialogs to extensions file (1/2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf2d37a
+
+### [Settings] Remove active search engines feature flag from frontend.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/579c547
+
+### [OOBE] - Remove isChildAccount from Sync Consent screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f116184
+
+### [Page Zoom] Add ObservableSupplier for isShowing in SnackbarManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21d6a12
+
+### Disable CustomTabBarIsVisibleInFullscreen on linux and lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99781bd
+
+### [files] Add back the AppendFakeSearchResults function.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9f5768
+
+### win: Add support for Win10 pinning.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1dd1a74
+
+### Android pip: add action support for video conferencing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fbd403e
+
+### [CodeHealth] Remove DictionaryValue::DeepCopy from chrome/*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b70b4e
+
+### [CodeHealth] Nearby Internal webui base::Value refactor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/514b4cc
+
+### [CodeHealth] InternalsUIHandler base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2b12c3
+
+### Remove extra copies of base::Value in about signin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e91281e
+
+### Add "Manifest Id" to chrome://webapks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4ab2393
+
+### Remove hardcoded web contents minimum width
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68feec1
+
+### [Settings] Split the language translate settings into a card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87977b3
+
+### [Extensions] Use constant for icon size instead of hardcoded value
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/080fbda
+
+### immersive mode mac: Use WIDGET_OWNS_NATIVE_WIDGET for overlay widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58ae8d2
+
+### Add dedicated OWNERS for chrome://webapks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c2c741
+
+### [journeys] Add a flag to have omnibox open Side Panel Journeys
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2b834a8
+
+### OOBE: Extend test_api.js with ConsolidatedConsentScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c9b9ce
+
+### [New Deal] About page string and icon for deferred update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/234ed61
+
+### Prevent lock-reauth WebUI creation inside the session.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9ad53c
+
+### [Profiles] Add style URL parameter in Profile Customization page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1202cf
+
+### Set bubble anchor to top container rather than toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18f64023
+
+### [CodeHealth] chromeos edu login base::Value refactor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3b9847
+
+### [CodeHealth] ui/webui/ base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3bf6ec
+
+### Add a crosapi in Ash for in session authentication from Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4614a6
+
+### [SR] Add LayoutStateObserver wherever StartSurfaceStateObserver is used
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c151003
+
+### Adapt to the new shill security DBus API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3592a23b
+
+### [CodeHealth] History WebUI base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ba47de
+
+### [OOBE][GuestToS]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e6788f
+
+### [CodeHealth] ChangePictureHandler base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2177cc5b7
+
+### [CodeHealth] Sync internals base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d85585a3
+
+### [OOBE][FingerprintSetup]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b0303a
+
+### [CodeHealth] Value refactoring for CupsPrintersHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8ccbbc
+
+### [Signin] Add browser tests for Sync Confirmation in Signin Intercept
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cab55aa
+
+### [CodeHealth] base::Value modernisation for PrintPreviewHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a544294
+
+### [CodeHealth] base::Value clean up for ResettableSettingsSnapshot
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00290e9
+
+### [Codehealth] Simplifying JS runtime calls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57820ac
+
+### [Settings] Add Lacros support to the DesktopDetailedLanguageSettings flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6536254
+
+### Updated arguments of AppWindow::Init()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f268994
+
+### [PageInfo] Add opening cookies settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea40da6
+
+### Cleanup: Move c/b/r/feedback_webui/ to c/b/r/feedback/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f01d1da
+
+### [games] Randomize the order of games with the same title.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b92cf4
+
+### Add support for batching fetch processing in blink
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7474cd4
+
+### [pulsing-blocks]: Remove feature flag code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4850133
+
+### Create feature flag for App Service in Kiosk
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ac082b4
+
+### Ash/Camera: Add CameraAppDocScanDlc flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f167a4
+
+`);
+              </script>
+            </body>
+        </html>
