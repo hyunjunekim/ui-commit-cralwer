@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-05
+### Files app: Update Closure config to support modern JS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a0099d
+
+### wayland: update window scale upon wl_output changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10f7619b
+
+### Check if the event_processor is alive after FindTargetForEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31f1d27
+
+### Reland "Remove back button from SearchBoxViewBase"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0fcf85c
+
+### WebUI: Migrate CrExpandButton to class-based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f10a01
+
+### [ozone/wayland] Use more 'auto' in WaylandPointer class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3cc9982
+
+### Don't show tooltips on synthesized mouse events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8ec96d
+
+### WebUI: Check in Polymer 3 version of cr_expand_button/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1760f22a
+
+### WebUI: Check-in JS module version of list_property_update_behavior.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8adb70
+
+### [CrOS Cellular] Update strings as per the UX recommentations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10ef60f
+
+### Add metrics for multiple ambient animations.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dac225
+
+### Remove fence dcheck in GLSurfaceEGLSurfaceControl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e98985
+
+### [ui] Avoid duplicate keyframe model IDs in threaded ui animations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3165b45
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1dc03a8
+
+### Files app: Update Closure config to support modern JS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6342f9d
+
+### DLP: Add tooltip for DlpManagedIcon in Files App
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23df43d
+
+### AccessibilityChecker: Check for role, add details to name error text
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a99908f
+
+### DLP: Add Restriction details context menu item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da18bb24
+
+### [fuchsia] Provide test fonts to CFv2 tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ffd5814
+
+### Files F2: Add unittests for BaseStore and all_entries reducer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1698c9
+
+### WebUI: Migrate cr_fingerprint/ to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0efd332
+
+### Files F2: Remove stale entries on every action
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7e73cc
+
+### [Files]: Fix a flaky createNewFolder test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ef3534
+
+### [FilesRecentFilter] Use ClearAndScan when switching between filters
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d1f17d
+
+### [Files]: Fixing flaky test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90b8d55
+
+### [New Deal] Show deferred update notification or dialog at a certain time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9aca2b1
+
+### cros_usb_detector: Support attaching USB devices to a specific container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a44a08
+
+### [Extensions c2s] Fix border insets for site settings in extensions menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b302094
+
+### Remove apps::mojom::App local variables in AppUpdate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15ceaa4
+
+### Make chrome_shelf_controller_unittest.cc use Value::List and Value::Dict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04d51cf
+
+### [DownloadBubble] Remove bypass option for malicious downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/444b3f0
+
+### [dPWA] Rename web app manifest launch_handler route_to field as client_mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5445d91
+
+### [Facial ML] Add the skeleton code for the Facial ML SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4073ea7
+
+### immersive mode mac: fix wrong overlay view background color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b74723c
+
+### Temporarily silence ChromeVox when Dictation starts listening.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f3cf2e
+
+### [CodeHealth] Settings WebUI base::Value refactoring - Part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8172da8
+
+### [CodeHealth] NetExportUI base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cca1e9e
+
+### Move in-progress command label_id, icon, and handler to the model.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a1d675
+
+### Refactor local_card_migration_metrics in autofill_metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb65ef1
+
+### Extract TabContainer's controller needs from TabStripController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74ee919
+
+### [Bookmarks UXR] Record entry point for bookmark remove/delete.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77bf4275
+
+### [RDSA] Hook up User Agent override for RDS peripheral settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7cb6214
+
+### [FedCM] Fix AccountSelectionBubbleView use-after-free
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be2ee3b
+
+### Unified side panel: prevent blue dot indicator from showing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b1dfb9
+
+### [Bookmarks UXR] Differentiate between types of bookmark drag-drop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33b28ba
+
+### [Bookmarks UXR] Record entry point when user edits a bookmark.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ac1a81
+
+### Bookmark menu delegate context menu should inherit entry point.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eabffc
+
+### [APC Desktop] Show consent dialog when enabling APC from settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3b9b3f
+
+### [ntp] Use the off-the-record profile for incognito HTML/CSS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/334f1c5
+
+### [CodeHealth] VersionHandler base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c58b56b
+
+### Fetch reauth request token when click "Forgot Password" button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4349d3af
+
+### [APC desktop] Add completion screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e774d247
+
+### [Passwords] Add error state for import dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9efa299
+
+### [Stylus Handwriting] Restrict writing area to URL bar bounds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef2fdea
+
+### [site data] Create PageSpecificSiteDataDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/998ff19
+
+### [PageInfo] Show number of allowed sites on the button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/341c4af
+
+### Privacy Sandbox Settings: Remove unused inheritance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0424f3d6
+
+### Updated return type for CreateNativeAppWindow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d58810e
+
+### Move WebContentsPresentationManager::Observer to content/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f228d26
+
+### CrOS: Add feature flag for HFP mic SR
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/540cf37
+
+`);
+              </script>
+            </body>
+        </html>
