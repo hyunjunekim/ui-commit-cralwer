@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-06
+### WebUI: Migrate cr-expand-button to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e329343
+
+### [CodeHealth] Use \`is_chromeos\` in Grit files (/ui/webui/resources/cr_components)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8f5a6e
+
+### [A11y Settings Revamp] Turn off Accessibility Settings Relayout
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8f9e4b
+
+### ozone + wayland: Route color space through all of the overlay types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c614334
+
+### Overlay Clipping support via underlays
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ba866e
+
+### Revert "[Stylus Handwriting] Show Stylus writing hover icon"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9328a0c
+
+### [Fast Pair] Add Saved Devices funnel metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b34e3ca
+
+### nit: Fix comment for Popup Wrapper overrides
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24a69d0
+
+### Remove explicit calls to Layout(). For tests, invoke Widget::LayoutRootViewIfNecessary()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5006ba6
+
+### [Stylus Handwriting] Show Stylus writing hover icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0f1a72
+
+### immersive mode mac: fix popup position and z-order
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/034860e
+
+### DanglingPtr: fix dangling ptr in AXTree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2fe3e40
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfc5493e
+
+### [ozone/wayland] Rename WaylandEventSource::PointerFrame
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/095bb4c
+
+### DanglingPtr: fix dangling ptr in BubbleBackground
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddcd919
+
+### Remove AtkAction implementation in AtkHyperlink.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d0921f
+
+### [Files]: Improve error logging on getMetadata failures.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61e0fea
+
+### Add Features to make clearOmniboxFocus call async.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c76b73c
+
+### projector: Add DriveFS helper for projector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2c4e31
+
+### [CrOS Hotspot] Add tethering toggle and check readiness in debug UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8375c1
+
+### [Extensions refactor] Move extensions dialogs to extensions file (2/2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f5cb0d
+
+### [Metric] Add impression count for the offer notification icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9624d2
+
+### Revert "Android pip: add action support for video conferencing."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f4aa10f
+
+### [webui bubble] Fix UAF during manager teardown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8608c31
+
+### chromeos: Remove unneeded calls to DBusThreadManager::Initialize, pt 4
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd38c3f5
+
+### [Omnibox] Move MV Tiles dynamic spacing behind a feature flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8047dca
+
+### Separate plugin and PPAPI sources in //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/968a140
+
+### Move InstallAttributes into a separate component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e1dbd6
+
+### [webui tab strip] Close the context menu when the TabStripModel changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25e4bc7
+
+### [Autofill] Support asynchronous AutofillManager events in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4edbdc3b
+
+### Remove direct calls to Layout() in web_app_frame_toolbar_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97d3dd4
+
+### Projector: Add GetVideo() to ProjectorAppClient and ScreencastManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b79e2cb
+
+### [CodeHealth] Download internals UI base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbe252d38
+
+### [CodeHealth] Crostini WebUI base::Value modernisation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eca4a47c
+
+### Refactor webview to use PrefService::GetValue*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef25371
+
+### Remove layout() call in toolbar_account_icon_container_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81920e9
+
+### [Toolbar] Reset animation state in StatusView on icon hide
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59714fa
+
+### [FastCheckout] Add FastCheckout UI Coordinator and basic MVC structure.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b56d608
+
+### [dpwa] Generates new browser tests for DeletePlatformShortcut() action.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e7f74f
+
+### [webui tab strip] Address crash caused by discontinuous tab group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f583980
+
+### Projector: Clean up ProjectorAppClient and ScreencastManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83c007a
+
+### Add KerberosDefaultConfiguration policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b260de2
+
+### NetworkState: Eliminate IsCaptivePortal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41be92e
+
+### Reland "saved_desks: Adds a lacros browsertest for desk templates."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/936455cd
+
+### [basic-card] Remove CreditCardEditorViewController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba8aac1
+
+### local web approvals: update dialog size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/340dc78
+
+### [launcher-lacros] Fixed rich entity categorization.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4728a4
+
+### [site data] Separate WebContentsUserData for the cookies dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2bf350
+
+### [AssistantOptInFlow]: Prevent usage of non-existing objects
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fbf50b
+
+### [Sync] Add SyncPromoController to DEPS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/571d6ea
+
+### Add fpsOwner key to SiteGroup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28bc870
+
+### Add side panel window resize test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca0f4e1
+
+### Update UpdaterPoliciesStatusProvider as PolicyValueProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4136c04
+
+### Disruptive notification permission revocation
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e99356
+
+### [OOBE][AppLaunchSplashScreen] - Refactor handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b4e0263
+
+### Privacy Sandbox Settings: Update notice string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4e70f1
+
+### [Office upload] Hook up mojo pipes for upload dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7c10f1
+
+### Reland: "Make ScopedFeatureList::InitFromCommandLine scope field trials."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15d4a67
+
+### [Office upload] Add upload and cancel buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48c59a8
+
+### [launcher-lacros] A lacros-mode Omnibox provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf541f0
+
+### Update PolicyValueProvider::GetValues() to take list reference argument
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b188694
+
+### Revert "[DownloadBubble] Remove bypass option for malicious downloads"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a80c52
+
+### Revert "Temporarily silence ChromeVox when Dictation starts listening."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62a9b2c
+
+### Remove kExoPointerLock feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/17f177e
+
+`);
+              </script>
+            </body>
+        </html>
