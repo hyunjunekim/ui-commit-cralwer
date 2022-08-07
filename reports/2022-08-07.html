@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-07
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7703ef8
+
+### WebUI: Check in Polymer 3 cr_icon_button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7a5c3d
+
+### [ozone/wayland] Remove WaylandEventSource::PointerScrollData::target
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/48b6ad9
+
+### [ZPS] Allows local history zps on all zero-suggest eligible surfaces
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/01028f2
+
+`);
+              </script>
+            </body>
+        </html>
