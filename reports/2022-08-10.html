@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-10
+### [Files Search]: Code cleanup.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45b4156
+
+### [Files app] Add optional "Learn more" button to "error" visual signal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83a3106
+
+### Update base::Value usage in ash/display/display_prefs.cc.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0d6443
+
+### WebUI: Migrate cr_icon_button to class-based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6727409
+
+### WebUI: Check-in Polymer3 version of cr_checkbox/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/104fd4f
+
+### Revert "Enable touch action behaviour fix when multitouch is enabled."
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cf90b7b
+
+### Ignore ConfigureEvent for in-flight bounds changes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09e51fe
+
+### Migrate //chromeos/ash/components/network to namespace ash [10/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7b386eb
+
+### Reland "[journeys] History clusters side panel design updates"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed922ab
+
+### Revert "Exercise all a11y properties on all nodes in web tests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea9e766a
+
+### Exercise all a11y properties on all nodes in web tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db00218
+
+### Pass GLDisplay pointer through CreateSurface calls.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0d8764
+
+### Add thomasanderson@ and hidehiko@ to ui/base/ime/linux/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7267d45
+
+### Remove chromecast dependencies to //chrome code
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf98a1b
+
+### [ozone/wayland] Make WaylandEventSource::pointer_scroll_data_ optional
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a352ab81
+
+### Fix IME Python 2 presubmit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d316a59
+
+### Enable WaylandWindowTest.ChangeFocusDuringDispatch on non DUT bots
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cee0ebb
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ce31de
+
+### Revert "Create display::Screen on demand on MAC"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0a0320
+
+### Fix two issues related to setting empty names in AXNodeData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/762303d
+
+### Keep Lacros clipboard source up to date when data is copied from Ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2bb5415
+
+### Files F2: Remove the old <bread-crumb>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93a1c90
+
+### [Files] Remove jsconfig file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84fea91
+
+### Files app: Fix images URLs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ff49659
+
+### [FilesTrash] Enable dropping onto the Trash root
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f86f07e
+
+### [FilesRecentFilter] Update empty folder message text
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/efd36edf
+
+### Projector: Send launch event with video file to trusted context
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e0b835
+
+### TestControllerAsh: Add one shot event
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2116bcb
+
+### Lookalikes: Show Safety Tip UI for Combo Squatting Heuristic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c75559
+
+### Allowing reporting Cast Issue from within Guest/Incognito mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39fc912
+
+### Remove encapsulation-breaking getters from TabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e4d481
+
+### swa: Move Shortcut Customization to SystemWebAppUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de2e0ea
+
+### [omnibox][search_engines] Lock query URL for starter pack entries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d503943
+
+### Crostini uses GuestOsSessionTracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fea6c8b
+
+### Forward error messages from SodaInstaller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99a7e7e
+
+### Notify GMC of Cast session starting via MediaSessionImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8b1bf53
+
+### Enable PictureInPictureBrowserFrameView for PiP 2.0 window UI on Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4c1019
+
+### Revert "[CodeHealth] Settings WebUI base::Value refactoring - Part 1"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a95ed1d
+
+### Intents: Show intent picker bubble using 'ShowForReason'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05a2822
+
+### Add stanfield@ to Lens OWNERS files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94e986b
+
+### Reland "Android pip: add action support for video conferencing."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16a8ecc
+
+### Make the side panel an accessible pane
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0b4907
+
+### Speed up shouldDisplaySearchEngineIcon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7be3f7c
+
+### [FastCheckout] Implement BottomSheetContent on FastCheckoutView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/934c0f2
+
+### [Media Router] Replace the use of tab_id with FrameTreeNode ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a2be3c
+
+### [Jank] Fold LocationBarModelOptmiziations into AndroidScrollOptimizations.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e964a3d
+
+### [Extensions refactor] Use DialogModel in SettingsOverriddenDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/744dbf4
+
+### [DownloadBubble] Update icon color when the toolbar button disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e5267c
+
+### [CodeHealth] Settings WebUI base::Value refactoring - Part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0e6d42f
+
+### [Bug Fix] Opening saved tab group shows incorrect toggle button position
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5674b6f
+
+### Change STGTab constructor in preparation for sync conversions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13fe4608
+
+### Gracefully handle empty see details text locally
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92d7df5
+
+### Move footer flag out of the lens standalone flag to enable finch experiments on footer separate from lens standalone.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c5f93f3
+
+### [Lacros] Change profile management button's clickability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/676c2170
+
+### Use fixed zoom level for AssistantCardElement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abc9df0
+
+### float: Update float button when entering or exiting float state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad4983f
+
+### [CodeHealthRotation] base::Value::Dict (v2) migration for //c/b/ui/zoom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/872ca29
+
+### personalization: display old avatar author/website
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4c01b7
+
+### Add view builder support to TipMarqueeView and convert unittest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/620112b
+
+### capture_mode: Fix UAF when session starts after sign out
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe763b6
+
+### Consolidate StatusView security state updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c97fa4
+
+### Revise policy handling in SigninFirstRunMediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e81276
+
+### Adding metrics to 'Cookies in use' dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0592df1
+
+### Rename SyncServiceFactory::GetAsSyncServiceImpl*() to use ForTesting()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/568e17d
+
+### [signin] Signin intercept FRE: unify forced intercept flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc70424
+
+### [site data] Add site data dialog row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f89160c
+
+### [Passwords Import] Add list of failed entries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a909f9
+
+### [PageInfo] Add toggle button to cookies subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3a81f9
+
+### [Password Manager] Implement AddCredentials in saved_password_presenter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9269cd3
+
+### [CodeHealth] Chrome WebUI base::Value refactoring - Part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b8bdca
+
+### Revert "[webui tab strip] Integrate with BrowserView::IsTabStripEditable()"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a7ecec
+
+### [CrOS] Add cryptohome recovery settings toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8e3191
+
+### Change to use enum class in bookmark_stats.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/843dd88
+
+### Migrate //chromeos/ash/components/network to namespace ash [9/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/427ff7a6
+
+### [Web Payment] Blink CSP check for payment method identifier
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6cc1108
+
+`);
+              </script>
+            </body>
+        </html>
