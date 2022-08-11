@@ -1,0 +1,292 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-11
+### Revert "Improve crash reports around AXTree::Unserialize() errors"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f2c7364
+
+### os settings: add all js files to ts target
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3004062a
+
+### Use DIP bounds in WaylandWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b4a72e9
+
+### Improve crash reports around AXTree::Unserialize() errors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42a8d2b
+
+### Add IncreasedCmdBufferLimit experiment.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/947c6e2
+
+### Add OverlayManagerFlatland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1084845
+
+### [Clipboard] Avoid the duplicate notifications on Android T
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2e53cf
+
+### [CrOS Network] Add jiajunz@ as network code owner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad1b519
+
+### [memories][persist-clusters] Add 'recluster' param to c:history/journeys
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e57ac2
+
+### [Android][IncognitoReauth] Add a snackbar when the re-auth is success
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e71932
+
+### Call \`ShouldExecuteCommandWithoutClosingMenu\` for tap and kb events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0fd0d5c
+
+### [blink/renderer] Fix image download logic in renderer to filter instead
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4535185
+
+### Add benjamin.beaudry@microsoft.com as ui/accessibility && modules/accessibility OWNER
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0546dd87
+
+### [CrOS Bluetooth] Updated enter code page
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2336506
+
+### Convert GetContentLayer to use ui::ColorProvider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c101195
+
+### Move text based audio descriptions experiment flag outside
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64a8125
+
+### lacros: Make ui_controls more deterministic. (part 2)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6b56ff
+
+### [CrOS Cellular] Change QR code fill to black.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2be291
+
+### Log skipped draw calls with null gl bindings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab382f8
+
+### ax_tools: no warning noise when dumping an ax tree by ax_dump tools
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0feb1a2
+
+### wayland: skip frames till window's surface is configured
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f378533
+
+### Do no update modifier state by key events.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdbb157
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad5ebed
+
+### [ozone/wayland] Move scroll processing logic to its own method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/097e08f
+
+### Reland "Exercise all a11y properties on all nodes in web tests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5738d5c
+
+### DanglingPtr: fix dangling ptr in BubbleBackground
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddcd919d
+
+### Migrate //chromeos/ash/services/assistant to namespace ash [3/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/664ab9d
+
+### Reland "[CodeHealth] Settings WebUI base::Value refactoring - Part 1"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c46c4a9
+
+### Remove unused \`install_mock\` constructor arg.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f4dfc1e
+
+### [Mohnstrudel] UAF regression test with InteractionSequence
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f32835
+
+### Projector: Add integration tests for getVideo() flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f65dc144
+
+### [Test Auomation] Rename InteractionSequenceBrowserUtil
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f68be2
+
+### Create GameModeController in non-Borealis code path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cefffe
+
+### ash: channel indicator metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1f3dbe
+
+### [User Education] IPH where the non-default button is a custom action.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7447e1c
+
+### Revert "saved_desks: Handle blocking modal dialogs when saving a desk for later."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/914a4c5
+
+### Updates the UI strings related to the window placement permissions to "window management" and different wording.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/515dd398
+
+### Urgent password expiry notification: Migrate to Polymer 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84b3f25
+
+### OOBE - Remove Polymer3 feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f13e00c
+
+### [SafetyCheck] Add entry points for notification permissions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b2e450
+
+### [Extensions cleanup] Remove UpdatedExtensionPermissionsInfo struct
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73331cc
+
+### saved_desks: Handle blocking modal dialogs when saving a desk for later.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbb5861
+
+### Add a template for Tabs in the TabStripModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a79016
+
+### [site data] Reset the dialog's user data only when closing the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b2811d
+
+### Intents: Remove Ash version check from intents tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d6b6bc
+
+### [Signin][Android] Rename ARE_NATIVE_AND_POLICY_LOADED
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cf89a2
+
+### VCD: Change CameraPrivacySwitchObserver interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21b09bb
+
+### DPWA: remove dead code in detailed install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d60f4c6
+
+### [Profiles] Add local profile creation in Profile Customization dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32fa3c8
+
+### [CodeHealth] UIProxyConfigService base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31e1f8f
+
+### dpwa: Fix fullscreen related issues on WindowControlsOverlay mac PWAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/864b64d
+
+### [launcher-lacros] Disallow non-answer calculator results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d962ae
+
+### Move //chromeos/{=>ash/components}/dbus/shill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47ccaff8
+
+### [CodeHealth] Search Engine webui base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e6a85e
+
+### [fyfre] Add app shell for chrome://intro
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dceb96c
+
+### [CodeHealth] Chrome WebUI base::Value refactoring - Part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9f4fced
+
+### [CodeHealth] Settings WebUI base::Value refactoring - Part 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81f8227
+
+### [FastCheckout] Add FastCheckout Mediator tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c73cad2
+
+### Add App Service launcher for Chrome app Kiosk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58993e4b
+
+### Lacros: Support KeepFullscreenWithoutNotification policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1e29df
+
+### [LockScreen][SAML]: Introduce camera access on the lock screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63b4122
+
+### WebAppsCrosapiBrowserTest: Wait for app type initialization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f66462e
+
+### Sheriff: Disable consistently failing test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/436b4950
+
+### Overwrite PresentationRequestNotificationItem media session metadata
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/788dd5c
+
+### Avatars: Create feature flag for cloud migration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1c349641
+
+### Move kThirdPartyStoragePartitioning feature to net/base/features.h.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e139a8d7
+
+### DPWA: add feature flag for detailed install dialog
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dc765bb
+
+### Add flag for enabling Lens in the Quick Action Search Widget.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f9877f7
+
+### Remove dark mode feature for increasing text contrast
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9574fe8
+
+`);
+              </script>
+            </body>
+        </html>
