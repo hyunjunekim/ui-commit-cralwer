@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-12
+### [Files app] Pooled Storage banners a11y fix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9d72a0
+
+### [ViewsAX] Make AXTreeManager inherit AXTreeObserver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b536f45
+
+### Reland "[ViewsAX] Move AXTree reference to AXTreeManager"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10d1ece
+
+### [ozone/wayland] Use std::deque::push_back() for event queuing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7509aa8b
+
+### PrivacyIndicators: Configure notification message and icon color
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e71d527
+
+### WebUI: Check in Polymer 3 cr-dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60a758c
+
+### Revert "suggest: fix shifting suggestion window"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a31378
+
+### Enable "prevent unsafe narrowing" config for ui/views.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/86d1fbe
+
+### WebUI: Update cr-radio-group to class based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebd18d2f
+
+### WebUI: Check in Polymer 3 cr_radio_group
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a93082f2
+
+### Disable ANGLE program cache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d95916
+
+### ui,viz: Set gradient mask percentage in the range [0,1]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc99b2e
+
+### Revert "[ViewsAX] Move AXTree reference to AXTreeManager"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d303f26
+
+### [ViewsAX] Move AXTree reference to AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51fa600
+
+### Reland "Improve crash reports around AXTree::Unserialize() errors"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc649ff
+
+### Add a cros.sys.privacy-indicator token
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf83c72
+
+### Fixes to make prevent_unsafe_narrowing for ui/views build on trybots.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7064abb
+
+### Revert "[blink/renderer] Fix image download logic in renderer to filter instead"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/faddda8c
+
+### [WebUI IPH] Example In-Product Help (IPH) bubble in a WebUI surface.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84cd714
+
+### Fix shadow variables in X11 code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3e41eeb
+
+### ui/display: Add a "DisplayManager.MirroringImplementation" UMA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb52de9b
+
+### ax_platform: end point to hypertext conversion is not correct
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3457caf
+
+### lacros: enforce surface configure before attaching buffers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dedab8
+
+### Revert "cc/paint: Use std::unique_ptr to wrap paths in PaintOps"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b280704d
+
+### [linux/wayland] Bumped version of xdg_shell.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1bb355c
+
+### Remove explicit management of default action in DoAction.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75958a7
+
+### ozone/wayland: update window scale on leaving output.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0f94e22
+
+### Add create icon to cr elements and remove duplicates
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/901530a
+
+### [games] Place icons on a white background.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac77ca8
+
+### [dPWA] Pulling out the 'lock' functionality into a separate manager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17625885
+
+### [Extensions c2s] Remove icon's blocked actions decoration under flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bcc63e
+
+### [DownloadBubble] Do not show bubble automatically when observed by extensions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93d1f468
+
+### Fix MediaRouterContextualMenuUnitTest.EnableAndDisableReportIssue test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cba912
+
+### a11y: fix voiceover traversal of zoom bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2210b90
+
+### [files] Pass Drive dependency into the ZeroStateDriveProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c5b1c4
+
+### Reland "saved_desks: Handle blocking modal dialogs when saving a desk for later."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8afc01
+
+### [Extensions c2s] Display background when multiple buttons are visible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0b0184
+
+### [Extensions] Indicate installed-by-default extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c1c3bb
+
+### PSCS: Move WebContentsHandler out of header file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3317aa8
+
+### Fix Partial Translate bubble text wrapping
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a0db12
+
+### Fix alignment and padding in Translate bubbles advanced views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66849b9
+
+### Use base::DoNothing() in FaviconSourceTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26da7b2
+
+### Persist caption bubble settings across browser sessions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/306d15c4
+
+### safe_browsing OWNERS refactor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f276009
+
+### [DownloadBubble] Dont hide main buttons on DownloadBubbleRowView for V2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0a183b
+
+### Add PermissionResult in //content/public.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15550f7
+
+### Revert "[Mohnstrudel] UAF regression test with InteractionSequence"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c01d2b3
+
+### [Metadata] Add new metadata information text for cards in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a9dbfa
+
+### Enable UpdatePersistentStorageAfterMove & UpdateItemsOverwrittenByMove.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a33cec
+
+### [Read Anything] Add a combobox for color choices to toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e9b5f5
+
+### [PriceTracking] Introduce context menu for price tracking item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e46c02d
+
+### CustomizeChrome: Create Customize Chrome Tab Helper and Controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b938b59b
+
+### [Screencast] Specific DLC installation error message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60bd898
+
+### CHECK input to AutofillAssistantHandler::HandleRevokeConsent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b836314
+
+### Fix an issue where disabling the footer would cause chrome to crash when loading side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5e5f01
+
+### [Code health] Avoid Value::GetAsDictionary (in /chrome/browser/ui/autofill)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fd5e92e
+
+### OOBE - Remove Polymer2 files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa26e2b
+
+### [Sheriff] Disable WebUITabStripInteractiveTest.CloseTabDuringDrag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/400e5b4
+
+### [Autofill] Check AutofillPopupControllerImpl::view_ != nullptr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cb14a0
+
+### [webauthn] Polish desktop Conditional UI UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5bd2dc
+
+### AboutThisSite: Improve navigations from SidePanel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61c46aa
+
+### Intents: Add improved integration test cases for Intent Chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55a9d8bb
+
+### [DownloadBubble] Reland "Remove bypass option for malicious downloads"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40b4b01
+
+### AboutThisSite: Add metrics to track interactions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe1e69b
+
+### AboutThisSite: Add description placeholder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5949adf4
+
+### [Sheriff] Disable WebUITabStripInteractiveTest.CloseTabDuringDrag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2fe065
+
+### [TangibleSync] Implement add account intent in SyncConsentActivity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27c52eb
+
+### [FastCheckout] Update CreditCard model resources.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3e7a18
+
+### [CodeHealth] Removal of base::ListValue from TestWebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f70c16d
+
+### [CodeHealth] Settings WebUI base::Value refactoring - Part 4
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/614c069
+
+### Add a chrome flag for bluetooth devcoredump feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dd93b61
+
+### [CCTBrand] Add test friendly mode for manual testing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/abf67d47
+
+### android: Reduce gpu priority on background
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d8806c1
+
+### Make shopping list flag available on desktop
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1697721
+
+### [Private Network Access] Add feature switch for reducing longest waiting time for PNA preflight response.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6e4029d5
+
+`);
+              </script>
+            </body>
+        </html>
