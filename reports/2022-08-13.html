@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-13
+### WebUI: Migrate cr-radio-group to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b4ef11
+
+### win: fix DCHECK in GetPrimaryScreenWinDisplay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42f38694b
+
+### [ViewsAX] Move AXEventGenerator to AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebc18c2
+
+### [ViewsAX] Remove unnecessary AXTreeManager::ToString
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6fad032
+
+### [ViewsAX] Move ScopedObservation to AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba05f8e
+
+### WebUI: Migrate cr-checkbox to class-based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc20727
+
+### [journeys] Add user-visible debug indicator for persisted clusters
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8047dc0
+
+### AccessibilityChecker: Use RunAccessibilityPaintChecks
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6f429a93
+
+### [ViewsAX] Encapsulate logic of AXTreeManagerMap behind AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/439ae0e
+
+### Views Unification: Moves more of the selection logic into AXNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3e82c6d
+
+### Allow semantic_colors_non_adaptive.xml to ref itself.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/814575af
+
+### Remove shuchen@ from ui/base/ime/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0ef581
+
+### win: Fix IME out-of-bound crash on textfield focus lost
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a1c91a
+
+### Speculative crash fix attempting to use null delegate.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/763bb3a1
+
+### [Read Anything] Add customization options to the Combobox View
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd5acea
+
+### [ozone/wayland] Extract WaylandTouch::Delegate::EventDispatchPolicy out
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4918ec
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0abeb52
+
+### [ozone/wayland] Introduce WaylandEventSource::pointer_frames_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2bd18ca
+
+### [ios]Fix mojo for iOS webui.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50903c5
+
+### [Jellybean] Adds JSONGenerator to style_variable_generator
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c1898b
+
+### Prevent integer underflow in SetCompositionText API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05b53e7
+
+### Update line height to match Chrome spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/558047b
+
+### network ui: Render metrics using uPlot graph
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f1321b6
+
+### [omnibox] Fixes crash caused by looking up visibility state for group ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9921570
+
+### Android pip: fix the issue that toggle button may out of sync.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9887b04
+
+### Refactored web app integration driver test data Bug: 1320770
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e0c467
+
+### Revert "Password Manager new UI: Add empty skeleton and feature flag"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b57a020
+
+### [Passwords] Add results callback for the import flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11ce089c
+
+### Clear measurement cache when showing statusview w/ pending layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b23b20b
+
+### [CodeHealth] Network UI base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4870ff7
+
+### Update histogram and flag expirations for ChromeLabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/464d931f
+
+### Revert "Reland "[Mohnstrudel] UAF regression test with InteractionSequence""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa3cb45
+
+### Added feature to add fading effect on most visited websites carousel.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/29be909
+
+### [Passwords Import] Add "in progress" state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66eb2bb
+
+### [CodeHealth] Replace DictionaryValue::GetString in /chrome/browser/ui/webui/settings/chromeos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11ef534
+
+### saved_desks: Remove load of desk template from model when launching.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d47df41
+
+### Migration of the cached flag in Omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/667e5da
+
+### Keep app menu open after changing app launch type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aebddab
+
+### [CodeHealth] Chrome WebUI base::Value refactoring - Part 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/160f041
+
+### [WebContentsImpl] Don't call DidStartNavigation in child frames
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/891d440
+
+### [CodeHealth] Replace DictionaryValue::GetString in /chrome/browser/ui/ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec882ed
+
+### Record UMA metrics on potential nullptr at policy change handling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09c94915
+
+### Iframe feed content in the sidepanel.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4d92f28
+
+### [history] Simplify HistoryServiceObserver interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ee1580
+
+### 3.1) clear the reduced accept language when user clear the site data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/452c6774
+
+### [Passwords Import] Add store picker for PwdMgr Account Store users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e74699a
+
+### Update the padding on omnibox suggestion header
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/65d00afc
+
+### Unified side panel: update combobox index if entries are added/removed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77f6441
+
+### Fix broken parent access flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35d939d
+
+### Update list usage in holding_space_persistence_delegate.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9482905
+
+### Reland "[Mohnstrudel] UAF regression test with InteractionSequence"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/778ebf8
+
+### Delay showing intent chip IPH until button is laid out.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0464a2c
+
+### 2) Add reduce accept language prefs key service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13119a7
+
+### Implementation of DNS lookup on chrome://net-internals page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eeebb8f
+
+### [PageInfo] Add FPS button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b63883
+
+### [side panel] Change icon size to align with UX decsion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ef2f70
+
+### Change the boolean battery saver mode pref to an enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1bc86d
+
+### [iOS] Moving Tailored Security Outcome Enum To Components Directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8ba7f9f
+
+### Lookalikes: Combo Squatting should be launched gradually
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd62ac0
+
+### [APC Desktop] Add updates to handle script completion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bf71cf
+
+### Sync: Move BrowserType enum from session_specifics to sync_enums
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92d0d28
+
+### Password Manager new UI: Add empty skeleton and feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9da2602
+
+### Projector: Send launch event with video file to untrusted context
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddf5862
+
+### [Office upload] Send back user action on dialog close
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b13b77a
+
+### Disable SystemTrayClientShowChannelInfoGiveFeedbackTest.RecordFeedbackSourceChannelIndicator on release bots for flakiness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1151db
+
+### Add feature flag for launcher image search.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2f55979
+
+### [ZPS] Add feature flag to toggle Zero-Prefix Suggest prefetching on Web
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2854604
+
+### Remove enable-prefetch-proxy flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f2798e
+
+### arc/gio: Add feature flag for GIO beta
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/846b671
+
+### Cleanup kTrimOnMemoryPressure
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4dea80b
+
+### Projector: Add local playback feature flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a77193
+
+### [Bluetooth] Add a chrome flag for Bluetooth Quality Report
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c0c68e6
+
+### 6) Add an about-flag for reduce-accept-language
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0e75ea5
+
+### Extend and clean up incognito feature flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f904dc8
+
+### Add FileTransferEnterpriseConnector feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c95470d
+
+`);
+              </script>
+            </body>
+        </html>
