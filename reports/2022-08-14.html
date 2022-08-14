@@ -1,0 +1,36 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-14
+### [ui] Allow overriding the enable_hidpi GN arg
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7ae332
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3e83c5
+
+### Revert "Views Unification: Moves AXNode getter / setter to AXPlatformNodeDelegate"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/481b6c7
+
+### Views Unification: Moves AXNode getter / setter to AXPlatformNodeDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1706d8f
+
+### Refactor ui/user_education to use PrefService::GetValueDict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9258b1
+
+`);
+              </script>
+            </body>
+        </html>
