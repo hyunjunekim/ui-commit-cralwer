@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-17
+### Revert "Always use InsertText in MaybeProcessPendingInputMethodResult."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a50a0f4
+
+### [FilesTrash] Wire parseTrashInfoFiles to TrashDirectoryReader
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd47c54
+
+### [Files]: Fix source of hasAttribute crash.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1737239
+
+### Disable FakeInputMethodContext on Lacros testing.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5308795
+
+### Focus on Play files after clicking placeholder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79417b8
+
+### cros_next: add system base and surface tokens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90f492fa
+
+### [ViewsAX] Move function implementations to base class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f016714
+
+### Reland WebUI: Migrate cr-dialog to class based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c426367
+
+### Move STYLE_EMPHASIZED and STYLE_EMPHASIZED_SECONDARY to views::style
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e0b3d8
+
+### [journeys] Added history clusters side panel searchbox
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cb5532
+
+### [Test Automation] Add better logging when testing w/InteractionSequence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f05a63
+
+### win: drop out-of-bound Textfield::ExtendSelectionAndDelete operations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/29f32b3a
+
+### [ozone/wayland] Pair WaylandEventSource::TouchFrame and PointerFrame
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81744d0
+
+### Ensure structs/methods are defined/declared before use.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f7e368
+
+### Revive Color Contrast Companion sources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6cf3bf
+
+### Fix a typo in ozone function comment.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/214fdc8
+
+### Revert "WebUI: Migrate cr-dialog to class based syntax"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/271507f
+
+### WebUI: Migrate cr-dialog to class based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70ddbf57
+
+### Revert "Hide tooltip when view becomes hidden"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e1791f8
+
+### [Clipboard API] Code format updates in clipboard files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ae2589
+
+### Hide tooltip when view becomes hidden
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8c159f6
+
+### [linux/wayland] Added support for xdg-activation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6056cfe
+
+### Mac: Fix asynchronous TextInputHost::HasCompositionText
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cfc095b
+
+### Change FilterData to use size_t.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ee18004
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6533894
+
+### DanglingPtr: fix dangling ptr in View
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25750b7b
+
+### DanglingPtr: fix dangling ptrs in window_tree_host
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8ce496
+
+### DanglingPtr: AXCallStatementInvokerAuraLinux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96a0841
+
+### Always send change notifications on IOTask completion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9406f11
+
+### [games] Filter out games with no icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70d0bfe
+
+### [String matching] Factor partial_match_penalty_rate out of input params.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85533681
+
+### [Settings] Add Target language select box
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3619730
+
+### dpwa: Do not expose Window Controls Overlay values to a fenced frame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60395f0
+
+### Revert "Keep app menu open after changing app launch type"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa113ed
+
+### PermissionBubbleInteractiveUITest should enable kPermissionChip feature explicitly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8feb37d
+
+### Migrate //chromeos/ash/components/cros_disks to namespace ash [6/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e3dd4a
+
+### [PriceTracking] Add mojo interface for side panel price tracking
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b9e823
+
+### ChromeOS: Make "Search" and "Go to" context actions use Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b386a342
+
+### Update list and dict Value usage in account_manager_handler.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38abd9f
+
+### Fixes some of the rendering status lines issues in AnsibleDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a1c4f6
+
+### saved_desks: Remove callback from CreateNewDeskFromTemplate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4322b5
+
+### [stts/desktop] Hide "Your devices" link if there's no target device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/789c355
+
+### [Read Anything] Update toolbar to observe theme changes and other UI fixes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e04a63d
+
+### Remove "Create shortcut" option from webstore in chrome://apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27a8e44
+
+### [Signin][Android] Add support for new initialization flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95aba61
+
+### [CPA] Added feature engagement rate limits to action chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4851e6
+
+### Projector: Add OWNERS to chrome/browser/ui/ash/projector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b2a7fd
+
+### Remove an extra step added to the original tab group tutorial.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0afb544
+
+### Revert "[TangibleSync] Add variation strings for tangible sync view"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3c5f8f4
+
+### Reland "Reland "[Mohnstrudel] UAF regression test with InteractionSequence""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ab18e9
+
+### first-run: allow setting canary as default browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d21368
+
+### OOBE: Updated meet flow for CFM devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f74df0b6
+
+### Tidy up TabStrip vs TabContainer layout responsibilities.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/289ff0d
+
+### [User Education] Allow custom IPH button to be default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a205bc7
+
+### Unified side panel: schedule paint for combobox after selected index update.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20f231c
+
+### Create separate copies of PasswordForms instead of keeping raw pointers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d8d3d9
+
+### Align chip with the contents web view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/766f696
+
+### [Autofill] Move webauthn::InternalAuthenticator to CreditCardFIDOAuthenticator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7beb41c
+
+### Refactor DeskModel::GetAllEntries to a synchronous method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/430d1f61
+
+### Using weak_ptr in WellKnownChangePasswordNavigationThrottle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d8b9be0
+
+### [Read Anything] A few small code cleanups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e03ba5a4
+
+### AboutThisSite: Ignore initial progress change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b0749b
+
+### [APC Desktop] Open password manager on click.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fafdd951
+
+### saved_desks: Cleaning up saved desk GUID handling, part 1.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30330f3e
+
+### Revert "Update dialog height without footnote"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf22f70
+
+### [PageInfo] Add data flow for number of sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f80ac2
+
+### [CodeHealth] Replace DictionaryValue::GetString in /chrome/browser/ui/startup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a2f001
+
+### [Autofill] Move CreditCard{CVC,Otp}Authenticator to AutofillClient.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d230693
+
+### Increase line height of the sync consent footer text for tangible sync flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eaef59
+
+### [TangibleSync] Add variation strings for tangible sync view
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d1c4933
+
+### Update list and dict Value usage in web_app_integration_test_driver.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6635e73
+
+### Settings WebUI: Fix empty extension info on chrome://settings/onStartup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9710842
+
+### [launcher] Permanently use RemovedResultsRanker for Omnibox results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55fbcfac
+
+### ime: Add flag for handwriting library DLC.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b42629a
+
+### Add feature flag to skip ignorable fetch handlers.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/577d8282
+
+### [omaha] Make min SDK version check dynamic.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5b7ac1a0
+
+`);
+              </script>
+            </body>
+        </html>
