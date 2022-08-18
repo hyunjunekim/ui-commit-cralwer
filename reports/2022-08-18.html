@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-18
+### WebUI: Add a dark mode color for cr-tooltip-icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24cb0d89
+
+### Add experimental improvements to Lens instruction chip.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59a45c5
+
+### Files app: Move style from main.html to the file_manager.css
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/661bd72
+
+### WebUI: Migrate cr-checkbox to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b0b1ef
+
+### [CrOS Cellular] Adding label to the SIM lock dialog title
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65c7d3f
+
+### WebUI: Check in Polymer 3 cr_radio_button/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/730ff74
+
+### [FilesTrash] Disallow traversing folders in Trash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91510db
+
+### Lacros: Allow for zaura shell to set initial z order
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa6d5af
+
+### Initial support for a "main image" in bubbles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a18c61
+
+### WebUI: Migrate cr-toggle to class-based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1f4c60c
+
+### [fuchsia][input] Support scroll only contains scroll_*_physical_pixel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddd20b2
+
+### DanglingPtr: fix dangling ptrs in xproto_internal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e280486a
+
+### Fix margin before the separator in DialogModel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fd00e9
+
+### Reland "Hide tooltip when view becomes hidden"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32aa0be
+
+### WebUI: Check in Polymer 3 cr_input/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76a9985
+
+### sheriff: fix a11y fuzzer build
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a2a0b2
+
+### Add webview flag for IncreasedCmdBufferParseSlice experiment.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebc4770
+
+### Add documentation to WaylandEventSource::keyboard_modifiers_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/343a93c
+
+### [ozone/wayland] Unify WaylandEventSource::TouchFrame and PointerFrame
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2fa6894
+
+### [fuchsia] Set DomKey based on fuchsia.input3.KeyMeaning
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30b94bf8
+
+### Don't checkfail with negative visible cursor heights.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18c15d2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03d397d
+
+### Fix ozone_unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08496fb5
+
+### [FilesTrash] Show "Original file location" in quick view for Trash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/175a889
+
+### Give elevation colors a light mode variant.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d544ec5
+
+### Move //chromeos/{=>ash/components}/dbus/dbus_thread_manager.{cc|h}
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4923462
+
+### ambient: rm setting page components pt2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34f3018
+
+### Remove Mic and Lens buttons in clobber mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd87f33
+
+### [Lacros] Remove l10n dependency out of //chromeos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a41e13a
+
+### CustomizeChrome: Customize Chrome Triggering on NTP Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d7d9cf
+
+### [Extensions] Don't try to close the extension popup before it opens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04f7738
+
+### Change API used to show the Tailored Security Desktop Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d8ea63
+
+### Remove launcher lacros feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f5eb52a
+
+### Allow emphasized text in contexts on Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90711017
+
+### [UrlParamFilter] Refactor CrossOTR* Observers to share code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30e528d
+
+### libassistant-dlc: Extract libassistant loader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f497c8
+
+### Revert "Refactor Suggestion::Payload to use StrongAlias for BackendId instead of a std::string"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20c9d72
+
+### Refactor Suggestion::Payload to use StrongAlias for BackendId instead of a std::string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a47fddb
+
+### Disable launcher continue section by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2b1953f
+
+### Reland "[TangibleSync] Add variation strings for tangible sync view"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3256aec
+
+### [Omnibox] Adjust the width of location bar for revamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9a594c
+
+### Make the CanonOutput classes use size_t.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfdf32c
+
+### Fixed StatusView icon not updating when navigating back to NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4782053
+
+### [Test Automation] Screenshot a secondary WebUI surface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c965921e
+
+### AppHome: Implement the basic |GetApps()| API.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/151bedd
+
+### Refactor getSearchEngineLogo to return a Promise
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43d49ec
+
+### [ntp] Fake promo in PromoService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bc644a
+
+### [Sync] Suppress NTP promo after the user chooses to not signin in FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf3e3a9
+
+### [ntp] Remove handling of HTML payload from promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/309709c
+
+### projector: Get Local video duration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6d1124
+
+### Reuse the location bar icon for PiP 2.0 window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb5afe3
+
+### [CodeHealth] Removing a few base::Value conversions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c841a6
+
+### Reland "[Cleanup] Delete old-gen and rename file to "structured_events"."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/566a511
+
+### Lacros: Fix icon assignment on new app tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57009f0
+
+### [site data] Get origins to display as rows in the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d11367a
+
+### sheriff: disable NoTrustedTypesViolation for chrome://sandbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1c0bc2
+
+### Add side panel resize metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72b9d442
+
+### [Lacros] Observer for device setting updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fe3bf4
+
+### [Omnibox] Add a parameter to control showing new UI for tablets
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/684ddf5
+
+### [Cast2Class] Disable AccessCodeCastDialogBrowsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f37b19e
+
+### [CodeHealth] AssistantOptInFlowScreenHandler CallJS fixes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f1b401
+
+### Pass composed favicon urls back to Java.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6eab190
+
+### Reland 'Update dialog height without footnote'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a61e09
+
+### [APC Desktop] Only show separator if there are non-empty buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29cb76d
+
+### Align open in new tab button with results in LRP.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b96b5d
+
+### color_panel_cocoa_unittest: add Mojo callback and fix tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cb7b00
+
+### Support configuring duration for IconLabelBubbleView animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddfc544
+
+### Move {ash => chromeos/ash}/components/audio/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94c5e50
+
+### [fileSystem API] Ensure RequestFileSystemDialogView invokes callback.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74d0c4f
+
+### Add account addition test support in FakeAccountManagerFacade
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/390ce02
+
+### [OOBE]: Check that LDHost exists before calling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dfe930
+
+### [Fallbacks] Hide Autofill popup if it overlaps with the context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ed727d
+
+### OOBE - Polymer3 - Rename core oobe files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a7632e
+
+### Refactor browser_window_state to use PrefService::GetValueDict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d725eb
+
+### Reland "Password Manager new UI: Add empty skeleton and feature flag"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e4aa5bc
+
+### [String matching] Factor use_edit_distance out of fuzzy matching.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed04f1d
+
+### Refactor TaskManager to use PrefService::GetValueDict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30edfd8
+
+### Refactor omnibox to use PrefService::GetValueDict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16262e4
+
+### PrivacyIndicators: Add a status area tray item for privacy indicators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae50cabb
+
+### [Cormorant] Setup Cormorant flag for Android testing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a91d86
+
+### [Signin] Add Signin Intercept feature flags to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c1792c8
+
+### Add save only arm to CriticalPersistedTabData
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/19af778
+
+`);
+              </script>
+            </body>
+        </html>
