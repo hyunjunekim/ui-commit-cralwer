@@ -1,0 +1,324 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-19
+### WebUI: Migrate cr-input to class-based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5bda228
+
+### Removed call to update MediaImport.Duplicates and marked corresponding histogram as obsolete
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ae4e09
+
+### ozone: Set display scale factor font render param
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd78dbc
+
+### [OOBE] Updated bluetooth pairing dialog in OOBE
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3881efe
+
+### Fix ui::GrabWindowSnapshotTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/675f279
+
+### Switch SelectFileDialogExtension to ui::ColorProvider
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33b768c
+
+### Files app: Do not add file watchers to non-watchable volumes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/943fcb3
+
+### Fix debug crash and log spam with GTK3+Wayland+text-input-unstable-v3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f40f0f9
+
+### Structs with user-declared constructors are not aggregates in C++20.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f18d67e
+
+### Limit dialog-width increase from main-image use
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96a03e95
+
+### wm: Remove redundant code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49f1326
+
+### Android OSK resizes visual viewport behind flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f1e9d03
+
+### Update WebUI HelpBubble basic layout
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e99038e
+
+### WebUI: Migrate cr_radio_button/* to class-based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f0327f
+
+### WebUI: Check in Polymer 3 cr-button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70bb3ce
+
+### Speculative fix to a notification inline reply clusterfuzz crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fbae842
+
+### Fix unsafe narrowing instances in ui/base.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/255968ac
+
+### [ui] Cache the janky duration histogram
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68d6e69
+
+### [ozone/wayland] Workaround missing wl_touch.frame after wl_touch.up
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dc672e
+
+### [linux/wayland] Fixed popup anchors and translation of located events.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e90bfa9
+
+### crostini: Rename ansible file selector to be a generic file selector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad76a44
+
+### [DownloadBubble] Notify controllers in other windows when one button is pressed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d943cd
+
+### [ Documentation ] Added todo for IsSaved function call.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/003af04
+
+### wallpaper: delete unused wallpaper handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7cfec5
+
+### [launcher] Removed unnecessary callbacks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79e6eb3
+
+### Implement the non mojom SetResizeLocked interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36b3caf
+
+### glanceables: Add placeholder session restore button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc962016a
+
+### Handle null WebContents when checking display ID.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44b80e5
+
+### Disable reading lists for tabbed PWAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/734b569
+
+### [Extensions] Show constrained window dialog when parent doesn't exist
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bc602c
+
+### Fix Offer Notification Bubble Crash When Offer Data Is Cleared
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f74544e781
+
+### [A11y Settings Revamp] Redirect Manage page to top-level section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10a0bb3
+
+### [dPWA Testing] Refactor & simplification pass on tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87bb89cb9
+
+### [NTP] Rename task_module files to be recipe_module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c48258f
+
+### lacros: Move some ui files to c/b/ui/lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b34fbe3
+
+### [PriceTracking] Handle clicks within price tracking side panel UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42060b09
+
+### PrivacyIndicators: Refactor AppAccessNotifier unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a82c1053
+
+### Update the shelf app menu when the browser window name is set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e736e051
+
+### [PriceTracking] Add initial list UI in side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52dd4b92
+
+### PrivacyIndicators: Change view and icons visibility when appropriate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a621c82
+
+### usb: Move WebUsbServiceImpl to //content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed00ca7e7
+
+### [Toolbar] Remove the toolbar enter/exit animation code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3622c1
+
+### Add strings for the Translate Message UI dismissal tooltip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcdeaa3
+
+### Extract RoundByteSize method from StorageHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d0c86ee
+
+### [Read Anything] Save user choice for colors to prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79ccfba5
+
+### [signin] Do not silently grant ConsentLevel::kSync if sync is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4aa65a
+
+### [DesktopScreenshots] Register component earlier, on share hub open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfab7b8
+
+### Refactor TaskManagerView to use PrefService::GetValueDict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06292bd
+
+### Handle corner cases when opening URLs from incognito mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e35e174
+
+### Fix copying of PolicyGlobal to diagnostics in chrome://sandbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04e571d8
+
+### [Passwords import] Add per import limit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5dd675
+
+### Move {ash => chromeos/ash}/components/cryptohome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7425adf
+
+### [DownloadBubble] Update full screen notification text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bfaa7b
+
+### Revert "Add alternate accelerator for IDC_BASIC_PRINT and deprecate the old one"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be04b2226
+
+### Unified side panel update combobox after Show call.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/417b113
+
+### Correctly sort the newly created crostini folder in app list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2706b3b3
+
+### [site data] Display the favicon in the row view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0382e9
+
+### [MSC] Added screen capture usage indicator view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/add76fef
+
+### [APC Desktop] Stop icon animation during prompt.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1861b04
+
+### [Passwords] Fix accessibility text for password generation popup for UPM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b69d94
+
+### [MPArch] Use GuestMainFrame->GetSI instead of WC->GetSI for GuestView's
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/631d045
+
+### [site data] Update the row based on the content setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f51c0acc
+
+### Reland "Move //chromeos/{=>ash/components}/dbus/dbus_thread_manager.{cc|h}"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7659a65
+
+### [dPWA] Enforce client view's height to be at least WCO's height
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d8b0ed
+
+### [APC Desktop] Refactor helper classes for progress bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d59e989
+
+### dpwa: Fix tests for CreateShortcutIgnoresManifest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0680717
+
+### Reland "[CodeHealth] Settings WebUI base::Value refactoring - Part 1"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a108daa
+
+### [CodeHealth] Enrollment screen base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97f478dd
+
+### arc: Perform Android Management check in ArcRequirementChecker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52ebdf5
+
+### [PageInfo] Add link to "All Sites"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a29f43f
+
+### Adds browsertest for saved devices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/212313c5
+
+### prerender: refactor disabling Prerender2 in extension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cb5a1d
+
+### Revert "Move //chromeos/{=>ash/components}/dbus/dbus_thread_manager.{cc|h}"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5db3e6d
+
+### [games] add UMA metrics for result errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50c6866
+
+### bruschetta: Register bruschetta instances dynamically
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/db66df3
+
+### Remove de-jelly flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e006c94
+
+### Add permission revocation flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/352f34a
+
+`);
+              </script>
+            </body>
+        </html>
