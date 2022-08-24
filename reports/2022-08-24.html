@@ -1,0 +1,252 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-24
+### "prevent_unsafe_narrowing" fixes for ui/base/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c26cb8
+
+### ash: Replace layer delegates with gfx::LinearGradient
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/316c74f
+
+### Add new install source for dev installation of isolated apps.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31a6e1e
+
+### Revert "win: Fix IME out-of-bound crash on textfield focus lost"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11d9560
+
+### Remove ClearSupportedAttributes from TSF.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc61a4d
+
+### Limit tab strip captures based on property model changes.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/806638c
+
+### cc: Limit UIResourceManager shared bitmap cache size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e50a288
+
+### CrToggle: Move listener registration to ready()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8f321e
+
+### WebUI: Check in Polymer 3 cr-lottie
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f79a97a
+
+### Add an experiment for ablating SendPendingAccessibilityEvents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c81fcf
+
+### ozone/wayland: check WaylandSubsurface is visible
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1fb841
+
+### Add feature flag for Accessibility Service work.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/29e670d
+
+### Set FakeKeyboardHeuristic Flag to Default Enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0400813
+
+### [Reland] Add AndroidFrameDeadline to finch config
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a0c2a53
+
+### Expose cr-dialog background color property
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5df24ca
+
+### Reland "Views Unification: Moves AXNode getter / setter to AXPlatformNodeDelegate"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/443842c
+
+### [clang] Fix clang plugin warnings in gmock objects
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70605a41
+
+### [linux/wayland] Improved the cursor factory.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6384c86
+
+### Reland "[ios]Fix mojo for iOS webui."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/836b58ba
+
+### WebUI: Migrate cr-button to class-based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20c13b2
+
+### crostini: Add backup file parameter to create a new container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e33a2af
+
+### Retire prefix-app-name-in-window-title flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b571b7c1
+
+### Reland "personalization: Remove deprecated avatar settings page"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5962fa34
+
+### [Metadata] Update Suggestion label type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20f043d5
+
+### Remove false const qualifiers from WebAppIconManager methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7ceef7
+
+### Only capture bottom toolbar when controls are unlocked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0ed9b8
+
+### Implement the non mojom SetWindowMode interface for AppServiceProxy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e5e510
+
+### Cache needToCheckForSearchEnginePromo in SELogoUtils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47d5017
+
+### [dPWA] Add subtitle to detailed install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdb07b3
+
+### Control statusview fade animation via PropertyModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca00fbf
+
+### Fix chrome://settings/security logic for showing CRS info when enterprise policy is set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb57c2b
+
+### [headless] Suppress First Run Dialog in headless mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df7fedc
+
+### webauthn: put focus on the back arrow in BLE permission dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51983fb
+
+### [dPWA Testing] Fixing race condition on tsan linux for shortcuts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc954de
+
+### Use WebUI Color Pipeline in NewTabPage UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23f4a5a
+
+### webauthn: Enable passkey management on mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f5604f
+
+### Remove usage of WebContents in Tailored Security desktop dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a2ae9d
+
+### Show SE logo on the start surface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4336f6b
+
+### Adding pref for Calendar integration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96b2aa2
+
+### [Passwords] Add a password strength indicator to generation dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cea0b99
+
+### Settings: Remove showDismissCompromisedPasswordOption flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4d4ca81
+
+### [PageInfo] Add SizeToFit for subtitle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a40b19
+
+### sessions: log a couple more events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ceed3d4
+
+### glanceables: Dismiss screen on app window activation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38a4ef3
+
+### [dPWA] Browsertest for display-mode media value borderless
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a6b9765
+
+### Window Placement: Notify the client asynchronously
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f17fa8c
+
+### [dPWA] Browsertest for display-mode media value window-controls-overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbe4edf8
+
+### Move TabObscuringHandler from 'toolbar' to 'tab' package
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1111ee2
+
+### [site data] Don't provide delete option for blocked sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c14a9b1
+
+### AboutThisSite: Block StatusIndicator and BottomControls focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2777a3e
+
+### [TangibleSync] Center UI elements in tangible sync consent page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd55c91
+
+### Lacros: Add AMFacade Observer API - OnAuthErrorChanged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bce8132
+
+### [FPS All-Sites UI] Filter by FPS Owner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01778e1
+
+### crostini: Restore settings update liveness for extra containers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b769a66
+
+### Add feature flag for merchant opt out error dialog
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f9bc3e
+
+### Remove default-enabled ash::features::kMediaAppHandlesPdf.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8086a047
+
+### Support inline playback for feed video when autoplay is not enabled
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/20f07f5
+
+### Add performance tuning feature flags to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/17ba75d
+
+### Clean up several launched hrefTranslate-related base::Features.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5477be2
+
+`);
+              </script>
+            </body>
+        </html>
