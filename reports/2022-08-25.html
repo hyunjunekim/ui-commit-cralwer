@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-25
+### [journeys] Rename menu_container WebUI component to cluster_menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3e6e39
+
+### [FilesRecentFiler] Re-enable timezone change test in Recent tab
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2387a8b
+
+### Fix cr toggle to properly set aria pressed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/978f2d0
+
+### Fix -Wextra-semi warnings in Chrome (Linux, ChromeOS, Windows)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/740573b
+
+### wayland: Minor fixes in WaylandSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e725a38
+
+### [Magnifier][Cleanup] Remove Finished Continuous Mouse Following Flag
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e5e695e
+
+### [ozone/wayland] Fix trackpad pinch zoom
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81091d8
+
+### wayland: make wl_output/Display id differences explicit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10e7cbd
+
+### [ViewsAX] Fix AXTreeManager ctor mistake
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5f5f99
+
+### CrOS Network: Fix weirdness caused by mixing pre-JS modules and modules targets.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3cc0677
+
+### [dialog model] Replace AddBodyText with AddParagraph
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db73d85
+
+### [ViewsAX] GetNodeFromTree(node_id) refactored and moved into base class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/464f9d9
+
+### [clang] Fix more clang plugin warnings in gmock objects
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b34721e
+
+### Preserve clipboard sequence number after clipboard history paste
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ab0697
+
+### WebUI: Migrate cr-input to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c32199e4b
+
+### wayland: remove unused function from WaylandEventSource
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cd9e9ed
+
+### Tree fuzzer should only seek real crashes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ebbf7c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10319a9
+
+### DanglingPtr: fix dangling ptrs in  native_widget_aura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e359e22
+
+### DanglingPtr: fix dangling ptrs in desktop_native_widget_aura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/086e87d3
+
+### [linux/wayland] Added support for pending activation requests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5377f9824
+
+### [linux/wayland] Added initial extraction of the tiled states.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b44978f
+
+### Simplify base::BindOnce(base::BindLambdaForTesting()) pattern.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35f56a7
+
+### Lacros web apps: Test navigation with Ash running
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc8fe1f
+
+### Mitigate NPE on constraint change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc7df15
+
+### Projector: Convert launch event to SendFilesToProjectorApp()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9167d9a
+
+### [FaceML] Add app bundle resources.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5dd88a
+
+### [TTFCC] Introduce Java TouchToFillCreditCard bottom sheet component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1011ee0
+
+### [journeys] Record Journeys HaTS survey metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43e43b7
+
+### Disable flaky on mac side search test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2d6d3a
+
+### Fix missing metric recordings related to back press refactor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/360bbd0
+
+### Find Plugins by BrowserContext
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23df04c
+
+### [Fast Pair] Add loading screen to saved devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2e35c6
+
+### [PCCT] Ensure 'Running in Chrome' app menu is visible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64228e41
+
+### [PriceTracking] Add product view in bookmark bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a9eb833
+
+### [omnibox] Starts using the GroupConfigInfo proto in SuggestionGroup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0f4ddb
+
+### [ntp][modules] Enable Drive module on ToT for launched population
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1cd16b5
+
+### Fix enterprise creation dialog content alignment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1de4c06
+
+### Fix -Wshadow instances in chrome/browser/ui/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7a4af5
+
+### Feedback: Add metric to record when feedback is open from launcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/825acfc
+
+### Add loading view state to Partial Translate bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/247459bc
+
+### Replace usages of authenticator.js in lockscreen online reauthentication
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/490bec9f
+
+### [Start Surface] Add tab-to-gts toolbar cross fade animation back.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ffd8b8
+
+### fix tests when NSApp has an activation policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8752f31
+
+### AboutThisSite: Register SidePanel entry on pageload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/020c2f9
+
+### [omnibox] Imports and uses OmniboxFocusType proto enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eadadb6
+
+### Remove forward declaration of view::Widget from permission_prompt_bubble_view.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4e19ddc
+
+### [Fast Pair] Bubble up Saved Devices server errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a53976a
+
+### [PhoneHub][Onboarding] Fix a bug that user might be directed to wrong
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3105406
+
+### Fix side panel resize RTL bug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81c9104
+
+### Remove IsUnicodeWhitespace<(sizeof(Char) == 1)>.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/341eece
+
+### [Extensions] Move install extension method to base test class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b05451b
+
+### [Extensions c2s] Set toolbar action hover card width
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4e90c8
+
+### AboutThisSite: Keep active contextual entries cached
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15f532c
+
+### [Extensions refactor] Remove ReloadPageDialog views related code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/531fa527
+
+### Change SideSearchBrowserController::SideSearchViewID to an enum class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c406310
+
+### Only call updateLocationBarIcon for meaningful url focus delta
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/433b3cc
+
+### Add dullweber@ to page_info OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f3e32f
+
+### [FastCheckout] Add model for Autofill profile items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba09b7a
+
+### Disable flaky BrowserNavigatorTest.SwitchToTabLatestWindow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f58ef8c
+
+### [dpwa] Adds the action to launch a file and check the file handling dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b87303
+
+### [Office upload] Implement move to Drive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b5cbc4
+
+### Add BiometricAuthenticatorWin class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bc754cd
+
+### Prioritize device trust over Verified Access for SAML
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22b807f
+
+### BrowserNonClientFrameView test: fix expected title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16d2082
+
+### Remove inactive owners from /chrome/browser/ui/views/tab_sharing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cc9d0f
+
+### borealis: Add a flag to force 2x zoom in the client
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e867209
+
+### AboutThisSite: Add sidepanel and description flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8fdeb5d
+
+### Add flag to enable External Navigation debug logs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/495a0d3
+
+### CrOS: Add flag for Captive Portal UI 2022 Improvements
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b1ef666
+
+`);
+              </script>
+            </body>
+        </html>
