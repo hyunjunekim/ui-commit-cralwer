@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-26
+### Move some Mac Immersive Fullscreen Mode code around.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7515e6bb
+
+### float: Implement for lacros p2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f295cf8
+
+### Declared feature flag for Widget layering
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1aeca67
+
+### Change gfx::Rect to blink::mojom::WindowFeatures in AddNewContents and some related functions.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/767c27a
+
+### Revert "OverlayProcessorOzone: Reject BT.2020 and full-range videos."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87d2969
+
+### WebUI: Migrate cr-icon-button to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/725086c5
+
+### [ViewsAX] Renamed AXTreeManagerBase test suite to AXTreeManagerBaseTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40e0c79
+
+### WebUI: Migrate cr-lottie to class based syntax
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8a7e71
+
+### Use style::STYLE_SECONDARY for subtitle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0623b853
+
+### views: fix possible DCHECK in views::MenuItemView::OnPaintImpl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/459a74e4c
+
+### Correct condition for early detection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f91ffa7
+
+### Revert "Do not allow AXMode globals to get out of sync"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af11174
+
+### Do not allow AXMode globals to get out of sync
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39ee890
+
+### Simplify condition in ShouldDecideStroke
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/873ae3c
+
+### Lower max fuzz data size for ax position and textrangeprovider fuzzers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d9e5d0
+
+### WebUI: Check-in Polymer3 version of cr_elements/policy/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/617b916
+
+### Make Compositor own mojom pointers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba63674
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/594d8eb
+
+### Take into account disabled menu items in a11y mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5ec708
+
+### DanglingPtr: fix dangling ptrs in window_reorderer and drop_helper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6de0b84
+
+### Add flag to drop one output source from ScreenAI visual annotator.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d6475ea
+
+### Fix comparison in recents.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3369c85
+
+### ozone/wayland: remove post task for flush
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01f38e4
+
+### Simplify FactoryGetFieldTrial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf959346
+
+### Implement a dummy settings page for Japanese
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8ce1d1
+
+### Revert "Add browser test for primary account reset via \`TurnSyncOnHelper\`"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5106b74
+
+### [json-schema-compiler] Support abs::optional<int>
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a94b2e50
+
+### Add gnu::abi_tag("logically_const") to base::Feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dbbbda3
+
+### Use base::FunctionRef for the various ForEachRenderFrameHost helpers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/982f2b2
+
+### Integrate auto installation of isolated apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38f2534
+
+### [DownloadBubble] Fix fullscreen notification on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2d4be2
+
+### PWA: set max description length on richer install
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ff2671
+
+### Add new error message string for Partial Translate bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b46c21
+
+### Fix -Wshadow instances, chrome/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2b88766
+
+### DPWA: add from the app for richer install
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0089c53
+
+### Fix build with -Wextra-semi (Linux, CrOS, Win, Fuchsia)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b1fa02
+
+### Add browser test for primary account reset via \`TurnSyncOnHelper\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b87bd5
+
+### [chrome] Fix some cpplint errors in chrome part20
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36cce70
+
+### [dpwa] Add the action to switch to an incognito profile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0133395
+
+### Basic CompoundTabContainer implementation.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9adeb29
+
+### [Cast2Class] Make dialog not modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35f023a
+
+### [Code Health] Replace JNI calls with native logic on restoring frozen tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b0e307b
+
+### Fix profile-email switch for early process singleton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/007f689
+
+### [FSA] Permissions Persistence - Update GetPermissionGrants Method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3db634
+
+### Minor fixes to web_app::GetIconTopLeftColor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e18171
+
+### Revert "Unified side panel: update ids to support extensions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/670348c
+
+### [dPWA] Refactor WebAppUninstallCommand
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83045ef
+
+### Unify "request" and "quiet" chip types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ab70ab
+
+### Remove duplicated code in AccountSelectionBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac7693e
+
+### Support verification of multiple fingerprints
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6937cfc
+
+### Unified side panel: update ids to support extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad04bf52
+
+### win: add metric for launch from installer pinned shortcut
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e07164
+
+### [FastCheckout] Add another helper function to FastCheckoutToolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f2388d
+
+### [site data] Display actual cookie setting state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4430543
+
+### [TangibleSync] Add histogram to check CTR of sync data rows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83a1676
+
+### [linux] Added handling of tiled edges in the browser frame.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71e459a
+
+### [FastCheckout] Add FastCheckoutToolbar component.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e3c15a
+
+### Settings: Close PASSWORD_VIEW page after onPasswordManagerAuthTimeout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c771525
+
+### Add multi-container USB settings UI for Crostini
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d0ad74c
+
+### [launcher] add unit test for omnibox provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8958bbf
+
+### [Launcher health] Move ranking_item_util to ranking/ directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b309353
+
+### [files] Filter out screenshots from Continue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/920ca89
+
+### accelerator_controller: Use new way to change volume
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f06b6ea
+
+### [RDSD] Add a feature flag to control domain level exceptions downgrade
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/63e60f7
+
+### Delay saves in CriticalPersistedTabData until deferred startup
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a4fa45e43
+
+### Add feature flag for new audio device selection logic
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a43a7ce
+
+`);
+              </script>
+            </body>
+        </html>
