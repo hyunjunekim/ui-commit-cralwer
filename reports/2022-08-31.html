@@ -1,0 +1,412 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-08-31
+### [Files]: Remove deprecated navigateWithDirectoryTree.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61c226b
+
+### Mark Dangling pointers detected on windows content_browsertests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b15958
+
+### Enable SurfaceControl for models blocked by pre-rotate issue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd441f9
+
+### Revert "GetNodeFromTree() shouldn't drop any BrowserAccessibilityNodes"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ba7d2f
+
+### Fix noop_sleep_tests on Lacros FYI x64 Release (AMD)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b58dba0
+
+### Enable prevent_unsafe_narrowing for ui/base and ui/color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b2191e
+
+### GetNodeFromTree() shouldn't drop any BrowserAccessibilityNodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e41941b
+
+### Explicitly specify the PageTransitionType underlying type.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c610787
+
+### Fix title alignment in BubbleFrameView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca5cda5
+
+### Revert "Enable ozone_unittests on linux-wayland-rel"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a96ad6
+
+### Add Side Panel option for Views Examples
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8dfedb0
+
+### windows: enable ApplyNativeOcclusionToCompositor by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5af3864
+
+### Introduce LinuxUiGetter
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/310ee41
+
+### Remove Gold CQ workarounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abe8dd4
+
+### Remove LinuxUiBase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/477b306a
+
+### Rework LinuxUi ownership and creation
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/074a5d4
+
+### Change calls to std::{all,any,none}_of() to base:: functions: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb90b790
+
+### ui: enable release hidden tiles by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea402997
+
+### [UIA] Fix |units_moved| returned by MoveEndpointByUnitHelper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/906bd9d
+
+### WebUI: Check in JS modules for some js/cr/ui/ files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/642c504
+
+### Reland "Switch SelectFileDialogExtension to ui::ColorProvider"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e07e534
+
+### DLP: Call GetDisallowedTransfers only if dlp enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0122fd
+
+### WebUI: Migrate cr-lottie to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0cbf209
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f59b74f
+
+### ozone: add HyperX Pulsefire Haste 2 to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a94b2e
+
+### Enable ozone_unittests on linux-wayland-rel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97442b7
+
+### Modify the wrong return value for OnMouseDragged in root_view.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f14a7ab
+
+### Linux a11y: Emit focus events with browser UI list item navigation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b67603b
+
+### ozone/wayland: fix leak of drmVersionPtr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7a771da
+
+### [ozone/wayland] WaylandPointerGesturesTest.PinchZoomScale fails on linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8bdfab
+
+### [Files]: Metadata cleanup - followup to crrev/3859045
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1577c39
+
+### [ozone/wayland] Fix WaylandTouchTest.TouchPressAndMotionWithStylus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66735a6
+
+### ozone/wayland: fix leak in TestDataSource.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7d08df
+
+### DanglingPtr: fix dangling ptr in x11_event_watcher_glib
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05b977de
+
+### WebUI: Migrate cr-button to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05cbb64
+
+### [FilesTrash] Don't show Trash root in file picker / saver mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d337aa9
+
+### [FilesTrash] Update TrashBanner to new icon and button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a127fe4
+
+### Replace rsorokin@chromium.org with rsorokin@google.com in OWNERS files
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92a628b9
+
+### Files F2: Clean up some TODO in the BaseStore
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf01c3c72
+
+### WebUI: Allow ts_definitions() targets to depend on ts_library().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25d1a1a
+
+### Files F2: Add entry label to the store
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b58d0b77
+
+### Fix various -Wshadow instances.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d647fc3f
+
+### [string match] enable diacritic stripping in game&app search providers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fcc68b
+
+### WebAppIntegrationTestDriver: Add CHECKs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66de2eb
+
+### Move //chrome/browser/ui/webui/settings/{chromeos=>ash} [3/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6edb40f
+
+### WebAppIntegrationTestDriver: Wait for registration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b08a4c
+
+### Revert "Replace usage of Image I/O with our own code to create .icns files."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/308fda3
+
+### WebAppIntegrationTestDriver: Wait for App Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1596586b
+
+### [Snooping protection] Remove from OOBE.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24f4875
+
+### [omnibox] Starts using SuggestType and SuggestSubtype proto enums
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db9b1147
+
+### Reland "Move //chrome/browser/ui/webui/{chromeos=>ash}/add_supervision"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33f34ec
+
+### NetworkPortalNotificationController: Replace observer to NSHO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96d3d50
+
+### glanceables: Take screenshot of session during shutdown, part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53699509
+
+### Use the non mojom GetMenuModel to get the app menu items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/079a726
+
+### [Phone Hub] Create metrics for the onboarding setup mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0815628
+
+### Update base::Value usage in print_preview_utils.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cc12c0
+
+### Use the non mojom menu struct for menu_util.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b54e87
+
+### saved_desks: update ChromeVox when entering saved desks library
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8d6727
+
+### [omnibox] Unify pedals translation for TC and migrate .json data to .grd
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dcd5aa9
+
+### Revert "[macOS] Make the History menu work in the zero-profile state"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3224078
+
+### Revert "[PriceTracking] Set up the toggle button"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/757fbe0
+
+### Quick Answers: Create tooltip text for dogfood feedback button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f78588c
+
+### Projector: Replace global promise resolver with a map of promises
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90b78b1
+
+### Dynamic Colors fixed for incognito mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95054c4
+
+### Renaming right_aligned_side_panel to unified_side_panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c57e558
+
+### Unified side panel: fix content clipping issues.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/094f624
+
+### [Extensions refactor] Use DialogModel in ExtensionsInstallBLockedDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19b321b
+
+### Revert "AboutThisSite: Add browser test for SidePanel"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f27b456
+
+### Fix latest -Wextra-semi regressions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0693dcdf
+
+### [linux] fixup! Removed the non-necessary unary minus.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9522e0
+
+### Avoid modifying shared modern_toolbar_text_box_background.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cd4bc1
+
+### [PriceTracking] Set up the toggle button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c12877b
+
+### [Partial Translate] Add configurable selection character limit and RTL handling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd577ddd
+
+### [Partial Translate] Remove default focus on waiting view and clean up margins
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5d29fb
+
+### Replace usage of Image I/O with our own code to create .icns files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f2c627
+
+### [FastCheckout] Speculative fix for bot failures.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fc808f
+
+### AboutThisSite: Add browser test for SidePanel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/777ce23
+
+### Add toggle for biometric authentication before filling on desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/530286d
+
+### [APC desktop] Disable input events from webcontents when scrim is on.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/200a963
+
+### Separate HandleSelectAccountLacros in 2 functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1534a3a
+
+### Set managementReportDlpEvents value for Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32576c8
+
+### [FastCheckout] Extend model for credit card screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/474fab5
+
+### AboutThisSite: Improve cleanup on navigation logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e31336
+
+### [macOS] Make the History menu work in the zero-profile state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/172989e
+
+### [DownloadBubble] Fix Quick Actions Layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b258e6
+
+### [FastCheckout] Connect UI to open settings on click.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8fd9af
+
+### [OOBE][KioskAutolaunch]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3a68d76
+
+### [FedCM] Refactor AccountSelectionBubbleView part 2/2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7b2bec
+
+### [FastCheckout] Implement autofill profile item list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79a125b
+
+### [Sync] Suppress NTP promo after X impressions behind a feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3c4c785
+
+### [OOBE][HWDataCollection]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f15c736
+
+### [FastCheckout] Add basics for Autofill profile selection screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/060ab1e
+
+### [OOBE][SyncConsent]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd33b8ed
+
+### Check if pref is managed for all device trust attestation flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c61870
+
+### [Chrome Apps Deprecation] Add fieldtrial testing config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c28e180b
+
+### [CrOS Cellular] Remove forbid attach apn flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b531ff2
+
+### Fix issue with Remove Chevron flag parameter.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3d2d61e
+
+### Add about:flags entry for "welcome screen" feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/49358cc
+
+### Add flag for enabling region search on PDF viewer.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8bc35ca
+
+`);
+              </script>
+            </body>
+        </html>
