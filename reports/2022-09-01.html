@@ -1,0 +1,324 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-01
+### No-op: pass handled state in ime ash ProcessKeyEventPostIME
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/beb06cb
+
+### Change handled param of KeyEventDoneCallback to use enum
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64f21584
+
+### [FilesTrash] Schedule >30 day files for deletion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ee53e7e
+
+### [ViewsAX] Renamed AXTreeManager's GetRootAsAXNode to GetRoot
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/92a6a5ce
+
+### [CrOS Cellular] Remove Attach APN flag.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/594e6437
+
+### Window Placement: Fix Windows target-display fullscreen defects
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01307f5
+
+### WebUI: Move focus_manager to last user (arc_support)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d0e7bf
+
+### WebUI: Check in JS modules cr/ui/ files to ui/file_manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08c69a0
+
+### [ozone/wayland] Skip wl_data.device.actions when dnd is cancelled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36535f7
+
+### [color pipeline] Move the GM3 temp palette from //ash to //ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/563db11b
+
+### Revert "Reland "GetNodeFromTree() shouldn't drop any BrowserAccessibilityNodes""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7aed4b5
+
+### ozone/drm: Tiny refactor of destruction logic into its own class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/946e132
+
+### wayland: move wl::EventDispatchPolicy to wayland_util.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6dde8d2
+
+### WebUI: Fix CrScrollableBehavior bug causing a missing bottom border.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2874e20
+
+### migration: Migrate ArcColorProvider to ui::ColorProvider - Part 1
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47b02ac8
+
+### Add  myself as owner of _win.* files in ui/views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/044738c
+
+### Reland "GetNodeFromTree() shouldn't drop any BrowserAccessibilityNodes"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab1b9eb
+
+### windows: enable ApplyNativeOccludedRegionToWindowTracker by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19e3a21
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27f6ad1e
+
+### Do not clear events for a node that's going to be reparented.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/983a44e
+
+### [linux/wayland] Fixed the cursor factory tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3cc8d4d
+
+### [Office upload] Prevent Drive notifications
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa64840
+
+### DanglingPtr: fix dangling ptr in non_client_view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79dd248
+
+### [No-op] Run clang format on some input_method files modified in next cl.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a62c4e
+
+### [FilesSWACleanup] Run browser/unit tests in SWA mode only
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05cc52df
+
+### WebUI: Post Polymer2 removal cleanups.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e6d79b
+
+### file_manager: Fix the icon for android files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c17b9d4
+
+### [launcher] Mock AutoCompleteController in unittest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/580d669
+
+### fusebox: let monikers be read-only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c35d32e2
+
+### Anchor permission prompt for PiP 2.0 window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c849910
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/arc_*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c07d5c26
+
+### Desktop PWAs for ChromeOS: test updating of shelf buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a63797
+
+### Don’t notify state change if app isn’t ready
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/455cfb3
+
+### Use dark mode aware default favicon in bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdd9470
+
+### Revert "Clean up \`enable_same_site\` and \`skip_same_site_if_unload_exists\`"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9646f4bb
+
+### [Shopping Service] Implement mojo interface for WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b273061
+
+### glanceables: Postpone initialization if there is no refresh token
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8f8a59
+
+### Remove expired logging in the Tab Strip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63e42a0
+
+### Enable deletion for passkey management on mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5619ced
+
+### [PhoneHub]Update strings of screen lock setup dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/964b743f
+
+### [Lacros] Support chrome://bluetooth-internals page on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a5242d
+
+### Clean up \`enable_same_site\` and \`skip_same_site_if_unload_exists\`
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/43acbdc6
+
+### Window Placement: Enable SameDisplayAndSwap
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c47b991
+
+### Add mark as read state to reading list button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96c1222
+
+### [PriceTracking] Add bell icon for track/untrack prices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ee01efd
+
+### Skip Creating Bookmarks Model Sometimes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/386f61b5
+
+### [FastCheckout] Implement FC mechanisms on chrome_autofill_client.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23f0beff
+
+### Reland "[macOS] Make the History menu work in the zero-profile state"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78ada7c
+
+### [DownloadBubble] Change download notifications in exclusive_access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/950e0a3
+
+### Cleaning up saved desk GUID handling, part 4.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89a7e03c
+
+### [Test Automation] Add logging to track down flake
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b53a9534
+
+### FPS Controls: Adjust semantics of Privacy Sandbox Service functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/456a79d
+
+### UrlBar uses global draw to reset focusable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5227516
+
+### webauthn: Drop PublicKeyCredentialEntity.icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f62b8f3
+
+### [FastCheckout] Implement FC delegate preconditions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdb73ce
+
+### [FastCheckout] Fix: Force hiding the sheet on destroy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0f9744
+
+### [Profiles] Create local profile as ephemeral in profile customization dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f46fb3
+
+### [Profiles] Add placeholder for profile name in local profile creation dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0ae057
+
+### Remove kEnableSamlReauthenticationOnLockscreen feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a64f26e
+
+### [Sync] At most one Android NTP promo impression counted every 30 minutes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9203f9e
+
+### [sync] Move remaining test code to components/sync/test/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e500900
+
+### Fix order in desktop_media_picker_views_unittest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f41826
+
+### [FastCheckout] Use TestActivity instead of ChromeTabbedActivity.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/751f91b
+
+### [APC desktop] Updates the scrim back to its proper state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a747237
+
+### WebAppIntegrationTestDriver: Wait for uninstall
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4119581
+
+### [Profiles] Add local profile creation with customization dialog to Profile Picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a4f4b4
+
+### [FastCheckout] Add style and text fields to autofill profile views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db062c9
+
+### WebAppIntegrationTestDriver: Wait for app update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eae4710
+
+### IntentChipButtonBrowserTest: Wait for registration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/487566a
+
+### [Signin][FRE] Update dismiss button visibility logic for child accounts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e48f66d
+
+### [OOBE]: Add error for bundled device can not be enrolled with Kiosk.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dbb11d
+
+### [FSA API] Create a feature flag that enables all-sync surface for FileSystemAccessSyncAccessHandle.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8df1184
+
+### [Crow] Experimental flag+feature to launch in regular tab.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f97f1fd
+
+### vm_concierge: add a flag to enable per-boot persistent shader cache
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fb53d9c
+
+### Add flag for instructional chip improvements.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b35dd045
+
+### Adding flag for DiscoFeed endpoint.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4adf604f
+
+### Remove expired container queries flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aca98c0
+
+`);
+              </script>
+            </body>
+        </html>
