@@ -1,0 +1,240 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-03
+### Add long click shortcut to chromevox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1804a0e
+
+### WebUI: Check-in modularized code for ChromeOS network components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/48224df
+
+### WebUI: Add focus_row.ts, focus_row_mixin.ts to replace FocusRowBehavior
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbe8b5f0
+
+### Do not report headings as collection items in accessibility Android
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea581ffe
+
+### [A11y Settings Revamp] Add AccessibilitySelectToSpeakPageMigration flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c796db1
+
+### Window Placement: Update spec links and comments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28c67303
+
+### Introduce aura::Window::SetLayoutManager(std::unique_ptr<LayoutManager>)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50b0612
+
+### [A11y Settings Revamp] Add AccessibilitySelectToSpeakPrefsMigration flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e41033b
+
+### Adding rjkroege to gfx/overlay* OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f31720
+
+### Add QT feature flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d6ecb87
+
+### Skip GrabWindowSnapshotTest.TestGrabWindowSnapshot on 10.13
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae259c3
+
+### Add SystemTheme preference
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb34084
+
+### WebUI: Check-in modularized code for ChromeOS multidevice components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0fba766
+
+### views: Add widget z-order sublevel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42fbc04
+
+### Split \`GenerationToRendererCompositor\` breakdown to
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e38c033
+
+### Remove explicit calls to View::Layout() in tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/763da1ed
+
+### Remove unused method \`SetDesktopWindowTreeHost\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5563d91
+
+### DanglingPtr: triage dangling ptr in ui::Event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e27a90
+
+### Remove explicit calls to Layout().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bb5f03
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df84135c
+
+### DanglingPtr: fix dangling ptr in gtk_util
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83fb7a8
+
+### system-extensions: Migrate accelerator tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2951cfc3
+
+### Add Office file resync stub hook for IOTasks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a824f7
+
+### Workaround DCHECK in SavedTabGroupModelListener
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24aa3fb
+
+### Apply clang-tidy modernize-use-nullptr on //chrome VIII
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bc7b24
+
+### [Extensions c2s] Add fade to hover card's footnote labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90640eea
+
+### [Tote Exp] Create the keyed service to expose suggest cache data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa0fb79
+
+### [headless] Provide alternate enterprise startup dialog for headless.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43d4549
+
+### [Extensions c2s] Add hover card content based on extensions information
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fccfe6
+
+### Apply clang-tidy modernize-use-nullptr on //chrome VII
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff101b13
+
+### [FedCM] Add multi IDP desktop UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6b9c1b
+
+### Add schwering@ to owners of chrome/browser/ui/autofill/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/410cdbbc
+
+### Rename LogoLoadHelper to LogoCoordinator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b526f01
+
+### Fix black border around region search chip in Dark Mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22bd391
+
+### [FedCM] Change the information passed to OnAccountSelected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f8505e
+
+### Skip Creating Bookmarks Model Sometimes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d206fc2
+
+### [Extensions] Re-enable ExtensionsTabbedMenuViewUnitTest unit test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b24a0d
+
+### [NTP] Use Color Pipeline/Mixers for realbox colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0958fbf
+
+### [FedCM] Consolidate data used in desktop UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd7abe9
+
+### [Extensions] Re-enable ExtensionsToolbarControls unit test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44cd84a
+
+### [Start] Skip calling recreate in andrdoid_browsertests when Start is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/115d570
+
+### [dPWA] Make borderless mode only available for isolated web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a32b04d
+
+### Reorder media-picker as tabs-windows-screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50faa6e
+
+### [PolicyAuditor] Decouple PolicyAuditor from java WebContentsObservers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/530c14a0
+
+### [Autofill] Clean up AutofillIgnoreEarlyClicksOnPopup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcf24d6
+
+### [FastCheckout] Add credit card selection screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74bc187
+
+### Implementation of Battery Saver Toolbar and Bubble Dialog Views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2921bb
+
+### [Password Manager] Favicon for Password Manager page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77ce3bb
+
+### Mac: add readme for c/b/ui/cocoa/status_icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2640536
+
+### [FastCheckout] Add detail screen item decoration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d017ecb
+
+### Fix typo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cf1553
+
+### [PageInfo] Add enforced blocking 3pc state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48f1891
+
+### [FastCheckout] Allow Autofill profiles and credit cards to be updated.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76a1511f
+
+### [FastCheckout] Add footer item to detail screens.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e2314b5
+
+### [FastCheckout] Disable FC support on CCTs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ed174a
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/audio
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59de2a6
+
+`);
+              </script>
+            </body>
+        </html>
