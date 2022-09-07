@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-07
+### Revert "mac: Don't checkfail in firstRectForCharacterRange for NSRange cast"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d32860b
+
+### ui/gl/features.gni: enable swiftshader for riscv64
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4eb97e
+
+### Removes some of AutomationAXTreeWrapper's dependencies on extensions/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c20c276e
+
+### Add QuickView test for Playfiles GuestOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/427a6545
+
+### wayland: Route the "Video" overlay priority hint through to wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9046e33
+
+### holdingspace: Updating holdingspace File menu Pin to shelf text.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/866592b
+
+### Mac: Execute menu commands if canceled during close animation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ede006e
+
+### Task Manager updates selected row
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80f7393
+
+### WebUI: Migrate cr_elements/policy to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bdb11ac
+
+### Fix DialogClientView::SetupLayout - s/kStretch/kEnd
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc91716
+
+### [Fuchsia] Handle dynamic resolution changes in FuchsiaVideoDecoder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68d6b6ac
+
+### Add QT option to chrome://settings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79dc8b2
+
+### Make PaintOpBuffer::Iterator::operator* return by reference.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b84683f5
+
+### ozone/drm: Add histogram to track page flip results
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/670fd18
+
+### Mark dangling pointers occurring on linux-wayland-rel CQ
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7f4d9e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b21b971
+
+### autocorrect: disable autocorrect on TextField
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8839ca6
+
+### [FilesTrash] Keep reading trash contents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7239d14
+
+### [side search] Update the icon label to leverage feature engagement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d1db23
+
+### [DownloadBubble] Add download toolbar button for touch mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9c3367
+
+### ChromeShelfController: Check BrowserAppInstanceRegistry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/629b791
+
+### WebAppIntegrationTestDriver: Add ASSERT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3369b82
+
+### Web App Integration tests: Use a scope outside any installed app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/466a369
+
+### Move standalone web app test data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f29fd2
+
+### [CodeHealth] base::Value modernisation for URLPatternSet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ad2b1a
+
+### Remove kLauncherSettingsSearch finch flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23cc412
+
+### Do IWYU for mojo/public/cpp/bindings/receiver.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37bd27b
+
+### Intents: Fix tests to work when link capturing features are enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a72ba26
+
+### dwpas: Refactor CreateNameLabel and CreateOriginLabel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a1d30b
+
+### Modify CapabilityAccessUpdate for the non mojom struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7fb423
+
+### Update tab group underline bounds on tab visibility change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79994fda
+
+### Change std::find_if*() to use base:: functions: chrome/browser/ui/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e1c268
+
+### Reland "Replace usage of Image I/O with our own code to create .icns files."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9829ef01
+
+### BrowserNavigatorTest: Remove unused includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ebf04d
+
+### Add a metric to measure pinned tabs per load.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3c5576d
+
+### Side Search: potential fix for flaky tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1758ef0
+
+### Refactor web_applications to use PrefService::GetValueDict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f747a83
+
+### Install InkDrop on DownloadBubbleRowView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/415d8d3
+
+### [linux] Added another test for the tiled edges.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6a4725
+
+### Welcome WebUI: Add button for users to pause animations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73db109
+
+### intent_picker browsertest owners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0475f1d
+
+### immersive mode mac: migrate to remote cocoa
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecaaf4c
+
+### Updater: Fix sequence checker in browser-side updater code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72a60d9e
+
+### Auto-select PipeWire target once selection is made
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9c0cc7
+
+### [Privacy Hub] Switching to the dogfood flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ef96cb
+
+### Remove all !OFFICIAL_BUILD guards for the Demo Mode SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d80565e
+
+### [FastCheckout] Add integration test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40b26f3dc
+
+### [FastCheckout] Do not show FC if Autofill assistant is running.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1795bc5e
+
+### Add graphics status privacy string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de5ef5d
+
+### [FastCheckout] Add a11y info for the expand icons on the home screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a385b8e
+
+### [Note] Fix heap-use_after_free in UserNoteUiCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8666472
+
+### [FastCheckout] Add a11y string for selection detail sheet items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/676bb87
+
+### Fix missing includes in preparation for rolling libc++
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2810ca
+
+### [ReArchPPV] Remove ProfilePickerView::SetExtendedAccountInfoTimeoutForTesting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f949b5
+
+### Clean up ash-enable-pip-rounded-corners
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/184bf31
+
+### [FastCheckout] Add home screen view tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb30aba
+
+### [QuickStart] Add a basic browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71dabb2
+
+### Disable flaky SaveAndRecallBrowserTest.SystemUIBlockingDialogAccepted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5ae310f
+
+### [Office upload] Open Files app on destination file on move complete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0c41d1
+
+### LaunchWebAppBrowserTest: Uninstall web app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebeec7c8
+
+### [FedCM] Add multiIDP flag in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4f77c4b
+
+### [Default Offline]: Merge feature flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fb625e1
+
+### Moves fake-audio-capture-timestamps to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c79c7a4
+
+### [APC Desktop] Introduce feature variation to include weak credentials.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7107284
+
+### [FastCheckout] Introduce ForceEnableFastCheckoutCapabilities flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/81af880
+
+`);
+              </script>
+            </body>
+        </html>
