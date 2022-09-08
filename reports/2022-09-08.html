@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-08
+### Reland "Make compound backing work with GLTextureImageBacking"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed95a95
+
+### Detect LXQt desktop
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cee33d4
+
+### WebUI: Fork cr/ui library elements into remaining users
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0b85b8
+
+### WebUI: Add TS versions of keyboard_shortcut_list, focus_without_ink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5184a8b
+
+### [FilesSWACleanup] Remove all kFileSWA flag references
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39cb39da
+
+### cros:Speculative fix for crash during popup close
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa8f4c3
+
+### Files: Grant temporary ownership to WebUI team
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a22dc8
+
+### InputMethodAsh: add a callback to SetAutocorrectRange
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e38181d
+
+### Run tast presubmit under Python 3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/619ae37
+
+### views: respect max width when calculating the preferred size for multiline LabelButton
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0513ce1
+
+### cros:Crash-fix: Update how we react to ActionButtonPressed side effect
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b68e25d2
+
+### Move RunScheduledLayout to new views_test_utils.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1ec32f3
+
+### Allow IsLeaf() to be called on a node without an AXPosition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18b12d24
+
+### Introduce AXNodeData::ByteSize
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb408db
+
+### Remove base::OptionalOrNullptr and its last few references.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f446f9
+
+### Align DelegatedInkPointRendererSkia with DelegatedInkPointRendererGPU
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b04215
+
+### Add leandre@ to be owner of //ui/message_center
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dea0157
+
+### [linux/wayland] Redirected the TODOs to another bug.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2376e0
+
+### ozone/wayland: Add support for wp_content_type_v1
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8413ec3f
+
+### Separate stroke-length code into static functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c95579a6
+
+### Reland "mac: Don't checkfail in firstRectForCharacterRange for NSRange cast"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e550496
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d9d9e1
+
+### [Build] Fix closure compiler gn source path references
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ed0d51
+
+### [linux] Removed the internal type for the tiled edge.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c324cae
+
+### [Files app] Evaluate banners on Files app launch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54c543cb
+
+### gfx: Add API for encoding animated WebP images
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/552a5d8
+
+### WebUI: Add CrScrollableMixin to replace CrScrollableBehavior.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5687bc6
+
+### Add an IPC connection from ScreenAI service to AXScreenAIAnnotator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eff25eb
+
+### Remove EnableFuzzyAppSearch finch flag and fix app search provider unit tests to pass with fuzzy search enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30d8bed
+
+### Reland "Clean up \`enable_same_site\` and \`skip_same_site_if_unload_exists\` feature and the corresponding logic since we may not need to control them any more."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f208fa2
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/cellular_setup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d323327
+
+### Revert "WebAppNavigationBrowserTest: Uninstall apps during tear down"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba764d8
+
+### WebAppNavigationBrowserTest: Uninstall apps during tear down
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/daf896f
+
+### Change std::find_if*() to use base:: functions: chrome/browser/ui/views/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea0de54
+
+### [Tote Exp] Parse the item cache results in the service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a54c6757
+
+### Reland "Fix Offer Notification Bubble Crash When Offer Data Is Cleared"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ce16a2
+
+### Consolidate download CSBRR code into one centralized place.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4274b60
+
+### Rename {web,}app_registration_waiter to clarify and separate usages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c65bb24
+
+### Reland "Migrate chromeos/ash/components/local_search_service/ to namespace ash"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/234c7df
+
+### Disable lens and image search context menu items on progressive web apps and safeguard against null toolbar in side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b6decf
+
+### webauthn: add UI step for platform passkey creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d322921
+
+### Update the carousel tile's background color for the Omnibox revamp.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2733ed2
+
+### ash: Fix crash in call to apps::AppServiceProxyFactory::GetForProfile()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a45e176
+
+### [ntp][hpp] Initialize promo status so all promos have a status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02f25706
+
+### Merchant opt out error dialog parsing in unmask card response
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa722df
+
+### Add ability to review CLs for tab_group.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec4b1d6
+
+### [Extensions c2s] Toolbar action hover card doesn't highlight anchor view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5757e90
+
+### Use UninstallResultCode in OnWebAppUninstallDialogClosed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30f3ec5
+
+### Refactor credit card save metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16b6e54
+
+### [FedCM] Pass the IDP's configURL to OnAccountSelected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c60ed40
+
+### Remove direct Layout() calls from /payments unittest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebc5e17
+
+### Side Search: remove disabled tests for Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61c87ed
+
+### Remove explicit calls to Layout & LayoutRootViewIfNecessary.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a81805
+
+### Add autofill error dialog context struct and integrate it with the
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ca723e
+
+### [sheriff] Disable Local_SynchronousCloseAfterAsynchronousClose on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02b35cc
+
+### Web App integration tests: move test data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/463122e
+
+### Made timestamp configurable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c6eccd
+
+### Add helper function for finding the Browser instance for a given ElementContext
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08c80546
+
+### [Lacros] Remove hosted code for BT-internals page from Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5601a63
+
+### [headless] Added HeadlessEnterpriseStartupDialog unit test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01b21c09
+
+### Disable TaskManagerMacTest.NavigateSelection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7aaa15a
+
+### Add empty performance page to settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f58524
+
+### desks_api: Implement save and recall functionality in desk api.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2c861fc
+
+### login: Replace NetworkPortalDetector::Observer with NSHO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78a940d
+
+### [sheriff] Disable BrowserTest.AppIdSwitch on MacOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc80554a
+
+### Split //chrome/browser/google out of //chrome/browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5e437a
+
+### [Profiles] Add delete profile button in local profile creation dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ad7b6b9
+
+### Introduce Value::TakeList
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66545a24
+
+### Refactor to remove content/ from PageContentAnnotations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b92c2d2
+
+### [dPWA] Have callback wait for WebApp shortcuts menu registration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef97f51
+
+### Refactor gfx::ImageSkia to ui::ImageModel in chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae15e4e
+
+### [ReArchPPV] Centralise toolbar management in ProfilePickerView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6101482
+
+### CrOS: Simplify NetworkStateInformer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17dc8fe
+
+### Revert "Install InkDrop on DownloadBubbleRowView"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6e01e8
+
+### [Office upload] Convert logs to error notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce914a7bb
+
+### Modify unit tests to use the non mojom CapabilityAccess.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ab5de8
+
+### Update Omnibox result for rich text to include context that it is a search result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66a7dac
+
+### [FilesSWACleanup] Remove files-swa flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/56a7ea2
+
+`);
+              </script>
+            </body>
+        </html>
