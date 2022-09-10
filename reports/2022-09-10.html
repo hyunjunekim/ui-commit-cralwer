@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-10
+### Standalone WebUI Examples Application Content Embedder Skeleton
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d63dfe
+
+### dpwas: Support History Swiper on PWA Mac
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a8580ef
+
+### Removed TOGGLE_APP_LIST_FULLSCREEN in accelerators
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a534ab
+
+### [ViewsAX] Moving RetargetForEvents to base class AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3796281
+
+### Ash: Improve FocusFollowCursor and app list interactions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a44dd9
+
+### PrivacyIndicators: Group all privacy indicators notification together
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f00e793
+
+### Break ui/accessibility/ax_base -> ui/basedependency for lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2cffb8a
+
+### [clipboard] Set the URL as plain text as well when copying
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83827cf
+
+### [User Education] Display informational icons in WebUI IPH
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9988cb7c
+
+### Convert base::apply to std::apply.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d51bed7
+
+### Introduce AXPosition::CreateTreePositionAt[Start|End]OfAnchor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20f8ae8
+
+### views: make the sublevel manager properly handle widget re-parenting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a55f95f
+
+### WebUI: Remove os_cr_components.gni, Rename web components build target
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a583b75c
+
+### [Jank] [a11y] Optimize browser UI thread time handling AX events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6928655e
+
+### macOS a11y: Implement accessibilityHitTest for remote app shims (PWAs)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f080d6de
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e97a2c9
+
+### [apple] Fix thread-safety issue in GetDisplayNameForLocale()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/554fe52
+
+### [CodeHealth] base::Value modernisation for FeedbackPrivateDelegate
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e6f904
+
+### Safety check: Refactor content_settings to pass bundled metadata
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0643ed4
+
+### guest_os: Can share GUEST_OS volumes over 9p
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9db12c
+
+### DLP: Browser test for DlpFilesController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a59fae
+
+### [ozone/wayland] Factor out WaylandEventSource::OnPointerButtonEvent's closure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3d4cc7
+
+### WebUI: Update references to old cr_elements URLs in cr_components/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7b9540
+
+### WebUI: Update references to old cr_elements URLs in ui/file_manager/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fd3e23
+
+### Files F2: Nits in the ActionsProducer tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9d907c
+
+### projector: Suppress system notification for local playback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b333dde
+
+### [omnibox] [post-ac] Debounce \`AutocompleteController::NotifyChanged()\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e45176
+
+### Avoid caching WebContents* in the media-picker flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdf9860f
+
+### ui: prototype side panel webview
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fe05ca1
+
+### Respond to DelegatedSourceList cancellation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26f00aa9
+
+### Implement QS Catalog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de9a878f
+
+### Reland "Reland "Migrate product icons to '/components/vector_icons'.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f296cb5
+
+### IWYU fixes for //base/types/optional_util.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abb00686
+
+### [IBAN Filling] Register IBANManager to single_field_form_fill_rounter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cfcf20
+
+### Ensure cert verifiers created by CertVerifierServiceFactory use the same implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a7a676
+
+### Update copyright headers in chrome
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4a8573c
+
+### Revert "Fix compile for Chrome-branded builds"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66f8fdc
+
+### Add feature flag for right-click menu item "Search Google for [word]"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/74b3379d
+
+### Remove dead plugin update code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/167984f3
+
+### Handle tab closing mode for tabs within a group.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/816f6103
+
+### Revert "Unified Side Panel: Add image search key/value to json struct."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb9de03
+
+### Unified side panel: support updating the icon for a SidePanelEntry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c85aea0
+
+### Clean up unused methods in MediaRouterUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2255083
+
+### [Tote Exp] Filter drive file suggestions in the service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2afd15b
+
+### Fix unable to exit chrome on empty tab switcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bd64f3
+
+### [Test Automation] Change timing of drag cancel to decrease flakiness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6d81ed
+
+### Fix compile for Chrome-branded builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afc8e2d
+
+### Unified Side Panel: Add image search key/value to json struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dec15ed
+
+### Remove setUpOnlineDemoModeForTesting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14a18d8
+
+### NetworkPortalNotificationController: PortalSuspected notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0e74bb
+
+### Disable 'Open in Chrome' menu item for the pinned home tab of web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bca7e40
+
+### Delete Apps.StateTransition.Drag.PresentationTime
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5efe93e
+
+### Fix DCHECK when restoring from bfcache several times in a row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a45a2df
+
+### [A11y Settings Revamp] Nav to new section from ARC, Settings and Omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9cf8b50
+
+### [Sheriff] Disable slow tests under MSAN.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddd063c
+
+### [signin] TurnSyncOnHelper waits until policies are merged into prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53159b8
+
+### [Passwords] Free importer memory at end of flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3b3c2e
+
+### [APC desktop] Assistant stopped bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/956ed6d
+
+### Fix some lints and spelling errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b39f4eb
+
+### [PageInfo] Add test for texts on buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b556eb1
+
+### Reland "[ntp] Hide promos on existing, already-opened NTPs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d6a205
+
+### [CodeHealth] Removes DictionaryValue::Iterator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af27b4f
+
+### [Passwords] Add link for importing passwords on empty state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cf9b9db
+
+### MockOwnerKeyUtil: Rename SetPrivateKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3097629
+
+### Remove ContentSettingsType::INSTALLED_WEB_APP_METADATA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a450d1
+
+### Reland "[Password Manager] Title and description for Passwords page"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c27cbc4
+
+### [Password Manager] Adding dummy controls for prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5a54a1
+
+### [Office upload] Set timeout for uploaded file's alternate URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65aefb2
+
+### Update WebAppIntegrationTestDriver to use pre-existing constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97fa270
+
+### Make AXScreenAIAnnotator singleton per profile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb9f61f5
+
+### Add Private Aggregation to Privacy Sandbox Ad APIs flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/64f3bef
+
+### Remove chrome://flags entry for kUseFirstPartySet switch.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8651135
+
+`);
+              </script>
+            </body>
+        </html>
