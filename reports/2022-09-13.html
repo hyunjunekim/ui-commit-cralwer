@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-13
+### win: fix potential reentrancy issue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c365c84
+
+### WebUI: Update most remaining references to old cr_elements URLs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4e96f8
+
+### Remove GPU video size and offset histograms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a594ce8
+
+### Revert "Set FakeKeyboardHeuristic Flag to Default Enabled"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b73f65
+
+### media: Let out-of-process decoders be backed by VdaVideoDecoders.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af4b8fb
+
+### Revert "windows: enable ApplyNativeOcclusionToCompositor by default"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e827999
+
+### gpu: Rename DXGISharedHandleState/Manager to DXGIKeyedMutexState/Manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b16364e
+
+### [Fluent Scrollbars] Implement initial code changes in ui/ for Fluent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80ae54e
+
+### Enforce valid role prior to calling AXNodeData::SetName
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/008ea7c
+
+### [Cleanup] Remove comment in l10n_util
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7333e7
+
+### Revert "windows: enable ApplyNativeOccludedRegionToWindowTracker by default"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/951e66036
+
+### Android: Rename annotations from base to build
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81c3fcc
+
+### Revert "[ViewsAX] Moving RetargetForEvents to base class AXTreeManager"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3156a20
+
+### Adds simple a11y color filtering options behind a flag.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6e1f062
+
+### Use AnnounceText rather than OverrideName in Ash announcement views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e9d2f1
+
+### [cc] Disable frame throttling when frame rate is unlimited.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/204c455
+
+### GCC: Fix return value initialization for Double4
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bc5ccb
+
+### [lacros] Rework pointer/stylus implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4faf8a8
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9d19db
+
+### [lacros] Fix asan for WaylandDataDragControllerTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20cf80c
+
+### DLP: add fileManagerPrivate API to get blocked components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d72dd2
+
+### WebUI: Check in JS modules for ui/webui/resources/js/cr/*
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/905c6a6
+
+### Files F2: Change html_to_wrapper() to use native instead of Polymer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49e0dcc
+
+### Migrate to Mojo JS modules in the ParentAccess WebUI app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2306cc
+
+### arc: Add Fixup ghost window feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/61924b6
+
+### migrate: Migrate static functions in AshColorProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71aa5ff
+
+### Abort if a tab drag ends while transferring events to new browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c0b821
+
+### [PriceTracking] Add price notifications toggle to settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be185da
+
+### Add favicon theming to BackForwardMenuModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b98085
+
+### Fixed OptionalButtonView not updating its drawable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f94b3c4
+
+### Updating the placement of Battery Saver toolbar icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa18d61
+
+### [dPWA Testing] Implemented AwaitManifestUpdate and generated tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4de30b4
+
+### [Remote Playback] Add RemotePlayback to the enum class MediaCastMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cb7605
+
+### Fix UAF in CrostiniInstallerDialog and CrostiniUpgraderDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9a07cf
+
+### [bookmarks] Add metrics for URL/Title edit actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa1f430a
+
+### [Profile picker] Modify behavior of accelerators during profile creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/457b83c1
+
+### migration: migrate AshColorProvider in AppListColorProvider - Part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0af7f275
+
+### [Autofill] Fix (maybe) SaveCardBubbleViewTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4dd23b
+
+### Add a separate base::Feature for immersive fullscreen mode in PWAs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c30324d
+
+### Reland "Install InkDrop on DownloadBubbleRowView"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3e14e2
+
+### Refactor the naming related to the generated password
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce3d4ea
+
+### Fix widget layering feature guard in omnibox popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83958c47
+
+### Replace PrefService::GetValueDict and PrefService::GetValueList
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6edc4b7
+
+### Reland "[QuickStart] Add GetFeatureSupportStatusAsync"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df30e2d
+
+### Remove lienh@chromium.org from chrome/browser/ui/webui/chromeos/parent_access/OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1dcf3a0
+
+### [ReArchPPV] Remove custom theming from ProfilePickerWidget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58ca7112
+
+### Provide HTTPS record information as well as IP addresses on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf4081df
+
+### [APC desktop] Update StartingScreen icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aa96c9
+
+### Revert "[QuickStart] Add GetFeatureSupportStatusAsync"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/489e523
+
+### [OOBE][ErrorScreen]: Extract local state error from ErrorScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/851ca6c
+
+### [QuickStart] Add GetFeatureSupportStatusAsync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24a7ff4
+
+### [SafetyCheck] Create NotificationPermissionReviewService.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3424a80
+
+### Let TabStripRegionView forward drag events to TabDragController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37dba4e
+
+### Fix: Reset timers on model reset
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df8b29a
+
+### [Mfill] Show dialog on password chip tap if non-password input selected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/375347b
+
+### Import custom element HTML templates at runtime in chrome://chrome-signin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/375edf7
+
+### Read logo from disk instead of fetching for splash screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca90332
+
+### [Sheriff] Disable flaky FastPairSavedDevicesHandlerTest case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5044324
+
+### Fix getDisplayMedia user-interaction UMA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26def15b
+
+### Shows confirmation dialog before deleting in download interstitials.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edb8a74
+
+### Revert "[Tote Exp] Allow data consumers to observe drive cache update"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f87235
+
+### [Office upload] Add Drive and OneDrive variants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6154bf2
+
+### [string match] Enable accent-insensitivity in FileSearchProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/867fffb
+
+### Remove ash::features::kEnableIkev2Vpn flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/423bd38
+
+### [RDSG] Implement downgrade path for desktop site global setting default-on
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ed9865f
+
+`);
+              </script>
+            </body>
+        </html>
