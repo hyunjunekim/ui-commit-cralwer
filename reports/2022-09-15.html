@@ -1,0 +1,392 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-15
+### Revert "gpu: Rename DXGISharedHandleState/Manager to DXGIKeyedMutexState/Manager"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3b42a7
+
+### Remove unused includes of base/task/task_runner_util.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25a1353
+
+### WebUI: Remove some dead html files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1dd30f
+
+### ime: Rename IMEInputContextHandlerInterface and IMEEngineHandlerInterface
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb93c4f
+
+### Instrument View::~View to ascertain recreation of AXViewObjWrapper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82eb0c8
+
+### wayland: switch to use_system_libwayland_client gn arg
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1468c6
+
+### wayland: properly handle empty display list in GetPrimaryDisplay()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91bc00e
+
+### Revert "Build Dawn's tests on Android."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be31e82
+
+### WebUI: Check in module post_message_api/ to ash/webui/common
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf8972c
+
+### [ViewsAX] Moving FireFocusEvent to base class AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/213c0c80
+
+### Remove LinuxUi::AsLinuxUiTheme
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/975c84e1
+
+### Build Dawn's tests on Android.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ed5a0a
+
+### WebUI: Move cr and i18n_template_no_process to last user, fork util
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d00273
+
+### Add shared memory overlays to compound backing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57e345b
+
+### [journeys] Make inSidePanel private
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7e2373
+
+### Remove gfx::Transform::matrix(), Step 1 (ui/)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5a3119c
+
+### Automation refactor: Add back changes after rebase.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9dea14ed
+
+### [linux/ozone] Removed the unnecessary dependency.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d5efb7
+
+### ozone: evdev: Fix Fake Keyboard Heuristic override
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc00d08
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49198f91
+
+### Revert "[User Education] Split timeout tests to avoid flakiness"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e10439f
+
+### [fuchsia] Add double click processing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/839e7db
+
+### WebUI: Move multidevice_setup/ to ash/webui/common/resources/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e7ad11
+
+### libstdc++: fix incomplete type of ui::NavButtonProvider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ab4ebf
+
+### GCC: pass -fno-complete-member-pointers to clang builds only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f55d901
+
+### Split LinuxUi into (LinuxUi, LinuxUiTheme)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd61f3b
+
+### Remove old TouchpadPinch latency metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52d3878
+
+### [User Education] Split timeout tests to avoid flakiness
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1701f5d
+
+### Flush for Ack Key event.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a84e93
+
+### [ozone/wayland] Limit wl_pointer|touch.frame use for Lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80dd0bc
+
+### Add Hindi Inscript layout based on IS 16350.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f4276c
+
+### DLP: Add restrictionDetails dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c3945d1
+
+### Files SWA: Remove some Files app legacy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90404f1
+
+### Files SWA: Refacator FileTransferController to async/await
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e73d8e0
+
+### WebUI: Remove temporary aliases to old cr_elements/ URLs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9712f1d
+
+### Files SWA: Remove some Files legacy code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/952b4d9
+
+### Revert "wayland: make wl_output/Display id differences explicit"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/947dc9f1
+
+### Retire flag enable-desktop-pwas-manifest-id
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1ef5431
+
+### Use LogoCoordinator and clean up NTP and SST.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75b1b45
+
+### [Extensions] Add a set of features for "simple override" extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9be99a
+
+### [Read Anything] Add a combobox for letter spacing choices to toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2d2376
+
+### [ntp] Add text shadow and background protection for scrim removal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7be5fc8
+
+### Integrating PartialTranslateManager into the UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/324e9a2f
+
+### Remove WaitForAppService in AppServiceTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85bc2dda
+
+### Disable FindInPageControllerTest::SingleOccurence on MAC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91c3c1ae6
+
+### [journeys] Check if tab_indices are empty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3556fdb6
+
+### [Remote Playback] Initialize MediaRouterUI with RemotePlayback mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1d2083
+
+### [Omnibox] Update Locationbar background when focus
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1044e8c
+
+### Remove StackAbove() for extension popup when widget layering is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1af757
+
+### saved_desks: Remove saved desks feedback dialog code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32390f8b
+
+### Quick Answers: Open util URLs within ash-chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddd5a3a
+
+### Revert "Avoid caching WebContents* in the media-picker flow"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e5f8c8
+
+### [NTP] Realbox - Fix button hover color for match omnibox experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9754e4c
+
+### Remove unneeded use of GetListDeprecated() in clear browsing data tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7cd909
+
+### [Tab Hover Cards] Handle reshow after tab delete.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a42f72a
+
+### [NTP] Fix kColorNewTabPageLink
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b571db0
+
+### Disable ChromeShelfControllerDemoModeTest::PinnedAppsOnline
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3864ce3
+
+### Update comment on where actions are located
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62efa37
+
+### Cleanup NetworkPortalNotificationController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ac6562
+
+### Used widget sublevel for status bubble and extensions hover card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c751ef8
+
+### Only navigate the home tab if the URL has changed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68e3a06
+
+### [User Education] Update IPH to use new, simpler API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3425349
+
+### Support new user prompts/ cast messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5eb665
+
+### feedback: Support search query for "Send feedback" in os settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd2231d
+
+### [ReArchPPV] Split PPV logic in \`ProfilePickerStepController\`s
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b21e9f6b
+
+### Right-click menu entrypoint for side search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3266459
+
+### [User Education] Method for trying to show a promo at FE initialization.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a56f8ed
+
+### [Read Anything] Move Read Anything icons to chrome/app/vector_icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b219168
+
+### Add the user_typed_password field to PasswordGenerationUIData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/356f8d7
+
+### More Lacros investigative logging in TurnSyncOnHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b57d685
+
+### [NTP] Fix realbox remove button hover color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5389aa0
+
+### [Password Manager] Adding more dummy controls to Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9db406
+
+### Enable Gaia reauth endpoint for all reauth logins
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c3d6c9
+
+### Add Performance row to the three dot menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5beae576
+
+### Reland "Use widget sublevel for permission and tab preview bubbles"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e01917c
+
+### Add performance section to the performance settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e095cd3
+
+### Give PageActionIconView subclasses metrics naming
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fac58a8
+
+### Adds simple color filtering settings behind a flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54ee3b2
+
+### Emit a TraceEvent with the result of an attempt to Capture the toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16ef72a2
+
+### [Privacy Hub] Moving logic from web handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49c3ac7
+
+### [site data] Show an infobar if user did any changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7efa5c23
+
+### [FastCheckout] Add tab helper to prewarm cache on checkout navigation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b16cbb7
+
+### [Profiles] Add browser test for local profile creation dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d395af0
+
+### [QuickStart] Add prototype for QR code UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/901a16e
+
+### Limit files stored in HoldingSpaceModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8639a58c
+
+### [Android][Mfill][Jank] Post sheet data conversion to background thread
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9501433
+
+### [Office upload] Define OneDrive upload handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/715f13d
+
+### Modify AppServiceTest to use the non mojom App struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68805042
+
+### [CodeHealth] Avoid deprecated base::Value usage in json_schema_compiler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97d08e1
+
+### [DownloadBubble] Partial view contents should not be per-window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0c5ff1
+
+### [quick-show]: Hide feature behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/30ae8e4
+
+### float: Hide partial split buttons if the flag isn't enabled.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f0b7cf
+
+### ARC Nearby: Add feature flag for Nearby Sharing through Fusebox
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b2f5dc0
+
+### Set up a feature flag for 'Hindi Inscript Layout' on chromeOS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1c8c488
+
+`);
+              </script>
+            </body>
+        </html>
