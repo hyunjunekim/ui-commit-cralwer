@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-17
+### Reland "WebUI: Move traffic_counters/ to ash/webui/common/resources/"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1e674a0
+
+### gpu: win: Fix bug where Media Foundation videos would mostly show as black
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e94d7d5
+
+### WebUI: Delete obsolete HTML and gni files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25644f0
+
+### immersive mode mac: pin the title bar
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/724d632c
+
+### [color] Add sys color ids and color mixer to //ui/color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7ee40b
+
+### Revert "WebUI: Migrate to ChromeOS network Mojo WebUI bindings"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76ca4c6
+
+### Revert "WebUI: Migrate to ChromeOS cellular setup Mojo WebUI bindings"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec22dc07
+
+### WebUI: Migrate to ChromeOS cellular setup Mojo WebUI bindings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a07ba9a
+
+### Revert "Reland "[ViewsAX] Moving RetargetForEvents to base class AXTreeManager""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/633f989
+
+### Reland "WebUI: Check in module post_message_api/ to ash/webui/common"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af6f234
+
+### Remove gfx::Transform::matrix(), final step (misc. and actual removal)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ce711c4
+
+### [code-health] Update AXTreeFormatterMac to use base::Value::Dict
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85d824f
+
+### Reland: "OverlayProcessorOzone: Reject BT.2020 and full-range videos."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/243e865
+
+### WebUI: Move mixins to cr_elements/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e87dcf6
+
+### [ozone/wayland] Support \`force\` and \`tilt\` pointer stylus data
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/479197c
+
+### Revert "WebUI: Move cr and i18n_template_no_process to last user, fork util"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10b0b40
+
+### Speculative fix for Wayland/Gtk3 IME creation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0249a76
+
+### fixup! [ozone/wayland] Limit wl_pointer|touch.frame use for Lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4015529
+
+### Revert "WebUI: Check in module post_message_api/ to ash/webui/common"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85189a4
+
+### Change notification control buttons to IconButton's on Ash and ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38fcb74
+
+### WebUI: Check-in Polymer3 version of cros_color_overrides.html
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2ef998
+
+### Revert "WebUI: Move traffic_counters/ to ash/webui/common/resources/"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7e8d61
+
+### WebUI: Move traffic_counters/ to ash/webui/common/resources/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95df929
+
+### [FilesTrash] Wire up pref to enable / disable trash functionality
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4201ae
+
+### Replaced files-web-drive-office flag with upload-office-to-cloud.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/193d6b9c
+
+### Added feature flag for more accessibility dictation commands
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/64d2bb2
+
+### Files F2: Add docs for State, Actions, Reducers and ActionsProducers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebd3dce
+
+### [Tote Exp] Move \`SuggestionType\` out of \`FileSuggestKeyedService\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f26da40
+
+### [Extensions c2s] Remove stale TODO in test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59ee984
+
+### Correct behavior with Force UI direction flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17e1763
+
+### saved_desks: Remove \`was_zero_state\` parameter when showing library.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d6f963
+
+### [omnibox] Unelide \`OmniboxTextView\` before resizing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2854650
+
+### Add the high efficiency IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71d3daf
+
+### Make Picker UTs more debuggable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f6d2ea
+
+### [dpwa] Disable the flaky browser test CheckSiteHandlesFile on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29550d4
+
+### Adds network check before discovery.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57dfb5d1
+
+### Fix highlight hover shape on close button in instruction chip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a35c34
+
+### [Omnibox] Update toolbar/locationbar color when NTP animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06570ea
+
+### [Web Payment] Content Security Policy checker interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21ae413
+
+### Revert "[User Education] Instrument security page for help bubble promo."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d2e2aa
+
+### [omnibox][post-ac] Snapshot \`result_\` between \`NotifyChanged()\` calls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e080002
+
+### Pass the correct probe URL to NetworkPortalWebDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94354a8d
+
+### Leverage new MaybeShowStartupPromo function in Battery Saver button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c159c01
+
+### WebUI: Replace several references of chrome://test/ with webui-test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13923666
+
+### [User Education] Instrument security page for help bubble promo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a1a941
+
+### Extract a base class for the enabled and disabled dialog classes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1b86c2
+
+### Cleanup of NetworkPortalSigininController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c95645
+
+### [Autofill] Fix SaveCardIcon test with asynchronous form parsing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c513985
+
+### [NTP] Promo colors for text and link to be set through color mixers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52f14572
+
+### [personalization] Merge third party wallpaper path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b34fad
+
+### [DownloadBubble] New Download UX in PWAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/970b420
+
+### Add minimal cros settings mojo test api and test mixin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3109f8f
+
+### Right align high efficiency bubble with proper anchor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc1ab72
+
+### Update back press state as soon as tab goes back.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ad9197
+
+### Reland "Code cleanup: Fix includes in crOS inline login handler"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4cabdaf
+
+### [APC-internals] Allow bundle id and debug socket to be independent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b02369f
+
+### Add view for the BiometricAuthenticationForFilling promo bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbad43e
+
+### Add controller for the BiometricAuthForFilling promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8bb2724
+
+### [Fast Checkout] Support consentless execution
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/70dddb8
+
+### Add skeleton code for Cryptohome recovery screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0dc66fe
+
+### [OOBE][ErrorScreen]: Extract rollback error from ErrorScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e9f8b88
+
+### Populate custodian names in chrome://interstitials/supervised_user
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb46278
+
+### [Office upload] Wait until item shown in folder before opening od file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac42888
+
+### Update EulaScreen and Handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cea7c9e
+
+### Displaying toggle only if user had biometrics available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11f41a5
+
+### [string match]  Enable acronym matching in game provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf1e383
+
+### [Office upload] Change copy to move
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/943889c2
+
+### [Office upload] Add option to skip upload dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8befdfc
+
+### Remove FlushMojoCallsForTesting from shelf browser tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15eb2003
+
+### Remove FlushMojoCallsForTesting from app dialog tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e4b3d9
+
+### update logging parameter requirements to account for all lens cases
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/471e37e
+
+### [launcher] Slightly increase result learning rate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18aaecf
+
+### [CrOS Cellular]Rename kCellularCustomAPNProfiles feature flag to kApnRevamp
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0fee8bb
+
+### Adding flags for Search Prefetching
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0c7162f7
+
+### Revert "Preloads: Clean up calculator web app preinstall flag"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7cecc89
+
+`);
+              </script>
+            </body>
+        </html>
