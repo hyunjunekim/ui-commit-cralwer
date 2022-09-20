@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-20
+### Revert "Fix apparent bug in touch device handling."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e6815d
+
+### Reland "WebUI: Migrate to ChromeOS cellular setup Mojo WebUI bindings"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a714915
+
+### WebUI: Rename util to util_deprecated, incorporate legacy assert
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58ff9bba
+
+### Support float in ClassProperty.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/674478f
+
+### Files app: Changed an error log to a warning log
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8eb622e
+
+### Files app: Tweak a log message
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97143bb
+
+### Check parent view needs layout before Layout() in views_test_utils
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9531dae
+
+### Files app: Tweak a log message
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dee5f30
+
+### [NTP] Fix flicker issue on color change
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/baebdc1
+
+### Mac: Don't fix up ampersands in user-provided menu titles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09f77c4b
+
+### [AndroidScrollOptimizations] Correct variable name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/663761b
+
+### wayland, gtk3: fix compose key regression
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e55931
+
+### Reland "WebUI: Migrate to ChromeOS network Mojo WebUI bindings"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0217cfd
+
+### Change std::find_if*() to use base:: functions: ui/ozone/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/882ea22
+
+### Make OzoneImageBackingFactory to query native pixmap format support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f36991a
+
+### WebUI: Move i18n_template_no_process to last user
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41fc4b9
+
+### ax_test: Reduce content dependencies in Windows' AXTreeFormatters (1/4)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c082d36
+
+### Change std::find_if*() to use base:: functions: ui/base/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dc4f3f
+
+### Fix apparent bug in touch device handling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2905efc
+
+### Change std::find_if*() to use base:: functions: ui/views/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dca602ac
+
+### [memories][persist-clusters] Update debug messages.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/147ac71a
+
+### [linux] Moved the X11-specific insets logic into the X11 window.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a169a61
+
+### Reland#2: [ViewsAX] Moving RetargetForEvents to base class AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54995a1
+
+### [DLP] Pass the dialog caller to file manager
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/320437c
+
+### [code-health] Update ax_transform_mac.h to use non-deprecated types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8b12413
+
+### Simplify use of isRoot logic for Android accessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b711eb99
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1452d7b
+
+### ax_test: move TestAXTreeUpdate.h under ui/accessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98bca18
+
+### Change std::find_if*() to use base:: functions: ui/display/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/862ac0f
+
+### DanglingPtr: fix dangling ptr in AXVirtualView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d0e0e14
+
+### WebUI: Move smb_shares/ to ash/webui/common/resources/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b1a2ef
+
+### WebUI: Serve mocha.js and mocha_adapter.js from chrome://webui-test/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0376b5a
+
+### DLP: Add file picker/saver translation strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b45b9dc3
+
+### Reland "wayland: make wl_output/Display id differences explicit"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/234faa4
+
+### [FilesTrash] Fix files trash dynamic command refresh
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4cd4dbe
+
+### Disable PaymentRequestCompletionStatusMetricsTest test cases
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/651829c
+
+### Disable AccuracyTipBubbleViewBrowserTest.PressEsc for flakiness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b84b331
+
+### Integrate decline details parsing with autofill error dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37600a3
+
+### [realbox] Remove answers and tail suggest flags and references
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/472f55f9
+
+### \`RemoveApp\` API for backend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9e035c2
+
+### [Omnibox] Calling setTint instead of setColorFilter in ToolbarPhone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33eba97
+
+### Fixed:  The height and padding for transparency headers is incorrect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdeb956
+
+### Add three metrics for side search menu entrypoint
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36f3f27
+
+### Move SavedTabGroupModel and observer class into components directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48739b2
+
+### Modify browser tests to use the non mojom app launch interfaces.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8155110
+
+### Use more enum classes in //ash to avoid conflicts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66008e7
+
+### Check for profile sync before Discovering sink.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7e6d375
+
+### [omnibox][grouping] Fixes crash when reading group's unset header_text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/838b415
+
+### Revert "Reland "[macOS] Make the Bookmarks menu work in the zero-profile state""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/772eeed
+
+### [Sheriff] Disable flaky test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c61b55
+
+### Reland "Migrate chrome/browser/ui/ash/ to namespace ash"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d06ef26
+
+### Set drawable to enabled before drawing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f224cff
+
+### Revert "[PageInfo] Add indicator for enforcement of FPS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b2b1f7
+
+### [ntp] Add customize_chrome::IsSidePanelEnabled()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b7f815
+
+### Reland "[macOS] Make the Bookmarks menu work in the zero-profile state"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23ede732
+
+### Change HandleOnPerformDrop signature to return DropData as a result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4a4685
+
+### Fixed issue: Tapping on transparency headers shows a pressed state, VoiceOver announces transparency headers are in an expanded state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e586a8b
+
+### [Sheriff] Disables flaky test on Windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cceebfe
+
+### [Code Health] Reland JNI Refactor for WebContentsState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/130b28b
+
+### immersive mode mac: remove top inset for client view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4397168
+
+### [Code Health] Remove GetAsDictionary from */ash/* files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2857fb6c
+
+### Add battery section to the performance settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a314ae3
+
+### Simplify base::ranges::find_if*() invocations: chrome/browser/ui/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9625fd0
+
+### [PageInfo] Add indicator for enforcement of FPS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b03e048
+
+### [FPS All-Sites UI] Add policy icon to site details
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ddb943
+
+### [Sheriff] Disables flaky test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe1eb2d6
+
+### Migrate chrome/browser/ui/views to new pref update classes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbeca37
+
+### [Profiles] Fix IsEphemeral helper function in ProfileManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83ac0c6
+
+### [Sync] Store GC directive independently of ModelTypeState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c039ed
+
+### [OOBE][LacrosDataMigration]: Update screen and handler structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4d1065
+
+### [profiles] Re-enable ProfileMenuViewSignoutTest.SignoutFromNTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29844db
+
+### [dPWA Testing] Add InstallMode parameter to InstallPolicyApp action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0b59c35e
+
+### [Metadata] Add exp flag for card art images
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/042eac8
+
+### glanceables: Extend access to the flag to dev/beta channels
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7374dd58
+
+### [PageInfo] Add a flag for the cookies subpage
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d830d4b
+
+`);
+              </script>
+            </body>
+        </html>
