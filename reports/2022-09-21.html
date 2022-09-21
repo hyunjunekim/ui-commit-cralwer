@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-21
+### ozone/drm: Crash less on failed plane allocation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8f3853
+
+### Add virtual-keyboard=resize-layout to viewport meta
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d6e4405
+
+### DLP: Add the details dialog translation strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3b76e7
+
+### ui: removes some CHECKs that should no longer be necessary
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90270cb
+
+### gfx::DisplayColorSpaces: Use SkColorPrimaries
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5243437
+
+### ozone/wayland: Rename/inline WaylandSurface getters.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/698dd63
+
+### Time-based resampling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6abd42
+
+### Reland "Fix apparent bug in touch device handling."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7395e3c
+
+### ui: add CHECKs to identify deleting Layer during paint
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b10c2b
+
+### [color] Add scrim, separator and surface sys tokens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/261d806
+
+### migration: Migrate clients of AshColorProvider in CaptureMode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8990588
+
+### Lacros: Implement Set/GetZOrderLevel in WaylandToplevelWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abf0de93
+
+### Check for nullptr when determining if a device can create a pixmap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6760f53
+
+### [Mac Keyboard shortcuts] Flash menu titles for all command shortcuts
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e21af73
+
+### [User Education] Update WebUI IPH to have consistent a11y experience
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3786d32
+
+### Remove Android.ClipBoard.getImageDuration.*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/000f8ea
+
+### [exo] Call wl_pointer.frame for \`enter\` and \`leave\` events independently
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49b4f1a
+
+### WebUI: Move network_health/ to ash/webui/common/resources/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7d229d
+
+### Add report-only mode for FileTransferConnector.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d6e056
+
+### Introduces SurroundTextTracker.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ceb61e6
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a72bdf3
+
+### Remove expired Event.Latency.Scroll.Wheel.TimeToHandled2* histograms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13a2f77
+
+### WebUI: Move quick_unlock/ to ash/webui/common/resources/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ead5dc5
+
+### [FilesTrash] Setup trash empty state image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c462fd
+
+### [Files-Search]: Adds flags for V2 of the files search.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/24757cb
+
+### [FilesGM3] Use the new dynamic color CSS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cce21c31
+
+### [FilesTrash] Update empty trash dialog and strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c56679
+
+### [FilesTrash] Don't allow restoration when the parent path is removed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe9b761
+
+### Simplify toolbar separator color calculation for Linux native theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6224f38
+
+### Migrate chrome/browser/ui to ScopedListPrefUpdate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c4d7d13
+
+### Aligning Search Prefetch navigation log with other prefetch patterns
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8be7ad
+
+### Change std::find_if*() to use base:: functions: chrome/browser/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2383493
+
+### [PriceTracking] Set up bubble button handlers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd2d327
+
+### Add basic page actions metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef27735
+
+### Delete launcher_page_switches_interactive_uitest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13643dc
+
+### [DesktopScreenshots] Tooltip strings for font dropdown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caab88dc
+
+### WebUI: Replace remaining chrome://test usages in non-CrOS tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d569130
+
+### [DesktopScreenshots] Retain screenshot across refreshes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03562bd
+
+### [qrcode] Move help tooltip to not obscure UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3cdc34
+
+### Put app_list_test_util.h code in namespace app_list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36ee34a
+
+### [PriceTracking] Add price tracking bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96bbcc2
+
+### Remove outdated TODO from GetHandlersAsListValue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7c73e3
+
+### [ntp] Allow OGB CSS selectors to be specified via finch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a7124d
+
+### webauthn: update request dialog QR sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ee3825
+
+### [PriceTracking] Add user action metrics for side panel price tracking
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c72cb99
+
+### Move {ash => chromeos/ash}/components/multidevice/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3eda22
+
+### [User Education] Bubbles correctly dismiss when their anchors disappear.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c492066
+
+### [Android Bulk Tab Edit] Add clients for TabSelectionEditorV2
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/621534c
+
+### Add ChromeTransitionDrawable to replace TransitionDrawable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e286f27
+
+### webauthn: update request dialog account selector and auxiliary buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b691c0a
+
+### NetworkPortalSigninController: Restructure and add histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10d94600
+
+### Set larger maximum Picture-in-Picture window size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67df4c3
+
+### Starting position for MV tiles is incorrect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59144ab
+
+### Use helper macros to define base::Features in //chrome/browser/ui/ui_features.*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b6369f
+
+### Reland "[User Education] Instrument security page for help bubble promo."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4101155d
+
+### [memories][persist-clusters] Debug output visit times.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fcf8dd
+
+### [Signin] Add SyncPromoAfterSigninInterceptStudy in field trial testing config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd640fc
+
+### Add IsVisible() method in PasswordGenerationPopupControllerImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0cfe91
+
+### [PageInfo] Pixel tests for the cookies subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/359a209
+
+### [OOBE] Add skip enrollment dialogue for LP devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af05307
+
+### Privacy Guide: only show to consumer users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/523c1e2
+
+### Lacros web apps: Run WebAppBadgingBrowserTest with Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a31bd9
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/chromebox_for_meetings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c464c33
+
+### Remove kXRSandbox feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2935f8
+
+### [Start] Add sStartSurfaceDisabledFeedImprovement in about://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/86345d5
+
+`);
+              </script>
+            </body>
+        </html>
