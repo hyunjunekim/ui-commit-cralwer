@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-22
+### WebUI: Delete unused .d.ts files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d72314
+
+### Add 11 Translate Supported Languages
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb5aea8
+
+### SkColorSpace: Add CICP conversion functions and constants
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe777b0
+
+### WebUI: Check in module version of promise_resolver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a23cf0a
+
+### Add Aura UI to the WebUI Examples Application
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ceb7a6
+
+### [ViewsAX] Moving FireGeneratedEvent to base class AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ca9d2a
+
+### Handle overflow in Base64Encode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/48808e2
+
+### Use helper macros to define base::Features in //ui/base/ui_base_features.*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91efc4c
+
+### ozone: evdev: Add logging to Fake Keyboard Heuristic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/21b8f1b
+
+### ozone/wayland: disable failing test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6459ba9
+
+### WebUI: Move cr.js to ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/788013a
+
+### Use helper macros to define base::Features in //ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/849f6a54
+
+### views: Remove StackAbove() from info bubble
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f612195
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3b4340
+
+### ozone/drm: Don't swap old/new planes until after commits
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/917d7a19
+
+### Address comments in crrev.com/c/3748755.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b951ba
+
+### ozone/wayland: workaround race with wl_client_flush
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e540c54
+
+### [fuchsia] Make use_cfv1 test() an opt-in GN template arg
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5c4ff5
+
+### app_list: Remove 2 browser_tests that rely on page break support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3725e11a
+
+### Adds Lens search feature to NTP features.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4cc727
+
+### Projector: Add test for trusted type violations in chrome://projector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f291213
+
+### [Lacros] Refactor GetVersion() in version_loader.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49f62be
+
+### Remove IssueManager::blocking_issues_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecb236f5
+
+### lacros: Open new browser window from shelf on empty desk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fbd305
+
+### [Tab Hover Cards] Rewrite tests to (hopefully) be more reliable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4021762
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/cloud_upload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/add29f2
+
+### [Parent Access] Add ParentAccessDialogCallback to ParentAccessDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37d191ca
+
+### Rename ash::ReauthReason enum values to the modern style.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b05dc54e
+
+### Add logging of details for print preview setting failures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2d240b
+
+### [Code Health] Remove calls to base::Value::GetListDeprecated.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/564b681
+
+### NetworkPortalNotificationController: General notification behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83af671
+
+### Hook up new -> dot animation to flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/21473c2
+
+### Adds Cast Moderator to system tray browser test OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b2f2b8
+
+### [Code Health] Remove deprecated GetAsDictionary usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/144a45a
+
+### Convert ash::ReauthReason to an enum class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d52c38
+
+### webauthn: Address forgotten review comments from CL:3901156
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67f2763
+
+### [Read Anything] Change font size from px to em
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb40c69
+
+### Enable passkey editing on mac [backend]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86809c7b8
+
+### High Efficiency Saver in-product help promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afc1e60
+
+### webauthn: Draw a passkey icon over the QR code for pairing a phone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ff77da
+
+### arc: Remove usb host related flag check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a5ea14
+
+### Fix logo visibility when changing DSE.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16b89b6
+
+### webauthn: Add new request dialog illustrations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61c949d
+
+### Back to tab for live captions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6c0ab87
+
+### [Sharing Hub] Show themified favicon in dark mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aa9bcfd
+
+### [PriceTracking] Communicate with server the user prefs on price emails
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c97a15f
+
+### Add page action metric for % of pages with actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d02598d
+
+### Revert "Re-enable HoldingSpaceUiDragAndDropBrowserTest.DragAndDropToPin."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcb8247
+
+### webauthn: Drop the border from PasskeyPillView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37c4102
+
+### Add the option to use API key to XHR sender interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa1c017
+
+### Remove explicit Layout() calls from unit tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/751e03a8
+
+### [Color Pipeline] Fix white flashes on NTP in dark mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f98b161
+
+### [Start] Fix profile icon doesn't show on Start after sign in.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f00fcc
+
+### Migrate SigninFatalErrorScreen to base::Value::Dict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcc8bdf
+
+### [NTP] Use color pipeline for NTP attribution and MV elements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8577020
+
+### [Shopping List] Tab helper for native UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d58ea2
+
+### Remove kSyncSettingsCategorization feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25277a7
+
+### [Tote Exp] A holding space delegate to manage file suggestions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e01dab
+
+### Disable failing tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b57f29
+
+### Add triggering mechanism for BiometricAuthForFilling promo bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6674389376
+
+### Keep Owner as SelectFileDialogExtension field
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fefea77
+
+### [Password Manager] Password Checkup page skeleton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3214205
+
+### WebUI: Remove chrome://test source from BaseWebUIBrowserTest on non-CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f1ae81
+
+### [CrOS WebAPKs] Always share files from WebAPKs through Fusebox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe3c735
+
+### Adding server-side language detection to Partial Translate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc24b9e
+
+### [FastCheckout] Add set of integration tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc15a021
+
+### [test]  Add empty query tests for ArcAppShortcutsSearchProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e1f40aa0
+
+### Add Private Aggregation debug mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d50495
+
+### [DragDrop][ContextMenu] Remove ContextMenuPopupStyle
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6b4324b7
+
+### [CrOS Cellular] Move kApnRevamp to be in alphabetical order
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b348750
+
+`);
+              </script>
+            </body>
+        </html>
