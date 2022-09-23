@@ -1,0 +1,240 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-23
+### Cleanup file transfer connector tests and code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d811fca
+
+### diagnostics_ts_migration: Convert files to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bf0276
+
+### [Files]: Prevent the cause of crashes when fetching icons.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/043ab67
+
+### Generate qt_shim_moc.cc with an ancient version of moc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c144231
+
+### WebUI: Check in JS module version of assert.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bba05fb
+
+### Adjust Selected aura::Window::SetLayoutManager Calls To Use the std::unique_ptr Version
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e86061
+
+### Reland: Build Dawn's tests on Android.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cdd8b383
+
+### IWYU: Add <cstring> for memcpy usage in class_property.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f9b8cf
+
+### Add WebGPU AHardwareBuffer image representation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75b80c5
+
+### DanglingPtr: triage dangling ptr in TouchHandle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31913f7d
+
+### Comment why GetLocaleOverride() is not thread-unsafe
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4b5ca6
+
+### Default tint mode to SRC_IN for ChromeImageButton.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a040ca1
+
+### Change std::find_if*() to use base:: functions: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14f99b4
+
+### Refactor early startup resource bundle access
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcde0b1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf778b8
+
+### Remove NonClientView::SetAccessibleName
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/baedeac
+
+### [linux/wayland] Added stub support for wl_output v4.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d6b136
+
+### [Toolbar] Fix crash on post-destroy search engine change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56dcf76
+
+### Add chrome://metrics-internals WebUI page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fcf14a
+
+### Remove WebAppIntegrationTestDriver::active_browser_.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbfc56c
+
+### [FedCM UI] Center close button on FedCM bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/439943c
+
+### cros: Update calendar dir metadata
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd670f1
+
+### [Sheriff] Disable flaky test CancelLocalProfileCreation on macOS and Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d76ca36
+
+### Add new origin getter in autofill_client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3d7902
+
+### [Sheriff] Disable flaky bubble view test InvokeUi_NotWorkingClicked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e629324
+
+### Auto-generate grd file for chrome://chrome-signin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd4e974
+
+### Remove FATAL option from IssueInfo::Severity and
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7f2b0d
+
+### [dPWA] File Handler registration now waits for callbacks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a28811
+
+### Update user edu framework to support overriding dismiss text for custom action promos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/430a2c4
+
+### Implementing metrics for battery saver bubble dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e05c0ce
+
+### Fix use of deprecated API in HoldingSpacePersistenceDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6148cfd
+
+### Add a task within Chrome that periodically activates the updater.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/623ea2b
+
+### Removed trigger context and tab helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77ab46a
+
+### Added feature flag for Material Next
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c23cb6c
+
+### [Multidevice] Fix drop shadow regression for Multidevice Setup dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efc22af
+
+### Use helper macros to define base::Features in //chrome
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/63ee20c5
+
+### Add bookmarks++ side panel feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22790ee4
+
+### [APC desktop] Add comments to APC scrim manager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c4d23f
+
+### Fixed issue causing Lens unified side panel to sometimes close.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/629ef0cd74
+
+### [omnibox] Eliminate pedals JSON related guards & loading; improve tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be93322
+
+### [APC Desktop] No two progress icons should blink at the same time.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75409f5
+
+### [Profiles] Add test for Delete profile in local profile creation dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1462dae
+
+### [omnibox] Replaces 'an URL' with 'a URL' and other cleanup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c72612a
+
+### [APC Desktop] Add more unit tests for PasswordChangeRunView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da32382
+
+### [SafetyCheck] Split up notification permissions feature flag in two
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0141dce
+
+### [site data] Add handling empty dialog states
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed85cd0
+
+### [PageInfo] Adding final strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1534fd
+
+### Add Observer for PolicyStatusProvider instead of change callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f85fe18
+
+### [ReArchPPV] Introduce FlowControllers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7aed7480
+
+### AboutThisSite: Ensure compatibility of different feature states
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0b16c187
+
+### [Privacy Hub] Camera Notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0dd37c7
+
+### [dpwa] Generates new browser tests for SwitchIncognitoProfile and CheckAppInListIconCorrect.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f14b886c
+
+### [Tote Exp] Delete suggestions from persistence if feature disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63e5896f
+
+### Remove PiP 1.5 from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fb63eba
+
+### [wasm] Fix stack switching flag plumbing in about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/517c5a9
+
+### [DragDrop][ContextMenu] Add flag ContextMenuPopupForAllScreenSizes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/54672f4
+
+`);
+              </script>
+            </body>
+        </html>
