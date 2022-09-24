@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-24
+### Enable DefaultANGLEVulkan feature if Vulkan 1.1 is support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc35447
+
+### Ensure Linux UI is initialized for OOP printing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65a6641
+
+### geometry: Rethink TransformPointReverse
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/992b3c2d2
+
+### Implement tab dragging with CompoundTabContainer enabled.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0523a5d
+
+### [Read Anything] Do not attempt to unserialized uninitialized snapshot.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f62c5fed
+
+### ui: moves ui/base enums into their own target
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b11ad6a
+
+### cros: Add command line switch to lock cursor.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3cf85d6d
+
+### shortcuts: Move accelerators map to AshAcceleratorConfiguration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d301c6bf
+
+### [events] Redefine DomKey::Base as uint32_t and clean up call-sites
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e2fa7e52
+
+### views: Remove StackAtTop() from TooltipAura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77c6771
+
+### WebUI: Move find_shortcut_behavior, keyboard_shortcut_list_js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff9d4d6
+
+### WebUI: Move network/ to ash/webui/common/resources/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcfaf67f
+
+### WebUI: Move store.js and store_client.js to ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7afa050
+
+### WebUI: Guard against invalid scale factors when parsing
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62bf4ff
+
+### Disable Vulkan for AMDVLK driver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/256ea9ac
+
+### [Paint Preview] Fix scaling if dimension changes across usage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/86a0865c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b071cd
+
+### [linux/wayland] Added fallback properties in the WaylandOutput.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7701616
+
+### wayland: switch away from DHECKs on unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/929c567
+
+### wayland: switch drag controller's test method to snake_case
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09b6abd
+
+### Add color conversion from Lab to XYZ and XYZ to Lab
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc950ad9
+
+### Remove unused variable 'text_span' from WaylandInputMethodContext
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65f4c15
+
+### wayland: fix RunMoveLoop return when ext-drag is unavailable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9239118d
+
+### wayland: bypass xdg-activation calls during dnd sessions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2f09f95
+
+### [Extensions] Set dialog destroying callback for install blocked dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cee5a6
+
+### Quick Answers: Setup Spell checker for user consent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a393ac
+
+### Add tab discard exceptions list to the performance settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bee3899
+
+### [Partial Translate] Fix text justification logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c9f271
+
+### [FedCM] Fix unexpected UI appearance on other tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb9acbd
+
+### Reland "Removing the context menu performance info feature."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acde8d4
+
+### NetworkPortalSigninController: Implement 2022 UI logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25d2659
+
+### [Tote Exp] Refactor the file suggest keyed service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/907dbdf
+
+### [dPWA] Denormalize SubAppInstallCommand
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce80048
+
+### [PriceTracking] Fix UI issues in price tracking list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/987552e
+
+### holding space exp: Add new pinned files placeholder strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bd4cfd
+
+### OOBE: Fixing scaling flag in CrOS Oobe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4540d3
+
+### Convert non-random trials to use CreateFieldTrial.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5599d885
+
+### Migrate ArcAppScopedPrefUpdate to using ScopedDictPrefUpdate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea33129
+
+### Fix CheckTabCreated check to work better on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c31fcb77f
+
+### [omnibox] Fully eliminate pedals JSON loading logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef42dc6
+
+### Revert "DanglingPtr: fix dangling ptr for UnretainedWrapper"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfa0a258
+
+### [Sheriff] Disable slow tests under ASAN.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d816bb7
+
+### [PriceTracking] Update the body content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e8eec1
+
+### Use Value::Take...() in /chrome/browser/ui/webui/ash/arc_graphics_tracing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18b1993
+
+### Fixes wrong method call in testcase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a681d45
+
+### #Lens Unified Side Panel: Use checked-in icon for lens and search favicon for 3P DSE.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d160c34
+
+### Revert "[site data] Display partitioned site state"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3b1603
+
+### [Password Manager] Showing the actual Password Check status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59daae0
+
+### DanglingPtr: fix dangling ptr for UnretainedWrapper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21c70d1
+
+### Show BiometricAuthenticationForFilling promo when password autofilled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b36a69
+
+### [favicon] Update unit-tests to exercise desired case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4f9164
+
+### Use Value::Take...() in /chrome/browser/ui/webui/print_preview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f7af93
+
+### Make HandleOnPerformDrop granular for file drops instead of all-or-none
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c92cc35
+
+### Drop useless std::move() in /chrome/browser/ui/webui/settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bb49f4
+
+### Fix instances of -Wunused-local-typedef and -Wunused-function in ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/739daec
+
+### [Code Health] GaiaOAuthClient: base::Value refactoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53ff537
+
+### Reland "[PageInfo] Add indicator for enforcement of FPS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a741975
+
+### [site data] Display partitioned site state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e626f28
+
+### isolated-apps: Show app name instead of origin in permission prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ef63917
+
+### Revert "Removing the context menu performance info feature."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8954c0d
+
+### [SafetyCheck] Add functionality for actions in notification module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfd93ae
+
+### Removing the context menu performance info feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20f84d2
+
+### [All-Sites FPS UI] Show learn more link when filtering by FPS Owner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99f85c47
+
+### Web Share Target: Remove support for sharing files through data pipe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/218fb59
+
+### PrivacyIndicators: Add a Chrome flag for the feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/29427c2
+
+`);
+              </script>
+            </body>
+        </html>
