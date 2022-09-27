@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-27
+### Window Placement: Implement NativeWidgetMac::IsMaximized()|Maximize()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce29671
+
+### [ViewsAX] Moving GetParentManager to base class AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1a46db
+
+### ozone/wayland: Send surface color space over wayland protocol
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b68ed93
+
+### compositor: cleanup tile related feature code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5432e37
+
+### gpu: win: Fix label swap chain buffers on resize
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dda2b2
+
+### Refactor AutomationV8Bindings from AutomationInternalCustomBindings.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fa3368c
+
+### [Ozone/Wayland] Change set_viewport_source to set_buffer_crop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a43ad74
+
+### [fuchsia] Reset last click for pointer_events_handler_unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1b1753a
+
+### WebUI: Remove unused files from ui/webui/resources/js/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f01e4e7
+
+### [ViewsAX] Moving OnNodeWillBeDeleted to base class AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/061039f
+
+### WebUI: Check in load_time_data_deprecated
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f59b320
+
+### Use system moc when not using sysroot
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31467b8
+
+### [ViewsAX] Moving GetTreeData to base class AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5dcf1d
+
+### SelectFileDialog: Convert from RefCounted to std::unique_ptr
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/270245f
+
+### Remove usage of QColorConstants
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44ceb90
+
+### exo: Add zaura_toplevel.set_origin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/afd201f9
+
+### xproto_util: Fix undefined behavior in {Get,Set}ArrayProperty
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5dc7067
+
+### Add compact/expanded states to power bookmark row
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c87d831
+
+### Rename input latency trace events to match the histograms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd81723
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53be993
+
+### [linux/wayland] Added a test for name and description of the output.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/098909d
+
+### Use histogram macros instead of functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a322f3b
+
+### Revert system info based vulkan activation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0dbc295
+
+### LacrosTablet: Get tablet state on TableState initialization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da862296
+
+### Add sRGB Linear to SkColor4f conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4254aa3
+
+### [GL] Move ScopedRestoreTexture out of D3DImageBacking into //ui/gl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2b6089
+
+### arc: Add ghost window type to parameters
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/061a2d738
+
+### Fix the IntentPickerBubbleViewBrowserTest flakily on ASAN bot.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/087ab0a
+
+### Change to storing splash screen logo in chrome_unscaled_resources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eebb1619
+
+### [Cleanup] Remove obsolete SyncSettingsCategorization code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6a986e
+
+### [omnibox][grouping] Makes parsing and handling group headers more robust
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e1f42a
+
+### Record holding space user preferences at start up.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8172d88
+
+### Fixing issue where we aren't able to mute/unmute multiple sites at once
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfbc58d
+
+### [realbox] Remove variation on match searchbox, add rounded corners flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4a2c207
+
+### Show app name instead of "xdg-open" on protocol handler dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cb0ba7
+
+### [PriceTracking] Integrate star bubble and price tracking icon view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74df4f8
+
+### Show foreground duration instead of visit duration in Journeys debug panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c8d858d
+
+### Migrate DictionaryPrefUpdate usage in chrome/browser/ui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dd717f
+
+### holding space exp: Add LocalFileSuggestionProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43620e7
+
+### [Fast Pair] Add CHECK for g_instance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78302c9
+
+### [Omnibox] Prevent LocationBar crash when onMeasured entered post destroy on ToolbarPhone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f002437b
+
+### Add histograms for desktop Partial Translate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/895ef6a
+
+### Update Live Caption error message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b577e42
+
+### Removing unused performance hints code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60aa859
+
+### Reland "Feature to stop rendering loading animation when window is hidden."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee691b9
+
+### Remove redundant duplicate check when pinning holding space files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42163a54
+
+### [Cleanup] Remove obsolete SyncSettingsCategorization code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a29ee7
+
+### Fix code formatting errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f30c4a
+
+### AppService: Update policy_id (optional<>) to policy_ids (vector<>).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76a805b
+
+### Update Sign in detection in Sync E2E tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7d0110
+
+### [Cleanup] Remove obsolete SyncSettingsCategorization code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d871070b
+
+### [Profiles] Change scrollbar and Done button for avatar selection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fa91e7
+
+### Add WebAppOpen.Modes metric, split off from Launch.Modes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1f734a
+
+### [site data] Add recording metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edd7749f
+
+### Use JS modules in gaia_auth_host/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c28cde
+
+### [privacy sandbox] Fix flaky PrivacySandboxNoticeBubbleBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0361ab8
+
+### [FastCheckout] Do not offer FC for consent users and Assistant is off.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9899da8
+
+### Rename a constant to kFoo to avoid shadowing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d7d2430
+
+### [FastCheckout] Drop No Thanks action button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0db8b343
+
+### Suppress captures in CCT toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a603bf1
+
+### [launcher] Don't recommend apps that are hidden in the launcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6098ac9
+
+### [Sync] Reset android sync NTP promo show count when sync is turned off
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94a758c
+
+### Enable strings tests for BiometricAuthForFilling bubble controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccd04427
+
+### Notify when hardware switch disables camera
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb3ebcd0
+
+### [dPWA Testing] Remove some dead code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f35da72a
+
+### [APC Desktop] Increase test coverage for PasswordChangeRunView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9070a66
+
+### [text] Add unit tests for AppListStringUtil.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b77a37
+
+### sheriff: Disable flaky IntentPicker tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc5ab19
+
+### Improve content clustering algorithm that's used for Journeys
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/be8e436
+
+### Switch Privacy Sandbox Ads APIs flag away from --enable-features
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8c6cd1dc
+
+### [Android Bulk Tab Restore] Cleanup flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5f9bac0
+
+### Add feature flags for Confirmation Chip and Location Bar Icon override
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ca9da17
+
+`);
+              </script>
+            </body>
+        </html>
