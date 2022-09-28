@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-28
+### WebUI: Move webview_manager.js to only user
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65f443b
+
+### Adding ProPhotoRGB to SkColor4f conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ff1fb0
+
+### [FilesTrash] Update strings to be UX compliant
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f528300
+
+### Add Select All option to touch selection menu.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaa26e1
+
+### Tooltip: Remove unused methods to manipulate TooltipTimer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27a5836
+
+### holdingspace: Update strings for refresh of holdingspace.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bdbaa20
+
+### Move some AutomationInternalCustomBindings routes into ui/a11y/platform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff138d5d
+
+### Load the WebUI Gallery
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1a8184f
+
+### Use helper macros to define base::Features in //ui/accelerated_widget_mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b09307
+
+### WebUI: Remove use of util_deprecated from security_interstitials
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d29c7c
+
+### Use helper macros to define base::Features in //ui/base/cocoa
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/519e2f7
+
+### Add LCH to SkColor4f conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d08d691
+
+### WebUI: Update some outdated files names in docs and comments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2a2fe57
+
+### Reland "Enable DefaultANGLEVulkan feature if Vulkan 1.1 is support"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bdbc9e
+
+### Add DisplayP3 and XYZ to SkColor4f conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/faf47e2
+
+### WebUI: Move cellular_setup/ to ash/webui/common/resources/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6083d687
+
+### immersive mode mac: use a higher z-order level for sub-widgets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32ed1d5
+
+### ax_ui: JAWS and NVDA reads the characters as BLANK when traverse through the characters using arrow keys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88f3833
+
+### [fuchsia] Log an ERROR if ViewRefFocused disconnects
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b44d77
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1ecc50
+
+### Reland "Disable Vulkan for AMDVLK driver"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ef92b0
+
+### [Lacros]Workaround for graphics freeze caused by Ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3972d3c
+
+### [favicon] Make chrome::ParseFaviconPath() more strict
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a43266f
+
+### [PriceTracking] Enable all entry points
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca4acaa
+
+### Revert "[signin] Delete kForceSigninReauth feature"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ac0b51
+
+### arc: Fix a error link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a77295b
+
+### Simply or fix handling of temp dirs in unit-tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2abc3e
+
+### Change std::find() to use base:: functions: chrome/browser/ui/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbb1c290
+
+### [sheriff] Disable flaky Projector test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67194a6
+
+### Log metrics for the high efficiency dialog bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fd69ba
+
+### Create a ParentAccessDialog in tests that create the WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/424f121a
+
+### Create Reselect Button for Chrome Media Picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1c267d
+
+### webauthn: show dialog to confirm deleting a passkey.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14fad30
+
+### [WebContentsImpl] Don't call didFinishNavigation in child frames
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df8db0d
+
+### Wire up \`arc::mojom::FileSystemHost::OnMediaStoreUriAdded()\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6d17e0
+
+### [signin] Delete kForceSigninReauth feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2209cf46
+
+### views Layer: Remove Widget::StackAtTop() from TabDragController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce398d2
+
+### Quick Answers: Add feature enabled metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16826ab
+
+### immersive mode mac: move overlay window off-screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c72879
+
+### automation infobar: remove unused import
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2c13ee
+
+### Window Placement: Enable SameDisplayAndSwapMaximized
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c9c1c4
+
+### [Start] Add a logo in Start surface below toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1900d097
+
+### Use helper macros to define base::Features in //chrome/browser/ui/ui_features.*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e91f81
+
+### [APC Desktop] Record metrics for "Assistant stopped" bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80abc63
+
+### [segmentation] Fix internals UI to show not ready
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42754d94
+
+### App Service: ReinitializeForTesting clears app cache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ff18445
+
+### ChromeOS web app tests: wait for window mode update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3515cf
+
+### personalization: clean up personalization-hub flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/09f24725
+
+### Alert App Menu Item when IPH is Open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2f239c3
+
+### [Extensions] Remove unused parameter in ExpandableContainerView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6517df
+
+### Remove the deprecated origin field from StorageUsageInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/694310c
+
+### ScopedTabbedBrowserDisplayer: Remove obsolete parameter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dfee3f
+
+### Block API-initiated extension popups when there's visible media picker dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e60e29b
+
+### [DownloadBubble] Fix DownloadBubbleRowView layout issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d1da77
+
+### [Cormorant] setup Cormorant new activity page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14af4cc
+
+### [Cleanup] Remove obsolete SyncSettingsCategorization code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ea978c
+
+### [Passwords Import] Update store preference for Account Store users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a62bf7e7
+
+### [Sync] Rename personalized_signin_promo_view_recent_tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a453c17
+
+### [TangibleSync] Only show Tangible Sync view for specific access points
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/004bde16
+
+### Add a list of connected cameras to the Privacy Hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1924a23
+
+### Update DeviceType cpp enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c515ea
+
+### [Sync] Rename personalized_signin_promo_view_modern_content_suggestions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f40050
+
+### [Code Health] Migrate off ListValue for the login languages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9427bf
+
+### [Sync] Rename personalized_signin_promo_view_header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7f20633
+
+### [Password Manager] Prevent Password Manager opening for Incognito/Guests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba7afdf
+
+### Reland "[site data] Display partitioned site state"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2ecc94
+
+### Add a list of connected microphones to the Privacy Hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8122cfe
+
+### isolated-apps: Show app name instead of origin in permission prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3253b7f
+
+### Refactor PreferredAppUpdateWaiter test utility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14d9294
+
+### Web App tests: LaunchFromLaunchIcon fails gracefully
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8ca09e
+
+### [Sync] Rename personalized_signin_promo_view_bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16beb93
+
+### isolated-apps: Minor refactors on showing app name in permission prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b77407
+
+### system-web-apps: update app launch stats
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f71a556
+
+### [Sync]Rename personalized_signin_promo_view_body to sync_promo_view_body
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/050f733
+
+### AppContextMenuTest: Simply test loop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/118f0a5
+
+### [OOBE] Announce state of continue button in OOBE HID detection screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fc44b3
+
+### app_list: Clean up flag LauncherHideContinueSection
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1c7bcbb
+
+### [Start] Introduce START_SURFACE_OPEN_START_AS_HOMEPAGE.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1c1b546
+
+### Add about flags entry for content clustering
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/19b579d
+
+### Remove PrivacySandboxV3 flag(s)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/49f8d62
+
+### Removed feature flag kEnableMultiMonitorInCrd
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e5eef038
+
+### [UPM]  Added a flag to enable kUnifiedPasswordManagerReenrollment.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3274835
+
+`);
+              </script>
+            </body>
+        </html>
