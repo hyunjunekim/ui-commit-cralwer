@@ -1,0 +1,408 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-09-30
+### [FilesTrash] Disable renaming when in Trash root
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f1b3f80a
+
+### Make sure origin position of onscreen rect with round-up value.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/071d7be
+
+### Fix lacros flicker when exiting fullscreen mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ce0a08
+
+### WebUI: correctly remove listeners in action-link
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/623069f
+
+### gpu: Remove "force direct composition full damage" feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5447b52
+
+### Move SetFullscreenMode to toplevel and trigger configuration events on
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/689c214
+
+### Webui: <cr-dialog> Remove temporary aria label workaround
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9cbb71e
+
+### gpu: win: Remove scale factor in overlay transform for MediaFoundation videos
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8723315e
+
+### win: Ignore cloaked windows when doing window finding
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c77a0d6
+
+### Remove GLSurfaceEGLSurfaceControl dead code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b332ad
+
+### [code-health] Update AXTreeFormatterBase to use base::Value::Dict
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/300c439
+
+### Migrate ViewAccessibility to AXNodeData::SetNameChecked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f8fb41
+
+### lacros: Add support for window deactivation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08a5e41
+
+### WebUI: Migrate action_link and color_utils to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb46ac0
+
+### Migrate Aura's TooltipView to AXNodeData::SetNameChecked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9320b35
+
+### [AppIdentity]: Switch to AnyWidgetObserver for tests.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f4fc1e
+
+### WebUI: Move cr/ui/focus_row_behavior and friends to ash/webui/common/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ffe01af
+
+### Fix PWA Tab bar top and bottom separator colors.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9b6104
+
+### Migrate RootView's AnnounceTextView to AXNodeData::SetNameChecked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd7b032
+
+### WebUI: Move bluetooth/ to ash/webui/common/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8985b49
+
+### Migrate TooltipIcon to AXNodeData::SetNameChecked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a61530
+
+### Add emphasized style for text replacements in dialog model label
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0186f4e
+
+### gpu: win: Move VSync observer to DirectCompositionSurfaceWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fc493fd
+
+### SelectFileDialog: Fix SelectFileDialogLinuxPortal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/29227a2
+
+### Create AXNodeData::SetNameChecked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ca94839
+
+### Refactor gfx::Transform constructors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c134f1
+
+### Render Pass overlay uv rects with scaling transform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e2da11e
+
+### views: Use z-order to position touch selection menu at top
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76a4850
+
+### Rename virtual-keyboard to interactive-widgets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7bd6d28
+
+### Add caller parameter in select_file.mojom
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f732827
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22d57db
+
+### Add caller param to SelectFileDialog::SelectFile()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a03ba4ca
+
+### Reduce Wayland log spam.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5c4402
+
+### Android: Make BaseRobolectricTestRunner use CommandLineFlags @Rule by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5719d4e
+
+### [Extensions] Add option to show per-extension site settings in dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47ac3ae
+
+### [PriceTracking] Change the price tracking icon view order
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3850bf3
+
+### [PriceTracking] Fix a null ptr crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a66fecb
+
+### borealis: Add a dialog for displaying installation errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e052ceb
+
+### Add IsActionRelatedCommand() static function to extensions::Command
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23d5ca5
+
+### [side search] Do not disable ss if the unified side panel is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59df539
+
+### add privacy disclaimer for demo preference page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bec9f7b
+
+### Migrate the bookmark-related views to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28c44c1
+
+### Replace &* with base::to_address in TabStrip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67bed0a
+
+### [Richer Install Modal] Adding integration test support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1811f7a5
+
+### Show memory savings in high efficiency dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb34ff9
+
+### Migrate DownloadItemView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41e646b
+
+### Add auth test in lock screen section of os settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab0e106
+
+### DPWA: add more detailed install dialog tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2a9101d
+
+### Migrate WebAppOriginText to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/517da1e
+
+### Migrate infobar views to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/738e608
+
+### Migrate browser's Tab view to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bce6756
+
+### Migrate PaymentRequestRowView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3be8fa0
+
+### Migrate DesktopMediaListView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaa8c7e
+
+### Implement the confirmation chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/548962d9
+
+### Migrate ExtensionInstallDialogView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37f6725
+
+### Migrate Autofill popup views to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb40b98
+
+### Migrate DesktopMediaSourceView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79e6786
+
+### Migrate BorealisInstallerView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2432255
+
+### Migrate FindBarView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd159110
+
+### [Partial Translate] Append ellipses to translated text if original selection was truncated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8973181e
+
+### Migrate ParentPermissionDialogView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43cdb21
+
+### Implement dialogs for the exceptions list in performance settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52c509e
+
+### Change Window Placement to Window Management for site settings pages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eeedaca5
+
+### Migrate LocationIconView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ec309b
+
+### Migrate IconLabelBubbleView to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6950a7d
+
+### Remove legacy launcher versions of ChromeAppListModelUpdaterTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7b58b0
+
+### Migrate SidePanelResizeHandle to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64d009a
+
+### Refactor code for location bar animation delta calculation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f76e3827
+
+### Migrate PasswordGenerationPopupViewViews to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8886008
+
+### Migrate some Omnibox views to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c87d1b4
+
+### Migrate TabGroupHeader to AXNodeData::SetNameChecked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5381d0
+
+### Reland "Reland "[macOS] Make the Bookmarks menu work in the zero-profile state""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b925ec
+
+### [Partial Translate] Fix Full Page translation from the PT Bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db25f8f
+
+### [Tab Hover Cards] Ensure thumbnail image is thread-safe.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af7df76c
+
+### Projector: Fix ProjectorNavigationThrottleTest failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d01958
+
+### Fixing a bad merge in High Efficiency bubble dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0d6ca9c
+
+### [Code Health] Migrate ProxyConfigDictionary to base::Value::Dict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21c16e2
+
+### [FastCheckout] Set up proper scrolling on detail page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/018f9ea
+
+### Set dialog caller when provided in SelectFileDialogExtension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3336fef
+
+### Add user-prefs to chrome://apc-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0d3639
+
+### [dPWA Testing] Add CheckAppNavigation action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9c8ebd
+
+### [Sync] Rename signin_promo_choose_account_button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83fee27
+
+### [Sync] Rename signin_promo_continue_as and IDS_SIGNIN_PROMO_CONTINUE_AS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55b36ed
+
+### WebAppIntegrationTestDriver: s/GetAppStartURL/GetUrlForSite
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ee7ad3
+
+### Remove SmsRemoteFetcherUiController's icon from accessibility tree
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d14dbc7
+
+### Migrate //chromeos/ash/services/libassistant to namespace ash [5/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0725e60f
+
+### [APC Desktop] Use ThemeTrackingImageView for TopIcon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b42e43b1
+
+### [Sync] Rename signin_promo_close_button to sync_promo_close_button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e63833c8
+
+### Web App integration tests: Use EXPECT_EQ
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e1efee6
+
+### Improve readability of web_app::MaybeCreateAppBrowserController()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd9292e
+
+### [Sync] Rename signin_promo_account_image_size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db61aad0
+
+### Simplify entropy provider management.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a84bc22
+
+### Web app ThemeChange test compares RGB, ignores alpha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3de7565
+
+### fileSystemProvider: add a feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/66d63b4
+
+### webusb: Add a flag to enable WebUSB on extension service workers
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e96d08d
+
+### Drop the s from the collections in about flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2178ae4
+
+### [UPM][UPMErrorUI] Add flags variation allowing to ignore error ui timeouts
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0759efbc
+
+### [Eche] Add feature flag: kEcheSWADisableStunServer
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1ebe64a
+
+`);
+              </script>
+            </body>
+        </html>
