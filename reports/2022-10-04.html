@@ -1,0 +1,236 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-04
+### Revert "SelectFileDialog: Convert from RefCounted to std::unique_ptr"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f08548b5
+
+### [journeys] Deduplicate journeys.svg icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9348960
+
+### Remove obsolete preserve_offsets option in js_modulizer.gni.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db10c200
+
+### [fuchsia] Convert GFX client to modern input APIs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c585b1b
+
+### Update comments for ToEnclosingRect() and ToEnclosedRect()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35d19f3
+
+### [FilesTrash] Add educational nudge component
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2edc627
+
+### Fix MenuScrollButton Mouse Scroll Artifact
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cff39d4
+
+### Refactor Automation C++ methods which send data to JS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/859b13b
+
+### Remove the Raw Ptr Version of aura::Window::SetLayoutManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0aecc0
+
+### Ensure js_modulizer(), polymer_modulizer() are only used in CrOS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/379e182
+
+### GPU: Disable overlay for HDR videos when system HDR is not enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fcb8289
+
+### wayland: fix frame decoration when in tiled/ssd mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1144ea71
+
+### VTVideoDecodeAccelerator: Represent P010 frames as multi-planar
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5db303
+
+### ax_ui: move selection based AXTree methods under AXSelection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0ea0ef
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/387fa6d
+
+### Enable the test RememberOpenPWA and AppLaunchURLCancelsPrerendering.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2318c6cf
+
+### [mparch] Migrate GuestViews to MPArch in signin_utils.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13dce3e7
+
+### Clean up code related DownloadLater feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e07489
+
+### Overwrite MediaSessionNotificationItem session metadata
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f11f729
+
+### [Tote Exp] Remove suggestions - Part 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45b01b0
+
+### [Code Health] Convert Value::GetListDeprecated() to Value::GetList() in /chrome/browser/ui/app_list/search/search_result_ranker.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f5c1f0
+
+### Add overloads to avoid copying base::Feature with ScopedFeatureList.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f93d3999
+
+### [Cast2Class] Add metric for count of incorrect access codes per dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d182862
+
+### [Code Health] Convert Value::GetListDeprecated() to Value::GetList() in /chrome/browser/ui/webui/chromeos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2693d625
+
+### Unit test added for TailSuggestionViewBinder. And Resolved some minor styling/typo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3ba7e29
+
+### Addresses Flaky browsertest issues.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3350c4a
+
+### WebUI: CrOSSettings: Add signin button for details pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20bf490
+
+### [Partial Translate] Append ellipses to translated text if original selection was truncated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bba2d1
+
+### Fixing flakiness in Battery Saver Browser Tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca9544f
+
+### [PriceTracking] Disable price tracking test on Fuchsia
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21ee347
+
+### personalization: clean up personalization section in os-settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf15d6c
+
+### Adaptive suggestions: consistent keyboard handling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/549df21
+
+### Make grouping pinned tabs emit a valid sequence of events.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b45e5f8
+
+### [personalization] Cleaned up SetCustomWallpaper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ac210c
+
+### [dPWA] Launch Chrome App Depreaction 'launch anyways' UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae2c4d4
+
+### Quick Answers: Fix a11y DCHECK error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4e67bad
+
+### webauthn: Bring new request dialog up to spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/564920b
+
+### #Lens block all background navigation that leaves origin domain.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c28e9ab
+
+### [fyfre]Create the HTML structure of the FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9c4609
+
+### Disable SystemUILaunchMultipleDeskTemplates on LSan/MSan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/685c8c7
+
+### Revert "[ReArchPPV] Move utils out of \`ProfileCreationSignedInFlowController\`"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b7024f
+
+### [Code Health] Convert Value::GetListDeprecated() to Value::GetList() in /chrome/browser/ui/webui/signin.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0de11df
+
+### Disable CreateSignedInProfileDiceReenter profile picker test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02bdc3ad
+
+### Use auth session for quickUnlockPrivate.getAuthToken
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa9df08
+
+### [ReArchPPV] Move utils out of \`ProfileCreationSignedInFlowController\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c00b98862
+
+### [privacy sandbox] Rename 'dialog' to 'prompt'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7739a422
+
+### arc: Check need_fixup state for ARC apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3251a8d8
+
+### Refactor Value usage for chrome/browser/media/router/providers/cast/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34801c7c
+
+### capture-mode-projector: Fix crash when exiting in kWindow Mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c1b6ef0
+
+### Update Journeys chrome://flags entry to have an option to show Show More pill
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bebfc0ef
+
+### arc: Remove nearby-sharing-arc flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6b965fc
+
+### Add plumbing to properly identify in-process aura windows on Lacros
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dad8fb69
+
+### webauthn: Add UI flag for new desktop UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d164cd5
+
+### Add kUseDMSAAForTiles to about flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a416481
+
+### [AMF] Add a feature flag for gaia id seeding in AccountManagerFacade
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d2408c2e
+
+`);
+              </script>
+            </body>
+        </html>
