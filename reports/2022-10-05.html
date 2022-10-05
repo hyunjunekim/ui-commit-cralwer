@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-05
+### [FilesF2] Update container doc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f6e416
+
+### Catch assert due to missing Metrics Reporter marks in Tab Search
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a08f71b
+
+### Update the transform matrix for fullscreen overlay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0b0530
+
+### GLImageIOSurface: Remove RGB emulation, break non-EGL paths
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8183951
+
+### [FilesRecentFilter] Remove audio/videos/images from volume root type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7c57bb
+
+### Temporarily disallow gfx::Tansform::Affine()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ba0463
+
+### [journeys] Visual design updates in journeys side panel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/46a8cc6
+
+### [FilesGM3] Presumbit task to check _gm3.css counterpart
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b145a76
+
+### [CrOS Network] Add new string for to-many-stas shill error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7d2494
+
+### Obtain cursor data from CursorShapeClient
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fea5080
+
+### lacros: Enable more interactive_ui_tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d9c428
+
+### GLImageIOSurface: GLImageIOSurface::CopyTexImage and entrails
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31a3117
+
+### [journeys] Fix menu actions, delete modal and update placeholder
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6fcc65
+
+### Revert "[linux/wayland] Used wayland-protocols from the sysroot."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e3f83064
+
+### [DragDrop] Add drag event dispatch helper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78e7af8
+
+### immersive mode mac: macOS 13 crash fix
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0ca44d
+
+### Enable FakeKeyboardHeuristicFlag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76792df
+
+### ozone: evdev: Add additional device forms to FakeEventConverterEvdev
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6acda3
+
+### AT actions API: Always expose default action at index 0.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c287736
+
+### Revert "ash: Replace layer delegates with gfx::LinearGradient"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4838ad6
+
+### gfx::AxisTransform::FromScaleAndTranslation()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c923fd7
+
+### ax_test: move AXTree selection unit tests into AXSelection unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b1a74c
+
+### Add DisplayP3, Rec2020 and AdobeRGB to XYZD50 color conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6fe1f4
+
+### [flatland] Handle Presents coming before LayoutInfo is received
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3aab2f2a
+
+### DanglingPtr: fix dangling ptr in widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09410db
+
+### Ensure AccessibilityUtil's ModeChangeHandler can be recreated when needed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec6e86f
+
+### Make a wrapper for worker raster context provider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c1ee8e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b17d7d8
+
+### [GLImage] Remove dead includes of GLImage subclasses
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b8b0e97
+
+### Adding color conversion from Lab to LCH
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/037f1da
+
+### gpu: Fix uninitialized variables in DC layers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/21bbc971
+
+### Use base::test::FeatureRef for feature vectors in //ui.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8346d5d
+
+### [linux/wayland] Used wayland-protocols from the sysroot.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fcc5ded
+
+### app_list: Clean up "bubble" app list browsertests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d85bc4
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/crostini_*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d86b71f
+
+### holding space exp: Fetch local file suggestions on persistence restored
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59488661
+
+### [ConsentV2] Default enable ConsentV2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2aa2fa
+
+### borealis: Update strings/images for borealis installer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f7fe68
+
+### [Metadata] Merge offer_label to the Suggestion::labels vector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a67fd70
+
+### [Sheriff] Disable failing SaveCardIcon test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26b93ba
+
+### Added divider line in CCT menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7ad677
+
+### [PriceTracking] Update icon state after removing bookmark
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/151674e8
+
+### CodeHealth: Delete duplicate web app uninstall function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c26cac
+
+### [PriceTracking] Add user action for price tracking native UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/919d930
+
+### #Lens Add unit tests for LensSidePanelNavigationThrottle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d66cbf
+
+### Bypasses flaky tests until more investigations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2801cf
+
+### Fix net::DohProviderEntry to use base::Feature helper macros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6624fc485
+
+### [Extensions] Remove filename from FadeLabel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a81abaa
+
+### Adding New Badge Icon to Performance Menu Item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee6582c
+
+### Remove experimental explore sites code
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/64a6f05
+
+### Rename ContentSettingsType::WINDOW_PLACEMENT to ContentSettingsType::WINDOW_MANAGEMENT.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c2e6d2
+
+### DPWA: default to OMNIBOX_INSTALL_ICON for InstallDummyWebApp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67e744c
+
+### [Code Health] Convert Value::GetListDeprecated() to Value::GetList() in /chrome/browser/ui/cocoa.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2777f268
+
+### personalization: remove isPersonalizationHubEnabled flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6436a61
+
+### [FedCM] Remove |fetched_icons_| from AccountSelectionBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e906f9
+
+### NetworkPortalNotificationController: Notification never times out
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b9bc79
+
+### Introduce getCurrentGurl to LocationBarModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/084c790b
+
+### [Code Health] Convert Value::GetListDeprecated() to Value::GetList() in /chrome/browser/ui/webui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe117fd
+
+### [Start] Update margins and paddings for Feed disabled improvement.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d54ce75
+
+### [Parent Access] Cache the ParentAccessToken in the UI handler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07dbee0
+
+### [journeys] Make Side Panel UI log metrics correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fafc4a
+
+### Migrate web_applications/ off of prefs::ScopedDictionaryPrefUpdate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9306985
+
+### Use base::test::FeatureRef for feature vectors in //chrome/browser/ui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7d79e867
+
+### AppService: Factor out policy_ids code into policy_id_util.{h,cc}
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/314b8e9
+
+### Hide ink drop when the memory saver dialog closes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffc5716
+
+### Discard Occluded Bitmaps on Android
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9fe443bf
+
+### [known_user] Remove deprecated known_user::GetAccountId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d923818
+
+### Safety Check: Deregister insecure credential observer on disabling JS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c237708
+
+### [ntp] Mark NewTabPage.CustomizeAction as obsolete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f50340
+
+### [Read Anything] Add drop-down for line height in toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fb090b
+
+### SigninEmailConfirmationDialog: Minor gender-neutral comment fix.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e20f819
+
+### [dPWA Testing] Add CheckBrowserNavigation action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/696df1a
+
+### [FastCheckout] Hide empty space for empty strings in the UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/172845c
+
+### [Code Health] Convert Value::GetListDeprecated() to Value::GetList() in /chrome/browser/ui/webui/chromeos/in_session_password_change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20a2d5f
+
+### [settings] Measure 'All sites' load time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65c81b0
+
+### Update dir metadata for shared supervised user code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35474ff
+
+### [APC Desktop] Invalidate focus timer on prompt interaction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4812b00
+
+### Add the subpage for managing user dictionaries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8f93bb
+
+### Enable stack switching flag for arm64
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df4456d9
+
+### Feature flag for enabling CVC authentication in VCN yellow path
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/13d8dde
+
+### [memories][omnibox] Add suggestion row flag variations.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5dbeb83
+
+### [omnibox][domain] Add domain suggestions to HQP.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/37b13bd3
+
+`);
+              </script>
+            </body>
+        </html>
