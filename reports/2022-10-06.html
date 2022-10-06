@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-06
+### [Chrome/Android] Refactor to current drag/Drop feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e18f4933f
+
+### gfx::Transform::TransformRect[Reverse]() -> [Inverse]MapRect()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/003600d
+
+### Expand l10n_util placeholder check
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c567ae7
+
+### Add gfx::Transform::[Inverse]MapRect(const gfx::Rect&)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/901b935
+
+### [DLP] Add close label in policy info modal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6b2e23
+
+### Revert "[DragDrop] Add drag event dispatch helper"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0308d0f8
+
+### Add missing length check before accessing |charactersIgnoringModifiers|
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8644996
+
+### Remove unused variable tracking if we are in the destructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31f45bf
+
+### Clean up platform Automation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14fdbeb9
+
+### ax_ui: switch AXPosition to using AXTree, part1
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/038bf16
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc2fdbd
+
+### Revert "Enable FakeKeyboardHeuristicFlag"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5aa26db
+
+### gfx::ColorTransform: Fix HDR metadata cache collisions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/518f796
+
+### Remove special case for root visual in visual tree rebuilding
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e90ded
+
+### [FilesCleanup] Remove all deprecated root types in volume manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e82124
+
+### [FilesTrash] Exclude trashed files from the tote model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88e2f35
+
+### personalization: remove MigrateCollectionIdFromChromeApp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11f5ecfb
+
+### Fixing an issue where the arrow for the battery saver promo isn't placed correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5fcac4
+
+### [Shortcuts] Decrease score threshold for shortcuts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eddfb0
+
+### Clean up BubbleAppListWithRecentAppBrowserTest.MouseClickAtRecentApp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af92655e
+
+### [PriceTracking] Fix UI issues for side panel list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df2a0771
+
+### Reland "[ConsentV2] Default enable ConsentV2"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89fc240
+
+### [omnibox][grouping] Drop SuggestionGroup in favor of GroupConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bf6a6e
+
+### Revert "Make confirmation chip independent of request chip"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f47b1f
+
+### print dialog: Update dialog to add view ppd button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93f3c094
+
+### Fix invisible tabs after exiting fullscreen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6ec3d7
+
+### linux: Remove breakpad integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c44905
+
+### [page info] Add icon for FPS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80f225f
+
+### Move {ash => chromeos/ash}/components/proximity_auth/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5813efe
+
+### app_list: Clean up productivity launcher flag in ChromeOS browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a26cdc
+
+### Enable BrowserAppShelfControllerBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7440f5
+
+### projector: Suppress system notification for uploading screencast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd858ef
+
+### Skip Creating Template URL Service Sometimes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca07517
+
+### [Omnibox] Determine isInternalPage using already-parsed scheme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53f8dd4
+
+### [Shopping list] Query new shopping info on navigation commit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cc8107
+
+### Make confirmation chip independent of request chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b121781
+
+### Reland "Implement the confirmation chip"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eeb6206
+
+### Respect SyncTypesListDisabled in OS sync settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00e99001
+
+### [Media Router] Move cast_channel component to Media Router component.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cb6068
+
+### breadcrumbs: remove ...KeyedService::GetEvents()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab2ad64
+
+### [Passwords Import] Test file selector cancelation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2491513
+
+### /#Lens Added browser tests for LensSidePanelNavigationThrottle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddd911ff
+
+### [UPM] Use eviction utils from PwM-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b013d41
+
+### Remove ForceSignin DCHECK on ProfilePicker error message.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa80129
+
+### [APC Desktop] Add icons for completion in password reset.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4db80a9
+
+### Move {ash => chromeos/ash}/components/settings/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1eaedc4
+
+### Reland "Move utils out of \`ProfileCreationSignedInFlowController\`"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67298a9
+
+### Fix typo in new LaunchMode metric name.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2809ab
+
+### Revert "app_list: Clean up "bubble" app list browsertests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ad707
+
+### Prevent clearing InkDrop state when context menu is shown for BookmarkButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2155a909
+
+### Biometric authentication in credential manager dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9c62ab
+
+### [OOBE] EnrollmentScreenHandler cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13c4471
+
+### [site data] Fix padding and button highlights
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f551909
+
+### Add new app list sort order: kAlphabeticalEphemeralAppFirst
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6694616
+
+### [Sub Apps] Use WebAppTabHelper::GetAppId to get the calling app id
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a95d602
+
+### Revert "[ConsentV2] Default enable ConsentV2"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cc4bbf
+
+### Fix WebAppIntegrationTestDriver::CheckAppInListIconCorrect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0953ab1
+
+### Show confirmation bubble after enabling Biometric Authentication
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b6191c
+
+### [Office upload] Add test for Drive upload workflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52749d3
+
+### [string match] Replace the prefix matcher in FuzzyTokenizedStringMatch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81a6ee2
+
+### [SafetyCheck] Add notification count to notification UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a1a723
+
+### Add content setting icons for PiP 2.0 window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2699997
+
+### arc: Hide arc-enable-virtio-blk-for-data when ARCVM is not enabled
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4768546
+
+### Add a chrome flag for text-in-shelf
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e893a8d
+
+`);
+              </script>
+            </body>
+        </html>
