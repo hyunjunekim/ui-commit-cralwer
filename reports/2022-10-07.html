@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-07
+### [Read Anything] Add color ids for theme
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4877074
+
+### Revert "Move SetFullscreenMode to toplevel and trigger configuration events on"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fdc1d80
+
+### Replace base::as_const() with std::as_const().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaf6fc2
+
+### Give power bookmark chip price track green colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8715055
+
+### [Toolbar] Clear dirty rect of resource adapter when snapshot_same
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d8d9b6
+
+### Revert "Fix lacros flicker when exiting fullscreen mode"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/019d279
+
+### ax_ui: switch AXPosition::createTreePosition to take AXNode instance
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ca73e0
+
+### Remove unneeded codepath AXWidgetObjWrapper::OnVisibilityChanged
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec97e10
+
+### Prevent hang report when file picker is open in utility process
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4293668
+
+### ax_test: get rid of TestAXNodeWrapper::HasVisibleCaretOrSelection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98522f0
+
+### Linux UI: Log SystemTheme in UMA
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16fa99b
+
+### ax_ui: crash on getting unignored selection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68da7b4
+
+### ozone/drm: Drop legacy AFBC handling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91c9080
+
+### shortcuts: Add flag called "enable-shortcut-customization"
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d363a179
+
+### DLP: Add Move & plural block toast string
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d3731d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abc7874
+
+### Add FrameData struct to SwapBuffers methods.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/baee635
+
+### wayland: automatically generate all required headers/sources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2ed965
+
+### GLImageIOSurface: Break and remove non-EGL path
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02020b4
+
+### Replace GetWeakPtr() with GetMutableWeakPtr() in /ui/base/clipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0cb8358
+
+### Reland "[linux/wayland] Used wayland-protocols from the sysroot."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbfa2be4
+
+### [Fluent Scrollbars] Test Fluent scrollbar interactions using
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dc4f18
+
+### Add chrome://files-internals debug page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/702f864
+
+### app_restore: Allow multiple ArcAppLaunchHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4dfded
+
+### Migrate //chrome/browser/ui/webui/settings/ash to namespace ash [1/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff56970
+
+### Refactored optional button controllers to share code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a2262f
+
+### Arc clean up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7de44c7a
+
+### Fix a comment in app_list_sort_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/229dc8cb
+
+### Speculative fix for crash in StatusBubbleViews::AvoidMouse()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9e23dd
+
+### Split service worker check from other installable checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8691a36
+
+### [CodeHealth] Remove calls to Value::GetAsDictionary (c/b/ui/webui).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80d0f4e3
+
+### Display folder child count and abbreviated URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca25f1c
+
+### [Privacy Hub] Renaming the PrivacyHub flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3f59233
+
+### Remove Suggestion Chips.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06a76c5c
+
+### Revert "[omnibox][grouping] Plumb GroupConfig proto to Java"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9b1fb2
+
+### Tab group support for CompoundTabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8da920
+
+### [side_panel] Add open_in_new_tab_url_callback_ to SidePanelEntry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ae9d5e
+
+### Replace GetWeakPtr() with GetMutableWeakPtr() in /chrome/browser/ui/ash/projector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4c6d95
+
+### Revert "WebUI: Support sanitizing animated images"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1ec1a7
+
+### Clean up retrieving the target language.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/facf305
+
+### Dismiss IPH when page action chip is clicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a83dc9
+
+### [omnibox][grouping] Plumb GroupConfig proto to Java
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68c331b
+
+### Arc clean up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4be2ec0
+
+### app_list: Rename AppListWithRecentAppBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47db3c1
+
+### [User Education] Update IPH documentation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/015e6d8
+
+### Favicon: Add a flag to force light mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6cc9927
+
+### [Omnibox] Implement the divide line below the Omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4de9db3
+
+### Removes full cycle sync check.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b916f02
+
+### Avatars: migrate avatar image usages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc9aba1
+
+### Attribute desk metrics to Save & Recall
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb046ce
+
+### app_list: Clean up AppsGridDragBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72c05b0
+
+### Replace GetWeakPtr() with GetMutableWeakPtr() in /chrome/browser/ui/ash/holding_space
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8979197
+
+### Replace GetWeakPtr() with GetMutableWeakPtr() in /chrome/browser/ui/views/side_search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22796bf1
+
+### [Start] Remove unused deps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/289322f
+
+### [DownloadBubble] Add crash keys for DownloadBubbleRowView labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/247e4ee
+
+### CrOS Captive portal notification: Show an incognito tab by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddbafa3
+
+### Calculate bookmark favicon color when not themed and dark mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf9758f
+
+### [APC desktop] Use ax strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a4bffa
+
+### [SigninScreenHandler]: Remove CallOnReturn helper class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e03f21c8
+
+### [Start] Fix the height of top placeholder when DSE is changed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c34273c
+
+### Revert "[APC Desktop] Add an action to set the flow type."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec6b2cf
+
+### AuthFactors/AuthSessions: Merge two feature flags into one
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbe22390
+
+### [APC Desktop] Restore ax mode after text has been announced.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7335b2
+
+### [site data] Move the delete button to the main level
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7025369
+
+### [CaptivePortal][OOBE]: Update error message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3875dbb
+
+### [FirstRun] Remove profile parameter from DoPostImportTasks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d283a17
+
+### [APC Desktop] Add an action to set the flow type.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cab626d
+
+### Reland "Make confirmation chip independent of request chip"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4748cf3
+
+### [Sheriff] Remove unnecessary buildflag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31bec7d
+
+### Migrate //chromeos/ash/services/libassistant to namespace ash [6/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f57f3f2
+
+### Replace GetWeakPtr() with GetMutableWeakPtr() in /chrome/browser/ui/extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fc75ec
+
+### Fix VolumeControllerTest For VolumeGranularity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0c5495
+
+### Remove const qualifier on DiceWebSigninInterceptionBubbleView::GetHandle()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/255bda5
+
+### [Sheriff] Disable SystemUILaunchMultipleDeskTemplates on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c16f3f7
+
+### Add testing for LocalFileSuggestionProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3d6f32a
+
+### [ZPS] Refactores and simplifies ZPS prefetching triggering on Desktop
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3c2569e
+
+### [PCCT] Always show nav bar buttons during resize
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a7060edd
+
+### More UseDnsHttpsSvcb launch cleanup
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/faec7e5
+
+`);
+              </script>
+            </body>
+        </html>
