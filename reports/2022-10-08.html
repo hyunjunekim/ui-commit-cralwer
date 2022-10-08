@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-08
+### [side_panel] Add control for 'Open in new tab' button in Header
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/636830e
+
+### Remove GBM version checks in gbm_wrapper.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6cdb3b2
+
+### win: sync display/win and extensions idea of a device id
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a952093
+
+### Add a feature switch DirectCompositionLetterboxVideoOptimization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4a9ace
+
+### GpuMemoryVideoFramePool: Bind P010 planes separately on macOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90d17b6
+
+### Enforce AXNodeData::SetDescription() is only used for non-empty strings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca2b5ce
+
+### Add margin to contents view when wrapped by a scroll view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e53ffb1
+
+### mac merge: merge AXHelp implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f0796e
+
+### fix a11y underline for localised links
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5378006
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51d29f0
+
+### DanglingPtr: fix dangling ptr in browser_font_resource_trusted.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df95617
+
+### Replace GetWeakPtr() with GetMutableWeakPtr() in /ui/ozone/platform/wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03c0432
+
+### Files app: Propagate MountError::kBusy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7417fd5
+
+### [Pixel Diff Ash] Add an API that compare pixels within specified areas
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb810ba
+
+### Reland "[ConsentV2] Default enable ConsentV2"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97ef8f1
+
+### [Omnibox] Answers in Suggest should appear on a card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23779268
+
+### Fix -Wshadow instances on LaCrOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbbae2d
+
+### [Parent Access] Record timestamp in ParentAccessDialog::Result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87d6ade
+
+### [ZPS] Pass page URL and page classification to StartPrefetch on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7b174a
+
+### [Omnibox] Update paddings for suggestions with background
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dc2d5a
+
+### [PriceTracking][Shopping list] Mitigate color shift issue on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ae17d64
+
+### [PriceTracking] Focus the label for accessibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e31fa9e
+
+### Update the start padding on omnibox suggestion header and most visited tile padding based on omnibox revamp phase 2 change. Renamed margin to padding.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b205ee1
+
+### Make StartBasicAnimation private to TabContainerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11f9e07
+
+### Avatars: change migration logging to checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffb0a0a
+
+### Rename NetworkHealthService to NetworkHealthManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfc4365
+
+### [omnibox][grouping] Plumb GroupConfig proto to Java
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af43757
+
+### Add metrics to the page action chip IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd2047d
+
+### Show and hide inkdrop when IPH is Active
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/395fd07
+
+### Do not depend on a full Robolectric test SDK for org.json
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51ba7e3
+
+### [Read Anything] Update theme colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a05fe69
+
+### [Omnibox] Refactored the animation translation logic for status view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c03ac4b
+
+### [Omnibox] Suggestions with "squared off" corners should have 2dp radius
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58354a06
+
+### [CrOS Bluetooth] Remove kBluetoothRevamp flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/91a35a2
+
+### DPWA: support screenshot label for install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f198bf
+
+### Logic refactored and test added for finance ticker color reversion for Asian countries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/551eb32
+
+### Add normal state for Lens Upload dialog with open/close functionality.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13b7d547
+
+### [DTC] Update the Connectors Internals Debug Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a656854
+
+### [Read Anything] Save user's line spacing preference
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c2ac31
+
+### holdingspace: Close HoldingSpaceTray bubble after opening an item.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba616b1
+
+### Add parsing for a CVC challenge option in the UnmaskCardResponse
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d284596e
+
+### Close any previously open ChAI dialogs before opening a new one
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e860c13
+
+### Remove const qualifier on GetWeakPtr() helper in /chrome/browser/ui/views/desktop_capture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/190ddd9e
+
+### webauthn: Don't show device names and AoA buttons for legacy caBLE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a83fa58
+
+### [SigninScreenHandler]: Remove SigninScreenHandlerDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39f6612
+
+### Cancel ongoing authentication in ManagePasswordsUIController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59c9f76
+
+### [SafetyCheck] Pass pattern instead of origin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5649bb2
+
+### [PriceTracking] Auto enable email notification on first subscription
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd836289
+
+### [Parent Access] Add OnParentApproved method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e29a04b3
+
+### Update the target language after partial translation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb95734
+
+### [Fast Checkout] Log user actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/826e92c
+
+### [site data] Add strings for the new dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eda0d27
+
+### [Code Health] Migrate to base::Value::Dict in GaiaScreenHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/332850b
+
+### OOBE: Update Consolidated Consent strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfabfc8
+
+### [FPS][PageInfo] Adding metric for cookies info subpage with FPS info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abf8e3da
+
+### [site data] Fix sites order and button highlight
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d851a446
+
+### Fix screencast_manager_browsertest.cc in branded builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9844844
+
+### Revert "Avatars: Support animated images for UserImageLoader"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6768374
+
+### [startup] Don't create Guest profile for the profile picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b2caba
+
+### [PriceTracking] Add tests to check feature flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bebdbca
+
+### AboutThisSite: Prevent crash when BrowserView is destroyed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96d9c65
+
+### Remove remaining base::Feature copies in //chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9aa97e3
+
+### [fyfre]Remove hardcoded strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a912584
+
+### Reenable disabled warnings in third_party/shell-encryption
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7faeda
+
+### Revert "Split service worker check from other installable checks"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/838cbb6c
+
+### Add bitmap based WebAppIconHealthChecks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6043eb
+
+### Reland "[APC Desktop] Add an action to set the flow type."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ded2623f8
+
+### Avatars: Support animated images for UserImageLoader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/833346a
+
+### PrivacyIndicators: Make sure indicator works with multiple apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0afa224
+
+### Add basic WebAppIconHealthChecks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc7c5bd
+
+### arc: Prevent launch duplicate ghost window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b543045
+
+### Revert "Reland "[ConsentV2] Default enable ConsentV2""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e298ac
+
+### Expose holding space feature flags to about://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6fca0bc
+
+### [CrOS HaTS] Add feature flag for new histogram use.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c3b67db
+
+### [UPM][Android] Add flag overriding the UPM error handling for testing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/60f17aa
+
+### CrOS Shelf: Add flag to guard focus order change
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8349ead
+
+`);
+              </script>
+            </body>
+        </html>
