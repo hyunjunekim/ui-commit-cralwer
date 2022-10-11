@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-11
+### WebUI: Migrate more ui/webui/resources/js files to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d35b91d
+
+### [QT] Fix crash on launch when CFI is enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17b12b5
+
+### views: hardening Widget::H*() for destroyed NativeView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be4cdde
+
+### Refactor display::win::DisplayInfo to display::win::internal::DisplayInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb6672a
+
+### Remove AllowForTriviallyDestructibleType helper for base::NoDestructor.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/117c6a9
+
+### [journeys] Specify a history clusters no results string
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e34960
+
+### Revert "ozone/drm: Drop legacy AFBC handling"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca59ffd
+
+### FileManager: Remove obsolete Cloud Import CSS styles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5389851
+
+### Add a clip path to BubbleFrameView's main image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/651db21
+
+### [lacros] Fix vk occlusion unscrolling when clicking on toolbar buttons.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f753de1
+
+### views: Split WidgetWithDestroyedNativeViewTest into smaller tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0a7505
+
+### Reland "ash: Replace layer delegates with gfx::LinearGradient"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad01a68
+
+### [flatland] Handle 0x0 size in FlatlandWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a92654
+
+### [lacros] Implement atomic virtual keyboard change requests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2739cb
+
+### Fixes AXTableInfo headers state to behave with spanning headers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a48a86
+
+### [Mac Number Cmds] Ignore key codes for number row keys in Dvorak R/L
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c521f49
+
+### libstdc++: use math.h for atan2f in gfx::LabToLCH
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a120a43
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32efd91
+
+### Add a histogram timer to \`AXTree.Destroy\`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3505a20d
+
+### [linux/wayland] Improved internal diagnostics in the connection.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2717ffc
+
+### DanglingPtr: fix dangling ptr in aura::Env
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b011921
+
+### WebUI: Add static-encode attribute for CrAutoImgElement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/907bd94
+
+### [MirrorSync] Invalidate frontend cache for syncing items
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30058ab
+
+### DanglingPtr: fix dangling ptr in AXSystemCaretWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00d40895
+
+### [Parent Access] Add OnParentAccessDone method to ParentAccessUIHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9677465
+
+### Move //{ash => chromeos/ash}/services/nearby
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f0993a
+
+### AppList removes file suggestions through the service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/217de397
+
+### [journeys] Add flag for side panel journeys queryless view
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/41373d7
+
+### Add loading state to Lens upload dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7ee5fe
+
+### [FilesTrash] Exclude trashed files from LocalFileSuggestionProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/476e4ee
+
+### [omnibox][grouping]Clean up tests using buildGroupConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78e785e
+
+### [SafetyCheck] Add functionality for undo button in toast notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f903f6
+
+### Convert memory savings in memory saver page action chip to correct units
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fb355e
+
+### Update the location bar background depend on focusing status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1df51ca
+
+### desks_api: Record number of windows being closed per each source.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b15c189d
+
+### [Omnibox] No cursor blink when no keyboard showing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bccfbea
+
+### Adds dragging state to upload dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ec47e5
+
+### Improve safety on accessing tab group views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63f91236
+
+### [omnibox][grouping] Use Group Header IDs for zone rounding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd805db
+
+### [Remote Playback] Pass Remote Playback metadata from WebMediaPlayerImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/567aee90
+
+### color_analysis: rm unused import
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/695f54c
+
+### Removes kPeeking state in AppListViewState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc318f9
+
+### Disable detachable tabs in PWAs on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19a420d
+
+### [Read Anything] Change separator colors to match theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e64a98
+
+### Parametrize relevant tests with UseAuthFactors.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ae6d4a
+
+### Update subtitle on the passkeys settings page for Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2431c99
+
+### [personalization] Added wallpaper ash test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9091e8
+
+### [Signin] Show IPH when skipping Sync Confirmation in Signin Intercept
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76f6bb5
+
+### Following Ash to not show bookmark separator for Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae6101e
+
+### [Privacy Hub] In-session camera off notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9662fc5
+
+### Rename TailoredSecurityDesktopDialogManager files to match class name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf5bec5
+
+### crOS: Add UMA metrics for SecondaryGoogleAccountUsage policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa1254a3
+
+### [New Deal] Ignore update status for auto updates that will be deferred
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e760bee
+
+### [ReArchPPV] Pull logic into standalone Lacros FRE Flow Controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/794b295
+
+### CrOS Captive portal signin: Use a unique incognito profile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58bdb13
+
+### [SigninScreenHandler]: Remove ScreenlockBridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/008ba56
+
+### Add metrics evaluating how page info dialog openings relate to the confirmation chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24e0a84
+
+### [FastCheckout] Support only users with MSBB enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48491b1
+
+### Disable BrowserAppShelfControllerBrowserTest.ActivateAndMinimizeWindows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30d8e7b
+
+### Recreate view when location bar is not initialized
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/217212d
+
+### Fix StartupBrowserCreatorPickerTest.TestSetup/6 and /8 on branded builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59b3f0c
+
+### [APC Desktop] Officialize automatic password change string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6474fa8
+
+### Fix the single-origin pattern recognition in site_settings_helper.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76bf76a
+
+### color_analysis: rm unused import
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00944ef
+
+### [SafetyCheck] Parametrize notification count limits
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e93cb8fe
+
+### Indent omnibox text when location bar icon is overridden
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6aff90f
+
+### [dPWA Testing] Installing a Web Shortcut via policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d508591
+
+### WebUI: Add attribute to support static encode for SanitizedImageSource
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b86532
+
+### Reland "WebUI: Support sanitizing animated images"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c9e0e5
+
+### [FilesTrash] Exclude trashed files from local search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e9f64dc
+
+### [omnibox][domain] Add flag for HQP specificity feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/918d825
+
+### [SafetyCheck] Add feature flag for NotificationInteractionHistory
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d828f16
+
+### chrome/browser: Add flag for GL image processor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b5c4899
+
+### CrOS Settings: Add search feedback feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/71ae17c
+
+### dark/light: feature flag kDarkLightModeKMeansColor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/45a5adc
+
+`);
+              </script>
+            </body>
+        </html>
