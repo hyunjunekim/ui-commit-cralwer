@@ -1,0 +1,336 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-12
+### [Inline File Sync] Handle empty status.fileUrl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ea5a23
+
+### Remove gfx::Transform::TransformPoint() and TransformRect()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1755bce
+
+### WebUI: Migrate plural_string_proxy to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aab5001
+
+### [FilesTrash] Add metrics for failed restoration when parents dont exist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3d6873d
+
+### gfx::Transform::TransformVector() -> MapVector()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50b42cd
+
+### Fix GM3 presubmits on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93b0b7b
+
+### [Files]: Consistent reducer definition.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/21746b6
+
+### Revert "WebUI: Rename WebUIListenerMixin to WebUiListenerMixin."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce2bd86
+
+### WebUI: Rename WebUIListenerMixin to WebUiListenerMixin.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7105419
+
+### Use a \`std::map\` instead of a \`base::flat_map\` in \`AXPlatformNodeBase\`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/435c9ad
+
+### Remove global constructor from \`ax_platform_node_base.cc\`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2087ac4
+
+### Files app: Remove unused Cloud Import code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ec0d0e
+
+### File manager: Fix missing ts_library dependency
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f1ae9f5
+
+### Favicon: Add param to util function to use new forceLightMode flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97c8834e
+
+### views: fix a member variable naming in FocusManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/638dd4d1
+
+### [Mac Keyboard Shortcuts] Make Cmd-q warn before quitting w/Hebrew kboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5650295
+
+### Work around Ventura font bug
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5db9f5
+
+### Refactor gfx::MaskFilterInfo::Transform()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/add4f89
+
+### ax_ui: switch AXPosition to using AXTree/AXNode, part2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd4a53f9
+
+### [GL] [WebView] Introduce ScopedEGLImage and use it in VulkanGLInterop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88ebe59
+
+### views: stack a child widget immediately above its parent on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2b92da
+
+### Update naming of interactive-widgets meta property
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e1884d
+
+### DanglingPtr: fix dangling ptr in touch_handle_drawable_aura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e45fb3e4
+
+### [journeys] Match text styles for other side panels
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ea6275
+
+### Rename flag to OSKResizesVisualViewportByDefault
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/764946d
+
+### [Lacros] Fix dark theme not propagating on lacros WebUI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7cc0ac605
+
+### AXViews: Creates AXPlatformTreeManagerDelegate for abstracting away Web vs Views implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f9a4d9
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60c07db
+
+### Pad video onscreen rectangle for fullscreen letterboxing.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b78e8e05
+
+### Enable ProtoConvertor tests for MainContentExtraction.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc06ad2
+
+### Escape swap chain adjustment for scrolling down in fullscreen mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de24cff
+
+### [string match] Fix bug for isalpha crash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f491783
+
+### WebAppIconHealthChecks: Don't assume all web apps have names
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b342fd
+
+### Clean up CPA IPH flags and add feature for reader mode CPA button
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3ac349f
+
+### Refactor AutofillPopupDelegate::DidAcceptSuggestion() to take in a
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d41bfc7
+
+### Revert "Remove unused consolidated site storage controls code paths"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1a071ea
+
+### Split --install-isolated-apps-at-startup into proxy and bundle flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b66ff50
+
+### [test] Some clean up of app provider tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17322dc
+
+### [omnibox][grouping] Plumb GroupsInfo proto.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/754faf2
+
+### [Office upload] Improve alternate URL checks after Drive upload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83941e7
+
+### Remove PageInfoDiscoverability flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e60864
+
+### Refactor power bookmarks list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38ff514
+
+### Don't request focus when showing side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54f3918a
+
+### [Read Anything] Update toolbar icon spacing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8582d7a
+
+### [SafetyCheck] Entry point string updates for notification module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/099fbc2e
+
+### desks_api: Throttle immediate desk action.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fecd56a
+
+### chromeos: Clean up feature flag kManagedDeviceUIRedesign
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b587df
+
+### [GTS] Enable GTS on ToT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8def3b7
+
+### [omnibox][post-ac] Validate matches after transferring old matches.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f24a073
+
+### Introduce NavigationHandle::IsInOutermostMainFrame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4bbe1b
+
+### [Metadata] Modify the virtual card enroll bubble UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db6ef64
+
+### [side_panel] Finish implementing Journeys 'Open in new tab' button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6325af0f
+
+### [FedCM] Add desktop UI for iframe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4751622
+
+### [Fullscreen Control] Remove unused arg in GetPopupRect().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7ea64ca
+
+### Revert "[SystemWebApps] Add SWA support for PinnedLauncherApps policy"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5d843a
+
+### [iOS] Fetch affiliation groups from the Affiliation Service and group passwords (Part 1)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4a8d10
+
+### Remove unused consolidated site storage controls code paths
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a420414
+
+### Create a JS interface for the ParentAccessUIHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbedd2d7
+
+### wallpaper: remove accessor GetWallpaperColors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2a8f36
+
+### Fix NewTabPageUI::OnColorProviderChanged crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d49641b
+
+### [webui tab strip] Ensure caption buttons are not painted on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92f09ca
+
+### #Lens Add flag for supporting unified side panel for 3P DSE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4736bd2
+
+### local web approvals: update after screen styles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2845830
+
+### Remove temporary conversions and clean up.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d22b064
+
+### Metric collection for passkey management on mac and win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56ae3694
+
+### Fix OSSettingsRecoveryTest* for enabled kUseAuthFactors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9d09e9
+
+### Animate confirmation to fit instead of always expanding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27beda53
+
+### sheriff: die earlier in SendMouseMoveUITest.Probe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccd8061
+
+### [SystemWebApps] Add SWA support for PinnedLauncherApps policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf47082
+
+### Connect new Browsing Data model to All Sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da3ecea
+
+### Delete dead SyncErrorInfobar code
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e192820
+
+### Use base::DoNothing() instead of having a dummy class function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fadbb2
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/emulator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fba329
+
+### Migrate //chrome/browser/ui/webui/settings/ash to namespace ash [3/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba3d997
+
+### Add metrics for first party sets actions on all sites page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f42596b
+
+### isolated-apps: Show app name instead of origin in page info dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e13607f
+
+### [Office upload] Add integration test for OneDrive upload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ad0bc0
+
+### [Web Payment][CanMakePayment ID] Reverse flag meaning
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cf35bef7
+
+### ash: Add VC controls UI feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/189e615
+
+### cros: Remove dark/light flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0034c80
+
+`);
+              </script>
+            </body>
+        </html>
