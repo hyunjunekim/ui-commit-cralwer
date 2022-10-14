@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-14
+### Files app: Change format of time after midnight
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17e7b0d
+
+### Remove GLImage::Flush()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d729ced
+
+### ime: Use enum instead of bool for should_do_learning.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f32088e
+
+### [chromeos] Implement Ash.LoginSessionRestore.* histograms.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bda85d6f
+
+### Set flag DirectCompositionLetterboxVideoOptimization to enabled.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4de4f93
+
+### ax_test: Move Windows' AXTreeFormatters under ui umbrella (1/2)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c01d382
+
+### [journeys] Related searches updates
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/439816d
+
+### [journeys] Hide badges for side panel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5c576e
+
+### Migrate Blink, //ios, and //ui to use base::test::FeatureRefAndParams.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66dbbe8
+
+### Change std::find() to use base:: functions: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63af198d
+
+### [Select-to-Speak] Add feature flag for hover text improvements
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f581bb0
+
+### Rename code references to "Window Placement" to "Window Management".
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5eb94a9
+
+### [fuchsia] Use GraphicalPresenter for tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1cc00472
+
+### WebUI: Migrate event_tracker to TypeScript, fork for closure users
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08d512bc
+
+### [journeys] Update text styling and placement for cluster headers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e1ea6e1
+
+### ax_ui: crash on selection getting for an out of a tree object
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d81251
+
+### WebUI: Remove i18n_process.css
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ee05a0
+
+### Reland "WebUI: Migrate static_types to TypeScript"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c24c4f
+
+### Loosen destruction path in AXWindowObjWrapper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba128ad
+
+### Reland "ui: Support setting a default button in DialogModel"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7002625
+
+### Remove kSkipAccessibilityPaintChecks from Widget interactive ui test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f40d74211
+
+### [journeys] Update line height of url visits
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e3fedf6
+
+### Revert "exo: Improve DMA-BUF error message for bad formats"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9185e20
+
+### Remove kSkipAccessibilityPaintChecks from TouchSelectionControlImplTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c25cb5e
+
+### Reland "ozone/drm: Drop legacy AFBC handling"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e0eb4bf1
+
+### exo: Improve DMA-BUF error message for bad formats
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae5eb8b
+
+### mac: remove touchbar metrics code
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf2b8895
+
+### Remove kSkipAccessibilityPaintChecks from FocusManager unit test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de56473
+
+### Fix compile error with the macOS 13 SDK
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ce7d37
+
+### viz: Selectively reenable overlays on legacy VD
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/863d327
+
+### GLImageIOSurface: Separate out EGLSurfaceIOSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8df80e3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0236647
+
+### DLP: Fix managed icon tooltip accessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5496c9e
+
+### [a11y] Fix color picker's a11y in cr-customized-themes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fcf1a04
+
+### Revert "WebUI: Migrate static_types to TypeScript"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16b589d
+
+### Combine use_system_libwayland_client and use_system_libwayland_server
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2bcf935
+
+### WebUI: Migrate static_types to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/808f1451
+
+### Remove some FeatureAndParams -> FeatureRefAndParams aliases.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/988f3535
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/multidevice_*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/350b152
+
+### Avatars: add metrics for default image downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e7322be
+
+### Migrate //chrome/browser/ui/webui/settings/ash to namespace ash [4/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9b3f27
+
+### Web App Integration tests for Lacros: Call ReinitializeAppService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7769a912
+
+### Fixing BatterySaverHelpPromoTest failures on Fuchsia
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f966059
+
+### Show reader mode as contextual page action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8786b0
+
+### Enable profile migration for any user.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/685e6049
+
+### [PriceTracking] Add IPH for price tracking side panel list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb6205e
+
+### Relocate enable_basic_print_dialog build flag to //printing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/019ee04
+
+### Migrate //chrome to use base::test::FeatureRefAndParams.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/476166a6
+
+### [Fast Checkout] Add form interaction counts UKM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e926105
+
+### [Tote Exp] Avoid updating model suggestions along with other updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40d4b3f
+
+### CrOS captive portal: Use the dialog when not logged in or in kiosk mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8401caf
+
+### Reland "Avatars: Support animated images for UserImageLoader"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53f29a779
+
+### Move {ash => chromeos/ash}/components/tether/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0fb5a78
+
+### [Toolbar] Post capture request when controls unlock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4809a1
+
+### Add raw_ref<T>::from_ptr()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45d567f
+
+### Revert "Reland "webauthn: Change initial dialog sheet in new UI""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02b2e72
+
+### [Omnibox] Fix the dark mode colors on omnibox revamp phase 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b3bc2bb
+
+### [Shopping list] Apply policy in relevant locations on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fb1bc6f
+
+### Reland "Remove unused consolidated site storage controls code paths"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3c259c8
+
+### s/chromeos_ash/is_chromeos in accessibility settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f7baa2
+
+### OOBE: Add consent for establishing recovery factor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/403118f
+
+### Focus side panel content when side panel is opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b9f9e06
+
+### Don't collapse request chip before dismiss when confirmation chip is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/415a4cf
+
+### [Clean up] Remove duplicated header on cc file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3dea72
+
+### OOBE: Fix debug overlay for Consolidated Consent Screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30affd4
+
+### Handle web content changes correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c794446
+
+### CrOS captive portal: Add additional metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93c2231
+
+### [site data] Remove DCHECK for one entry per site
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aac4fd3
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/launcher_internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d60463
+
+### [site data] Advance focus after hiding a row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/942491e3
+
+### OOBE: Remove unused ScreenConfig from ConsolidatedConsentScreenView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c7176e
+
+### [Code Health] base::Value cleanup in .../in_session_password_change/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3caaead
+
+### [page info] Fix block third party cookies toggle subtitle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/286ce97
+
+### [SafetyCheck] Add strings for the block all button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/094f0e0
+
+### [Settings][Site Entry] Add aria-label to "More actions" FPS menu button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f1da0e7
+
+### Prioritize simultaneous permission requests in pending queue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bd9b87
+
+### [Omnibox] New feature added to Eliminate excessive RecycledViewPool#clear() calls.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/31bf608
+
+### [Extensions c2s] Add policy label to tab hover card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3a3fe4
+
+### Revert "Reland "Avatars: Support animated images for UserImageLoader""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48baf4c
+
+### [ SavedTabGroup ] Update the Keyed Service API in preparation for sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67bdf465
+
+### Add rate limiting to new badge animation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9f8e10a
+
+### [omnibox][simplified-ui] Adds feature flags for uniform suggest heights.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fe3b128d
+
+### [FedCM] Gate metrics endpoint behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c164858
+
+### IPv4 to IPv6 address synthesis described in RFC6052.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f1accfce
+
+### Revert "[VC]: add vc flags, connect to camera HAL server"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7aa9ab5
+
+`);
+              </script>
+            </body>
+        </html>
