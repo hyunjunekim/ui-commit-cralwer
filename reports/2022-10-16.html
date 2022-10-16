@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-16
+### Let gfx::Transform branch between AxisTransform2d and Matrix44
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c3548f
+
+### Move base::to_underlying() to its own header.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53211c9
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7830e55
+
+### WebUI: Migrate parse_html_subset to TS, fork for closure users
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12ac4b6
+
+`);
+              </script>
+            </body>
+        </html>
