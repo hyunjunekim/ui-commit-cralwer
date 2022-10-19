@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-19
+### ime: Combine private getters into a single getter.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8931b9
+
+### Fork optimize_webui build toolchain to ui/file_manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/804c7d96
+
+### Clean up and optimize gfx::Matrix44
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f86ad4d
+
+### [User Education] WebUI can send activation and custom events to browser
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8df1d1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c7d6b7
+
+### Files app: Remove verb from File Tasks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/720e8f9
+
+### ax_ui: AXPosition::IsIgnored may crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c10ceec1
+
+### Reland "[chromeos] Implement Ash.LoginSessionRestore.* histograms."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d456b2
+
+### [ViewsAX] Moving GetParentNodeFromParentTreeAsAXNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7890213
+
+### Use Fullscreen rounding for MediaFoundation Direct Composition for DMRRS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fea6280
+
+### Revert "Fix slide out behavior for collapsed group notifications"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d549c1a
+
+### ax_test: move Linux' AXTreeFormatters under ui Umbrella (2/2)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6638c5f
+
+### Fix slide out behavior for collapsed group notifications
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2a8c447
+
+### Add Short Audio Descriptor parsing to ui/display EDID parser.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c60e0a
+
+### [cleanup] Replace enable_basic_printing with enable_printing
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/737d247
+
+### [Test Automation] Allow 'fail for testing' in InteractionSequence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94773e57
+
+### views: Add hardening NativeWidget test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ef194b
+
+### Fixes deserialization errors in AXTree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/559a04c
+
+### Fix build when enable_oop_printing=false.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e3fcdb9
+
+### [Code Health] Clean up some pre-Nougat code in ui/permissions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5349855
+
+### [Reland] WebUI: Rename WebUIListenerMixin to WebUiListenerMixin.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4eca90
+
+### ax_ui: AXPosition::CreatePositionAtStart/EndOfAnchor crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e56db5
+
+### Drop use of volatile with g_once_*()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c39b6f
+
+### Revert "Ensure latencyInfo category covers related flow events as well."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/408f8e6
+
+### DLP: Pass callers for file upload
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ca51ea
+
+### Files app: File Tasks small refactors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d88a4bb
+
+### lacros: Fix window deactivation on creation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a316b26
+
+### Files app: Move Extract Zip task logic to TaskController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28c3b30
+
+### Fix parameter order of gfx::Transform::Affine()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b71ca3d
+
+### capture-mode-demo-tools: Extract accelerators APIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a35651a9f
+
+### [launcher] Move Omnibox files into their own folder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37a6f04d
+
+### Rename ash/webui/files_internals/files_internals.*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13fb190
+
+### Update tab group underline bounds on group header visibility change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fda216
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/smb_shares
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b95402
+
+### CrOS Captive portal signin: Guest mode test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/711e9d8
+
+### [ntp] Add error state to upload dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f85b26e
+
+### [Omnibox] Update the divider line color to Light Theme/Surface Variant
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1119a175
+
+### [launcher] Clean up references for Omnibox classes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f7678c
+
+### Settings: add aria-labels for elements in the performance settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8751c172
+
+### [Parent Access] Add PAT timestamp to test and Resolve TODO.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cd3ddcc
+
+### DPWA: improve scroll button style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6ed7e2
+
+### [Idle Timeout] Show a dialog before closing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0138fca
+
+### [Omnibox] Remove removing hacky computation on Status View alpha value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a7d226
+
+### saved_desks: Enable DesksTemplatesClientTest.SystemUILaunchMultipleDeskTemplates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1af8f4b
+
+### [Media Router] Some logging cleanups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/909d1d3
+
+### web app browser not include the .h needed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/628bad4
+
+### Improve member variable naming in LocalPrinterHandlerDefaultTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0089cbc
+
+### Make LocalPrinterHandlerDefaultTest more aware of OOP printing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/055cb43
+
+### [Extensions c2s] Add site access and policy contents directly to dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3b196e
+
+### Polymer: Update from version 3.2.0 to 3.5.0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c62470
+
+### [fyfre]Add images, fix fonts and support dark mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e378db3
+
+### Reland "ArcMigration: Enable Lacros to open arc content files"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8198f73
+
+### CrOS Captive portal signin: Fix guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bf8019
+
+### [Profiles] Unregister ProfileManagerObserver in /chrome/browser/ui/cocoa
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/675a43c
+
+### isolated-apps: Show app name instead of origin on All sites setting page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1dc50346
+
+### [SAML] Respect "sso profile" setting on the lock screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/884b5c0
+
+### isolated-apps: Show app name instead of origin in recent permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f49ce7ca
+
+### Revert "Disable closing dialog for browser tests."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63cac386
+
+### [profiles] Remove unused profiles::GetPathOfProfileWithEmail()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/929b0ca
+
+### [UPM Desktop] Add functional button for creating PWM shortcut.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34859d2
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/edu_coexistence
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38cea42
+
+### Post-Follow dialog support for in-feed Follows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f449a3a
+
+### Add about flag for easy access to showing all clusters on Journeys zero state
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d30f4dc4
+
+### [AMF] Move gaia id fetching code inside AccountManagerFacadeImpl
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/271c46e
+
+### Add kEnablePasswordsAccountStorage to chrome://flags on mobile
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bb878dea
+
+`);
+              </script>
+            </body>
+        </html>
