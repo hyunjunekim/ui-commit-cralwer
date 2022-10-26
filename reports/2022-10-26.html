@@ -1,0 +1,208 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-26
+### [Files]: The initial version of xf-select element.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c32ca1b
+
+### Re-enable rgb10a2 overlay support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc8b80d
+
+### Capitalize GPU in EGLDualGPURendering
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c85183
+
+### WebUI: Update I18nMixin, sanitizeInnerHtml to be TrustedTypes compliant.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea36ef4
+
+### [Test Automation] Kombucha 1.5: Verbs for selecting tabs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f4253b
+
+### [linux/wayland] Allow explicit release of unpressed mouse button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5bf4d30
+
+### [A11y Settings Revamp] Remove AccessibilitySelectToSpeakPrefsMigration
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/21156e59
+
+### Make WidgetDelegate support a WeakPtr and use this for Widget.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/146289a
+
+### Fix gfx::MaskFilterInfo::ApplyTransform() with rotation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ad4dbc
+
+### Mark dangling pointer occurring on android
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dae06e0
+
+### IOSurfaceImageBacking: Move GL texture bind out of GLImage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c95aceac
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/beb4a55
+
+### Add separate app launcher search provider for zero state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98ab2f0
+
+### app_restore: Rename ArcAppLaunchHandler to ArcAppQueueRestoreHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c58642e
+
+### autofill: Use strong aliases for autoselect_first_suggestion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24c8ee1
+
+### Remove unused parameter browser_context in AutomationEventRouter::DispatchTreeDestroyed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7768c50
+
+### Add a WebAppIntegration test for file handling in multiple profiles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe20ad9
+
+### [ntp] Remove white MV tile pill for CWS themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad7291c
+
+### Cache formatted and display urls in LocationBarModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1279f11
+
+### Defer to platform support for Instant Apps
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7f1297b
+
+### Remove TestNotificationTracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c69c60d
+
+### Extensions WebUI: Add accessibility labels for 'Learn more' links
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff07c5ce
+
+### Run zero state search when creating tablet mode app list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/001934f
+
+### os settings: remove unused code from hierarchy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a7674d
+
+### Finance color reversal: check locale eligibility each time.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ddfdbc
+
+### Crostini: Show "press Overview" message when entering fullscreen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75f9ebd
+
+### Change how profiles are managed in WebAppIntegration tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/500a8f7
+
+### Settings: change battery status for energy saver to update in real time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/298c71cf
+
+### Rename test suite name in desks_client_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b5ed905
+
+### Add ink drop to scroll button on web app install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c53ae8b
+
+### [FastCheckout] Title and subtitle accessibility strings read together.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bf2575
+
+### Fix chrome://connectors-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbeb007
+
+### Rename "IsolatedApp" with "IsolatedWebApp" in web_applications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d9dde7
+
+### Revert "Force announcing translated text with AnnounceText() message."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54883fe
+
+### [Sheriff] Disable AppListSortLoginTalbetTest.SwitchUnderTemporarySort.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61b78c0
+
+### Clean up CategoricalSearch feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85c14b37
+
+### Only create tabbed web app navigation throttle for primary main frame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58ed936d
+
+### Guard JP settings page on SystemJapanesePhysicalTyping
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6dfc28e
+
+### Call the same functions for update buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1823cc38
+
+### [PriceTracking] Update page action icon on failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dab1c1a
+
+### [FaceML] Add UserProvider to provide current Chromium user information.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b7d2ff
+
+### Force announcing translated text with AnnounceText() message.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4acf238
+
+### [Managed prefs] Flag for highlight managed disclaimer on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/86429cb
+
+### remove expired enable-accelerated-video-decode flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4855f530
+
+### [TTS][Contextual Triggers] Remove C-Triggers
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f647f84e
+
+### Revert "[Android Bulk Tab Edit] Longpress for TabSelectionEditor entry"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0f959f4
+
+### Remove legacy bordered keys flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6c100a7
+
+### [Cast Streaming] remove receiver name hacks
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/236fecd7
+
+`);
+              </script>
+            </body>
+        </html>
