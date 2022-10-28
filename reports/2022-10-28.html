@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-28
+### [a11y] Treat generated newline characters as real character stops
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7bcceba13
+
+### DLP: Fix DLP files_tooltip focus ring color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9064fcd
+
+### Files F2: Convert AsyncUtil namespace to standard export
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7363389
+
+### DLP: Allow all roots for DlpRestrictedBanner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8704f6b
+
+### IOSurfaceImageBacking: Do not use GLImage for overlays
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51651932
+
+### DCHECK in long-running CompositorAnimationObserver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f509f0
+
+### Using window context instead of application/activity context to determine smallest screen width
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e968d50
+
+### views: Add CLIENT_OWNS_WIDGET widget ownership
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c3e8d0
+
+### Update view shown time stamp after compositor presents a frame of view
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb3a1c1
+
+### ozone/wayland: implement UpdateDragImage()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/29550bf
+
+### AXAPI: Expose aria-description in AXCustomContent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c62fd66
+
+### [lacros] Fixed a crash in handling the stylus events.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a24c00
+
+### [Start] Refactor Logo* and make it MVC structured
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ba38ba
+
+### Replace std::copy_if() with base::ranges::copy_if(): ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acb1d50
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/554d688
+
+### Add UpdateDragImage() to aura::client::DragDropClient, ui::WmDragHandler
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d4a096
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e61b69
+
+### ax_ui: get rid of AXPosition::CreateTree/TextPosition tree/anchor_id versions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/342c62d
+
+### wayland: test: handle destruction of a client
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f97c769
+
+### Files F2: Change dialogs.js from prototype to ES6 class-style
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c459913
+
+### Revert "wayland: fix frame decoration when in tiled/ssd mode"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f97dc4a4
+
+### Update links to the WICG/sw-launch repo to point to WICG/web-app-launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/203d5de
+
+### [Status Bar] Feature added to synchronize the toolbar and the status bar color during animation.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/01c98990
+
+### [WebUI] Migrate add supervision UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee97a6c3
+
+### [Launcher health] Remove the classic launcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e63666
+
+### Create base for the "Upload to Cloud" setup dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a2ee2e
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/login [2/3]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fc970b
+
+### [Extensions] Withheld host permissions when flag is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/167434e1
+
+### Remove the mojom uninstall interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5c5a3a0
+
+### Remove unused binaries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df334b5
+
+### Limit maximum size of Document Picture in Picture window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0450a2
+
+### [Launcher] Add owners to spoken_feedback_app_list_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95f71cc7
+
+### Fixes observation of AutomationManagerAura on AutomationEventRouter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c78791c
+
+### Remove semantic colors debug flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2ecd561
+
+### Remove the mojom SetPermission interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be51243ea
+
+### [WiFi] Consider login state when configuring WiFi.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aac34db
+
+### [Read Anything] Add theme colors to toolbar buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a5c2a4
+
+### Remove RippleDrawable from search box.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b42dd4
+
+### [NTP] Comprehensive theme - FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec3b1e4
+
+### [NTP] Chrome cart - comprehensive color fixes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91579b7
+
+### Add menu opened to WrenchMenu.MenuAction histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7818c5e
+
+### [Sheriff] Disable flaky test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b67babe
+
+### Migrate credential_provider_signin_dialog_win.h to base::Value::Dict.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/024b771
+
+### [Sheriff] Disable flaky MouseLockThenFullscreen test on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c4c70b
+
+### [ntp] Create enterprise policy for Lens Upload Dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1adbcb5
+
+### CrOS Settings: Add search concepts for app badging setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7093a67
+
+### Omnibox: Improve keyboard responsiveness when scrolling the list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a62bfa
+
+### [Managed prefs] Add icon to highlighted managed disclaimer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad934c09
+
+### Remove search result position priority and display index
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6eae337
+
+### [OOBE][TestApi] - Add shouldSkip() for Smart Privacy Protection screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f980af
+
+### Fix logic in WebAppIntegrationTestDriver::AfterStateChangeAction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3598cb7
+
+### [NTP] Comprehensive theming changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dad9129
+
+### [lacros] Correctly initialize variables in ManagementUIHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcbf54e
+
+### [dPWA] Introduce ManifestUpdateCommand
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd4a580
+
+### Revert "[fyfre]Add dark mode pixel test"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b6949a
+
+### OOBE: Update Network Error metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa08a21
+
+### Preventing Biometric Auth promo dialog from showing after declining
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/972abbe
+
+### Replace std::is_permutation with base::ranges::is_permutation().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4941776
+
+### [OOBE] new Education License Packaged flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/295cfd0
+
+### arc: Remember if each app is pre-installed or not
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0669c5
+
+### Fix fallback tab dragging crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eb1fe7
+
+### Add the feature flag for updating O4C list via A2C2
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/00337ca
+
+### personalization: feature flag kAmbientSubpageUIChange
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a600ab9
+
+### [omnibox] Adds about:flags entries for Omnibox searchbox stats migration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7c889d8
+
+### Revert "🌓 Add alternative Dark Mode Image classifier policy."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ff38e38
+
+### 🌓 Add alternative Dark Mode Image classifier policy.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5ed501f6
+
+### arc: Introduce new ghost window UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3cdcea24
+
+`);
+              </script>
+            </body>
+        </html>
