@@ -1,0 +1,224 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-10-29
+### ClientNativePixmapFactory: Improve validation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64e4766
+
+### Replace std::equal() with base::ranges::equal(): ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c32bab9
+
+### Lazily call stream() for (D)CHECK streaming
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b2875bb
+
+### Move WindowButtonOrderObserver and WindowFrameAction to LinuxUi
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d4e22fb
+
+### [ViewsAX] Renamed AXTreeManager's GetParentNodeFromParentTreeAsAxNode
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34d7834
+
+### Revert "[Fluent Scrollbars] Paint Segoe Fluent Icons for scrollbar arrows if"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83b047c
+
+### [Read Anything] Fix rendering algorithm for Screen2x.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1a0458
+
+### Let blink::TransformationMatrix inherit gfx::Transform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/492f540
+
+### Use ScopedAHardwareBufferFenceSync for overlays instead of GLImage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4dba631
+
+### Clarify and adjust float/double precision gfx::Transform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9881846
+
+### [color provier] Add metrics to track ColorProvivider initialization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ca5564
+
+### Replace std::copy() with base::ranges::copy(): ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64e3816
+
+### [strings] Use font "Noto Sans CJK TC" for locale zh-TW
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57e55be1
+
+### [Fuchsia] Use system handles for NativePixmapHandle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f507a0f
+
+### [Test Automation] Fix a broken corner case in InteractionSequence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef948f4
+
+### Implement the customized rounded corner context menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19ddbef
+
+### Modified slider thumb offset for mouse/gesture event to enable click
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f50c11ec
+
+### [ViewsAX] Moving applicable ParentConnection logic up to AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddeb718
+
+### [Fluent Scrollbars] Paint Segoe Fluent Icons for scrollbar arrows if
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0009aa
+
+### Replace std::search() with base::ranges::search().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3926d52
+
+### Enable NVIDIA video processor super resolution on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/46f000a1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e1d70fc
+
+### [CrOS Cellular] Add APN subpage
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c1d8ae
+
+### views: Change Widget raw_ptr to WeakPtr in DesktopWindowTreeHost
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd85bb5
+
+### wayland: add a crash key for the compositor name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/509e782
+
+### wayland: speculative fix for a drag icon role related crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/328e601
+
+### [fuchsia] Remove support for using test_fonts in CFv1 tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d1bacb
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51f79b4
+
+### Perform content analysis when pasting a file with CTRL+V.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c617026
+
+### Replace std::copy() with base::ranges::copy(): chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/965f02fc
+
+### Ensure the UrlBar is at least 48dp tall on all devices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26f7389
+
+### About Settings: Add accessibility labels for 'Learn more' links
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79ade9a
+
+### Updater: Reuse UpdateServiceProxy in browser code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ba5ce3
+
+### Enable ToolbarControlContainerTest#testIsDirty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15d25d7
+
+### Remove footer button from Lens unified side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3828b38
+
+### Touch suppression cleanup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94b3414
+
+### Revert "[APC Desktop] Restore ax mode after text has been announced."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfbc650
+
+### Add a hint for the visible text in the URL bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a826a8f6
+
+### [history] Refactor history::ContextID to be a pointer-sized number
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed7ec4f
+
+### Remove DocumentOverlayWindowViews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db9980c
+
+### What's New: Fix HaTS survey cancellation due to query param removal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59735d5
+
+### [PwdMessageDialog] Fix description for dropdown button in password edit dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eaa507
+
+### policy: Pass PolicyBundle objects to UpdatePolicy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f54af81b
+
+### [lacros] Disable flaky BrowserAppShelfControllerBrowserTest tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70d125e
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash} for top-level files [2/2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67c3a09
+
+### VCD: Show camera name in HW privacy switch popups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1b8640
+
+### [Discount] Create a new feature flag for code-based rbd
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d5813c3
+
+### Revert "Reland "[Android Bulk Tab Edit] Longpress for TabSelectionEditor entry""
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5942ad3
+
+### [RCTS] Retaining Custom Tab State feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dc587ef
+
+### Add it glossary to collection blocklist
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a3c540
+
+### Delete the CryptoToken component extension and internal API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c86cc65
+
+### [RDSZ] Add feature flag for desktop site page zoom
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8a0ebd89
+
+`);
+              </script>
+            </body>
+        </html>
