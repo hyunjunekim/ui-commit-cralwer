@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-01
+### gfx::Transform::ToString() and ToDecomposedString()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a1cb40
+
+### WebUI: Migrate all callers of addSingletonGetter to cr_deprecated
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab4c186
+
+### WebUI: Add a PRESUBMIT to prevent new JS files in ui/webui/resources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68a6ac7
+
+### WebUI: Remove extra imports
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c641ee68
+
+### WebUI: Add cr_deprecated.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5ea059
+
+### [ViewsAX] Moving OnTreeDataChanged implementation to AXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6120e9
+
+### GCC: workaround double4.h AllTrue type inference error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b240c7
+
+### Remove ImageTransportSurfaceOverlayMac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2d30ff
+
+### Remove WindowAndroidObserver::OnCompositingDidCommit
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/192a609
+
+### [flatland] Register overlay planes with a flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43682da
+
+### Revert "Let blink::TransformationMatrix inherit gfx::Transform"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad877c51
+
+### Reland "[Fluent Scrollbars] Paint Segoe Fluent Icons for scrollbar arrows if the font is available on the device."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aad7659
+
+### Revert "Replaced unordered set/map with base versions or std::set/map"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d565ec
+
+### Disable DRI3 under rr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3165d288
+
+### Reland "ClientNativePixmapFactory: Improve validation."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fd4517
+
+### Remove unnecessary MakeCurrent from GLSurfaceEGLSurfaceControl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9773d78
+
+### Remove GLImage::GetAHardwareBuffer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5791c59b
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40467280
+
+### Files F2: Convert file_tasks to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4f232a
+
+### [WebUI] Alphabetize webuiConfig map
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4111930
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/login [3/3]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b727c2d
+
+### Remove the mojom LaunchAppWithIntent in AppServiceProxy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29c18f6
+
+### arc: Activate ARC when launching an app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44089df
+
+### Remove the mojom LaunchAppWithUrl interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc895f8
+
+### [WebUI] Migrate cryptohome to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a69b11
+
+### Remove the mojom LaunchAppWithFiles interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd15d192
+
+### [Side Search] Carry over side search to new tabs opened from panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4abba39
+
+### [Android] Use the origin of the main frame in chooser dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b96dc03ce
+
+### [WebUI] Migrate parent access ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee061d8
+
+### FSA: Remove extraneous path arg from sensitive directory dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95442ca
+
+### desktop-screenshots: add unit test for edit behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48be518
+
+### Update uses of WebContentsConsoleObserver::Wait to check return value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce1c3c9
+
+### [FedCM] Fix crash when email is empty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/659b08c
+
+### os settings: fix routes_util.cc typo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9febf6
+
+### Enable win10 browser tests after deflake.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af1cd30b
+
+### WebUI: Improve static encode for sanitized image source
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b8344d
+
+### [Test Automation] Update site-specific tests to Kombucha 1.5
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31fbcee
+
+### [NTP] Fix comprehensive theme module hover color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c0b18b
+
+### [Test Automation] Migrate Webui Tabstrip tests to Kombucha 1.5
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a58022a4
+
+### Update uses of WebContentsConsoleObserver::Wait to check return value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a9c323
+
+### BrowsingData: Use QuotaHelper for SiteDataSizeCollector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea19cce
+
+### Migrate PermissionRequestID to GlobalRenderFrameHostId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32c4b39
+
+### [OOBE WebUI] Update Enrollment screen and handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f48293a
+
+### [FSA] Persistent Permissions UI - Update Allow/BlockLists To Include Persisted Permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24ab216
+
+### [Code Health] Migrate to base::Value::Dict in AppLaunchSplash*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b3d276c
+
+### Start AuthSession once and reuse it for auth operations in WebAuthN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f10a85
+
+### [WebUI] Migrate to WebUIConfig for crostini installer and upgrader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4c925b
+
+### Update uses of WebContentsConsoleObserver::Wait to check return value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41cb92e6
+
+### Add integration test for PIN settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acb8d3cc
+
+### Make WebAuthN password authentication use AuthFactors depending on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7634cc
+
+### [OOBE] Remove keyboards from the demo preferences screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9d074ad
+
+### support-tool: Introduce SystemLogsDataCollector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f3747d
+
+### Fallback tab dragging: hide drag image while attached
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14b9395
+
+### Send the reason of input mute state change to the observers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22e3460
+
+### Revert "Reland "Remove search result position priority and display index""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f5b6de
+
+### Reland "Remove search result position priority and display index"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efc8d92
+
+### [ChromeCart] Implement DOM-based heuristics for AddToCart detection
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b001bb1
+
+### [Fold Jank] Log smallest width when mode changes. Hide / show content upon mode change
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/22e7a20
+
+### Revert "[RDSZ] Add feature flag for desktop site page zoom"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/378f8e0
+
+### [Discount] Enable the fetch Merchant wide promotion param on chrome:flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d3726df
+
+`);
+              </script>
+            </body>
+        </html>
