@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-02
+### Files F2: Convert FileTasks test to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb1ff22
+
+### Filesapp: Add deferred conflict dialog widget xf_conflict_dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03251ca
+
+### Fix file sharing error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c656b73
+
+### Reland: Add check-bad-raw-ptr-cast to the clang plugin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8a3c56
+
+### Files F2: Convert TaskController unittests to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9dca1bc
+
+### Make Widget hold a weak pointer to the NativeWidget.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c9401b41
+
+### gfx::Transform::ProjectPoint(), ProjectQuad() and MapQuad()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18ecd77b
+
+### CompositorImplAndroid Don't Post Feedback Request with no LayerTreeHost
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3cc0dc
+
+### [journeys] Add primitive Suggest-powered Journeys images implementation
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5cdf63
+
+### [flatland] Recreate Flatland images on resolution change
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/558432e
+
+### Check ANGLE backend experiments as early as possible.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56a3dbc
+
+### [a11y-android] Fix crash in AtEndOfParagraph
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4a823a
+
+### Fix default color for infobar icons.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6b3a82
+
+### ax_test: move Linux AXEventRecorder under ui Umbrella
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebdde62
+
+### Remove unused GLImageNativePixmap::InitializeForOverlay.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e38a471
+
+### [Fuchsia] Fix crash in SysmemBufferCollection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c84556
+
+### [lacros] Refactor wayland output metrics into struct.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5bf0cd1e9
+
+### views: Convert widget to nativewidget in TooltipManagerAura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/357afa1
+
+### [fuchsia] Migrate some FrameImpl tests off ui.policy.Presenter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/502e265
+
+### Add optional scrolling to TabbedPane::TabStrip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d65c2ed
+
+### gfx::Transform::GetCheckedInverse() and InverseOrIdentity()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00be4cb
+
+### cc: Make it possible to create/use shared GpuImageDecodeCache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfe3d535
+
+### views: widget ownership test cleanup, 1/n
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6eabbf2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d0a36c
+
+### wayland: test: client should run server calls on the server thread
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24f7cd9
+
+### [ozone/wayland] Rename WaylandEventSource::last_pointer_stylus_tool_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/411d2afa
+
+### Files F2: Move enum and nested-class the class namespace
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93f4d2f
+
+### Files F2: Move functions out of enums
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e5ed7c
+
+### Add state transitions for showing answer cards.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b44197d
+
+### Fix crash ocurring in site_settings::ContentSettingsTypeFromGroupName
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a58357a
+
+### [WebUI] Migrate internet dialogs ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d6838f
+
+### [AppService] Remove usage of mojom RunOnOsLogin type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/275e11d
+
+### Rename RankerDelegate to RankerManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/476483c
+
+### arc: Make ArcAppListPrefs::AppInfo non-copyable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/448fba5
+
+### [WebUI] Migrate hps-internals ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7138bdc
+
+### [MPArch] Convert HostZoomMap and ZoomController off of RenderViewHost ids
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dae0986
+
+### Migrate //chrome/browser/ui/webui/ash/login to namespace ash [1/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe0db97
+
+### Update uses of WebContentsConsoleObserver::Wait to check return value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43a44b23
+
+### [WebUI] Migrate powerui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ba0e99
+
+### Remove productivity launcher from help app and keyboard shortcut unittests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85bf588
+
+### Remove productivity launcher from omnibox result unittest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e4bcef
+
+### Remove producitivity launcher from search controller impl unittest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e633d41
+
+### remove kProductivityLauncher from arc playstore search provider unittest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cc9707
+
+### [string match] Tweak the game scoring parameters.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b01629
+
+### DPWA: make install dialog scroll button focusable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93ce2a7
+
+### Remove custom favicon code for Terminal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/374dd32
+
+### [ntp] Set client data on Lens Upload requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88dc999
+
+### NTP: Add accessibility labels for 'Learn more'/'Details' link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a97e960
+
+### Added padding to Tether Notifications.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e7d3e3
+
+### [power bookmarks] Add scaffolding for new backend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d552872
+
+### [Omnibox] Status icon background need to be gone when the icon is gone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b5619b
+
+### remove WinSboxDisableKtmComponent feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e9537c6e
+
+### Consolidate and test all System Preferences opening
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35b115d
+
+### Add in tests for icons in File Result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6421aed
+
+### Disable ChromeURLDataManagerWebUI...Test for credits URL under ASan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f66b8d0
+
+### OAuth2 for IPP: Sending access token to a printer from Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7b3534
+
+### Don't lowercase arbitrary keyboard shortcuts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5518d5
+
+### Update the home button visibility after StartSurfaceState updated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0732579
+
+### Record when the FedCM terms-of-service link is clicked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e63eeca
+
+### Reland 2 "Add separate app launcher search provider for zero state"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ec6171
+
+### Sheriff: Disable ChromeURLDataManagerWebUI...Test for credits URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b191eaa
+
+### Implement the suppressLocalAudioPlayback constraint
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d112a36
+
+### [WebUI] Migrate certificate manager dialog ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a2b3eb
+
+### Stop broadcasting printing-enabled state to renderers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb40a19
+
+### Replace std::copy_if() with base::ranges::copy_if(): chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad4f223
+
+### [WebUI] Migrate Networkui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/381e9bc
+
+### Set is_pinned_home_tab after session restore.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c1f8fd0
+
+### [RSearches] Remove the flag RelatedSearchesSimplifiedUx
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9ada3bc
+
+### lacros: Add a os://flags option to ash to enable lacros wayland logging.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5d686e2
+
+### Add AutoDisableAccessibilityV2 flag to about://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef0bac5
+
+### Remove expired SamePartyCookiesConsideredFirstParty flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e528dde
+
+### media: Rename VaapiAV1Decoder feature to ChromeOSHWAV1Decoder
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4a7155b
+
+### [Lens] Remove expired #lens-on-quick-action-search-widget flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ea08385
+
+`);
+              </script>
+            </body>
+        </html>
