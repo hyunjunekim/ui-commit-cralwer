@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-03
+### ime: Use before/after not offset/length for DeleteSurroundingText.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/482f641
+
+### Files app: Simplify unittests using translations or our private API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d24ee9
+
+### gpu: win: Add feature SwapChainImmediatePresent to force present interval of 0
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01479462
+
+### Generalize visual subtree to contain swap chain and dcomp surface content.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9354fb04
+
+### Fuzz X11 ParseCursorFile
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a1a26c0
+
+### Files app: Remove <files-ripple>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2556b7
+
+### Deploy TS assert function to various surfaces.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0278e5a
+
+### [Files F2] Update widget readme to reflect the new LitElement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e118281
+
+### Files app: Enable translations in the unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75cadb5
+
+### color/hdr: add new transferID to gfx::ColorSpace
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b16481
+
+### Files app: Enable fileManagerPrivate API in unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca8151b
+
+### Files SWA: Remove permission for chrome.windows API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b75e621
+
+### views: Added Hardening tests for NativeWidgetAura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba1aba1
+
+### Remove dead code from ash::ShellTestApi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e1e013ec
+
+### Switch define(USE_OZONE) to BUILDFLAG(IS_OZONE)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47f6396
+
+### Plumb input event task runner to EventFactoryEvdev
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22d411f
+
+### WebUI: Move platform selection utilities to a separate (TS) file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44de56e
+
+### Fix changed display metrics notification when primary display changed.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e85d4b4
+
+### [journeys] Automatically load more when more clusters are available
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68a195d
+
+### views: NativeWidget will hold WeakPtr to Widget instead of raw_ptr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0bbf419
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01a778d7
+
+### ax_test: move Fuchsia AXEventRecorder under ui Umbrella
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3d0928
+
+### [WebUI] Migrate smb ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caab8203
+
+### Zero state drive provider - send empty results on failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/359c5f0
+
+### [WebUI] Migrate OSSettingsUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12c85e3
+
+### [Tote Exp] Add UI browser tests for suggestion removal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f365b0a
+
+### office Fallback: Add dialog for falling back to QuickOffice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3df6b7b
+
+### Add bookmarks side panel footer button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97a12e1
+
+### Fix webContentsObserver not correctly removed in ToolbarTabController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8ebbb59
+
+### Rename IMMEDIATE_CRASH() -> base::ImmediateCrash()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25c6ec7
+
+### Reland "Remove search result position priority and display index"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b28175
+
+### Reland "Move and rename Notification Center views."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64c628b
+
+### Remove base::ListValue usage in various chrome/browser files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c516cd
+
+### Adding enterprise policy to disable CalendarIntegration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1a69ba
+
+### Remove PaymentRequest.Missing* histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d40103a
+
+### [Managed prefs] Add managed disclaimer to ChromeSwitchPreference
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa87769
+
+### Wait for tablet->clamshell transition to commit new sorting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d894e9
+
+### Only anchor bubble to chip if chip is visible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8bef7f
+
+### Explicit ownership of profile destruction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cab9d41
+
+### [ SavedTabGroup ] Add model type for SavedTabGroups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdaa3683
+
+### NTP Incognito/Guest: Add accessibility labels for 'Learn more' links
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6619273
+
+### Add option to encode to WebP or JPEG in region search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/115eca4
+
+### Change how WebAppIntegrationTestDriver launches apps on Mac OS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28409544
+
+### [TailoredWarning] Do not send cancel report on download prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c7b81a
+
+### Updater: Show updater promotion banner when using O4.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0322a578
+
+### [journeys] Add history flag to side panel entry registration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49755dd
+
+### [ColorPipeline] Call GenerateColorMap in dump_colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c6f4b3
+
+### Toolbar jank: Encapsulate suppression feature check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70ab127
+
+### cros: Log an error on OAuth2 token fetching failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12a88dc
+
+### AboutThisSite: Allow side panel view to be focussable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e85cdcc
+
+### [Sheriff] Disable flaky test on ChromeOS ASAN.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ed08bd
+
+### Adds quality param to ChromeRenderFrame::RequestImageForContextNode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de50a432
+
+### Notification Engagement Service: Change buckets to daily
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7015293
+
+### AboutThisSite: Remove TODO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/497b76a1
+
+### AboutThisSite: Update loading screen URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53d9849
+
+### Update style of the edit button of Autofill popups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71522e5
+
+### Convert all policies' values to string on chrome://policy page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59fe0382
+
+### [WebUI] Migrate slow ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13a954e
+
+### [WebUI] Migrate set time ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/160b4d4
+
+### Remove expired enable-tailored-security-desktop-notice flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4f0978de
+
+### Settings Split: Add feature flag for device settings split
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a68a564
+
+### [RDSZ] Add feature flag for desktop site page zoom
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7b43f26
+
+### [Paint Preview] Cleanup Show@Startup Flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/491178e
+
+### Added feature flag to control CPA reader mode rate limiting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/de0ffc6
+
+`);
+              </script>
+            </body>
+        </html>
