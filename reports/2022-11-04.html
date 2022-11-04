@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-04
+### Rename FlattenTo2d() to Flatten() in Transform classes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9664826
+
+### SkiaRenderer: Use bit depth in YUV to RGB conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3804dfb
+
+### [Test Automation] Kombucha 1.5: Separate the API from the test fixtures
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/594c727
+
+### Enable lint and additional clang-tidy passes for ui/color/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d8b83d
+
+### Remove LAZY_CHECK_STREAM() macro
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9dda649
+
+### WebUI: Remove cr/ui.js from shared resources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e009ff3
+
+### [Views] View metadata now const by default.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7543510
+
+### Move GLSurfaceEglReadbackWayland to CreateViewGLSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/968df96
+
+### Revert "Update view shown time stamp after compositor presents a frame of view"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a79bb0
+
+### VideoFrameYUVMailboxesHolder: Use video's bit depth
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9cf1c02
+
+### [MediaPicker]: No need for RMI/RMV for native picker.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac23ab0e
+
+### Swap ref_counted.h for scoped_refptr.h when appropriate in //ui.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f2f80a
+
+### immersive fullscreen mac: move the overlay window with the titlebar
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/890e6d11
+
+### Rename \`popup\` to \`popover\` globally
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4aa42a
+
+### Update keyboard shortcut comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8757ebd
+
+### Remove RefCountedString::TakeString
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e21c3b
+
+### [CrOS Cellular] Add APN subpage header
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e205a7
+
+### [FilesGM3] Update skeleton color variables
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7894a3d
+
+### [Journeys] Emit action shown/selected metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4eb426
+
+### [WebUI] Migrate sys internals to webuiConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f169a54
+
+### Dont create tabbed web app navigation throttle for reloads.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32c3be5
+
+### Migrate //chrome/browser/ui/webui/ash/login to namespace ash [2/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3fe34c
+
+### Convert some EXPECT to ASSERT calls in Battery Saver tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0c762e
+
+### Switch define(USE_OZONE) to BUILDFLAG(IS_OZONE)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29fa971
+
+### Allow forward-declared sources in base::ScopedObservation<>
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fdfb67
+
+### [headless] Deprecated NativeHeadlessChrome in browser frame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f226114
+
+### Removing base::PostTaskAndReplyWithResult with new TaskRunners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e895bd9
+
+### [headless] Deprecated NativeHeadlessChrome in Enterprise Startup Dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e392638
+
+### [omnibox] Replace @Tabs default gray globe icon with blue chrome ball.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca34f3bb
+
+### [dPWA] Retire ManifestUpdateTask
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f3e0f8
+
+### [PriceTracking] Clean up the GTS menu item and the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f31403
+
+### [Cleanup] Alphabetize and make unique Accessibility OS Settings strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0494561
+
+### [NTP] Fix MV tile background color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9238ab6
+
+### [Remote Playback] Use RemotePlaybackMetadata to initialize MediaRouterUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba584d9
+
+### [Sheriff] Disable flaky test AppListSortColorOrderBrowserTest.InstallAppUnderColorSort
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc90f76
+
+### Revert "support-tool: Introduce ChromeUserLogsDataCollector class"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66486ce
+
+### printer dialog: Add flag for view PPD functionality
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef871180
+
+### [dpwa] Use Foo and Bar as FileExtension enum and make all related changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cbef1d
+
+### printer dialog: Fix UI to match updated design
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91a1f2b
+
+### saved_desks: Reduce desk cloning.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9013d08
+
+### [ SavedTabGroup ] Require title for SavedTabGroupTabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd54a3c
+
+### Remove bhatiarohit@ from histograms, TODOs, watchlist, and owners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ca4683
+
+### [Extensions] Listen for extension unloaded and browser closing in waiter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dc34b9
+
+### Convert SyncWorkerInterface to use base::Value::List.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21ada2c
+
+### Remove DisableCompositedProgressBar feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0eaf2c94
+
+### [site data] Display accesses from the cookies tree model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b04433b
+
+### [Read Anything] Handle link clicks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44ca180e
+
+### [Tote Exp] Remove suggestion delegate browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21bae0c
+
+### [FedCM] Remove desktop UI for iframe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e65b59a
+
+### Don't run launcher zero state search when exiting search UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45247e0f
+
+### [Autofill] Introduce //chrome/browser/autofill/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3ec94b
+
+### Add logs to track ProfilePicker widget size changes in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/841c3bd
+
+### AboutThisSite: Add 'new tab' button to side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/563c068
+
+### support-tool: Introduce ChromeUserLogsDataCollector class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9acc25f
+
+### [OOBE WebUI] Update Welcome screen and handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7baff1d1
+
+### support-tool: Fix ShillDataCollector crash when collecting data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76dfb9e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b2f747
+
+### [Code Health] Replace deprecated DictionaryValue with Value::Dict in c/b/supervised_user/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e0cd65
+
+### [OOBE WebUI] Update ARC TOS screen and handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cde708
+
+### [base][test] Support TestFuture::Get<T>()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d1f047
+
+### OOBE - Update DIR_METADATA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0eae3c
+
+### [Signin] Refactor string resources registration in Sync Confirmation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc80eb6
+
+### Revert "[Paint Preview] Cleanup Show@Startup Flag"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/95d10e8
+
+### Remove Notifications Revamp flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f3dcc9
+
+### Remove kShelfFocusOrderV1 flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4210b7d
+
+`);
+              </script>
+            </body>
+        </html>
