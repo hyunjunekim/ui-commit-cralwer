@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-08
+### Files F2: Remove <files-toggle-ripple>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23fae4b
+
+### Add PPAPISharedImagesSwapChain feature flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/85321a8
+
+### Harden Widget against null NativeWidget.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b3c1ee
+
+### [DragDrop] Disable context menu popup on Android N
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63b4540
+
+### Reland "Reland: Add check-bad-raw-ptr-cast to the clang plugin"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/615f8fa
+
+### Finish ScopedAllowIO migration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8927291
+
+### Remove CARendererLayerParams filter effects
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3be3d1
+
+### Fix the ShouldPaint predicate in FocusRing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/156d7852
+
+### IWYU: add memory for std::unique_ptr in wm::ShadowController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8ab7011
+
+### Migreate ScopedAllowIO to ScopedAllowBlocking
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5b86d2
+
+### Revert "AXAPI: Expose aria-description in AXCustomContent"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ef071d
+
+### views: Added Hardening tests for DesktopNativeWidgetAura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf79dad
+
+### CARendererLayerTree: Plumb SkColor4f background color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18b9ef2
+
+### [PhotoPicker]: Communicate permission errors.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1460a0d
+
+### ozone/wayland: stop fd watching on server thread.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5119a94
+
+### ozone/wayland: avoid crash if built with use_system_libwayland=true
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28f6d108
+
+### Reenable and fix kinetic scrolling in ozone/wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea60e2a
+
+### [Files app] Improve Drive speedometer usage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ddc7a4
+
+### [MirrorSync] Make sync status available to parent folders
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37c902d
+
+### Files F2: Convert <files-toast> to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0afe3ba
+
+### Revert "Improve logic to determine what profile to launch a PWA in on Mac."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be98fec
+
+### arc: Add a comment to ArcPackageInfo::preinstalled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8fefb1
+
+### Search settings: Add accessibility label for 'Learn more' link.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbe9a4a
+
+### Move //chrome/browser/{chromeos => ash}/fileapi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef8a4a4
+
+### Improve logic to determine what profile to launch a PWA in on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bba3155
+
+### [WebUI] Migrate multidevice internals to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7484290
+
+### [Parent Access] Add ParentAccessDialogUIHandlerDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e9b16e4
+
+### [dpwa] Update FileOptions from Txt|Png to Foo|Bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5798bf
+
+### Reland "[Launcher health] Remove the classic launcher."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c78910
+
+### Revert "Reland "Add downscale and encode latency tracking to chrome region search" to fix build dependency error"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a081e35
+
+### [PCCT] Reinstate app rect for 3-dot menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb21e7a
+
+### Add option to encode to WebP in Lens image search
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/10a2000a
+
+### Fix the rendering of multiline nonretryable errors in the CardUnmaskPrompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4884dc
+
+### [Private Network Access] Add entries for permission prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3a9533d
+
+### Don't call clearOmniboxFocus after destroy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce1a9ec
+
+### Reland "Add downscale and encode latency tracking to chrome region search" to fix build dependency error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f102ed
+
+### immersive fullscreen mac: fix GetAccelerator()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8d6597
+
+### Remove app list page metadata syncing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4b9779
+
+### [NTP] Comprehensive theming realbox definitions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0830090
+
+### [NTP] Realbox comprehensive icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8de53d
+
+### task posting v3: refactor SequencedTaskRunnerHandle in //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e3ca35
+
+### [Privacy Hub] Update strings in the os-settings pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18486dc
+
+### Update CrOS managed account signin annotation to remove policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bed58f7
+
+### [UI] Introduce chrome/browser/ui/views/controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d0bfdd
+
+### Remove url_param_filter on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12bb01ad
+
+### os settings: remove unused signout route
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ce0a055
+
+### os settings: refactor to improve code readability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45d59c0e
+
+### [OOBE Cleanup] Remove mentions of OnViewDestroyed from comments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa1e80576
+
+### Hide Autofill popup if it overlaps with picture-in-picture window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff1874e
+
+### [OOBE WebUI] Remove deprecated things
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b438b67
+
+### [Reland*] Keep app menu open after changing app launch type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c76f473
+
+### Fix use after free for UserContext in OnAuthVerified
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc016a0
+
+### Implement add tab button functionality
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4a87b9
+
+### Update web app dark mode origin_trial_feature_name.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b20107
+
+### OOBE: Add RecoveryEligibility pseudo-screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e74aa12
+
+### [Code Health Rotation] Replace base::ListValue with base::Value::List
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70cf21a0
+
+### Delete partitioned cookies origin trial
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8462303
+
+### [fyfre]Add dark mode pixel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ca7821
+
+### [FaceML] Rename ChromeFaceMLUserProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0603b0
+
+### [ SavedTabGroup ] Add feature flag variation for #tab-groups-save
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fb0afca
+
+### [Messages] Remove safety-tip message flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e73981d
+
+### [RSearches] Remove the flag RelatedSearchesAlternateUx
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7be04d8
+
+### PageInfo: Remove launched flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e95417
+
+`);
+              </script>
+            </body>
+        </html>
