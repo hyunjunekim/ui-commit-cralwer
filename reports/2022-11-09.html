@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-09
+### Use gfx::Transform::Decompose/Blend/Compose/Accumulate for blink 2d/3d
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91ca54c
+
+### Sync MTLDevices between ANGLE/Metal and Dawn.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57b2ff7
+
+### [Test Automation] Kombucha verbs for selecting combobox items.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6951d12e
+
+### Allow Progress element to have writing mode vertical
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a948535
+
+### Record UMA metrics for holding space commands.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18a3f3d
+
+### [flatland] Remove BUILDFLAG(ENABLE_VULKAN)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53972c8
+
+### [Fuchsia] Add assert(enable_vulkan) to Scenic build
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d4db6f
+
+### [MSAN] Disable vulkan
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/708e6a0
+
+### Reland "Let blink::TransformationMatrix inherit gfx::Transform"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0abc1c5b
+
+### Restrict visibility of //components/crash/core/common:crash_key_lib
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e7457e
+
+### Reland "Hypertext not recomputed after object not becomes leaf"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/508deea20
+
+### Revert "Hypertext not recomputed after object not becomes leaf"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/182eff2
+
+### Disable the validating command decoder when the passthrough is launched
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/acba5b08
+
+### Hypertext not recomputed after object not becomes leaf
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/051e551
+
+### ozone: evdev: Add metrics on device attachment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a5b78ab
+
+### Reland "WebUI: Add cr.ts, TypeScript version of cr.m.js"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42d7d7a
+
+### Migrate the shelf tooltips to support Jelly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9335681
+
+### Use GTEST_SKIP for GLImageIOSurface tests when GL init fails
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dcf6e2
+
+### Make ui/views/ clean-tidy clean on Linux.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ca3441c
+
+### Null check for target in ShouldReportEventLatency
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/906e675
+
+### Revert "WebUI: Add cr.ts, TypeScript version of cr.m.js"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bc8514
+
+### WebUI: Add cr.ts, TypeScript version of cr.m.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9102d8d
+
+### WebUI: Move cr_deprecated.js to ash/webui/common/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2979ba9
+
+### Switch define(USE_OZONE) to BUILDFLAG(IS_OZONE)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3da52ff9
+
+### cros_next: change system base and surface tokens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23cc4d6
+
+### [3CSC] Show 3CSC view from CardUnmaskPromptController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea91f9e
+
+### [3CSC] [VCN] Add Multi Option Card Unmask Auth Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0a6b87
+
+### [WebUI] Migrate assistantoptin ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b034cde
+
+### immersive fullscreen mac: fix web content view hit test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b14d1dd
+
+### Convert chromeos::AssistantOptInFlowStatus to enum class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db054e62
+
+### SWAs: Find most recently active browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18ce8ce
+
+### arc: Implement instant response for app window open
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6cb8859
+
+### Rewrite T& into raw_ref<T> under components/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a709b48b
+
+### [WebUI] Migrate lock screen ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/223fbdc
+
+### [dpwa] Generates new browser tests for CheckSite(Not)HandlesFile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1251fc2
+
+### Fix tabObserver not correctly removed in ToolbarTabController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adeeb29b
+
+### Desktop PWAs: Stagger web app windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70a62cb
+
+### Ensure Virtual Keyboard extension has the functionality to load UI color dynamically.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d81b721
+
+### [Metadata] Update manual fallback bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09a4e59
+
+### [journeys] Rename HistoryClustersImageFetcher to EntityImageService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d176cdb4
+
+### [toolbar] Delete ToolbarAccountIconContainerView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7631e6f
+
+### [Sticky-Header]Add toolbar hairline control and detect screen-size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecc18d5
+
+### Fixing tab count when model is toggled / theme is updated in tab switcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c5e0c3
+
+### Update some comments and policy test to "window management" terminology.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea2f630
+
+### Remove setHintTextColor workaround
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74ca9ac
+
+### [URLFiltering]Implement Enterprise Block interstitial UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/086daa7
+
+### Explicitly #include <memory> in intent.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33828f55
+
+### [TTFCC] Pass the card details to the Java side
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/837196b
+
+### Simulate manually typing in code for browsertests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23fc81b
+
+### [Omnibox] Update padding between the Omnibox and the suggestion list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbecff2
+
+### Explicitly register receivers in chrome/ for protected broadcasts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28569ca
+
+### [RCTS] SessionRestoreMessageController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73702460
+
+### Reland "Improve logic to determine what profile to launch a PWA in on Mac."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb5ad37
+
+### ChangeSource browser tests with/without audio-sharing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/709f6419
+
+### Simplify ExternalProtocolHandler for Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cb129e
+
+### Update List and Dict Value usage in chrome\browser\ui\webui\settings\.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7f14e9
+
+### Remove DeviceType from ForeignSession TS Code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98c398ea
+
+### [WebUI] Migrate passwordchange ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d32fbf
+
+### [sheriff] Disable a flaky WebAppEngagement browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4187b61
+
+### Add feature and flag for enabling ArcHostVpn
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0a701fa
+
+### [CloudAP SSO] Add feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b1f7bea
+
+### qs: Hide QsRevamp about:flags entry on stable channel
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/014c2fc
+
+### Reland "🌓 Add alternative Dark Mode Image classifier policy."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a4afc55
+
+`);
+              </script>
+            </body>
+        </html>
