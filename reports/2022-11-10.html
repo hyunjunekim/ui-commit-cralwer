@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-10
+### Files app: Change executePasteIfAllowed_ to return string
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3f3cdf
+
+### Exo: Set aura_surface_ on WaylandPopup on shell popup creation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2200396
+
+### CrOS Settings: Use Mojo WebUI bindings for app notifications
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fe2486
+
+### Remove spurious stringprintf.h includes from non-headers.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d62ab6b
+
+### Refactor ShadowController kShadowLayerKey property to clarify ownership.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0bd5fc
+
+### Add AddChildWindowToBrowser to DisplayClient mojo interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8b5379
+
+### Mac: adjust z-order of widgets if parented to floating widgets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7d9ac9
+
+### Don't use NativePixmapPlane ctor when cloning handle.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbdf837
+
+### Rewrite T& into raw_ref<T> under multiple directories [2]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf5c86b
+
+### [wayland] Propagate minimized state to exo clients
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/260b801
+
+### [MediaPicker]: Remove erroneous char limit.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/86edaa9
+
+### [Lacros: client side] Use same display id in lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d62cae1
+
+### ozone/wayland: release GtkSurface on WaylandToplevelWindow::Hide()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2937781
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9e6071e
+
+### [linux/wayland] Fixed threading in wayland pointer unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36a2aec
+
+### ozone/wayland: conform to wl_seat version 7, add stubs for version 6 + 8
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5e4856
+
+### Explicitly register receiver in ui/ for protected broadcasts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/135a062
+
+### ozone/wayland: remove CHROME_WAYLAND_CHECK_VERSION from wayland_object.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/baf075c
+
+### CARendererLayerTree: Support non-sRGB solid color layers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e4aff86
+
+### Fix clipboard duplicate events when proceeding warning
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/035ff24
+
+### [Files app] Enable directory tree context menu via keyboard navigation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c11c1e7
+
+### Move remaining blink::TransformationMatrixTest into gfx::XFormTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/963779c
+
+### Files F2: Fix getFileTasks() race condition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ab6c4f
+
+### Files app: Stop using unused MountError values
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c80e7c
+
+### [Extensions cleanup] Remove unused methods in ExtensionActionTestHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e43ba8
+
+### VT: Fix snapshot rect for a resizing virtual keyboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39a9955
+
+### [FedCM] Disallow multiple FedCM dialogs to be shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b8cca4
+
+### [WebUI] Migrate CloudUpload UI and AudioUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea12e2e
+
+### Migrate //chrome/browser/ash/fileapi to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d9ed38a
+
+### [Parent Access] Map ParentAccessParams.FlowType to Web Widget CallerID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7697f313
+
+### [Launcher] Remove unused search controller method.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c32fd8b
+
+### [DTC] Show Key Synchronization Result in Internals Debug Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d9743b
+
+### [Messages] Remove Save card message ui feature -- phase 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e92fa423
+
+### [3CSC] Pass selected challenge option to Card Unmask Authentication Selection Dialog Controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94440ab
+
+### Fixed optional toolbar button visibility bug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5929eb
+
+### [WebUI] Migrate LauncherInternals UI and ManageMirrorSync UI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2ea0a0
+
+### Avoid crash if the ScreenCapturer can't be created.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0aa191
+
+### Draw PiP 2.0 window frame borders for GTK theme on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a7d11e
+
+### [UI] Move PageInfoHoverButton  under c/b/ui/views/controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fb2de0
+
+### [Parent Access] Resolve callbacks when delegate is null.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/788f256f
+
+### [Parent Access] Make parent access URL in ParentAccessUIHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07ebeb9
+
+### [Lens] Remove expired entrypoint from context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0406e2d1
+
+### Revert "[RCTS] SessionRestoreMessageController"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4da1fc4
+
+### [reading list] Add missing menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e67c3b
+
+### [OOBE] Fix resource paths of arc_support assets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35553b4
+
+### Cache connection security indicator feature flag state in LBModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/860dee3
+
+### [Remote Playback] Display RemotePlayback compatible sinks in GMC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/206f5ca
+
+### Chrome OS Accessibility: Update and add DIR_METADATAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a3f5b7
+
+### [UI] Move PageSwitcherView  under c/b/ui/views/controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/131f539
+
+### Rename app_browser_controller_browsertest.cc -> _chromeos.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/667269f
+
+### immersive fullscreen mac: support top chrome context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b971aa8
+
+### Clear camera notifications for the hw switch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74392d8
+
+### [dPWA] Refactoring launches to always be async, pt 2.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1240637
+
+### Remove unnecessary weak_ptr.h includes in //chrome headers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/332308c
+
+### Fix a minor grammar mistake in docstrings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/130dbae
+
+### [fyfre] Make FRE tracking pref available on Dice platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2804a37
+
+### Change the search tag for the Security and Privacy section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e7d8b72
+
+### Remove Box Connection from Downloads section in Settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09c0c9b
+
+### [journeys] Add pref check to side panel registration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4c7a2d
+
+### [omnibox] add downloader for on device tail suggest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a248677
+
+### arc: Fix kArcPackageNameKey for restored ARC app window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f8be95
+
+### Isolate Lacros-specific FRE logic in separate class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6049ab
+
+### [OOBE/ARC] Improve arc_support build structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80de84c1
+
+### [Page Info] Update the documentation  PageInfoHoverButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/040fd51
+
+### [fyfre]Add long string pixel tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39303a0
+
+### Create KioskLaunchController unittests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d96eec8
+
+### Remove flag #new-instance-from-dragged-link
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5377975
+
+### Add flag for first party vietnamese input method
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c1f43aa
+
+### view-transition: Add chrome flag to enable feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b5af36e
+
+### Revert "qs: Hide QsRevamp about:flags entry on stable channel"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/808a141
+
+### [Cleanup] Remove EnableCbdSignOut flag as this feature is rolled out to 100%
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/db71e51
+
+`);
+              </script>
+            </body>
+        </html>
