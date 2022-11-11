@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-11
+### Tooltip: Set show_delay from TooltipController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b05f626
+
+### Revert "views: skip invisible widgets when enforcing widget sublevels"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f7fae5
+
+### Show close button toolip on bubble frame properly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e75641
+
+### Revert "Clarify when ElementTrackerViews::GetElementForView() may return null."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c6efa2
+
+### [Lens] Keep focus with the lens entry in the unified side panel when its open.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2433ba
+
+### Report event latency in LayerTreeHostImpl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2652ff
+
+### views: Harden Widget::[S-Z].*() against destroyed Native[Widget|View]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/477a684
+
+### Reland "autocorrect: add UKM metrics for app compatibility"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0337a54
+
+### make lacros emoji helper actually work
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11d4f530
+
+### Optimize some 2d full matrix operations in gfx::Transform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7c4f08
+
+### [linux/wayland] Dropped support of xdg_shell_v6.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0535f4
+
+### float: Fix float frame UI not showing up in lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e369655
+
+### Clarify when ElementTrackerViews::GetElementForView() may return null.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caa6d23c
+
+### Add Linux audio passthrough support for DTS CA audio.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7cbf5a
+
+### views: skip invisible widgets when enforcing widget sublevels
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88c32aaf
+
+### [Jank] Create wrapper for requestLayout() with trace event
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bba4a865
+
+### Allow running main-thread presentation callbacks after successful presentation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a6eac0
+
+### Remove VkDevice parameter from SurfaceFactoryOzone::CreateNativePixmap()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba4877d
+
+### ozone/wayland: fix number of created params.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69b93e4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d236184
+
+### ozone/wayland: refactor wayland window tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ca44c9
+
+### [linux/wayland] Fixed threading in wayland touch unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d64e311
+
+### [Launcher] Delete AppListNotifierImplOld.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d47d40b
+
+### Fenced frames: Remove fenced frames ShadowDOM implementation
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b06763
+
+### [Launcher] Alphabetize OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7883912
+
+### Move //chrome/browser/ui/webui/{chromeos=>ash}/assistant_optin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9342847
+
+### [Launcher] Remove obsolete TODO.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afc4060
+
+### [Start] Hairline shouldn't show when toolbarPhone isn't visible.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91a6540f
+
+### [ SavedTabGroup ] Use default favicon for tabs when there isn't one
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfd2c2c
+
+### Move MockMediaSession to content/public/test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/924be5d
+
+### [Launcher] Add TODOs for moving type aliases.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b775b8ff
+
+### Refactor WindowSizerTestUtil to use a builder-like pattern.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51dbeeb
+
+### [Metadata] Adjust Autofill Suggestion UI on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4bf918
+
+### Fixes UAF in AutomationManagerAura::HandleEvent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f043dc
+
+### [Launcher] Rename SearchControllerImplNew to SearchControllerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/474e1c2
+
+### Refactor window staggering code for PWAs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfc3c9a
+
+### arc: Stabilize logic to detect PAI apps not available.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56017777
+
+### Remove remaining url_param_filter code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a0f5cf
+
+### [fyfre] Add i18n strings and consent-description to tangible sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/274bfd0b
+
+### [Reland] VT: Fix snapshot rect for a resizing virtual keyboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5d45f4
+
+### Fixing a JS runtime error in performance settings in Arabic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53524d22
+
+### Reland "Reland "Add downscale and encode latency tracking to chrome region search" to fix build dependency error"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74cd21b
+
+### [cc-side-panel] Create framework for customize chrome side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3374d63
+
+### breadcrumbs: store events in circular_deque
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba49e0bc
+
+### Add an internal flag to guard the wip revamped view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38bc7fc
+
+### Update Projector to use server based recognition.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/800d9988
+
+### Include the visible omnibox hint text in the toolbar snapshot suppression logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea93ec7
+
+### Revert "[Lens] Remove expired entrypoint from context menu."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02b8108
+
+### [fyfre] Set up tangible sync version of sync confirmation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7df045
+
+### Revert "VT: Fix snapshot rect for a resizing virtual keyboard"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/026eae07
+
+### T&S Sentiment: Add feature flag and initial params for v2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5155c58
+
+### Rewrite T& into raw_ref<T> under chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f59bd14
+
+### [toolbar] Clean up AvatarToolbarButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2b165b
+
+### New LaunchModeRecorder implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e18d1ecd
+
+### [Fallbacks] Add meta comment to class AutofillContextMenuManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bf93325
+
+### [fyfre] Enable FirstRunService triggering on Dice platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ccc880
+
+### [fyfre] Add handlers to advance from the intro to the next step
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3013177
+
+### Migrate non-default ScopedObservation<> instantiations to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb6dc55
+
+### Migrate non-default ScopedObservation<> instantiations to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1648ac3
+
+### [fyfre]Fix skipped presubmit warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fe6016
+
+### Reland "support-tool: Introduce ChromeUserLogsDataCollector class"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/493c0c1
+
+### [privacy sandbox] Create components for new dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13ff4c6
+
+### [toolbar] Do not show avatar button in non-incognito otr profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/223f542
+
+### Refactor and eliminate transitive GN imports in chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4b9857
+
+### [WebUI] Migrate System Extension Internals and Color internals to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29f5c68
+
+### [launcher] Clean up zero-state Arc shortcuts search.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be929e9
+
+### [WebUI] Migrate deviceemulator ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07e33bf85d
+
+### Finalize normalizer bins before normalizing results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81f42c3
+
+### [Office upload] Retrieve dialog args via mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0518c983
+
+### [Launcher] Streamline results_changed_callback.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30c3d10
+
+### [WebUI] Migrate NearbyShareUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69dec1b
+
+### [launcher] Update references to the meta cleanup bug.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a5f31c
+
+### Remove deprecate low usage codecs feature. Enabled since M94.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f73c75a
+
+### libassistant-v2: Add the feature to about flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4b5d816
+
+### [Passwords] Introduce kRevampedPasswordManagementBubble
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4d5d526
+
+### Remove unused Metal code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/026a16b
+
+`);
+              </script>
+            </body>
+        </html>
