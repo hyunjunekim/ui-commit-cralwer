@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-12
+### WebUI Tests: GN cleanups related to chrome/test/data/webui:build_ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3472ac5
+
+### WebUI: Make localized-link TrustedTypes compliant.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5879c7
+
+### cros_next: update disabled color for PillButton
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9dd6d54
+
+### Fix incorrectly grouping notification on duplicate AddNotification event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82edd9b
+
+### Revert "Remove some blink optimizations about 2d translations"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/67bedec
+
+### Remove some blink optimizations about 2d translations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41bc3ae
+
+### UIControlsDesktopOzone: Permit mouse events not within any window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/066221f
+
+### gfx::ColorVolumeMetadata: Use SkColorSpacePrimaries
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22d153d
+
+### [Ozone/Wayland]Try gbm_create_device during FindDrmRenderNodePath()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/369530b
+
+### Added action parameters with sample actions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe2603d
+
+### [CrOS Cellular] Hide link in <apn-list> when in <internet-detail-dialog>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42f1d92
+
+### [DragDrop] Still support drag and drop for text for Android N
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5955c79
+
+### Implement navigation input event tracker for Attribution Reporting API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a49153
+
+### ozone: Log more on DRM auth failures
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f714436
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90ffd75
+
+### Fix WaylandToplevelWindow::SetZOrderLevel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e57598
+
+### [CrOS Cellular] Add APN list item three dot menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/545b09e
+
+### [Omnibox] Fix added for omnibox crashes when spannable autocomplete model feature disabled and excessive recycled view  pool flag is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c8c159a
+
+### Fix Android toolbar snapshot state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1c4a4f
+
+### Revert "[Reland] VT: Fix snapshot rect for a resizing virtual keyboard"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3246177f
+
+### [Contextual Page Actions] Fixed crash on action chip transition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0233c6
+
+### [CrOS Hotspot] Add hotspot row below network summary rows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25d9052
+
+### [Lens] Add functionality to pass a full page screenshot to chrome://lens page for display.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b85c86
+
+### Add a tooltip to tab search button for windows 10, 11
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/535b0f3
+
+### Revert "Add integration tests for isolated app."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aacd47a
+
+### [Status Icon Linux] Ensure ImageReps are generated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d2a53e
+
+### Add an invisible view to TabContainer for animating its overall bounds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ebafff
+
+### [Omnibox] Only update toolbar colors when the Omnibox is focused
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51efa7ed
+
+### Remove temporary using declarations from c/b/ash/a*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a4401a
+
+### [realbox] Implement tab switch actions in realbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3f830f5
+
+### [omnibox][rich-autocompletion] Default enable 3/3 short on desktop 🥳
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27afe4a
+
+### Reland "[RCTS] SessionRestoreMessageController"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3471f5
+
+### [TailoredWarning] Submit download feedback in DownloadItemModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa4044c
+
+### [Lacros] Fix top-chrome visibility issue in full-screen mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e665779
+
+### [NTP][ColorExtraction] Support color extraction for collections
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85e6fab
+
+### iwa: Use InstallIsolatedWebAppCommand to install IWAs in direct_sockets_apitest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f6fc76
+
+### Revert "[omnibox][rich-autocompletion] Default enable 3/3 short on desktop 🥳"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cada4d0
+
+### Add accessibility hint to rename download alert dialog edit text in Clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca9fdce
+
+### Update dialog position to center of browser when opening side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eecedc
+
+### [ SavedTabGroup ] Sync Bridge Implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b79f13
+
+### Enable AuthSessions for WebAuthN flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70e9ff9
+
+### [Privacy Hub] Refactoring geolocation manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a0a041
+
+### Introduce ToolbarSnapshotStateBuilder to ease testing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea7e398
+
+### Fix color of download toolbar button in PWAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef6acb51
+
+### Intents: Speculative fix for flaky double click in Intent Picker tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84b3c6a
+
+### [Fallbacks] Add Other section for Addresses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edd0c11
+
+### Split app zero state provider tests into separate file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afadf56
+
+### [omnibox][rich-autocompletion] Default enable 3/3 short on desktop 🥳
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1651942
+
+### [Passwords] Reorder methods in manage_passwords_view.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd8600e
+
+### Add a histogram to debug whether the Privacy Guide promo is triggered
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e199105
+
+### support-tool: Add extra log sources that are available in system logs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/357cb7b
+
+### Create UiMetricsRecorder unittests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6f5cc9
+
+### [Passwords] Introduce Skeleton of the revamped manage passwords bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e58733
+
+### [Privacy Hub] Clicking notification opens settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c26a046
+
+### Change the icon of the camera notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7280315
+
+### Replace \`base::StringPrintf\` with \`base::Strcat\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/760280d
+
+### Remove InitialNavigationEntry flag & disabled paths
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46087a1
+
+### Revert "Ensure Virtual Keyboard extension has the functionality to load UI color dynamically."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6342d4
+
+### [Launcher] Clean up uses of CalculateTags().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8732f352
+
+### Fix presentation callback for TabSearch metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15efe081
+
+### Send unified platform in the android User-Agent string
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5980f4e
+
+### [wasm] Add flag for WebAssembly Relaxed SIMD
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/377ba8c
+
+`);
+              </script>
+            </body>
+        </html>
