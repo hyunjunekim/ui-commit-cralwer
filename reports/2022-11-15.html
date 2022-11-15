@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-15
+### ime: Inline CanComposeInline.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d5e26a2
+
+### Wayland: Remove const from PinnedModeExtension::{Pin, Unpin}
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d047792
+
+### ime: Delete unused GetInputMethodFromId
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6dc209c
+
+### Wayland: Remove deprecated comment in WaylandPopup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb81c378
+
+### Files app: Use strings defined in chrome.fileManagerPrivate.MountError
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2e7ef3
+
+### Add new color for swatch borders.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40e3c3d
+
+### Update Android accessibility code to use minimum SDK of N
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38fea19
+
+### Refactor tab_strip_scroll_session to work with RTL flag.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/587d707
+
+### IME: Support vertical writing on macOS, Windows TSF, and Linux GTK3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba6296e
+
+### [Select-to-speak] Enable UI improvements and voice switching
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91c8720
+
+### views: Remove close_widget_factory_ from NativeWidgetAura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04e0236
+
+### Refactor TransientWindowManager property to clarify ownership.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db5733a
+
+### Run clang-tidy -fix on ui/views/ on Mac (cross-built from Linux).
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f84f05
+
+### ime: Use separate enums for each text input flag.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/018c0d5
+
+### [Jank] Update requestLayout() trace event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebb0556
+
+### Make ui/views/ clang-tidy clean on CrOS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b55ffe
+
+### Add set_color_id in BubbleDialogDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acdb0ac
+
+### [Privacy Hub] Remove notifications when interacted with
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76849c4
+
+### views: ensure sublevels of ancestors when showing a widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2562b16e1
+
+### task posting v3: moving away from SequencedTaskRunnerHandle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52fa5a7
+
+### HDR: Use image HDR metadata when tone mapping images
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/810c5df
+
+### [linux/wayland] Fixed threading in wayland keyboard unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6999fa
+
+### Bind dialog input protector to it's anchor widget changed event.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0040cb9
+
+### Remove chrome://flags#fuse-box
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e1363a4
+
+### [Launcher] Refactor search_tags_util functions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a566b6c
+
+### Reland "Ensure Virtual Keyboard extension has the functionality to load UI color dynamically."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc0dae6f
+
+### [omnibox][ui simplification] one-line suggestion display
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7c3552c
+
+### Update some histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f23198
+
+### arc: Add a way to initialize ArcAppTest with the real ArcIntentHelperBridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81d949e0
+
+### arc: Reuse more info from ghost window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2b273b
+
+### [Extensions Refactor] Move HasGrantedHostPermissions to //extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20bc533
+
+### Revert "[ProfileID] Add profile id to chrome://policy"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45b66b8
+
+### projector: Update new screencast precondition enabled by soda
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a41654f
+
+### Revert "Expose search box ghost text to Tast through app list test api."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec87a77
+
+### DPWA: migrate subapp to use SharedWebContentsWithAppLock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7f0902
+
+### [ProfileID] Add profile id to chrome://policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdf178d
+
+### Remove temporary using declaration in //chrome/browser/ui/webui/ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd59b66
+
+### Switch BookmarkItemsToListValue() to use base::Value::List.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af4c1cf
+
+### Remove CroshSWA flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a77fe30
+
+### [omnibox] Implement default browser pedal, guarded with feature and flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/69f9b01
+
+### Fix window control overlay actions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b962a2
+
+### Desktop PWAs: Retire flag RemoveStatusBarInWebApps
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c01a742a
+
+### Add "ChromeOSHoldingSpaceExperiments" to fieldtrial testing config.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fcac90
+
+### Use weak ptr to prevent running callback if browser is freed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bc4718
+
+### CloseAll: Refactor for potential performance improvements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e180731
+
+### Expose search box ghost text to Tast through app list test api.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c06465
+
+### Projector Client owns Soda installation controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf4ad96
+
+### [ntp][side-panel] Add testing suite for Customize Chrome side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c793e1
+
+### Bookmarks: Enable TrustedTypes CSP checks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08f2875
+
+### iwa: Define IsolatedWebAppDevMode Feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8bc8f2b
+
+### [CrOS Bluetooth] Add kOobeHidDetectionRevamp client-side field trial.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67b8126
+
+### Android WebUI: Migrate chrome://snippets-internals to TypeScript.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae4a223
+
+### [3CSC] Add additional left spacing to radio buttons in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/825fc95
+
+### Remove jds@google.com from chrome/browser/ui/android/omnibox/java/src/org/chromium/chrome/browser/omnibox/voice/OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4de411
+
+### Enable TrustedTypes CSP checks in chrome://browser-switch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/695702c
+
+### Add strategy for creating the overflow indicators for TabScrolling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9775b22
+
+### Privacy Sandbox Settings: Group Privacy and Security topics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efdc6dc
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cc2b6f6
+
+### Use ProfileSelections::WithAshInternals with KeyedService Factories
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5ca741c
+
+### [Sheriff] Disable tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/610f9d5
+
+### [test] Add ChromeSearchResult unit test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb99062
+
+### Clean up BlockMigratedDefaultChromeAppSync flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6eed184
+
+### subframe-reuse: remove flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f87b3a7
+
+### [Sync] Remove sync-android-limit-ntp-promo-impressions flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c19d0ea
+
+`);
+              </script>
+            </body>
+        </html>
