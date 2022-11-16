@@ -1,0 +1,364 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-16
+### Remove some expired flags and extend others
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e5325db11
+
+### [FilesTrash] Remove unused trash implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bb6d53
+
+### [flatland] Adjust physical coordinates to logical
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1752f2bf
+
+### Reland "[Files]: Adding search container."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d15f6d8d
+
+### WebUI: Improve mojo bindings.js definitions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/317ebe0d
+
+### Remove flattenhtml=true usage from about_sys.css.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/850a062
+
+### inputs: Move casting/mirroring logic into InputMethodEngine.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/939c7c9
+
+### Chrome OS Accessibility: Update and add DIR_METADATAs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9037666
+
+### FilesGM3: Restyle splitter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c7f17a
+
+### [User Education] Decouple HelpBubble mixin from HTML ids
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebae40a
+
+### ash: Speculative OnEventProcessingFinished crash fix and debug
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5017a60d
+
+### [drm] Add setter logic for VRR_ENABLED
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8d805b
+
+### Notification: Fix an issue with update group child notification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a05e9eb
+
+### WebUI: Migrate chai_assert to TypeScript and fork for CrOS Closure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b37fd43
+
+### [ATP] Fixes build with enable_accessibility_service on Chrome
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a54c94
+
+### Super secret, totally not public ChromeRefresh2023 flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bebadaa
+
+### Clean up APICompatibilityUtils for N as min SDK
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b10db9e
+
+### lacros/hdr: create hdr color spaces when display supports it
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ee254f
+
+### Replace org.chromium.base.Consumer with Java's (except in chromecast/)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1683dce
+
+### Reland "views: skip invisible widgets when enforcing widget sublevels"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b7ea011
+
+### exo/hdr: add enum for new  extendedsrgb transferID
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0096967
+
+### [Magnifier] Fix RewriteEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27e3d3f
+
+### ozone/wayland: fix threading in wayland surface factory unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47ab261
+
+### [linux/wayland] Fixed threading in wayland output unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fdf61a
+
+### [linux/wayland] Fixed threading in wayland ZAura shell unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a2d493f
+
+### [linux/wayland] Fixed threading in wayland clipboard unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cea5303
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ef0e2
+
+### Enable pervasive system accent colors.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/853fd6e
+
+### Flags: Add ITU-R BT.2020 to force color profile menu
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b15ffe6
+
+### DLP: Filter out fake entries in DlpMetadataProvider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58c50b9
+
+### Fix autofill popup arrow dependence on the insets.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37a8dbf
+
+### [cc-side-panel] Add shortcuts functionality to side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4374d10
+
+### Draw PiP 2.0 window frame borders for classic theme on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0ce85f6
+
+### chrome: add a crash key for the tabdrag event source
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/558ce06
+
+### Remove redundant GetForLocalAppsUnchecked method in SystemWebAppManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/170472b
+
+### Remove unneeded todo in scoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1182229
+
+### Move help functions from search controller impl unittest to utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/086698bb
+
+### arc: Delayed launch support for ArcApps::LaunchAppWithIntent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8b1e968c
+
+### system-web-apps: add icon health check metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc3683e
+
+### Extensions: Enable TrustedTypes CSP checks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/389ef96
+
+### Remove temporary using declaration in //ch/br/ui/webui/settings/ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/590ae4c
+
+### Fix how WebAppIntegration tests launch apps from shortcut on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a81c2e19
+
+### [WebUI] Migrate arc ui to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5eb523f
+
+### Route tab drag animation stuff through TabContainerController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e624e21
+
+### Remove the mojom WindowInfo struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0969330
+
+### Created Element Identifier for Help Bubble Buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0f31ca
+
+### Harden ToolbarSnapshotState to check for nulls for visual hint checks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bede87
+
+### DPWA: migrate RunOnOsLoginCommand to use AppLock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/461001a1
+
+### Remove the mojom launch interface in AppService.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc0bf635
+
+### Add unit test for Print Preview receiving Windows XPS capabilities
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64f2c09
+
+### Get app_id from app_controller rather than the navigation URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17751f1
+
+### Replace org.chromium.base.Function with Java's
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b60e91
+
+### [ SavedTabGroup ] Add feature parameter
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d060315
+
+### Rewrite GetPrimaryMainFrame comparison in terms of IsInPrimaryMainFrame (4/n)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eb454b
+
+### Quick answers: Filter scroll event for Quick answers views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a638cbf
+
+### Settings: Enable TrustedTypes CSP checks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/149ad28
+
+### App Settings: Enable trusted types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/271456e
+
+### [Select-to-Speak] Add Select-to-speak OS Settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a99ff1
+
+### Cleanup: Remove CryptohomeAuthenticator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/215d883
+
+### [Omnibox] Only change the toolbar height when URL focus changing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/934ab9b9
+
+### Reland "Expose search box ghost text to Tast through app list test api."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d53b05a
+
+### Snapshot later in checking readiness state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcda0f8
+
+### [Extensions] Remove use of DictionaryValue from the printerProvider API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e97ca4
+
+### Remove default page breaks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52f1319
+
+### PiP 1.5: Remove PiP WebRTC feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f978ac2
+
+### Replace org.chromium.base.{Predicate,BooleanSupplier} with Java's
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9ec79d
+
+### Add power bookmarks side panel empty state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05e914e6
+
+### sheriff: Disable flaky test on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5a8d7f7
+
+### [privacy sandbox] Add string placeholders for dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6d1e53
+
+### Nuke secondary-google-account-usage flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/27e51dc
+
+### [Passwords] Add structure and header of pass. list in the mngmt bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bd88d3
+
+### [Passwords] Extract method to compute the password shown in bubbles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4c03da
+
+### [Extensions] Use WeakPtrFactory instead of deriving from SupportsWeakPtr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b418233
+
+### DanglingPtr: triage dangling ptr in ChipController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa33fa3
+
+### [SigninScreenHandler]: Reload GAIA after the ErrorScreen is hidden
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c8abb3
+
+### [fyfre]Add splash screen chrome logo animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0db0ef3
+
+### [fyfre] Fix ProfilePickerView reuse and FRE completion on Dice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b81b91
+
+### [AF] Clean up AutofillEnableUnmaskCardRequestSetInstrumentId
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d03a8f2a
+
+### [FedCM] Enable FedCM without third party cookies behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3309272
+
+### [AF] Clean up AutofillEnableSendingBcnInGetUploadDetails
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d57d36e5
+
+### cros: Remove desks trackpad swipe improvements flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f09c28
+
+### [SmartLock] Remove flags from about_flags.cc
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3bb9a5d
+
+### Remove experimental flags for FamilyInfoFeedbackSource post launch.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/217d6a8
+
+### Clean up the DefaultCalculatorWebApp flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/19bfe8c
+
+### fileSystemProvider: enable in service workers unconditionally
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/92328c8
+
+### arc/gio: Remove ArcInputOverlay flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/68d4f1f6
+
+### Clean up AllowDefaultWebAppMigrationForChromeOsManagedUsers flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/52fda9d2
+
+`);
+              </script>
+            </body>
+        </html>
