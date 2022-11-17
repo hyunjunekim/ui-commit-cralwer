@@ -1,0 +1,348 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-17
+### Files app: Fix out of bounds array usage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/972c7f3
+
+### Files app: Small change/simplification to app's title
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dad0052
+
+### Files app: Fix tree error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ece641a
+
+### Add ImageModel versions of Set*Icon()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d535fbb
+
+### Extract: Remove feature flag and dependencies
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a4171a4
+
+### Fix surface's display not updated after previous UpdateDisplay failure.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d981865
+
+### [FilesTrash] Convert common/trash.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0aa2c74
+
+### FilesGM3: Add JS util function to check for Jelly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7afbd3e
+
+### ozone/wayland: check format support for overlays candidate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17900e5
+
+### Correct app base elevated color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d04b94f
+
+### wayland: speculative fix for a touch tabdrag crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99e490d
+
+### DLP: Grey out blocked directories in file-saveas
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c02b358
+
+### [lacros] Make WaylandTest mock window delegate less annoying.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac11514
+
+### [journeys] Make focus indicator not intersect text on hover
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4bc160
+
+### WebUI: Migrate promise_resolver to TypeScript and fork for CrOS closure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47ee3b0
+
+### Revert "[Read Anything] Define default theme from system theme"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc6347d
+
+### Add constexpr to some gfx::Transform constructors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc1476b
+
+### Fix presentation callback in ui compositor test_utils
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f108010
+
+### ui/display: Move Internal Panels to the Front in DisplayConfigurator
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/489fa62
+
+### [Lacros/Server] Introduce 'active' display concept
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b86c8e2
+
+### Revert "WebUI: Migrate promise_resolver to TypeScript and fork for CrOS closure"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf7ecbd
+
+### [CrOS Cellular] Create initial <apn-detail-dialog>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62bfbf4
+
+### [linux/wayland] Fixed threading in wayland pointer gestures unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/485211b
+
+### [Read Anything] Define default theme from system theme
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c581bca
+
+### WebUI: Migrate promise_resolver to TypeScript and fork for CrOS closure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95484c7
+
+### [views]: DesktopNativeWidgetAura Hardening - Added user event tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9eb915c
+
+### Fix presentation callbacks and WindowTreeHost
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/065b21e8
+
+### ozone/wayland: fix threading in wayland screen manager unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/901418a
+
+### ozone/wayland: fix threading in wayland buffer manager unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0f3ab0
+
+### [linux/wayland] Fixed threading in wayland ZAura output unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a810ff
+
+### [linux/wayland] Fixed threading in wayland event watcher unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0a7f26
+
+### DanglingPtr: Mark all of them as untriaged [10/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5812f3c
+
+### DanglingPtr: Mark all of them as untriaged [8/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/961e904
+
+### [linux/wayland] Fixed threading in wayland window manager unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2cbea4d2
+
+### Files app: Preparation to upgrade ICU to 72
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d1f495
+
+### Replace ScreenAI & ScreenAIUseLayoutExtractor flags by LayoutExtraction.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7935b62
+
+### [Office upload] Add setup screen for Drive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f8fba2
+
+### Don't offer to update virtual card expiry date on Chrome desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28afe2a
+
+### WebUI: Enable TrustedTypes CSP checks on several WebUI pages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/874449e
+
+### Remove Android.ThemeColor histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bc777b
+
+### Cleanup DEPS in //chrome/browser/ui/webui/{ash,chromeos}
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88f0958
+
+### DPWA: templating CallbackCommand and allow accessing a lock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19fc453
+
+### saved_desks: Changing wait method in SaveAndRecallBrowserTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2481993
+
+### Rename IDS_ASH_QUICK_ANSWERS* to IDS_QUICK_ANSWERS*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60c5868
+
+### PIP2.0: make the url title elide head.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/348237e
+
+### Reduce right margin on elements in Partial Translate Bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/708d063
+
+### Show snackbar when the user follows a web feed from the Following feed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6737ea
+
+### Settings: Enable TrustedTypes CSP checks, part 1.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9a7dd4
+
+### Re-enable the tab capture blue border on ChromeOS with Feature-control
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1aad4b
+
+### Check auth token during fingerprint removal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d7ae10
+
+### Revert "Confirmation Chip should request focus"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc0bc7a
+
+### Add emshack@ to c/b/ui/views/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/437bcfe
+
+### [privacy sandbox] Report show prompt actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3db26cb
+
+### [Extensions] Remove site access button from toolbar controls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfdc5bb4
+
+### Fix bug causing no image bytes to be sent to Lens Web
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5892d56
+
+### Same App Window Cycle: Add accelerator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0ca14e
+
+### Adds localized error status to policy page UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb8c8a2b
+
+### Remove support for page breaks from app list model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5164e1
+
+### [privacy sandbox] Load WebUI URL based on the prompt type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b186d5
+
+### Import custom element HTML templates at runtime in account_manager/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23ffe535
+
+### Migrate to new StatisticsProvider API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/360122f
+
+### Disabling flaky KeyboardLockInteractiveBrowserTest.RequestedButNotActive on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73998d7
+
+### [Passwords] Fix All passwords bottom sheet contrast issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cc5b58
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f29690
+
+### [Kartoffel][Clank] Adding a new Notice for EEA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce9882d7
+
+### Confirmation Chip should request focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b6dc21
+
+### Revert "Harden ToolbarSnapshotState to check for nulls for visual hint checks."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6162f5
+
+### Revert "[UPM-Desktop] Add PasswordManager logos to the app manifest."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ee4350
+
+### T&S Sentiment: Add Trusted Surface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8dbd94
+
+### Rewrite GetPrimaryMainFrame comparison in terms of IsInPrimaryMainFrame (8/n)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f086205
+
+### [UPM-Desktop] Add PasswordManager logos to the app manifest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f671d01
+
+### [UI] Expose the secondary label in the RichHoverButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/366e028
+
+### Invalidations: Fire correct webui event name to update ids
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c21d8d0
+
+### DanglingPtr: Mark all of them as untriaged [9/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fd4ff1
+
+### Remove address save prompt feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d20a06e
+
+### Add Fade Overflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5593ebf
+
+### Revert "Settings: Enable TrustedTypes CSP checks."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad1bb21
+
+### Fix Frame Color not getting called
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68b3092
+
+### ash: Adding browser flag enable-per-desk-z-order.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3a71e98
+
+### ash: Removing the flag performant-split-view-resizing.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/11dc9ee
+
+### [AF] Clean up AutofillParseMerchantPromoCodeFields
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f33751c
+
+### Adding a flag to enable password grouping.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/083adff2
+
+### Load ScreenAI functions based on enabled features.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/12a8d33
+
+`);
+              </script>
+            </body>
+        </html>
