@@ -1,0 +1,260 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-19
+### WebUI: Fix util_ts to query by ID
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/174341d
+
+### Remove unnecessary function SerializerClearedNode()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25ef2f6
+
+### Migrating ICU from 71 to 72
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e30468
+
+### ax_win: support iaccessible2 script testing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a67b249
+
+### WebUI: Fork a TS version of util.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce98579b
+
+### Rewriter: Do not remap modifiers when shortcuts are blocked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f40a62
+
+### wayland: use ASSERT_TRUE instead of DCHECK in wayland_drag_drop_test.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e30b4f2
+
+### Rename of function introduced in previous CL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/549ef10
+
+### [User Education] Enable anchoring WebUI help bubble to arbitrary element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/311f123
+
+### cros: Make ActivationChangeObserver checked observer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a8f0720
+
+### [Test Automation] Kombucha 1.5: Add EnterText and Confirm verbs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4591ba
+
+### [journeys] Pipe the \`image_url\` for visits through to the WebUI
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e4c533c
+
+### Finish migrating Set*Icon calls to ui::ImageModel
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c3721e
+
+### windows: Fix 1px gap with maximized frameless window on Win11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb29ad0
+
+### Fix heap-buffer-overflow in ui::ParseCursorFile
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ade1a30c
+
+### DLP: Open FilesApp in MyFiles if resolved dir is blocked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7a5fd09
+
+### [linux/wayland] Simplified Wayland unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/876083c
+
+### ozone/wayland: check the version before using gtk_surface1_release
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7794cc8
+
+### [linux/wayland] Fixed threading in wayland event source unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4aba132
+
+### [linux/wayland] Fixed threading in wayland text input wrapper unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9335654
+
+### Expire various expired PrintPreview histograms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4117a21
+
+### NewTabPage: Enable TrustedTypes CSP checks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c7dedf6
+
+### [Select-to-speak] Fix translation extraction by refactoring strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aed46de
+
+### Disable flaky ConstrainedWindowViewTest.TabSwitchTest on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bfd146a
+
+### Tweak tests to allow running tasks by batches on ChromeOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/283f185
+
+### USB Internals: Enable trusted types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc30c0f
+
+### Reland "Instrument side panel reading list for WebUI help bubbles"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26319d08
+
+### [Remote Playback] Send request to RendererController to start remoting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f601f65c
+
+### [UI] Replace SetTitleText(titleTxt,secTxt) with SetSecondaryText()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c33b3d2
+
+### power_sounds: Play sounds for power charging or battery
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/defce5db7
+
+### [UI] Cleanups in RichHoverButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4b7e01
+
+### Renaming TrustTokens to PrivateStateTokens in UI and runtime features
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c3be71f
+
+### [Lens] Remove v1 side panel tests because the v2 side panel is enabled by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5332e28
+
+### Fix presentation callback in BrowserTabStripController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06a4aa7
+
+### CodeHealth: Remove DictionaryValue from c/b/ui/webui p1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d289d2a
+
+### [Omnibox] Recycled view pool added for most visited tiles carousel.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef44d63
+
+### Don't offer to update virtual card expiry date on Chrome android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05dd10f
+
+### Enable TrustedTypes CSP checks on several signin related WebUIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6a7dec
+
+### [SPC] Add Secure Payment Confirmation opt out WPT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56413f8
+
+### Disable flaky ClipboardHistoryReorderBrowserTest.OnPaste.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/629525d2
+
+### Update UX to latest mocks for bookmarks sort menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2591bb7
+
+### [TailoredWarning] Log OPEN_SUBPAGE action in DownloadItemWarningData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8b86b0
+
+### Update title if the clank authenticator selection dialog has multiple
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86f9e8d
+
+### [PreinstalledWebApps] Handle the case of force-installed default apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc4c349
+
+### Privacy Sandbox Settings: Ad Privacy row links to empty pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9b84e304
+
+### [APC] Remove PasswordScriptFetching flag from trunk.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f1b1e1e
+
+### [Kartoffel][Clank] Adding a new Notice for ROW
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c74ff44
+
+### [TangibleSync] Update move button in Tangible sync layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbd100a
+
+### [ipp-client-info] Add client_info_supported to CupsPrinterStatus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3576aa8
+
+### Remove TestPasswordGenerationPopupController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c3a8ff
+
+### [SAML] Add ability to switch to GAIA page on the lock screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d68ae89
+
+### [UPM, Desktop] Relax installability checks for PasswordManager WebUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cfb0e1
+
+### support-tool: Exclude unavailable data collectors from UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53847726
+
+### [Metadata][Clank] Append dimension specs to card art URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ac0318
+
+### [launcher] Re-link some TODOs and delete unused code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9954030
+
+### [StatusBar] Revamped the logic for syncing the toolbar and status bar color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c468c00
+
+### [CrOS Hotspot] Add hotspot subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/305a1f60
+
+### web-app-launch: Fix selection order when deduping into existing web app windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7644d9c
+
+### arc: Add arc::prefs::kArcPackagesIsUpToDate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/992f247
+
+### Add power bookmarks side panel to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/675ca99
+
+### Add UI flag for IDNA 2008 Non-Transitional mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c6b5135
+
+`);
+              </script>
+            </body>
+        </html>
