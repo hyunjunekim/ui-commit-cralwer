@@ -1,0 +1,36 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-20
+### ax_script: rename IA2's getInterface + implement IA2::role
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2b70d4
+
+### Refactor building visual tree from pending overlays into BuildVisualTreeHelper method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/729c3701
+
+### Partially Revert "[linux/wayland] Simplified Wayland unit tests."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba0252b4
+
+### Revert "Add set_color_id in BubbleDialogDelegate"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80f0613
+
+### Fix crash in TouchSelectionMenuViews::DisconnectOwner()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e10277f
+
+`);
+              </script>
+            </body>
+        </html>
