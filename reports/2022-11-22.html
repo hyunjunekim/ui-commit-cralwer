@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-22
+### [Files]: Open query input via method not CSS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/230da65
+
+### ozone/wayland: fix potential crash with unsupported buffer formats
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57a8109
+
+### WebUI: Make cr-lottie Worker creation TrustedTypes compliant.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de9a2f8
+
+### Files app: Don't throw Error in volumeManagerUtil.validateError
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a0dfea
+
+### [lacros] Debug logging for test flakiness when toggling fullscreen.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5542da1
+
+### Fix ScreenDetailed fullscreen sizes; add a window.screen flag.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/651b5208
+
+### Calculate IME keyboard height/visibility using WindowInsetsCompat
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9db9bb7
+
+### immersive fullscreen mac: workaround for blank top chrome
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53fc8e4
+
+### [GMNext] Make the text button highlight dynamic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8681a84
+
+### [ozone-wayland] Fix output bugs in [1]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3c253a
+
+### [linux/x11] Fix touchpad overscroll history navigation in X11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5c2692
+
+### WebUI: Remove cr.m and event_target on most platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d229f21
+
+### WebUI: Remove unnecessary dependencies on js_library mojo targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db0b723
+
+### ozone/wayland: remove wl::CalculateBindVersion()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e5f1d45
+
+### [TabStripRedesign] Fix divider color and edit mode brightness
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d000099
+
+### Add VRR fields to DisplaySnapshot
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee97c2c
+
+### ozone/wayland: remove obsolete \`#ifdef ..._SINCE_VERSION\` guards
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce85cd00
+
+### task posting v3: moving away from ThreadTaskRunnerHandle
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b9af51f
+
+### ozone/wayland: improve UpdateDragImage() implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/000e966
+
+### Files app: Move the event listeners to constructor of the listener
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c89808
+
+### Add kUIEnableSharedImageCacheForGpu feature.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee683e1
+
+### ime: Delete unused InputMethodEngine::SetSelectionRange.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ab9393
+
+### fixup! ozone/wayland: check format support for overlays candidate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5dbd4a6
+
+### Files F2: Selection & Tasks state definition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d3f4a5
+
+### Files app: Remove unused code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89d0d51
+
+### Add account_manager/OWNERS to c/b/ui/webui/signin/ash/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/607a83c
+
+### [Office] Add sign-in page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71c0f63
+
+### [OS Settings] Added search alt tag for the term Hotspot.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f66a82
+
+### Bluetooth Internals: Enable Trusted Types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c4b2dd
+
+### Settings: Enable TrustedTypes CSP checks, part 2.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef438ed
+
+### Switch Chrome-on-CrOS from C++20 back to C++17.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6d14f1
+
+### Move omnibox filter to filter ranker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/437ee65
+
+### [Read Anything] Add hover background to text increase/decrease buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ab69b38
+
+### [Office upload] Store whether the setup has ever been completed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e045d7d
+
+### PIP2: omit session restore for pip window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6da845
+
+### [Omnibox] Fix for OmniboxMostVisitedTilesAddRecycledViewPool crash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1362541
+
+### Remove #wallpaper-google-photos-integration flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8a63d74
+
+### [Cormorant] Add dynamic title and url in the profile section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c65aa9
+
+### Make the intent code fully async
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4a8127
+
+### VC UI: Use FakeVideoConferenceTrayController in the emulator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26fe354
+
+### Remove expired ContentSettings.ImagePressed histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a81c2e
+
+### Remove TabManager::WebContentsData.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e929b9
+
+### Add a divider version of Tab Scrolling overflow indicators.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ca48a0
+
+### [journeys] Attach entity images to the visit's \`image_url\` field
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17c6554
+
+### Enable PiP 2.0 window resizing on Chrome OS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5f1ea0
+
+### multipaste: Expose clipboard history items' selected state to a11y tree
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f05382
+
+### Enable TrustedTypes CSP checks on chrome://invalidations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b483beb
+
+### [Extensions] Remove SupportsWeakPtr from ExtensionServiceInterface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0e299d
+
+### [NTP] Realbox Comprehensive theming colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a768a1
+
+### Fix build with enable_screen_ai_service=false
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91f3147
+
+### Adds a new method "openFeedback" to feedback api
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb4b50c
+
+### shortcuts: Create chrome delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1238d90c
+
+### [Extensions Cleanup] Remove unused request access button dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7f24b6
+
+### Add password strength calculation to generation dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4657fc1
+
+### [dpwa] Generate new browser tests for manifest_update_icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db32f116
+
+### Enable unified side panel on TOT.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0facca4b
+
+### Clear Site Specific Media License Data on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89ac4ebc
+
+### Android: Make PackageUtils APIs not require Context
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5da03c8
+
+### [fyfre] Get available sync benefits list dynamically on tangible sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb270ae
+
+### Remove unnecessary import of Polymer in chrome://connectors-internals/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/550f214
+
+### [Web Payment] Use the common payment handler installer in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f7d64bd
+
+### [privacy sandbox] Fix crashes when getting service in the bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a64088e
+
+### Announce confirmation chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de0ff606
+
+### T&S Sentiment: Add Password Check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2be25ca
+
+### Update SyncedSession to use new DeviceInfo Enums.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/438e516
+
+### [OOBE]:  Fix Kiosk AutoEnrollment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e83d44
+
+### [OOBE][RecommendApps]: Revamp cleanup part 1/3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fd57c8
+
+### [privacy sandbox] Add images and styling for new dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c1564c7
+
+### T&S Sentiment: Add 'Ran Password Check' interaction toHatsBrowserProxy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6acd04a
+
+### Remove AutofillUiImprovements features
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/89fa85f
+
+### [Privacy Sandbox] Open privacy sandbox settings inside settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a18f5b12
+
+### DLP: Move policy checks to SelectFileDialogExtension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01360d5
+
+### [Autocorrect] migrate preference to toggle with flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/efc2ec0
+
+### system_sounds: Add the chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3bd31e5
+
+### Remove feed ablation flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c65d8e76
+
+`);
+              </script>
+            </body>
+        </html>
