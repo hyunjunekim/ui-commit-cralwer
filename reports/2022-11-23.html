@@ -1,0 +1,324 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-23
+### fix typo in select_file_dialog_linux_portal.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09cf852
+
+### Files F2: Clean up some File Tasks callbacks.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd35fe8f
+
+### [FilesGM3] Add missing color tokens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cfe5145
+
+### Revert "[Reland#2] VT: Fix snapshot rect for a resizing virtual keyboard"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7202e3
+
+### ui: Move DialogModelButton label to Params
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07582677
+
+### WebUI: Make dialog title an h2 element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34e3a36
+
+### Add mojom interface for AXMode to increase flexibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e54912e
+
+### [Expired Histograms] GPU.DirectComposition.CompositionMode2.VideoOrCanvas, GPU.DirectComposition.DecodeSwapChainCreationResult, GPU.DirectComposition.DecodeSwapChainNotUsedReason, GPU.DirectComposition.DecodeSwapChainUsed, GPU.DirectComposition.SwapChainCreationResult, GPU.DirectComposition.SwapChainCreationResult2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3d85d6
+
+### [Reland#2] VT: Fix snapshot rect for a resizing virtual keyboard
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de28eb38
+
+### [GMNext] Clean up dynamic theme overlays
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56f91e7
+
+### [ozone/wayland] Guard use of DrmRenderNodePathFinder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff7836e
+
+### [Cleanup] Remove launched flag AccessibilityOSSettingsVisibility
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03778852
+
+### Remove memset in x11::Event.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3346d17
+
+### media: Handle orphaned DCompTexture after power or GPU change
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/562092c
+
+### Revert "Calculate IME keyboard height/visibility using WindowInsetsCompat"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e76e06
+
+### Revert "ui/display: Stop updating disconnected internal display infos"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81afecbb
+
+### ozone/wayland: don't use default arg for virtual function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4c8ff5
+
+### ozone/wayland: remove extra ResetPointerFlags() call during window drag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4534918
+
+### Reland "[wayland] Fix minimize state propagation client side"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bdcf741
+
+### DanglingPtr: fix move constructors of event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2384abb
+
+### ozone/wayland: Remove TestServerMode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7050577
+
+### [BRP] Apply raw_ptr rewriter
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1b0023
+
+### Revert "[wayland] Fix minimize state propagation client side"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd96e2e
+
+### [GPU] Move GLImagePbuffer into //gpu/command_buffer/service/shared_image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1218e05
+
+### ozone/wayland: make wayland fuzzer use async api
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a0d047
+
+### [wayland] Fix minimize state propagation client side
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e07d599
+
+### Make the intent code fully async (attempt 2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7041ef
+
+### Extensions WebUI: Add more specific label for 'Learn more' links
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14cd782
+
+### [Select-to-Speak] Add Highlight Color Dropdown to Settings Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/203cdb0
+
+### Diagnostics: Block esc closing app when in dialog and kb tester is open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58283c2
+
+### WebUI: Delete incorrect DisableTrustedTypesCSP() calls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c389dac
+
+### Notes: add tab context menu option to add a note.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3518e00
+
+### Clicking Ash shelf icon shows a reduced list of tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e6a642
+
+### Move toggle tab group from TabStrip into TabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89c0cc0
+
+### Clean up arg that is not needed in AddTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/193a119
+
+### WebUI: Add test to ensure TrustedTypes checks are enabled on WebUIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d183dcd
+
+### [test] Add unit test for SearchControllerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8da71d3
+
+### Revert "[OOBE][RecommendApps]: Revamp cleanup part 3/3"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0f11c554
+
+### [DIPS] Consolidate the DIPS WebContentsObserver logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ebdd2c
+
+### Re-enable ChromeURLDataManagerWebUI...Test for credits URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d0128e
+
+### [Messages] Remove password message feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c243d4f
+
+### Revert "Disable Keystone Updater infobar on macOS conditionally on GN flag"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb86753
+
+### Enable TrustedTypes checks for a few more small WebUIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9775607
+
+### PIP2: Fix crash when changing theme.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04a6317
+
+### Rename CardUnmaskAuthenticationSelectionDialogViews to CardUnmaskAuthenticationSelectionDialogView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f876496
+
+### Rename CardUnmaskAuthenticationSelectionDialogView to CardUnmaskAuthenticationSelectionDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/219c070
+
+### [ SavedTabGroup ] Cleanup TabGroup::IsSaved()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce6bc0aa
+
+### ash: Clean up the launched flag improved-desks-keyboard-shortcuts.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2fa5c0b
+
+### [omnibox][post-ac] Reimplement tail suggest ellipses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d8760b
+
+### [Passwords] Populate password details page header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83f5032e
+
+### [ChromeVox] Add import to HotseatShelfAppBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48f8029
+
+### [ReadingList] Rename ReadingListStore to ReadingListSyncBridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30c5c2e
+
+### Disable Keystone Updater infobar on macOS conditionally on GN flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3541c2
+
+### parent access: Add extra dimmer to parent access dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/288c6462a
+
+### Remove temporary using declarations from c/b/ash/[b-f]*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ababdaa
+
+### Privacy Sandbox Settings: Add Desktop field trial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f09a39
+
+### Use non-client frame view for PiP 2 for more platforms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/509ae80
+
+### Auto-create new tab when last open tab group is closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed038288
+
+### Fail fast quiet chip.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e406ecc1
+
+### [CodeHealth] Remove use of base::ListValue from invalidation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28b2a4e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8f5a9c
+
+### [OOBE][RecommendApps]: Revamp cleanup part 3/3
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6b024e1
+
+### Clean up AllowSyncOffForChildAccounts flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60da1ff
+
+### T&S Sentiment: Add browsing data deletions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ce98db4
+
+### [Passwords] Populate the password list in ManagePasswordsView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49a96a3
+
+### Correct invalidate location view layout logic in ChipController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59ad094
+
+### DigitalAssetLinksHandler should take url::Origin instead of std::string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adb9d6b
+
+### Privacy Sandbox Settings: Ads measurement page layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb8f362
+
+### Clean up delayed prompts correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b94095
+
+### Cros settings: Add confirmation dialog when disabling recovery.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dc03dd
+
+### Reland "[UPM-Desktop] Add PasswordManager logos to the app manifest."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e3eb81
+
+### Revert "Make the intent code fully async"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c7c932
+
+### [devtools] Prohibit cookies when requesting DevTools remote resources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/935ac5c
+
+### [Office upload] Set setup complete on last page of office setup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d1b849
+
+### [PCCT-SideSheet] Add the CCTResizableSideSheet feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/617332a
+
+### Add gallery notification flag to about_flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eeaad0f
+
+### ime: Delete launched feature flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cf94a7e6
+
+`);
+              </script>
+            </body>
+        </html>
