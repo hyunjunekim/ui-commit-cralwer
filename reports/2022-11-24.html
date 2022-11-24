@@ -1,0 +1,288 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-24
+### LacrosTablet: Introduce tablet mode setter for unit testing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b68fe2
+
+### IME: Workaround for TSF, Google Japanese Input, and vertical writing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82897d8
+
+### Using the new RectF/SizeF InvScale function in ui/ code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d26dd45
+
+### Cr Elements: Migrate to TS asserts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0aaec8a5
+
+### Fix crash in WaylandZAuraOutput.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/935a608
+
+### Add protective check in MessagePopupCollection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01d5e7f
+
+### Remove non-linear stretch elastic overscroll filter.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2aeba7d
+
+### Fix presentation callbacks in PresentationTimeRecorder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b75b4a
+
+### Update to use scrollable tabbed pane and add remaining examples
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ec003f
+
+### [Tutorials] Interaction sequence steps can inherit context.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdead24
+
+### [GLImage] Internalize GLImageRefCountedMemory in unittest that uses it
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b191b7
+
+### Reland: Calculate IME keyboard height/visibility using WindowInsetsCompat
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24d71d5
+
+### Add parameters to gfx::Transform::ApproximatelyEqual()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f676a65
+
+### ozone/wayland: add debug check for explicit release object.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e198bc
+
+### cros: Make FocusChangeObserver checked observer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ace09a
+
+### LacrosTablet: Adjust bubble if offscreen for Lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd4381f
+
+### [CrOS Cellular] Add advanced section fields to <apn-detail-dialog>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6daf708
+
+### fixup! Reland "[wayland] Fix minimize state propagation client side"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8da9f44
+
+### Files app: Fix hiding defaultTask in context menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2069bec4
+
+### AppHome: implements the \`CreateAppShortcut\` API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08e0b64
+
+### Revert "[dpwa] Generate new test for launch_file_expect[_no]_dialog for Win and"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4d64e8
+
+### Downloads: Update to TypeScript Mojo Bindings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b48170
+
+### [SafetyCheck] Update text of aria label and header text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd78ae5
+
+### [FilesTiering] Plumb checkbox from drive-internals to bulk pinning pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c203757c
+
+### Revert "shortcuts: Create chrome delegate"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a51c9b2d
+
+### Avoid invoking base::Unretained() on several incomplete types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7612588
+
+### Print Preview: Enable TrustedTypes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d529d56
+
+### Remove unused sSuppressionEnabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77471f8
+
+### os settings: refactor os_settings_sections
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48ab842
+
+### [dpwa] Generate new test for launch_file_expect[_no]_dialog for Win and Linux.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2331e33
+
+### Use default color equality for home button snapshot.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a47a046
+
+### [Select-to-Speak] Add Background Shading Preview to Settings Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02c89f0
+
+### Removed unused ToolbarLayout methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b2d7220
+
+### VC UI: Refactor how we construct and access the controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5aa874
+
+### Remove unused UMA logging.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/058bf90
+
+### Delete all launchpad code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25c20c02
+
+### reenable search box state api test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7751e85
+
+### [Payments] Clean up some basic-card only test-support code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3db7946c
+
+### Implement chrome://metrics-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b3da3e
+
+### Parent access widget: create offline screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18eba87f
+
+### Fix a crash opening a popup from tab capture fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccc2535c
+
+### [Select-to-Speak] Add Preview for Highlight Color to Settings Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07edf85
+
+### Restore a permission prompt on tab change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6eca156d
+
+### Update microphone sw switch notification text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc739ea
+
+### Lookalikes: Add test helper and reuse test top domain lists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b428f4e
+
+### Reland "[UnsafeDanglingUntriaged] chrome/browser/ui/views/extensions/extensions_toolbar_container.cc"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd1f9c20
+
+### PiP 2.0: Turn on DocumentPictureInPictureAPI conditionally.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cbab5d4
+
+### Move Universal Link support off the main thread
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/171626f
+
+### Revert "[UnsafeDanglingUntriaged] chrome/browser/ui/views/extensions/extensions_toolbar_container.cc"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d35edc2
+
+### Extensions WebUI: Add more descriptive labels to keyboard shortcut form
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7711a0d
+
+### Notes: mojom API implementation part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a20f2a
+
+### [UnsafeDanglingUntriaged] chrome/browser/ui/views/extensions/extensions_toolbar_container.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10ae8e3
+
+### Remove remaining dependencies to the FileSystem Connector implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/def6532
+
+### Enable TrustedTypes checks on chrome://connectors-internals/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/187792c
+
+### AboutThisSite: Fix crash on navigation after side panel close
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/662879d7
+
+### PiP 2.0: Strip code on Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ab23a0
+
+### [DP Optional Services] Desktop Screenshots
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4496bf
+
+### [SafetyCheck] Add backend connection for unused site permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1670e283
+
+### cros: Add a new OOBE screen for the recovery setup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4648984
+
+### [FastCheckout] Fix landscape mode in the home page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/315e1906
+
+### [Privacy Hub] Keep app name for camera hw switch notification updated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8a9688
+
+### Pip 2.0: Merge VideoOverlayWindowViews and OverlayWindowViews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eac774f
+
+### Remove temporary using declarations from c/b/ash/login/[t-]*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a604c1b
+
+### [FastCheckout] Remove consentless execution.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d0432e1
+
+### [Passwords] Load the favicon in the manage password bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac6141f
+
+### AppHome: implements the \`ShowAppSetting\` API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26a6bf90
+
+### Add a flag to enable DoH with identifiers experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/81bed8a
+
+### cc: add chrome://flags#ui-enable-shared-image-cache-for-gpu
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dc5d70a
+
+`);
+              </script>
+            </body>
+        </html>
