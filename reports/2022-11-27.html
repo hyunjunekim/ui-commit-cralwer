@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-27
+### [lacros/client] Add active display support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/981a046
+
+### [Remove FileSystemConnector] Remove unreferenced/unreachable code now that FileSystemConnector implementation is removed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c37db88f
+
+`);
+              </script>
+            </body>
+        </html>
