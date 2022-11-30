@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-11-30
+### Move USE_V8_CONTEXT_SNAPSHOT from a define to a buildflag...
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f59b10
+
+### Revert "gpu: win: Add DCompImageBackingFactory tests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3652055
+
+### Revert "vt: Add RenderTests for interaction with Android UI"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b450a3d
+
+### Browser Command: Migrate to TypeScript Mojo Bindings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44f39f3
+
+### vt: Add RenderTests for interaction with Android UI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3485e7ab
+
+### gpu: win: Add DCompImageBackingFactory tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b3da34
+
+### WebUI: Remove uses_legacy_modules option from js_library/js_type_check.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e2c2f4
+
+### Add initial structure for ChromeRefresh2023 combobox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b79097
+
+### Add missing mojom dependency
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d3448a
+
+### WebUI: Remove $ from Android Closure UIs and make util Ash-only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10a055f
+
+### Update aura_shell version to 45 which has active display support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/243d4f5
+
+### Add missing ostream includes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8ec579
+
+### [BRP] Apply raw_ptr rewriter for linux
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71ad757a3
+
+### Add target fullscreen plumbing in platform windows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce06ff4
+
+### ax_ui: get rid of deprecated AXPosition::tree_id()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/270d3d4
+
+### DLP: Move upload checks to SelectFileDialogExtension
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ef1e48
+
+### Use cc::PaintOpBuffer instead cc::DisplayItemList in cc::PaintRecorder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/86a23895
+
+### Use iterators to avoid redundant map lookups
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2004dac
+
+### Made AXNode::GetPosInSet and GetSetSize const
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81ddcc8
+
+### [ATP] Fix AutomationTreeManagerOwnerTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4429d07
+
+### WebUI: make util.js ash/android only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac7d558
+
+### Add missing ostream includes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ffdf84
+
+### Revert "Reland: Report crash-dump for GetFontFallbacks that succeed on Windows"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4c5875
+
+### Disable flaky WaylandWindowTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12a4a927
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a37dfc1
+
+### [User Education] Remove 'in any context' logic in favor of ContextMode
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/017af2d
+
+### DLP: Dim blocked files in file open dialogs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25f2f8f
+
+### WebUI: Promote settings-textarea a shared WebUI element.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6cd00fb
+
+### [GLImage] Restrict GLImageMemory creation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/549a43f
+
+### Add unit tests for Personalization Provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1429e74
+
+### Add chenjih@ to the launcher OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4a41f7
+
+### add support for unique floating workspace template uuid
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8053dca6
+
+### Make multi-screen fullscreen tests work in more display environments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/159f63f6
+
+### [launcher] Remove outdated TODO.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47a78dfd
+
+### Animate pinning or unpinning with CompoundTabContainer enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c63c86
+
+### CodeHealth: Make web_app::AppRegistrarObserver::OnAppRegistrarDestroyed pure virtual
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bb36a0
+
+### Lookalikes: Remove Digital Asset Links code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23191b6
+
+### Enable TrustedTypes CSP in chrome://internals/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85089d2
+
+### Standardize namespace in c/b/ui/webui/settings/ash/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90f7998
+
+### Adds screenplay tags to all CUJ's
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52334d6
+
+### iwa: Use GURL::Resolve instead of appending to GURL::spec()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7100b4d
+
+### Enable TrustedTypes CSP checks on chrome://new-tab-page-third-party.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/187f058
+
+### [dPWA] Clean up WebAppLaunchProcess
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb0aa65
+
+### [Payments] Move PopulateSheetHeaderView into PaymentRequestSheetController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/238ee3d
+
+### Cleanup] Remove unshipped code for ServerSuggestionsFetcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f381f13
+
+### [Web Payment] Use the test installer in "change method" test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e86ab88
+
+### Remove IsAutofillAssistantShowing() from autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6f30c1
+
+### [OOBE][Settings] Refactor and unify string resources for FP Setup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8e6df3
+
+### Revert "Added additional High Efficiency UI Tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c06139
+
+### Added additional High Efficiency UI Tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/439d6dc
+
+### DPWA: schedule updates in ProtocolHandlersHandler to be async
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d2cbce
+
+### [Payments] Refactor PaymentHandlerHeaderViewUITest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cee04d0
+
+### [Test Automation] Kombucha 1.5 verbs for WebContents instrumentation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8d53a0
+
+### Initial checkin of TrustStoreAndroid that doesn't actually try to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb41ebe0
+
+### DPWA: schedule sync_bridge usage in WebAppPublisherHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffd7a05
+
+### Disable flaky ReturnSuccessfulResponseUsingKeyPress on mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d9a140
+
+### VC UI: Add green dot indicator and behavior to VC tray
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/106a4e0
+
+### Clarify disabling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57e343d
+
+### [Password Manager] Adding owners to c/b/ui/webui/password_manager/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e433611
+
+### [ReArchPPV] Add some overview docs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/767a35d
+
+### [Privacy Sandbox] Link rows to new empty privacy sandbox subpages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca55e5ac
+
+### T&S Sentiment: Add control group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2321784
+
+### cros: Add histogram for passwords with whitespaces
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7a65de
+
+### Reland "Split profile deletion code out of ProfileManager"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7532421
+
+### Privacy Sandbox Settings: Clean up partially kPrivacySandboxSettings3.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6debc53
+
+### Add DIR_METADATA for support tool
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bd64045
+
+### Prepare tests for Chrome side owner key generation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e024d6
+
+### Enable TrustedTypes checks on chrome://intro
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e0aa08
+
+### [APC] Remove settings trigger from desktop.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/05236475
+
+### Add DIR_METADATA files for support tool
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/667902ba
+
+### [Passwords Import] Add support for too long note error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a98641
+
+### Desktop PWAs: Enable WebAppTabRestoreBrowserTest on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8113154
+
+### [CodeHealth] Use base::Value v2 API in c/b/ui/webui/access_code_cast.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c56f659a
+
+### [CodeHealth] Use base::Values v2 API in print_preview.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/614cb0e
+
+### [CodeHealth] Use base::Value v2 API in c/b/ui/webui/welcome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42032d0
+
+### [Office upload] Fix height of File Handler dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/359327d5
+
+### Revert "Implement keyboard shortcut for Lens Region Search."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a2b8d0
+
+### iwa: Create TestSignedWebBundle and TestSignedWebBundleBuilder classes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52165ed
+
+### AppHome: implements the \`LaunchApp\` API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27c1116e
+
+### Remove the explore sites tile from most visited.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b92aac
+
+### arc/gio: Add Alpha Two feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a61e7db
+
+`);
+              </script>
+            </body>
+        </html>
