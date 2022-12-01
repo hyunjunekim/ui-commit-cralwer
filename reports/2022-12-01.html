@@ -1,0 +1,324 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-01
+### Move //chromeos/{=>ash/components}/login/login_state
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dade3c
+
+### [Refactor] Rename toLanguage to toBaseLanguage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98ba9ef
+
+### Automatically enable ARCVM Doze mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1fbd59a0
+
+### [Lacros] Wait applying output until it is ready
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d50aa06
+
+### Prevent redundant child removed, ignored state changed events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06f376b
+
+### Silence Mac OpenGL deprecation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07e2b88
+
+### Implement DialogMenuModelAdapter::GetSeparatorTypeAt
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/492b35b
+
+### [Test Automation] Assign ID to BrowserView, add WithView() verb
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fadcfa18
+
+### WebUI: Rename WebUiListenerMixin's addWebUIListener method.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f82166
+
+### [linux/wayland] Removed TODOs and updated the documentation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/866b6a0
+
+### File Manager: fix newly added bad import
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee2e66b7
+
+### WebUI: Move event_target and util to ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1599768
+
+### Add DCHECKs to serializer to ensure valid nodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a4a441
+
+### [CrOS Hotspot] Generate mojo binding for CrosHotspotConfig
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb952ac1
+
+### Reland "Move BrowserAccessibilityState.java to ui/ and rename"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/090bda8
+
+### [fuchsia][scenic] Add view inset support in chromium for flatland.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93e6e9a
+
+### Add placeholder color under GM3 flag for Checkbox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c454802
+
+### linux: trigger xdg-desktop-portal file dialog background checks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc6185628
+
+### wayland: fix file dialog modality when use_gtk=false
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/386b5eb
+
+### Enable deprecation warnings on deps of jsoncpp on Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e993fddd
+
+### TooltipLacros: Ash implementation of Server side tooltip for Lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f66bb1f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71f69e1
+
+### [CrOS Cellular] Add "automatically detected" label.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b85e159
+
+### [linux/wayland] Adopted the new way of setting the buffer offset.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/758dd0a
+
+### file_manager: Share with Bruschetta
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c691d01c
+
+### [Read Anything] Update combobox with custom text color
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/378d9a3
+
+### [Files]: Icons and translations for the search v2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d21ea81
+
+### [FilesRefresh] Add tree/tree-item widgets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44536e85
+
+### Add HID code for privacy screen, microphone mute and keyboard backlight toggle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04919ea
+
+### Move //ch/br/ui/webui/settings/{chromeos=>ash}/constants/constants_util*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e655dd
+
+### Enable TrustedTypes CSP checks on remaining signin related WebUIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65eabc5
+
+### Fix TabContainer not updating when its overall bounds view animates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4fff64
+
+### Update base::Value usage in c/b/ui/webui/ash/drive_internals_ui.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a125223
+
+### [Partial Translate] Update label resizing logic to remove empty space
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9145d2
+
+### Remove --app-shim-error command line switch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1d567a
+
+### Lookalikes: Enable character swap heuristic by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e591885
+
+### [Select-to-Speak] Add Voice Switching settings toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0ecc29
+
+### float: Fix some tests that fail when feature is enabled p2.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/095109c
+
+### Move {ash => chromeos/ash}/components/peripheral_notification/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4834d26
+
+### WebUI: Use webui::SetupWebUIDataSource() in a few more WebUIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32bb5b5
+
+### office Fallback: Add tests for office fallback flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab4524b
+
+### Update Web feed awareness IPH string to the correct string.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec69761
+
+### Replace kNoTab with absl::optional throughout TabStrip view-side classes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9d161a
+
+### Reland "Implement keyboard shortcut for Lens Region Search."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9318901
+
+### Enable top chrome spare renderer by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b3a3a0
+
+### [DownloadBubble] Update full screen notification text in keylock mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bda5d94
+
+### prerender: use ScopedPrerenderFeatureList helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4bf1cd
+
+### [Extensions c2s] Add extension menu coordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ab26942
+
+### [Test Automation] Use Kombucha to simply and deflake known flaky test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ec3f7f
+
+### [CrOS Hotspot] Bind CrosHotspotConfig to OSSettingUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a92d4f
+
+### DPWA: schedule SetAppWindowControlsOverlayEnabled to be async
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3a2e585
+
+### Guard SnapControllerLacros from dereference null DesktopWindowTreeHostLacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8ad71d
+
+### Remove Autofill Assistant from the preference fragment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bed4d62
+
+### Lookalikes: Remove the suspicious keyword heuristic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/905be78
+
+### Update AppListControllerImpl to track why the app list was last shown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16b9100
+
+### Reland "Added additional High Efficiency UI Tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00e022d
+
+### Fix dark mode issues in PasswordChangeRunView and tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4b22cfc
+
+### [CrashFix] Check whether account exists on device if seeded account is null
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f10b11
+
+### [APC] Remove Entry point of APC.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d51c3d6
+
+### Discards: Migrate to TypeScript Mojo Bindings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc0af66
+
+### Move lock screen online reauth code to a separate directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9caedb9a
+
+### [Start Refactor] Use StartSurfaceHomeLayout in CTA and LM.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f9a84a
+
+### Migrate privacy_sandbox_dialog_handler_unittest.cc to new Value APIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91fa520
+
+### Move {ash => chromeos/ash}/components/fwupd/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/400fb4b
+
+### [CodeHealth] Use base::Value v2 API in HaTS view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1624a5d
+
+### [APC Sunset] Delete APC internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8676ea
+
+### [FastCheckout] Fix landscape mode on detail screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3f0465
+
+### Split up request chip and confirmation chip in fieldtrial_testing.json
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e609272
+
+### Privacy Sandbox Settings: Ad Measurement page logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fef6325
+
+### [Privacy Sandbox] Add prefs and string identifiers to privacy sandbox component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b76939
+
+### [launcher] Consolidate test namespaces
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdb2e54
+
+### [CodeHealth] Replace DictionaryValue with base::Value::Dict (ChromeShelfControllerTest)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b4a60a
+
+### bruschetta: Settings page for shared paths
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbcad05e
+
+### Extend zero state app test cases.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8fc0a5
+
+### [CT][EngagementSignals] Add variant for sending fake values
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce2514f
+
+### Add chrome://flags entry for CertDualVerificationTrial
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c30058a
+
+### Remove temporary using declaration in ash_features [1/2]
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9d7def1
+
+`);
+              </script>
+            </body>
+        </html>
