@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-02
+### ui/ozone: Update DrmDisplays during conflict resolution
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b1c5139
+
+### ui/ozone: Take ownership of connector in DrmDisplay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2b36b6
+
+### WebUI: Migrate load_time_data to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f798f8a
+
+### [Test Automation] Fix bad code in InteractiveTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/076a539
+
+### [Test Automation] Use specialized logic to send Mac browser accelerators
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/267630d
+
+### Make //ui/accessibility:platform component().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/133cc19
+
+### Modernize pasteboard types in services code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2181b3e7
+
+### WebUI: Restore cr.m.js to PRESUBMIT exclude list
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f2153d
+
+### [Test Automation] Kombucha 1.5: Add an EnsurePresent verb
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2865ceb6
+
+### Change the find pasteboard to use modern pasteboard API
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d30df1
+
+### [Test Automation] Kombucha 1.5: verbs to name views by type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b150ba
+
+### Revert "Use cc::PaintOpBuffer instead cc::DisplayItemList in cc::PaintRecorder"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c11efc6
+
+### task posting v3: change unique_ptrs of runners to new task runner handle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d43acc
+
+### Reland "gpu: win: Add DCompImageBackingFactory tests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53b1183
+
+### [Select-to-Speak] Clean up launched feature flag EnhancedNetworkVoices
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1e80fee
+
+### [Reland] vt: Add RenderTests for interaction with Android UI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee41572
+
+### Switch in non-deprecated drop-in replacements
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b54a4f1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b295625
+
+### [lacros] Cease any possible window snapping when hiding/closing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c04683b
+
+### DanglingPtr: Mark all of them as untriaged [11/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9594a64
+
+### ax_test : remove old way of keeping a static instance around.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa18f4c
+
+### [linux/wayland] Improve computation of fling velocity
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc6a8a9
+
+### [CrOS Cellular] <apn-detail-dialog> advanced section CL feedback
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af498b5
+
+### Change MockXxx that are not mock to TestXXX
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e8832f
+
+### Move //{ash/webui=>chromeos/components}/print_management/mojom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d2d0bff
+
+### [Omnibox] Do not need to update the location bar padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f93b3d9
+
+### CrOS Settings: Pre-populate feedback dialog's description with the user query.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cb8bb1
+
+### Settings Split: Add Per-Device Keyboard row item to device settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/688ddc4
+
+### CrOS Settings: Fix URL constants to use HTTPS for safe HTML
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c3aac2
+
+### [cc-side-panel] Add browser->render Mojo & link web contents to handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46c4a2d
+
+### [Read Anything] Only change web contents observation when necessary.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ba915d
+
+### DPWA: schedule ProjectorClientImpl::SetAppIsDisabled to be async
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68d1c37
+
+### Use GURL for safe url conversion for qrcode generator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a712d9f0
+
+### [User Education] Views Help Bubble buttons to use MD defaults
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fd6b104
+
+### [ChromeVox] Migrate from localStorage to chrome.storage.local
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5ad8d9b
+
+### Revert "[dpwa] Adds a callback when Mac shim has finished startup or has been cancelled."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de35c6a
+
+### [cc-side-panel] Add Mojo API providing selected chrome colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32959ff
+
+### Add title field to DialogModel tab-group editor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dd6aac
+
+### Refactor SetImage with SetImageModel in chrome/../app_info_dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfba62f
+
+### Fix recursive includes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d27942
+
+### Change ImageSkia to ImageModel in chrome/browser/../tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/376b3ef
+
+### Split contextual page action flag params per action
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5ca5c7f
+
+### Enable TrustedTypes checks on chrome://chrome-signin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/076bcd759
+
+### [journeys] Make Journeys WebUI links open in a new foreground tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/601dfbc
+
+### [Sheriff] Disable SelectFileDialogExtensionPolicyTest.DlpDownloadAllow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5548663
+
+### Replace ExpectUniqueSample with ElementsAre
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83701d9
+
+### [dpwa] Adds a callback when Mac shim has finished startup or has been cancelled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e4e964
+
+### PiP 2.0 window UI minor adjustments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d739d67
+
+### [cc-side-panel] Add test harness & tests for CustomizeChromePageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/044a6ed
+
+### Add a11y announcemnt after form autofillment.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8615277
+
+### task posting v3: remove all calls to task_runner_util.h manually
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acb01c4
+
+### [Select-to-Speak] Add Enhanced Network Voices settings toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f532ce
+
+### Fix crash issue on exo keyboard initialization.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa1b4a9
+
+### desktop-sharing-hub: don't offer 3P actions for non-web URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47bc054b
+
+### Move {ash => chromeos/ash}/components/phonehub/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fadda06
+
+### Add minimized password generation popup dimensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/362fdf0f
+
+### [Password Manager] Displaying PasswordUiEntry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ace9ed
+
+### Update CountActiveDevicesByType to count by new device type enums.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/161cd33
+
+### Remove unsafe codes would cause dangling pointer in Permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4cf234
+
+### Create feature flag and stub implementation for ChromeOS password manager system authentication
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57a48e5
+
+### [APC Sunset] Remove consent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/081983b
+
+### [Autofill] Add learn more icon to chrome://settings/addresses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11112f1
+
+### Show privacy message in chrome://management for DoH with identifiers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/421f311
+
+### Remove calls of GetActiveUserProfile() on desktop in /chrome/browser/ui/media_router
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d307672
+
+### [site data] Delete origin from all models for site data dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2893aa7
+
+### Show template URI with identifiers in OS Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/032d6ea
+
+### Add unit tests for Help App Provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1617b9c
+
+### Lookalikes: Allow safe TLDs to spoof other sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20b7911f
+
+### CCA: Add feature flag for low storage warning
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3fcc30ef
+
+### Add emoji picker gif support flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5ddd91b
+
+### [Omnibox][ML] Populate bookmark provider scoring signals for ACMatch
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d1e3593
+
+### [CrOS Bluetooth] Remove allow-poly-device-pairing flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/283c6e7
+
+### Extend "Fail fast quiet chip" to Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5440ff9
+
+`);
+              </script>
+            </body>
+        </html>
