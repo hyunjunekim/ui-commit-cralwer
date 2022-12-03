@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-03
+### gpu: win: Make DCompPresenter actually SurfacelessEGL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6729f44
+
+### gpu: win: Fork DirectCompositionSurfaceWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06b39f8
+
+### Correct and optimize node removal and live region support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af67165
+
+### Migrate miscellaneous asserts to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff414db
+
+### Implement WEBGL_provoking_vertex extension.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6e64d94
+
+### Upgrade ui presubmits to version 2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/288c12d
+
+### Reland "Move SetFullscreenMode to toplevel and trigger configuration events on
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcdf05a
+
+### ax_win: IAccessibleTextSelectionContainer::setSelection doesn't work on HTML:input
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a70a5fe
+
+### ash: Dump on window destroy during event pre-dispatch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cfd4544
+
+### [ViewsAX] Move default implementation to AXPlatformNodeDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7fae74a
+
+### [Test Automation] Correctly report queued step when test times out
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd40cb0
+
+### [linux/wayland] Fixed how versions of objects are checked.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bd4eac
+
+### Revert "Remove GLX usage from Chrome."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d823ccc
+
+### Remove GLX usage from Chrome.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ffecda4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f831de0
+
+### Remove temporary using declaration in ash_features [2/2]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e0e1a0
+
+### [CrOS Cellular] Implement enable/disable custom APN
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/757c362
+
+### English Pakistan: Add input method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e07402c
+
+### DanglingPtr: Mark all of them as untriaged [12/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bb9bac
+
+### ui/display: Add a flag to control EDID-based ID enablement
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/43a1458
+
+### Remove expired histograms Tabs.DesktopOffset*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6adf3c0
+
+### [power bookmarks] Update proto references to use sync proto
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc73cee
+
+### Add test to verify PWA App Shims get recreated when launching fails.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c734856
+
+### FloatWindow: Restore Float state when launch a desk template.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7d1487
+
+### [Extensions cleanup] Remove unused \`HasBeenBlockedForTesting()\` method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc9f6e1
+
+### Add tab counts metrics back in.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8de39015
+
+### Port wmDesksPrivate API into lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd94d91
+
+### [dPWA] Make AppIdentityUpdateDialog global testing value be auto reset
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/325c53d
+
+### [DIPS] Add UMA metrics for DIPS Database health
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e416a7
+
+### [Omnibox] Add holding space for the status icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b02136
+
+### Moved AdaptiveToolbarButtonVariant enum to native
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5882361
+
+### Reland "[dpwa] Adds a callback when Mac shim has finished startup or has been cancelled."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a818c8
+
+### Fix dangling pointer in DesktopBrowserFrameAuraLinux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72d40ec
+
+### launcher search: Remove support for append action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/180c7396
+
+### [FedCM] Move IdentityRequestAccount to dedicated file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e47367b
+
+### Disable flaky dialog extension test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d837d46
+
+### Record new tab button clicks for side panel entries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3818a71
+
+### Anchor chooser dialogs to extension icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a61567
+
+### Fix Import after updating SavedPasswordsPresenter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67902a3
+
+### [Remote Playback] Terminate Remote Playback sessions from Zenith
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bd7046
+
+### [UPM-Desktop] Hide Add Shortcut banner when app is already installed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e6694e
+
+### [omnibox][escape] Clean up \`kBlurWithEscape\`
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2de0b86
+
+### [sheriff] Disable flaky Mac tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a437619
+
+### Rewrite GetPrimaryMainFrame comparison in terms of IsInPrimaryMainFrame (18/n)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e75aef
+
+### Fix dangling pointer in StatusIconLinuxWrapper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ba1266
+
+### Revert "Add more prominent style to autofill popup under a flag."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b0370159
+
+### Fix flaky LocalCardMigrationBrowserTest tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eae2bd
+
+### Add tests for popups from borderless apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06d189d
+
+### Fix top and bottom challenge option margins
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/727fa08
+
+### Reset passwords exporter on completion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89adaa8f
+
+### Add more prominent style to autofill popup under a flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9c3ff71
+
+### [FastCheckout] Remove autofill_assistant dependency.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff114d9
+
+### [APC Sunset] Remove apc desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/511b714
+
+### [fyfre] Support sign in and associated steps in Dice FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01db984
+
+### Sync: Change custom passphrase strings behind SyncEnableHistoryDataType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fa83d4
+
+### [Privacy Sandbox] Create the layout for the Ad Measurement subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74543cb
+
+### Migrate //chromeos/ash/components/login/login_state to namespace ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0df2b5
+
+### CrOS: Provide portal state to the net Error page
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2038c6c
+
+### Add chrome flag: enable-enhanced-safe-browsing-settings-improvements
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3302987
+
+### autocorrect: add enabled by default flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f135180
+
+`);
+              </script>
+            </body>
+        </html>
