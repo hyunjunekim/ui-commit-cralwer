@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-06
+### Android: Remove several references to Build.VERSION_CODES.M
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bba8abc
+
+### filesapp: remove xfm storage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/366db41
+
+### Roll xcbproto to 842d913
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f006cb4
+
+### Do cleanup changes in Mac pasteboard code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/905c9d7d
+
+### Enable FakeKeyboardHeuristic Flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a85335
+
+### Add "Uninstall" button on app settings page for command line installed apps.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4920eea
+
+### Revert "Android: Remove Build.VERSION conditionals on Marshmallow"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2346d9d
+
+### ax_script: introduce AXTargetWin type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e6ecb2
+
+### ozone: add PageFlip Firefly to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e41f036fe
+
+### ui/display: Plumb IDs and Connector Index via ManagedDisplayInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18751cf
+
+### Android: Remove Build.VERSION conditionals on Marshmallow
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce7df83
+
+### Annotate flaky WaylandWindowTest with bug ID.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3ebde7
+
+### Center the drag image under the mouse pointer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd2263a
+
+### WebUI: Merge iron-selector into cr-menu-selector
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad483d2c
+
+### views: fixes possible dangling pointer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/695fa91
+
+### Android: Remove all @RequiresApi(Build.VERSION_CODES.M)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ea0eaf
+
+### Use dynamic view for displaying long urls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7aaa319b
+
+### Revert "gpu: win: Make DCompPresenter actually SurfacelessEGL"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2a8bdb
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2da03b5
+
+### Replace CreateVectorIcon to FromVectorIcon in ui/message_center/views/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/101cb50e
+
+### libwayland: remove use_system_libwayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c3c8db
+
+### Supporting storage buckets in 'Clear-Site-Data' header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ac27c2
+
+### [dPWA] Adding name to command and updating logging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/005a38a9
+
+### [Cormorant] Delete offline error case and have it default to general error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/359ab7e
+
+### [Remote Playback] Display Remote Playback info for media session items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd83749
+
+### [Office] Notification timers and text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1def50e6
+
+### Remove cruft from metrics_handler.cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25d1d76
+
+### Use chrome.tabs.onUpdated to disable add tab button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e886b45
+
+### Convert some hover card interaction tests to use Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e04c2f47
+
+### Fix fingerprint remove functionality.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d86cadf2dce
+
+### [Web Payment] Remove payment_handler_installer.html
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ceabbc
+
+### Add interactive uitest for incognito menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/689c4c2
+
+### Switch away from base::ListValue in StartupBrowserCreatorFirstRunTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bd8f1e
+
+### Capture view reuse ratio.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7643bd8
+
+### Arc clean up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b3ef5f
+
+### [FedCM] Rename ClientIdData to ClientMetadata
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2eb524
+
+### Extend/Remove expiring MediaRouter histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1d7bbb
+
+### ash: Remove some dead code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0eb3f4d5
+
+### Reland "[dPWA] Adding ResultCallback to UpdateShortcut and UpdateAllShortcuts"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d054b4f
+
+### Adds Lens specific buildflags to know if Lens features are enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f55ec8ca
+
+### [CodeHealth] Use base::Value v2 API in c/b/ui/webui/ash/*.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/590cbf7
+
+### [Read Anything] Use const keyboard before std::string& font_size.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/711ac0c6
+
+### Lacros web app tests: ScopedSkipMainProfileCheck
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d891dea
+
+### [CodeHealth] Use base::Value v2 API in no_state_prefetch_manager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89d6b2a
+
+### cros: Add metadata for Account Manager component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4121d5f
+
+### Pack together parameters in TabSharingInfoBarDelegateTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98869a9
+
+### [Reland][OOBE][RecommendApps]: Revamp cleanup part 3/3
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2345547
+
+### [fyfre] Make LTR pixel tests reproducible on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a040d8
+
+### [UPM-Desktop] Password export - add dismissable export dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87c7ac7
+
+### [APC Removal] Remove the HasScript parameter for leak dialogs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48c248e
+
+### [fyfre] Do not run the Dice FRE outside of the actual first run
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c66dfc
+
+### [Accuracy Tips] Clean up Accuracy Tips
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85cecd02
+
+### Make Japanese IME options page open in an (Ash) app window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8018546
+
+### Move //chrome/browser/{ui => ash}/app_list [1/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e641b89
+
+### [Office upload] Implement installation of web app from setup dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7c6e37
+
+### guest_os: refactor crostini_shelf_utils to guest_os_shelf_utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95736eb6
+
+### [VCN Card on File] Create Chrome flag to control sync of Autofill Wallet Usage Data
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/629b1be
+
+### chrome://flags entry for ChromeRootStoreEnabled on for Android as well
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce53df36
+
+### [Android Bulk Tab Edit] Add bookmark tabs action to TabSelectionEditor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7224b85
+
+### Remove compact bubble launcher flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/22dc120
+
+`);
+              </script>
+            </body>
+        </html>
