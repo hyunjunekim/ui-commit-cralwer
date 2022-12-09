@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-09
+### [Files]: Using LitElement to create xf-select.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b16e18f
+
+### [FilesRefresh] Add a icon widget to render custom SVG icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32de933
+
+### Add sequence ID to gl::FrameData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8caa6f7
+
+### filesapp: rename notifications_browser_proxy to notifications
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbfed6d6
+
+### [views] Add Chrome2023Refresh Button radius
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7932e4d
+
+### Clean up instruction chip improvements feature after launch.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/67d2e60
+
+### Lens internals: Migrate to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87fda2f
+
+### lacros: Implement ozone/wayland propagation for scale factor.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ffc7406
+
+### WebUI: Fix various styleguide naming violations in method names.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69aa5ea
+
+### wayland: clean up wayland_window_factory.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbec70f6
+
+### [Fuchsia] Enable YUV_420_BIPLANAR usage on Fuchsia
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49d2b75
+
+### wayland: remove redundant prefix from window_manager_ getter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0dded9
+
+### [GPU] Convert GLImage*::FromGLImage() to GLImage::ToGLImage*()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74a7f1d
+
+### Dictation: Enable pumpkin and more commands by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b741ac18
+
+### [Lacros]Disable ANGLE impls on non-lacros linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d6d26f
+
+### [DownloadBubble] Adjust the button label color for readability
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cce35a9
+
+### WebUI: Make cr-lottie Worker TrustedTypes compliant, attempt 2.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb601e1
+
+### wayland: improve window drag source detection heuristic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/798716a
+
+### Split paint_op_buffer.h, preparing for making PaintOpBuffer not sk_sp
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6d732e9
+
+### [Rename] Renamed \`AXPlatformNodeDelegate::GetReverseRelations\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e269335
+
+### [Test Automation] Move NativeWindowTracker to ui/views
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9c21daa
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/202ef8f
+
+### android: Add java SurfaceControl support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fff35f
+
+### Add a basic touch selection magnifier.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d6cc02
+
+### Files F2: Move FileTasks static methods to functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e46f522
+
+### [Files app] Make dialog button tabindex explicit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ceadfa0
+
+### [Extensions] Convert DictionaryValue to Value::Dict in the EventRouter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3cb0e6
+
+### os settings: add unit test for hierarchy.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a744d3a
+
+### [cc-side-panel] Set chrome theme when clicking on color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a2ec34
+
+### Cleanup: remove redundant variable related pin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6519459
+
+### Fix challenge selection a11y issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af8acfb
+
+### Implement tab scrolling with CompoundTabContainer enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7124df5
+
+### [Hover Cards] Remove histograms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d17a123
+
+### Remove the kAppServiceCapabilityAccessWithoutMojom flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb589ce
+
+### CrOS Settings: Add app badging toggle sublabel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2cc742c
+
+### [ SavedTabGroup ] Maintain ordering of saved groups after restart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb5cd3ee
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2cde76
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cd62dd
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/586f07b
+
+### idna: Enable Non-Transitional Mode by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6557c80
+
+### Keep launcher reorder animation running on tablet mode change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26e5ef6
+
+### [ntp][side-panel] Add preview for custom backgrounds in Customize Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5649a2f
+
+### [omnibox] Use two parameters to control default browser pedal triggering
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/41e82d7
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/712e8e9
+
+### Forward mojo recovery Configure/IsConfigured to userdataauth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58146e9
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb854be
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d05f45
+
+### webauthn: always show other mechanisms button for PaaSK and AOA.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/becb76de
+
+### [omnibox][ui-simplification] Reduce rich suggestion images to 28px.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ee9a07
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93fe92e
+
+### Revert "Add a new component layer to migrate supervised_user features and services."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5c5083b
+
+### Switch away from base::ListValue in OfflineInternalsUIMessageHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d15f233
+
+### Bookmark tab in current folder without edit dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db0c832
+
+### [Saved Tab Groups] Allow STGTabs to be linked to local WebContents.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e3149c
+
+### [Select-to-Speak] Plumb through Voice and Enhanced Voice settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c884306
+
+### Add a new component layer to migrate supervised_user features and services.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f3a6582
+
+### Fix bug where side panel is used for reverse image search.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b5d8732
+
+### [cc-side-panel] Add default color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f4a7e6
+
+### [dPWA] Refactoring launches to always be async, pt 3.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b3b4912
+
+### Simplify TabSharingUIViewsBrowserTest::VerifyUi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b58b7d1
+
+### Do not activate the browser window when handling -[NSApplicationDelegate application:openURLs:] on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64d6d7f
+
+### [cc-side-panel] Propagate color theming changes to front-end
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/646f5ad
+
+### [fyfre] Show the loading screen while waiting for policies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5ee9da
+
+### Add page-level message that specifies parent email
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a0b0ee
+
+### [APC Removal] Deprecating kAutomatedPasswordChangeSuccessLink value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/179332f
+
+### exo: add ui_controls protocol with stub + NOTIMPLEMENTED implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4e9a57
+
+### Remove TabActivityWatcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9d1614
+
+### Add geolocation debug logs to chrome://device-log
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95fac42c
+
+### [sheriff] Disable ThumbnailTabHelperInteractiveTest.TabDiscardPreservesScreenshot on MSan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4270570
+
+### Move //chrome/browser/{ui => ash}/app_list [6/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec05d2c
+
+### Move //chrome/browser/{ui => ash}/app_list [5/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fbfecd
+
+### Migrate Extension::Create() argument to base::Value::Dict (part 3)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f34d9f
+
+### [ambient] Adds feature flag for kScreenSaverPreview
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2692d5d
+
+### Expose calendar jelly feature flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2891ad8
+
+### Add JourneysIncludeSyncedVisits to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4b7eff7
+
+`);
+              </script>
+            </body>
+        </html>
