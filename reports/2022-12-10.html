@@ -1,0 +1,224 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-10
+### Remove GetGLTextureServiceGUIDForTracing()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12d062f
+
+### Reland "Remove GLX usage from Chrome."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/580923f
+
+### [NTP][Panorama] Add Themes page general styling for layout
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93ef938
+
+### ozone: Refactor DrmDisplay and EDID ID conflict resolution logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a83c4e4
+
+### Rename NativeWindowTracker::WasNativeWindowClosed() for clarity.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fdfe89
+
+### WebUI: Remove unused HTML files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fcec402f
+
+### immersive fullscreen mac: handle focus
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/304502d
+
+### Reland "[Fuchsia] Enable YUV_420_BIPLANAR usage on Fuchsia"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d627e82
+
+### WebUI: Remove load_time_data.m.js on non-ash platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/664db81
+
+### [Test Automation] Extend window hints to InteractionTestUtilMouse
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b4d813
+
+### Pump remaining messages synchronously in InputDispatcher.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62b72ab
+
+### Only call ProcessUnsubmittedBuffers if there are buffers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e17dd25
+
+### [APC Removal] Removing isPasswordChangeAutomatic parameter.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/277e888
+
+### [CrOS Cellular] Implement edit mode in <apn-detail-dialog>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b95d858
+
+### [GLImage] Continue moving methods out of the public interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb3399b7
+
+### [GPU] Move GetType() and safe downcasts out of GLImage public interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89fa489
+
+### [Files]: Store state cleanup; removing INACTIVE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b85502d
+
+### Revert "[Fuchsia] Enable YUV_420_BIPLANAR usage on Fuchsia"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90933c50
+
+### Change SetWindowGeometry to use gfx::Size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6824949
+
+### Explicitly wait until displays are populated for newly created outputs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99897e6
+
+### Add PendingConfigureState to WaylandWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e3f09c6
+
+### Reorganise some code in WaylandWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43e7251
+
+### Plumb gl::FrameData sequence ID into WaylandWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ade47e
+
+### Files F2: Add FileTasks action, reducer and ActionsProducer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53ce7a43
+
+### [Office upload] Trigger setup flow for files already in DriveFS/ODFS
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/beb1ab0
+
+### Plumb gl::FrameData through ozone/wayland gpu->host
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/556c57e
+
+### Add TrustedTypesEnabled test for "Customize Chrome" side panel UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ec938e
+
+### Settings WebUI: Add labels to 'Learn more' links for resetting settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66bba79
+
+### Device Split: Sort the strings in device_section.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a44a835
+
+### Settings: Refactor sync strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fab5fd69
+
+### Pull gaia_auth_host/ dependencies from chrome://chrome-signin in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6404623f
+
+### Remove affiliation check for access token on unmanaged CrOS browsers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44a32f10
+
+### Try to deflake WebAppIntegration.LaunchFromAppShimFallbackSecondaryProfile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af1cb0c
+
+### TabSwitcherUI Functionality to mirroring on Cast Moderator, Third CL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea32a14
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3c157e
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83f3774
+
+### [DownloadBubble] Improve accessibility name of the main button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d93e16
+
+### Autofill suggestion acceptance a11y announcement on Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85c29af
+
+### Reland "Add more prominent style to autofill popup under a flag."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/91af82b0
+
+### [Read Anything] Add custom menu buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93025d3
+
+### [dPWA] Migrating all uses of depreciated WebAppProvider::registrar to WebAppProvider::registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/771e9776
+
+### [PaymentHandler] Implement first draft of minimal header UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d3aee6
+
+### Expose latest RecoveryIds in chrome://cryptohome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26738ba
+
+### Move //chrome/browser/{ui => ash}/app_list [7/N]
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6eb186c
+
+### [OOBE][CHOOBE]: Add CHOOBE screen to OOBE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c3b81c
+
+### [Privacy Hub] Add tooltip when microphone is disabled by HW switch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ece616d
+
+### [Office] Implement sign-in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89b8ad3
+
+### Add codesearch links to the README
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ae7a99a
+
+### remove JPEG XL support
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/166a9f3
+
+### migration: Preserve backward migration policy across restarts
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6b0d97c
+
+### CCA: Remove the camera-app-doc-scan-dlc flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/488c478
+
+### CrOS Labs: Overview Desk Navigation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9bb64918
+
+`);
+              </script>
+            </body>
+        </html>
