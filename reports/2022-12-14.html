@@ -1,0 +1,360 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-14
+### FilesRefresh: Add new splitter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8a088b9
+
+### [GMNext] Remove ColorOverlay
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d30d3d3d
+
+### TooltipLacros: Lacros implementation of Server side tooltip
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6961f44
+
+### [ozone/wayland] Remove redundant prefix from WaylandConnection class vars
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c4eaf7e
+
+### [FilesA11y] Update "More" button text to "More options"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78008751
+
+### WebUI: Move assert.js to ash/webui/common
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2dc975
+
+### Remove third_party/mozilla/NSPasteboard+Utils etc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59c9dbf01
+
+### [Wayland] Ensure DND buffer size is a multiple of scale
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d42c3e5
+
+### [Fixit] Clean up Android N references in some ui/android classes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b2df9b
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f2ec493
+
+### Fix some nits in AXCallStatementInvokerAuraLinux.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2f418bb
+
+### Skip NSWindow frame changes for same-screen target fullscreen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/614f89d
+
+### Iterate PaintOpBuffer with standard range-based for loops.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ac254b
+
+### WebUI: Move cr.m.js and load_time_data.m.js to ash/webui/common/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57aa94df
+
+### Revert "ax_ui: make AXPosition keeping an anchor as an AXNode instance"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/423b9c7
+
+### [Fixit] Remove Android N references in ViewAndroidDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06daab571
+
+### lacros/client: Add partial split support
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50dace2
+
+### ax_win: add ScopedCoMemArray
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64f0678
+
+### Skip overlay window parenting in SublevelManager
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3bec9d
+
+### android: Add ScopedANativeWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/804e6cc
+
+### [views] Set a rounded focus ring label buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a514629
+
+### hid: Implement HidSystemTrayIcon for platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d06b101
+
+### [ozone/wayland] Use more 'auto' when doing static_cast<XXX>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/738dc7e
+
+### Remove CHROMIUM_framebuffer_mixed_samples.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6395ca0
+
+### android: Fix ScopedJavaSurfaceControl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/678ef30
+
+### Flush (gl) prior to egl fence creation for QC7c devices
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/009b9f3
+
+### Add chromeos OSFeedback
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db7444c
+
+### Add vertical offset to text selection magnifier.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b21c498
+
+### Files app: Allow ctrl-key events when context menu open
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c80c9b1
+
+### CodeHealth: Delete near-unused ReadSmallestIconAny
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cf45cf
+
+### [Select-to-Speak] Update strings and adjust UI layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0826f760
+
+### [LanguageSettings] Add "Add languages" ARIA labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d89778b
+
+### Settings Split: Add empty per-device keyboard subpage and route
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d71880a
+
+### Implements CrosApi for wmDesksPrivate API (second part).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b44568c
+
+### Omnibox Phase 1 Most Visited Tiles Fading On Tablet Cleanup.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/909ea3d
+
+### Fix regression in BubbleContentsWrapper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73407cb
+
+### Remove v23 menu_action_bar_bg.xml
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d13ac6
+
+### [FilesTiering] Surface bulk pinning progress on chrome://drive-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4162bb1
+
+### iwa: Update ShowSiteSettingsImpl to work with isolated-app urls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e84171
+
+### [SafetyCheck] Got It action and text for unused site permissions module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de7426f2
+
+### Omnibox Phase 1 Most Visited Tiles Dynamic Spacing Cleanup.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f9f365c
+
+### [dPWA Testing] Making url navigation more reliable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f261d3
+
+### [journeys] Move SidePanelJourneys flag to the component.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3d4ee9e
+
+### [URLFiltering] Handle new verdicts from RTLookupResponse to show enterprise interstitials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/431b953
+
+### [Hover Card Previews] Remove defunct metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54bd9c5
+
+### clipboard: Shift + Launcher + V keyboard shortcut to paste plain text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47ab0e7
+
+### [Metadata] Fix card image tooltip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1695ed6
+
+### [dPWA] Modify existing web apps test to use new pref migration flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8978e695
+
+### Disable flaky WebUITabStripDragInteractiveTest.CloseTabDuringDragDoesNotCrash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8f2809
+
+### Disable flaky CreateShortcutBrowserTest test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdf54d8
+
+### [Shopping list] Update bell icon for products tracked via different URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36f0fdf
+
+### Omnibox Phase 1 Header Padding Update Cleanup.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/abfb8732
+
+### Remove v23 snackbar_background_tablet.xml
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c0be15
+
+### [Remote Playback] Update MediaItemUI's footer view and device selector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/571cc23
+
+### Revert "[Privacy Sandbox] Add current topics section to Topics settings subpage"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ecfd837
+
+### Target events between CompoundTabContainer's subcontainers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58f122a
+
+### Migration: Replace cros_styles::ColorName with ui::ColorId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dec453
+
+### Fix Acks for folder drag-drops and pastes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72fd5e4
+
+### [omnibox][webui] Creates an empty chrome://omnibox-popup.top-chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/896890f
+
+### [SavedTabGroups] Prevent non-valid URLs from updating a saved tab group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f80437
+
+### Make form_data_importer call IBANSaveManager to trigger IBAN local save workflow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2ef09f
+
+### chrome://omnibox: Use TypeScript bindings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00d1866
+
+### [PaymentHandler] Minimal header: Give the close button a circular highlight
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17b821d3
+
+### [dPWA] Connect Synchronize() to Install/Update/Uninstall(All)OS Hooks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e63734f
+
+### [SafetyCheck] Auto-revoke unused permissions and store them.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fcd885
+
+### Add bookmarks++ side panel guest mode empty state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8375c6
+
+### [Saved Tab Groups] Add and remove tabs from a group in a STGroup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46f67b45
+
+### What's New: Remove main menu new flag and extend feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/07ed80a
+
+### Update text color in merchant opt out error dialog text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1e921d
+
+### Tab groups and strip: Use Mojo TypeScript bindings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32f3ddd
+
+### Remove base::ListValue usage in Download code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41e0dfb
+
+### Remove pdf_extension_util::AddAdditionalData() call from PrintPreviewUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/923b9e5
+
+### [Extensions c2s] Add requests access sections skeleton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2aef00
+
+### [SafetyCheck] Parametrize update options and update flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0ecc5b
+
+### [Privacy Sandbox] Add current topics section to Topics settings subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5679d9
+
+### Handle invalidated auth session for recovery toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3a261f
+
+### Revert "[Office upload] Show in progress step of notification for 5s"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a376ab3
+
+### Privacy Sandbox Settings: Ad privacy dynamic labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbf84d36
+
+### [UPM-Desktop] Password export - add progress bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ade0e7
+
+### [NTP][Panorama] Replace ChromeColorsService with ThemeService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1006ddc
+
+### crostini: Add per-container control over microphone sharing in Settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57fde01
+
+### [dPWA] Renaming WebAppProvider::sync_bridge to sync_bridge_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47100e8
+
+### [Office upload] Show in progress step of notification for 5s
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89fde5fa
+
+### [Office upload] Fix provider name for Drive flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/272a814
+
+### [SafetyCheck] Add flag for kRecordPermissionExpirationTimestamps
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7ad67c08
+
+### Expose local web approvals via chrome://flags on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/89b449e
+
+`);
+              </script>
+            </body>
+        </html>
