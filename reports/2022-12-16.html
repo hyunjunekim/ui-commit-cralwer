@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-16
+### Wayland/Input: Introduces SurroundingTextTracker to Wayland side
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da2641a
+
+### Revert "Move gl::FrameData to gfx::FrameData"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9dd1c472
+
+### Revert "Deprecate Assistant Stylus Features: cleanup metalayer code"
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7ef8174
+
+### Move gl::FrameData to gfx::FrameData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d45d4b9
+
+### bruschetta: add apps::AppType::kBruschetta.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ab54ee
+
+### Deprecate Assistant Stylus Features: cleanup metalayer code
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ec14b06
+
+### Refactor ui/webui/resources/js/BUILD.gn to only list each file once.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/526eafe
+
+### gpu: Replace overlay GLImage with DCLayerOverlayImage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e6fbf0
+
+### cros_next: add disabled color token for tab slider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31ed592
+
+### Start unifying test ContextProvider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3696869
+
+### Stop using GLImageIOSurface in CALayerTree unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4517a69
+
+### Remove NSFilenamesPboardType
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55101da
+
+### ash: Fix missing \`target_destroyed\` from IME
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be49db1
+
+### migration: Update the color When enabled colorId is updated in label
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7e17bf
+
+### lacros/wayland: Reduce set_color_space() spam
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8528dc8
+
+### lacros/client: Move window snap requests to toplevel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dcf892c
+
+### Enable the NvidiaVpSuperResolution feature by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9b4263
+
+### [Read Anything] Move MergeTreeUpdates to a new AXTreeUpdateUtil.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/508432f
+
+### Turn USE_CUPS from a define() into a BUILDFLAG().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16f8cab
+
+### [linux/wayland] Commit surface after configure with same size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c32dde2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bb4506
+
+### ax_script: support IA2Table::selectedColumns
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdcedc7
+
+### Remove TestImageFactory and ImageFactory param from ContextGroup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d723e5
+
+### [linux/wayland] Tentatively fixed the flaky unit tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed8826b
+
+### Remove cc::DisplayItemList::UsageHint
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49b0eeb
+
+### win: fix test leaving shortcuts in startup folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0835a90
+
+### [Launcher FA] Introduce skeleton FederatedMetricsManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/147b20e
+
+### Settings Split: Add empty settings-per-device-mouse subpage and route
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85bb655
+
+### [FixIt] Clean up SearchEnginePromo feature flags.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caa07ee
+
+### CodeHealth: Move bitmap_fetcher/* to its own BUILD file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5655d5a3
+
+### Reland "DPWA: isolate web app read and write in ExternallyManagedAppManager*"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a9f56b
+
+### [dPWA] Renaming WebAppProvider::sync_bridge to sync_bridge_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06fe365
+
+### office: crosapi to install Microsoft 365 web app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/403c120
+
+### [dPWA] Migrating uses of deprecated registrar to registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e737bcc
+
+### [FixIt] Retire the SpannableInlineAutocomplete feature flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fa1733
+
+### [NTP][Panorama] Use i18n strings in Categories/Themes page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b516db9
+
+### [NTP][Panorama] Link to Chrome Web Store in Collections
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f736ac
+
+### [dPWA] Migrating uses of deprecated registrar to registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdfd9de
+
+### [Extensions] Add missing disable reasons to ExtensionsInternalsSource
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/380d639
+
+### Reland "Add a new component layer to migrate supervised_user features and services."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f8379b6
+
+### [FilesTiering] Update stage and errors to be strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bbca85
+
+### extensions: stop deleting deprecated bookmark apps, remove FROM_BOOKMARK
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2969d6d7
+
+### [NTP][Panorama] Add upload image functionality
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a406f83
+
+### Add histograms to estimate tab restores with ClosedTabCache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/354af41
+
+### Cleanup: remove redundant function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dac5aa
+
+### [Sheriff] Disable flaky IntentPickerBubbleViewBrowserTest test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4bce98
+
+### Update FileSystemAccess RevokePermissionAfter* tests to use MessageChannel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a356248
+
+### [LanguageSettings] Add remove icon aria labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f9b11e
+
+### [Fixit] Fix progress bar artifact and remove Android J code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/515a5e5
+
+### [User Education] Do not duplicate config when local config is present.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1babc03
+
+### Do not copy attached window's restore id on lacros as well
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68d3fa4
+
+### Increase threshold for showing memory savings in the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84b9086
+
+### Customize message in the Chromad disabled screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b713a33
+
+### Revert "Make FakeGaiaMixin non CrOS specific"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9aa69a0
+
+### [Web Payment] Test installer for payment sheet test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ff9fb
+
+### win7dep: Remove pre win10 support in WMI integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31bfeba7
+
+### dPWA: Deflake IsFileHandledBySite check on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f03e6d8
+
+### [Web Payment] Test installer for payment handler window size test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47b4718
+
+### [web_cache] Remove most of the web_cache component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c74c1c34
+
+### Settings: Implement the collapsing of the ESB dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/134c9c5
+
+### [Web Payment] Test installer for desktop payment app tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ec228f
+
+### Make FakeGaiaMixin non CrOS specific
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ba33fe
+
+### [fyfre]Add dialog view dark mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26eeb1d
+
+### [ReadingList] Require injecting non-null storage to ReadingListModelImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec5b3c8
+
+### office: move Microsoft 365 installation code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25ac2ee
+
+### Improve readability of \`ChromePageInfoDelegate::GetWebAppShortName\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fee1418
+
+### Adds kMaximumSizeForResizeOnly flag, Changes maximise logic to utilize this
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33b41316
+
+### Add flag for upstream cards offer saving with the same last 4.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/72836c6
+
+### FloatWindow: Update float window flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f8b5f4f
+
+### Add flag for Expiration and Type titles removal.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/69ac9eee
+
+### [FedCM] Ship iframe support
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4732673
+
+### [Cleanup] Remove unlaunched SearchChip experiment.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/346ca19b
+
+### [APC sunset] Remove obsolete flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/65ab335
+
+### [TTF][Clank] Feature flag for credit card Autofill on Touch-to-fill surface
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/940bd24
+
+`);
+              </script>
+            </body>
+        </html>
