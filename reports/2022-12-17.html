@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-17
+### Switch configure-sync seq number to parent seq number.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7acebb58
+
+### WebUI: Delete ui/webui/resources/html folder, no longer meaningful.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16468c1
+
+### App Management: Migrate some mojo bindings to TS
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7709f5
+
+### [QT] Fix frame colors when using server-side-decorations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1064b35
+
+### immersive fullscreen mac: only lock titlebar when fully visible
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5a8a96
+
+### [fuchsia] Replace fakes with sdk fakes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d628aee
+
+### Delete GLImageAHardwareBuffer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e44e64
+
+### [Read Anything] Add link colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ecb751a
+
+### Use new Presenter class in ozone/demo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1cc2b56
+
+### Pull common code from gl::Presenter subclasses to the base.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4af871e
+
+### Delete GLImageMemory
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e6eba20e
+
+### wayland: fix potential null deref in data drag controller
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7457dc4
+
+### Remove SkMatrix-related functions from cc::PaintCanvas
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd13460
+
+### [journeys] Remove user-select: none from Journeys elements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/afd2800
+
+### Remove GLImageEGLAngleVulkan
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76a2a0e7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7ef43f4
+
+### Remove CopyTexImage from GLImageNativePixmap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31ed0b1
+
+### Plumb PPAPISharedImagesSwapChainAllowed policy to nacl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca6b035
+
+### Reland "Deprecate Assistant Stylus Features: cleanup metalayer code"
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f8029f9
+
+### [CrOS Cellular] APN enable/disable/remove warning prompt
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e8b20e
+
+### Option to create a tab target with Target.createTarget in /json/new
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5b3684
+
+### [GLImage] Finish moving methods out of the public interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f9aaa6
+
+### Reland "Move gl::FrameData to gfx::FrameData"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1693b75
+
+### [GLImage] Continue moving methods out of the public interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/987ca8e3
+
+### [CrOS Cellular] Add default type validation to <apn-detail-dialog>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64cc20d6
+
+### [Code Health]: Change to base::Value::Dict in ntp custom background test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbbc11f
+
+### [Fixit] Cleanup MessagesForAndroidChromeSurvey flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/98fb626
+
+### [FixIt] Retire MVTiles Title Wrap Around flags.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4d8a326
+
+### [dPWA] Create a command for OsIntegrationManager::Synchronize()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/585c93f
+
+### Parameterize system tray cast browser_tests by feature QsRevamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed293f9
+
+### [Fixit] Force ripple to finish
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac37a6e
+
+### [cc-side-panel] Add Cards UI APIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb875baa
+
+### [User Education] Different system to limit IPH in browser tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0b2f87
+
+### [DownloadBubble] Add unique a11y name for main buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18466ed
+
+### [dPWA] Migrating uses of deprecated registrar to registrar_unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88a42e1
+
+### [FixIt] Retire MostVisitedTiles feature flag switch on Android.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5ab20fea
+
+### [LR] Clean up lightweight reactions feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ecedf78
+
+### Update value usage in chrome/browser/ui/webui/policy/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5acff0f
+
+### [site settings] Add a new item to "Clear site data" confirmation dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87f4c02
+
+### WebUI: Migrate user-education-internals, app-home to TS Mojo bindings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef2c3004
+
+### [Remote Playback] Hide Remote Playback info shown in MSNI behind a flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7550d6b1
+
+### [dpwa] Generate new test for launch_file_expect[_no]_dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fc56dad
+
+### CrOS Captive Portal: Add SigninSource and differentiate dialog mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44ebc64
+
+### Reland "Make FakeGaiaMixin non CrOS specific"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/471c6fd
+
+### [Password Manager] Add password dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/527d8f89
+
+### [Android][Privacy Guide] Renaming Sync to History Sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/597a080
+
+### Move all calling sites off deprecated CookieSettings::IsFullCookieAccessAllowed overloads.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d19512
+
+### [Read Anything] Have ReadAnythingAppController call AXTreeDistiller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ed2224
+
+### [URLFiltering] Make the Proceed Anyway button functional on the Enterprise Warn Interstitial Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d506c87
+
+### Remove TODO(crbug/1164001) of //chromeos/ash/components/dbus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73ce18d
+
+### Inline sync_promo_view_{header,body}
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdef1d8
+
+### Stop duplicating inflation of *_signin_promo_view_{header,body}.xml
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5160d2
+
+### [fyfre]Add window style illustrations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/024c10d
+
+### Privacy Sandbox Settings: Fledge all sites fragment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1b8f68
+
+### [sign-in] Unhide AccountPicker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17c4e12f
+
+### [mparch] Clean up WCD::DidNavigatePrimaryMainFramePostCommit()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c37853f
+
+### Fix ProfilePicker not opening with kObserverBasedPostProfileInit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23642030
+
+### [sheriff] Disable a flaky WebAppEngagementBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b83eedf
+
+### Initial version of HTTPS-First Mode V2
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f5cf563
+
+### [Fixit] Cleanup MessagesForAndroidReaderMode flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e5fd4eb
+
+### Clean up region search on PDF viewer feature after launch.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8bd2d90
+
+### Add UseMojoVideoDecoderForPepper feature flag to about://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fd83aae
+
+### [FixIt] Drop Adaptive Suggestions Count flag from Android builds.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/36939a4
+
+`);
+              </script>
+            </body>
+        </html>
