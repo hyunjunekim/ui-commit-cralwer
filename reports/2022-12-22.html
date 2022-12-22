@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-22
+### Android: Remove deps from java libraries onto source_sets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e81a1b
+
+### [FilesRecentFilter] Remove usages of recent v2 flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a5e6a4
+
+### Call ExtractAsDangling() before passing raw_ptr to g_source_unref()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a262d0
+
+### Revert "Add strict rules for root and improve logging of a11y reparenting crashes involving the root"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/348d6c28
+
+### immersive fullscreen mac: clipping detection on macOS 10.15 and earlier
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6da7f62
+
+### Call eglWaitUntilWorkScheduledANGLE in the appropriate places.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01b296d3
+
+### [ViewsAX] Move more default implementation to AXPlatformNodeDelegate
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f7e34e
+
+### Revert "Reland: "Fix bugs in ANGLE backend selection""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c757585
+
+### Add cassycc@google.com to ui/file_manager/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55af7241
+
+### Add strict rules for root and improve logging of a11y reparenting crashes involving the root
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89ca4f0ab
+
+### CertificateManager component: Use absolute chrome://resources URLs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd920f3a
+
+### Revert "[A11y] Stable ids for AXObjects with DOM nodes"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44b6a05
+
+### Reland "Enable input protection for window changes"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e3fe13
+
+### Cap .url file parsing at 16k
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80fbf67
+
+### Reland: "Fix bugs in ANGLE backend selection"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9620c12
+
+### Don't set PASSTHROUGH_COMMAND_DECODER_LAUNCHED on Lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e7bd9bc
+
+### [GL] Put ScopedEGLImage in gl namespace
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a969316
+
+### Revert "float: Remove pin button"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/561f734
+
+### Friendly debugging output for AXTree, AXTreeUpdate, AXNodeData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/763d46a
+
+### Merge image_unittest_util_ios and _mac into _apple
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bef132f
+
+### float: Remove pin button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/edb2314
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90f6a80
+
+### arc: Make CrOS Files app open Recent by default when opened via SAF
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7134e92
+
+### [GPU] Trim down GLImage interface and friends
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f3c362
+
+### [FilesTrash] Fix shouldMoveToTrash from false positives
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/869375c
+
+### [Extensions] ListBuilder::Build now returns base::Value::List.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecffb6c1a
+
+### partial_split: Clean up WindowSnapWMEvent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c43a317
+
+### [omnibox][ml] Disable scoring signals logging in incognito mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd6018a
+
+### Add support for cr-auto-img to emoji picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a43efe
+
+### Cleanup: remove the enable-firmware-updater-app flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df84501
+
+### Cleanup: Remove allow-touchpad-haptic-click-settings flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3b4103f
+
+### Update back press state on navigation state changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adf8435
+
+### Fixed AdaptiveToolbarButtonVariant enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d8ed3e6
+
+### Use a global info bar in Chrome for Testing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbfcbc3
+
+### Cleanup: Remove allow-disable-touchpad-haptic-feedback flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/80d377a
+
+### [Code Health] Migrate to WebUIDataSource::CreateAndAdd(), part 6
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb0ab54
+
+### [ntp][side-panel] Reorganize UI strings and remove "customizeThisPage"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d9af21
+
+### Add and update Lens OWNERS files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0405a73
+
+### Change HighEfficiencyChipViewBrowserTest back to using demo mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d68599
+
+### [NTP] Update modules UI based on preference changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/188266e0
+
+### [Cleanup] Rename CreditCard::ObfuscatedLastFourDigits
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f690c7c4
+
+### [NTP][Panorama] Get Collection Themes on Themes Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41d8aa4
+
+### Reland "[Extensions] Show default extension view in side panel"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c59552
+
+### Update value usage in chrome/browser/ui/webui/web_app_internals/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b98712
+
+### GCC: fix conflicting type for kCustomizeChromeColors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3084e834
+
+### [Fixit] Remove CustomNotificationBuilder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8e8408
+
+### add functionality of tracking web contents into listener, create controller for saved tab groups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a368b3c
+
+### [User Education] Make howto easier to find, add testing instructions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e28cf8f
+
+### AboutThisSite: Remove SidePanel disabled test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d16bca0
+
+### [Status Bar] Extra null check added for status bar animation during overview mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32b0805
+
+### Clean up context menu related code for search result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c2eaaa
+
+### Fix GPU tests when Chrome for Testing is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e99889e
+
+### Revert "[Fast Checkout] Refactor to remove delegate"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1172fd
+
+### Cleanup: Remove shimless-rma-enable-standalone flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e59d15
+
+### [dPWA] Removing registrar() accessor and final usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e700007e
+
+### Improve the Cocoa First Run dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ac0cc7
+
+### Update status icon code to not use deprecated APIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d222876
+
+### Remove remaining base::ListValue usage in //chrome/browser/ui/webui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc49f34cb
+
+### DanglingPtr: Enforce receivers to have MayBeDangling<T> argument
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff2ca67b
+
+### [fyfre] Record when the sync opt-in screens are shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/556e71a
+
+### Move lock screen online reauth html/js code to a separate directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a193a7
+
+### [Lacros] Adding an account in error triggers Reauth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74b5049
+
+### [Fast Checkout] Refactor to remove delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60238f0
+
+### Tweak enums in drivefs::pinning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d090185c
+
+### [Code Health] Migrate to WebUIDataSource::CreateAndAdd(), part 5
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75efbe5
+
+### [FilesRecentFilter] Remove recent v2 flag definition
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/506ff6e
+
+### [omnibox][webui] Adds an about://flags entry
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/40e0eba5
+
+### [PCCT] Delete feature flag kCCTResizableForFirstPartiesName
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/63d2710
+
+### remove some flags and update metadata
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/72659a0
+
+### Clean up SyncTrustedVaultPassphraseRecovery flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8225995
+
+### [Wi-Fi Sync] Clean up wifi-sync-allow-deletes flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d44ba31
+
+### Use kCompositing ThreadType for the renderer main thread.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9cdb6b4
+
+### [PCCT][Fixit] Removing the kCCTResizableAlwaysShowNavBarButtons flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cf34c47d
+
+### Reland "Remove obsolete feature InterestFeedVNClicksAndViewsConditionalUpload"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8544c63
+
+`);
+              </script>
+            </body>
+        </html>
