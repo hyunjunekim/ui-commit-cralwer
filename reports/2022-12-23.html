@@ -1,0 +1,196 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-23
+### [FilesTrash] Remove leftover .trashinfo files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7b521b
+
+### TooltipLacros: Fix tooltip position when transform is not unit matrix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bf5bee9
+
+### Clean-up resources in ui/android/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d2c2a74
+
+### [flatland] Remove old TODO
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c12d9c
+
+### Reland "Add strict rules for root and improve logging of a11y reparenting crashes involving the root"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da4347d
+
+### nit: Cleanup TODO(elkurin) in Tooltip work
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ebefbdc
+
+### Reland "float: Remove pin button"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd4c994
+
+### lacros/hdr: Add wayland_zcr_color_manager unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/563a1951
+
+### GCC: fix incomplete type of gl::Presenter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/adb7b40
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e37cb0
+
+### Remove remaining temporary declarations from ash/constants/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f21bc9f
+
+### [AutofillAssistant] Make RippleBackgroundHelper constructor package-private.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4138714
+
+### DLP: Fix transferShowDlpToast test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a2981b
+
+### [GPU] Remove GLImage::{CopyTexImage(), ShouldBindOrCopy()}
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ae7e66
+
+### Revert "arc: Use Guest OS version of Play files when ARCVM is enabled"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b94f84
+
+### [FilesSharedDrive] Plumb through kCantUploadSharedDriveStorageFull
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc83178
+
+### [GPU] Move GLImage::color_space_ into subclasses that need it
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81dbfe8
+
+### CrOS Settings: Setup dynamic colors under Jelly experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e07987a
+
+### Update a couple of additional version resource qualifiers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7a4be4
+
+### Remove temporary using declarations in //chromeos/ash/components/network
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/614b0b49
+
+### OS Settings: Open search settings link in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3194b7e
+
+### OS Settings: Open browser notification settings link in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5027a6
+
+### Merge //chrome/android/ -v21 and -v24 styles into values/styles.xml
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf7d924
+
+### Revert "[Status Bar] Fixed Toolbar/Status bar color transition when entering / exiting the tab switcher is not in sync."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe349cc
+
+### drivefs-internals: Display human-readable sizes for bulk pinning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6857c3
+
+### Cleanup Lens in Screenshot Sharing feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ca2a1b
+
+### libassistant: Enable sandbox by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d2c45c
+
+### Bookmarks++: Add open/delete context menu options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86b196205
+
+### Drop -v17 from omnibox and toolbar  res directories
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f3f6b7
+
+### [Extensions] DictionaryBuilder::Build now returns base::Value::Dict.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19b7f1e5b
+
+### Record app sync metrics for the initial session
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49f095d7
+
+### Remove @RequiresApi(N) from OtpVerification*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/628ad69c
+
+### [NTP][Panorama] Set Theme on theme tile click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0bbbb5
+
+### Rename Lens buildflag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/036fca8
+
+### Revert "Reland "[Read Anything] Set maximum side panel width during resizing.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fa5328
+
+### [OOBE]: Comply with jelly naming schema
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/55f69bc
+
+### [Privacy Sandbox] Add blocked topics section to Topics settings subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c59a6b0
+
+### win7dep: Remove obsolete Win7/8 code from cbui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb6c660
+
+### [Messages] Remove Near OOM Reduction infobar code
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3e9716d
+
+### [Extensions] Small UI adjustments for Click to Script
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62ee0eb
+
+### DriveFsPinManager: Log human-readable sizes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df65ff4
+
+### [omnibox][grouping] Use grouping framework for desktop non-zero inputs.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/01e4719
+
+### [Fast Pair] Clean up fast-pair-subsequent-pairing-ux flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0278dda6
+
+### [PCCT] Delete feature flag kCCTResizableAllowResizeByUserGesture
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2ba2a81
+
+### Cleanup: Remove enable-networking-in-diagnostics-app flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/973194e
+
+`);
+              </script>
+            </body>
+        </html>
