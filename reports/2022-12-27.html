@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-27
+### Fix the problem that one character cannot be input with the Chinese IME.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d7a1959
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8310023
+
+### [Cleanup] Update metadata for nested class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b570930
+
+### Introduce new metrics & extend PermissionPostPromptSurvey functionality
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d198d1e
+
+`);
+              </script>
+            </body>
+        </html>
