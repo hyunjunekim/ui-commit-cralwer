@@ -1,0 +1,172 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2022-12-29
+### [quick view] remove safe video media <iframe> child on close
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28c684e
+
+### Reland "[Select-to-speak] Enable UI improvements and voice switching"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc3c7a12
+
+### [Tab Strip Redesign} Update model selector button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1bd3ed6
+
+### [Sheriff] Disable UpdateContentsCausesPopupClose on win-asan builds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43414a23
+
+### [journeys] Disable text highlighting for suggestion chips
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cce71701
+
+### Reland "arc: Use Guest OS version of Play files when ARCVM is enabled"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/837cd0b
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/211ec05
+
+### Prevent inializing drag without Content provider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b26ede01
+
+### WebUI: Add min-height for cr-textarea with has-max-height
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d30b058
+
+### DLP: Add integration test for blocked pluginVm
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bc1633
+
+### Reland "DLP: Improve file_manager integ tests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c8e02b
+
+### [quickview] remove unused files_quick_view.js <webview> functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ec5c37
+
+### [Extensions] Side panel: integrate with sidePanel.setOptions (defaults)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffa4efa53
+
+### [Extensions] Remove DictionaryBuilder::BuildDict.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1d34ee
+
+### [NTP CT] Adjust border color of module control
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2964a99
+
+### Implement Persistent Annotation Storage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/173109d
+
+### Disabled GTS Toggle button between Transition States
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9937ff7
+
+### [Code health] Privacy Guide: remove clear-on-exit integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/478c68c
+
+### Added support for invoking new API for adaptive toolbar client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ff54bf
+
+### Migrate to Lens buildflags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8062eef
+
+### [CodeHealth] Refactor base::Value in chrome/browser/ui/webui/browser_switch/browser_switch_ui.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bde6754
+
+### Fix incorrect maximized window opaque region reporting on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48b83b2
+
+### [dPWA] Pull up WCO toggle callback to all callers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b065084
+
+### [DownloadBubble] Add histogram for file icon load and set latency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dde297e
+
+### [dPWA] Fixing icon updating of WCO icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e1c857
+
+### Clean up ENABLED_BY_DEFAULT flag kEnterpriseConnectorsEnabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1417d65
+
+### [Code health] Privacy Guide: remove pre-phase2 codepath
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a6e47d8
+
+### [Status Bar] Fixed Toolbar/Status bar color transition when entering / exiting the tab switcher is not in sync.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f650a70
+
+### android: Avoid Bitmap.sameAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37b9721
+
+### [Side Panel] GetEntryForKey looks at contextual then global registry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c65ad1
+
+### Do not show Journeys side panel in guest session
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02566215
+
+### [Extensions] Remove uses of DictionaryValue from extensions/common.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f55eb9f
+
+### [Extensions] Fix UAF in side panel if closed quickly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15551a2
+
+### [privacy sandbox] Add "More" button to prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a4fe5e
+
+### [Privacy Sandbox] Create interest item component and add topics lists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aa46e3
+
+### Always enqueue LaunchParams for web app windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c546b7b
+
+### ProfilePickerEnterpriseCreationFlowBrowserTest: disable CreateSignedInEnterpriseProfileSettings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0094d5
+
+### Remove region search flag from Chromium
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/80e9910
+
+### add AddEduAccountFromAccountSettingsForSupervisedUsers flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0d7fcf
+
+`);
+              </script>
+            </body>
+        </html>
