@@ -1,0 +1,248 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-04
+### Allow translucent tabstrip backgrounds in GTK theme
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9251d14
+
+### Support flex weight from \`kFlexBehaviorKey\` property in \`BoxLayout\`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0b9a14
+
+### Enable AXMode::kNativeAPIs when MSAA is used.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b637b3
+
+### Defer TextRangeEndpoints endpoint validation until usage.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf65770
+
+### win7dep: Remove TooltipWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f7198b
+
+### Update WarmupManager to inflate AppCompat views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7fa1a2
+
+### Rename IsIdentityOr2DTranslation to IsIdentityOr2dTranslation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ffd34c
+
+### ax_ui: chromium hangs on user input when dealing with large documents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56859241
+
+### [CodeHealth] Remove Type::DICTIONARY in ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0baa0fa
+
+### [MediaPicker]: Remove video support Finch flag.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/47afe3f
+
+### [//ui/gl] Merge GLImageEGL into GLImageNativePixmap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a764f2
+
+### [FilesRefresh] Support refresh23 style for breadcrumb widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5365447
+
+### [dPWA] Removing FileHandlingAPI feature flag parsing.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7582cff
+
+### bruschetta: Add a GUI installer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cf1b7a0e
+
+### [launcher] Re-enable ranking for recent apps browsertest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7f1f26
+
+### [power bookmarks] Move code to common
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94427d1
+
+### [Office upload] Update notification text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/275ffb47
+
+### Reland "[Office upload] Show in progress step of notification for 5s"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ee6deb
+
+### [ScreenAI] Add a toggle button for PDF OCR to the settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3392ff5
+
+### sheriff: Disable flaky TabDragging/DetachToBrowserTabDragControllerTest.OffsetForDraggingTab for Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4163071
+
+### [ SavedTabGroup ] Persistent Tab Ordering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ade3789
+
+### Migrate base::Value::Type::DICTIONARY to base::Value::Dict in components/autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ee0ddf
+
+### [omnibox] OmniboxControllerEmitter -> AutocompleteControllerEmitter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95f8ec2
+
+### CrOS Settings: Convert top-level internet page to TS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61bba5dc6
+
+### [Code Health] Remove DictionaryValue in chromeos/components/ash/network
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b49dc0c7
+
+### Fix condition for forcing incognito mode in chrome::NewEmptyWindow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/debb520
+
+### [Code Health] Remove DictionaryValue in chrome/browser/ui/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec6ba99
+
+### Follow up CL to fix flaky battery Saver test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa55a92
+
+### [Android] Cleanup deprecated feature AssistantIntentPageUrl
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/205da62
+
+### Autocomplete: account for halfway processed composing characters.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59eafc5
+
+### [dPWA] Remove file handling synchronize to stop flakes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6f0e32
+
+### Clean up numberofWindowsClosed metrics for combine-desk and save-recall.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a26fffb2
+
+### Cleanup: Remove unnecessary SidePanelWebUIView::SetVisible override.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4be8c03
+
+### [Android] Update PlatformNetworksManagerTest to use P+ as OS version
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d08e48b
+
+### [omnibox] Cleans up some of omnibox UI class roles and meanings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/487757a
+
+### Remove dangling pointer from StatusIconButtonLinux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1c45c7
+
+### [rsafor] Move rsaFor requests to a separate permission
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dbcfbd
+
+### Remove RenderViewHostChanged from AshWebViewImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2647d5a
+
+### Update callers to check return value of new TestNavigationManager::Wait*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b601715
+
+### [OOBE] Check-in remaining files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26911c2
+
+### Update signin_metrics::ProfileSignout enum to modern style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a37512
+
+### [FPS All-Sites UI] Update learn more link from cookies help center page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09e4e2a
+
+### [cookies page] Rename the Cookies link row label on Privacy page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1e6f95
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a40fb18
+
+### AboutThisSite: Add metrics for unsupported states
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cac9fbc
+
+### [privacy sandbox] Fix typo in a string identifier
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79ba027c
+
+### Cookies Tree Model: Make canned helpers fetch sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72359b1
+
+### [privacy sandbox] Add footer links for settings pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c158f8
+
+### Remove dot indicator in SidePanelToolbarButton.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/413ba2a9
+
+### Privacy Sandbox Settings: Treat SESSION_ONLY as ALLOW in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fbac22
+
+### Clean up old chrome://internals/web-app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/030853b8d
+
+### Disable LocationIconViewTest.HideOnSecondClick on mac11-arm64-rel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ace1ab9
+
+### Implement systemLog extension API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cab09c50
+
+### Remove features::kUnifiedSidePanel and cleanup C++ codepaths.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/46d6f5b
+
+### Add BrowserList::OrderedByActivation() convenience method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c50f39
+
+### [Web Payment] Prepare Content Security Policy origin trial
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8c770f5
+
+### [webauthn] Remove Conditional UI flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/36f1b93
+
+### capture-mode-demo-tools: Add a chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b0c93e4
+
+`);
+              </script>
+            </body>
+        </html>
