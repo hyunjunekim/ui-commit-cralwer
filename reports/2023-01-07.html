@@ -1,0 +1,168 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-07
+### [Test Automation] Switch to more correct dropdown selection call.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b858967
+
+### Fix Focus Ring issue with rounded corners
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07453bcf
+
+### WebUI: Introduce cr-buttons that contain icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d30d827
+
+### [webui][omnibox] Optimizes load time by rolling up the resources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97d0d5c1
+
+### immersive fullscreen mac: menu item disablement from child window
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b93d62e5
+
+### [ozone/wayland] Guard against spurious wl_pointer.enter|leave events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c1fdf1a
+
+### [flatland] Handle overlay rotation and flip.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a04776
+
+### Linux accessibility: improve detection of accessibility enablement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe9eaefc
+
+### Lacros: Add FD crash keys for fence creation failure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/329662f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07367f4
+
+### Enable paint checks for DesktopWindowTreeHostPlatformImplTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64f2eda9
+
+### [GL] Fix NativePixmapEGLBinding setting GLImageNativePixmap color space
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/372e565a
+
+### [GPU] Eliminate GLImage::CopyTexSubImage()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/46a9cf0c
+
+### Files app: Skip sub-directory enumeration when necessary
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71002d2
+
+### Update PrintPreviewBrowserTest for ENABLE_BASIC_PRINT_DIALOG
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7730327c
+
+### Update header includes for /base/functional in /chrome/browser part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9269d4ed
+
+### Fix bugs by allowing STGListener to stop listening to local TabGroups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d48e7e3
+
+### Remove expired histograms for \`Browser\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0581164
+
+### Revert "Use GURL for safe url conversion for qrcode generator"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09798bc
+
+### [TechDebt] Remove View suffix from VirtualCardSelectionDialogView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18786ce
+
+### [Tech Debt] Remove View suffix from WebAuthnDialogView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bf08bef
+
+### [Side Panel] Use scoped observations in SidePanelCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3bd553
+
+### [Messages] Remove Reader Mode infobar code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7919268
+
+### Apply text color to omnibox tail suggest ellipse view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c3e8fd
+
+### [Bluetooth] Add Hats survey to OS Bluetooth summary page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16709d0
+
+### [DownloadBubble] Adjust hover highlight to cover whole width
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/354f0f5
+
+### CBD: Fix ClearBrowsingData Crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a180a6d6
+
+### Change history swipe gestures on Mac to be based on Web Contents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90c1702
+
+### Cleanup SelectedChallengeOptionId to use a StrongAlias
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2540296
+
+### Set correct open proxy configuration command in Deepin OS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6040e21
+
+### [Omnibox] Prevent omnibox from closing according to UI Devtools
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5b8067
+
+### [dPWA] Break OSIntegrationTestOverride to a new class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b54aac5
+
+### [PaymentRequest] Don't install enter-key accelerator for all sheets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e378233
+
+### [Sheriff] Disable SafetyTipPageInfoBubbleViewBrowserTest.ShowOnBlockIncognito due to failures on Mac bots.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f76a190
+
+### Update header includes for /base/functional in /chrome/browser part 1
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/02e49e58
+
+### [VCN Ranking] Create new experiment flag to track profile ranking
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b464381
+
+### [Start] Clean up feature flag "Tab switcher on return".
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/10404a3
+
+### Add flags for cluster persistence and nav context clustering to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/579c4199
+
+`);
+              </script>
+            </body>
+        </html>
