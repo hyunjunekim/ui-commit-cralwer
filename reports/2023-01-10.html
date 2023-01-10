@@ -1,0 +1,232 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-10
+### Check if currentDirectory.content is defined
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ca18e1
+
+### Move UseSharedImagesSwapChainForPPAPI to ppapi side
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b605ac8
+
+### WebUI: Fix cr-checkbox ripple issue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/643e7c6
+
+### [Files] Prevent icon background color for background-image icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d66f6be
+
+### Revert "EqualsForTesting() instead of operator== for cc paint classes"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5301eba
+
+### Deleting all asserts with Display.getSupportedModes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05309c1
+
+### task posting v3: remove includes of runner handles and IWYU task runners
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e672a66
+
+### ozone: add HP OMEN Vector Wireless Mouse to keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/466102d
+
+### EqualsForTesting() instead of operator== for cc paint classes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c005c73
+
+### accelerators: Add top row are F-Keys observer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28d9c268
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bee9c43
+
+### [linux/wayland] Tentatively fixed a Wayland error on XDG activation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78e6615
+
+### ozone/wayland: fix session restore from minimize.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9820675
+
+### Create AccessibleName getters and setters for View
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3a4e9c4
+
+### [GL] Move gl_image_zero_initialize test template into test that uses it
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c617f07
+
+### DLP: Add a test for folder selection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52e746c
+
+### quick view: remove file safe media iframe inline style
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/353f793
+
+### Remove the mojom and non mojom convert functions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56cb4f8
+
+### WebUI: Migrate more UIs to TypeScript Mojo Bindings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa476d0
+
+### DriveFsPinManager: Simplify code and add logs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fa9163
+
+### lacros: Remove inactive WebUIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62ceca1
+
+### Reland WebUI: Migrate more UIs to TypeScript Mojo bindings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b79d98af
+
+### Add capability to fetch on screen images and display output in Search Companion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed00db9
+
+### Lookalikes: Move reputation component under lookalike component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ace3909
+
+### Notes: Set current tab url
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a632316
+
+### qrcode: don't gratutiously assume ASCII
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1596a07
+
+### [Extensions refactor] Move CanShowIconInToolbar to extensions container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/771e5e8
+
+### Add GoogleOneOffer IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de5b0de
+
+### login: Fix UAF by not disposing storage partition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1bce82
+
+### Require derived classes to always call OnDialogShown()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82bfdd4
+
+### [Tech Debt] Remove Impl Suffix From VirtualCardSelectionDialogViewImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fc9198
+
+### [Extensions c2s] Move tab observer to view controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36b53e2
+
+### DPWA: isolate WebAppUiManager::UninstallAndReplaceIfExists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a69dfd4
+
+### [dpwa] Wait until all pages finish loading in AfterStateChangeAction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b7d130
+
+### [extensions] Remove webstoreWidgetPrivate API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f586feca
+
+### iwa: Define new SiteIdentityStatus and SiteConnectionStatus for Isolated Web App
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab9b463e6
+
+### Excluding shared memory from memory savings reporting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afd002b
+
+### Remove unneeded //mojo includes from headers in //chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e46cae70
+
+### [Shopping list] Replace remaining flag checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6238b86
+
+### [RELAND] [Fast Checkout] Refactor to remove delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9eea3e
+
+### [Site data] Add strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04c7ded4
+
+### Privacy Sandbox Settings: Centralise Topics page strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14701687
+
+### [CodeHealth] Replace DictionaryValue usage in various tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b40aa3
+
+### Cleanup: Remove references to SyncSettingsCategorization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed4fe6db
+
+### [FPS][Desktop] Update cookies page block 3pc in incognito bullet point string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53f23fd
+
+### Clean up extension request justification feature.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/32a1e966
+
+### [Privacy Sandbox] Add accessibility to learn more buttons in subpages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b07ca85
+
+### [fyfre]Add small window pixel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a03cf2
+
+### [Kartoffel] Adapt consent & notice layout/strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8a77ee
+
+### StorageCodeHealth: Remove InstalledAppsInCbd histograms and flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d727f8a
+
+### Change name of WebAssemblyStackSwitching flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cfc1e47d
+
+### [TTS] Remove the CS Debug Flag, keep command-line
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c18f591
+
+### Reland "Privacy Sandbox Settings: Match ClearOnExit against primary_pattern only"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3d48873a
+
+### Remove multi-page document scanning flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/431accd8
+
+`);
+              </script>
+            </body>
+        </html>
