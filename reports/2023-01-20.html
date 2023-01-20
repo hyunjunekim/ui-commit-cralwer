@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-20
+### Add Google One offer Files banner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c0ddf95
+
+### Settings Split: Add metric for per-key latency from event rewriter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/254848a
+
+### Call ExtractAsDangling() on raw_ptr in XShmImagePool::Cleanup()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b1bad6
+
+### wayland: restrict fullscreen-only shortcuts inhibition to linux desktop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/92f7bfe
+
+### ThemeSource: Fix MIME type of chrome://theme/colors.css.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc80fa68
+
+### Test the CursorLoader cursor image cache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91a612ff
+
+### cr_components: Update to TypeScript Mojo bindings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62b4004
+
+### WebUI: Remove js_type_check from Android/iOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66968ea
+
+### menus: Test that keyboard event not intended for menu not consumed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c8443a
+
+### accelerators: Add HasLauncherButton function in KeyboardCapability
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4e92f2
+
+### Refactor raw_ptr/ref<> templates into using a list of traits
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e73203
+
+### [User Education] Mark help bubble anchors of floating help bubbles.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18b245ba
+
+### Update PaintCanvas::saveLayerAlpha to accept floats.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f6f331
+
+### [User Education] Add padding to rect bounds when visibility changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e8f0b3
+
+### Enable -Wexit-time-destructors for //ui/base/x.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2253ea0e
+
+### [User Education] Accept custom padding when registering webui help bubble
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79efc3f
+
+### WebUI: Delete js_modulizer(), no longer used.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6645f90d
+
+### Check if commit thread runner is on the same thread for OnPresentation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a6a0c0
+
+### Suppress strict mode for Context.createWindowContext
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50579a3
+
+### AutomationPosition: Allow creation of text positions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02b8c55
+
+### [gl] Trim down friends in gl_image.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43cf841
+
+### Remove GL_SHARED_IMAGE_ACCESS_MODE_OVERLAY_CHROMIUM
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f6dbe5
+
+### [gl] Move GLImage::GetInternalFormat() to GLImageNativePixmap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d75227
+
+### Rewriter: Fix clang-tidy errors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e7cf29f
+
+### [DownloadBubble] Add a "launch" icon to the "Show all downloads" button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c963526f
+
+### DriveFsPinManager: Tweak destructor's behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4b4aacb
+
+### [omnibox][ui-simplification] Uses an equal sign as the match separator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d5ee8e
+
+### Create a framework for System Info Card Provider and integrate memory, CPU and battery calculations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cdacab
+
+### Show scan button in chrome://downloads on PROMPT_FOR_SCANNING
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cf3ca7
+
+### [dPWA] Update web apps immediately instead of awaiting app windows to close
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c19e3bb
+
+### Fix the ChromeShelfControllerWithArcTest.ArcAppPinCrossPlatformWorkflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cbc601
+
+### [Fixit] Deprecate conditional tab strip
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/95181ea3
+
+### CodeHealth: Migrate \`base::Value::FindKey()\` to v2 API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3727f99
+
+### [ntp][side-panel] Sync most visited settings changes across open NTPs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e03bcf6
+
+### projector: Add OnDeviceToServerSpeechRecognitionFallbackReason metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66989992
+
+### preloading: pass reason up to IsPrerender2Supported
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0b3e9b
+
+### Set up 4 HaTS surveys to assess perception of performance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4eac9c7
+
+### Remove explore sites internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e86b611b
+
+### Notes: add context menu to notes ui in side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d533d3a
+
+### CR2023: Add chrome-refresh-2023 attribute to Bookmarks, Read Later
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0df9ae
+
+### [ntp][side-panel] Add metrics to Panorama shortcuts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a51655ae
+
+### Remove SetOnlineWallpaperIfExists().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b955b03
+
+### [Cormorant] Add snackbars for when a user clicks on the follow/following button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ac4400
+
+### [SafetyCheck] Enabled notification permission module by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b064da3
+
+### [Shopping List] check weak_ptr before dereferencing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cf2ab2
+
+### Remove writes of deprecated TabLaunchType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16e3f49
+
+### Move {chromeos => chromeos/ash}/services/network_config/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57f2c50
+
+### Clean up sharing feature flags:
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9278187
+
+### Post layout request in StatusIconView#setVisibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46f74b5
+
+### StatusIconLinuxDbus: Use default session bus name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9585757
+
+### Optimize readiness check in ToolbarControlContainer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf6d18b
+
+### [PriceTracking] Fix title casing of menu items on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26cd1a9
+
+### Reland "[dpwa] Add an action to check the file content is correctly loaded in the web app."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b028391
+
+### Add tests for encoding images in Lens Region Search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78289a75
+
+### [privacy sandbox] Fix the layout bug in the page info subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/655e190
+
+### [Privacy Sandbox] Add learn more URL to Ad Privacy settings pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d295018
+
+### [Lacros] Fix crash when declining sync for secondary account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd1143d
+
+### [Signin] Add managed disclaimer in Signin Intercept bubble on Sync Promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e17c4275
+
+### [Passwords] Add manage password link to management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4be2ef2
+
+### Privacy Sandbox Settings: Update snackbar strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb9d889
+
+### [Privacy Hub] Camera notifications behaves as the other sensors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eaab13
+
+### isolated-apps: Change borderless mode's IWA check not depend on URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f13a8f2
+
+### [Sub Apps] Make APIs operate with root-relative URL paths
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d2b359
+
+### DriveInternalsWebUIHandler: More compact code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/473308c
+
+### [Chrome Refresh 2023] Update the shape of the tab group underline to be a rounded rect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/083810a
+
+### DriveFsPinManager: Fix lifetime issues with DriveInternalsWebUIHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4d41add
+
+### Add test to check memory savings on tab discard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d275475
+
+### [SPCAndroid] Remove enable-secure-payment-confirmation-android flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cab633c
+
+### Remove hats-use-new-histograms flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ae1490c
+
+### CrOS GMC V2: Add flag for enabling the new UI.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7b2047a
+
+### Add flag to disable dnsproxy on CrOS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e6f9f25
+
+`);
+              </script>
+            </body>
+        </html>
