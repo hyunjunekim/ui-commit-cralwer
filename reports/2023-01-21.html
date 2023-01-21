@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-21
+### Remove browser window dependency from DComp output surface classes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09244998
+
+### ui::Layer::IsDrawn -> IsVisible
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/191ae7e
+
+### win7dep: Remove win7/8 code from ui/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3792dc1
+
+### Avoid redundant work when marking subtree dirty
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04c2df5ed
+
+### [ChromeRefresh2023] Update combobox with new UX mocks.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/caa7c08
+
+### [color] Add the material UI mixer to the color pipeline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d91477
+
+### GTK: Fix top area painting with system titlebar and borders
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/610dfe0
+
+### Do not schedule draw/paint if the layer has no content
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d315a8
+
+### Reland "Run passthrough command decoder tests everywhere"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0bc5c84
+
+### [Test Automation] Send mouse events with window hints on Linux/CrOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/652bb9b
+
+### CompositorLock do not depend on cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83dcfbc
+
+### Re-enable ANGLE on Lacros and switch Lacros Intel to passthrough.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ef5d647
+
+### [Android] Fix popup bounds to honor top and bottom controls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ecb6917
+
+### Remove remaining references to Bug 1164001
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ae34e4
+
+### [GL] Move BufferFormatToGLDataType() into native_pixmap_egl_binding.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4303e3d
+
+### ozone/wayland: Update names and comments in unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f4e9e6
+
+### Split retailer-store ID into Retailer Name and Store Number
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8808c6c
+
+### Partial and final Projector metadata writing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b7fc39
+
+### [Test Automation] Migrate flaky test to Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8046599
+
+### [DownloadBubble] Show origin for background fetch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe4c91d
+
+### Page load level metrics for adaptive toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/583dab2
+
+### [DownloadBubble] Add badge for number of in-progress downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3585c487
+
+### Lookalikes: Deprecate unused bad reputation and keyword heuristic enums
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/879e9a7d
+
+### Show partial view even when download events are observed by extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e88205e
+
+### [Sub Apps] Alias API error codes together
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03838cbd
+
+### [Test Automation] Restore LaCrOS test now we have mouse window hints
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4c7e7c
+
+### Remove profile.h includes from headers that obviously do not need it.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09cc55e
+
+### [Sheriff] Revert "[Fixit] Clean up kEnableIPH flag"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7412bc2
+
+### Revert "feed: ensure snackbar actions complete"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ddedad5
+
+### feed: ensure snackbar actions complete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/231516e
+
+### [Extensions cleanup] Remove outdated ExtensionActionTestHelperViews TODO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff47eb4
+
+### [Passwords] Populate Details view in the revamped manage pass. bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dea8c2
+
+### [Passwords] Add Pixel test to the revampled password management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3fe3e6
+
+### Revert "[ntp][modules] Enable Drive module for all supported locales"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ea03c6
+
+### [Autofill] Move two functions from AutofillDriver to AutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bfca96
+
+### Optimize generateSnapshotState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/120f4ff
+
+### [Side search clean-up] Refactor DSEsupport functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11408c26
+
+### Revert "Move Ash browser files to //chrome/browser/ash:*"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ec595d
+
+### Print Preview/PDF: Simplify build setup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30102423
+
+### [reland][privacy sandbox] Open about:blank on ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3607cb2
+
+### [PaymentHandler] Close button always closes UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00398cfb
+
+### [UPM-Desktop] Password export: remove start dialog as per new mocks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/647493f2
+
+### [Fixit] Clean up kEnableIPH flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/824195f
+
+### Remove histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a82dffaaa
+
+### [Side search clean-up] Remove kSidePanelImprovedClobbering
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/74c97b3
+
+### [Password Manager] Show dismissed compromised credentials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87f7d16
+
+### Add missing profile.h includes in //chrome/browser/ui/views/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bd1aca
+
+### Reland "[dPWA] Update web apps immediately instead of awaiting app windows to close"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9aa158b
+
+### Cryptohome recovery: unify the feature flag used
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5d76e7
+
+### [fyfre] Suppress chrome://welcome when FRE enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2da1eb
+
+### [fyfre] Enable the TangibleSync feature in fieldtrial_testing_config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/752709d9
+
+### win7dep: Remove remaining Win7/8 code from chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6ceb6bd
+
+### Revert "[privacy sandbox] Open about:blank for non Chrome controlled NTP"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dbfd62
+
+### Move Ash browser files to //chrome/browser/ash:*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fcd6c97
+
+### Fix color picker display when selecting color on bubble and modal dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5765202
+
+### [privacy sandbox] Open about:blank for non Chrome controlled NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91fda999
+
+### [AutofillFeedback] Add Autofill feedback option to Autofill context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5c1f5a
+
+### [fyfre]Fix sync info title on Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5baa324
+
+### Revert "[dPWA] Update web apps immediately instead of awaiting app windows to close"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6cc750d
+
+### DriveFsPinManager: Display file counts in chrome://drive-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f29e3d
+
+### Add Google One offer files banner to about_flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ac1a1d
+
+### [Omnibox][ML] Add autocomplete scoring model service factory.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b695a0a
+
+### Remove account id migration feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dfde13d3
+
+### Add kPageInfoAboutThisSiteImprovedBottomSheet flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2df0e5f
+
+### Don't experiment with ChromeWideEchoCancellation if experimenting with AEC on CRAS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c9ba57b
+
+`);
+              </script>
+            </body>
+        </html>
