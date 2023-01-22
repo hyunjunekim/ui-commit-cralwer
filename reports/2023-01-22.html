@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-22
+### WebUI: Add dedicated ts_library() for ui/webui/resources/cr_elements/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf13222
+
+### Bookmarks: Fix crash on favicon update during dragging of a bookmark
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a150735
+
+### [Side search clean-up] Remove features::kSideSearch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bba0f62
+
+`);
+              </script>
+            </body>
+        </html>
