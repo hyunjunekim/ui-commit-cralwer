@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-24
+### Simplify templated helpers that match against C++ pointers and raw_ptr.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6fd21b0
+
+### [office] Open files in OneDrive PWA without link capturing
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5231c8
+
+### lacros/hdr: adjust HDRMaxLuminanceRelative and SDRMaxLuminanceNits
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7a8f98
+
+### Check account type and device state for Google One offer Files banner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b9b8584d
+
+### WebUI Omnibox: Rename shared components from ntp_* to cr_*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f81294a
+
+### Add chromeRefresh2023Attribute to the WebUI Examples
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e86e601
+
+### Maintain state for notification's expand / collapse
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47d82ec
+
+### WebUI: Deploy build_cr_component() to remaining cr_components/ folders.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0d8283
+
+### ToggleButton Updates for ChromeRefresh2023.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31c49ba7
+
+### [conflict dialog] focus the checkbox when clicked or changed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bac7647
+
+### [conflict dialog] More on dialog aria-{describedby,labelledby}
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aaf7b0b
+
+### gpu: Fix incorrect overlay keyed mutex usage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba99f78
+
+### Restrict WebCursor usage to RenderWidgetHostViewAura
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd3d14e
+
+### Revert "ozone: Refactor DrmDisplay and EDID ID conflict resolution logic"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a24184e
+
+### WebUI: Leverage build_cr_component() in cr_components/help_bubble/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b48efa4
+
+### CR2023: Add new tonal style for cr-button
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3626f95
+
+### [SPC] Test accidental clicks on the authn dialog [Verify] button
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c68512
+
+### Fix GpuChannelManager unittests to run with passthrough
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/158b056
+
+### [GL] Take GetNativePixmap() out of GLImage interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/956175e1
+
+### ax_script: support IAccessibleTextSelectionContainer interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1898d03
+
+### Merge cursors_aura.* into cursor_util.* and add tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/474d4d9
+
+### [file manager] Gray out CSE files when picking
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5341428
+
+### [DownloadBubble] Add a tooltip for the "Show all downloads" button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61d0b38
+
+### [ntp] Add rtatum@ as OWNER to NTP front-end
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ada62c6d
+
+### [side-panel] Fix eye dropper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/746d001
+
+### [Dialog][Clank] Update card unmask dialog (CVC dialog) - Part 4
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fce1757b
+
+### bruschetta: add an install button to settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99be950
+
+### [PolicyLogs] Policy Logs Page Added with chrome.send()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d7b1c4
+
+### Fix tabs staying hovered when they are pinned with SplitTabStrip on.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa2ef19d
+
+### [lacros] Opt Lacros out of outdated build notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4f060f
+
+### Use StrongAlias for PrintBackendServiceManager client ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6765cad
+
+### [FedCM] Implement auto sign-in UI on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/456cd26
+
+### Reland "[ SavedTabGroup ] Persistent Tab Ordering"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a34df7
+
+### [Office upload] Implement 'Fixup' flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/225b707
+
+### [NTP CT] Themed focus outline colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88aada1
+
+### [Code Health] Migrate FindKey to new base::Value::Dict API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbe858d
+
+### Notes: Add CurrentTabUrlChanged API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2af70b0f5
+
+### [Fixit] Clean up kIPHTabSwitcherButtonFeature params usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f6c7ec
+
+### extensions: Remove or replace benwells in extensions OWNERS files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ece203
+
+### Bookmarks++: Include descendants in search results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fec6b13
+
+### Refactored notification rationale dialog as a bottom sheet
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0af3699
+
+### [DownloadBubble] Fix inkdrop highlight on row items for RTL locales
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57e9dbc
+
+### [NTP][Panorama] Add Chrome Colors page and fill it with data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a30271
+
+### [Privacy Hub] Add UMA when support page is opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a2febd8
+
+### [Tablet specific] Position of Home button was misplaced and was not matching with Desktop order
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aeea5943
+
+### Reland "[Fixit] Clean up kEnableIPH flag"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b255f27
+
+### Remove chrome://settings and Safety Check cleanup integrations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/016f959
+
+### [Cleanup] Remove ToolbarPhoneOptimizations experiment code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8745b2e
+
+### [dPWA] Move App Home UI strings to backend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20bcded
+
+### [omnibox] Renames OmniboxEditController to OmniboxEditModelDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/448719c2
+
+### [webauthn] Fix null pointer dialog crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fd33f3
+
+### Show a warning message on policy page for flex orgs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4937e13
+
+### [SPC] Clean up SecurePaymentConfirmationDialogViewTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01aad04b
+
+### Revert "[Sheriff] Disable failing tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fe012b
+
+### Revert "dpwas: Fix PWA title bar color not respect high contrast"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6b2d8b
+
+### Add RAW_PTR_EXCLUSION to files in chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a08721ec
+
+### [Sheriff] Disable failing tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b85b10
+
+### dpwa: Add Subapp integration testing to framework
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed8d404
+
+### [OOBE]: Add TouchPadScroll screen to OOBE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa53b64
+
+### Remove WMHelperChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e0d9462
+
+### Remove EnableDnsProxy and DnsProxyEnable DOH flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aa0a7a1
+
+### rgbkbd: add feature flag for multi-zone customization
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7036e64
+
+### [Fixit] Clean up kIPHSnooze flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/15863cd
+
+### [Nearby] Clean up WLAN flag metadata.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d645679
+
+### [RSearches] Remove the param default_query_max_width_sp
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eb2b6f7
+
+### [privacy sandbox] Set require prompt params in the flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f6e9eb
+
+### Media App: Remove custom colors flag from os://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03f9cda5
+
+`);
+              </script>
+            </body>
+        </html>
