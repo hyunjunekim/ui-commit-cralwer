@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-25
+### ozone/wayland: Fixes for XDG activation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d1d9b20
+
+### Fixing Combobox Arrow button to show role as button in accessibility tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36879cb
+
+### [Files] Use translation string for trash label
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7a2709
+
+### gpu: win: Replace root GLSurface with SharedImage DComp overlay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/264e7d5
+
+### Use base and extent in TouchSelectionControllerImpl drag updates.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9494b2d
+
+### Let cc::FuzzyPixelComparator check large errors separately
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43fe444
+
+### Revert "Reland "ozone/wayland: call submission callback only after OnSubmission is received.""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8069e950
+
+### [views] Use kColorSysSurface instead of SK_ColorTRANSPARENT on MD button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd56fa3
+
+### win7dep: remove WIN10 DCHECK in ui/native_theme
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e23703
+
+### win7dep: remove non aeroglass code
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85a8bf5
+
+### Side Panel: Update list item styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f551e64
+
+### Use new HasLauncherButton function in //ash/clipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a70508
+
+### [User Education] Update floating help bubble position when scrolling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc7c0a8
+
+### Simple reserve optimization for lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1296e61
+
+### [User Education] Keep track of external bubble showing status
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2dbe5f5
+
+### Fix Linux path assumptions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b37626
+
+### WebUI: Rename gen/ui/webui/resources/preprocessed/ to .../tsc/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ccf5828
+
+### AXAPI: Add method test for accessibilityCustomContent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f685ed
+
+### views: rename ink_drop_host_view to ink_drop_host
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d546fd
+
+### Fix NOTREACHED in WindowCache::OnGetRectanglesResponse
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c27259f
+
+### [GLImage] Remove OnMemoryDump() from cross-platform interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63e1ac9
+
+### [GLImage] Remove GetEGLImage() from cross-platform interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/739f62e
+
+### Reland "ozone/wayland: call submission callback only after OnSubmission is received."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d74066
+
+### [conflict dialog] define IOTask state PAUSED
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e93d7f
+
+### FilesRefresh: Adjust file list rows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa462cf
+
+### Desktop PWA Tests: Pass location to Await()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/102982a
+
+### [VC] Add VC super flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7e12963
+
+### PinManager: Renamed some classes and structs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c81b1f
+
+### Bookmarks++: Add edit dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d6cdd49
+
+### bruschetta: adjust deps for installer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/417205d
+
+### Reland Bookmarks++: Make search recursive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b625106
+
+### [dPWA] Generates new browser tests for CheckFilesLoadedInSite().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98774e2
+
+### [StartRefactor] Splits code of secondary tasks surface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf26dd26
+
+### system-web-apps: retire Webapp.SystemApps.BadNavigate.Type histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0931922
+
+### [Live Caption] Added Ash "ui driver" impl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f485e4
+
+### Refactor upgrade notification logic out of ToolbarView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9eee2f
+
+### [Settings] Fix crash on DefaultBrowserSettingEnabled policy changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dc6207
+
+### Add gangwu@google.com to Clank Search & Omnibox Owners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88b0e18
+
+### Add a backend API for when the user selects a GIF from the Emoji Picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c53ca2
+
+### Print the stack trace in PrintPreviewHandler::BadMessageReceived().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b88b996
+
+### Show the before screen for extension approval Parent Access flow type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2213f62
+
+### [FedCM] Add input event protection on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c72670d
+
+### [fyfre]Fix strings reported after review.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab98be8
+
+### Update CTA based on which challenge option is selected on Clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9737377
+
+### Send WebAPK install failure notifications behind flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6adcbf
+
+### Remove deprecated GetCookieSetting overload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9feaa7
+
+### [NTP][Panorama] Set themed classic chrome on click and fix tile outline
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dcd15f
+
+### Re-enable immersive mode test for lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea434382
+
+### Fix PresentationRequest Origin not shown issue when Opaque
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2417693
+
+### Cast Moderator Tab Switcher UI, Add Device Name in the Tab Switcher Bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fffcc5
+
+### Reland "Move Ash browser files to //chrome/browser/ash:*"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8609ebf
+
+### [Fixit] Clean up kIPHNewTabPageHomeButtonFeature params usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3324817
+
+### [cc-side-panel] Send requested section when opening side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e65980
+
+### Privacy Sandbox Settings: Fix Fledge add site snackbar string description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6312488
+
+### [Kartoffel][Clank] Update privacy sandbox notice strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c3c76c8
+
+### Migrate Value::Append() calls in chrome/browser/ui/webui/new_tab_page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78f6358
+
+### [SPC] Remove unnecessary EventWaiter in SecurePaymentConfirmationDialogViewTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ed801c
+
+### [SPC] Test accidental clicks on the no-matching-credentials dialog [Continue] button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0438ebdb
+
+### [fyfre]Add manager name in enterprise disclaimer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ec0885
+
+### Revert "Bookmarks++: Include descendants in search results"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e891315
+
+### Enter CVC and accept the "Enter CVC" dialog in captured sites tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27c967b
+
+### [ipp-client-info] Remove client-info-supported from printer status query
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df929c5
+
+### Support editing/removing IBAN via Chrome payment settings page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/141b679
+
+### Add flag to enable Drive to forcibly resync office files
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/26d8e14
+
+### CloseAll: Remove flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d0e096e
+
+### shortcuts: Add flag to only display the new shortcuts app
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/91977f56
+
+### Standup Skeleton Code for Cardboard Runtime
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bdd9a76
+
+### Enable page-visibility-page-content-annotations flag on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/97914f8
+
+### [Read Anything] Expose feature behind public-facing flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cef6948
+
+### [CrOS Network] Delete QuickSettingNetworkRevamp feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a910a16
+
+### [iOS] Remove flag SyncTrustedVaultPassphrasePromo
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a184096
+
+### [Android Bulk Tab Edit] Add updated longpress entry point for TabSelectionEditor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e6a74b2
+
+### Consolidate XR features to be owned by XR team
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1de7941
+
+### [SafetyCheck] Add delayed revocation and clean up for manual testing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bcc8fe1
+
+`);
+              </script>
+            </body>
+        </html>
