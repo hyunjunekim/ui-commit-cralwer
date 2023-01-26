@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-26
+### Simplify how Window Control Overlay input routing works.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61cdd4d
+
+### Remove DCHECK in GetNotificationExpandState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41c46b3
+
+### [ChromeVox] Add ChromeVoxQ1FastTrackFeatures flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4de0a2b
+
+### [Notification Drag] Implement image notification drag - Part 1
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d200a1ee
+
+### [UIA] GetVisibleRanges and FindText not working in certain scenarios.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7224441
+
+### fixing issue with IAccessible2_2::relationTargetsOfType does not limit to maxTargets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/817b5126
+
+### [fuchsia] Change clip calculations from transform to image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3bbb04
+
+### [memories] Hide visits.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e4b69d
+
+### Refactor GetCursorDataFor to use static array indexing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2be728e
+
+### Check for first plane's offset when importing handles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6e6819
+
+### [color] Add GM3 sys tokens for frame colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3eb4e1c
+
+### Remove AsyncLayerTreeFrameSink::InitParams::client_name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/410d291
+
+### [GPU] Eliminate NativePixmapGLBinding::GetDataFormat()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/990a856f
+
+### [Notifications/Win]: Fix crash when destroying notifications.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5191e9
+
+### [flatland] Handle Flatland errors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5602bd7
+
+### [Ozone] Port skia_surfaceless_gl_renderer.cc away from using GLImage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c71742c
+
+### Limit Null bindings to GpuChannelManager unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9e33cb
+
+### DanglingPtr: Mark all of them as untriaged [24/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96b8478
+
+### [Ozone] Port surfaceless_gl_renderer.cc away from using GLImage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbfe42f
+
+### Revert "ozone/wayland: Fix subsurface destroying order"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77f4d3e3
+
+### wayland: link the upstream spec issue in xdg_activation.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f948c90e4
+
+### inputs: Remove extraneous composition check when confirming composition.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1a089a
+
+### ozone/wayland: Do not clear server selection when data source is cancelled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/802d98a
+
+### [bfcache] Clean up legacy TTL param and replace its usage with new flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/073e6f60
+
+### LacrosTablet: Check snapped state for Lacros on tab dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e91de3
+
+### float: Add browser command to toggle multitask menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a62c605
+
+### [Side search clean-up] Remove side search v1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff1a98d7
+
+### [cc-side-panel] Scroll to requested section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c33843
+
+### [ntp] Store collection ids for theme background images
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20fca534
+
+### [Live Caption] Prevent component download on lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b35dd7
+
+### [Extensions c2s] Show menu based on feature flag tab in test util
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/134a2db1
+
+### Add new suppression metrics behind new feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff8d8cb
+
+### Privacy Sandbox Settings: Connect Privacy Sandbox to Sentiment Tracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc51b5e
+
+### Remove unused code controlling groups expanded state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccd9429
+
+### [FedCM][Refactor] Differentiate IdentityProviderDisplayData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60a4e4c
+
+### shortcuts: Use the new Shortcuts app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ae1743
+
+### CR2023: Add color pipeline to Bookmarks++
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ac463e6
+
+### Remove BrowserWindow::UpdateFrameColor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e84e64
+
+### Add a navigation throttler for WebUI web apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48c80d2
+
+### [Extensions cleanup] Inspect popup by directly calling view controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bcd5fc
+
+### Update obsolete_system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c58a736
+
+### Remove spurious base/supports_user_data.h includes from headers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21f4f5c
+
+### Add multiple animations for PiP 2.0 window top bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d64d06
+
+### [Passwords] Add copy username/password actions to manage pass bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e448968
+
+### Android: Replace List/Map subclasses with List.of() / Map.of()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce19597
+
+### apphome: support install locally
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac40cb4
+
+### Refactor how WebAppFrameToolbarView is accessed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e58edbc
+
+### Separate Setting the Default Browser from Setting a Default Scheme Handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/570e8ab
+
+### [dPWA] Making file extension comparison case-insensitive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfaec82
+
+### float: Move find floated window on active desk to window_util::
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0462d6
+
+### Bluetooth Internals: Update some Mojo bindings to TypeScript
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6cd7d1a
+
+### Implement lacros tab groups save and launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17b41b4
+
+### Show performance opt-out surveys on pref change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38b88e7
+
+### Show discard chip and IPH only on non-chrome pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1efab1
+
+### float: Browser should show caption container when window floated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26fe24a
+
+### Improve launching utility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfdd3a4
+
+### [Autofill] Refactor AutofillSaveCardInfoBarDelegateMobile construction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4586a6
+
+### Expose auth-factor based pin methods to os-settings webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00f52eb
+
+### [lacros] Fix missing caption buttons when exiting fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48f2bd4
+
+### [Lens] Setup alternate context menu strings on Clank.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2150e28
+
+### [Kartoffel][Clank] Adding missing descriptions to notice strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cecdd7fa
+
+### [Read Anything] Update font list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3c1315f
+
+### Migrate callers of IsNonEnterpriseUser() to the signin implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7deb55
+
+### [IBAN local save] Create IBAN save bubble view dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd3257a9
+
+### [Tab Switcher] Delay tab addition to TabListModel if marked for selection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de80974
+
+### [privacy sandbox] Add field trial for PrivacySandbox4
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9ed8f9
+
+### Privacy Sandbox Settings: Display consent info in topics-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb9b208
+
+### Privacy Sandbox Settings: Update existing prompt helper test for m1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56341c41
+
+### Privacy Sandbox Settings: Add PS4 HaTS triggers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8757240
+
+### LacrosOnly: Force Ash WebUIs through OsUrlHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fbb86b
+
+### PinManager: Rename structs SetupProgress and SetupProgress
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd76992
+
+### Re-enable and fix context menu in Lens side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65f8752
+
+### Add option to pairwise merge for content clustering
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/991594b1
+
+### [PCCT-SideSheet] Add CCTResizableSideSheetForThirdParties flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ec1cc2f
+
+### Remove unviable content clustering flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b93bad45
+
+### [memories] Handle 1-visit clusters and 0-scored visits.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5782141
+
+### [dPWA] Created flags for disabling PWAs service worker requirement
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/332a4e0
+
+### Gate Enterprise Reporting page behind feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/86f698b3
+
+### [ChromeRefresh2023] Add flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f90ffa7
+
+### [RSearches] Remove the param default_query_chip
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0af7ebfa
+
+### Revert "[iOS] Remove flag SyncTrustedVaultPassphrasePromo"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/52d0a272
+
+`);
+              </script>
+            </body>
+        </html>
