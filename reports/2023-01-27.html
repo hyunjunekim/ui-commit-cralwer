@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-27
+### Dictation: Remove SuccessWaiter class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b771db9
+
+### [conflict dialog] set #message element outline style to none
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98dc0d7e
+
+### [realbox] Adds support for a 2nd column of suggestions
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aba00eb
+
+### WebUI: Replace references to //ui/webui/resources:library, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1499c2
+
+### Implement expand by word, shrink by character for views.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da204b7
+
+### Revert "AXAPI: expose content from aria-describedby as AXCustomContent"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d291c4
+
+### [Clipboard API] Write unsanitized HTML content to the clipboard part 1
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7efeb31
+
+### gif_recording: Implement focus ring shapes for GIF UIs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9b947c9
+
+### mac-a11y: organize NSAccessibility protocol impl into sections
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0882922
+
+### [memories] Remove \`cluster_visit.hidden\`.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab5f85b
+
+### ax_script: support IAccessibleTextSelectionContainer::setSelections method.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/217461d
+
+### [ozone] Fix typos in drm/gpu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83947dd
+
+### [views] Fix disabled prominent button background color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a159f00
+
+### ax_ui: change AXTreeObserver::OnTreeManagerWillBeRemoved
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/830cb7c8
+
+### Nearby Share: Add nearby share Mojo WebUI bindings to mojo library
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/844ec3c
+
+### Update Notification Center behavior for Lockscreen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a86b85
+
+### [ChromeRefresh2023] Set hovered and pressed states for combobox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d289440
+
+### [platform window] Added activation state tracking to the stub window.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f7079ee
+
+### exo: reset pointer and touch state on ui-controls resource destruction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d55a2c6
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2afee301
+
+### Fix Password Manager popup a11y.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/664f680
+
+### Don't Use SystemCompositor check in display manager code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bdff4a
+
+### [Notifications] Implement Incoming Call Scenario on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01a77f1
+
+### [fuchsia] Calculate the correct vsync interval
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23898f09
+
+### Make SnapScrollController snap_bound dynamic to support stylus slop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0146ba4
+
+### Define a separate slop region for stylus tap gesture
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/33aa7e2
+
+### AXAPI: expose content from aria-describedby as AXCustomContent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2301714
+
+### Introduce EditablePasswordCombobox class.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/483d082
+
+### Enable WebGPU for non-component Android builds
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee64bdb
+
+### Reland "[ntp] Store collection ids for theme background images"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c7d381
+
+### [Side Panel] Fix crash if browser closes before side panel entry loads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/947b2d1
+
+### [Office] Define setup dialog scrollable area
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd895a2
+
+### [FedCM] Refactor FedCmAccountSelectionView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9706d60
+
+### CR2023: Add color mixer for side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4584c8a
+
+### [Refactor] Delete unused IdentityDialogController::OnViewClosed()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e80a921
+
+### [DriveFsBulkPinning] Add new settings > storage row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c512aab
+
+### DPWA: remove OnWebAppLocallyInstalledStateChanged event
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dca0c7202
+
+### [Read Anything] Only enable accessibility when a web contents becomes active.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa70814
+
+### Remove unused profile parameter in UninstallWebAppFromStartupSwitch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/157ee03
+
+### [RDSC] Implement Request Desktop Site per-site settings IPH (arm 2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/961ba13e
+
+### Remove autofill dropdown signin promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96ac602
+
+### [Read Anything] Match selection on reading and main panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd40958
+
+### [NTP][Panorama] Respect themes admin policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dd982aa
+
+### [dPWA Testing] Ensuring all browser tests do no OS integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3de0b0
+
+### Convert sentinel index to nullopt in TabStrip text drag and drop API surface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1503e21
+
+### [dPWA] Refactoring startup browser creator launch to commands.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ea14319
+
+### Add WebUI boilerplate for search companion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/691c6de8
+
+### [Read Anything] Use AccessibilityPerformAction to click links.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4e51b9
+
+### [Tablet specific] Adding unit tests for home button position
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1340f626
+
+### [PolicyLogs] Adding Localization for strings on chrome://policy/logs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a44f044
+
+### borderless: Pass IsBorderlessModeEnabled to opaque's layout delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ac59a67
+
+### Remove productivity launcher related feature flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/afc995d9
+
+### Notes: remove old views front end implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d231d07
+
+### [ SavedTabGroup ] Fix unsaving of open tabgroups in tabstrip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ef441c
+
+### [fyfre] Add a new ACCESS_POINT_FOR_YOU_FRE entry for signin metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7067d4b
+
+### Update WebAPK OWNERS files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4d5921
+
+### [SafetyCheck] Add UMA metrics for revocation duration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fa96fd
+
+### [journeys] Delete Journeys HaTS survey client implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d61044db
+
+### Prep iOS support of parental controls - Prefs and Constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1a9899c
+
+### arc: Add UI for free disk space check in ARCVM /data migration screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eabc62e
+
+### Revert "Change return value of GetDeviceManagerIdentity()"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e35f7fe
+
+### Modify enterprise disclaimer during FRE for supervised users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abb3ee0
+
+### Reland "Include sites with granted device permissions in All-Sites"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79456011
+
+### Privacy Sandbox Settings: Add HaTS probabilities and testing to service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63e844e
+
+### [Autofill] Remove ZoomController observer in ~ChromeAutofillClient()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/650bcfd
+
+### [Autofill] Avoid virtual method calls in ChromeAutofillClient constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b28521f
+
+### Change return value of GetDeviceManagerIdentity()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79d9298
+
+### [Signin] Change label for confirm button in Signin Intercept bubble V2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea6af8d0e
+
+### [privacy sandbox] Suppress the prompt is the window is too small
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2755d05
+
+### [Password Manager] Allow to mute and unmute compromised credentials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d44401fb
+
+### [fyfre]Add histograms for enterprise disclaimer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c73a6a6
+
+### [Password Manager] Add action menu to the checkup details page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fc4f51
+
+### [privacy sandbox] Adjust prompt width to account for the window size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08f5acfc
+
+### Revert "[ntp] Store collection ids for theme background images"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e6f21cf
+
+### Add flag for Arc Idle Manager
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0a0f97
+
+### [Lens] Clank: Update feature name to avoid experiment conflict.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c903c59e
+
+`);
+              </script>
+            </body>
+        </html>
