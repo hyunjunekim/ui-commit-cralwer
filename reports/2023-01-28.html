@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-28
+### Allow copying of About Chrome preferences with a long click
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d8d7a2
+
+### [ozone] Fix warnings in drm/gpu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d8c2819
+
+### [ozone] Fix redundant namespaceing in drm/gpu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc2b6c5
+
+### [GL] Eliminate GLImageNativePixmap::GetNativePixmap()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce3a01e83
+
+### [ozone] Use emplace in drm/gpu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a008f3c
+
+### [file manager] Hide CSE file size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0407c5
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfc2305
+
+### [ozone] Fix namespaces in drm/gpu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b05c2d
+
+### fixup! ozone/wayland: fix session restore from minimize.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40cf912
+
+### [WebUI] Move OpenWindowProxy to ui/webui/resources/js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/848c08c
+
+### [FilesRefresh] Support IconSet input for xf-icon widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/679040d2
+
+### [Files] Fix ripple boundary issue for menu items
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e125a97
+
+### Add plumbing to Settings to be passed the current Profile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f10936
+
+### Reland "Side Search: template url change should not close side panel"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/146fff336c
+
+### QA Rich card: Create Rich answers card UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f90be4
+
+### [Cleaup] Remove IsVoiceSearchEnabledCache experiment code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37c1136
+
+### Reland: PiP 2.0: Assume the feature is enabled on the browser side
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08091e0
+
+### [ntp][side-panel] Reflect collection id changes in Customize Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68c72f8
+
+### [Multidevice] Clean up search concepts when user has opted out
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41dc693
+
+### [immersive fullscreen mac] reveal lock accounting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83a4000
+
+### Reland "[Side Panel] Fix crash if browser closes before side panel entry loads"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf3a0ec
+
+### Avoid profile_manager.h in most headers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ae3366
+
+### Vectorize AutocompleteMatch::action as actions and update several usages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14b05f6
+
+### [Read Anything] Add UKM metrics for Read Anything feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfdde35
+
+### Refactor WebAppFrameToolbarView ownership 1/x: Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1b3a66
+
+### [ntp][side-panel] Add pref that tracks customize chrome button opens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/363e25e
+
+### [Start] Build histograms for click rates of Omnibox on Start and NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43cec6d
+
+### [ntp][side-panel] Add metric that tracks NTP image source
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/981f332
+
+### [Autofill] Simplify API of TestAutofillManagerInjector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a96ff41
+
+### Revert "PiP 2.0: Assume the feature is enabled on the browser side"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bec123
+
+### PiP 2.0: Assume the feature is enabled on the browser side
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/faf2371
+
+### Window placement: Support opening popups at (0,0) origin.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a32b14f8
+
+### [Omnibox] Update toolbar and locationbar color when dropdown is scroll
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b4fd611
+
+### Fix PageTimelineMonitor behavior around tab discarding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad72b96
+
+### [Extensioncs c2s] Add site permissions button for each extension item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d268c04
+
+### [RDSC] Implement Request Desktop Site per-site settings IPH (arm 1)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/327adc0
+
+### Revert "borderless: Skip window-management permission check for empty origins"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/146a22e
+
+### [Extensions] Add emiliapaz@ to c/b/ui/*toolbar_action OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/570f48c
+
+### Notes: Update NoteOverview properties
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06beae2
+
+### [Side search clean-up] Remove unused TestSRPAvailability()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64bac4c
+
+### Add missing profile.h includes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75451ba
+
+### [FedCM][Refactor] Consolidate single/multi account picker computation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6294a13
+
+### [Passwords] Remove the footer in the password details bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8dfc5f
+
+### PiP 2.0: Use DCHECK to assume contents_to_insert exists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23f94ed
+
+### PiP 2.0: Add width/height options to DocumentPictureInPictureOptions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57eafde
+
+### [fyfre] Set up flow to use chrome://intro for Lacros FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c714f5
+
+### cros: Clean up friends in BrowserNonClientFrameViewChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61018e2
+
+### Update network_onc_utils APIs to use Value::List and Value::Dict.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a2dc41
+
+### Revert "[Side Panel] Fix crash if browser closes before side panel entry loads"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aafd50d
+
+### Revert "Side Search: template url change should not close side panel"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f23b31b
+
+### Side Search: template url change should not close side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3bd847
+
+### Disable CBD pedal for Guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f50017d
+
+### [Password Manager] Displaying credentials reusing passwords
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a36d65
+
+### borderless: Skip window-management permission check for empty origins
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c547c4f
+
+### [SigninScreenHandler]: Remove SigninScreenHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9289608
+
+### Add a UI Dialog class for future Kerberos feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc62681
+
+### [fyfre]Add pixel tests for the profile type choice UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07621300
+
+### [AutofillFeedback] Show default feedback dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00a221d
+
+### Cleaned up feature AutofillUseConsistentPopupSettingsIcon
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7197927
+
+### [Profiles] Display Open Link As menu if there is another active profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23f1af1
+
+### [Password Manager] Help button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6073e0f
+
+### sharing: remove #persist-share-hub-on-app-switch
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9ae31c36
+
+### [RSearches] Remove the flag RelatedSearchesInBar
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7229745a
+
+### [Nearby] Clean up one-page onboarding flag metadata
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4dc3e9fb
+
+`);
+              </script>
+            </body>
+        </html>
