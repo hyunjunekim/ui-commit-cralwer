@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-01-31
+### Port cross-display fullscreen for ash to the platform level.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9008d8d
+
+### x11: merge keyboard hook classes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ea65c6f
+
+### [views]: Fix spacing between icon and label in material button
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d34466e
+
+### win7dep: Remove pre-win10 Dpi awareness code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f08fad
+
+### ax_ui: simplify AXTree::NotifyTreeManagerWillBeRemoved
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19e4aa41
+
+### Invoke ExtractAsDangling() in :~TestAXNodeWrapper()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9d28d9
+
+### Rework member destruction order in AutomationTreeManagerOwnerTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab3d303
+
+### WebUI: Replace references to //ui/webui/resources:library, part 7.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e771d9f3
+
+### inputs: Fix OnCursorPosition/OnCommitString in Lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0bcbfa3
+
+### Invoke ExtractAsDangling() on raw_ptr<> passed to FcConfigDestroy()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6af8c7e
+
+### [CodeHealth] Default member initializers for gesture config params.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/905d423e
+
+### Add back reference to the InkDropHost from the ripples.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13727d5
+
+### Reland "Reland "ozone/wayland: call submission callback only after OnSubmission is received.""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f978990
+
+### Android browser compositor cc with cc::slim
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ee5d039
+
+### ui/ozone/platform/wayland/: Promote event watcher to ui/events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c36bc7
+
+### Make MaskFilterInfo::ApplyTransform() always succeed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/faf4886a
+
+### [ChromeRefresh2023] Fix focus ring issue and begin move off FocusableBorder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0ffe15a
+
+### Remove use of g_utf8_substring
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2567d8e
+
+### Don't consider ignored root boundaries for AXPosition traversal.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d00c689
+
+### Fix namespaces in ui/display/manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1444727
+
+### Make emoji picker accelerator also show in lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f0c35b
+
+### [ozone/wayland] Relax ShouldSuppressPointerEnterOrLeaveEvents()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cfeaed
+
+### [Auto-disable Accessibility] Refactor AccessibilityState and use consistent language
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bddb6b8
+
+### Fix typos in ui/display/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0783e12
+
+### Disable Vulkan for software vulkan driver llvmpipe
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97ca9f4
+
+### Revert "Enable WebGPU for non-component Android builds"
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8bc9064
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47e78ce8
+
+### DLP: Add blocked USB integ test; clean up tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/410fe51
+
+### DLP: Add integration test for blocked Arc(VM)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23763e3
+
+### DLP: Disable blocked share sheet apps
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/388107ec
+
+### DLP: Add files app integ test for blocked tasks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f1ccbc
+
+### [Files] CVox to convey 'Eject device' button target name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4caa560
+
+### [FilesBulkPinning] Unpin files that are deleted on the cloud
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e109ff3
+
+### Add hidehiko@ and oshima@ to ozone-wayland owners
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdbe1b1
+
+### Reland "dpwas: Fix PWA title bar color not respect high contrast"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdc44ab
+
+### Remove last Chrome Cleaner code from Safety Check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/166d6d7
+
+### [headless] Support HeadlessMode policy in new headless Chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6567a8a
+
+### Refactor WebAppFrameToolbarView ownership 3/x: Linux.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2d7a78
+
+### [Extensions cleanup] Use ImageModel for action icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1545449
+
+### [dPWA] Save web app display mode for each app window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f5a44b2
+
+### [Lens] Add context menu item to translate text in image.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/252f9ac
+
+### Refactor WebAppFrameToolbarView ownership 2/x: WCO on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a451ecc6f
+
+### sheriff: disable BrowserNonClientFrameViewBrowserTest.SaveCardIcon on all platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a766a3cc
+
+### Migrate base::Value calls in chrome/browser/ui/webui/settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4b54d0
+
+### [Test Automation] Re-enable (hopefully) deflaked test on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86edada5e
+
+### Reland "feed: ensure snackbar actions complete"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/673f71c
+
+### Notes: add notes overview ui in the side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15f4675
+
+### Migrate all Value::Append() calls in /chrome/browser/ui/tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/851d263
+
+### [Sheriff] Disable ChromeShelfControllerArcDefaultAppsTest.DefaultApps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64e85f6
+
+### [Extensions] Add emiliapaz@ to c/b/ui/views/*toolbar_action OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3499075
+
+### [Settings] Record user action for when ESB page is opened with IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e55c51
+
+### Remove unused/unnecessary EnableUIControls() in browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8798acf
+
+### [fyfre] Clean up synthetic study setup in welcome code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62e1680
+
+### Refactorying redaction_tool.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca9416d
+
+### [Extensions] Make ExtensionSidePanelManager one per SidePanelRegistry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de899cc3
+
+### [Signin] Use strings from Signin Intercept bubble V1 in bubble V2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cedfac
+
+### Update AXAPI test for alert dialog description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96fb998
+
+### sheriff: disable HostedAppTest.LoadIcon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23f9e32
+
+### [NTP Journeys] Setup Api Proxy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26e897e
+
+### apphome: update style to work with maskable icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da7bd32
+
+### Remove unneeded system_web_app_type.h includes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/856a359
+
+### Remove spurious service/network mojom.h includes from headers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77cedb1
+
+### Revert "Fix PageTimelineMonitor behavior around tab discarding"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4541f07
+
+### desktop-sharing: remove 3p targets from desktop share hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d2d822
+
+### [FedCM] Add auto-signin opt-out checkbox on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/376cc22
+
+### Rename CreditCardCVCAuthenticator -> CreditCardCvcAuthenticator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10b1803
+
+### win7dep: remove unused kNotAvailableWin7 enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad4e557
+
+### [Lacros] Delete logging for investigation of bug 1340791
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e5e9ea
+
+### extensions: Show extension name in Site Details page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63ff64c
+
+### Enable FileTransfer policy display on chrome://management in lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e9560d
+
+### [SafetyCheck] Add undo for 'Allow again' action for unused sites module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80d1dd0
+
+### [Fast Checkout] Replace ContentAutofillDriver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eedd180
+
+### [UPM-Desktop] Add biometric auth toggle on settings page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40c9879
+
+### [Privacy Hub] Clear camera HW switch notifications properly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffd86a6
+
+### Cryptohome recovery: skip recovery setup checking for tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08d1093
+
+### Use color ids for background in autofill popup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/871cafe
+
+### Pass unique_ptr endpoint_fetcher to ResponseHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d9950c
+
+### Introduce Jelly flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d5d0fc7
+
+### [PolicyLogs] Flag for chrome://policy/logs Page on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dcdfa9e
+
+### Reland "[Lacros] Load Lacros according to LacrosSelection policy."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f3555a
+
+### Clean up expired chrome://flags for offline capability check
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f9608f0
+
+`);
+              </script>
+            </body>
+        </html>
