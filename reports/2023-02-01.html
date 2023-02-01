@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-02-01
+### Renamed next/previousFocus to next/previousWindowFocus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8ac804
+
+### CR2023: Update colors for primary and secondary text in WebUI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4bbfda
+
+### Enable WaylandWindowTest.ChangeFocusDuringDispatch on DUT
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87ca831
+
+### WebUI: Infer chrome://resources/ path_mappings from deps in ts_library.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3dbf7df7
+
+### gpu: Use waitable swap chains for video and canvas
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1450f89
+
+### Reland "Make ui::FormatBytes CHECK for negative bytes"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b51b99
+
+### Remove {dis,en}able-running-as-system-compositor flags.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2720104
+
+### WebUI: Remove deprecated ui/webui/resources:library target.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c32391
+
+### Add StyledLabel::SetDisplayedOnBackgroundColorId.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7cf777a
+
+### HDCP: Check the display connectors for "Content Protection Key" prop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2dda63
+
+### CR2023: Rename --cr-color-token vars to --cr-fallback-color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/618c973
+
+### Return a stub NativeThemeIOS implementation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bba64576
+
+### Resubmit: Enable WebGPU for non-component Android builds
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/239e1df
+
+### [color] Add base and shadow tokens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/702f4b4
+
+### Revert "Make ui::FormatBytes CHECK for negative bytes"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1acf3a1
+
+### [headless] Track expected activation state on Windows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69907fc
+
+### Make ui::FormatBytes CHECK for negative bytes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2270be5
+
+### [User Education] Add testing method to verify anchor element is present
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0ee0e4
+
+### [views] Adding corner radius to text field
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03ce486
+
+### [color] Align existing Sys tokens with UX spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a235bc5
+
+### [GL] Have GLImage tests know concrete subclass that they are binding to
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34cf3c3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/531a13b9
+
+### Linux accessibility: do not check DBus and GSettings in testing env
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea70068
+
+### TooltipLacros/Exo: Support keyboard triggered tooltip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2daca3d
+
+### Tooltip/Exo: Set GroupingPropertyKey to menu in Exo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b8e1ba8
+
+### [FilesApp] contentMimeType can also be null
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/856a217
+
+### [GL] Eliminate NativePixmapGLBinding::BindTexImage()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a453e26
+
+### Revert "Bundle lit resources."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/866ae15
+
+### x11: remove unused keyboard hook leftovers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89504acd
+
+### Bundle lit resources.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e8c6a9
+
+### [Files]: Renames RecentFileType to FileCategory.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1648ca0
+
+### [fyfre]Add dark mode to the new design of the profile type choice page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c699e2c
+
+### support-tool: Fix chrome://support-tool styling for dark mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9233e0d3
+
+### [Autofill] Moved StrikeDatabase's in autofill/core/browser to a dedicated folder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ce78b0
+
+### cryptohome recovery: Unify the feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e55666
+
+### Remove AutofillPopupBaseView::GetFooterBackgroundColor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78348a6
+
+### borealis: move borealis into apps and extensions in storage ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d2c67a
+
+### personalization: more wallpaper policy enforcement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/894a6ca
+
+### Add a generic disabled screen for the Parent Access widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3a3bb2
+
+### [ SavedTabGroup ] Fix outline bug when saved group is closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85039d47
+
+### [TailoredWarning] Log DISMISS action on BUBBLE_SUBPAGE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e659b9d
+
+### [omnibox] Change button row view buttons from one pedal to many actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8748b6a
+
+### [IBAN local save] Add Chrome logo to IBAN bubble view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6d2282
+
+### Add printable area to PrinterSemanticCapsAndDefaults::Paper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4be1cb
+
+### [Live Caption] Use all-sound stream for system live captions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b090b8e
+
+### [Metadata] Consolidate settings page UI change under one flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69d29f8
+
+### cert_prov: Introduce CertProvisioningWorkerDynamic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c829bf
+
+### Add enums for tabbed mode integration tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0507bb3
+
+### Forward declare Profile in more headers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6d0edb
+
+### Refactor WebAppFrameToolbarView ownership 4/x: Chrome OS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df291c6
+
+### [Cormorant] Talkback fixes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6665d0
+
+### [FedCM] Add business logic for IdP sign-in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72b0cbf3
+
+### Shimless: Fix Shimless app accessible via Chrome browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2ccd28d
+
+### Refactor WebAppFrameToolbarView ownership 5/x: Windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ae29d4
+
+### De-flake BubbleCorrectlyReportingMemorySaved test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d4c65b
+
+### Avatars: remove remaining avatar assets references
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2e0192
+
+### [dPWA Testing] Refactored some test cases to be correct on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed11d71e
+
+### Only run the battery survey for users who have been on battery power
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96c118b
+
+### Remove more profile_manager.h includes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cee3a509
+
+### [GTS][Cleanup] Remove unused code in Toolbar Tablet Bug: 1408352
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8287e23
+
+### Clean up Update Inc Entrypoints feature flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3d282a8
+
+### FSA: Elide filenames in permission prompt titles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd19df2
+
+### [FedCM] Add permission setting for FedCM auto sign-in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d1c32c
+
+### [TabStrip Redesign] Use layer drawable that matches final strip background on launch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f153864
+
+### [fyfre]Add pixel tests to profile picker main view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e616b60
+
+### [suggest-internals] Creates a placeholder page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5261e37
+
+### Prep for iOS support - Move supervised_users.h into components
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1099454
+
+### [fyfre]Add FRE style to profile type choice page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d8f796
+
+### [Signin][Android] Add avatar for signed-out users in the NTP.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2759bb1
+
+### Eliminate AutofillPopupViewNativeViews::OnThemeChanged.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38341a8
+
+### Remove unused methods in AutofillPopupBaseView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e9edad0
+
+### Remove merchant opt out error dialog finch flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1be26c8
+
+### Add feature flag for stacked hotseat.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee44426
+
+### [VCN Ranking] Use separate experiments for ranking of credit
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/35dfbbd
+
+### Parse 'scope_extensions' web app manifest member.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d7bb22c
+
+### personalization: rename ambient UI flag to Personalization Jelly
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/14ec85e
+
+`);
+              </script>
+            </body>
+        </html>
