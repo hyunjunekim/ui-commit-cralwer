@@ -1,0 +1,244 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-02-02
+### Fix drivefs postprocessing of results.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35aa63c
+
+### Revert "Reland "Bundle lit resources.""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbf33de3
+
+### [Mirror Sync] Add aria labels to inline sync statuses
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95da2d85
+
+### [Mirror sync] Send debounced individual sync events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebad8d0
+
+### Reland "Bundle lit resources."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36525132
+
+### FilesRefresh: Position DLP icon and sync status icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac599bc
+
+### Do IWYU for base::clamp().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05b9316
+
+### ozone/drm: Don't allow overlay reassignment until overlays are unused
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f92ef38
+
+### Reland "AXAPI: expose content from aria-describedby as AXCustomContent"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/574c055
+
+### [ios] Split uikit_util.h into a separate target.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40b00872f
+
+### Resubmit #2: Enable WebGPU for Android builds
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e9e3257c
+
+### Multiplanar: Implement CopySharedImage for passthrough decoder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5b5a5b
+
+### Avatars: remove local avatar assets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c7870b
+
+### Fix presentation callbacks in tab switch latency metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc48229
+
+### Revert "wayland: implement PlatformKeyboardHook for Linux Desktop"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07ca2345
+
+### [GPU] Remove BindTexImage() from GLImage interface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/155f242
+
+### wayland: implement PlatformKeyboardHook for Linux Desktop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5697df3
+
+### DLP: Add blocked Drive integ test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d84821a
+
+### Revert "Resubmit: Enable WebGPU for non-component Android builds"
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7e3dba8
+
+### [Default Apps] Update references to Nvidia GeForce Now.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8432127
+
+### [Launcher FA] Partially implement and test FederatedMetricsManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8b145a
+
+### [Extensions c2s] Add extension name to site permissions page header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0b78d84
+
+### TabDrag: Check active inde is kNoTab before calling TabStripModel method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3df0e7c
+
+### [Cast2Class] Re-enable pixel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcf7e1f
+
+### Cleanup old Lens flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ca74d8
+
+### OS Settings: Open chrome://management in Ash app window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f41ff3
+
+### borealis: adjust deps for installer and splash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/995e477
+
+### Add printable area to cloud_devices::printer::Media
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4b8949
+
+### [NTP Journeys] Modules max width parameter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d949571
+
+### Remove unneeded include.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c9a091
+
+### bruschetta: call directly into the installer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d627f7
+
+### media: detach from MediaRouteStarter when giving it away
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee6aa7b
+
+### Add text drag and drop support to CompoundTabContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9f0400a
+
+### [ SavedTabGroup ] Change close text on tab group header when saved.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b0ed3b
+
+### Use activity tab supplier for tracking back press state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a32f712c
+
+### PiP window UI fixes for implementation review
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38f3aa1
+
+### Use new HasLauncherButton function in chrome ash device_section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7343ed
+
+### Remove set_skip_on_template_url_changed_for_testing for sid panel tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8149a74
+
+### chromeos: disable flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf90a0e
+
+### Reland "Fix PageTimelineMonitor behavior around tab discarding"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7d8476
+
+### Make Search Companion Sandbox use WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/797efd1
+
+### [Lens] Context menu changes minor fixes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/620ea85
+
+### [Omnibox] Turn scalar \`PedalView\` into an List Data Structure in Pedal Suggestion View.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8cdd94
+
+### [signin][FRE] Add Chrome switch to hide account email
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9375f4
+
+### Use content-PiP transition more often on Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21f84c61
+
+### [reading list] Enable v2 on clank by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb4e638
+
+### Remove now unused method.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7f4256d
+
+### Delete DiscardOccludedBitmaps Flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1045f30e
+
+### [Code Health] Use base::Value::(Dict,List) in policy_logger
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a29fdcb
+
+### [Code Health] Use base::Value::Dict in policy_ui.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f655dc
+
+### Revert "[Leipzig][Desktop] Settings: Address account notice for deletion and editing, Frontend part (2/2),"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98f2817c
+
+### [OOBE]: Allow advanced options on WelcomScreen only when usable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2c48d2
+
+### [Leipzig][Desktop] Settings: Address account notice for deletion and editing, Frontend part (2/2),
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c898c9
+
+### [AutofillFeedback] Add feedback command browser tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14ef5695
+
+### Swap independent base::Feature for RuntimeEnabledFeature only
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d65d23
+
+### [Cormorant] Send OPEN_WEB_FEED_COMMAND in feed query request.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e5b3990
+
+### Add Chrome flag for hiding non-displayable account email
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d6770e8
+
+`);
+              </script>
+            </body>
+        </html>
