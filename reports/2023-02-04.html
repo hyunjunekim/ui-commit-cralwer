@@ -1,0 +1,252 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-02-04
+### WebUI: Move ui/webui/resources/js/... ts_library() targets one level up.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/803a2a8
+
+### Localized link: Allow localized-link to be inline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3ad164
+
+### Remove bare \`new\` in EventProcessorTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c170f5
+
+### CR2023: Update padding and gaps for cr-url-list-item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d385dc2
+
+### Disable files app PRESUBMIT on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8142add
+
+### [Extensions] Fix chrome.windows.create minimized failing on linux X11.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f7b538e
+
+### Avoid bare \`delete\` of raw_ptr<> in EventDispatcherTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc8ea46
+
+### X11SurfaceFactory: Check for failure in ExportHandle().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79ec345
+
+### Remove unused member variable in EditableCombobox.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a9e75e
+
+### ui: Improve the robustness of NativePixmapEGLX11Binding.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45d944d
+
+### [tracing] Add trace events about scroll deltas for scrolling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/842ccc3
+
+### [Files]: Adds a no matching result screen to the files app.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/389c295
+
+### Use the host's scale factor if the client's scale factor is close.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f70de1e
+
+### Enable usage of ui::gfx on blink for iOS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e3a53f1
+
+### Add API to set rounded corners on a ScrollView.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c555eda8
+
+### [headless] Use ClipboardNonBacked instead of a HeadlessClipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8985308
+
+### Migrate TypographyProvider::GetColor to use color ids.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4544a23
+
+### [ios] ui::Events provide stubs for iOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69eb021
+
+### Add hidehiko@ to ui/gtk/OWNERS for inputs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04972aa
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aff9f93
+
+### Fix sequence points when there is no size/scale change.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a361313
+
+### [GL] Move sampler code out of NativePixmapEGL*Binding::BindTexture()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6569bf
+
+### [DriveBulkPinning] Explain default ProgressCenterItem state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8416f7f
+
+### iwa: Remove WebApp::is_storage_isolated_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3abed43
+
+### iwa: Remove IWA-specific prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de57739a
+
+### Modernize Voice Recognition Handler tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af58c2d
+
+### Add a test case for non owner profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3096150d
+
+### [omnibox] Rename omnibox autocomplete setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e152def0
+
+### Make overflow indicators not depend on TabStrip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7844584
+
+### [suggest-internals] Implements chrome://suggest-internals UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be84546
+
+### apphome: disable uninstall for policy installed apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30594c6
+
+### Settings Split: Show/Hide settings for keyboard based on internal vs external
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c86dff
+
+### ambient: rm default-on feature ChromeOSAmbientMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92f2e58
+
+### Hide web app toolbar when borderless mode is enabled on all platforms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31023b8
+
+### Fix a small bug in WebAppFrameToolbarInBrowserView implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25d7599
+
+### T&S Sentiment: Add HaTS Helper for V2 feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00ba7d11
+
+### [DriveFsBulkPinning] Get total pinned size from DriveFS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a62d444
+
+### [Fast Checkout] Hide UI only if showing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bb5c67c
+
+### Notes: update icon used in side panel drop down menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6f2ee1
+
+### [ChromeVox] Panel shows on primary display properly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6589b1
+
+### Render flow-specific disabled screen content for extension approvals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b2f24b
+
+### Enterprise Reporting webUI boilerplate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a39d07a
+
+### [Lacros] Add debug logs for nested loops during tab dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00c01a5
+
+### Speculative fix for WebView ZoomObserver related test flakes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c4e193
+
+### Implement devtools protocol support for SetRPHRegistrationMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0e7055
+
+### [fyfre] Fix crashes in IntroHandler caused by null store.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5cad3d
+
+### arc: Check battery state before showing ARCVM /data migration screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/758e476
+
+### Revert "Reland "Enable MojoIpcz in test configs for macOS""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bc0aa18
+
+### Remove AutofillPopupBaseView::GetSeparatorColorId.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71ee14c
+
+### kiosk: turn off immersive mode in kiosk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd26ac4
+
+### Remove AutofillPopupController::GetUnelidedSuggestions().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d391f48b
+
+### PinManager: Keep track of required space
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f18bbfa
+
+### Reland "Enable MojoIpcz in test configs for macOS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8887e42
+
+### Revert "[Multidevice] Clean up search concepts when user has opted out"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9522a67
+
+### Remove expired flag: enable-access-code-cast-tabswitching-ui
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/460e3d6
+
+### Quick delete: Add feature flag for quick delete on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e1c17f
+
+### [AboutThisSite] Add flag to enable feature to non-MSBB users
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df8254a
+
+### DeferredShaping: Remove an about:flags entry
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/54cdcf28
+
+### [GLES2CmdDecoder] Always get size from src texture when copying texture
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2ebb732
+
+`);
+              </script>
+            </body>
+        </html>
