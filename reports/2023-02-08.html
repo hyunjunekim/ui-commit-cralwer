@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-02-08
+### Revert "inputs: Fix OnCursorPosition/OnCommitString in Lacros."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c91ce23
+
+### Revert "inputs: Remove extraneous composition check when confirming composition."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d237df3
+
+### Files F2: Fix File Tasks and Selection in the Store
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08d2f111
+
+### Files F2: Clear file tasks from context menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a21ac6b3
+
+### CR2023: Updates hover, active, and focus colors for WebUI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ceac67a
+
+### Reland "wayland: implement PlatformKeyboardHook for Linux Desktop"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b117a2
+
+### Reland "ozone/wayland: Fix subsurface destroying order"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1fb8bf3
+
+### ozone: return null in CreateKeyboardHook default impl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8337942
+
+### [BaselineSurfaceColors] Remap surface colors for experiment
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df75d7a
+
+### Support TextInputClient::GetFocusedReason() in exo.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aac9dba
+
+### TooltipLacros: Update parent window and id in OnTooltipShownOnServer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa811ca1
+
+### ts_library: Enforce '.d.ts' extension for |definitions| entries.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0039178
+
+### Files app: Fix crash in ActionsProducer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c22dae
+
+### [Files]; Do not show search options when searching Recent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f595160
+
+### CR2023: Update styles for cr-toolbar-search-field
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2fc88223
+
+### Revert "[User Education|Test Automation] Send WebUI Activation events on click."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b8defa
+
+### Remove unused VRR setters
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1506cc4f
+
+### generate_grd: assert input_files are actually in input_files_base_dir
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d35131a
+
+### [fuchsia] Use _hlcpp targets for linking to fidl libraries
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54aa31e
+
+### Revert "macOS a11y: Implement accessibilityHitTest for remote app shims (PWAs)"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5af9192
+
+### [ios] Fix build failures in ui/base with blink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62e4c41
+
+### Add VRR helpers to DisplaySnapshot
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57cc586
+
+### [views] Adding Fab to views_examples
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1698cd53
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b32bec
+
+### Pass drag data to DTPolicyController
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6230efa
+
+### [Ozone] Remove GLImage unittests that have never been enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/997419d
+
+### [GL] Clean up includes in gl_image.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc7d595
+
+### PinManager: Keep count of skipped files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87c69d95
+
+### Fix some OS_WIN endif comments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5a6eb4
+
+### Delete the MediaRouter.Ui.Device.Count.* histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2810ca9
+
+### LacrosTablet: Send FlingScrollEvent for TabScrubber to Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ea621b
+
+### CR2023: Add color IDs for filter chips
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c76603d
+
+### [GMC+Cast on CrOS] Add Mojo interfaces and CastDeviceListHost
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d71a8343
+
+### [Extensions c2s] Add scroll view to extensions menu main page contents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4f3d31
+
+### Float: Add tablet nudge for multitask menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95065c5
+
+### [history] Fix unchecked chrome.send param in ForeignSessionHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70617a38
+
+### iwa: Remove --isolated-app-origins flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4e8596d
+
+### Reland "iwa: Remove WebApp::is_storage_isolated_"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8edc4af
+
+### [Remote Playback] Disable remoting for encrypted media element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bec3ab
+
+### [FedCM] Update desktop UI to align with latest mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f9e3e5b8
+
+### [User Education] HelpBubble constants for new tab page and customize chrome side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f5082b
+
+### Enable explicit conversion checks for base::span sizes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e61641f
+
+### Remove LiveTabCount metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f74bc3
+
+### Add a global accelerator to toggle the Game Dashboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62cac8f
+
+### [IBAN local save] Add eye icon to hide/show IBAN value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bcbb62
+
+### OOBE: EULA cleanup: Remove EULA screen [2/2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40a7941
+
+### Update the ink drop color when the theme changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0dc835
+
+### float: Merge float and partial-split flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cc86b2c
+
+### [AppHome] Adding tooltip showing full app name to app-item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8dbb6b
+
+### Remove unused ToolbarTablet method/member.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e517284
+
+### Reland "[Eche] Create mojo interface for orientation changes"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90d6e3df
+
+### [fyfre]Fix crash caused by GetDeviceManagerIdentity() returning nullopt.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf30039
+
+### [UPM-Desktop] Add favicon source to PasswordManager WebUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e52615
+
+### desktop-screenshots: remove editor support
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d8e1635
+
+### cros: Add error state to recovery setup screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f9afcb
+
+### Slightly simplify OnDidFetchCapabilitiesFromPrintBackendService().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d58828a
+
+### Hide account switching from sync account control in the settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/822e9ba
+
+### Combine PopupRowView and PopupItemView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a383330
+
+### [dPWA] Add new launch source for App Home Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ae4a033
+
+### Make PopupSeparatorView and PopupWarningView inherit from views::View.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/808f389
+
+### OOBE: EULA cleanup: Update tests [1/2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1222510
+
+### Revert "[Unido] Cleanup: Use only the Sync codepath for sending messages"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4131d03
+
+### Add pixel tests for selected Autofill popup rows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f2f48a
+
+### [Autofill] Move AutofillDownloadManager ownership to AutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/399db01a
+
+### [Signin] Resize Signin Intercept bubble dynamically based on content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/deb9ca0
+
+### EnsureBrowserContextKeyedServicesFactoriesBuilt -- Chrome common Factories
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fe9cae
+
+### [AboutThisSite] Add metric for non-MSBB users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ca71ca
+
+### [AutofillFeedback] Push autofill metadata into feedback dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e710507
+
+### [dpwa] Support checking file contents loaded into multiple app windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f53258b
+
+### Fix chrome://vm page to work with polymer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fae7ea6
+
+### [fedcm] IdP Registration API Part 1: The Write Part
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0b477b
+
+### Add feature flag for autofill page load metadata integration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d96eae
+
+### Change feature name for ARCVM vmm swap
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d9f98e4
+
+`);
+              </script>
+            </body>
+        </html>
