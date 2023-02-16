@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-02-16
+### [Lacros] Fix DndActionsToDragOperations for Lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d33865
+
+### [Notification Drag] Implement image notification drag - Part 4
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3113cde
+
+### Make radio button checked status visible in high contrast mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/158d292
+
+### [views]: Adding radius tokens for LayoutProvider
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0009b06
+
+### [immersive fullscreen mac] only reparent anchored windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f36babc
+
+### [Office upload] Open file on Android OneDrive indirectly with ODFS
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afbe942
+
+### Files app Office: Add educational Nudge for files moved to the Cloud
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/690eae7
+
+### What's New: Add browser command to deep link to performance settings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d44fc0
+
+### MojoIpcz: Enable by default for most platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd70bafb
+
+### [Mac Views Unittests] Fix NWMTest.NonWidgetParentLastRef for macOS 13
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f155f51
+
+### Fix optimize_webui() to not produce Windows slashes in its manifest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d02817c
+
+### chrome-flags/lacros: enable LacrosColorManagement by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf7ec06
+
+### Re-order member destruction in SlideAnimationTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b48eab4
+
+### Move checks in CheckGenerateGrd() to ui/webui/resources/tools/PRESUBMIT.py
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0ea21e
+
+### WebUI: Remove unnecessary allowJs: true from tsconfigs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98c36d1
+
+### Introduce the raw_ptr attribute AllowPtrArithmetic.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09c200a
+
+### History clusters: Use TypeScript Mojo bindings and remove allowJs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08e23e0
+
+### [Mac Views Unittests] Fix NWMTest.MiniaturizeExternally for macOS 13
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/866e5f2
+
+### Add colors for the separators.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9886045f
+
+### Add VRR to configuration logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d483561
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7b42aea
+
+### Move build_webui.gni under ui/webui/resources/tools
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/282f5c4f9
+
+### Add banners for low drive space in shared drive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9f4f27
+
+### [SafetyCheck] Add Ctrl+Z functionality to unused site permissions module
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7da4247
+
+### [Pepper] Enable features for GPU refactorings by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/121e140
+
+### inputs: Send correct 'process' key in lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a63e38
+
+### CR2023: Update focus states for cr-button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d132670
+
+### ui_controls: Add SendKeyEvents API to send key press/release separately
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42593c8
+
+### Modify fileManagerPrivate.getDriveQuotaMetadata to take Entry
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89dc491
+
+### Extensions: FileHandlers: Open manifest-defined page for OS file(s)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ab2dd8
+
+### [Extensions c2s] Open extension settings directly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c506b9
+
+### Add icons for letter and line spacing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b49edc
+
+### [omnibox] Route OpenMatch calls to model and eliminate views equivalent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cff8ad5
+
+### bruschetta: Add an uninstaller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15c16808
+
+### [Extensions c2s] Add settings button in extensions menu main page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c01834
+
+### Settings Split: Add restore defaults buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/439a52d9
+
+### Disabling TabWithFormNotDiscarded on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d595ef5
+
+### [Extensions cleanup] Clean OnContextMenu[Shown|Closed] methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/020c6ba
+
+### WebUI: Migrate some chromeos pages to TypeScript Mojo bindings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cbf2bbd
+
+### OOPPD: Simplify user defined paper handling in PrintBackendService.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ce71b4
+
+### [color] Remove CustomThemeSupplier conditional definitions from mixers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f9093b
+
+### Added integration test for installing the manifest in tabbed mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab26e46
+
+### [StorageKey Cleanup] (2) Rename CreateFirstParty constructors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c81e13e
+
+### Reland high efficiency discard policy tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0790e1bf
+
+### Add "Search.Ambient.Query" and "Search.Image.Camera.Open" enumerated histograms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc3daf0
+
+### audio-input: Create tooltips based on mute state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dc601e
+
+### WebRtcTextLogCollectionAllowed Policy Definition and preference
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7db8bed
+
+### Enable -Wexit-time-destructors for more of chrome/browser/ui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b5b271
+
+### AboutThisSite: Add missing user-action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ece08d
+
+### screencast: Delete enable-projector-annotator flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/57e537e
+
+### kiosk: enable devtools in kiosk mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b971e35
+
+### [Profiles] Add histograms recording the StartupProfileMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99e789c
+
+### Fix request chip is not persistent while embedded iframe navigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c074b2
+
+### [Multi Apps] Replace base::RunLoop with base::test::TestFuture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65031ab8
+
+### OS Settings: Open accessibility extensions options in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7ab844
+
+### [Password Manager] Displaying password note
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27ab212a
+
+### Home tab icons are now resized to the target size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3a430dd
+
+### Report rule_metadata when matching rules
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b4baa2
+
+### Update IPH text for web feed awareness.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/566b268
+
+### [dPWAs] Removed unused method WebAppLaunchManager::LaunchApplication
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a0850f
+
+### flags: delete expired flag enable-palm-max-touch-major.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3afd7d3
+
+### flags: Remove flag enable-zero-state-app-reinstall-suggestions
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9130efa
+
+### Flags: Delete flag enable-palm-tool-type-palm, expired since M90
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b064995
+
+### flags: Delete auto-screen-brightness expired flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/302c006
+
+### arc: Add feature flag to switch to KeyMint on ARC-T
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f4568b1
+
+### feedback: Add feature flag EnableGetDebugdLogsInParallel
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7348a656
+
+### Add a flag to allow less secure EAP configs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/99e2419
+
+`);
+              </script>
+            </body>
+        </html>
