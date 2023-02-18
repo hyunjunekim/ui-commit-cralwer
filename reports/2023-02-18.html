@@ -1,0 +1,248 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-02-18
+### Ensure safe access to children during ui::Layer::OnDeviceScaleFactorChanged()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d16c434
+
+### ozone/drm: Use DrmWrapper in DrmGpuDisplayManager and drm/common
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3828438
+
+### [headless] Added expected window bounds tracking on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fad2345f
+
+### [ntp][cr-elements] Give Panorama shortcut buttons accessible names
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91b2e66
+
+### ozone/drm: Use DrmWrapper instead of DrmDeviceHandle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb397f3
+
+### ozone/drm: Use ScopedFD in DrmWrapper instead of FILE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad61a07
+
+### [Notification Drag] Implement image notification drag - Part 5
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35baf16
+
+### ozone/drm: Move Property from DrmDevice to DrmWrapper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8db580d
+
+### WebUI: Integrate JS source maps generation in build_webui.gni.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c854fcf
+
+### ozone/drm: Constify getter functions in DrmWrapper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dfc4e08
+
+### float: Apply styling to multitask menu nudge
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d3b7da77
+
+### Trigger paint on theme change in ImageButton
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e04889d
+
+### [Files]: Adds ability to specify the alignment of the dropdown menu.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/616f3c50
+
+### ozone/drm: Inherit RefCountedThreadSafe in DrmDevice
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c00451
+
+### Add flag to avoid discarding the toolbar texture when not visible
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc08287
+
+### Fork DragReorderableListAdapter to support MVC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7b7f369
+
+### Cleanup some references to ScopedObserver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/331683b
+
+### Break at '@', restoring pre-ICU 72 behavior
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4a3c3c
+
+### Implement OnBeginFrameAcks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d311711
+
+### [A11y] Avoid changing children on an ancestor during serialization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65565bd4
+
+### ts_library: Add new allow_js flag, remove allowJs from configs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/33746971
+
+### Android: ToastManager
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9adece1
+
+### [//ui/gl] Change GLImageNativePixmap to hold ScopedEGLImage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f86a69c
+
+### [ios] Add support for compositor_unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/142491c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3258b1d9
+
+### [GLImageNativePixmap] Move BindTexImage() calls to just after creation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2e3070
+
+### [Files]: Fix search on other than My Files volume
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9690b6
+
+### dpwa: Update InstallReason-switch on Button code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0a35114
+
+### [AppHome] Add Chrome Apps Deprecation UX to new App Home page.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea40a1b
+
+### Add integration test for tabbed installation in user journey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f7ab87
+
+### [DownloadBubble] Trigger download started animation on updating button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e58a12d
+
+### Re-enable lifetime assertions in AutocompleteControllerProvider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92551ff
+
+### Move toolbar url/hint logic to its own file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86f3cbe
+
+### Rename/move capture token objects.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8f7a6f
+
+### Remove LifetimeAssert to satisfy issues with multiple tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9850072e
+
+### Avoid reference in AutofillPopupControllerImpl::AcceptSuggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aaaee8
+
+### Check for index change in TranslateUIDelegate methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f127a7c
+
+### [User Education] Correct shadow scroll for tester page, help bubble fix.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b1cdad
+
+### pip2: Disable refresh via ctrl+r and the right-click menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f9e382
+
+### Various SplitTabStrip/CompoundTabContainer fixes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbf9e525
+
+### [Password Manager] Show new Password Manager page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0712fa5
+
+### [FedCM] Make auto re-authn strings translateable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4caf8fb9
+
+### Avoid showing the device chooser dialog in extension popups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a82d0f4
+
+### [Autofill] Parameterize AutofillManager::Observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dae361e
+
+### Pass PopupType to AutofillClient::ShowAutofillSettings()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c42b476
+
+### [Extensions cleanup] Use action id in IsActionVisibleOnToolbar()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95dae85
+
+### audio-settings: Add Settings button to audio quick settings tray
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b6b54dc
+
+### [Extensions cleanup] Move IsAppLaunchable utils to //extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8f28c1
+
+### [Signin][Android] Update mSelectedAccountName in onResume rather than onCreateView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f65af67
+
+### [FedCM] Rename auto sign-in to auto re-authn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cef8724
+
+### Revert "[IBAN local save] Add manage IBAN option after IBAN saved."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d58aa8a
+
+### Reland "[Autofill] Prompt before removing a local credit card."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57040b4a
+
+### Add unit test for gesture events to PopupCellView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4785b36
+
+### [OOBE]: Remove ShowOobeUI from CoreOobeHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b0d890
+
+### iwa: Move IsolationData::content to IsolatedWebAppLocation type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a41d94
+
+### [launcher] Search result icon mitigation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1af2b98
+
+### Flag cleanup: voice-button-in-toolbar and assistant-consent-modal
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/db627e65
+
+### Add feature flag for policy merging changes.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3755731
+
+`);
+              </script>
+            </body>
+        </html>
