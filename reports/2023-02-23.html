@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-02-23
+### CR2023: Update hover and focused states for cr-toolbar-search-field
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c9d67c
+
+### Improve efficiency of ClientNativePixmapFuchsia.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e272038
+
+### [Files]: Shows 'Search results' message when searching.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a24ce498
+
+### Enable surface backpressure for buffers sent to SurfaceFlinger
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65977c1
+
+### Improve contrast with pervasive system accent colors.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4470df
+
+### Video: Fix HDR10 color key cache logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eee723c
+
+### CR2023: Update cr-checkbox color IDs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/122dbb3f
+
+### [Fuchsia] Fix DCHECK failure when using Flatland.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9de556af
+
+### [Tab Content Manager] Fetch live layer only when requested
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6feb2c9
+
+### [image_service] Hook up ImageService mojom to History Clusters WebUI
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/789079d
+
+### Add NTP as OWNERS of realbox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05c208c
+
+### Files app: Update OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f24847e
+
+### ozone/drm: Fix uninitialized variables in drm_util.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b47c2f
+
+### Make a new constructor for custom cursors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2203613
+
+### Misc. cleanup.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b23dc893
+
+### accelerators: Support different types of keyboard layouts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45b1659
+
+### CrOS WebUI: Simplify ash/webui/common/resources/BUILD.gn.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a17d482f4
+
+### win7dep: Remove ResolveCoreWinRTStringDelayload
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e35409
+
+### events: Fix rewrite latency metric
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba97c22
+
+### WebUI: Standardize build for ui/webui/resources/mojo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5987fa9f
+
+### CR 2023: Update check image for checkbox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d266291
+
+### Move Mockito reference locations.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e48967e8
+
+### ozone/drm: Properly initialize a DrmDisplay during testing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b78f98
+
+### ozone/drm: Remove internal state caching from DrmWrapper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a3684d
+
+### Don't error on extra cancel events as these are not filtered.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ab619e
+
+### [GL] Stop building GLImageGLTexture on Fuchsia
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f00c590
+
+### [file manager] Block CSE files from picking
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d69bb6
+
+### [GL] Restrict creation of GLImageEGLPixmap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7076736
+
+### Revert "chrome-flags/lacros: enable LacrosColorManagement by default"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c4f36a
+
+### [Side Panel] Remove extension panel type checks in SidePanelCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40a4e458
+
+### Cleanup FullscreenControllerStateTest terminology
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee1f5db
+
+### Update supported server speech recognition languages and locales
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa225a2a
+
+### [Office upload] Add IsEligibleAndEnabledUploadOfficeToCloud
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b6d90f
+
+### Disable some MenuItemViewTestInsert tests on MSAN.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3bb37e
+
+### Reland "Remove TabRanker."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b3d998
+
+### Completely disable TabWithFormNotDiscarded Test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f5ade6f
+
+### [Read Anything] Use constants for font name and size in the app model.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96622b9
+
+### Implement capture suppression for tablet toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13ed790
+
+### [ImmersiveFullscreenTabs] Move tabs to the titlebar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/551378a
+
+### Revert "Unify the supervised user extension approval flow result handlers"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72aad7e7
+
+### Simplify Pedal logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fc33690
+
+### [Remote Playback] Pass media item id to MNS::OnRemotingRequested()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e84d32d
+
+### Remove browser_watcher (3/3): Remove activity_tracker.h and all refs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0ba58b05
+
+### [Lens] Use a localized string for title of the Google Lens side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a18bc4
+
+### Disable copy migration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/735e0ce
+
+### [Passwords] Add enablePasswordsImportM2 boolean to Settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8aaeb8c
+
+### Move anyObject method to any.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ce911b
+
+### [Read Anything] Distill with rules-based until ScreenAI is installed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59872624
+
+### Fix PwgRasterSettings initialization in PwgRasterConverter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b12af40
+
+### Records handlers which failed to consume back press.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3358fe5
+
+### [Fast Checkout] Disable FastCheckoutIntegrationTest#testDismissedIfUnableToShow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b3e9ae
+
+### Remove underscores from ExtensionPrinterHandlerTest test names.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1ec379
+
+### Invalidate location bar layout before showing permission chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f903207
+
+### [Read Anything] Update strings to reflect naming change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9a1380
+
+### audio-settings: Add user action for opening audio settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6c3300
+
+### Reland "[Privacy Hub] Add triggers for HaTS survey"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb3c749
+
+### [omnibox] Add and select a "settings" version of default browser pedal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f04ce894
+
+### [FastCheckout] Fix: RecyclerView vs BottomSheet scrolling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29dd54f
+
+### Notes: make page and tab context menu entry points work.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d95a4911
+
+### [NTP Journeys] Add NTP History Clusters page handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/616d20f
+
+### [FastCheckout] Fix: Make home page text views draggable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfe4a28b
+
+### [AboutThisSite] Non-mssb only enabled if new icon is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd2a082e
+
+### [FastCheckout] Fix: Items background break due to ripple effect.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b40d635
+
+### Remove AppLaunchSplashScreenView::Delegate::IsNetworkRequired
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93c4c09
+
+### Notes: add profile pref storing the sort order for notes ui in side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/065085a2
+
+### Remove schenney from all TODOs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad0afe2b
+
+### Add kiosk folks to owners for app_launch_splash_screen_handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/747bbf7
+
+### Add key event handling at the row level inside of AutofillPopups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/611c16d
+
+### Update Autofill popup visual design.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8aa71bdd
+
+### [AutofillFeedback] Update the context menu item UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc44b5d1
+
+### Move in-product help trigger from PopupRowView to PopupViewViews.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c80ee45
+
+### Remove unneeded method override in PopupViewViews.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33cfd05
+
+### Remove use of ScopedScreenOverride in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f925a58
+
+### [Password Manager] Url validation for the add password dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/614d19f
+
+### [App-Discovery] Add initial logging to launcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3842f9af
+
+### [Fast Checkout] Fix scrolling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12a2933
+
+### autocorrect: add english model update rollout flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6011fe7f
+
+### Rename feature flag to IBAN client side filtering
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e6677d5
+
+### [Eche] Add feature flag to control Android a11y tree processing.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f2ea70a
+
+### [AF] Introduce alternate secure data type for credit card upload save
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5ea8b257f
+
+### [Thumbnail Cache] Eagerly prune cache when not tabs not visible
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/204d640
+
+### Add RetryGetVideoCaptureDeviceInfos feature to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bd7db03
+
+`);
+              </script>
+            </body>
+        </html>
