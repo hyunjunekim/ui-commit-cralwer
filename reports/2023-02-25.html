@@ -1,0 +1,292 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-02-25
+### Notification: Fix the logic of choosing parent notification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b954ba3
+
+### Remove ScopedScreenOverride class
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d86cbdf
+
+### Two comment-only changes to a11y code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50fa7486
+
+### [views-examples] Improve views-example documentation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bd204d
+
+### [DownloadBubble] Change medium severity alert text color
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2dc1469
+
+### CR2023: Add outline color fallback.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab9facb
+
+### WebUI: Rename mojo library target to build_ts for consistency
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8762852
+
+### WebUI: Use more scheme relative URLs under ui/webui/resources.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/868b2c4
+
+### Allow support for X11 Pixmaps in the surface factory
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6aee818
+
+### Return unique_ptr<> from wl::CreateTestSelectionManagerZWP()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b44f0ca
+
+### Remove TestSelectionDeviceManager::Delegate::OnDestroying().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e87676
+
+### CR2023: Add ripple and update focus state for cr-toolbar-search-field
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bbdbb3
+
+### Add cros.sys.scrollbar* colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eca71ae
+
+### Improve compliance with design intent.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f7b5c1
+
+### Invoke ExtractAsDangling() on WaylandEventWatcherGlib::wayland_source_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c954c01
+
+### WebUI: Serve mojo resources from WebUI resources grd
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aca4b4e7
+
+### [GTK] Remove types from CSS selectors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ed98ef
+
+### Clean up CompositorThreadedScrollbarScrolling feature.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ae0a436
+
+### [//gpu] Restrict creation of GLImageNativePixmap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aafd2b9
+
+### Add check for ime text span offset bounds in ExtractCompositionText.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01bc7f6f
+
+### [UI] EditablePasswordCombobox callback doesn't change the obfuscation
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a16a3d
+
+### [GL] Fold NativePixmapEGLBindingHelper into NativePixmapEGLBinding
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30ad43c
+
+### [file manager] Refactor to use FileType.isEncrypted helper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f4a820
+
+### Migrate PedalViewProperties to ChipProperties.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f2bd9c
+
+### Add owners to chrome/browser/ui/webui/feedback/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7362f1a
+
+### Rename keyboard_access_browsertest.cc to _interactive_uitest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc31703
+
+### Notes: Display bookmark title in note overview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fd896e9
+
+### content: Move WebExposedIsolationLevel to its own public header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1a9f64
+
+### Setting up the new UI in the save card bubble to add cards onto Google Pay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/341fc9a
+
+### [SmartLock] Delete Sign in with Smart Lock removed notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a36b6e4
+
+### [Omnibox revamp] Match dropdown width to width of LocationBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c78e9eb
+
+### Remove sandbox exception for the fonts directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9aa261dc
+
+### Update chromeos/ash/components/network to new Value API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14ccdeb
+
+### CR2023: Update Bookmarks++ to card layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f44560
+
+### disable chrome://feedback and chrome://cast-feedback based on policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce30355
+
+### borderless: Ensure that resizing works on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/012cde4
+
+### [Extensions cleanup] Move GetDefaultXIcon utils to //extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/777e273
+
+### Performance Settings: change tab discard exception list to overflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95d94be
+
+### [NTP Journeys] Show Journeys UI in Side Panel API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88276fc
+
+### Reland "[Autofill] Move ownership of ContentAutofillDriverFactory to AutofillClient"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/282d868
+
+### Notes: add headings to the user notes overviews side panel ui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e2b20e
+
+### [Passwords] Split the manage password list and details view in classes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f579575
+
+### Passing FilePath as const ref WritePoliciesToJSONFile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14112fb1
+
+### [PCCT-SideSheet] Accessibility description for max/min button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/028e742
+
+### Remove unnecessary includes in c/b/ui/autofill.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ba3c916
+
+### win: reenable interactive ui tests disabled for being flaky on win7
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad379b69
+
+### Rename BiometricAuthenticator to DeviceAuthenticator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aede548
+
+### Updates menu on changing immersive mode status.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ae5e805
+
+### [Passwords] Switch user authentication to be async in Save bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a724bf4
+
+### Revert "[IBAN local save] Add eye icon to manage saved IBAN bubble view."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9226137
+
+### Remove redundant testing function due to bad rebase/merge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40292a6d
+
+### Reland "[fyfre] Implement long-term cohort tracking for FRE study"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56a5a10
+
+### Handle the biod GetRecordsForUser call failure.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aab6c2
+
+### [fyfre]Fix lacros intro code and add tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5902043
+
+### [Reland] Add PaymentHandlerMinimalHeaderUX UseCounter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c114711
+
+### Re-reland "[fyfre] Clean up FirstRunService eligibility checks"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbfef78
+
+### [GMC+Cast] Add MediaNotificationItem::GetSourceId()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/583afe5a
+
+### [ProfileKeyedServiceFactory] Default values to exclude guest profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cc25816
+
+### [Passwords Import] Redesign of the error list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc30919
+
+### [Signin][Android] Use a boolean rather than an enum to track whether the identity disc controller is visible.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27dc465
+
+### PinManager: Track the number of listed items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a0292c
+
+### [IBAN local save] Add eye icon to manage saved IBAN bubble view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/508aa18
+
+### Revert "[Autofill] Move ownership of ContentAutofillDriverFactory to AutofillClient"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72de227
+
+### screencast: Delete exclude transcript flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fc1275c
+
+### Cleanup BindingManagerUseNotPerceptibleBinding flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e20667a
+
+### Add slim compositor to about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/de36ab6
+
+### [PhoneHub] Clean up cryptauth-v2-dedup-device-last-activity-time flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/682ba44
+
+### Remove notification blocked message flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d318dc30
+
+### sharing: add click-to-call feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d1e47c
+
+`);
+              </script>
+            </body>
+        </html>
