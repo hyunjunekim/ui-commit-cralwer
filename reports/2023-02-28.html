@@ -1,0 +1,388 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-02-28
+### Fixes prior to regenerating idl => externs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0cbbe7
+
+### Call unwrapEntry for sharePathsWithCrostini
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/caeb6a90
+
+### CR2023: Update cr-radio-button styles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98f61746
+
+### Allow 0.001 eplison when converting dip to pixels in RWTHPlatform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04c35c6
+
+### CR2023: Update cr-icon-buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/21c8109
+
+### Remove debug logging code for CALayerTreeOptimization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/869bef6
+
+### Change ChromeOS touch text editing redesign flag check to use_aura.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77f60e4
+
+### [omnibox][ui-simplification] Add square background for icons & answers.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca58487
+
+### Revert "Fix all instanceOf to use correct capitalization"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/792a550
+
+### Settings Split: Add per-device capability to InputDeviceSettingsEvdev
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74ff866
+
+### Add back popover=hint functionality, behind a HTMLPopoverHint flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/506febe5
+
+### [ChromeRefresh2023] Focus Ring modifications for checkbox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/878d18f
+
+### CR2023: Fix checkbox focus state.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1fb41c
+
+### Settings Split: Refactor to split settings by type in evdev
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0bfb53d
+
+### ozone/drm: [Testing] Implement more of MockDrmDevice
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/980a603
+
+### Specify encoding when opening text files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17b087e
+
+### ozone/drm: [Testing] Split AddCrtcAndConnector() in MockDrmState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13e11a13
+
+### CR2023: Update cr-toggle selected+(pressed or hover) states.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d60e2a2
+
+### ozone/drm: [Testing] Move FakeDrmDeviceGenerator + Cleanups
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0af37cd
+
+### Initialize OzonePlatform in EGLApiTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddb95e5
+
+### [DriveFsBulkPinning] Add cloud progress panel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84db4ef
+
+### Handle nullptr dereferencing in PresentationRequestNotificationItem
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaa2bc4
+
+### Autocorrect: selecting the toggle from learn more button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/039c07df
+
+### OS Settings: Link to Lacros's chrome://credits
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad94d59
+
+### plugin_vm: installer: handle case with non-Parallels PvmDefault
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8142a10d
+
+### Track whether a frame has had user-initiated edits in PerformanceManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d331b8
+
+### Revert "Settings Split: Implement updating of keyboard settings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66b7b7b
+
+### [ChromeVox] Add ChromeVox OS Settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8995e99
+
+### Settings Split: Implement updating of keyboard settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96063fa
+
+### ash: Remove classic-view tablet tab dragging feature - part 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92dab49
+
+### Reland "[dPWA] Refactoring BrowserAppLaunch to use async launch"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9c1f5f
+
+### Add a feature that just records metrics for History Clusters module without rendering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28c78e4
+
+### Introduce recycler view for Action chips.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46529e6
+
+### [Extensions] Make ExtensionSet moveable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c14e6d8e
+
+### ash: Remove swiping-down-from-top gesture and classic-view tab dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59501ee
+
+### Populate WebApp.Launch{Source,Container} metrics instead of extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/417803b
+
+### Update deprecated declarations for Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98547a0f3
+
+### ash: Remove swiping-down-from-top gesture and classic-view tab dragging gesture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c17304
+
+### 🤠 Disable 10 Autofill tests broken on ubsan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6c7f29
+
+### [ SavedTabGroup ] Fix crashing when last saved tab in browser is closed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb404df
+
+### [PriceTracking] Save tracked product to the Other folder by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/debe093
+
+### [ImmersiveFullscreenTabs] Make a hole for the traffic light
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8f0e7a
+
+### Add no-op \`GlanceablesKeyedService\` and a factory class to manage it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a92c884
+
+### Migrate annotator from chrome.send to mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a41ddec3
+
+### Rename components/digital_asset_links -> components/content_relationship_verification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18e023b
+
+### win7dep: Remove Glass from class names/files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c20536
+
+### Notes: Implement HasNotesInAnyPage API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/937135e
+
+### Settings Split: Add Get*Settings methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efe4090
+
+### Revert "Disable copy migration."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a65af6
+
+### [omnibox] Start migration from action triggering to OpenSelection calls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9aa493b
+
+### Remove unnecessary include
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2cd041
+
+### Re-enable pixel testing of blocked popup dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce8bbba
+
+### Set all Chip properties via Builder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d40c0d
+
+### saved_desk: Blurry icons due to small sizes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bfdab9
+
+### De-flake TabWithFormNotDiscarded test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f79ff2b
+
+### [Read Anything] WebUI only stores AXTrees for the active web contents.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2da01e0
+
+### Reintroduce paint checks for PopupCellView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2611dbf4
+
+### [Passwords] Reactivate save bubble after os reauth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee3bcba
+
+### [Cleanup] Remove GetSaveCardBubbleView in save_card_bubble_controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0a704e
+
+### [fyfre] Improve the name of the session-tagging feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/845c6e9
+
+### Reland "[IBAN local save] Add eye icon to manage saved IBAN bubble view."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fee307c
+
+### Remove AppLaunchSplashScreenView::Delegate::OnDeletingSplashScreenView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7451049
+
+### Avoid dangling pointer in SaveCardBubbleViewsBrowsertest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0915ea9
+
+### devtools: Treat web apps similar to other apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa91261
+
+### [Autofill] Omit cast in nullptr-check of AutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/934cc70
+
+### [AutofillFeedback] Split browser test for Chrome Web vs ChromeOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c000833
+
+### Extend the functionality of the FakeAppLaunchSplashScreenHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a8880a
+
+### Avoid dangling pointers in IbanBubbleViewFullFormBrowserTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7bded8
+
+### Fix a crash in ContentSettingsTypeFromGroupName()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60040b1
+
+### Add support for 3P VC providers in calendar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5620309
+
+### Fix dangling pointer: SaveUpdateAddressProfileBubbleControllerImplTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eb548e
+
+### Update running settings in FakeBrowserManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47182a6
+
+### Adjust Autocomplete delete button a11y name to reflect the entry.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b212ac6
+
+### Fix dangling pointers in SaveUpiBubbleControllerImpl and test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f92ef87
+
+### Handle RTL consistently for Autofill and PW generation popups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e316129
+
+### Fix dangling pointer in SaveCardBubbleControllerImplTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/309d4b6
+
+### Fix dangling pointers in CardUnmaskPromptViewBrowserTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef9cf1fc
+
+### [Fast Checkout] Fix: ripple effect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03226c23
+
+### WebApp: Rename InstallSourceForMetrics to LatestInstallSource
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1daa22
+
+### bruschetta: Support picking a config in the installer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13647358
+
+### [Office upload] Show "always move" checkbox only after 1st confirmation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7c181c
+
+### [RDSG] Silently report crashes for debugging
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6673a04
+
+### Notes: add user notes flag to chrome://flags ui
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/19c8490
+
+### Remove CECPQ2 from chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dd7c81f
+
+### [NTP Journeys] Add about flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c7579c9
+
+### Remove expired flag enable-user-cloud-signin-restriction-policy
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/237d725
+
+### gif_recording: Add a chrome flag for the feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e1072c1
+
+### Remove expired ClosedTabCache flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0924298
+
+### Enable chrome://flags entry for ChromeRootStoreEnabled on linux and cros
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/365aaf6
+
+### [RSearches] Remove the flag RelatedSearchesUi
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dea2769
+
+### ambient: Add flag for ambient mode managed screensaver
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a565442
+
+### Remove reduce user agent about flags in UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/16be86325
+
+### [AF Android] Remove autofill refresh experiment flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ed0ebb2
+
+`);
+              </script>
+            </body>
+        </html>
