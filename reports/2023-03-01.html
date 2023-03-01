@@ -1,0 +1,352 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-01
+### CrOS Settings: Update primary text color to GM3 var
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a283c17
+
+### events: Add metric for auto repeat usage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4865f92
+
+### [Mirror Sync] Move DLP icon for Inline Sync Status compatibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6aeed1
+
+### Revert "WebUI: Migrate some shared mojo bindings to TypeScript"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b9930e3
+
+### cros-components: Enable material web components support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4467b6c
+
+### Delete TouchEditable::DrawsHandles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/828fc0ae
+
+### ozone/drm: Fix GetMaximumCursorSize in drm_util
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd4fd64
+
+### WebUI: Integrate JS source maps generation in build_cr_component.gni.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32a25775
+
+### WebUI: Migrate some shared mojo bindings to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89027211
+
+### [Test Automation] Even smarter drag canceling logic.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc69baca
+
+### Add fallback Linux UI for when GTK 3.20 isn't available
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38f7473
+
+### Replace std::transform() with base::ranges::transform(): ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b285079
+
+### [Auto-disable Accessibility] Clean up *ForTesting methods and sources of info
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8c62fce
+
+### Remove OSKResizesVisualViewportByDefault flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b7388ecc
+
+### lacros/client: Fix issue with snap buttons not snapping
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ec21ec
+
+### wayland: simplify boolean expr in wayland_pointer.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3f66f7
+
+### [Notification Drag] Implement image notification drag - Part 7
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81f2520
+
+### Better fix to not strongly reference Window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2f41c7
+
+### personalization: update some colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/690eced
+
+### WebUI: Split :preprocess target in build_cr_component()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68ddd80
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44e1996
+
+### ozone: Add missing DCHECK(drm_fd_.is_valid()) and fix file bug
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22e545c
+
+### Switch to simpler base::WriteFile() variants (137/N)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e48be6c
+
+### Ensure entries are unwrapped for fileManagerPrivate calls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc83700
+
+### [DriveFsBulkPinning] Add bulk pinning dialog skeleton
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/daf7fcb7
+
+### CrOS WebUI: Migrate cros_hotspot_config.mojom-webui.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51346c7
+
+### [Office upload] Add animation to the move confirmation dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54bb747
+
+### Use NOTREACHED_NORETURN() in c/b/ui/views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0269dcc
+
+### [dPWAs] Restructure web app manifest update check process
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/990ac5ac
+
+### Revert "[AppHome] Making apps size increase by 10% when focused on"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c390bf3
+
+### [VC] remove CrasAudio dependency for FakeVideoConferenceTrayController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/189f741
+
+### Bookmarks++: Add IPH for bookmarks in side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15bb806
+
+### CrOS Settings: Generate TS sources for constants Mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b78fff2
+
+### [ChromeVox] Add General Section to New ChromeVox Settings Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a77af8a
+
+### Delete unused Assistant code.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7398613
+
+### Reland "Reland "[dPWA] Refactoring BrowserAppLaunch to use async launch""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3b238c
+
+### Remove high efficiency mode toggle from chrome://discards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30d2fc90c5
+
+### Bookmarks++: Meet greenlines spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77b15bf
+
+### [omnibox][ui-simplification] Add square background for entities.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84df4f52
+
+### Add browser tests for quick answers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0fbabd9
+
+### [PWA] Adding metrics for launching in tab and by shortcut app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1bd6550
+
+### [bookmarks] Start MVC'ing BookmarkActionBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d441f95
+
+### Fix bug "Move Group To New Window" causing saved groups to unsave
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c66e04
+
+### [DownloadBubble] Load file type icon unconditionally when setting icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65b88ac
+
+### Reland "[Office upload] Introduce CloudOpenTask to cloud_upload_dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09edf04
+
+### [NTP Quests] Add show all button and grit string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/304cd79
+
+### float: Remove separator for desks menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cb64a7
+
+### Permit popups from fullscreen-within-tab openers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3609c1
+
+### [omnibox][GM3] Update Omnibox "steady state" height per GM3 guidelines.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2aebd5b
+
+### Let GetUpload work with UploadInfo pointers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd3095f
+
+### [Omnibox revamp] Switch to phone layout mode when window size is too small
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40639c9
+
+### [Password Manager] Note validation for the add password dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e180dc
+
+### Migrate GetVariationParams call to base counterpart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/117c9047
+
+### [Privacy Hub] Macro alias for geolocation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfbcef17
+
+### [Passwords] RequestAuthenticationAndReopenBubble doesn't reopen anymore
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a56e3b4
+
+### [Auth] Remove DeviceAuthRequester param from AuthenticateWithMessage()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd5951e
+
+### Disable flaky WebAppFrameToolbarBrowserTest_Borderless.PopupSize test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40bb8f3
+
+### Fix dangling pointers in AutofillContextMenuManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f14958f0
+
+### Introduce pixel tests for password generation popup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2af3aa9b
+
+### Add Screen AI library load and initialization failed state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d139a0f
+
+### [Fast Checkout] Fix: home screen header a11y announcement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e19c283
+
+### Reset threshold for accepting Autofill popup entries on view update.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73db4bd
+
+### Use weak pointers for references to AutofillPopupView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcaadcb
+
+### [AutofillFeedback] Include trigger form and field signatures in logs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e30fdfc
+
+### [bfcache] Clean up \`kBackForwardCache\` feature's usage in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7263618
+
+### [Password Manager] Username validation for the add password dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c8b682
+
+### Avoid dangling pointers in OfferNotificationbubbleViewsTestBase.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b2c1a1
+
+### Fix dangling pointer in AutofillProgressDialogController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20ee7a86e
+
+### Fix dangling pointer in AutofillErrorDialogController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63213d22
+
+### Avoid dangling pointers in LocalCardMigrationUiTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67e9380
+
+### Fix dangling pointer in AddressEditorView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db0ea4c
+
+### Avoid dangling pointers in AutofillPopupController tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adf581c
+
+### Avoid dangling pointers in ManageMigrationUiController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5909c3c
+
+### [AutofillFeedback] Fix flaky UI test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18e49ca
+
+### iwa: Install Isolated Web App utility for tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acf9d373e
+
+### [omnibox] Discard temporary text on tab switch.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8fcd393
+
+### Revert "Reland "[dPWA] Refactoring BrowserAppLaunch to use async launch""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7554d3cb
+
+### CrOS Settings: Use TS sources for settings search mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20892cf
+
+### Gate Passpoint feature by base::Feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee9104e
+
+### [Sharesheet] Remove long screenshot feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0c22ee9
+
+### [Tab Management] Cleanup flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d46ba89
+
+### personalization: remove feature DarkLightModeKMeansColor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/43f9eab
+
+### Add disallow-managed-profile-signout flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c9bca03
+
+### [mdocs] Add the JS bindings to expose MDocs over IdentityCredential
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4edd639
+
+`);
+              </script>
+            </body>
+        </html>
