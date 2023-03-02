@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-02
+### [ios] Refactor globlists to reside near associated data
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63109f69
+
+### Refactored VisualSubtree's into VisualTree inner class.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39e4826
+
+### Add tap to toggle menu behaviour to TouchSelectionControllerImpl.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8f58db0
+
+### Accessibility: Update/remove flags and related code
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5a403cb
+
+### personalization: override more cros colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/419a908
+
+### exo_unittests: fix remaining test failures for reactive frame submission.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c765a8
+
+### Pass GL workarounds by a global and not by mutating command line.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5313ac
+
+### WebUI: Expose ts_tsconfig_base param in build_webui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03240f5
+
+### Untie SkiaOutputDeviceDCompPresenter from GLSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/175041ed
+
+### Remove duplicate inset suppliers from CompositorViewHolder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5407855
+
+### [Auto-disable Accessibility] Clean up accessibility_state.cc and remove unused method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28f75a8
+
+### Record VideoProcessorBlt histogram for all hardware and add a crash dump when it fails.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec1105a
+
+### Remove NSWindowStyleMaskTexturedBackground
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c95b28a
+
+### win7dep: Remove Win7 workaround for native win occlusion tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb6405e
+
+### win7dep: Call RoActivateInstance and RoGetActivationFactory directly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a7a41c
+
+### Use ColorId's instead of OnThemeChanged in LoginBaseBubbleView.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a11e70d
+
+### [Reland] CrOS WebUI: Add ash/webui/common/resources:build_ts target.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2553d4b
+
+### CrOS Settings: Update link color to GM3 var
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44b3530
+
+### Event Rewriter: Add option to suppress meta + top row key rewrites
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/edd1fc7
+
+### Make Gfx Enum types use 8 bits where possible
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e01247
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a65863ef
+
+### Use nanoseconds instead of milliseconds in MotionEvent.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4fc0d75
+
+### [views] Textfield selection color should be tonal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cec1bb4
+
+### [Harmony Dialog] Hover animation and tooltip for '?' icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02547cb
+
+### bruschetta: Install pflash file with new concierge API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5748bd
+
+### arc: Add ARCVM /data migration resume screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91b6463
+
+### Update tab group header and group chip circle sizes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a0b4e4
+
+### Allow os://prefs-internals from lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a5a4cf
+
+### [omnibox][ui-simplification] Change entity size DCHECK (0, 1) -> (0, 1].
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11fcd9c
+
+### [webauthn] Handle Windows Hello not enabled better
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9a35cc
+
+### Bookmarks++: Update entry point price track view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78e743a
+
+### multipaste: Consolidate update events to the virtual keyboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e796e71
+
+### Fix fws count towards saved desks templates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f5985d
+
+### [Extensions] Hide user permitted sites in chrome://extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73f52b6
+
+### Bookmarks++: Add context menu edit option
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/370f1ea
+
+### [ChromeVox] Add Structure Headers to New ChromeVox Settings Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a63a77a
+
+### image_downloader: be explicit about AccountId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7514ed3f4
+
+### Follow-up cleanup in c/b/ui/views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25707de
+
+### Implement BoC signin interstitial in bottom sheet.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7982fbe
+
+### Temporarily disabling broken test in chromeos dbg
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bbf9bb
+
+### Refactor popup window browser tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b5c113e
+
+### [FedCM] Rename rp url to top frame url
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e13ea5f
+
+### Revert "[Privacy Hub] Macro alias for geolocation"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d599a24
+
+### arc: Trigger ARCVM /data migration when update button is pressed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6650c5a
+
+### sharing: default disable click-to-call
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f21202
+
+### [IBAN local save] Enabled IBAN in settings page by country list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2400a241
+
+### Remove TemplateUrlServiceFactory.get() method that internally used
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be4de1a
+
+### Remove dangling pointer in LocalCardMigrationDialogView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d1b5d2a
+
+### [Autofill] Remove FromWebContents() from AutofillClient implementations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1e09c9
+
+### [Password Manager] Redirect to details page from Add password dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2508ed
+
+### Don't show the tab sharing info bar for Document PiP.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa48850
+
+### Fixed optional toolbar button a11y size and RTL issues.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a56d7f1
+
+### [OOBE]:  Add Skip Button to GestureNavigationScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b7dfd18
+
+### Revert "Introduce thresholds for keyboard events on Autofill popup."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11f0c89
+
+### [Password Manager] Auth time out for details page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bd20ee
+
+### Replace MockUserManager in c/b/ui/webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5a2f0e6
+
+### [fyfre] Remove lacros intro code from enterprise welcome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6c56ec
+
+### [Auth] Change AuthenticateUser() to accept a string param on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6e0a59
+
+### Notes: fix uaf in UserNotesPageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40f19a9
+
+### Introduce thresholds for keyboard events on Autofill popup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27178703
+
+### [CT][EngagementSignals] Update observer to use GestureStateListenerWithScroll
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d9fa5c5
+
+### [journey] Add flag for hiding visits.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bf52f83
+
+### Add the chrome flag for app collection folder refresh
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ecbea05
+
+### [omnibox][ui-simplification] Disable params by default.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/33cac6c
+
+### [omnibox][perf] Optimize navigation classifier calls.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/539d958b
+
+### Add flag for Autocomplete delete button.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0518047
+
+`);
+              </script>
+            </body>
+        </html>
