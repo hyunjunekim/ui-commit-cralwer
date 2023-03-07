@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-07
+### Cleanup gl::GLSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44e77f4
+
+### CR2023: Update cr-toggle to use --cr-fallback-outline-color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/094a41b6
+
+### ozone/drm: [Testing] Add a DrmGpuDisplayManager unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15a7907
+
+### ts_library: Auto-detect JavaScript files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dddd920
+
+### [uia] Fixed bug where ValuePattern was exposed on all gridcells
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9841a43
+
+### CrOS Settings: Dynamic color support for cr-input
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/881db8b
+
+### [Office upload] Change display source for move notification to "Files"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b837d0
+
+### Revert "Refactor ClipboardUtil namespace -> clipboard_util"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/333ee0b
+
+### Refactor ClipboardUtil namespace -> clipboard_util
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd8ce3f
+
+### WaylandBufferManagerGpu: let OnSubmission piggyback presentation feedback information.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39c9801
+
+### [Clipboard API] Write unsanitized HTML content to the clipboard part 2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91d61ad
+
+### CrOS Settings: Dynamic color support for cr-dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b27b0df
+
+### Add minimal READMEs for directories I own that don't have them.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9979345
+
+### Add support for ToggleToggleState in UIA Events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f748dae
+
+### ozone/drm: Fix overflow in DRM device/connector limits
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4ba6f2
+
+### [fuchsia] Remove unused includes for fuchsia/ui/input fidl bindings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1b981f
+
+### [ChromeRefresh2023]Menus have 16dp rounded bubble borders by default.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0cdf0a
+
+### [Fuchsia] Remove OzonePlatform::PlatformProperties::needs_view_token
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/930a132
+
+### Clean up BookmarkManagerMediatorTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4f17fd
+
+### [GTK] Handle widget opacity
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84233706
+
+### [ChromeRefresh2023] Set new default corner radius for Dialog/Bubbles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28a5ebc
+
+### Clean up : and / in clipboard_util_mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87267aa
+
+### Make Windows clipboard util a namespace rather than class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/903aa7b8
+
+### [GL] Inline GLImageStub in two remaining usecases
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b7fa527
+
+### [gl] Trim GLImageIOSurface down to what's actually still used
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f211bf
+
+### Update PermissionPromptBubbleView with UrlIdentity API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d13e38f
+
+### arc: Move ARCVM /data migration dialog code to //chrome/browser/ui/ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/480e7ba
+
+### [FedCM] Add iframe domain desktop UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd4cadb
+
+### Fix tab hover card flash on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de40f1f1
+
+### LacrosTablet: Send FlingScrollEvent without stopping propagation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54d72e4
+
+### [dPWA] Lock manager debug value, small cleanups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1758ed4
+
+### [Media Router] Show an issue when mirroring desktop on macOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a122b20
+
+### Reland "[Office upload] Add "Show in folder" button to move notification"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30b54ab
+
+### [Extensions c2s] Update extensions based on id in request access button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1984484
+
+### Make Chrome Root Store the only option on windows and mac.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8b02b190
+
+### [Extensions c2s] Rename ReloadExtensionFailed test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53c213f
+
+### Cleanup: Introduce TryLaunchOsUrlHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62264e4
+
+### Fixed optional toolbar button breaking when updating offscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b1025f
+
+### Pass origin without last '/' from WebUI URL constant.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cac3ad
+
+### Settings Split: Implement pointing stick observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ad93b3
+
+### Fix reordering saved tab group buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d3b560
+
+### Paint a drop indicator for saved tab groups drag&drop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f25ec5
+
+### Log color and font scale.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e68caaf
+
+### Add chlily@ as an owner for download/bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7815129
+
+### [Passwords] Make Notes Label Scrollable for Long Notes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/929d50c
+
+### [Sheriff] Disable flaky PopupBlockerBrowserTest test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ae97f1f
+
+### DanglingPtr: Mark all of them as untriaged [26/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a708182e
+
+### [UPM-Desktop] Make trusted vault banner in settings functional.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/838c20d
+
+### Notes: Integrate search capability for GetNoteOverviews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4bf3f1
+
+### Removed code from TabGroup for Saved status.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1dae3b8
+
+### [Privacy Hub] Refactor software switch notification [2/2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a229234
+
+### [NTP Journeys] Comprehensive theming colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e84686c
+
+### [Passwords] Add metric for clicking GPM link on management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b19b25
+
+### Remove external uses of kHighEfficiencyModeEnabled pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0021967
+
+### Revert "Control omnibox scrim on tablets w/ separate flag"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/55c54d0
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4106883
+
+### [Passwords] Add histogram for revamped management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e59e8b
+
+### [Passwords] Use the title in the controller instead of a fixed string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c5959f
+
+### AboutThisSite: Remove DescriptionPlaceholder feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f1884e
+
+### Enrollment Nudge: UI/UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a773fab
+
+### [Signin][Android] Remove obsolete isEnabled method and its usages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/966da36
+
+### Replace Profile::IsChild with IsURLFilteringEnabled if applicable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75c107d
+
+### [Storage management] Fix edge cases for system size calculation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7530c3df
+
+### [Storage management] Fix apps size calculation in guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da857572
+
+### Update lock screen UI for policy provided CA certs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f58300a
+
+### [Password] Reactivate management bubble upon authentication flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2633eb1ed
+
+### Revert "[Office upload] Add "Show in folder" button to move notification"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb5f2b5c
+
+### Remove trivial non const usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd14be5
+
+### [Sharesheet] Fix target button can be pressed twice.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d4c1e9
+
+### PPD Index: Convert ppd-index-channel flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d05f6968
+
+### [Eche] Add flag for network connection state handling
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/264086d
+
+### [AF] Clean up EnableAutofillCreditCardAuthentication flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aa13d29
+
+### [omnibox][GM3] Add flag for Omnibox steady state background color.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/93f4931
+
+### [WebAuthFlowInBrowserTab] Add feature flag to chrome:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bff00a9
+
+`);
+              </script>
+            </body>
+        </html>
