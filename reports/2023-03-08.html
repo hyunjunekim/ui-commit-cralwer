@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-08
+### Revert "Resubmit #2: Enable WebGPU for Android builds"
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a7963f9
+
+### Add polling of Metal shared events to GLContext backpressure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/834c8db6d
+
+### [Test Automation] Remove need for base::Bind when passing callbacks.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e54dd4
+
+### [Files F2] Add actions/reducers for volume/navigation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11e5c12
+
+### Files app: Reposition context menu when it resizes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aff4ef8
+
+### Restoring a X11 window should not remove its previous maximized state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/036bf6e
+
+### CR2023: Add colors for url list items
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/206112b3
+
+### Forward-proof Mac menu implementations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/33c2fd5
+
+### WaylandFrameManager: Fix inconsist state update in ClearStates.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/375d7f47
+
+### Add flag to clear the tinted resource cache only when backgrounded
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dae62e3
+
+### [flatland] Flatland ozone vulkan corrections
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52cdc1e
+
+### Early-out if children are already cached.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df05f09
+
+### CR2023: Update suggestion chip style.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0b9003
+
+### Avoid momentary dangling ptr in GLApiTest::InitializeAPI()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd1e885
+
+### Switch to thread_local: ui/gl/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6aabe6
+
+### Remove CommitOverlayPlanes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7fa697
+
+### [Rounded Display] Hook RoundedDisplayProvider with WindowTreeHostManager.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d332fa
+
+### Reland "Refactor ClipboardUtil namespace -> clipboard_util"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9cc9ba0
+
+### Consistency check between AXObjectCacheImpl and AXTreeSerializer tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/505abab
+
+### ozone: Refactor DrmDisplay Update() into its ctor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b89557b7
+
+### [color] Add Sys ColorIds and Mixer definitions to match spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5dddad
+
+### Simplify ownership of SimpleTestDragDropClient::loop_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1e9af9
+
+### ozone: Fix EDID ID conflict resolution logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a6cad5a
+
+### IWYU: libstdc++ unique_ptr cast from nullptr requires declaration of type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aaeaf2a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59952ed6
+
+### [iOS] Fix a build break in //ui/gl/presenter.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9366b3
+
+### [GLImageGLTexture] Restrict to being creatable only by existing client
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9af45fa
+
+### [GL] Move GLImageGLTexture into //media/gpu/vaapi
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7874844
+
+### [GLImage] Move GLImageIOSurface to //media/gpu/mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f08f24d
+
+### [A11y] Convey current directory in Files app directory tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d33041b
+
+### [AutofillFeedback] Set up autofill feedback child page skeleton.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da585bb
+
+### Settings Split: Update search tag for device splitting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56c101f
+
+### libassistant-dlc: Clean up LibAssistantDlc feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32ce15a
+
+### EmojiPicker: Use TypeScript Mojo bindings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c3a3a4
+
+### Settings Split: Implement mouse observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba5486f
+
+### [Office] Update OneDrive setup flow design
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e3edc6
+
+### Added Autofill(Browser|Unit)TestEnvironment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81ad656
+
+### Use HTTPS URLs in navigation metrics tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c60e21c
+
+### personalization: create wallpaper handlers via delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f18fc5
+
+### Settings Split: Add remaining set settings methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a46a878
+
+### [OOBE] Add wallpaper switcher to OOBE dev overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4a361bf
+
+### Show site-initiated mirroring routes in Zenith
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4365edd
+
+### CR2023: Add custom scrollbars
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c4265f
+
+### [BoC Signin] Fix spelling error in strings file for back of card signin sheet. See https://localizer.google.com/query/11260101 for details.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce40cc2
+
+### Revert "Reland "🤠 Disable 10 Autofill tests broken on ubsan""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43a629ca
+
+### Fix Android PIP crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b83f2de
+
+### CR2023: Update kColorSidePanelTextfieldBorder color ID.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35b6d17
+
+### [Toolbar button] Fixed action chip label showing up on collapsed buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76656bc
+
+### CR2023: Update sp-filter-chip colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c4ff51
+
+### Remove direct dep from chrome/browser/ui to qr_code_generator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ed92c4
+
+### Unpause animation and collapse chip when switching to a collapsed chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/319a1b3
+
+### [Crow] Remove IPH for Crow feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4b87b81
+
+### [FedCM] Add iframe domain Android UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5026a7
+
+### [Autofill] Fix ContentAutofillDriverBrowserTest on branded ChromeOS builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c698b6
+
+### [Extensions c2s] Use coordinator pattern for request button hover card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9c80ac
+
+### [Color Enhancement] Adds color vision deficiency filters in CROS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8567dc
+
+### [Read Anything] Add UI for non distillable pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e220c85
+
+### Fix IBAN bubble view UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91f2953
+
+### Extensions/PiP2: Respect \`CanDuplicateTabAt\` when duplicating a tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbfe16e
+
+### Enable no-longer flaky \`BorderlessIsolatedWebAppBrowserTest.PopupSize\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3247bc2
+
+### [Passwords] Fix note not updating in the management bubble after editing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92ff59d
+
+### [Signin][Android] Delete new initialization flow experiment.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca883dc4
+
+### [Read Anything] Fix observer crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58fc156b
+
+### Lacros: Show incognito symbol on minimized windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c08f2deb
+
+### win7dep: reenable HostedAppProcessModelTest on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20d1dec
+
+### [fyfre]Add tangible sync style to enterprise welcome window view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c05072da
+
+### arc: Finalize strings of ARCVM /data migration screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f98a45b
+
+### Avoid dangling pointers in CardUnmaskPromptController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fda39a
+
+### [Passwords] Add metric for revealing password in management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f143b2e
+
+### [Passwords] Add metrics for copy buttons in management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0e3157
+
+### borderless: Move web app isolation check to be earlier
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6709b3
+
+### borderless: Refactor tests to use IsolatedWebAppBrowserTestHarness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/139e5f8
+
+### [Browsing Data Model] Non-components data delegate support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/773f8c3
+
+### arc: Finalize UI of ARCVM /data migration notification and dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/475e423
+
+### Create a base class for popup pixel tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3d4404
+
+### [omnibox][perf] Stop creating unneeded autocomplete clients
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b9aaea2
+
+### cellular: Add SM-DS DBus migration flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c8c3708
+
+### Add feature flag for RunOnOsLogin
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f6d9a8
+
+`);
+              </script>
+            </body>
+        </html>
