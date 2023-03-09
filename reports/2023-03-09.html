@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-09
+### [MirrorSync] Update copy: Ready -> Ready to sync
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ead3a0
+
+### [Read Anything] Add support for custom colors for submenus.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a61b4a
+
+### [Files F2] Dispatch actions for volume/navigation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81a1114
+
+### Revert "Consistency check between AXObjectCacheImpl and AXTreeSerializer tree"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d29846d
+
+### Files F2: Enable Tasks from the Store.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59f4088
+
+### Restore a11y deserialization error crash keys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f971c4
+
+### Settings Split: Fill in meta key field in keyboard struct
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d64c98a
+
+### [Ash Notification] Provide the downloaded image path in notification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90afe70
+
+### [a11y tests] Formatter to streamline writing a11y unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b06c9c4
+
+### Delete GLImageD3D and all usages.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca6526b8
+
+### Settings Split: Retrieve set of modifiers on the keyboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/012a50a
+
+### Use thread_local: ui/events/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/890d08a
+
+### [fuchsia] Migrate TouchEventHandler to Natural FIDL bindings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1251111
+
+### win: validate param from WM_SIZING message
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a6497d85
+
+### views: fix wrong new badge text color in cocoa context menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbc52c7
+
+### CR2023: Add and update toolbar search field colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/48bf116
+
+### WebUI: Expose ts_tsconfig_base param in build_cr_component
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb6b787
+
+### Clean up thread local-related code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97a59f5
+
+### gpu: Remove ID3D11VideoDevice QI checks from DComp initialization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6256c9bb
+
+### CrOS Settings: Dynamic color support for cr-toggle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03c72f7
+
+### Remove gl::Presenter::OnMakeCurrent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d34d47f
+
+### accelerator: Implement HasSixPackKey function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/818ed21
+
+### [ANGLE][WebView] Enable client arrays when creating GL context
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c1dd078b
+
+### [OOBE] - Add missing IM name for Romanian Standard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a65062
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b396624
+
+### Disable VpSuperResolution in case of VideoProcessorBlt error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84d3f17
+
+### [MirrorSync] Fix inline sync status icons in grid view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc2f580
+
+### Add kRasterScale window property and send it via configure.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd416e0
+
+### Extract g_lacros_enabled_for_test from browser_util
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d81a125
+
+### [Network UI] Add render button in Network Select tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52ac967
+
+### [QuickStart] Update Unified Setup webui header after QS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12d7203
+
+### Settings Split: Add SetKeyboardSettings function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58e7bcb
+
+### Remove a NOTREACHED in CastDeviceListHost
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51dc1ca4
+
+### float: Add tablet multitask menu browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/414fdb9
+
+### Disable kAutofillServerCommunication for browsertests/uitests locally.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fd46b7
+
+### Reland "Unify the supervised user extension approval flow result handlers"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fad5caf
+
+### [DownloadBubble] Fix alignment of "Show all downloads" text and icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b51fb78
+
+### [PriceTracking] Add error toast for side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a593670
+
+### Remove AppIsolationInfo and the app.isolation manifest key.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/507cabd
+
+### [Passwords] Add metrics for username editing in management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e4f1df4
+
+### [Storage management] Fix total disk space for ephemeral users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69aa5e9
+
+### borealis: Remove legacy window_id prefix support in borealis
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c5ec20
+
+### Remove "Up next" button from overview screen and all related logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d43e107
+
+### Use thread_local: net/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0bac5d
+
+### [Password Manager] Accessibility label for remove blocked site button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/431f05d
+
+### Add unit tests for ShoppingListUiTabHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e752a9e
+
+### os settings: gen_routes.py prefers chromium mojom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63824287
+
+### [DownloadBubble] Add a pref to record when the bubble is interacted with
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0087f65
+
+### Lacros: Add more logging to WebAppLaunchProcess
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/218fffe
+
+### Shopping service no longer uses the bookmark's price tracking bit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d8a75b
+
+### Make companion side panel contextual and registered for all tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c7a903
+
+### [Password Manager] Accessibility label for the "run checkup" button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e42a608
+
+### Use base::ranges::transform(): chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0bed3c
+
+### [TTFCC][VCN][Clank] Fix crash when showing virtual card details in manual fallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ec36dc
+
+### HFM: Lock UI setting when Advanced Protection is enabled on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/656b180c
+
+### Enable All Suggestions to feature Action Chips.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7068c98
+
+### [Password Manager] Accessibility label for a password details button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a741e0e
+
+### [Passwords Import] Update dialog title according to the state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa8f81f
+
+### [dPWA] Fix file handling not waiting for registry.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/248e368
+
+### [Bookmarks] Add ProfileKeyedService for BookmarkExpandedStateTracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1907fe7
+
+### [Read Anything] Fix default state of font combobox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a35008c
+
+### [User Education] Fix help bubble colors in dark mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcc4ca12
+
+### [fyfre]Change RTL pixel tests from arabic to RTL english.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8898d5d
+
+### [Autofill] Extend TestAutofill{Client,Driver,Manager}Injector system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eabf66a4
+
+### Move SupervisedUserUrlFilter to components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ff1c33
+
+### kiosk: enable devtools shortcuts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8794f3
+
+### Route serve_file requests with --custom-devtools-frontend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11e6819
+
+### [TTFCC][VCN][Clank] Add AutofillVirtualCardsOnTouchToFillAndroid to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/416acea
+
+### Added chrome:flags for CPA reader mode with a 6s action chip
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d2de3bf
+
+### [Start] Add flag for enabling start surface to support accessibility
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e328943
+
+### Force English translation trigging in India by default
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c9b3ca0
+
+### Remove all shelf-drag-to-pin related flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1117b96
+
+### Delete the Webnotes Publish feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d7498ed
+
+### Hide ambient mode managed screensaver Flag from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f81a425
+
+### [TTFPassGen] Add password generation bottom sheet feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0891e9da
+
+`);
+              </script>
+            </body>
+        </html>
