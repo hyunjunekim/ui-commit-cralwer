@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-10
+### events: Enable TopRowAreFKeys to work per device
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c0554f
+
+### [Files F2] Support volumeType for FakeEntry
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/956720e
+
+### Enable CSSImageSet
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/630bde6e
+
+### Cleanup: remove unused parameters in OnEventProcessingFinished
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9d5074
+
+### [Files F2] Use want/got style in unit test to do assertion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0dd6b05
+
+### [a11y tests] Modified some existing tests to use new formatter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0083fa5
+
+### [Test Automation] CHECK when wrong element type passed to MoveMouseTo()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53a11207
+
+### [uia] MoveEndpointByRange not working in certain scenarios.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c90ae7
+
+### [views] Fix Textfield placeholder colors when invalid.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4d7c95
+
+### Use OverlayCandidate on mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf64ece
+
+### [uia] Select making renderer a11y SetSelection crash in some scenarios
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e7149b
+
+### Revert changes made to fix menu mouse hover scroll bug (visual flickering)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a28a7ee8
+
+### WebUI: Move FocusRowMixin to cr_elements/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9eabaac
+
+### Pass the right argument to ::GlobalUnlock.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/781fd96
+
+### ash: Stop using event handled for latency tracking
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5ad23922
+
+### Move //base/win/variant_util.h to //base/win/variant_conversions.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/170f37b
+
+### [GL] Eliminate NativePixmapEGLX11Binding's use of GLImage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47d2f14
+
+### [GL] Split guts of GLImageEGLPixmap out into helper class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87d85ac
+
+### [Files]: Record metrics about search results.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b34c30
+
+### Add EnableEdgeDetection flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9df0c47
+
+### [Files] Change "All Time" to "Any time"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a25c3e9
+
+### [NTP Quests] Add info dialog and disable toast/action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f1a7be
+
+### [SnackbarView] Change overrideParent condition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82e54ab5
+
+### Add CSC to chrome://flags.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/56104328
+
+### Settings Split: Add SetTouchpadSettings function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5873f6
+
+### [Office upload] Fix GetTargetAppName to include dot
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/057e8fc
+
+### Settings Split: Add SetMouseSettings function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a17103
+
+### [Extensions c2s] Remove "extensions tabbed menu" comments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93f557a2
+
+### Show loading screen while distilling the page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6b9075
+
+### Settings Split: Add SetPointStickSettings function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d95956
+
+### Separate crash_upload_list to its own build target
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dc847f4
+
+### [Omnibox] Control phone-tablet layout switching w/ new flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dd477495
+
+### [Extensions] Create new top-level Extensions menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54634a8
+
+### QA Rich Card: add rounded borders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fae1b079
+
+### Remove unused GTM dependencies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb77834
+
+### Move SavedTabGroupWebContentsListener into its own file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95291a6f
+
+### Remove domAutomationController.send usage from site_data.html
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9aa777
+
+### [User Education] Triggering a new tutorial cancels the existing one.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/053ee71
+
+### Add histograms for permission status change from PageInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44d725074
+
+### [Chrome Refresh 2023] Add a divider after extension container in the toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2df286c7d
+
+### [User Education] Hiding a WebContents will hide its elements.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2dddf78
+
+### Remove expired histograms Settings.LoadCompletedTime, Settings.LoadDocumentTime
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/effcfa4
+
+### Change PerformanceControls finch features to reflect launch state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/268e29a
+
+### [ntp][side-panel] Create panorama IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d78aac
+
+### [PaymentHandler] Fix icon sizing in minimal header UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a5d9e9
+
+### Update media-router-internals WebUi to display mirroring stats.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d086ca
+
+### [Cleanup] Remove enable_launch_polish GTS param and usage
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/44698292
+
+### Fix invalidly marked syncable NTP modules prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60e7ded
+
+### float: Fix test failure when float is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79b5819
+
+### [Read Anything] Observe all tree removals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbe76de
+
+### Move SupervisedUserServiceObserver to //components/supervised_user
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4704a12
+
+### breadcrumbs: remove unused observer methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23236b3
+
+### [Passwords] Navigate back to the management list view after a timeout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/701d3dc1
+
+### Disable the "Send Tab To Self" popup timeout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afb19b4
+
+### [Extensions c2s] Rename extension menu items to ExtensionMenuItemView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f2b141
+
+### [Signin][Android] Delete TosAndUma Fragment classes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/177fadf
+
+### [Extensions c2s] Remove extensions tabbed menu view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e4dc9a
+
+### Call parent's TearDown() in HistoryMenuCocoaControllerTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e790ba0
+
+### Add conformance to the NSMenuItemValidation protocol to -validateMenuItem: implementers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ed0f3f
+
+### Added AutofillBrowserTestEnvironment to autofill browsertests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f54811d
+
+### [fyfre] Set up client-side field trial for the FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72a4d39
+
+### Check reuse_manager before using it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1929f0
+
+### [fyfre] Use the "promo" Gaia signin flow page for FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02d1621
+
+### Add an avatar button to web app frame toolbar view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4feed77
+
+### iwa: Update ContentSettingBubble to use new API & Display IWA App Name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a59519
+
+### [Cloud upload] Remove 'from Chromebook' folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd17b89
+
+### Remove the calendar view feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/648771d
+
+`);
+              </script>
+            </body>
+        </html>
