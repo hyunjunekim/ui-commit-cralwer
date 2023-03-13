@@ -1,0 +1,40 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-13
+### [Files]: Make xf-select item compliant with UX specs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/212ee70
+
+### [MirrorSync] Fix "scanning" label appearing when it shouldn't
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17341d0
+
+### [Storage management] Use spaced to calculate available space
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cc2790
+
+### [Storage management] No crashes on production devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2499b54
+
+### [Office upload] Update strings for whole setup flow + move dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a828e19
+
+### Expose --enable-benchmarking to chrome://flags.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/92f2f0d
+
+`);
+              </script>
+            </body>
+        </html>
