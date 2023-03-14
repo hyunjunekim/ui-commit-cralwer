@@ -1,0 +1,292 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-14
+### Bookmarks++: Show multiple images for folders
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12cb81b
+
+### [Files]: Fix left and right padding on dropdown menu to 16px.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1cefe6c6
+
+### [AXMode Form Controls] Filter nodes to form controls based on AXMode experimental flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed4c17e
+
+### [ChromeRefresh2023] Draw Focus rings with outset rather than
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc6e03a
+
+### [Ash Notification] Record notification catalog names when clicked/showed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/889ab69
+
+### Fix crash when mac native menus open in rapid succession.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4643b62
+
+### Fix GLDisplayEGL::WaitForMetalSharedEvent to import without signaling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6b6bbd
+
+### [task] Activate high resolution for vsync sleep fallback.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07e667d
+
+### Implement Inactive Tabs Button in SwiftUI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5960c49
+
+### Add a histogram to record VideoProcessorBlt after retry.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74cbc84
+
+### [DownloadBubble] Pass ui::ColorId instead of SkColor to LabelButton
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7364b08
+
+### [immersive fullscreen mac] keep top chrome visible during transition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3804345
+
+### Bookmarks++: Add side panel images
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09392186
+
+### Change CHECK to NOTREACHED to avoid rare crash.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1865f55
+
+### [ImmersiveFullscreenTabs] fix z-order of tab overlay widget
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff78008
+
+### Make AXPlatformNodeDelegate iterator methods const.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0e9ed2
+
+### Disable Windows DirectComposition overlay if VideoProcessorBlt is not implemented in the GPU driver.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02c4152
+
+### Add a commandline flag to collect scroll jank counts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70ea663
+
+### [cleanup] Remove usage of std::move(std::move(...))
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9516e7c
+
+### DanglingPtr: Mark all of them as untriaged [27/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f620ed2
+
+### Add ColorId support to LabelButton SetTextColor.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69ee26f
+
+### Simplify InkDrop color treatment in HoverButton.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93e82586
+
+### cros_next: MaterialNext styles of HighlightBorder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc3946a
+
+### bruschetta: Installer cleans up partial installs on error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7692627f
+
+### Fix NotifyWebAppWillBeUninstalled fired in the wrong place
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97cf49e
+
+### Implement Preinstalled Web App Window Experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6aca259
+
+### WebUI Gallery: Add side panel demo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/441bfc2
+
+### [dPWA] Moving files handling WebContents into their own folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5b6b1d
+
+### [ntp] Inroduce feature to reduce logo space
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a82f86c
+
+### Add CaptureActiveDesk method to capture desk without saving
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d352426
+
+### Disable HTTPS Upgrades in page info bubble tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c9fdc1
+
+### Check document pip-ness via browser for tab sharing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a66efd6
+
+### pip2: Don't allow PiP windows to be opened from an extension popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d48afaa
+
+### Disable HTTPS Upgrades in Hosted App tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46e7546
+
+### Disable font size buttons when the max or min size is reached.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5dfdf0
+
+### Create UserEducationController in Ash with browser delegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8609fa
+
+### Remove histogram Apps.AppInfoDialog.CreateExtensionShortcutSuccess
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ed666f
+
+### [BoC Signin] Update string to match new UI spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89ff71e
+
+### Revert "Enable SplitTabStrip by default."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/875e66a
+
+### Display effective registrar-evaluated fields at web-app-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e7e250e
+
+### [Side Panel] Add a deregister method that returns the entry's view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e73afe
+
+### Fix capture in TabStrip::LayoutDraggedViewsAt()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba250dd
+
+### [Cleanup] Removed GridTabSwitcherForTablet flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eb98b970
+
+### [Extensions] Fix ExtensionsMenuInAppMenu feature decl name.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e302fc
+
+### Remove obsolete flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/85e536d
+
+### Settings Split: Sort and filter device list before being sent to SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ea61e10
+
+### iwa: Move some IsolatedWebAppBrowserTestHarness methods to free functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/090da7fc
+
+### [IdleTimeout] Show dialog before clearing data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b07e2a9
+
+### [AppHome] Changing to "Remove from Chrome" when not locally installed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdc299e
+
+### [fyfre]Add accessibility label to images and icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c2d6af
+
+### Remove connection warning for policy CAs at lock screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c63fa83
+
+### Add more pixel tests for Autocomplete entries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44b7a583
+
+### [fyfre] Update accessible title for FRE window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d6acf59
+
+### [Passwords] Remove username row view ids
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92f914a
+
+### AboutThisSite: Add experiment for different secondary icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ba1548f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ab63c1
+
+### Verify UMA in os-settings lock screen auth browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/127d50f
+
+### Add browsertest for the auto lock setting in os settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77f850e
+
+### Add \`GlanceablesTasksClient\` interface and its no-op implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d873fe2
+
+### [Leipzig][Desktop] Autofill save/update profile popup source indication.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b79534
+
+### [Leipzig][Desktop] Update the Save address popup for migration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88f51bb
+
+### [Lacros] Add Guest mode link to account selection screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc7ef6c
+
+### [Lacros] Add dialog for logging out and switching to device guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66f2e11
+
+### [Office] Update PWA URL in setup flow to install from microsoft365.com
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4f484a
+
+### CodeHealth: Remove TODOs assigned to loyso in web_apps code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f0fe12
+
+### CCA: Create feature flag for time-lapse recording
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7c766a72
+
+### Remove the CalendarModelDebug feature and flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6fc653b
+
+### [Mobile enterprise] Enable SafeSitesFilterBehavior on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/343dcc8
+
+### [VC]: Add segmentation model selection flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c550dd0
+
+`);
+              </script>
+            </body>
+        </html>
