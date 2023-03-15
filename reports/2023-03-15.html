@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-15
+### Support Trash for Drive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8566934
+
+### Refactor deleteIsForever() ready for Drive trash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dcd3708c
+
+### Revert "WebUI: Move files off webui_test_resources.grd and delete it."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2678745
+
+### [wayland] Refactor ozone/wayland output tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b74b4d5
+
+### [Lacros] Mouse right click release event missing bug fix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dad7b95
+
+### Reland "[Files F2] Support volumeType for FakeEntry"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc47316
+
+### Reland "[Files F2] Use want/got style in unit test to do assertion"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1aca5122
+
+### Reland "[Files F2] Dispatch actions for volume/navigation"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87c8390
+
+### Reland "[Files F2] Add actions/reducers for volume/navigation"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1a4323
+
+### Files F2: Fix updating selection in the Store
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/135ce54
+
+### WebUI: Move files off webui_test_resources.grd and delete it.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5713958
+
+### [Test Automation] Simplify how custom test classes are created.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ef956d
+
+### Reject mismatched highlight attributes in ax mojom
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f483acb
+
+### CrOS Settings: Dynamic color support for cr-textarea
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15b7f92
+
+### [views] Added a text button style to Material Text Button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4116dce2
+
+### [ChromeRefresh2023] Adjust menu corner radii to 8dp
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c033b3c
+
+### GCC: Fix incomplete type of gl::Presenter for ui::GLOzoneEGLWayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ced26c7
+
+### [Mac Tooltips Ventura] Stop calls to _sendToolTipMouse* in macOS 13
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ad46d7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1968aef
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a0a267
+
+### Use correct assets for composited cursor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ed5962
+
+### Replace style::GetColor by style::GetColorId.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9dbd05
+
+### bruschetta: Installer bug fix.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87bf9b0
+
+### [DriveFsBulkPinning] Add new Google Drive settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4291168
+
+### Disable ThumbnailTabHelperInteractiveTest.* on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/620d210
+
+### [User Education] Force screen reader-friendly accessible text for toasts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a89826
+
+### Move os_crypt into a sync/ subdirectory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93d0dcd5
+
+### arc: Calculate /data migration dst size based on Android /data size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e48a2d8
+
+### Remove signout screenshot logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e04dab
+
+### [bookmarks] Add metrics for user removals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b57caaf
+
+### Ensure Read Anything theme updates with the system theme.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/588c7acf
+
+### Create an explicit flag for SavedTabGroups Sync backend.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf374ed
+
+### [Office upload] Use Folder Icon in Move Notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12cc6f1
+
+### [PriceTracking] Add error toast for side panel context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d6b1aa0
+
+### Bookmarks++: Update layout of entrypoint sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cea586
+
+### Bookmarks++: Add All Bookmarks bookmarks bar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c711458b
+
+### [Reland] Consolidate (most) chrome/browser/android/webapk BUILD.gn sources.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f15716f
+
+### Bookmarks++: Use All Bookmarks naming for dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/688a2a4
+
+### Use STACK_ALLOCATED() in BrowsersOrderedByActivationRange
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47843fc
+
+### CrOS Settings: Lazy load people page subpages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2266c6fe
+
+### [NTP][Quests] Connect ImageService to Quests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72da7f3
+
+### Use hash value of IBAN as strikedatabase key.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/872eca96
+
+### desk-api: Add API to check desk existence.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a2802a
+
+### [Local Network Access] Rename content setting from private to local
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/262019a
+
+### [Chrome Refresh 2023] Update the size of the omnibox to the desired height when the chrome refresh flag is turned on.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3c54df
+
+### [Extensions c2s] Move SiteAccess enum to //extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8abe6d79
+
+### [FedCM] Fix accessible title when iframe is shown in dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/170a3c9
+
+### [Passwords] Adjust margins around separator in management list view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3d981f2
+
+### Revert "Consolidate (most) chrome/browser/android/webapk BUILD.gn sources."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32e0200
+
+### Bookmarks++: Default to adding to All Bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9f865b
+
+### [ChromeVox] Fill Voice Section to New ChromeVox Settings Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a3d0be
+
+### [FSA] Skeleton - Persistent Permissions Settings Page UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ba93f7
+
+### Consolidate (most) chrome/browser/android/webapk BUILD.gn sources.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d705c80
+
+### Refactor to simplify account picker bottom sheet strings implementations and address some other cleanup tasks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ecb18f
+
+### [fyfre] Use shared css in sign_in_promo.html
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6be92c0
+
+### Fix '+ New tab' appearing enabled in Incognito Reauth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8090236b
+
+### CodeHealth: Replace RunLoop with TestFuture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6073078
+
+### CodeHealth: Replace RunLoop with TestFuture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e7dd479
+
+### CodeHealth: Replace RunLoop with TestFuture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4c3783
+
+### Add documentation for Autofill popup UI on Desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/721a342d
+
+### AboutThisSite: Add option for no secondary icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/468feff
+
+### [Passwords] Add translated strings to management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/720a366
+
+### [Signin][Android] Enable the FRE string variations in Canary and dev.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a839901
+
+### [Passwords] Add metrics for note editing in management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d86c5a9
+
+### [sheriff] Disable interactive Fullscreen test on MSAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66df59b
+
+### [sheriff] Disable RecordingServiceBrowserTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1b550b
+
+### [Privacy Hub] Respecting ChromeOS geoloc setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a187b49
+
+### [Liepzig][Desktop] Add validation to the Views address editor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5b3486
+
+### Disable HTTPS Upgrades in tab sharing tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8549b41
+
+### Send proper a11y events for Autocomplete delete button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d90291
+
+### Refine ChromeContentBrowserClient::OpenExternally
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce6a8c2b
+
+### [AutofillMetadata] Convert autofill Json to string and fill logs table.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7643175
+
+### Add new FilesTrashDrive flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/487b679b
+
+### Add switch for resetting eol notification dismissed prefs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f663a4
+
+### [Tab Switcher] Split A11y and Low-End into params
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/42d2489
+
+### Add chrome://flags flag for WebAssembly stringref
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/731a77c
+
+### Add chrome://flags entry for account-scoped preferences
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e9f79ea
+
+### Revert "CCA: Create feature flag for time-lapse recording"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/39da57d
+
+`);
+              </script>
+            </body>
+        </html>
