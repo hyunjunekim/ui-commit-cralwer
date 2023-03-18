@@ -1,0 +1,240 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-18
+### WaylandFrameManager: reduce presentation flush timer starts/stops.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc23bc0
+
+### CrOS Settings: Slot button icon in cr-button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5aad7467
+
+### CrOS Settings: Dynamic color support for cr-button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95a4bc6
+
+### CR2023: Fix checkbox ripple centering in focus state.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2fe037
+
+### Consolidate DropCallbacks for DragDropDelegate
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d36d648
+
+### [uia] ScrollIntoView causing scroll even when element is onscreen.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4c9bb3
+
+### Speculative fix of crash in TabletModeController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8aa769e
+
+### events: Always return valid settings objects in InputDeviceSettingsEvdev
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4cc858
+
+### [ios] restore setting bounds for a flipped layer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34ac72d
+
+### Add views::View::ConvertRectToTargetoverload for Rect
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d09be4
+
+### events: Enable per-device settings in evdev when flag is enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/585c4b74
+
+### Add GLImplementationParts to GPUInfo.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66c2b8d
+
+### [flatland] Enable overlays for GpuMemoryBufferVideoFramePool output
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1dc9f99a
+
+### Remove window to screen point translation utils
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ceeb0f2
+
+### [User Education] Fix screen reader, tab order on WebUI help bubbles.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7083b41
+
+### ApplicationViewportInsetSupplier sizes WebContents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0b5fde
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9525aae
+
+### [ios] enable delegated compositing using RemoteLayerAPI.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5717f6af
+
+### [ios] use DisplayCALayerTree to present content.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bf75b7
+
+### [PhoneHub] Wire up Recent Tabs settings toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a153c1
+
+### [CrOS Cellular] Cleanup EID Popup Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db23015f
+
+### QA Rich Card: add pretarget handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/794dbbc
+
+### [Adaptive Toolbar] Added new button for translate
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a071de3
+
+### Create toolbar container for side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6afe02da
+
+### [Theme Customization] Change where event is sent from to fix frame bug.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05af772
+
+### Only observe the original active web contents when view is created.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2690bea
+
+### Bookmarks++: Show favicon correctly in star dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/317e45e
+
+### [dPWA] Moving WebAppIconDownloader into the web_contents/ folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b3a3db0
+
+### Add early-outs in a couple of places after BrowserAddedWaiter usage.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8967321
+
+### Get rid of remaining WebUIDataSource::Create() callers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fcf840
+
+### Fix delete group button pressed UAF
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7feb551
+
+### [Extensions c2s] Update site settings when clicking toggle button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9d2919
+
+### [CrOS Cellular] Add Network Device Info dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/416e3af
+
+### [ChromeVox] Add Launch Row for Event Log to New ChromeVox Settings Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7f3e026
+
+### [IBAN UI] Prompt before removing a local IBAN.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b4d7f7
+
+### [dPWA] App Home: Parameterize SetOpenInTab and SetOpenInWindow tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35e4fca
+
+### Remove side_search_side_panel_ from BrowserView that is no longer used.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bdd2cb
+
+### [NTP Journeys] Fix incorrect item color on white backgrounds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b62b029
+
+### Remove dpi=100% check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/306f90d
+
+### Remove glanceables session restore logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6025b48
+
+### [UPM-Desktop] Handling account storage eligibility WebUI requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c91477e0
+
+### Always use Skia's analytic AA in AccessibilityFocusHighlightBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ec1291
+
+### Quick Delete: Add quick delete snackbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1347421
+
+### lts: Add support for lts as a real channel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b34ec0d
+
+### [UPM-Desktop] Handling account info requests in SyncHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3123019
+
+### [Passwords] Show IPH after displaying the icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cc499a6
+
+### bruschetta: Implement GetMenuModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/894b1c9
+
+### [sheriff] Disable BrowserWindowMacTest.MenuCommandsFromChildWindow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/286bab4
+
+### Send valid data in PrintManagerHost::UpdatePrintSettings() on success
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/294e7b5
+
+### [color] Add tab strip material color mixer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/179adb9
+
+### [EOL Incentive] add to about flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0f79f50
+
+### [AboutThisSite] Flag to keep Side Panel open & updated on same tab navs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fc3fb452
+
+### [Media Router] Adds flag to create separate instance for OTR.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8d3e26ed
+
+### Cleanup DefaultChromeAppsMigration feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef5482d
+
+### Remove nonced-partitioned-cookies flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8695e23
+
+### Add chrome://flag for heuristic memory saver
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3d3039fb
+
+`);
+              </script>
+            </body>
+        </html>
