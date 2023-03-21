@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-21
+### [DriveFsBulkPinning] Connect BulkPinning dialog to backend
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbe7c99d
+
+### [Files]: Fix flaky browser tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6cd07cd
+
+### cros_next: add ash style tooltip (part 1)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63389e5
+
+### Bookmarks++: Change UI treatment for bookmarks bar
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bd58e3f
+
+### Drop saved tab groups into overflow menu MVP.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ab53bb
+
+### [ChromeVox] Deprecate ChromeVox tabs menu behind flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7143fb0
+
+### [views_examples] Allow blocking calls in vector_example
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0329913
+
+### Announce text attributes in VoiceOver.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/049c143
+
+### [User Education] Correctly format HTML.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41485ba
+
+### [User Education] Switch to single WebUI bubble anchor visibility check.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/285760c
+
+### [Journeys] Remove saved in tab group annotation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3163508
+
+### DanglingPtr: Mark all of them as untriaged [28/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ff5099
+
+### [User Education] Horizontally reflect webui help bubble arrow position in rtl languages
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e97ecd7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7a083d
+
+### [Files]: Alters the message shown if multiple search results are selected.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/528cae60
+
+### [file manager] Add tests for opening hosted files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eea3c97
+
+### [Files]: Fixing a flaky test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f4c6ce
+
+### [FedCM] Pass IDP metadata to UI code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9185c8
+
+### Revert "[Media Router] Don't show fullscreen accelerator on lacros."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42b67378
+
+### [Extensions] Handle window.close() for side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3daea27
+
+### [dPWA] Add execute method to OS uninstallation registration sub manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce65dec
+
+### Remove features::kWebAppFrameToolbarInBrowserView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3b5f47
+
+### [color] Add the material chrome color mixer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3142979
+
+### Show a banner in QS for EOL devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df70396f
+
+### Disable tab groups for web apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97e8614
+
+### [color] Apply small tweaks to existing chrome color recipes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d1d7a6
+
+### [color] Fix misapplied color recipes in the tab strip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00c9d85
+
+### Chromium field trial testing config entry for AutofillMoreProminentPopup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b6cae8
+
+### webauthn: update strings on the QR sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28d3a355
+
+### Reland "Make Clear-Site-Data: "cookies" respect third-party cookie blocking"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72ac5509
+
+### [Start] Clean up TAB_COUNT_BUTTON_ON_START_SURFACE related code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad0ef4c
+
+### Remove dead includes from c/b
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1add954
+
+### Fix UAF dereferencing a stale SavedTabGroup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ad505b
+
+### Add PDF print browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffa327b6
+
+### Remove unused IsolatePrerenders code.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/14dd787
+
+### Settings Split: Change per-device keyboard page name to "Keyboard"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06d6fcf
+
+### webauthn: add a source to DiscoverableCredentialMetadata
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/400a89e
+
+### [Omnibox] Fix some suggestions dropdown sizing issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ad0d31
+
+### [Passwords] Use internationalized string for password note length error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56cd36a
+
+### iwa: Use app name in "Cookies and site data" dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bca7873
+
+### PrintPreviewUi::TestDelegate methods get default implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2824428
+
+### [dPWA] InstallLocally() moved to AppHomePageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3c58923
+
+### [Extensions c2s] Add show requests toggle in site permissions menu page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a69db51
+
+### New signin interception flow for profile managed by enrollment token
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fa00f8e
+
+### Move prefs::kHideWebStoreIcon to policy_pref_names.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/640ea15
+
+### [Desktop][A11y] Add settings tables accessibility labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/342ecc5
+
+### [Extensions c2s] Move main page extensions logic to view controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78acc8a
+
+### [AboutThisSite][Desktop] Keep side panel on same tab navs and refreshes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa6cb78
+
+### [sheriff] Revert "Ensure that browser tests which depend on WebContentsObserver::OnCookiesAccessed callbacks wait for them."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/913c7bb
+
+### [sheriff] Disable interactive Fullscreen test on ChromeOS beyond MSAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0453fc3
+
+### Ensure that browser tests which depend on WebContentsObserver::OnCookiesAccessed callbacks wait for them.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6296e8
+
+### [Fast Checkout] Disable async. parsing only on supported forms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb4ff76
+
+### [Fast Checkout] Fix unbalanced layout partially
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2551a9
+
+### AboutThisSite: Fix crash on native initialization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfed33a
+
+### Show slides actions in the Picture-in-Picture window on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec376ba
+
+### [fyfre] Adjust triggering logic for startup tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c449fd75
+
+### Add in battery answer card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76f3b03
+
+### Add flag ExperimentalWebAppStoragePartitionIsolation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e4862b0
+
+### Create flag to disable Shared Buffer usage in WebXR
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5fca205f
+
+### personalization: add flag kScreenSaverDuration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3c11fe8
+
+### saved_desks: Adding ash and browser flags for app launch automation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9a81b3350
+
+### [Read/write keyword caches to prefs in history_clusters_service
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a62bf46
+
+`);
+              </script>
+            </body>
+        </html>
