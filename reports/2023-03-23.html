@@ -1,0 +1,388 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-23
+### [Files]: Hide the path display if there is no path to show
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/708c6ec
+
+### [Files F2] Add directory tree container
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96d43e1
+
+### Add bottom padding for progress bar in system notifications
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d80fc3a
+
+### Fixed DirectCompositionPixelTest.RootSurfaceDrawOffset test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cb1dd0
+
+### [FilesTrash] Reorder the Trash bin to be the last item always
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3ed470
+
+### coverage: Enable source maps with build_webui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17ee4bb
+
+### CVDisplayLinkMac: Relax threading restrictions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e185f12
+
+### use snake case for local var in GetEGLInitDisplays function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ac98e46
+
+### Win: Add platform device Id support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5e3cf0
+
+### accelerators: Add HasKeyEvent function in KeyboardCapability
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e4a86e
+
+### Notification: Add information for notification priority
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84eee92
+
+### ozone/wayland: Use already know number of planes in ExportHandle()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18ff94f
+
+### Remove commented-out code block in gl_display_initializer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97eb2ceb
+
+### [Cleanup] Remove launched flag.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5b35717
+
+### [Test Automation] Make AddStep(MultiStep&, ...) available in test code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7765fa7
+
+### [mv-tiles] Support single row layout
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac6c1652
+
+### Fix vertical centering of text in holding space.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e3daa84
+
+### views: launch WidgetLayering and clarify ancestors re-ordering semantic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6936efe
+
+### media: Fold //media/base/win:media_foundation_util into //media target
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c779c4
+
+### views: use a fixed 9dp font size for Badge
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afa774f
+
+### Use SkFontMgr::matchFamilyStyle directly in NativeThemeFluent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b92280dc5
+
+### [Signin][Android] Wait for native to be initialized before processing clicks.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2dc9036
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d4a4ffd
+
+### Implement MandatoryExtensionsForIncognitoNavigation policy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/811d607
+
+### Remove buildflag checks around Textfield touch editing features.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/769ae56
+
+### Implement double press drag selection for views::Textfield.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2444147
+
+### [Files app] Handle ProgressItemState.PENDING
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d92bd6d
+
+### ozone/drm: Add back gbm_defines.h header for GBM_BO_HW_VIDEO_DECODER
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/586103c
+
+### [quests] Expose required features in chrome://flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f9501a6
+
+### [ SavedTabGroup ] Set up Kombucha test file and add test for adding saved tab group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58b944c
+
+### Update pinned side panel toolbar button highlighting and add ability to unpin/repin.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4b4909
+
+### Disable optional toolbar button animations when not changing variants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f165246
+
+### Revert Saved Tab Group Button empty chip size to 14 px from 20 px
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07a3d00a
+
+### [omnibox] Commit the omnibox with OpenSelection only; hide other methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fed1ef0
+
+### Record time delta metric for manual installs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a78f5dd
+
+### [CSC] Direct navigation from CSC to new tab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81a027d8b
+
+### [EOL Incentive]: Add metrics for notification and quick settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/012200d
+
+### [omnibox][GM3] Update Omnibox "steady state" background color per GM3.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1904b0
+
+### Don't auto-close PWAConfirmationBubbleView when losing focus in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1aefe12
+
+### Update the swizzling in AppleScript code to use the standard swizzler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eccd7c9
+
+### Update AppleScript classes to use properties
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2529aba
+
+### Create new item types and client API for camera app items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9ab642
+
+### [ChromeVox] Add Braille Settings Toggles to new ChromeVox Settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/610e480
+
+### [Adaptive Toolbar] Hook-up "Add to bookmarks" button to UI and settings
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b5d9c76
+
+### [UI fix] Fix IBAN bubble view two-line IBAN value rendering issue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1854f987
+
+### Fixing well-known/change-password redirection for OTR Profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dfb2a0
+
+### [Sharesheet] Make favicon preview for link sharing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/401d563
+
+### Remove CSC coordinator creation and entrypoints in incognito and guest mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ace9adcb
+
+### Use correct properties
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45f9774d
+
+### Revert "privacy-indicators:Don't show hardware notifiers"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e90cd85
+
+### Reland "Move prefs::kIncognitoModeAvailability to policy_pref_names.h"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb67b2c
+
+### Introduce lightweight ash/ui-friendly types for task lists and tasks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dcff77
+
+### [NTP] Comprehensive theming - Fix link color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ea752c
+
+### [ntp] Add flag to enable single row MV tiles
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eec4292
+
+### Reland "[fyfre]Block browser launch when first run is running on Mac"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc0a563
+
+### Add browser finder helper function to find all of a profile's browsers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8ebb5ca
+
+### Only notify URL changes if MBB pref is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a25aafb
+
+### [fyfre] Enable EnterpriseWelcomeTangibleSyncStyle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e60ff18
+
+### Delete UiThreadTaskTraits
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29db7e2
+
+### Revert "Move prefs::kIncognitoModeAvailability to policy_pref_names.h"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eacbdac
+
+### support-tool: Add utility function to generate filename from prefix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71b9633
+
+### Fix stale comment in LoginHandlerViews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/707dbc3b
+
+### [OOBE][SyncConsent]: Revamp  OSSyncConsent Screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c99a28
+
+### Reject invalid URLs before they explode in navigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7fe4504
+
+### Revert "[fyfre]Block browser launch when first run is running on Mac"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0189092
+
+### Revert "Reland "[fyfre] Don't open a browser window when Chrome is closed during the FRE""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaaa6b5
+
+### Move prefs::kIncognitoModeAvailability to policy_pref_names.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eb6d75
+
+### Add implementation of GlanceablesTasksClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4734fc41
+
+### Switch to text for AppleScript IDs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9534e25
+
+### [Signin][Android] Use DualControlLayout for sync consent response buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9577462
+
+### Reland "[fyfre] Don't open a browser window when Chrome is closed during the FRE"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd8ba92
+
+### [fyfre] Make enterprise welcome dialog view use tangible sync style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe325caa
+
+### Fix AppleScript window creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e99f000
+
+### Don't directly navigate to view source
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd00451
+
+### Remove test dependency to SupervisedUserService for extensions prefs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfc72df6
+
+### Revert "[fyfre] Don't open a browser window when Chrome is closed during the FRE"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82ee3013
+
+### [Leipzig][Android] Add account storage footer to autofill prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a92ddbb
+
+### [fyfre] Don't open a browser window when Chrome is closed during the FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/930f54d
+
+### [fyfre]Block browser launch when first run is running on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2678256
+
+### DanglingPtr: Mark all of them as untriaged [30/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d335deec
+
+### Eliminate pixel artifacts between Autofill popup and ScrollView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94f4799
+
+### Simplify API for launching url's in installed web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64f8398
+
+### [Autofill] Remove test-only nullptr guards in ContentAutofillDriver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db666c0
+
+### Introduce security curtain screen, compliant with UX requirements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b93b120
+
+### [Fast Checkout] Fix a11y of details screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f32cad
+
+### Fix spelling of it glossary in collections blocklist
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab7ce46
+
+### multipaste: Expose flag for experimental Ctrl+V behavior
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fdf4661
+
+### Remove HandwritingLegacyRecognitionAllLang flag and usage
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1e46f04
+
+### DeskButton: Add flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f60ef85
+
+### Multiplanar: Add flags for UseMultiPlaneFormatForHardwareDecode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0c64780
+
+### Add about flag for PageContentAnnotationsPersistSalientImageMetadata
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/854625a
+
+### Shimless: Create feature flag for Shimless diagnostic page
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1a14b921
+
+### Exclude periodicals from being content clustered
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a86c93
+
+`);
+              </script>
+            </body>
+        </html>
