@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-24
+### [color] Add the baseline ref color palette
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a12391
+
+### [Files]: Yet another change to the file path UX.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aeebc87
+
+### Bookmarks++: Add border between folder images
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8704d447
+
+### [uia] Narrator nav by word not working on custom text fields
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8e44cf
+
+### [Reland] ts_library: Infer chrome://resources/polymer/v3_0 mappings from deps.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/915846e
+
+### [MirrorSync] Enable Inline Sync Status by default
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d9d050
+
+### [ChromeRefresh2023] Fix menus for comboboxes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03ea823
+
+### Use AdjustAccessibleName in Label; remove GetAccessibleName override
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd5a619
+
+### Revert "CVDisplayLinkMac: Relax threading restrictions"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/006966d
+
+### Add dfried@ to ui/views/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f840ddb0
+
+### ozone/drm: Resolve collisions across all DRM devices first
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28df62f
+
+### Use AdjustAccessibleName in Button; remove GetAccessibleName override
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7dae82f
+
+### ozone/drm: Move formats and modifiers collection to DrmWrapper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24d5740
+
+### views: update Badge text style in cocoa menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5af113
+
+### WebUI: Add missing deps to //third_party/polymer/v3_0:library.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5770758a5
+
+### Create View::AdjustAccessibleName
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07194d3
+
+### Fix MenuController InitParams context not set if open submenu with key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8266cb
+
+### [MediaPicker/Android]: Ensure MediaProvider is handling request.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5343e6a
+
+### [ImmersiveFullscreenTabs] hide tab strip during content fullscreen
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/462f225
+
+### vt: Input targets documentElement while render-blocked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1cd9798
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cfc318
+
+### Remove ViewAccessibility::OverrideDescribedBy
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eb5880f
+
+### Make SetAccessibilityProperties a single function with default values
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3add24
+
+### ui: gbm_wrapper: Retry gbm_bo_import without USE_SCANOUT
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f8333e
+
+### Rename AccessibilityInit to SetAccessibilityProperties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e664ed
+
+### [MediaPicker]: Add four variations for launch.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4e43a085
+
+### [Files]: Fixing search V2 in removable volumes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4c289c1
+
+### [CrOS Cellular] Clean up sim lock policy feature flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d325e3c
+
+### Make WebAppIntegrationTestDriver::LaunchFromAppShim wait better.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c18c0c8
+
+### After launching through DIAL, there is no Zenith toolbar icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9e5cea
+
+### [BoC Signin] Add toast for when signin is attempted while prohibited.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd8fea9
+
+### [Extensions c2s] Display site permissions button based on site settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/978e13f
+
+### Add user actions to tailored security desktop dialog and buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16b5df7d
+
+### Stop waiting in PageSpecificSiteDataDialogInteractiveUiTest for cookies for now.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8e4184
+
+### [omnibox][GM3] Update Omnibox "steady state" text style per GM3 spec.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e792ca1
+
+### Update strings for the new caption settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6214274
+
+### Migrate variations::GetVariationParamValue to its base counterpart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3da59f0
+
+### Also send the title/subtitle in the FedCM dialog event
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f34c91
+
+### QA Rich Card: add translation child view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4bb172
+
+### Prototype fullscreen popups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a24aff
+
+### Revert "Sheriff: Disable flaky test WAI_29StandaloneWindowed_24_12Standalone_7Standalone_112StandaloneNotShown_116StandaloneTabbed_143_117Standalone_34Standalone_24_94_144 on Mac"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9a09c3b
+
+### Remove path from frame-src directive of companion side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53bb795
+
+### Add feature flag and entry point in settings for GTMOOC
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ef16de
+
+### [ntp][user-education] Change anchor for Panorama tutorial completion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8661766
+
+### Enable kDownloadBubble in DownloadBubbleTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/059d70ad
+
+### [OpenPageAndShowHelpBubble] add close button alt text to Params
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6722371
+
+### Reland "Ensure that browser tests which depend on WebContentsObserver::OnCookiesAccessed callbacks wait for them."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0199b78
+
+### Convert the raw pointer usage in window AppleScript code to be safe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d1ca70
+
+### iwa: Make IsolatedWebAppBrowserTestHarness::CreateIframe a free function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b557f1
+
+### [Mac] Fix FirstRunServiceCohortBrowserTest.GroupViaPrefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c68241f
+
+### [DownloadBubble] Hook up DownloadBubbleUpdateService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a81981c
+
+### Add the "Retry" action to WebAPK install failure notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/291364a
+
+### Display system logs when WebAppIntegration tests fail on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c6d7642
+
+### Revert "Sheriff: Disable EnterpriseWelcomeUIDialogPixelTest.InvokeUi_geolocation/*"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebe0988
+
+### Revert "Sheriff: Disable InvokeUi_geolocation consistently failing on Windows"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae43249
+
+### Move prefs::kAllowDeletingBrowserHistory to components/history
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fd9f68
+
+### [IBAN UI fix] Add IBAN image and manage payment settings page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ba1621
+
+### Revert "Sheriff: Disable PageInfoBubbleViewDialogBrowserTest tests consistently failing in Win"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/359883b
+
+### [Passwords Import] Add conflicts state to the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb80b39
+
+### Site Settings Handler: Be more defensive about dereferencing BDM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/187616d
+
+### 3rd Reland "[fyfre] Don't open a browser window when Chrome is closed during the FRE"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09fdeba
+
+### [fyfre] Disable FirstRunServiceCohortBrowserTest.GroupViaPrefs on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c72061b
+
+### Revert "Reland "Reland "[fyfre] Don't open a browser window when Chrome is closed during the FRE"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fb2261
+
+### [ash] Remove unused SupervisedUserService dependency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcd9363
+
+### Sheriff: Disable flaky test WAI_29StandaloneWindowed_24_12Standalone_7Standalone_112StandaloneNotShown_116StandaloneTabbed_143_117Standalone_34Standalone_24_94_144 on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eeab50f
+
+### Sheriff: Disable EnterpriseWelcomeUIDialogPixelTest.InvokeUi_geolocation/*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2171c1
+
+### Add ASCII art illustration to explain content cell padding.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a650e1
+
+### Sheriff: Disable PageInfoBubbleViewDialogBrowserTest tests consistently failing in Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88b4bbd9
+
+### Sheriff: Disable InvokeUi_geolocation consistently failing on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b61dcdb
+
+### Reland "Reland "[fyfre] Don't open a browser window when Chrome is closed during the FRE""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/305ca45
+
+### [CodeHealth] base::Value modernisation for PrinterProviderPrintJob
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3f9520
+
+### Add feature flag for payments mandatory re-auth
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7442638
+
+### Remove expired flags for resampling event
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/30b17bf
+
+### Add search visits only content clustering about flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0abf073
+
+### Add option to label based on search visit entities
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/717f75d
+
+### [RQ] Add chrome://flags definitions restricting the visibility of queries.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/11555e8
+
+`);
+              </script>
+            </body>
+        </html>
