@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-03-25
+### Add automotive/non-automotive device restriction for tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f244bd76
+
+### [ScrollUnif.] Distinguish kFailedHitTest and kNonFastScrollableRegion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b47f4549d7
+
+### Test for crash fix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4cc64a
+
+### Remove expired flag enable-pointer-lock-options
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/04708ae
+
+### Update Checkbox colors for CR2023
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b92b35f1
+
+### Replace use of SkFontMgr::legacyMakeTypeface() in font_list.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d7f870b
+
+### [Android] Refactor Autofill Popup components for icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad912227
+
+### Make View::GetAccessibleName non-virtual
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d912f90
+
+### Allow Widgets to specify a ColorMode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0155c2e
+
+### WebUI: Add WebUiSystemFont flag.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7c00cc7f0
+
+### Use AdjustAccessibleName in ImageViewBase; remove GetAccessibleName override
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25aefd5f
+
+### Pass the full display::Display to CursorLoader
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f1e1f46
+
+### WebUI: Restore scheme relative URLs for cr_elements/ HTML wrappers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27f4ec8
+
+### Make 'text' and 'number' texts lowercase, disambiguate from other ones.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f09f495
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9552b4a
+
+### Add RAW_PTR_EXCLUSION to files in ui/ etc.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de4c4ae
+
+### exo: Implement a way to get rid of ConsumedByIme heuristics.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/826511f
+
+### [Extensions c2s] Move methods to extensions toolbar ui test class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/973395f
+
+### Set the bottom handwriting bounds offset on the Url bar to 0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5748e68
+
+### QA Rich Card: filter scrolling events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/911d7ac
+
+### [Password Manager] Displaying Password Manager menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fc10b4
+
+### [CSC] Added mojo plumbing promos and region search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00394c0
+
+### Record memory savings when discarding from chrome://discards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dc8663c
+
+### [SmartLock] Delete HardlockPod
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/252b32d
+
+### Remove Bottom Border on Tabstrip for ChromeRefresh2023.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/538e3ae0
+
+### [FreezeCast] Notification ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/056cf38
+
+### [Passwords] Close password management bubble IPH when opening the bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2baea7a
+
+### Migrate variations::AssociateVariationParams to its base counterpart.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be0acb0
+
+### [PDF OCR] Add UI handler for PDF OCR toggle on CrOS settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f68b6f
+
+### Stop showing bitmap captures during transitions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60a95da6
+
+### Propagate package_name to WebApp as part of additional_policy_ids in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f35c3c9
+
+### Fix UAF by switching OnWidgetClosing -> OnWidgetDestroying
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54dd973e3
+
+### Relocate logos to browser_ui for component access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/212ad938
+
+### [Passwords] Align vertical icons in the manage passwords details view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80c7bbe
+
+### [ntp][iph] Trigger Panorama IPH when users open NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4b2c49
+
+### Clean up VCN 3CSC flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3a547e4
+
+### Settings Split: Add new search concepts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fe83de
+
+### Convert AppleScript bookmark code to GUID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8298296
+
+### Add the background colors for ChromeRefresh2023 Tabstyle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2145309
+
+### iwa: Use UrlIdentity in SiteSettingsHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fd1ed2
+
+### Add extension controlled icon to PasswordManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93ec779
+
+### Update various chrome/ tests to expect RenderFrameHost to change on same-site navigations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68d5bbca
+
+### [Saved Desks] Fix  Lacros App Saving and tab group issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33c8ba7
+
+### Add a new TabStyle for ChromeRefresh2023 behind a flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8ddca25
+
+### [Passwords] Replace the icon used in the manage passwords details view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c27a1b
+
+### Let the AppleScript code create a non-OTR window if the active window is OTR
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b52069
+
+### [Adaptive Toolbar] Enabled updating bookmark button icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30991cf
+
+### [Autofill] Remove AutofillManager::GetOfferManager()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d60c7e
+
+### Rewrite raw pointer fields to use raw_ptr<T> for linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/002c0bc
+
+### Remove remaining instances of SkColor in Autofill views classes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a89c63
+
+### Don't show biometric auth promo if there is another dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2fb3ee
+
+### Refactor pin setup screen to use cryptohome pin engine for policy check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a751174
+
+### [Fast Checkout] Re-enable FastCheckoutRenderTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd95d66
+
+### Site Data Dialog: Stop caching PSCS BDM pointers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b44599
+
+### Expose auth factor config services to OobeUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe8f89c
+
+### iwa: Move required feature flags for tests into test harness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8844e47
+
+### Simplify unit tests for AutofillPopupControllerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40e85bb9
+
+### [CSC] Establish browser to renderer communication
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95c5b66
+
+### [Promise Icons] Add Promise Apps to chrome://app-service-internals page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dedd534
+
+### Remove feature flag kMouseSubframeNoImplicitCapture
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f5b53ae
+
+### [PCCT-SideSheet] Use PCCT in discover feed settings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/add35f1
+
+### Add feature to control exposing OOP-VD to LaCrOS.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a55fccb
+
+`);
+              </script>
+            </body>
+        </html>
