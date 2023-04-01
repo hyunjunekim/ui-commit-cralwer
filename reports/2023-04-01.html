@@ -1,0 +1,196 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-01
+### [wayland] Switch to using zaura_output_manager when bound
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0f0832
+
+### [wayland] Have wl_output and extensions set state on shared Metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72af5eb
+
+### Make custom HDR ColorSpaces have the CUSTOM_HDR transfer ID
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78b613b
+
+### Cleanup unnecessary deps after androidx.test migration
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8aa361b
+
+### Revert "[AX-Unserialize] Implement alternative Unserialize approach for AXTree"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/696c580
+
+### [wayland] Remove display_id version check from WaylandZAuraOutput
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58635c8
+
+### [ChromeRefresh2023] Revisions for checkbox focus ring
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10654326
+
+### [AX-Unserialize] Implement alternative Unserialize approach for AXTree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44aeb1e
+
+### ash/testing: Consolidate usage of CreateDisplayInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d57f8f2d
+
+### android: Reduce polling for present fence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3baec9f3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84ba676
+
+### ARC-ify and improve native_widget_types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40367e1
+
+### ui: gbm_wrapper: Ensure to create BOs with import-compatible modifier
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20f14755
+
+### Revert "[Leipzig][Desktop] Pure local address indication in Settings."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4b7eaf5
+
+### [Leipzig][Desktop] Pure local address indication in Settings.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab5b1880
+
+### [Files]: Alters hiding of search box when files are selected
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec945df
+
+### Unify incognito navigation throttle message
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be17586
+
+### Rewrite X11EventWatcherFdWatch::event_source_ to use raw_ptr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50aecbc8
+
+### Fix Live Caption insets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/990606e
+
+### [ChromeVox] Add Virtual Braille Display Settings Section to New Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b244413
+
+### Settings: Fix credit card summary sublabel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20575acc
+
+### [FilesBulkPinning] Update connect text and hide settings when disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/671c62a
+
+### [dpwa] Add CheckPwaWindowCreated() to support actions and regenerate the tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44b3039
+
+### [bookmarks] Add new toolbar for clank phase 1
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/294073a
+
+### [NTP Journeys] Open all in tab group menu option
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5d9d69
+
+### Record time spent building Suggestions model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acb8fdea
+
+### saved_desks: Remove the launched flag \`kEnableSavedDesks\`
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/61dbfc6
+
+### [Sharesheet] Add link toggle modify action for highlight text sharing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d948378
+
+### [NP] Create UI files for Nearby Presence Debugging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae9f3aa
+
+### [CR2023] Add and insert new icons for 3-dot menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/433dfba
+
+### Add home button visibility to toolbar token.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bde51872
+
+### Don't capture during NTP scroll.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b652c4e5
+
+### [Sheriff] Disable HighEfficiencyDiscardPolicyInteractiveTest.TabWithFormNotDiscarded.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f273056
+
+### Fix missing permission prompt for chrome apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca1c9ad
+
+### Revert "Add discard test for contenteditable sites"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfd879f
+
+### [fyfre] Add tangible sync style to lacros FRE intro page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24b41dec
+
+### [Signin][Android] Add AccessPoint to signin method.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b30e846
+
+### Updated getDisplayMedia picker dialog wording for better clarity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6808ec
+
+### Remove some CoreAccountId constructors.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12738ff
+
+### [Sheriff] Disable fast checkout render tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b835633
+
+### PinManager: Tweak logs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1ec46f9
+
+### [fedcm] Add the JS bindings for the AuthZ API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b64ffc
+
+### diagnostics: add flag for jelly colors
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aeff693
+
+### Add a flag to enable ActivityTabProvider when handling back press
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/88a1b42
+
+### os-feedback: add flag for jelly colors
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/26ebba5d
+
+`);
+              </script>
+            </body>
+        </html>
