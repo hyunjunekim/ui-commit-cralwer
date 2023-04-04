@@ -1,0 +1,264 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-04
+### [Sheriff] Disable AXTreeTest.UnserializePerformance on fuchsia bots.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b33ec667
+
+### views: Add new switch --disable-input-event-activation-protection
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55c53d6
+
+### [ios] Fix ui_shell_dialogs unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6445132
+
+### WebUI: Update TypeScript compiler to 5.0.3.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3605c9
+
+### Support inserting GIFs from emoji picker directly.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63eca8c
+
+### shortcuts: Add AddAccelerator mojo api
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb99809
+
+### [AX-Unserialize] Invert loops for notifying observers of ignored node changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6103f4a
+
+### [Rounded-display] Adds \`display-properties\` switch.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1eb23e5
+
+### [AX-Unserialize] Continue loop inversion for node attributes will change
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10918c6
+
+### gfx::ColorConversionSkFilterCache: Fix HLG and PQ color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c289e3e
+
+### CR2023: Update checkbox icon (larger size, rounded corners)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99a04e7
+
+### Reland "[AX-Unserialize] Implement alternative Unserialize approach for AXTree"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b4be3e
+
+### Bookmarks++: Don't shrink folder description
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b007800
+
+### Fix 180-deg rotated video overlays in full screen on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/365fbc6
+
+### WebUI: Promote Settings prefs mechanism to cr_components/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3dfd9a9
+
+### [a11y tests] Modified more existing tests to use new formatter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/154b9f6
+
+### Add typography tokens for webui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e67aef3
+
+### Reland "[Leipzig][Desktop] Pure local address indication in Settings."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c97e39
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29f2aa0
+
+### [Files]: Consistently use typeSearchText to simplify search test code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/983af71
+
+### Intents: Remove Intent Picker auto-display feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d32844c6
+
+### [FedCM] Fix TalkBack for FedCM subtitle in 3-domain UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb65a6b6
+
+### CrOS Settings: HaTS for Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3ea06e7
+
+### [CSC] Update companion proto to match server side
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1309a9c
+
+### personalization: google photos shared albums test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ef4604
+
+### Simplify OmniboxActions icons. Add ActionSuggestions decorations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d1a069
+
+### Bookmarks++: Add non-product images to entry point
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcb1bb18
+
+### [Extensions] Introduce ProcessMap::IsPrivilegedExtensionProcess()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/417a036a
+
+### move GetPath to tab_style_views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebc862c
+
+### [FedCM] Fix TalkBack on single account chooser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0547e2f
+
+### Fix browser signin tests when in dark mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f9b66f
+
+### [Chrome Refresh 23] Upload new icons for toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc8b6174
+
+### [Read Anything] Fix OnSelectionChange crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8ec998
+
+### Omnibox - let Shift + Escape bring up the task manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcf13c1
+
+### [omnibox] Clean up default browser pedal flags and implementations
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7c84e956
+
+### [ChromeAppsDeprecation] Removing ability to turn off all deprecation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05af60d
+
+### Make the map in SimpleCommandSource::GetCommands() static
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6d69bab
+
+### Encapsulate PrintPreviewDialogController::GetOrCreatePreviewDialog()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/195f4ff
+
+### Bookmarks++: Fix All Bookmarks button behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fb893a
+
+### [Media Router] Disable presentation receiver test on lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cc8544
+
+### Fix side panel button tooltip while csc is showning and csc button is pinned.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/053a93a
+
+### [Chrome Refresh] Add a new feature flag for omnibox icons and add right padding to page info icon
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3477e6d5
+
+### One time permissions
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3560a40
+
+### [AboutThisSite][Desktop] Make ATS icon grayscale in PageInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cad52a6c
+
+### [profiles] Remove calls to ProfileManager::GetProfile() in FirstRun tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/477e852
+
+### [Start] Build histogram for click rates of Home button on NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/817a325
+
+### Remove dmcardle@chromium.org from chrome/browser/ui/android/OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61a87c9c
+
+### Fixes typo in FRE to use 'parent' and not 'parents' for supervised users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67b4d76
+
+### Clean up unnecessary checks for Android in bookmark_utils_desktop.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b1de49b
+
+### [profiles] Fix ScopedAllowBlockingForTesting in StartupBrowserCreator tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/631b67e
+
+### [Password Manager] Fixes to checkup details page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7197a7f
+
+### [Metadata] Upload new image assets for Clank credit card accessory sheet and FastCheckout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d191988
+
+### [Password Manager] Fix isEligibleForAccountStorage computation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc91d87
+
+### [fyfre] Fix issue with experiment control group tracking
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad40dc1ca
+
+### [Office Upload] Make non-modal dialogs always on top
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9465834
+
+### jellybean: Improve error for transient imports
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/130af9e
+
+### firmware-update: add flag for jelly colors
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/be89bd2
+
+### [ntp][lms] Create \`kNtpAlphaBackgroundCollections\` flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/abbaf29
+
+### Add flag to make device-width default on Clank
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e0ed8280
+
+### Removed getDisplayMediaSet (step 1)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0ab996e
+
+### Added getAllScreensMedia API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cfe153b
+
+### Add new feature flag for ChromeOS Apps Discovery experience in Help app.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d4ba8b0d
+
+`);
+              </script>
+            </body>
+        </html>
