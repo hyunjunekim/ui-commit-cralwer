@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-06
+### [BRP] Unrewrite fields based on ChromeOS sampling profiler data
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02cd570e
+
+### [FilesRefresh] Reposition dropdown menu for search chips
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e54938e
+
+### cr-checkbox: Fix checkmark in high-contrast mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/199f428
+
+### Make scheme relative URLs default in html_to_wrapper().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2efd445
+
+### WebUI: Minify CSS for cr_components/{help_bubble,omnibox}.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e803bb9
+
+### Small rewrite of EditingHandleView bound and visibility updates.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/257a65ea
+
+### Delete draw_invisible_ from EditingHandleView.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7850f92a
+
+### [a11y] Implement standardized kCollapse and kExpand for treeitem role
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0565e7
+
+### [fuchsia] Migrate fuchsia.input.virtualkeyboard to Natural FIDL bindings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d6055aa
+
+### Revert "[Linux/Ozone/Wayland] Support fractional-scale-v1"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/446e2ae
+
+### Update gm3 typography tokens for chromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25c6a34d
+
+### Add oshima to ui/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b02a1b8
+
+### Update ui/chromeos/styles presubmit to handle overlapping sets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32ec30b
+
+### IWYU: add stdint.h for integer types in //ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7815db3
+
+### Ash Notification Popup updates
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56d2526
+
+### ozone, ui-controls: use DIP screen coordinates
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78145dc
+
+### [WebView][ANGLE] Fix crash when HWUI is using Vulkan
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c43dbaa
+
+### Refactor vsync range into lower limit only.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0eb1189
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c07e476
+
+### Log Android.Event.ActionDown with InputDeviceSource from onTouchEvent.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/289bd80
+
+### New caption settings UI
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba742c1
+
+### preload: Add bookmark triggers for prerender
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb9046f8
+
+### [Omnibox] Only create RoundedCornerOutlineProvider once for a view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0103e0e
+
+### [WebUI] Migrate FilesInternalsUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5577ea0
+
+### [FilesRefresh] Enable dynamic colors to SMB dialogs - frontend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06e3ab7
+
+### Add Window observer to stop doze mode when ARC windows are present
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5a5e9d
+
+### [WebUI] Enable trusted types for chrome url disabled UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c1c0c06
+
+### [Extensions] Refactor DidInjectScript(...) into browsertest_utils.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5004e45
+
+### Reland "[CSC] Move core logic from webui/ to chrome/browser/companion"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e7597fd
+
+### Side Panel: Update hover background color for filter chips for CR2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff6d2d2
+
+### Client support for adding Partial Translate hinted language detection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd62d93
+
+### CR2023: Add chrome-refresh-2023 attribute to Customize Chrome side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9728033
+
+### saved_desks: Fix crash when removing a LaunchPerformanceTracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/994f3b5
+
+### Don't test NaCL on Arm64 Win url data manager tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a394b0
+
+### Add metrics to estimate how useful preloading back navigations could be
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/097680d
+
+### [Chrome Refresh] Add some common page action icons and references
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85d390e
+
+### [Omnibox] Cache commonly loaded resources
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/49cbd3d9
+
+### Create enum types for tutorial IDs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9e6529
+
+### [23Q1Fixit][GTS] Use tab_switcher_view_holder instead of list_layout_holder when enabling GTS in a11y mode on tablets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4aa508
+
+### [Password Manager] Clean up of settings section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dfdebf
+
+### Delete useless friend statement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e11c3cf
+
+### Disable more flaky RecordingServiceBrowserTest tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90271e8
+
+### Disable flaky AccessCodeCastHandlerBrowsertestReturnSuccessfulResponseUsingKeyPress
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce652ad6
+
+### Fix race condition in CookieControlsBubbleViewTest.InvokeUi_CookiesBlocked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e2932d
+
+### Increase pixel test fuzziness for Win Arm64
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df29c3c
+
+### [signin] Support redirects for Gaia Chrome Sync during profile creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cff3093
+
+### [dPWA] Use cr-checkbox directly in App Home instead of div wraps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05e6d97
+
+### Fix a bunch of flakes in chrome/ tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cca881
+
+### Add nickname length check on save IBAN bubble view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2ba2d9
+
+### extensions: don't use Browser after window teardown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dde9ec
+
+### [Password Manager] Fix for some a11y bugs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c51941a
+
+### CCT capture token includes width.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e8209d
+
+### [CSC] Fix logic bug with consent check for PrimaryPageChanged.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00e1b6d
+
+### Update tasks client to return ui::ListModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84b96034
+
+### [sheriff] Disable flaky ScriptFocusHidesKeyboardTriggeredTooltip on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57576e5
+
+### [AboutThisSite] Add metric for same tab navigations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0675ff81
+
+### PageInfo: Fix incognito message in Guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9831553
+
+### [site data] Enable PageSpecificSiteDataDialog by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/261c855
+
+### Use renderer IDs instead of names to identify fields in votes [1/2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/baa6a6b
+
+### Re-enable some CookieControlsBubbleViewTest tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f2c557
+
+### [Code Health] remove ContentSettings.Popups.* expired histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f37a66
+
+### CodeHealth: Remove NOTIFICATION_NAV_ENTRY_COMMITTED use in EACB
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc26c68
+
+### preload: Add more metrics to understand mouse actions around bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/297abdf
+
+### [FilesRefresh] Enable dynamic colors for SMB dialogs - backend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14d2de5d
+
+### [Leipzig][Android] Profile validation during migration flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2bafa89
+
+### [Chrome Refresh] Move open in new icon to /chrome/app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80b1c0f
+
+### [dPWA] Add WebAppSyncGeneratedIconFix flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b9da7594
+
+### [launcher] Debug logs to publish logic.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/adb8397
+
+### Only show ToD flags on Dev/Canary/Unknown channel
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aa62a03
+
+### Remove coupons on Mobile
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/56dfead
+
+### scanning-app: add jelly colors flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b9fb608
+
+### Revert "Second flag for diacritics"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7f34e5b
+
+`);
+              </script>
+            </body>
+        </html>
