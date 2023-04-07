@@ -1,0 +1,192 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-07
+### Prevent nullptr dereference crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38cf36d
+
+### [Select to Speak] Remove feature flag for launched feature
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f397260
+
+### Make sure \`image_scale_factor_\` is only used for custom cursors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e53ca7a
+
+### [X11] Fix focus tracking in presence of window cache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3639ad
+
+### [Read Anything] Update theme colors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2ff3b9
+
+### Split ChromeRefresh2023 into two levels
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eaf0e02
+
+### [CR2023] Update 3-dot Zoom menu item, separators, Find sub-menu.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f363ab
+
+### [wayland] Run remaining aura ozone unittests with aura_output_manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/29f7e7f
+
+### [wayland] Update wayland_window_unittests to use aura_output_manager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/67b7ba2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e631985
+
+### [iOS] Title case and update timestamp string for Password Checkup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bd6dad
+
+### Adapt OnUserActivity observers for nullptr events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d79d05e
+
+### [Jellybean] Allow for json5 color files to force preblending.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e35e4a4
+
+### [Files] Update stored column widths in more scenarios
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5555594
+
+### Add additional logging for loading printers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/419816d
+
+### preload: Follow-up to take metrics even for the second and later focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edfb75a6
+
+### Settings Split: Update settings when login screen user changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f177eb1
+
+### Extensions: FileHandlers: LaunchQueue: Enqueue with LaunchParams
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35a9760
+
+### CR2023: Add color pipeline to Customize Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65ea80b
+
+### Implement UI for Extension Approvals V2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e71d64
+
+### [Chrome Refresh] Add Extension Icon for toolbar, New Page Info Icon and Share windows icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3172d7a
+
+### Settings Split: Notify observers in provider when settings are changed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b57da19
+
+### [dPWA] Remove Chrome Apps Deprecation policy exception
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7b5ca95
+
+### ash/lacros: Fix UaF during lacros tab dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f93c65
+
+### Add Notificatios permission request interactive UI test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10dfd8b
+
+### Rename all_possible_usernames/passwords to more appropriate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/281fef9
+
+### [Subscriptions] Update observer to provide one sub per event
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/919accd
+
+### [Privacy Hub] System notifications for geolocation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3e358cb
+
+### Move geo-manager init to pre-profile on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32be664
+
+### PrivacyIndicators: Add metrics for privacy indicators source
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb4f85f16
+
+### Remove ExecuteScriptAndExtractInt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66f2634
+
+### [Mac int ui tests] Disable PrivacySandboxDialogView...Test.EscapeClosesNotice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e17f30
+
+### Bookmarks++: Add icon to All Bookmarks button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c76f63
+
+### Privacy Guide: Add "New" indicator to the P&S settings pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e3cde3
+
+### Allow default initializing BrowserTaskTraits
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d864d9
+
+### Update highlighting and interaction for side panel toolbar buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4739837
+
+### Add Kombucha tests for PageInfo and permission request flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5d6438
+
+### Make kSidePanelCompanionEntryPinnedToToolbar syncable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a8c6fac
+
+### [AboutThisSite] Removing non-msbb support
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8126d7b7
+
+### [AboutThisSite] Check for invalid urls and strip them of paths
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e527d9da
+
+### [signin] Support TangibleSync in signin end to end tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97db3c6
+
+### [Lacros] Remove " - Google Chrome" suffix from browser window title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59eadeb1
+
+### [CSC] Fix logic bug with consent check for PrimaryPageChanged.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00e1b6d7e
+
+### Register flag in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a32bda
+
+`);
+              </script>
+            </body>
+        </html>
