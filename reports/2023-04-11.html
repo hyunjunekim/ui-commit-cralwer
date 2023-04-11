@@ -1,0 +1,220 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-11
+### Ensure color change events are fired after new css has loaded.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6dd4c52
+
+### [FileRefresh] Add new color token cros.sys.dialog-container
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5afa9bb
+
+### events: Add API to check existence of top row action keys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ade042
+
+### events: Move keyboard identification logic to KeyboardCapabilities
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e35002
+
+### Clean up touch selection menu anchor test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/716f7ae
+
+### [RenderText] Add Crash reporting to debug fallback fonts.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f983756
+
+### Remove QT feature flag
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfc2cc8
+
+### [Read Anything] Relative paths for roboto.css and text_defaults_md.css.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f075c3a6
+
+### [ImmersiveFullscreen] tabs in titlebar by default
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e3c18d
+
+### Realbox: Allow cr-realbox-icon to have a dynamic width
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b25ae11
+
+### Assert that serializer is not fed invalid nodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f979d0f2
+
+### [CR2023] Add a flag for Mac Font Smoothing
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/28ac5182
+
+### Remove wrongly restored file in rebase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b79d73f
+
+### Add pointer event factory connections for deviceId
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c37682
+
+### Remove unused exclude_offscreen parameter from AXTreeSnapshotter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6b22c6
+
+### Remove pinkerton@chromium.org from ui/surface/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/778dcf2
+
+### Use more inclusive language in accessibility related code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47159f6
+
+### Enable WebUIDarkMode on Linux
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1acb9602
+
+### Remove jacklynch@google.com from ui/accessibility/android/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ba1628
+
+### [realbox] Fixes bug where matches in collapsed groups remain selectable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f71804a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99819464a
+
+### Remove amusbach@chromium.org from ui/lottie/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/017789f
+
+### Disable a lot of ozone_unittests that are failing under LSAN.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ae21b5
+
+### [realbox] Guards against unexpected matches in the 1st and 2nd columns
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8fce00
+
+### Lacros: Don't try to handle chrome://diagnostics URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5712efa
+
+### personalization: change daily refresh loading state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ff9a42
+
+### [Read Anything] Add tests to verify no content is distilled when the
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec690c0
+
+### Provide accessible name for unnamed bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8ae0dc
+
+### [Chrome Refresh 23] Add the location icon changes gated by IsChromeRefreshIconsEnabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8a3e1a
+
+### iwa: Unify display of IWA/extension name in javascript_dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e93cb9b
+
+### [color] Update bookmarks to get the favicon using ColorProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa585284
+
+### Disable CookieControlsBubbleViewTest::InvokeUi_CookiesBlocked on CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64e8859
+
+### More offline prefetch cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8379149
+
+### Settings Split: Implement provider and frontend to handle mouse policies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eb1cb25
+
+### [ SavedTabGroup ] Fix hidden overflow button when 5+ groups are loaded
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e22eed6
+
+### Task manager (Cocoa) - let Enter/return kill processes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46052fe
+
+### Settings Split: Implement mouse pref handler to handle policies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd874b9
+
+### Force about:blank navigations which are requested to be fullscreen to go through the browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f88e5eb
+
+### Don't unsave a saved tab group when dragging it to another window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3f37f3d
+
+### Add view for partial bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/477845a6
+
+### Implement "mark task as completed" logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/240956b
+
+### [ChromeVox] Add Side-by-side and Interleave Virtual Display Options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a340682
+
+### [Omnibox] Initialize base suggestion view dims once
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6ecd72
+
+### Expose RowListView construction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57b660b
+
+### Add missing function call to stop flickering when restoring window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3973a8d
+
+### [Journeys] Tweak row UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5d6b4d
+
+### [Android Bulk Tab Edit] Cleanup flag and code
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f70d55e
+
+### Implement pagination logic for tasks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe76cf12
+
+### Add a flag for toggling whether companion is pinned by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4812636
+
+### Create Passpoint settings flag using base::Feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/837a7f0
+
+### Add a chrome://flags entry for FullscreenPopupWindows
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/90ee63f
+
+`);
+              </script>
+            </body>
+        </html>
