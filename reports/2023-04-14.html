@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-14
+### [BRP] Add RAW_PTR_EXCLUSION for Android build
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23709cc
+
+### [Read Anything] Use the custom border color when there's a bubble border.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b81cc4
+
+### Files & Office: Update the extension ID for ODFS
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d33fb8
+
+### gpu: win: Apply overlay transform before quad rect offset
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6511af1
+
+### [a11y] DCHECK to fix crashes seen in \`AsLeafTextPositionBeforeCharacter\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19af778e
+
+### Revert "Break down the "GenerationToBrowserMain" stage for ScrollUpdate with blocking touch moves."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a35e4b3
+
+### Correct text color secondary
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45712ef
+
+### Settings: Introduce "limited sharing" mechanism.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f79e4c0e
+
+### [uia] Added Initial impl for OnStringAttributeChanged
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c691fc6
+
+### [Fuchsia] Set display resolution for cast_streaming receiver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce6a0a9
+
+### Add Transducer ID Support for PointerEvent.deviceId
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6377325
+
+### Support offset in SurroundingTextTracker.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c05b8d
+
+### ozone: Remove extra Wayland compositor from test framework
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/847b25a
+
+### Convert attributed string Mojo calls to CFAttributedString
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa1990f1
+
+### [ios] Set default display orientation based on mobile
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15aaafa
+
+### Add mdjones@ to modelutil OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45288b8
+
+### ozone: Declare Wayland versions at test construction time
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa4ca6f
+
+### Ban the inclusion of <objc/objc.h>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/491617c
+
+### [ChromeRefresh2023] Per component focus ring adjustments
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c52b215
+
+### Remove invalid NOTREACHED() in X11 event parsing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0de2bb73
+
+### [webview][clank] Trackpad Click Gesture Handling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d357cb
+
+### mac: Work around an inccorect availability annotation in the 13.3 SDK, src.git edition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b767fc
+
+### Support "stop propagating touch but still handle gesture" behavior
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab67acc8
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90341ca4
+
+### Break down the "GenerationToBrowserMain" stage for ScrollUpdate with blocking touch moves.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2723d46
+
+### [X-Device Restore] Add lazy tab initialization on restore tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba7270f
+
+### [WebUI] Migrate OSFeedbackUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a622fef
+
+### [WebUI] Migrate EnterpriseReportingUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0c9fd1
+
+### [dPWA] Moving testing windows registration to os integration override
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1975a0
+
+### [FilesBulkPinning] Introduce new Google drive page handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1075f4
+
+### [omnibox][CR2023] Clean up code from omnibox "expanded state" colors CL.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21c3703
+
+### Tabbed mode home tab scope
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/760da60
+
+### webauthn: move "Manage passkeys" link to new PWM.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6cd589
+
+### support email OTP for VCN yellow path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73453a2
+
+### Show variations seed type in chrome://version page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6dea2b
+
+### [User Education] Reject IPH before the browser window is initialized.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19c9ab6
+
+### Jelly: Add dynamic color support for set time dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2b7dbe
+
+### [Read Anything] Modify separator colors on Blue and Yellow themes to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5d3064
+
+### [dPWA] Splitting the os integration test override into base & impl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/603d6f8f
+
+### Bookmarks++: Check for null image service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd4980d
+
+### Show the download toolbar button next to the location bar for popups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d350d3f
+
+### Remove ExecuteScriptAndExtractString under chrome/browser/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ce000c
+
+### [Read Anything] Add custom hover colors for the dropdowns.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c035dfa
+
+### [Extensions cleanup] Update context menu buttons in view controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b8d3db
+
+### Fix UAF in ExclusiveAccessBubbleViews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11069c5
+
+### [Omnibox] Pre-warm recycler view pool
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a12a190e
+
+### Avoid CHECK during IPH launch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40142ee
+
+### [sync] Remove outdated button in sync-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02a6f87
+
+### QA Rich Card: add unit conversion child view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/615396f
+
+### Add jelly color to InternetDetailDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4d1fff
+
+### Modify Chrome update-related text shown in Browser UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7b7eca
+
+### Fix menu button ink drops.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54d61ce
+
+### [GARU] Add empty dialog for desktop RU notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d82a3baa
+
+### Don't allow middle click to close home tab for tabbed web apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5626b114
+
+### Update chrome://version for ARM64 Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af0b6bf
+
+### Remove Static Methods in TabStyle and use Instance instead.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b25810
+
+### [Chrome Refresh] Add some new page action icons in the location bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bd7a4d
+
+### Clean up the default on high efficiency IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/274874c
+
+### Remove OptimizeGeolocationHeaderGeneration feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e11efd
+
+### Bookmarks++: Fix SortOrder ordering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f62ecf13
+
+### [GARU] Add a dialog for RU notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2367c3e
+
+### [UrlBar] Add TraceEvents for view update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffe06c6
+
+### [sync] Refactor SyncRequested setter in SyncUserSettings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cea3cb6
+
+### [Multiwindow] use wrap_content to show description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd7bc3e
+
+### Update check for Android to use BUILDFLAG
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44ea67d
+
+### [Sheriff] Disable GlanceablesTasksClientImplTest.MarkAsCompletedOnHttpError
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f15dee8
+
+### [Password Manager] Show move passwords to account dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64bf205
+
+### Fix privacy_sandbox_service name typos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20c55eb
+
+### mark flaky CQ's dangling pointers 2023‑W14
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09f6f06
+
+### Remove SupervisedUserDenylist
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c656800
+
+### [fyfre] Improve UMA logging of FRE starts and ends
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4db8e7
+
+### Quick Delete: Add Search history disambiguation notice to the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/561bba0
+
+### [Autofill] Fix ChromeAutofillClient::GetFastCheckoutClient() crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/479ba87
+
+### Pass uninstall reason to App Service in WebAppPublisherHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1689850f8
+
+### Remove flag win-10-tab-search-caption-button
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f395a86
+
+### Update the text on the Android Tailored Security Non-Sync Notification
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0bbaafd
+
+### [FreezeCast] Add flag for freeze cast
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/04f8c80
+
+### [Tab Capture] Remove RegionCaptureExperimentalSubtypes feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/07b80f4
+
+`);
+              </script>
+            </body>
+        </html>
