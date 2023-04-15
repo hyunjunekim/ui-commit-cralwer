@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-15
+### Add SchemeVariant to the CPM::Key and NativeTheme
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/019957b
+
+### Change fluent thumb to be 9 pixels wide.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb1ac6ac
+
+### Disable Video Processor Super Resolution if extension is not implemented in the GPU driver.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0baaed6a
+
+### Introduce a new dynamic color library
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61422548
+
+### Skip adjustment if the swap chain size is correct.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0669e4c
+
+### accelerators: Filter out calculator key accelerators on internal devices
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b414f32
+
+### Eliminate some double-declaration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e03a874
+
+### [a11y] Implements AXBitMap.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a432290a
+
+### [Sharesheet] Fix color and size for default favicon preview
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b127e478
+
+### Conditionally serve a CSS file from chrome://theme/typography.css
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51ee502
+
+### Add a new color token and update another
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c2917d
+
+### Bookmarks++: Add action menu vertical padding
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6359c7e
+
+### WebUI: Minify non-bundled JS code in build_webui.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed9afe7
+
+### WebUI: Add minify_js build rule.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/251fd88
+
+### [BoC Signin] Add fontFamily to TextAppearance to respect A11y bold text setting.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90365c5
+
+### Switch bookmarks to use DragReorderableRecyclerViewAdapter.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f7edb2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc947b0
+
+### fixup! ozone: Implement GetSupportedFormatsForTexturing for Ozone/Wayland.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d42bc2
+
+### Revert "[views] Fix textfield hover color."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fbef8dd
+
+### [Extensions] Apply extension permissions immediately on UI request.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b90d1bc
+
+### Bookmarks++: Default to visual view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/535f4cd8
+
+### Rename kUninstalledByMigration to kUninstalledByNonUser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ce9c283
+
+### Printing: Add metric for counting nearby printers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce18303
+
+### [Extensions cleanup] Use helper method to navigate in various tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3e2372
+
+### Fix font size buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0349002
+
+### Remove kBatterySaverModeAvailable from tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e12acf8
+
+### Fix build with use_dbus=false...
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c4146e
+
+### Hide adaptive charging elements from settings if not supported
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf9c00ff
+
+### [Metadata] Align text after setting flex config for the view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66a21e6
+
+### arc: Add app category to AppInfo mojo struct
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/963d0e1
+
+### [side panel] Add early return for non-normal window before showing side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7a179af
+
+### Replace deprecated SkImageEncoder APIs with new variants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdc94d7
+
+### Settings: Add top-level structure for GTMOOC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4724a4e
+
+### [Password Manager] Updating IPH promo content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/691afea
+
+### Reland "[Password Manager] Show "No passwords found""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61075d8
+
+### [ SavedTabGroup ] Change tab group title/color from sync updates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4874e8a
+
+### [Chrome Refresh 23] Add color definitions for omnibox icon colors to revert back for custom themes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1aa438f
+
+### [omnibox][Cr2023] Add #omnibox-cr23-action-chips features.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/221345f
+
+### win: skip PenIdBrowserTests on older versions of Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e45be8f
+
+### [Saved Tab Groups] Prevent double observation of a browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac3df14
+
+### [ SavedTabGroup ] Update tab group header + button look and feel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23caacc
+
+### Cleanup 'PasswordImport' after launch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8ff19503
+
+### Enable "GlanceablesTasksClientImplTest.MarkAsCompletedOnHttpError" test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3b3a0e
+
+### [fyfre] Add unit test for first run synthetic trial registration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1549f56
+
+### Side Panel: Don't allow accelerators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/464c845
+
+### Make ReadAnythingButtonView an ImageButton directly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cd3026
+
+### Revert "[Password Manager] Show "No passwords found""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95c9815
+
+### [Password Manager] Show "No passwords found"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6cb019
+
+### [BoC Signin] Fixed HorizontalDivider to span width of button rather than
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/180df0b0
+
+### Replace static imports for assertThat in chrome/ tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fa098d
+
+### Remove unnecessary absl::optional from color setters.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/969aaf7
+
+### Switch Assert.assertThat in chrome/ tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a4b2f3
+
+### [fyfre] Move ProfileNameResolver out of c/b/ui/views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d582464c
+
+### [GARU] Add basic desktop structure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41c63c9
+
+### [Passwords Import] Add support for M2 flows in PasswordManagerPorter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a1ab63
+
+### [Passwords Import] Add support for M2 flows in PasswordImporter
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d9fd428
+
+### [UPM] Add passwords importer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0d3c2d
+
+### Moved the screensaver policy handler creation to before session client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4a4467
+
+### preload: Pass preloading_attempt for bookmarkBar triggers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8ccff7
+
+### [fyfre] Refactor first run tests to expand the testing scope
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfbc4128
+
+### [FilesBulkPinning] Wire up new Google drive handler and add tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/566ed2d84
+
+### Reland "[fyfre] Set up initial First Run interactive ui test"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1880468
+
+### [omnibox][ml] Adds model execution triggered slice, CF param, metrics
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ca4dc5
+
+### [Empty States] Add feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ed8d9c
+
+### Adding chrome feature for prevent close
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/39e525b
+
+`);
+              </script>
+            </body>
+        </html>
