@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-18
+### Eliminate some double-declaration in base/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97951b4
+
+### gpu: win: Clean up DCompPresenter tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d542089c
+
+### Set has_been_password
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9aa25c
+
+### Realbox: Update sizes of secondary column matches
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/541b008f
+
+### Bookmarks++: Show hover highlight with context menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e599d1b
+
+### [RenderText] Add crash dump alias to check if range is out of bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ab8752
+
+### Fix GrammarFragment offsets.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3cd573d
+
+### Realbox: Hide secondary column if all primary matches are hidden
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e7d181c
+
+### Leave a comment to keep SampleColorScheme in sync
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/794d62f
+
+### Allow input type=range to have writing mode vertical
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a252fef
+
+### shortcuts: Hide privacy screen aliases when not supported
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8953d25
+
+### WebUI: Minify files in chrome://resources/js/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa6a2ea
+
+### Switch to the dynamic_color library in ref color mixer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b478c1d
+
+### [AXMode] Add optional AXMode bundle to command line switch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/375d922c9
+
+### [sheriff] Disable flaky MenuButtonTest on CrOS MSAN
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e81c7e
+
+### [views] Fixed tooltip and icons being cut off in vector_example.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8431347
+
+### lacros: Fix toplevel snap verion checks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c8fdde
+
+### lacros/color-management: update color space whenever it changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c052087
+
+### migration: Removing unnecessary color ids
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c04ddff
+
+### [color] Update Win high contrast for material mixers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78db6d7
+
+### Eliminate gfx::NativeFont
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9770f30
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99dbf06
+
+### [file manager] Add encrypted icon to CSE files in list view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14b21a6
+
+### [WebUI] Add migrated WebUIs to trusted type enabled and trusted type violation test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/690d00e
+
+### [Office upload] Separate Drive and OneDrive move preferences
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d672f2
+
+### [Start] Build histograms for click rates of Menu button on Start and NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d56b9a
+
+### [realbox] Adds triggered slice and CF param for secondary zero-suggest
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a7fe61e
+
+### [Chrome Refresh 23] Handle toolbar ink drop if reparenting of the view is going on.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2ba90f
+
+### [Android] Use BaseRobolectricTestRunner instead of Local-
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86849a0
+
+### [GMC+Cast on CrOS] Open the GMC dialog via Presentation API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7e6b4b
+
+### iwa: Introduce IsolatedWebAppTask in task manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa5d1165
+
+### Add WebAppIntegration test for app-settings command.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6290d50e
+
+### [FilesBulkPinning] Show dialogs when pinning error occurs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad66484
+
+### iwa: Create SiteSettingsHandler::GroupingKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/053f4d0
+
+### Reland: Fix Document PiP window inner bounds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea4cae60
+
+### Add basic mojom bindings for Eche accessibility.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc63b7e
+
+### [omnibox][realbox] Restore short-circuit returns without NOTREACHED
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4cdba2
+
+### Add more specific corner radius for TabStyleViews Paths/calculations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc47edc
+
+### [Chrome Refresh 23] Use Icon Instead Of Favicon For Google In Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94619d0
+
+### Add Preferences/Settings app menu item to Web App windows on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/384eb9b
+
+### [Leipzig][Desktop] Changes to account notices in Settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04da3b8
+
+### migration: Removing ScopedLightModeAsDefault
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16f8a273
+
+### Remove unused weak ptr factories in ui/views/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d0f8ee
+
+### Fix crash in ProfileManagementFlowController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c74d55c
+
+### browser_frame: Return user color from widget if no auto-generated theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/694e61a
+
+### Bookmarks++: Remove star dialog More button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/621674a
+
+### [Chrome Refresh] Enable toolbar corner radius only for Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0299620
+
+### [omnibox][Cr2023] Add chip colors.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a48dcd8
+
+### Add ChromeRefresh Tabstrip Hover state with animations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a27e80c
+
+### [fedcm] Skip the Profile Permission Prompt when scopes are broader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d6a467
+
+### [color] Fix recursive color recipe for Windows high contrast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6480c1
+
+### Add additional tests for back navigation hint metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cff9ec6
+
+### [Managed prefs] Cleanup highlight experiment
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/91bf0dc
+
+### [dPWA] Make manifest update wait till manifest url has loaded
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/799f20e
+
+### [Signin][Android] Prevent scrollbar from fading on welcome screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12f1996
+
+### Add infrastructure for an internals page for commerce
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/348d977
+
+### [Password Manager] Show only profile icon inside profile switcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/198dde7
+
+### AboutThisSite: Remove SecondaryIcon experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/354aa35
+
+### HaTS capability extensions for evaluating One Time Permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6723cef
+
+### Move from Manifest::UrlPattern to UrlPattern.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/355f433
+
+### [fyfre] re-guard ButtonsAreDisabledOnClickAndEnabledOnNavigateBack
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7371a67
+
+### [Leipzig][Desktop] Filter out sanctioned countries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d912ce0
+
+### [FastCheckout] Remove unused methods from AutofillClient.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10c55a6
+
+### cros: Show Gaia in dark mode in inline login
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9819389
+
+### [Privacy Hub] Add system UI for Timezone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb4f0ea
+
+### PinManager: Display percentages in chrome://drive-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3f8323
+
+### Dont allow window.close() to close home tab for tabbed web apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57a657e
+
+### [FilesBulkPinning] Add confirmation dialog for disabling pinning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fdcf59
+
+### Add Zero state filtering to the Journeys WebUI behind flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8ee03ca
+
+### [dPWA] Split up WebAppSyncGeneratedIconFix flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/51d16c8
+
+`);
+              </script>
+            </body>
+        </html>
