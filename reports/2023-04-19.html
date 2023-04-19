@@ -1,0 +1,336 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-19
+### [Files]: Futher bring Recents and Search in line.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/900f454a
+
+### [Jellybean] Add legacy mappings.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/542dc40
+
+### viz: win: Handle more cases for content rect in DCLayerTree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b33dac3
+
+### WebUI: Add \`noink\` property to cr-checkbox to allow hiding ripple
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e83b7cf8
+
+### [Read Anything] Use the custom border color on the background when there's a corner radius.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ff6542
+
+### gpu: adds ability to read/write metal shader cache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/833ff16
+
+### Make input state query method const
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d84228
+
+### Remove incorrect DCHECK and replace with others
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb61b68
+
+### WebUI: Set optimize=optimize_webui by default in build_webui.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/546af9f
+
+### Add helper to simulate a right click in the blank space of the file list
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17ec392b
+
+### gpu: win: Move OverlayTypeToString to dc_layer_overlay_image.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1dae87
+
+### [UI] Textarea cursor should respect textarea viewport
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/415f51f0
+
+### Fix clang warnings in accessibility code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e88100c
+
+### Retain reference to GLContext where an IOSurfaceImageBacking was created
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da0d002
+
+### dark_mode: Do not check IsDarkLightModeEnabled - part6
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e493e017
+
+### Fix shell_dialogs_unittests flakiness
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c6d124
+
+### Bookmarks++: Increase gap between title and url
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ef6a3e
+
+### [lacros] Do not process drag motion events if \`screen coordinates\` is ON
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15f1d03
+
+### KDE6 desktop integration
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/153865a1
+
+### Revert "Fix Regression: Size of text caret is longer then expected on bookmarks overlay"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f9c1a7c
+
+### Add DumpWithoutCrashing for errors in ToggleVpSuperResolution on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a80d28
+
+### [Test Automation] Log() now accepts callable arguments.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64df1ab
+
+### Reland "[Linux/Ozone/Wayland] Support fractional-scale-v1"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8b4f6b
+
+### Provide run-time descriptions of input state enumerations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfd9397
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b94948
+
+### [file manager] Add missing type annotation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c1eb4c
+
+### [odfs] Move ODFS extension ID to shared constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85a5dae
+
+### Make the toolbar navigable by arrow keys.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59b22c8
+
+### Do not inject LocalState to UserManager after creation for testing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2259d6c
+
+### [DoH] Check DoH provider feature flags less often where possible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82d8414
+
+### [ChromeCart][Quest] Show Cart tile in Quest module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eff8794
+
+### Check if speech recognizer pointer is valid.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb2387ae
+
+### sheriff: disable BrowserNavigatorTestChromeOS.OsSchemeRedirectSucceed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e1414c0
+
+### [ChromeCart][Quest] Add Cart Processor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c684ffaf
+
+### jelly: Jellify the internet config dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/874647a
+
+### [SmartLock] Deprecate smartlock signin enabled pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/402a392
+
+### Add Tab Divider styling and colors for ChromeRefresh2023.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42871890
+
+### Fix and enable PopupBrowserTest fixtures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d5937e
+
+### holding space: Remove one-off AddPhoneHubCameraRollItem method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c857f57
+
+### Update csc name and icon for side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/566025f
+
+### Reland "Add CUJs to verify launching an app opens it in the right profiles."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9885e52
+
+### Add support for image search menu item and region search to open companion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4e646c1
+
+### Move high efficiency chip helper code to utils file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e0f207
+
+### [GARU] Show only measurement settings for restricted users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d283bbc
+
+### CrOS GMC V2: Use Jelly colors for updated UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9988ea02
+
+### WebUI tab strip: update colors for GM3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/996d1053
+
+### [OOBE][CHOOBE] Implement skeleton for the DisplaySizeScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c494b3d3
+
+### [Chrome Refresh 23] Handle themes with chrome refresh flag for toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84a06d6
+
+### Register HelpBubbleFactoryViewsAsh.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b39e4b
+
+### Storage pressure: try automatic eviction before nagging user.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7f3224
+
+### DanglingPtr: fix unretained dangling ptr in LaunchWebApp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0773948
+
+### Refactor and improve SetMacShimStartupDoneCallbackForTesting.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/524a8cd
+
+### Modify LaunchFromChromeApps() to use App Home.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a4f074
+
+### [bookmarks] History service uses bookmark UUID instead of ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9741ea2
+
+### [ChromeCart][Quest] Add cart tile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd46dda
+
+### Add versionCode to about:version
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/948c479
+
+### [OOBE] Clean up Consolidated Consent Feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f8f7e0b
+
+### Remove raw_ptr in arguments and return value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d94385a
+
+### [OOBE][CHOOBE] Include TouchpadScrollScreen in CHOOBE flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10964ef
+
+### [Signin][Android] Add a thin line at the bottom of the scrollable area
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e463ae
+
+### Add extension management to SupervisedUserExtensionsDelegate interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df4784a
+
+### [AboutThisSite] Field trial for AboutThisSiteKeepSidePanelOnSameTabNav
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3968364
+
+### Delete WebAppLaunchManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e630f5
+
+### preload: bookmark metrics for duration from the last move event
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67ced56
+
+### [sync] Make ClearSyncRequested private to SyncService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97b3f59
+
+### Add a learn more icon in the device content settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f506340
+
+### [UPM][Import] Add store picker for account store users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d471db7
+
+### Update game dashboard skeleton code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4061740
+
+### Reland "Second flag for diacritics"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8cbc27b
+
+### Gainmap HDR Images: Fix chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1e62f19
+
+### borealis: add flag to control dGPU enablement
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03b5c24f
+
+### Fix the trigger experiment for the forced on group
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7ec16ed1
+
+### Reland "Add flag to make device-width default on Clank"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e2396e2
+
+### Revert "Add flag to make device-width default on Clank"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cfbf0fd
+
+### Printing: Add Printer Settings Revamp feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4d4ab131
+
+### Add chrome://flags entry for gainmap HDR images
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/39af14a
+
+### [DataRetentionPolicies] Adding Flag for Data Retention Policies Change
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/65cafa5
+
+### Remove battery saver from chrome://flags since it is fully launched
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a7a8f3ca
+
+### Adding chrome feature for keep alive
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f35f0a0
+
+### Remove #robust-audio-device-select-logic
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df464082
+
+`);
+              </script>
+            </body>
+        </html>
