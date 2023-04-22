@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-22
+### Realbox: Polish some updates to entity suggestion images
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc59e19
+
+### Realbox: Make two column layout realbox smaller
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8798304e
+
+### CR2023: Add separate flag ChromeWebuiRefresh2023 for WebUIs
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e6d9a86
+
+### [Read Anything] Use custom fonts in the combobox dropdown button.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/348d816
+
+### Realbox: Some minor updates to the UI for headers and secondary results
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a9908e
+
+### Cleanup ui/wm/core/DEPS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41120ec3
+
+### [A11y] Extensible enum should not error at default value
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4189d9a
+
+### [a11y] Implement ax::mojom::Action::kBlur
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8927f03
+
+### cros_next: Window caption bar visual update
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38e488e
+
+### cr-link-row: Depend on loadTimeData for external links.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b18cded5
+
+### MiraclePtr: Rewrite chromeos-ash [2/N]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bc51c7
+
+### Apply notification next changes on the image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32e712b
+
+### float: Add float caption button type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99a4faa
+
+### [Android/MediaPicker]: Fix crash when dismissing permissions.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fac91c97
+
+### Reland "Prerender: Fix prerender new content timeout start timing"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16c09ed
+
+### [FilesBulkPinning] Pass chrome preferences into the store
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae98733b
+
+### Reland "Break down the "GenerationToBrowserMain" stage for ScrollUpdate with blocking touch moves."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6b2fb4f
+
+### [FilesBulkPinning] Update test to use assertDeepEquals
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/299c47f
+
+### ozone: evdev: Add quirk to identify 0x18d1:0x5061 as internal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a4c7c1
+
+### [FilesBulkPinning] Pass the bulk pin progress data to the store
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b34b69b
+
+### [Files]: Hide highlighted directory tree entry during search.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc04e1e
+
+### [Extensions c2s] Add site access toggle for each extensions menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1ed72a
+
+### iwa: Update IsolatedWebApp check in WebAppMenuModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80a49d9
+
+### iwa: Add displayName field to SiteGroup type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7742620
+
+### iwa: Remove ExtensionRegistry parameter from GetExceptionsForContentType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bb8eb68
+
+### [iOS promo] Feature flag with params for iOS passwords promo on desktop
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3dcf753
+
+### holding space: Update HoldingSpaceItem::Type checking method names
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/786a51c
+
+### Disable system context menu for document picture-in-picture browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/138194ce1
+
+### [Password Manager] Show "Autofill and passwords" in settings menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2658e18
+
+### [dPWA/AppHome] Show deprecated dialog on Command Line app launches
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00392e748
+
+### Remove 'No languages added' label from the caption settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/381932a
+
+### [FSA] Implement remove individual grant functionality on settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85a3aa60
+
+### [views] Updated some permission Icons in Page Info UI to new Cr2023 versions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da6a1e4
+
+### Revert "Update highlighting and interaction for side panel toolbar buttons."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1196b5
+
+### [Extensions cleanup] Remove unnecessary namespace from variables
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfeacda
+
+### [ChromeRefresh2023] Add Autofill menu + submenu to three dot menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b655c5
+
+### Make the RWHVMac delegate creator return an autoreleased object
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf3455a
+
+### cros: Update the recovery warning UI in Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e99096
+
+### [Lens]Send processed image size with Lens requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7c061e
+
+### Replace the email icon for email OTP dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c75aa9f96
+
+### Mandatory ReAuth Settings toggle implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c45d470
+
+### Remove optional wrappers from vectors in app restore data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b4e99b
+
+### Register home button and status area for Welcome Tour tutorial.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27cb596
+
+### [Extensions] Fix for non-inspectable extension side panels if flag is on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad08fbbe
+
+### [CR2023] ChroMenu bookmark submenu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/350cefa0
+
+### [Chrome Refresh] Make changes to icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e52a263
+
+### [win] Prevent browser windows from resizing smaller than the titlebar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2f25af
+
+### Support the side panel's open in new tab button for csc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69240a7
+
+### [Read Anything] Migrate Read Anything WebUI to chrome-untrusted.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4831a22a
+
+### Add classroom and tasks API base urls to \`GaiaUrls\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38a81a9
+
+### [privacy sandbox] Update widget position on size change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63325bb
+
+### Only show high efficiency chip at most once every N days
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58bb3cd5
+
+### [UPM][Import] Add import link from empty passwords list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fb74e3
+
+### Minor cleanup in CanOpenProfileOnStartup()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a564bee
+
+### Quick Delete: String updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1d6cceb
+
+### sharing: remove async preview image support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46becd9
+
+### [dPWA] Introduce ForceUnregistering logic for sub managers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdaec3d
+
+### Persist the recommended default search provider in the provider list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac41f8d
+
+### [Passwords] Align the title with the content in the details view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9359039
+
+### [CrOS settings]: add a Passpoint details page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef37bea
+
+### [UPM][Import] Add 'delete file' checkbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f33efdb
+
+### iwa: Add \`*KeepAlive\`s to InstallIsolatedWebAppCommand
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbe2e02
+
+### [Password Manager] Check sync_service before using it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee17376
+
+### [sync] Make IsSyncRequested() private to SyncService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24b76f5
+
+### WebApp: use goldfish StoragePartition domain for experimental isolation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/618f0e0
+
+### [WebUI] Migrate GuestOSInstallerUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29f3712
+
+### [WebUI] Migrate OobeUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6811a6
+
+### [Password Manager] Show "New" badge next to Password Manager menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22053ada
+
+### Revert "[Office upload] Use BrowserListObserver to wait for created Files app"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8d5db7
+
+### Migrate RemoteMaintenanceCurtainUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54cf07c
+
+### [Performance Controls] Introduce discard time pref
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fbb6598
+
+### media: fix oopvd variables in media/media_options.gni
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6bceb9a
+
+### [video-tutorials] Remove \`video-tutorials-instant-fetch\`
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a074105
+
+### Remove expired audio-url flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/879a3e58
+
+### arc: Add arc-external-storage-access to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/26d9aa1
+
+`);
+              </script>
+            </body>
+        </html>
