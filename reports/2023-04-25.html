@@ -1,0 +1,392 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-25
+### Include client-drawn window decorations in aspect ratio.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a06e75
+
+### Revert "ax: ensure invisible views are not included in platform a11y views tree"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/824c114
+
+### float: Remove multitask menu feedback button
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24bfc44
+
+### events: Properly decode arm/external vivaldi action keys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/809089b
+
+### CR2023: Update WebUIs to use new ChromeWebuiRefresh2023 flag
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7fccaa
+
+### Revert "[a11y] SetSize/PosInSet computed incorrectly for nested \`TreeItems\`"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41815c0
+
+### accelerators: Retrieve Top Row Are F-Key setting from split settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d555f139
+
+### [User Education, CR2023] Correct color, padding, and size for Views
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2632490
+
+### gl: Try older GLES versions on EGL_BAD_ATTRIBUTE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8eff2b3
+
+### Remove ui::InProcessContextProvider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1089eae
+
+### Remove DumpWithoutCrashingForVpSuperResolution on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2888a14
+
+### ax: ensure invisible views are not included in platform a11y views tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dfb76664
+
+### Add cros.sys.disabled-opaque color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e2ad672
+
+### [a11y] SetSize/PosInSet computed incorrectly for nested \`TreeItems\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/199d044
+
+### Reland "[A11y] Extensible enum should not error at default value"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4129f78
+
+### [wayland] Fix zaura_toplevel version checks in WaylandToplevelWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68ccb10
+
+### Add ConvertTrackpadEventsToMouse to chrome:flags for Android.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/99b42f4
+
+### [CR2023] Fix app menu icon and text colors.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d8c560
+
+### ui: Enable passthrough by default on CrOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fddc535
+
+### Convert base::clamp() to std::clamp() in ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69982e4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c007d5f
+
+### [Sheriff] Disable failing test on Linux MSan
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab89918
+
+### Revert "[A11y] Extensible enum should not error at default value"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b266f7ce
+
+### Revert "Recreate inkdrop ripple and highlight when theme changed"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f24e790
+
+### [CSC] Setup metrics logger
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8406b81
+
+### Add WindowSnapWMEvent class for the snap events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a2e056
+
+### [SavedTabGroups] Paint drop indicator in overflow menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7aaffd4
+
+### [Extensions] Adds a CHECK that site access is updated only when allowed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27c8c3a4
+
+### Settings Split: Change remapping page strings to lower case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37fd444
+
+### Misc. cleanup. No functional change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7066c6
+
+### [ SavedTabGroup ] Prevent crash in incognito when created a tab group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0503ede81
+
+### Printer settings: Add new strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bacd2d6
+
+### Add Google Translate item to 3-dot menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82bb1b9
+
+### preload: Add on-hover bookmark triggers for prerender
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af7370a
+
+### [FedCM] Add Android UI for the Context API
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1aef096
+
+### Bookmarks++: Bulk undo context menu delete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4568824
+
+### [Extensions] Add action to toggle side panel on icon click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a5ab1bd
+
+### CR2023: Update stroked text input background hover color in Side Panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61620a9
+
+### [Nearby Share] Add jelly support for dynamic colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25e567f
+
+### Consolidate print backend registration code in PrintPreviewUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19a4c81
+
+### Add extension approvals variant for ShowDialogError histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b9d533
+
+### Revert "Remove ContentSettingsType::PPAPI_BROKER"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a5b91b
+
+### [CSC] Add companion query params to image upload URL.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7d7dc4
+
+### Fix GM2 colors for NewTabButtons and Fix Tab Divider CR Colors.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c80449
+
+### [FedCM] Implement modal dialog view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fab19f
+
+### Replace base::GUID uses with base::Uuid (180/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ded540
+
+### Keep saved tab groups closed by Close Tabs To The Right / Close Other Tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33c0f4aa
+
+### Reland "[Password Manager] Using extension-controlled-indicator"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c8b61f8
+
+### Open new tab on context menu entry points when incognito/guest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e8da5f
+
+### [CR2023] Update icons for PWA items in 3-dot menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9c2cd4
+
+### Revert "[CrOS settings]: add links to Passpoint provider details"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5d4133
+
+### [FedCM] Modify the loginHint implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d49106
+
+### [Read Anything] Test the Read Anything WebUI in a browsertest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f3988a8
+
+### Settings Split: Fix chromevox for cr-toggle in device pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/085ff93
+
+### Refactor response handling code for Rich Answers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/898bfd84
+
+### Replace absl::make_unique with std::make_unique
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1521404
+
+### saved_desks: Admin template adjustment of launched window bounds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4ab23b
+
+### [Password Manager] Record metrics related to menu interactions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5170d55
+
+### Added device lock to FRE sign in on automotive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7db9ec
+
+### [Passwords] Set a more accurate max title width for mgmt bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91a196b
+
+### Add a button to reset permissions on the device content settings pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12624a93
+
+### [PhoneHub] Stop observing tab updates when JS is not allowed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b32dd5
+
+### [LocationBarModel] Remove spurious updates for same document navigations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45c1206
+
+### [Password Manager] Record metric when Password Manager opened from menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f6fe7ce
+
+### Revert "[FastCheckout] Re-enable render tests."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6a7ac2a
+
+### [Password Manager] Hide add shortcut option when web apps can't be added
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d31e958f
+
+### [M114][UPM][Import] Add conflicts state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bead62
+
+### [CR2023] Use 20pt dialog margin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/807f58d
+
+### [sync] Refactor SetSyncRequested away from SyncUserSettings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/910bc87
+
+### [Leipzig][Desktop] Addresses in Settings, a11y label for no-cloud icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a144706
+
+### [Leipzig][Desktop] A11y labels for the Save prompt profile sections.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/072a666
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7336b611
+
+### [fyfre] Set the initial profile name from the user's name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81cbcf4
+
+### [Passwords] Assign a max width for the title in the mgmt bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b277a7b
+
+### Cleanup APIs and assertions related to gaia navigation observers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10c67f9
+
+### [Passwords] Enable RevampedPasswordManagementBubble field trial config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b9133f7
+
+### [FastCheckout] Re-enable render tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16dbbc1
+
+### [Sheriff] Disable flaky win-asan test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e65bc4
+
+### [Passwords] Align the error message with the contents in the textarea
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbdcdc3
+
+### [Sheriff] disable flaky test on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96f26a4
+
+### OOBE: Remove \`RegisterMessages()\` from screens handlers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f37495
+
+### [Leipzig][Desktop] Source notice in migration address editor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6b98687
+
+### MiraclePtr: Rewrite chromeos-ash [6/6]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3939693
+
+### [Sheriff] Disable failing test on linux and chromeos dbg
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/543a1e3e
+
+### [Sync][Lacros] Update Sync System Settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09a6271
+
+### [Leipzig][Android] Change UI messages after revision.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/994601aa
+
+### Revert "[CrOS settings]: add a Passpoint details page."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9e8ee32b
+
+### [OOBE]: Add DrivePinningScreen to OOBE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b021bf5
+
+### [Sync][Lacros] Update Sync System Settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4929979
+
+### Revert "[Performance Controls] Introduce discard time pref"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dc53268
+
+### ✉️  Add flag for TWA PostMessage.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9eea1c0b
+
+### [UPM cleanup] Remove reenrollment flag and corresponding params
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9a44118
+
+### [clank] Expose Extended Keyboard Shortcuts Flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c70686e
+
+### support-tool: Add feature flag to guard copy token button
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1eca9621
+
+`);
+              </script>
+            </body>
+        </html>
