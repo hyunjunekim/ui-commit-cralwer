@@ -1,0 +1,336 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-26
+### [FilesRefresh] Use the new typography tokens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19217b3
+
+### accelerators: Block shortcuts with BROWSER_SEARCH when external kb DNE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72fa640
+
+### Revert "Provide run-time descriptions of EventConvertEvdev and children"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77b7285
+
+### [FilesRefresh] Update state banner SVG
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dce8222
+
+### [FilesBulkPinning] Move bulk pinning progress to FileManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ff9b8f
+
+### Fix WidgetCaptureTest failure on WinArm64
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/660f5f54
+
+### ui: test: Allow subclasses of SkiaGoldPixelDiff to specify optional keys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ddf356
+
+### Revert "Reland: ax: ensure invisible views are not included in platform a11y views tree"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc31cf23
+
+### Fix Test to be compatible with mockito 5.2.0.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43d2d3d
+
+### Fix anchoring for DialogDelegate bubbles outside of the anchor bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f55c7799
+
+### Reland: ax: ensure invisible views are not included in platform a11y views tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55e76a93
+
+### Use moved SkICC.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b52bc02
+
+### Change worker context back to GPU raster
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94febc8
+
+### gpu: win: Add WaitForCommitCompletion to GLTestHelper::ReadBackWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/454761d
+
+### Reland "[a11y] SetSize/PosInSet computed incorrectly for nested \`TreeItems\`"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9e5982
+
+### Provide run-time descriptions of EventConvertEvdev and children
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79a28a0
+
+### [lacros] Fix uint32_t casting of device scale factor.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81b77a5
+
+### gpu: win: Make GLTestHelper::ReadBackWindow return a SkBitmap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38d464b
+
+### Adding source URLs for clipboard ::WriteText
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26dc712e
+
+### [Android/MediaPicker]: Flesh out the test a bit more.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd9caec
+
+### [fuchsia] Remove unused fuchsia.sys dependencies
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a231b3f
+
+### Remove noisy unhelpful NOTREACHED() for a11y description-from attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8c4ea0
+
+### Make sure ResourceBundle is always initialized
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca6ce1e
+
+### Remove TransferableResource::filter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35a372d
+
+### ozone: Construct TextInputExtension GlobalObject upfront in tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2941ed0
+
+### [Android/MediaPicker]: Fix crash during permission interrupt
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f183491
+
+### float: Add regression test for window can't get events after tuck
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f82a4e
+
+### Move ReportingUserTracker out from ChromeUserManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a55caf
+
+### Fix crash: NTPResourceCache::GetNewTabHTML Check failed (false)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cb1b0e
+
+### [WebUI] Enable trusted types CSP in network ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e3aa39
+
+### Make GetInterfaceVersion(CrosapiInterface::Uuid_) private and hide Uuid_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca8e7c7
+
+### Make MediaDialogUiForTest observe MediaItemManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c0d5a9
+
+### Fix omnibox test for Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47c61732
+
+### [Extensions c2s] Remove strings from extensions tabbed menu view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1be8e10d
+
+### Check if profile is null in DownloadToolbarButtonView::OnPartialViewClosed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/464cb04
+
+### Bookmarks++: Add check on context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4be2fd5
+
+### [PriceTracking] Allow to override the default IPH_PriceTrackingPageActionIconLabelFeature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/077694d
+
+### iwa: Handle null WebAppProvider in UrlIdentity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87aa75f
+
+### IPH [4]: Add metrics for back navigation menu usage events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/358e4a5
+
+### [omnibox][CR23] Update suggestion focus bar color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6ca3c7
+
+### IPH [3]: Add IPH experiment for back navigation menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f42b00d
+
+### [FedCM] Add continue button to failure dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88f681c2
+
+### Integrate cq text search into csc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5afddb5f
+
+### Only show expanded chip for extended discard periods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa5a602b
+
+### Remove some trivial uses of ExecuteScriptAndExtractBool under chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdcb804
+
+### Use Kernel32Version() for skip logic in PenIdBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a954a00
+
+### Remove memory saver and energy saver flags from WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b65d9d
+
+### [FedCM] Add iframe domain to failure dialog on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2cc399
+
+### Update the tailored security desktop dialog string for non-sync in flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5c12b2f
+
+### pip2: Prevent camera button from being a11y-focused when hidden
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3daffe8
+
+### Add Supervision: Utilize Shared Error and Offline Screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb2aee3
+
+### Auto-verify setting page UI updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/113239f
+
+### code health: remove expired Tab.TabUnder.* and Tab.VisibleTime histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75ea38d
+
+### [CR2023] Fix non-CR2023 menu backgrounds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8138f9d
+
+### Avoid dangling ptr warnings in ~ShoppingListUiTabHelperTest()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f3b846
+
+### Avoid spurious dangling ptr in TestWithBrowserView::TearDown()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7745540
+
+### [Password Manager] Record metrics related to promo cards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb0059af
+
+### [Read Anything] Move AXTree-related work to ReadAnythingPageHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8daf86dd
+
+### [M114][Passwords] Consider importer in progress when in conflicts state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d4b0c1
+
+### Mac: defer closing extension popup when context menu is showing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d50194b5
+
+### Make the RWHVMac delegate creator return an autoreleased object
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2bb539
+
+### Record the use of an Action in Suggest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a356afda
+
+### [ODPPC] Explicitly set the trigger_notification.. field on issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f76f92
+
+### Exclude unimplemented function definitions on the Android platform
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbcd9e7
+
+### Revert "Add WindowSnapWMEvent class for the snap events"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3557c490
+
+### Revert "Add \`snap_action_source_\` variable in WindowSnapWMEvent"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/884a6a5
+
+### Re-enable some tests accidentally disabled on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b184082
+
+### Update notification content strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b37e62e
+
+### Add one time permission mechanisms metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71f3935
+
+### Disable flakily crashing test on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b75db7d
+
+### AboutThisSite: Hide pageinfo entry in PWA windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cc3f4b
+
+### Revert "[Read Anything] Test the Read Anything WebUI in a browsertest."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/698cff7a8
+
+### [Extensions] Fix dangling pointer caused by OTR profile destruction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98a277a
+
+### [Leipzig][Desktop] Fix autofill suggestion IPH on Windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a3e149
+
+### certificate manager: Don't show NSS built-in trust anchors when Chrome Root Store is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7bddcf
+
+### Add \`snap_action_source_\` variable in WindowSnapWMEvent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a780234
+
+### [Extensions] Curry and use messaging ChannelType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/877d8eb
+
+### Add chrome://flags entry for highlighting memory savings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/56cd69b
+
+### Add chrome flag for testing text fragment lookup API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/41f3cf2
+
+### Add FillingAcrossGroupedSites flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e537c2
+
+`);
+              </script>
+            </body>
+        </html>
