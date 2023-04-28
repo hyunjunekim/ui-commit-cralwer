@@ -1,0 +1,288 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-04-28
+### Files app: Make offline icon 20x20
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdb6a67
+
+### XfBulkPinningDialog: Modify to match specs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/edcbbeab
+
+### Enable DWM fullscreen optimizations for video playback.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/693b66c
+
+### ozone/wayland: Add nullptr checks for wl::RootWindowFromWlSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf29ecab
+
+### Files app: Change offline icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5334cc6
+
+### [FilesRefresh] Address feedback from the review
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddaa905
+
+### WebUI: Create bundle_js build rule.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/253c079a
+
+### Revert "[CR2023] Position the bubble close button at the end of the title row"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/271f61c
+
+### Restrict //ui/base:ui_data_pack visibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa393b0
+
+### Jelly: Update cros_color_overrides.css file overview
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c97c2875
+
+### Use constant NSStrings rather than call base::SysUTF8ToNSString on a constant
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa24581
+
+### Log {Set|Get}KeyboardState errors in retail builds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f205c27
+
+### Refactor progress_ring_utils to fix graininess
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c17e08be
+
+### [a11y] Text Offsets crashes, follow-up CL for CL:4394308
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e18dca0e
+
+### [CR2023] Position the bubble close button at the end of the title row
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/284f1e3d
+
+### [User Education, a11y] Make all help bubbles have close buttons.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/217c27fe
+
+### [ImmersiveWindow] fix window layout
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb6b2fe
+
+### [AXMode] Disallow changes to AXMode in AXPlatformNode if command line AXMode bundle has been passed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1695614
+
+### Fix offsets in FormatString() for RTL strings on Linux and ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e80ef2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60948543
+
+### Use ANGLE extension to skip texture renderability checks.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/571b79a
+
+### Move cursor constraints from WebCursor to ui::Cursor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e77d870
+
+### [FilesBulkPinning] Make the "Google Drive settings" link work
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/274f985d
+
+### XfBulkPinningDialog: Display Drive icon with correct colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab1dffa
+
+### [Files]: Show recency options if in recent, with location Everywhere.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07c7791
+
+### Factor out some common code from tests with BasicAuth prompts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dd87a0
+
+### borealis: replace Expected with base::expected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e8fbfa
+
+### IPH: Close the feature promo when the back navigation menu is opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0321ad8
+
+### Separate metrics between manual and policy installs for first session
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/791f35cc
+
+### gif_recording: Force disallow GIF for fullscreen and windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/826ec0b
+
+### Move omnibox popup test to interactive_ui_tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/333ebaa0
+
+### [Omnibox[ Implement spacing changes for smaller margins variant
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e8c74c
+
+### [PriceTracking] Add IPH for the chip
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f8d132d
+
+### Welcome: Remove attribution URLs for some NTP backgrounds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d9afff
+
+### [win] Show the tab search caption button in the system-drawn titlebar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c733557
+
+### Hiding a mojo call underneath \`qrcode_generator/public/cpp\` API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/085a150
+
+### Remove \`..QRCodeRequest::should_render\` and \`...QRCodeResponse::data\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18bebc4
+
+### CR2023: Update Customize Chrome top-level view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b21b294
+
+### Add Updated Unit Tests for Floating Workspace Template Capturing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73ce25f
+
+### QA Rich Card: add result type icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/971ae5a
+
+### Remove unneeded header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9723720
+
+### Mark printing::PrintRenderer as Ash-only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be4236bc
+
+### CrOS Settings: Record verified access enabled/disabled for session
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f42a29
+
+### [dPWA] Fix FileHandlerLaunchDialogTest to trigger OS integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7032326
+
+### Remove ActiveDirectoryJoinDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04dbab0
+
+### Printer settings: Add printer status request to CupsPrintersHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84b2288
+
+### [DownloadBubble] Unconditionally clear pending animation bit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9984841
+
+### [ChromeRefresh2023]Fix conflict for password manager and CR2023 experiments for M114
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d534a07
+
+### support compressed about_os_credits.html on cros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff0c081
+
+### Keep profile alive for duration of PasswordManagerPorterTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a7dbf8
+
+### Move print_test_utils.h into namespace printing::test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8510c8
+
+### Add MediaRouterWarningChromeRefreshIcon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6b1188
+
+### [Password Manager] Hide "Password Manager" item in the menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/876d4ed
+
+### [Passwords] Support reauth in native bubbles on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b9d007
+
+### [profiles] Update the "close window" keyboard shortcut used in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8683d48
+
+### [OOBE] Skip Assistant Setup screen for CHOOBE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16e894ec
+
+### Unify supervisedUser and childUser in Sync status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5592c65
+
+### dlp: Add DLP info to file manager IO task
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45e7d60
+
+### [fyfre] Cleanup the PromoGaiaFlow feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1924ca1
+
+### Remove skare@chromium.org from chrome/browser/ui/views/try_chrome_dialog_win/OWNERS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d535c4
+
+### Allow history deletion for supervised users in CBD on Desktop platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9c30f01
+
+### [Sync][Lacros] Update the Sync Controls page in browser Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e055a80
+
+### [FilesRefresh] Dynamic color support for cloud upload dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9340f0
+
+### cros: Rename AccountAdditionResult to AccountUpsertionResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9672afa
+
+### iwa: Handle CLI flags earlier during Chrome startup
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f744c05
+
+### [Extensions c2s] Display access in extensions site permissions buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24993fa
+
+### [Omnibox] Merge clipboard suggestion on NTP/Start
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ad4d7af
+
+### Cleanup UseRealColorSpaceForAndroidVideo
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3c4e6f2
+
+`);
+              </script>
+            </body>
+        </html>
