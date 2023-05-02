@@ -1,0 +1,192 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-02
+### [FilesBulkPinning] Add badge for items that are shortcuts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75d97b2
+
+### [Jellybean] Blend vars and nested blends
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/446410b
+
+### App Management: Switch permission toggles for ARC-T to read only
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7cdeb74
+
+### accelerators: Hide keys only available on external keyboards
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c93459
+
+### Reland "[fuchsia] Migrate accessibility/platform to Natural FIDL Bindings"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aadba89
+
+### gpu: adds metric to track metal shader cache hits/misses
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb253e3
+
+### Allow navigation with arrow keys in tables
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bdc695f
+
+### [UIA] Don't expose Invoke pattern for role="tab"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0f206c8
+
+### android: Enable frame deadline API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a6a72d5
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f22ea3c
+
+### Check nullptr in ZWPTextInputWrapperV1::Activate()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94af9d1
+
+### XfBulkPinningDialog: Add error and offline footers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2d9254
+
+### [Jellybean] Introduce blend with explicit mix percentage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13fd938
+
+### [FilesBulkPinning] Expose not enough space state for xf-cloud-panel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60304a36
+
+### inputs: Tag key events that need long press to be suppressed.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62a6e56
+
+### Files F2: Remove the non-Store FileTasks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b7e96c
+
+### Fix incorrect bg color elevation mappings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9fc1332
+
+### [FilesBulkPinning] Wire up PAUSED to update xf-cloud-panel to offline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/808690e9
+
+### Revert "QA Rich Card: update icons on QuickAnswersView"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4195656
+
+### [ntp] Restore dark logo color for select CWS theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cd34e8
+
+### [Extensions c2s] Remove site settings methods from ExtensionActionRunner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6716585
+
+### Check LiveTicks to decide whether to expand the memory saver chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37e0371
+
+### Refactor Browsing Topics to use a locally held ML Annotator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad99d6f6
+
+### [CSC] Fixed sign-in logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81e6b31
+
+### QA Rich Card: update icons on QuickAnswersView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98c089ae
+
+### [Omnibox] Don't fetch favicons for search suggestions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68ca71a
+
+### Replace deprecated InstrumentationRegistry.getTargetContext()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8d8107f
+
+### [Extensions c2s] Update extensions icon when extensions are blocked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99734cd6
+
+### [color] Revert to GM2 colors for system-independent high contrast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97e537d0
+
+### [bookmarks] Hook up improved bookmark row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5bf01c
+
+### [CR2023] Add CSC item to 3-dot menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df5d8269
+
+### [CodeHealth] Fixed mock method and formatting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af0fc7d
+
+### Make the focus ring gblue300 for dark mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ec1123
+
+### Printer settings: Record number of saved printers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/276d531d
+
+### Remove ExecuteScriptAndExtractBool from chrome/browser/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a52eba3
+
+### Update performance IPH to make clear they dismiss permanently
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7a917f
+
+### [WebUI] Add variadic template for component WebUIConfig creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8148a24
+
+### [omnibox][ml] Preserve would be default match from legacy system.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/de8ab62
+
+### Printer setting: Create feature flag for printer status
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f92f149
+
+### [TabStripPerformance] Delay temp strip removal until ready (or timeout)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2817694
+
+### [omnibox][domain] Cleanup HQP specificity post-launch.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/01dac67c
+
+### [omnibox][short-bookmarks] Cleanup post-launch.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/055c90f8
+
+### [omnibox][doc] Cleanup denoise.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ff57974
+
+### [omnibox][shortcut] Clean up shortcut expanding feature code.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2bc16e9
+
+`);
+              </script>
+            </body>
+        </html>
