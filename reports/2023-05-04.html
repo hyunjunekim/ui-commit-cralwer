@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-04
+### [Files]: Hide clear (x) button when there is no query
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb66278bf
+
+### inputs: Fix reset bug in surrounding text tracker.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5873541
+
+### XfBulkPinningDialog: Add requiredBytes and freeBytes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f25089a
+
+### [FilesBulkPinning] Wire up not enough space state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9fac57
+
+### [FilesBulkPinning] Don't show Pinned toggle when bulk pinning enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba2ed62
+
+### [FilesRefresh] Update colors for thumbnail background
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df41136
+
+### [FilesRefresh] Fix the tooltip overflow issue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cec97a1
+
+### App Management: Add 'details' field for publisher permission status
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1fa959
+
+### shortcuts: enable new Shortcuts app on by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02ba449
+
+### [wayland] Switch WaylandWindow subclasses to use WaylandZAuraSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ca575b
+
+### [wayland] Create WaylandZAuraSurface client-side wrapper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c2ff0d
+
+### CR2023: Refresh shadow colors and add elevation to floating buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1752faf
+
+### [webui-cc] Default enable source maps on coverage builder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b57bd5
+
+### events: Add KeyboardDevice to expose low level info via DDM
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11ec484
+
+### [Element Tracker] Avoid problems with Mac menu events.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cfc4f31
+
+### [CR2023] Use Tonal button in permission bubble
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8666f6e
+
+### ui/display: Add a new DisplayPortObserver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb568ab
+
+### ui/android: Minor tweaks in OptimizedFrameLayout
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa16519
+
+### ui/display: Add custom sys_path for FakeDisplaySnapshot
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08e3b1f
+
+### [Android] Enforce minimum max width for dropdowns
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51ee04e
+
+### Revert "[lacros] Add client stub for lacros overscan insets API."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be5fd8e
+
+### Intents: Remove intent picker auto-display behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e16752
+
+### [fedcm] Expose the opening of the Modal Dialog in the UI controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85bd762
+
+### WebApp: implement a page to clear experimental web app isolation data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65842c9
+
+### CR2023: Add refresh attribute to various standalone WebUIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbfe547
+
+### Revert "Implement \`ExperimentalAsh\` raw_ptr trait"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13358f59
+
+### [CSC] Added entry point UKM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12d1060
+
+### [Extensions] Add utm_source query param to chrome://extensions sidebar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6be0dfb
+
+### Remove ExecuteScriptAndExtractBool
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96c62db
+
+### Mac: disallow immersive fullscreen for non-tabbed windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34135a3
+
+### Change Customize Chrome tutorial IPH to custom action IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaddf3b
+
+### Remove ExecuteScriptAndExtractBool from ReadAnythingAppTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6de8df
+
+### Use FlakyDanglingUntriaged for previously marked raw_ptrs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36147a8
+
+### iwa: Append app id in Site Details title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afeffcf
+
+### [CR2023] use Tonal button in one-time permission bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f802820
+
+### shortcuts: Add instructions on how to add accelerator layouts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7076867
+
+### Add browsertests for cq jumptag clicks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/121f165
+
+### [omnibox] Convert tab-switch to real action & eliminate selection state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f68cf69
+
+### pip2: Record metrics for back to tab and close buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1219747
+
+### [DMToken] Migrate away from Create*ForTesting methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b9513f
+
+### Reland "bruschetta: Use edk2-ovmf-dlc when installing"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1432dfe9
+
+### Remove references to BrowserPolicyConnectorAsh::IsActiveDirectoryManaged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ae736b
+
+### [fyfre] Remove legacy style support from chrome://sync-confirmation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48b3c35c
+
+### Settings: Remove some security keys strings from loadTimeData.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3302677
+
+### Automatically annotate dangling pointers in ChromeOS Ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/339694d
+
+### [Extensions c2s] Change menu navigation handler to ExtensionsMenuHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5df8e69b4
+
+### [OOBE CodeHealth] Remove UserImageSource from the OobeUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8f7f03
+
+### Reland "Reland "[Read Anything] Test the Read Anything WebUI in a browsertest.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6e0f419
+
+### iwa: Update CreateChooserExceptionObject with UrlIdentity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57a0330
+
+### [DMToken] Migrate away from Create*ForTesting methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a43f59
+
+### Adjust InstrumentationRegistry import.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17b782a
+
+### Printer settings: Update text and styling for add printer button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97559ac
+
+### [Extensions c2s] Reorder site permissions page items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/341747c
+
+### printing: Remove enable-view-ppd flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dbbef38
+
+### [omnibox][ml] create a keyed service for on device tail ml model.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a33ec41
+
+### Toggle between Block <-> Allow and don't show checkbox for one time permissions in the blocked state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16003ce
+
+### [GARU] Close restricted dialog on acknowledge click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08febcd
+
+### [CodeHealth] Fixed mock method and formatting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62ac844
+
+### [DownloadBubble] Deactivate partial bubble auto-close on focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a44d503
+
+### [DownloadBubble] Store tooltip texts to avoid re-constructing strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff41e11
+
+### Rename CardIdentifierStringForAutofillDisplay to CardNameAndLastFourDigits
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad49fab
+
+### Mark flaky CQ's dangling pointers 2023-W16-W17
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/285fd1b
+
+### Remove kLeakDetectionUnauthenticated feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b22ff4a
+
+### Add URL reporting to permission prompt HaTS surveys
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/260e9d7
+
+### Add one time permissions to confirmation chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b3f54f
+
+### Settings: Fix runtime errors with PasswordManagerRedesign flag on.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7080317
+
+### Revert "Reland "[Read Anything] Test the Read Anything WebUI in a browsertest.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80d48a1
+
+### [ash] Remove \`shelf-hover-previews\`
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/943c11d
+
+### Clean up feature flag for DMToken deletion.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8af13cb
+
+### [quests-v2] GetClusters API - Fake data variations
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1a10832
+
+### [GARU] Add kPSSettings4RestrictedNotice to 'Enabled Force restricted user'
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b439f7
+
+### [Passwords][Cleanup] Remove password-notes about://flags entry
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/08b1f16
+
+`);
+              </script>
+            </body>
+        </html>
