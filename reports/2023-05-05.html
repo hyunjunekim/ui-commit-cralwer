@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-05
+### [Files]: Further fixes to search clear button.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3534ce7
+
+### Respect shadow type in WaylandPopup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26533ae
+
+### [FilesRefresh] Update colors for file icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea81689
+
+### [FilesTrash] Remove all occurrences of the flag
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b5bc6ac
+
+### Use base::StringPiece instead of const std::string& in the clipboard.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14262f3
+
+### [FilesBulkPinning] Fix "Google Drive settings" RTL issue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d28cd9e
+
+### events: Add TouchpadDevice to expose low level info via DDM
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ea513f
+
+### [Empty States] Add empty state illustration to Download page
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8128eb6
+
+### Settings Split: Fix events_unittests to pass with settings split flag on
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebac782
+
+### Revert "Add Mac GpuVSyncThread and use CVDisplayLink as the source of begin frame."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e84bde
+
+### [FileHandling] Fallback to regular flow for misconfigured policy defaults
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ba1ee9
+
+### Bookmarks++: Fix focus without using delegatesFocus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/adf0bfe
+
+### Add Mac GpuVSyncThread and use CVDisplayLink as the source of begin frame.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/881d7cf
+
+### DanglingPtr: mark dangling ptrs triggered at exit [1/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8311c1a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95ca932
+
+### Put MakeRenderTarget behind an #ifdef
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a88cd1b
+
+### [file manager] Add encrypted icon to CSE files in grid view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4cd58fad
+
+### [Files]: Search metadata rather than content in Google Drive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f5e902
+
+### [MirrorSync] Smooth xf-pie-progress animations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/254cf93
+
+### [FedCM] Fix interactions between accounts view and IDP sign-in dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db350d1
+
+### Do not query clusters for History Clusters module if journeys not enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4accda1
+
+### [SavedTabGroups] Listen to changes from sync for tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1e631d
+
+### [CodeHealth] Fixed mock method and formatting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b6409d
+
+### [bookmarks] Add most recent metrics for save/recall
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2798175
+
+### [Lacros] Fail fast if TabStripModel adds same observer twice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ec1eb
+
+### [Video Capture] Make VideoCaptureBuffer.color_space non-optional.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8737e87
+
+### Settings Split: Add is_haptic field to touchpads mojom struct
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd417b3
+
+### Add link to caption settings to the caption bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8a90e98
+
+### Change SavedDeskDelegate::IsIncognito -> IsWindowPersistable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f09129c6
+
+### [ash] Remove ProcessDataCollector.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cceb3b
+
+### [OOBE] Unify OOBE wallpaper logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47e2f0c
+
+### Cleanup list family members experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f1304e
+
+### [sheriff] Disable HighEfficiencyFaviconTreatmentTest.DimFaviconOnDiscard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f9444c
+
+### Remove ExecuteScriptAndGetValue in favor of EvalJs/ExecJs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8feef40
+
+### sharing: remove unused includes in desktop bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6676c0c
+
+### capture_audio_mixing: Add new settings options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3073e19
+
+### Put CSC app menu item behind CSC flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25487b9d
+
+### Update how supervised_user services are created
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e474915
+
+### CR2023: Add side panel dividers and use in Customize Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f635373
+
+### Remove widget check for secondary text color in download bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cd3598
+
+### [IdleTimeout] Show a bubble after running actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93f36a96
+
+### [Sheriff] Disable flaky ConnectedCallback_ShowLoadingScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/633f4c83a
+
+### [sheriff] Disable DesksTemplatesClientLacrosTest.CapturesLacrosAppCorrectly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78f0501
+
+### Side Panel: decouple view dependency from SidePanelRegistry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07b91e7
+
+### [ntp] Remove obsolete NtpModulesRedesignedLayout logic
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f498841
+
+### Topics API: Use SemanticTree as source of truth for available taxonomies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f62d298
+
+### Split high efficiency chip view test into two files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d08b314
+
+### Add missing \`due\` field to ash/glanceables types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b89afd
+
+### Remove TWA QualityEnforcer related code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6955cdc1
+
+### [Read Anything] Add web fonts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86b2364
+
+### [fyfre] Fix regression in Lacros sync opt-in screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df70789
+
+### [Downloads] Match dock icon progress ring to download toolbar icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b248bc
+
+### [fyfre] Remove legacy style from chrome://enterprise-profile-welcome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0d6757
+
+### Kombucha-fy ProfilePickerInteractiveUiTest.CloseDiceSigninWithKeyboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1f7468
+
+### Bypass ScreenAI observer in ReadAnything only when service is ready.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55155fc
+
+### [sheriff] Disable PopupViewViewsTestWithAnyPopupItemId.ShowClickTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7275710
+
+### Remove AutofillProfile::origin from Android code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5913827
+
+### Remove expired histograms Arc.Tracing.Tool
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/423ef244
+
+### [Android] Enable scrolling for sign out dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c011104
+
+### [WebUI] Enable trusted types in office-fallback UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21b25710
+
+### Reland "Implement \`ExperimentalAsh\` raw_ptr trait"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd71552
+
+### Revert "[Signin] Enable Sync Promo after Signin Intercept by default"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b7e688
+
+### [FilesBulkPinning] Fix crash on settings page with notify negative space
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c678f41
+
+### flags: remove #upcoming-sharing-features
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d281eb8
+
+### [Binding Manager] Delete connection limit experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/350c1d7
+
+`);
+              </script>
+            </body>
+        </html>
