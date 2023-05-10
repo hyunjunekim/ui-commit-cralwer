@@ -1,0 +1,416 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-10
+### XfBulkPinningDialog: Close dialog if bulk-pinning gets enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05d6b26
+
+### Implement correct bounds for ChromeOS touch selection magnifier.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa14e06
+
+### gpu: Set SW video overlay flag before initializing overlay caps
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9841499
+
+### [FilesRefresh] Update colors for tooltip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9930bc8
+
+### android: Surface control magnifier implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe8fa98
+
+### [FilesBulkPinning] Fix browser test flake
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b539282
+
+### clipboard: Write images to the system clipboard as PNGs and TIFFs on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71b3ef8a
+
+### Update closure-compiler to v20210906.0.0 with required changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97c12899
+
+### Group ARC notifications
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f234bc4
+
+### Revert "Small rewrite of EditingHandleView bound and visibility updates."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89ee6fdb
+
+### XfBulkPinningDialog: Start the bulk-pinning space calculation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a1553e
+
+### [file manager] Fix a typo in string placeholder name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c33d2cb
+
+### Use the current cursor location when hiding
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/465522e6
+
+### ozone/wayland: Don't request empty window bounds from compositor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42ef9e4
+
+### Leverage build_webui() in chrome://gpu.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e68200c
+
+### [ImmersiveFullscreenMac] reduce jank during fullscreen transition
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3574e1
+
+### CR2023: Fix some font and color issues on cr-toolbar-search-field
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41e5e05
+
+### Realbox: Prevent group header from gaining focus on mousedown
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5bf875
+
+### [webui-cc] Introduce use_javascript_coverage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c18e75d
+
+### Revert failed Toolbar Texture experiments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c47fca4
+
+### Remove ImageSkia API duplicated from ui/base/layout.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bd3fd0
+
+### DanglingPtr: mark dangling ptrs triggered at exit [2/2]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41e4cda
+
+### Members of the ObjCStorage idiom should not have trailing underscores
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d6b43c
+
+### Convert /ui/gfx:color_space to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b5b719
+
+### [DTC] Create Device Signals Consent dialog UI
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5532088
+
+### Remove GDI text support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/027c710
+
+### Convert /ui/gfx:test_support to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5be196
+
+### ozone/wayland: enable use of ui-controls protocol v2 if available
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e8dcffb
+
+### gfx::ColorTransform: Make SDR white level a runtime parameter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5976879
+
+### [file manager] Remove unnecessary promise continuation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81a09c9
+
+### [FilesBulkPinning] Address UI polish for xf-cloud-panel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36cfc078
+
+### [FilesBulkPinning] Align method name in api.js with FMP API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/805db7c
+
+### [Files]: Only show file's path when searching.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/692e94e
+
+### [FilesApp] Fix crash due to stricter entry rules
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e3dbd2
+
+### [FilesBulkPinning] Expose calculateBulkPinRequiredSpace
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f987aa7
+
+### [FilesBulkPinning] Show tick for folders when bulk pinning syncing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44ed672
+
+### [FilesRefresh] Update colors for quick view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4914a3
+
+### Replace ExecuteScript with ExecJs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae392bf2
+
+### Replace ExecuteScript with ExecJs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/550ea5f
+
+### [CR2023] Added more permission icons to page info dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/107015b8
+
+### Replace ExecuteScript with ExecJs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f02a153
+
+### Revert "[dPWA] Add OsIntegrationSubManagers to field trial testing"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72136602
+
+### Replace ExecuteScript with ExecJs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c8b043
+
+### [DIPS] Add ability to check the state of the DIPS feature in Devtools
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3192f0
+
+### Replace ExecuteScript with ExecJs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4db650
+
+### Replace ExecuteScript with ExecJs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13eaab750
+
+### Add enum class for HelpBubbleId.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b28f1a0
+
+### [webui-cc] Disable flaky tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d978250
+
+### Reland "[CrOS settings]: add a Passpoint details page."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90c6d1f
+
+### Fix crash in SavedTabGroupBar buttons drag and drop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bc26a9
+
+### [CrOS Cellular] Clear revamped custom APNs when reset button clicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bb9535
+
+### [ SavedTabGroup ] Fix crash restoring saved then unsaved group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46e2454
+
+### Remove IsCrosapiInterfaceAvailable() functions and use IsSupported()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ea1417
+
+### [dPWA] Add OsIntegrationSubManagers to field trial testing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a167246
+
+### Modify WEB_CONTENTS_USER_DATA_KEY_IMPL to BROWSER_USER_DATA_KEY_IMPL to ensure that it matches the declaration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e48edba
+
+### Switch FaviconHelper to getColor from Context.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a6866e
+
+### [CSC] Additional UKM for the list UI surfaces
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dddf57c
+
+### [OOBE]: Notify that JS is ready after it is allowed on all handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61eba28
+
+### Reland "[CSC] Added metric for position of the clicked UI element"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cfbb68
+
+### [ SavedTabGroup ] Add accessible name to SavedTabGroupBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cba73c44
+
+### Update OWNERS files for glanceables
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d39211d
+
+### [Autofill] Store weak ref to owning factory in ContentAutofillDriver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7518a34
+
+### [Android][Reauth] Refactor autofill snackbar controller to support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/798e3962
+
+### Update \`GlanceablesTask\` with \`has_email_link\` field
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/528cb46
+
+### Fix FirstRunIntroPixelTest on managed machines.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5872c5
+
+### Use weak pointer in download toolbar button callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ca4149
+
+### Add sideyilmaz to safety check owners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e24ac8
+
+### Remove AppBannerEvent.APP_BANNER_EVENT_DID_ADD_TO_HOMESCREEN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e83601cb
+
+### Revert "[CSC] Added metric for position of the clicked UI element"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fef38a5
+
+### [CSC] Added metric for position of the clicked UI element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a0dee0
+
+### [CSC] Added browser test for image search path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edef05d
+
+### Drop use of BrowserPolicyConnectorAsh::GetRealm
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f85fa51
+
+### [DownloadBubble] Show downloads in the appropriate window for web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4e3f8a8
+
+### [Sheriff] Disable DragStartInFrame for LACROS+ASAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/007d1ea
+
+### [Sheriff] Disable MenuControllerMnemonicTestNoMatch.NoMatch for LACROS+ASAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84902f9
+
+### [CSC] Added metrics and browser test for text highlighting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c8e8900
+
+### [Extensions] Store PermissionsManager in ExtensionsToolbarUnitTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb05900
+
+### Drop use of BrowserPolicyConnectorAsh::IsActiveDirectoryManaged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96f8b7d
+
+### [User Education] Create consistency test for IPH configurations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ba7449
+
+### Log when the user changes a text style setting.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f04cb98
+
+### [SmartLock] Deprecate SmartLockSigninAllowed pref and policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22aa1ae
+
+### Removed getDisplayMediaSet (step 2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6f9345
+
+### Remove WidgetBoundsEqualWaiter from popup browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41707f30
+
+### [Extensions c2s] Update extensions icon when extensions have access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1017664
+
+### [Cleanup] Remove experimental builders for ProfileSelections -- Part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3d3568
+
+### Tweak net-internals HTTPS-RR support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4850344
+
+### Log font name.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fca8d9
+
+### Add in product help for companion to highlight new feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1fc851
+
+### Move csc entry and view creation into class attached to the web contents lifetime.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e816ab
+
+### [Desktop] Update the icon for desktop non sync in flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f113d59
+
+### [sheriff] Disable DetachToBrowserTabDragControllerTest.DetachToOwnWindow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4d26e6
+
+### [Autofill] Require minimum width of Autofill popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41321c9
+
+### Delay the activation of the share-this-tab dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25bbdfb
+
+### [CSC] Have JS code wait for postmessage from browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7242a92
+
+### Remove ActiveDirectoryLoginScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fe3b1e
+
+### Add VKEY_PLAY and VKEY_PAUSE action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b48330b
+
+### Add flag metadata for missive-storage-config
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c904d47
+
+### HTTPS-First Mode: Add UI flag for Site Engagement heuristic
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/002821e
+
+### Add ActionsInSuggest field trial variants.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/505fb5a
+
+### [Shopping] Add experiment for recording PDP state and detection method
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1795eda
+
+`);
+              </script>
+            </body>
+        </html>
