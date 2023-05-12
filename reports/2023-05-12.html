@@ -1,0 +1,380 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-12
+### XfBulkPinningDialog: Tweak color of links
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63867af
+
+### [ios] Fix AppleSpecificPrivateUseCharacterReplacement test failure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d4894a4
+
+### [Files]: Fix opening and closing of search box
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/200fe36d
+
+### [FilesTrash] Fix minor typo in comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc26b10
+
+### [Office upload] Add ODFS reauthentication required (empty) state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8602b3b
+
+### [ios] Update PlatformFontIOS metric calculation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13c5c14
+
+### [CR2023] Update the textfield border color only with the default border.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6808699
+
+### Reland "Convert selection range from surrounding_text relative to absolute"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed19902
+
+### Revert "[Sheriff] Disable failing test on Linux MSan"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45230589
+
+### Files Office: Dismiss educational nudge via keyboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/362ef144
+
+### Allow an AnimatedImageView to be started immediately.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7cf155
+
+### Generate FilesApp UMA enums for JS and C++
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c15f71b
+
+### Convert /ui/shell_dialogs to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fcbec28b
+
+### gpu: win: Set up Skia gold tests for DCompPresenter tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bca6d874
+
+### [Auto-disable Accessibility] Update naming and add some for testing methods in AccessibilityState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c648aee
+
+### Fix IWYU for FRIEND_TEST_ALL_PREFIXES().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bceeb1f
+
+### Reland "Async[*] capture of a viz::Surface."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ac45a3
+
+### [Auto-disable Accessibility] Use AccessibilityState in views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a34c32e
+
+### [AX-Unserialize] Fix crash in Unserialize on all platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/935837f
+
+### Fix IWYU for FORWARD_DECLARE_TEST().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6b8ebb
+
+### Revert "[wayland] Cancel dnd when drag target or dragged window destroyed"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f273051
+
+### [DisplayConfigurator]: Propagate displays invalidated signal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7e2531
+
+### Revert "[Files]: Hide trash files from search results."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/375fb31
+
+### dlp: Add policy visual signals in Files app
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46f7739
+
+### Don't override error panel text
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/293a324
+
+### [file manager] User-friendly show CSE file type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/950d6a5c
+
+### Files Office: Change educational nudge dismiss
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77140d4a
+
+### Revert "Specify overlay damage in pixels in viewport space"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0a8e4c
+
+### XfBulkPinningDialog: Tweak some spacing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f038a52
+
+### [Files]: Hide trash files from search results.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f8a25f
+
+### Reland "Add tests for auth prompts interaction with back/forward cache."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d08059c
+
+### Sheriff: Disable tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82412c11
+
+### [SPEAK-ON-MUTE] Add mute nudge to the privacy hub.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e055d1
+
+### Enable window observer for vmm swap policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83afe84
+
+### Revert "Reland "[dPWA] Add OsIntegrationSubManagers to field trial testing""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba0a85f
+
+### WebApps: Switch DailyInteraction from UKM to AppKM on all dPWA platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e4b8b76
+
+### CrOS Settings: Revise crostini allowed boolean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b00c701
+
+### [Tab Strip Redesign] Add experiment param for restore Home button position on Toolbar
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/02cffa7
+
+### borealis: Update installer to 2-column layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21abb9a
+
+### [ SavedTabGroup ] Focus traversable overflow menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1706f4
+
+### [ SavedTabGroup ] Add private function to OpenSavedTabGroupInBrowser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e85eaed
+
+### [CSC] Plumbing side panel entry metrics to companion metrics logger
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1bb38f
+
+### Send side panel upper bound size to Lens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/941e938
+
+### Rename a global in cast_config_controller_media_router.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37bcb83
+
+### [Empty States] Add empty state illustration to Bookmark & Reading list pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f45eef2
+
+### Relocate ActionChipsDelegate interface to //components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca2357f
+
+### [fedcm] Return WebContents* in ShowModalDialog for the IdentityRegistry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ecbeaf
+
+### [Chrome Refresh] Add Chrome Refresh Styling to app menu button in toolbar -
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd64c1b
+
+### OmniboxResourceProvider to getColor from Context.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acc52bb
+
+### Reland "[dPWA] Add OsIntegrationSubManagers to field trial testing"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/195df62
+
+### [omnibox][CR23] Fix OmniboxPopupViewViewsTest.ThemeIntegration test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3286bd15
+
+### Relocate s/SuggestionsMetrics/OmniboxMetrics to //components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e29b9d
+
+### Relocate OmniboxSuggestionUiType to //components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98b80de
+
+### Reland "Add translation labels for Actions In Suggest."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6128054
+
+### [ImmersiveFullscreenMac] fix new tab flicker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62255696
+
+### [ImmersiveFullscreenMac] tab strip focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b056369
+
+### Disable TabSharingUIViewsBrowserTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab78b52
+
+### [Omnibox] Fix suggestion size on rotation for revamp case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a5fbeb6
+
+### Implement delegated help bubble creation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11debbf
+
+### [OOBE] Backdrop shrink
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b271c57
+
+### Revert "Remove WidgetBoundsEqualWaiter from popup browser tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8706270
+
+### Add empty GlanceablesClassroomClient and its implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79c98b6
+
+### [FreezeCast] Add logging for mirroring pauses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/320b1b0
+
+### Fix the bug that dragging not pinnable app can be pinned.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b03beb81
+
+### LockedFullscreen: Disable Immersive mode for locked fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/497d00e
+
+### [Extensions c2s] Remove 'navigation' from menu handler variables
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2609c1c
+
+### CrOS Settings: Revise Crostini page availability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7708b9a
+
+### Refactor structured metrics build into //chrome/browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7cb4ec
+
+### Settings Split: Fix meta string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02eb451
+
+### Remove unused TextWatcher from UrlBar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63523ff
+
+### ambient: Exposed UrlLoaderFactory for signin profile in ambient client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55c2a83
+
+### Reland "Do not query clusters for History Clusters module if journeys not enabled"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67a7793
+
+### Added a toggle for sharing audio in the share-this-tab dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/033b300
+
+### Add feature flag for finch controlled server side speech recognition launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/688c578
+
+### Remove deprecated content::ExecuteScript function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5caf1d
+
+### [ChromeRefresh2023]Adjust Passwords and Autofill menu item naming
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f10bbd
+
+### Add --window-name flag for providing user title on startup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/524ae31e
+
+### [journeys] Add test HistoryClustersHandlerTest.OpenVisitUrlsInTabGroup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d47cd1a
+
+### [Profiles] Fix icon color for edit button in Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a32b839
+
+### Wait for back button to hide in Customize Chrome tutorial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56eeb83
+
+### parental guidance: Open URL to Family Link through the delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14cc2d8
+
+### Fix tab-capture indicators for guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cc8e120
+
+### Notification Tester: Add os://notification-tester
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a682086
+
+### [Sub Apps] Add giovax@ to OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/520e571c
+
+### Delete the feature flag ObserverBasedPostProfileInit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d492bfb
+
+### Fix crash when navigating from sync settings with force sign in enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/247d85d
+
+### [CR2023] Update icons and colors for feature buttons in Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e739ec
+
+### [color] Update c/b/ui classes to use the ImageModel favicon getter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58e83f1
+
+### Add CrOSLateBootArcVmAAudioMMAPLowLatency feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5aad01b
+
+### [TabStripPerformance] Add feature flag for tab strip startup flicker fix
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a12ed8
+
+### Add new options for memory savings reporting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a3718263
+
+`);
+              </script>
+            </body>
+        </html>
