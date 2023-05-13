@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-13
+### Remove PPAPISharedImagesSwapChainAllowed and feature flags
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a78645
+
+### Reland: Specify overlay damage in pixels in viewport space
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77246b78
+
+### clipboard: Encode bitmaps on a background thread on paste
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/177693c
+
+### Convert /ui/views_content_client to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7d725a
+
+### Exposes the "target" attribute on supported elements to ATK and IA2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0103e9
+
+### Add Locking annotations to OriginIdentifierValueMap and fix locking
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13e218d
+
+### [Mac Window State] Add kMiniaturizeWindow to remote cocoa WindowVisibilityState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1eef4367
+
+### [Auto-disable Accessibility] Add perform gesture state check to AccessibilityState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/360a433
+
+### lacros/color: prevent flickering in meets video
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb50a32
+
+### [CR2023] Fix incorrectly colored checkbox states
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e47919f5
+
+### [Jellybean] Update hover on prominent.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4fe4aff
+
+### Move backup_util and bundle_locations to base/apple
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4f0708
+
+### dlp: file manager APIs for notification callbacks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12ba1209
+
+### Create TextWatcherBase to reduce boilerplate.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/792fee7
+
+### Explicitly define operator!=().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce01c9d
+
+### Convert /ui/gfx:gfx_unittests to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5bb4b62
+
+### [realbox] Add support for multiple actions to realbox
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ad993c
+
+### fixup! Convert /ui/shell_dialogs to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56b32d1
+
+### Migrate uses of SkSurface factories
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/682f84e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbcd73c
+
+### Add TextAppearance.Headline2Thick.Primary
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25e9f3d
+
+### Reland "[Files]: Hide trash files from search results."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bc4bce
+
+### Support offset of surrounding text in Lacros wayland client.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de30ba3
+
+### [MirrorSync] Update comments related to inline sync status
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e692e530
+
+### Implement Mandatory Reauth opt-in bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cf678e
+
+### [Extensions] Use action view controller from extensions container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c56eeb
+
+### Add an os link on chrome://device-log page in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8796804
+
+### Update deep scanning prompt in security subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78f61dce
+
+### CR2023: Theme various parts of Customize Chrome side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33183ca
+
+### Fix document picture in picture window resizing in MacOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bec06f
+
+### [ChromeRefresh2023]Adjust remaining variable names for Passwords and Autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/724f20f
+
+### [LCAC][Print] Allow print scan to occur after preview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e775f6b
+
+### [CodeHealth] Fixed mock method and formatting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/825afb0
+
+### Prevent NOTREACHED() in GetSessionRoute()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e02b5f0
+
+### [fyfre] Remove TangibleSync mentions from screenshot test names
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f34e876
+
+### Make DownloadBubbleSecurityView accept weak pointers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6c7b7f
+
+### [EnumSet] Refactor constructor usages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c306ea8e
+
+### [omnibox] Select and host either Views or WebUI omnibox popup view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b1c94f
+
+### std::unordered_{map,set}::contains() does not exist prior to C++20.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9a5cf6
+
+### Fix the TabSharingUIViewsBrowserTests test suite
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f7a008
+
+### Tweak signature of lambda.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/457b139b
+
+### Remove origin from AutofillProfile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9075e49
+
+### [CSC] Added metrics for open links from side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a0268b
+
+### [ReduceToolbarUpdatesForSameDocNavigations] Fix cache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5c6409
+
+### Move, Hide and Disable cursor when taking screenshot in TestBrowserUi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a7278d
+
+### Sync: Move most prefs to "::internal" namespace
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d2c9c6
+
+### Move Supervised User Service to components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e50f23
+
+### [CSC] Refresh companion for same page navigations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/049aa273
+
+### AuthPolicyHelper: Remove several obsolete call sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/537863c
+
+### EnrollmentScreen: Remove unused includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9237da8
+
+### [sync-fixit] Rename Sync-the-feature-specific IsFirstSetupComplete API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e033f6d
+
+### Revert "[SPEAK-ON-MUTE] Add mute nudge to the privacy hub."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cd9811
+
+### GDMPreferCurrentTabResult UMA histograms for the Share-this-tab dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4196ba
+
+### [Android][CredMan][Mfill] Add accessory button for conditional Ui reentry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d6444c8
+
+### [fyfre] Remove legacy style from chrome://profile-picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c5d593e
+
+### [OOBE CodeHealth] Move user image observation to LoginScreenClientImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa9297e
+
+### [Lacros] Deprecate crosapi InitialBrowserActions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02efc29
+
+### Make BrowserListObserver a CheckedObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66857b7
+
+### Sheriff: Disable WebAppLaunchHandlerBrowserTest.SelectActiveBrowser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3029c93
+
+### [PriceInsights] Add the flag entry on desktop
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/01e3882f
+
+### Add flag and updated string for discard exception improvements
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/af76701
+
+### Remove UseMojoVideoDecoderForPepperAllowed policy and feature flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef82550
+
+### [Android][CredMan] Add feature & about flag for PasswordsInCredMan
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee646e21
+
+### Reland "Add AutofillEnableNewStreetLevelFieldTypes flag."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/541719c
+
+### Revert "Add AutofillEnableNewStreetLevelFieldTypes flag."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/25495c8
+
+### Add AutofillEnableNewStreetLevelFieldTypes flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b047ab9
+
+`);
+              </script>
+            </body>
+        </html>
