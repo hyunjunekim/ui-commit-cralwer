@@ -1,0 +1,244 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-20
+### WebUI: Add mojo_base_path option in build_webui().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbee30a
+
+### WebUI: Remove tmp folder from bundle_js.py.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e8666a
+
+### Revert "Remove QT feature flag"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10fc024
+
+### CR2023: Update filled cr-input styles.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e255ce1
+
+### Persist desk UUIDs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d5c5e1
+
+### [Mac Ventura Tests] Fix BridgedNativeWidget tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4616781
+
+### [lacros] Implement client side logic for Wayland overscan API.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0459df1
+
+### Add cr-element for new segmented button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be47604
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f4d81e5
+
+### Disable BridgedNativeWidgetTest.TextInput_Move(AndSelect)EditingCommands on macOS 13
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cba4008
+
+### Enables the dump tree test for the link-target attribute on Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0156bda
+
+### IWYU: add stdint.h for uint8_t in //ui/lottie
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abe7d377
+
+### [FilesRefresh] Update colors/styles for drag drop chips
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dcc82c11
+
+### [Files]: Fix A11y for xf-select options
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5a1b9e
+
+### Consolidate OmniboxAction Java code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/377fdf2
+
+### Get high efficiency gauge dialog integration test working
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/686113e
+
+### [Translate metrics cleanup] Remove Translate.BubbleUiEvent code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/751306d
+
+### Settings: Remove unused "Search engines" related strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/089a5f3
+
+### CrOS Settings: Move mojom-webui/search/ files to mojom-webui/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f23ffc4
+
+### Increase location-bar LHS icon padding for CR2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c4971fc
+
+### [history] Fix regression in Open All for History Tabs from Other Devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8449e3cc
+
+### Avoid unsafe param eval in LocalPrinterHandlerChromeos::StartPrint()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ea6aa3
+
+### [Chrome Refresh] Update bookmarks bar separator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54bbf5d
+
+### Add mattreynolds@ and chengweih@ to device dialog OWNERS files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a54ae44f
+
+### multipaste: Show educational footer when Ctrl+V long-press shows menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e44977c
+
+### Realbox: Add variations for width of realbox
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/07f68aa
+
+### [Omnibox] Fix smaller margin variant's mv padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8baead03
+
+### Use deviceName instead of printerName for enterprise connectors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/116845ef
+
+### [gardener] Add missing TODOs in disabled tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b8ad5c
+
+### Increase size of font size icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/044efa5c
+
+### [gardener] Disable flaky intent browsertests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/903e0d5
+
+### [ntp][panorama] Fix using uploaded image as NTP background image
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc3a406
+
+### [ntp][side-panel] Add metric that tracks Chrome Web Store opens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7bf9a8
+
+### Remove an unneeded check in LocalPrinterHandlerChromeos::StartPrint()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3e8365
+
+### [gardener] Disable flaky credit card bubble tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ad4082
+
+### Action In Suggest: pass to Java only what is needed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/419bfbb
+
+### [Compositor UI] Trim unused code related to toolbar hiding.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d567178
+
+### Ensure the combobox highlights when hovered and clicked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7441c4c
+
+### [DownloadBubble] Ensure each download row has a valid NavigationHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57f7b1c
+
+### Increased throbber size in ShareThisTabDialog during activation delay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2d3cda
+
+### Switch Hover Card FadeLabel to use new FadeView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8661ba1
+
+### Reland "[OOBE] Introduce CoreOobe"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d001772
+
+### [ImmersiveFullscreenMac] cleanup TODO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d89ba33
+
+### [gardener] Disable IPHWithNoInteraction on ASAN builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96d527c
+
+### Collect UKM metrics on pop-ups for sites with previous interaction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f39d38f
+
+### [UPM][Desktop] Update note strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e05c1b1
+
+### CrOS Settings: Revise ARC VM Manage USB subpage availability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48c7bc0
+
+### Add ShareThisTabDialog to fieldtrial_testing_config.json
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/329ca27
+
+### Rounded corners on some UI elements in ShareThisTabDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/585c836
+
+### Add Kombucha tests for the Permission Chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9844b79
+
+### Reset chip and stop PRM observation on prompt expiry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d7dc32
+
+### Rename PIIType::kLocationInfo as kCellularLocationInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c831d6e
+
+### Fix crash when state transitions while account chooser is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cd31a0
+
+### render_context_menu: Open URLs in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/144591c
+
+### App Service: Simplify app-service-internals to use a single mojo method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfdb7ef
+
+### [Omnibox][ML] Add batch scoring for autocomplete urls.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5c84cf0
+
+### Setup feature flag for tab drag drop feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d13a1a7
+
+`);
+              </script>
+            </body>
+        </html>
