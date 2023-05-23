@@ -1,0 +1,412 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-23
+### [FilesRefresh] Do not bold default task menu item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7cf6cc7
+
+### [Files]: Run unit test with V1 version of search.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cfeaa9b
+
+### Update header colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d7eb2b
+
+### Fix swipe gesture on an ARC group notification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2748ef
+
+### Plumb ClientSharedImageInterface to LayerTreeFrameSink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f06da9d
+
+### [color] Have Widgets inherit the ColorMode of their parents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14776fa7
+
+### Move IsScaleFactorSupported to resource_scale_factor.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82b0f8c
+
+### WebUI: Plugin out_folder to bundle_js() in build_webui().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae27c5c
+
+### WebUI: Add request list to bundle_js() |outputs|.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45a578f5
+
+### [CR2023] Update DialogModel to support ButtonStyle.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07f37cf1
+
+### CR2023: Update Read Later to use cr-url-list-item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37e09b0
+
+### WebUI: Move generate_grd test files into separate subdirectory.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56f88a58
+
+### WebUI: Allow custom out folder in bundle_js().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ca0146
+
+### ui: Disable passthrough command decoder on CrOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7678954
+
+### side panel: update combobox background color and positioning
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48f2f8a
+
+### dlp: Add onedrive to policy components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14a333a
+
+### Interactive UI tests for autofill save/update prompts.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9d152c
+
+### [FilesBulkPinning] Wrap drive shortcut icons in feature flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84072e0
+
+### [FilesBulkPinning] Add preparing to sync state for progress panel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43ace2d3
+
+### [FilesBulkPinning] Remove translateable="false" for final strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef0eea9
+
+### DriveBulkPinningBanner: Swap buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02b66791
+
+### [FilesRefresh] Update remainng legacy color tokens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da85bb3
+
+### [FilesRefresh] Address UX feedback
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e82c688a
+
+### BulkPinningDialog: Tweak a link color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9055719
+
+### Close the blank tab opened by clicking target=_blank links to home tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f544b6
+
+### Move TOS for VCN enroll and save card view based on UI design
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b5563546
+
+### [FilesBulkPinning] Make sure DriveIntegrationService is not nullptr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5da5aeb
+
+### [WebUI] Remove more unused headers from the WebUIController factory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5afae37e
+
+### Revert "Add a test for unthemed browser frames"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/305fa1e7
+
+### [Read Anything] Add IPH trigger.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f47f9e80
+
+### Get rid of PrintPreviewRequestIdMapWithLock inside print_preview_ui.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0d2125
+
+### Launch device lock page in a separate activity for sign-in from the account picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae09554
+
+### Revert "[OOBE] Introduce lazy loading mechanism"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e23ade
+
+### Allow direct access to final properties of BaseSuggestionProcessor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b09b427
+
+### Roughly fix layout of PageActionIconView in CR2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdcbb342
+
+### [OOBE][QuickStart] Add QuickStart debugger
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ffe4a8
+
+### [DIPS] Show the Chrome Guard on the destination page after a stateful bounce.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7f1ea59
+
+### Enable CastDialogStopButton by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62e43629
+
+### [Chrome Refresh] Update the toolbar buttons to have the correct insets.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/322dc68b
+
+### [ SavedTabGroup ] Remove unneeded observer list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23601f8
+
+### [Read Anything] Add reading mode side panel iph
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/960fbdc
+
+### Implement MediaNotificationProviderImpl::HideMediaDialog()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/071c49f
+
+### Fixed toolbar capture ignoring optional button updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb8b9c3
+
+### Add IsErrorDocument() to AshWebView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97ce302
+
+### [ntp] Module scrollbars on overflow feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22aaadd
+
+### Mac Immersive: make ImmersiveModeTabbedControllerMac::SetEnabled idempotent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2700a6b
+
+### [OOBE]: Remove unused assets from code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa8348c2
+
+### [CSC] Add test coverage for companion tab helper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85c263e
+
+### [Price Tracking] Use same web content signal for triggering UI and metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6d9dfcec
+
+### Remove expired reopen closed tab IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b97fac0
+
+### [OOBE] Introduce lazy loading mechanism
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abe5c73
+
+### Rename Omnibox Action types to match names with C++.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecfcc58
+
+### projector: Trigger re-auth dialog on invalid credential error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ed2f4c
+
+### [OOBE][CHOOBE] Add zoom slider to display size screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/556554a
+
+### Add a test for unthemed browser frames
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fb39fe5
+
+### Align favicon with the top of tab-title in the ShareThisTabDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c447d89
+
+### Make fingerprint UI available for ash-chrome on linux.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f1cd81
+
+### Add Structured metrics for app install events in the browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c219cb3
+
+### Re-enable disabled test on all platforms but Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88a8a2e
+
+### [ SavedTabGroup ] Split Add/Remove functions between Local/FromSync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0249dfb9
+
+### [ SavedTabGroup ] Notify observers of tab reorders in saved group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc384e7
+
+### iwa: Replace etldPlus1 with groupingKey in Site Settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba950de
+
+### [OOBE][QuickStart] Add final strings and icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35792c5
+
+### Remove duplicate booleans in BubbleUIInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c714d17
+
+### [ntp-ct] After-launch feature cleanup
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/173041d
+
+### [Empty States] Add empty state illustrations to tab switcher UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e108b3c
+
+### Record Experiments oped-in to status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4a9a85
+
+### ext approvals: Add cross platform helper to get kid's name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e482265
+
+### [Extensions c2s] Add MessageSectionState for the menu's main page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40fc939
+
+### Revert "Convert /chrome/browser to use ARC"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0499b42
+
+### Change setting name for "Do Not Track" on mobile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3064cf
+
+### [Extensions c2s] Rename section to MessageSection in menu's main page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86aa552
+
+### [Omnibox] Fix vertical margin/divider for smallest margins variants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbabaea
+
+### [Read Anything] Pass copy command to main page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53a7118
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3264165ff
+
+### Revert "[UPMLocalPwd] Add the second fragment"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b84f2c
+
+### Use the backend ids to fetch the credit card and addresses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90837da
+
+### [UPMLocalPwd] Add the second fragment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c80ecc
+
+### Update UI>Browser>Autofill>... components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d257968
+
+### [dpwa] Expand web app install automated tests to cover all manual tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d32503
+
+### Remove AddEduAccountFromAccountSettingsForSupervisedUsers Flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3c70fd84e
+
+### Disable TrustedTypesEnabled..credits on Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db69ed4
+
+### When available, propagate http status from the fetcher.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da4609b
+
+### [Privacy Hub] Use GeolocationService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67c506b
+
+### [Autofill] Change ContentAutofillDriver's RFH from raw_ptr to raw_ref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec7a411
+
+### Do not notify BrowserListObservers added while notifying.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abb0ddc
+
+### Adjusted spacing between elements in the ShareThisTabDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/853c619
+
+### [Sheriff] Disable flaky test DesksTemplatesClientMultiProfileTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d853738
+
+### [FilesBulkPinning] Update SetMetadata to use struct not params
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35d6348
+
+### Add histogram to record upload result for office files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b1045f
+
+### Directly launch Native Host executables on Windows
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bff3a165
+
+### [Rounded Windows] Add a feature flag for Rounded Windows
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/056fe4b
+
+### [omnibox][ml] Misc batch execution optimizations and cosmetic changes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0c12dd27
+
+### Add a feature flag and about_flags entry to disable Mutation Events
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e8de880
+
+### Remove "Show All" option from Journeys flags since it no longer exists
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/795fa6d
+
+### [ntp] Add flag for background image link HTTP Status error detection
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c4acd309
+
+### arc: Remove expired ghost window style feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0e8dd73
+
+### bruschetta: Add a flag to pick how the installer downloads files
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e67bf1
+
+### Crostini: Add flag to turn on the Qt IM module and plumb to garcon
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e9cb1af
+
+`);
+              </script>
+            </body>
+        </html>
