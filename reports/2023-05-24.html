@@ -1,0 +1,364 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-24
+### Reland "[Files]: Run unit test with V1 version of search."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddf2dae80
+
+### BulkPinningDialog: Display current free space
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44e4ebe
+
+### [FilesBulkPinning] Update border-radius to 20px
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f43d51
+
+### [Files]: Remove code duplication.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b26646
+
+### Expose border-radius for cr-action-menu item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f741d6e
+
+### [ChromeRefresh] Add initial profile row line item
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c502942
+
+### HDR/Android: Enable HDR by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f28fb3
+
+### WebUI: Add demo for cr-segmented-button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a86313
+
+### diagnostics: Use keyboard capability to identify top row keys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/836e39c
+
+### cros_next: Revert window caption bar size changes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaad16c
+
+### Remove IsScreenAIServiceNeeded function.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2b814c
+
+### [UIA] Fix ITextRangeProvider memory leak
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3ac298
+
+### [keyboard-alt]: Update pref to track alt/search + click remap events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f862594
+
+### NativeViewGLSurfaceEGL: Remove non-sRGB color space support
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d14e191
+
+### Bookmarks++: Tweak color/sizing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a7ed84e
+
+### display,gfx,ozone: Add eotfs to HDR output metadata
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a51e344f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5f752c7
+
+### dlp: Add policy type enum for dialogs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b50009e6
+
+### [Office upload] Map GM3 to GM2 colours for the ODFS Logged Out state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72de7f9
+
+### [FilesBulkPinning] Wire up cant-pin icon for unavailable item types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9d4c73
+
+### [Jelly] Update harmonized illo tokens.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7680238
+
+### Revert "[Files]: Run unit test with V1 version of search."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/767894f
+
+### [dPWA] Refactor callback for testing to be an observer method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ac2b02
+
+### Revert "FadeLabelView code clean up"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaf1bb6
+
+### Revert "[PolicyLogs] Adding chrome://policy/logs on Desktop"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfcb970
+
+### Revert "Implement Mandatory Reauth confirmation bubble."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dcd1b1
+
+### QA Rich Card: set dynamic rich card bounds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a75e33e
+
+### Extensions: SidePanel: Coordinator: Use const reference
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5131ce
+
+### Only show warning revocation button if HTTPS-First Mode is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d742cd9
+
+### [CSC] Added support for reporting URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aba062b
+
+### [CSC] Add signin flow test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ca41700
+
+### Rename some .icons to match the source SVGs' canonical names.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7a005db
+
+### Enable EyeDropperBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e087298
+
+### FadeLabelView code clean up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4ff999
+
+### Revert "[Empty States] Add empty state illustrations to tab switcher UI"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/900bddc
+
+### Remove deprecated user education code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5571d82
+
+### [PolicyLogs] Adding chrome://policy/logs on Desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ae5ba5
+
+### [Extensions] ExtensionsMenuInAppMenu enabled by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82608ed
+
+### [Passwords] Implement cross-device generation experiment arm
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8a74133
+
+### [CR2023] Add "CR2023_" screenshot name prefix to TestBrowserUi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/063619f
+
+### Allow launching UI tests interactively when in dark mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ce70f0
+
+### Fix device_name usage to better match PrintIfAllowedByPolicy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/745e6f8
+
+### Reland "[OOBE] Introduce lazy loading mechanism"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7a19f20
+
+### [CR2023] Add icons and items to More Tools menu. Addl Cleanup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab2f964
+
+### [ SavedTabGroup ] Fix SavedTab index calulcation when connecting group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e58238
+
+### Enable the ShareThisTabDialog by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39df3173
+
+### [CSC] Open exps URL in a new tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bdcbd39
+
+### Remember Kerberos password by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ec1ef1
+
+### Move the ShareThisTabDialog feature to the implementation directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eec3572
+
+### [Omnibox] Fix status bg being shown persistently post scroll
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a778a21
+
+### webauthn: add UI sheets for hybrid feedback.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/390e0ae
+
+### Implement Mandatory Reauth confirmation bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/743cf6d
+
+### [OOBE][CHOOBE] Fix the ScreenSumarry in CHOOBE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5dee2d
+
+### Split IDS_CONTEXT_MENU_SEND_TAB_TO_SELF into two entries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18ca05c
+
+### cros_next: Don't draw stroke for tab strip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1633809
+
+### [color] Switch BrowserFrame to use GetColorMode()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4903f74
+
+### win: Fix WebAppBrowserFrameViewWinTest.NoThemeColor Win11 failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/494c0a1a
+
+### [ShareThisTabDialog] Remove default button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f1199c
+
+### [CSC] Fix UKM logging for text queries to have clamp.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f82fa95
+
+### Don't display the Privacy Sandbox dialog when Signin dialog is displayed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8920998
+
+### [Omnibox] Fix decoration/status view horizontal paddings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e80447a
+
+### [FedCM] Update strings in PasswordManager for auto re-authn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81821fa7
+
+### Add enable_supervised_users check in chrome/common/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b85bc6
+
+### Refactor mandatory reauth controller so accept and cancel callbacks are
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e086b5
+
+### Add browsertest for KerberosInBrowserDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8612f1
+
+### Remove Unused EDU Coexistence Images
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f597995
+
+### Use the Family Link kite icon in managed by parent UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86e9e17
+
+### [Code Health] Add base::Value::List::rbegin()/rend()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e48b996
+
+### [ SavedTabGroup ] Split Reorder() / MoveTab() into Locally/FromSync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4dadf3
+
+### Install/Uninstall Screen AI library based on usage.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec90e02
+
+### ext approvals: Enable extensions approval v2 on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebc646f
+
+### Allow passwords.google.com to redirect to the native Chrome password
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7142a2c
+
+### Add histogram to record the source volume of opened office files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49d15b5
+
+### [ShareThisTabDialog] Set initial focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e6f312
+
+### A11y labels for credit cards in Settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91c4d26
+
+### Fix checking for dangling ptrs at exit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6de902a
+
+### [dPWA] Consolidate CanUserUninstallWebApp()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e5545f
+
+### Inform the user if a profile is managed by a parent or guardian
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1beca0c
+
+### Revert "Close the blank tab opened by clicking target=_blank links to home tab"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33c4f6d
+
+### Move Screen AI management files to c/b/screen_ai.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c21eb8a
+
+### Revert "[PolicyLogs] Adding Flag for chrome://policy/logs on Desktop"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b25c7450
+
+### [PolicyLogs] Adding Flag for chrome://policy/logs on Desktop
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e4b5aba
+
+### Add /collection/tv_networks to the list of collections to not content cluster on
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8fd26c0
+
+### [serial] Add WebSerialBluetooth flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/845fee9
+
+### Create and adjust flags for OpenXR on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/98a8edb
+
+### Disable kWindows11MicaTitlebar by default and put it behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a6915ef
+
+### [sharing] Remove \`sharing-desktop-share-to-google-collections\`
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/060932e5
+
+`);
+              </script>
+            </body>
+        </html>
