@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-05-25
+### Turn off desktop plane in DWM for zero copy video fullscreen presentation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59be266
+
+### [FilesRefresh] Add SVG background for quick view thumbnail
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61a7969
+
+### WebUI: Leverage minify_js() and bundle_js() in optimize_webui.gni.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e368f0d
+
+### CR2023: Update cr-textarea styles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25e2219a
+
+### [Qt] Handle scale factor changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c51d6447
+
+### ozone: evdev: Add G502 Hero to mouse block list
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee67089
+
+### Reenable passthrough for lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c841a1e
+
+### Create base::apple::Owned[frameworktype], use it for gfx::NativeEvent
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecd1b55
+
+### WebUI: Replace "Tap_" suffix with "Click_" in click handlers, part 6.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f8571e
+
+### ozone: Make it so only mouse events can update stored cursor position
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c28d1d4
+
+### WebUI: Replace "Tap_" suffix with "Click_" in click handlers, part 5.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1de9b71
+
+### Deflake DateTrayTest ShowTasksComboModel.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c982b31e
+
+### Share one thread for all ChildWindowWins
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9134553d
+
+### Sort Vector Icons by filenames in views_examples
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/957b4dd
+
+### Various cleanups and behavior tweaks for menu layout.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa02521
+
+### wayland: add missing space to wl_pointer event warn messages
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ab56c7
+
+### views: update FocusManager API docs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/904c78c
+
+### dlp: Add scanning IOTask progress values
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6e22f9
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfa9223
+
+### [ios] Add CJKFontName for iOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8cacdad
+
+### ozone/wayland: Load default cursor theme if theme name is empty
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f46ad4
+
+### Add RAW_PTR_EXCLUSION to fields
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d1cf69
+
+### [ios] Fix RenderTextTest.DefaultLineHeights test failure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/272ca6e
+
+### dpwa: List subapps on OS settings page
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f34d9d
+
+### [MirrorSync] Add translation for a11y in progress tooltip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/295e27d4
+
+### [MirrorSync] Prepare Files app for progress events ISS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c6a141
+
+### SystemNotificationManager: Add buttons to bulk-pinning notification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3bb58a
+
+### Diagnostics: Remove the shared diagnostics log feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f553f67
+
+### [Extensions c2s] Call UpdateMainPage directly when site settings change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4600364
+
+### Ignore local tab reorders while updating a group from sync.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7854569
+
+### [serial] Allow Bluetooth ports to be requested by service class ID.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1490d3e
+
+### Update Sharesheet for Jelly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8007c64
+
+### Revert "[CSC] Create chrome flags for Companion UXR."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d90aaa6b
+
+### Add jacastro@ as OWNER for tailored security code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2af5583
+
+### Finish search box step of Welcome Tour.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de79ec3
+
+### Ensure menu items have non-conflicting accelerators set.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c200e17
+
+### [Extensions c2s] Move site settings toggle callback to view controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43d6639
+
+### [Read Anything] Change yellow & blue colors to 100 as per UX request.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4757f89
+
+### [OOBE] Software update changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bea4bb9
+
+### Add data pipeline to get live memory usage for hovercards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a009a4
+
+### [omnibox][cr23] Chip layout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bf23209
+
+### Live Translate Global Media Control
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77204e4e
+
+### Disable multi-screen interactive_ui_tests on skipped platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a55b878
+
+### [OOBE]: Add initial animation optimization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e471754
+
+### [Nearby Share] User's Devices listed first in Nearby Discovery Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d035ad4
+
+### Reland "Add a test for unthemed browser frames"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0570227
+
+### Fix BookmarkBarViewTest7 for device scale factors != 1.0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b4e464
+
+### Sticky Keys turns off when ChromeVox is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d40158
+
+### Copy QR code image to system clipboard.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4049a09
+
+### Clean up chrome_url_data_manager_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47f5c2b
+
+### Add pixel testing for infobars.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17bef3b
+
+### Support attribution source registration on android context menu navs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43de85fd6
+
+### [password manager] Plumb passkeys to passwordsPrivate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68293e2
+
+### capture-game: Implement shortcut to stop screen recording
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fa736c
+
+### [CR2023] Use Tonal button for the manage button in Page Action bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10597cb
+
+### Tweak handling of a few browser commands:
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2caacff6
+
+### Extensions: WFH: Added support for \`launch_type: multiple-clients\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0be6ccf
+
+### Disable companion side panel entry points on chrome ui pages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be3e47c
+
+### [CSC] Create chrome flags for Companion UXR.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8b1641ff
+
+### [FreezeCast] Handle focus better when pausing / resuming
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bef1890
+
+### Add tutorial for the password manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fb68f48
+
+### Add flag guarded strings updates for high efficiency dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3950fb5
+
+### Bookmarks++: Decrease entry point power text size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acc4945b
+
+### ambient: Added basic sign in browsertest setup for managed screensaver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3018f8
+
+### support-tool: Add performance relevant data to support packets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09972cc
+
+### [UPMLocalPwd] Add the accessibility strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bf64806
+
+### Add a CHECK and remove unnecessary SWAManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d805b97
+
+### Remove template argument for request and put the fetcher into supervised_user namespace.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6c5331
+
+### Rewrite T& into raw_ref<T>
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f1864f
+
+### [TTFPassGen] Show the bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91dad09
+
+### [Office settings] Introduce OneDrive page handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3fb839
+
+### Manual raw_ptr rewrite: //chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa9066f02
+
+### [Signin][Android] Make FRE landscape welcome page scrollable and fix ToS to the bottom of the screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0503162
+
+### CrOS Settings: Lifetime unique settings changed metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b1d7f5
+
+### [WebUI] Remove variadic template from component WebUIConfig creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7941bb5
+
+### Clean up full-restore-for-lacros flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03427b6
+
+### personalization: remove kPersonalizationJelly
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f64067d
+
+### Fix chrome://flags for Actions In Suggest.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5a2683c
+
+### [Tab Strip Redesign] Add param to disable button style
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cc2ae25
+
+### Removes need for fake-audio-capture-timestamps flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3d61bf0ce
+
+### Remove SyncStandaloneInvalidations from flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/347d31f5
+
+### Add new feature flag UseClientGmbInterface.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/97365061
+
+`);
+              </script>
+            </body>
+        </html>
