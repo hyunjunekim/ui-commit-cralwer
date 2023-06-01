@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-01
+### [FilesRefresh] Fix the toolbar sudden shifting during startup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34ca9715
+
+### Stop reserving space for a submenu arrow if there are no submenu arrows.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c180d1b
+
+### Reland WebUI: Enforce convention for manifest filenames.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ecd16f
+
+### [FilesBulkPinning] Include either bulk pinning or offline pinning banner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d966f976
+
+### [FilesRefresh] Make close button in <dialog> a real button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12af918
+
+### Implement high contrast borders for fluent scrollbars.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e45a26e
+
+### [views-examples] Vector example supports multiple sizes in icon file.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c92c55
+
+### Remove dangling EditingHandleView ptrs in TouchSelectionControllerImpl.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83a7eef
+
+### CR2023: Update cr-toolbar dark mode styles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8582ceb
+
+### [CR2023] Adjust price tracking view on bookmark bubble view.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d172c9
+
+### [QT] Account for logical scale factor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff39a27
+
+### Add Peter to ozone OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3c32e45c
+
+### [keyboard-alt]: Add SixPackKeyInfo to keyboard settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/094dbcf6
+
+### Jelly: Dynamic color support for cr-drawer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0bfe764
+
+### Convert views_interactive_ui_tests to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c31d79
+
+### Don't highlight the menu item under the mouse when opening a submenu.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34b8e451
+
+### Misc. cleanup for menu code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aea71aa
+
+### Update WaylandEventSource::touch_points_::window after wl_data_device::enter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ae7fe4
+
+### Icons on parents of submenus should be included in the icon max width.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0701076b
+
+### Use std::string::append(base::StringPiece) instead of decomposing
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eb24c2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/611a82d
+
+### Compute icon area width correctly for \`icons_in_label\` and checkmarks.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43fb703d
+
+### Use the view_utils.h utilities instead of hand-rolled ID checking.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e70768
+
+### Ignore tracked widget in WindowsStationarityMonitorMac ctor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0bed2e4
+
+### [file manager] Add a visual hint preventing dragging CSE files out of Drive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb521474
+
+### [BRP] Manual rewrite to raw_ptr on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39c5810
+
+### [Safety Check] Show reused passwords in the safety check
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a217ed2
+
+### Ensure the app "New window" submenu has a radio button selected.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f730b356
+
+### Adjust PopupMultiScreenTest.MoveToAnotherScreen; add logging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/578d899a
+
+### [PCCT-SideSheet] Fix ultrasmall menu sometimes visible on bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbca231e
+
+### [Remote Playback] Do no initialize MediaRouterUI with unknown codecs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cffd901
+
+### Convert /chrome/browser to use ARC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f59519
+
+### [DownloadBubble] Only show enabled commands as quick actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1287207
+
+### Allow tabbed web apps to open background tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ac85b7
+
+### [journeys] Fix regression where WebUI toggle disappears if pref false
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f50b325
+
+### Create hover card fade footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07abfc6
+
+### Add additional bubble to password manager tutorial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0a931a7
+
+### Fix InkDrop colors for permissions chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a8fe68
+
+### [realbox] Add browser test for realbox action vector icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1671dce
+
+### Fix rendering order for window controls overlay toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67875c3
+
+### Update permission-chip neutral/low-state colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/999dd40
+
+### Adds error message for different network.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dc9624
+
+### Fix ManagementStateChange flakiness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8667604
+
+### [PriceInsights] Add infrastructure for side panel WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80408edc
+
+### Reland "Add WebAppIntegration.IncompatibleAppShim test."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3edde16
+
+### [Win] Only inspect loaded modules when necessary
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0df1ec
+
+### [Whats New] Add refresh startup page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1a9c91
+
+### Remove kShareThisTabInsteadSelfCapture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/412c149f
+
+### [Reland] Implement Mandatory Reauth confirmation bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c93df6
+
+### [DownloadBubble] Temporarily show the toolbar in immersive fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee56bf4f
+
+### [Extensions c2s] Format MessageSection in extensions menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bd7385
+
+### Flag-guard updated deep scanning prompt security subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eaa9ea
+
+### [Extensions c2s] Remove close button from extensions menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47d036c
+
+### [user bypass] Record a pref on cookies controls bubble open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76a6867d
+
+### ash,chrome,content: remove \`USE_PYTHON3 = True\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22a539b
+
+### Clean up TODOs for crbug/1369982
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1018085
+
+### Privacy Sandbox: Record additional prompt helper metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b590d01
+
+### [AboutThisSite] Fix heap use after free & links opening on wrong window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0998075
+
+### Revert "Add WebAppIntegration.IncompatibleAppShim test."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab32b6f3
+
+### [CR2023][Profiles] Update icon and color for edit button on Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa3d612
+
+### [Office settings] Observe ODFS mount and unmount
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d7adea
+
+### dPWAs: BUILD.gn: Change one word in a comment to go better with WebApps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e19536
+
+### Adopt base::NoDestructor for KeyedService factories
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbaab91
+
+### Fix auto-accept for the share-this-tab dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63a763f
+
+### [Office settings] Add OneDrive subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95f15df
+
+### Remove WindowsFollowCursor feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/529ce8d
+
+### sharing: remove #chrome-sharing-crow-launch-tab
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/953cc08
+
+`);
+              </script>
+            </body>
+        </html>
