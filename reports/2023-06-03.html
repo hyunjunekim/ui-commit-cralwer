@@ -1,0 +1,248 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-03
+### Color Pipeline: Allow applying CSS variables on a shadow root
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13c0e77
+
+### Enable/Add VLOG in WaylandWindowDragController
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68982526
+
+### Remove noel@chromium.org from ui/webui/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/770006e
+
+### Fix "Google Password Manager" link contrast in Save dialog.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2965719
+
+### ui/display/manager: Do not use DisplaySnapshot* in callbacks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8f2d81b
+
+### Convert /ui/base:base to ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd27a2d
+
+### Stop reserving space for a submenu arrow if there are no submenu arrows.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cefe7b4
+
+### Remove chrishall@chromium.org from ui/accessibility/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5942b984
+
+### Alt-double-click on link causes text selection. Now the bug is fixed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2782e0e
+
+### [fuchsia] Remove use of ambient VMEX capabilities
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32d1466
+
+### Follow up for /ui/accessibility change
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e386576
+
+### bubble_frame_view: Fix the overlap issue for close and minimize button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5630bbc
+
+### Delete DXVAVideoDecoder and scaffolding.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51f418c
+
+### Convert /ui/compositor to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c602b6f
+
+### Update linux dump tree tests to check ATK relation targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c459182
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3506302
+
+### Disable flaky NativeWidgetMacTest.HideAndShowExternally
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9fff5c6
+
+### [headless] Avoid native focus changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4890d8
+
+### Implement double press and drag selection for web content.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e74c52f
+
+### [Files]: Adds metrics for DocumentsProvider search latency.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7edf142
+
+### Files app: Don't show Drive Offline folder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3e39a0d
+
+### [FilesRefresh] Update border radius for menu item focus ring
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76427ce
+
+### AppService: Define a new public target for //components/s..s/app_service
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e757116
+
+### Leverage build_webui() in chrome://view-cert.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d305f0d
+
+### [ChromeVox] Add Braille Table Selector to new ChromeVox Settings Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dff06f6
+
+### [CR2023] Fixed Chrome Labs icon color on More Tools menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5452cdc
+
+### [omnibox][webui] Fixes Action selection + simplifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3316eec
+
+### Show tab discard status in hover card footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce4a975
+
+### [omnibox] Clean up starter pack feature flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3956eae
+
+### CR2023: Theme the snapshot container background in Customize Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/806160a
+
+### Printer settings: Show an empty state for no saved printers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69bd3bf
+
+### Disable CreateShortcutBrowserTest.InstallSourceRecorded on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7755df0
+
+### [NP] Create Nearby Presence
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7b0371
+
+### Update performance round 2 strings based on UXW feedback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29cd422
+
+### Convert Mac MessagePumps to use ARC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89d2b7a
+
+### [omnibox] Scraps OmniboxEditModelDelegate and subclasses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19c1cfe
+
+### [ChromeRefresh2023] Empty image bug in profile row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c28365
+
+### [CSC] Triggering logic for region search IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0744b0e
+
+### Settings: Safety Check Extensions Handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/053b4f2
+
+### [Chrome Refresh] Update padding values of browser app menu button in expanded state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f212338
+
+### pip2: Always elide the URL in the titlebar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc77f98
+
+### Disabling high efficiency chip dialog button through the dialog model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dff26e7
+
+### [CR2023] Update History menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ead61a27
+
+### Adjust PopupMultiScreenTest to avoid flaky SecurityError messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0debfde
+
+### Flow refactoring to address confirmation chip stickiness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a97a66
+
+### [Password Manager] Add an IPH for Password Manager Shortcut
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f3774f
+
+### [SafetyCheck] Merge proxy & handler for permission modules
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe8199a
+
+### [SAA] Move favicons to the title and make prompt wider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c30e398
+
+### Disable EntryShowsExtensionIcon on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a802ad2b
+
+### [OOBE][CHOOBE] Implement increase/decrease buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b70ff87
+
+### [TTFPassGen] Introduce password generation bottom sheet content layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5e2edd
+
+### [UPI] Close the view in the controller's destructor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc4cf56
+
+### [CR2023][Profiles] Set hover color for feature buttons in Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88b3ee5
+
+### iwa: Check the IWA version during installation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95dc9b4
+
+### iwa: Store \`version\` in Web App Database
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fd0e27
+
+### [CSC] Auto-refresh on sign-in state change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7feb419
+
+### [Office settings] Implement OneDrive folder open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b9c13b6
+
+### autocorrect: use ReplaceSurroundingText behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b2718c3
+
+`);
+              </script>
+            </body>
+        </html>
