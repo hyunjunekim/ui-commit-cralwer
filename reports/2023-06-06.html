@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-06
+### [BRP] Manual rewrite to raw_ptr on Mac (June 2nd)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71d869b
+
+### Android: Convert jni_generator annotation processor -> srcjar for many
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c000505
+
+### inputs: Keep Lacros ConfirmComposition fixes if Ash requires them.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69a5b02
+
+### [Lacros] Early return OnDragSessionClose() after PrepareForShutdown()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec6ac61
+
+### [Translate] Add 11 new translate languages
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c025b8
+
+### cros_next: clear uniquely owned shadow details
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a50d10
+
+### [Auto-disable Accessibility] Update Clank dismiss duration to depend on AccessibilityState
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9be6cabe
+
+### CR2023: Fix side panel journeys regression in cr-toolbar-search-field
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3605df7
+
+### Avoid spurious dangling ptr warning in CompositorLockTest.LocksTimeOut
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45b2313f
+
+### Reland "Enable Google Sans Variable Experiemnt"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ab8a5f
+
+### macOS: Disable fullscreen low power mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f593ba5
+
+### [User Education] Make help bubbles attached to menus interactable
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8130828
+
+### DanglingPointer: annotate for unittests base+linux [2/N]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3c00ef
+
+### Revert "[fuchsia] Remove use of ambient VMEX capabilities"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a028996
+
+### [FileUpload]: Respect MIME types for all uploads via
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/118fc3f
+
+### ozone: add after stylus metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57f47f1
+
+### Borealis: Update Disallowed Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d65dea
+
+### Record the state of Microsoft 365 on first setup launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8096c5c
+
+### Enable Trusted Types CSP for test system web app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94ef809
+
+### [App Details] Added info tooltip for system apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9ff4e95
+
+### borealis: Associate the splash screen with Steam not its installer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a055fcc3
+
+### Pipe tab memory usage to the TabRendererData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b98c53e
+
+### [Appearance Settings] Add toggle for showing hovercard image previews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab5c13b
+
+### borealis: force dark mode in the splash screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/909adcb
+
+### [desktop promo] iOS Password Promo view with variants support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4f04f8
+
+### [Extensions c2s] Format main page on the extensions's menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cc1e05
+
+### [Performance Settings] Add finalized strings for round 2 features
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcf6570
+
+### Enable PopupMultiScreenTest.MoveToAnotherScreen on CrOS ASAN LSAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a9e313
+
+### Update 3-dot menu Translate string to be actionable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3731b9d
+
+### webauthn: update hybrid UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63b3481
+
+### [Extensions c2s] Format site permissions page on the extensions's menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c88b4f
+
+### Add Storage Access API service skeleton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1a163ad
+
+### [QuickStart] Allow missing password for open networks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f734f01
+
+### [dPWA] Install dialog now closes on navigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68a0e7b
+
+### Bookmarks++: Swap a11y label in edit mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dabf47
+
+### [Autofill] Increase minimum height of an Autofill popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c63938
+
+### Disable Super G icon when Search Companion is not available on page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7607494
+
+### Update the Live Translate subtitle style in the Global Media Control
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b04773
+
+### Updating manage interests string.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94285bf
+
+### [User Education] Detect and flag common problems in Tutorials.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9386159
+
+### Display auto-detected Live Caption language
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5de0b769
+
+### Remove WebsiteSettings.Discoverability* Histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3f0986
+
+### Convert enum PopupItemId  to enum class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65afd159
+
+### Preserve current step after network error screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac23423
+
+### Close KsecDD handle in renderers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b6b34a
+
+### Do not show a snackbar if already showing one
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/721bef8
+
+### Replace frontend_id with PopupItemId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71c2d3f
+
+### [waffle]Create a dialog that appears every time we open Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9e464a
+
+### Allow refresh inkdrops for omnibox-icon experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c402b38
+
+### [Reauth][Android] Add Java bridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e97326
+
+### [Android][Autofill] Settings launch via dedicated SettingsLauncherHelper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5968a12
+
+### [GARU] Use more specific metrics for restricted notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46fc7ee8
+
+### [TTFPassGen] Show the password suggestion to the user
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0fcbc6
+
+### [DownloadBubble] Refactor views pt. 1: Add DownloadBubbleContentsView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98a4eeeb2
+
+### [PWA] Remove obsolete launched flags for SW skip
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/57a3e28
+
+### [Password Manager] Prevent showing password manager shortcut promo while
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a5ecbe
+
+### [Password Manager] Trigger an IPH for Password Manager Shortcut
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/088686e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/011ded7
+
+### [DBSC] Propagate binding key through IdentityManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8ffb4c
+
+### Prevent Use-After-Free of StartupAppLauncher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1b7cdfd
+
+### Simplify AutofillPopupDelegate::DidSelectSuggestion()'s interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/beaae0c
+
+### [AppIdentity]: Address feature flags allowing updates.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b0f5bf5
+
+### Reland "Remove a redundant BUILDFLAG condition"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe08685
+
+### Ash: Fix TODO link in SigninHelper::OnClientOAuthFailure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91f7561
+
+### SAA: Add ContentSettingsBubbleModel for StorageAccess
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2bc9b0
+
+### borealis: Update the splash screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf58016
+
+### [FastCheckout] Fix crash when dismissing the sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7cd0d6
+
+### Cleaning up discard timer flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1404dc8
+
+### Add a chrome://flags entry for the popover attribute
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7e294a8
+
+### [AGC] Implement show force respect ui gains toggle.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03885a0
+
+### Add about flags to enable/disable GpuSchedulerDfs.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f7d55a3
+
+### Add kHideIncognitoMediaMetadata flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8e9648d
+
+### Add feature flag CrOSLateBootAudioHFPSwb
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/74b1a55
+
+`);
+              </script>
+            </body>
+        </html>
