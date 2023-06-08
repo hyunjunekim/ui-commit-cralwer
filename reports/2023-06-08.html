@@ -1,0 +1,256 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-08
+### [FilesF2] Fix FSP icon issue in the store
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0949ea93
+
+### [FilesBulkPinning] Ensure metadata changes invalidate all cached rows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78295daa
+
+### gfx::HDRMetadata: Set cta_861_3 and smpte_st_2086 members directly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c249018
+
+### [Office upload] Set ODFS volume to non-interactive in logged out state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6f660e
+
+### inputs: Enable AlwaysConfirmComposition by default.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/038ba818
+
+### Convert /ui/base/test/cocoa_helper to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16cc9ab9
+
+### Disable and hide interactive commands when volume is non-interactive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d492c4
+
+### Add Ozone/Wayland State dump to system logs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b254fd12
+
+### Update side panel background for chrome desktop refresh 2023.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7e6c016
+
+### Move ARC++ a11y code to services/accessibility/android and renamed.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4c428c5
+
+### [CrButton] Clear ripple after blur
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b95df01
+
+### Add gangwu@ as the owner of clipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/953a3e8
+
+### wm: early out in FocusController::ResetFocusWithinActiveWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c743765
+
+### [chromevoxclassic]: remove clickNodeRef references
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7bb5589
+
+### Remove incorrect references to _arc targets
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7307c76
+
+### ui: fix leaked raw_ptr in GSource derived object
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d99f668
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0af59be
+
+### Add test for regression in ImageSkia
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2672d466
+
+### Fix resource scale enum/factor mismatch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85826a4
+
+### [Files]: Protect against ImageLoader extension crashing.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fffc5c
+
+### Color pipeline: Fix old <link>s not getting deleted
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f21f3a00
+
+### WebUI Gallery: Add option for turning on/off color pipeline.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e3143d
+
+### [Chrome Refresh] Update the layout and padding for profile menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74c6d80
+
+### CR2023: Fix sp-list-item-badge styles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd2c49444
+
+### Update caption settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8143ddb
+
+### cros settings: update metrics toggle behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15826a86
+
+### [AGC] Add Allow AGC toggle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33a4bbe
+
+### cr23: Prepare ContentSettingsImageModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc1464ec
+
+### [Reauth][Android] Add user interaction callbacks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/374d9a9f
+
+### ext approval: Make the extensions permission structure more readable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac36c3f
+
+### [WebAuthn] Clean up expired metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5580bf3
+
+### Add metrics for adding exception from page action chip dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/949d596
+
+### [PDF OCR] Update the TODO comments associated with crbug.com/1393069
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9864ed5
+
+### Commit autocomplete text on DPAD keypress.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d7f6d26
+
+### [Lens]Add additional web contents listeners to hide loading state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cb7a80
+
+### Chrome enterprise: use SxS IIDs, remove obsolete interfaces
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6adf04c
+
+### Refactor to move all runtime checks related to CSC at one place.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a408e03b
+
+### Bookmarks++: Move side panel menu item to top
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1724611
+
+### [NTP][GM3][Panorama] Connect base color to backend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e7b260
+
+### Revert "[Multi Apps] Split up sub app install into 2 steps"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f3fd5c
+
+### [DownloadBubble] Refactor views pt. 3: Move Incognito row to dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6891422
+
+### Remove dependencies on SyncService in //chrome and move to //components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/008f790
+
+### [CSC] Only open URL if non-empty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20ba155
+
+### [Price tracking] Don't assume a tracked product has a bookmark for icon UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c65c360
+
+### Add content_settings OWNERs for chrome/browser/ui/cookie_controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/642e491
+
+### Convert Mac MessagePumps to use ARC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6ff3c0
+
+### [gbb-cct] Hide the sheet while another bottom UI is active
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7bec0d
+
+### Reland "[FastCheckout] Fix UI data update."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5187e7aa
+
+### [DownloadBubble] Refactor views pt. 2: Add DownloadBubblePrimaryView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4add50
+
+### [Multi Apps] Split up sub app install into 2 steps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cb62f3
+
+### [SHv2] Add Safety hub page to settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5275f77
+
+### [waffle]Add buttons to the UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac9b52b
+
+### DIR_METADATA for chrome/browser/ui/views/autofill/payments/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/264cc40
+
+### ambient: Do not process list image pref default value
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9815eda
+
+### [Files Settings] Update email address style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb2e444
+
+### Open Password Manager in a new tab during tutorial flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c676ef7
+
+### Revert "[Feedback Tool] Added Feature Flag for LinkCrossDeviceDogFoodFeedBack"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7fb153d0
+
+### [Feedback Tool] Added Feature Flag for LinkCrossDeviceDogFoodFeedBack
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0c8215d8
+
+### Remove enable-input-in-diagnostics-app flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d0c1ae1
+
+### ChromeOS Battery Saver feature and flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c35c069
+
+`);
+              </script>
+            </body>
+        </html>
