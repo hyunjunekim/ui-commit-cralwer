@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-09
+### [FilesBulkPinning] Reflect the pinned property as available offline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff6c70e
+
+### [Jelly] Add missing font constants to cros_typography.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1a903a
+
+### exo: Add a pointer test for setting cursor when surface id changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1dc2baa
+
+### [User Education] Small tweaks for Help Bubbles in 2023 Refresh
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27a66cef
+
+### Fix AXTreeManager type confusion in AXPlatformNodeTextRangeProviderWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/028d1e2
+
+### QsRevamp: Position popup notification on top of shelf-cornered bubbles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa1ae51
+
+### Fix VRR feature flag forwarding to lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73eebe0
+
+### [Files]: Hooks up fileSystemProvider to searched volumes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae57508
+
+### Make SimpleMenuModel::delegate_ const
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9bbfd8
+
+### Delete code that handles gtk_print_settings_get_resolution() returning 0
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d88724
+
+### Revert "Update side panel background for chrome desktop refresh 2023."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7529b8e
+
+### CR2023: Update fallback colors for buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ef506a
+
+### [Multipaste Growth] Add an option to show the clipboard history menu
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90fc4d5
+
+### Fix dangling pointers in ozone_unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb79692
+
+### Mark scheme_variant() as const in NativeTheme
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6400a51
+
+### CR2023: Update cr-toggle focus state.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d18283
+
+### gfx::HDRMetadata: Make members optional
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52f82ba0
+
+### [Android] Make isEnabled() static in FeatureMap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e55266e
+
+### [GL] Remove notion of size from NativePixmapEGLX11Binding and friends
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/defb3cc
+
+### [win] Add [[nodiscard]] to RegKey methods that conditionally modify \`this\`
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53013e7
+
+### [FilesF2] Update tree widget to support closure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28218f9
+
+### CrOS Settings: Separating first and subsequent lifetime metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8424c9f1
+
+### Add unit tests for the DevTools accelerators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e402109b
+
+### CrOS Settings: Removing OsSettingsSearchFeedback feature flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b6394c3
+
+### [Chrome Refresh] Make the extension badges the right size and default color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/448ccdd
+
+### [PriceInsights] Add basic action chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d473afa
+
+### Remove audio-settings-page flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3f057a1
+
+### [Extensions c2s] Add tooltips and accessibility names in menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6210530
+
+### [Extensions c2s] Hide message section when it has no extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4191c14
+
+### Add conditions for ScalableIph availability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8368cca
+
+### Reland "Lacros: Disable DevTools in Ash by default"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/508cc98d
+
+### [Performance Settings] Recommended badge for heuristic memory saver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/427b7571
+
+### Use Finch parameters to filter available language packs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a73cbf1
+
+### [ChromeRefresh2023] Remove extra horizontal padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab8aded5
+
+### ChromeRefresh2023: Update more internal paddings for tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e43b91d
+
+### Created an empty policy test page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db1e74e
+
+### Update hover card footer  icon spacing and strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/891458ff
+
+### Bookmarks++: Specify selected state in a11y label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cd56d6
+
+### [CSC] Save a pref if user navigated to exps success page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df8cc7f
+
+### Make TabModelSelectorProfileSupplier more robust.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e5ba59
+
+### float: Rename TabletModeMultitaskMenuEventHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cadb4472
+
+### WebUI: Leverage build_webui() in a few more debug UIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f50880c
+
+### Add danger type for failed deep scans
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcee67c1
+
+### Update menu translate icon to match omnibox translate icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30ca11c
+
+### Bookmarks++: Fix menu item crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/259bbb7
+
+### [Autofill] Remove AutofillClient::ExecuteCommand()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a83ce97
+
+### [CR2023] Update Infobar views spacing and size.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6db48f2f
+
+### [FreezeCast] Better accessibility text for cast dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e88fd9
+
+### saved_desks: Add auto-launch for admin templates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/413764b
+
+### [Desktop] Fix width for Tailored Security Non-Sync In-Flow Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b140f1c
+
+### Implement deep scanning in progress subpage view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/962fa14
+
+### [waffle]Implement UI layout using placeholders and dummy strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45f46c91
+
+### Obey the --force-devtools-available flag on lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1a0b0d
+
+### [CR2023][Profiles] Update sync icons and colors on Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63e51f39
+
+### Check CWSInfoService feature flag before using its methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8bea79
+
+### Display management text in chrome://settings/help for supervised users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89ca45c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8052c83
+
+### Made function argument comments follow style guide.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14050ac7
+
+### bruschetta: honor display_order in the installer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7801c0bd
+
+### [Office] Remove modal parent dcheck for connect dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/941b2ab1
+
+### CrOS Settings: Copy the startup sound toggle button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d321d75
+
+### Record the page at which office setup is cancelled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/049e5b67
+
+### borealis: Make the beta label known to the screen reader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abf8f7d
+
+### Add features::kProcessPerSiteUpToMainFrameThreshold to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ed0f1d2
+
+### Remove enable-rgb-keyboard flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/83ce673
+
+`);
+              </script>
+            </body>
+        </html>
