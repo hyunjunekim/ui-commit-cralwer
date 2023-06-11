@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-11
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dde36fb
+
+### [CSC] Consider user as signed-out if sync is paused
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a80ca7b
+
+### [CSC] Refactor feature params
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/110df0c
+
+`);
+              </script>
+            </body>
+        </html>
