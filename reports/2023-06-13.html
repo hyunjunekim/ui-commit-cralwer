@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-13
+### Pause DriveFsPinManager when battery saver mode is turned on
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8d839c
+
+### chrome-flags:lacros: enable LacrosColorManagement by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0d554c5
+
+### [Files]: Rename timestamp to modifiedTimestamp for consistency.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1cac112
+
+### Tooltip: Fix dangling ptr in TooltipControllerTestHelper
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3164467
+
+### Toggle CapsLock on keydown
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/917ab2941
+
+### TooltipLacros: Reset tooltip before window is destructed
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8dddca
+
+### CR2023: Polish updates to cr-url-list-item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64e81fe
+
+### Avoid spurious ime/ash warning during presubmit --all
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e50e61d
+
+### [Android] Remove ToastManager feature flag
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eadaeda
+
+### CR2023: Add transition to floating buttons on hover
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9446723
+
+### Convert /ui/base:test_support to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85dea33
+
+### [Read Anything] Update google-yellow-100 to match gfx::kColorGoogleYellow100.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8310d4
+
+### Remove unnecessary ui/accessibility/android/OWNERS and update ui/accessibility/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/049c80d
+
+### Update ZOOM filter to store lens bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6a2b77
+
+### ui: Add/SetMaskLayer CHECK after RecreateLayers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/781d646
+
+### Reland "Scale up web content on automotive"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0913aa
+
+### WebUI: Refactor cr_components/color_change_listener/ component.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/729746e7
+
+### Restrict ScopedNativeScreen to the Browser Process Only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7282ee
+
+### Remove scoped_nsobject from files already ARCed.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/409e813
+
+### Complies with the IA2 Spec concerning the auto-generated text attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16f7d56
+
+### Prevent StrictModeViolations for reflection API usage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4307628e
+
+### Tab Search: clean up custom icon color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1da8ae1a
+
+### Use renamed SkDeferredDisplayList et al and skgpu::ganesh::DrawDDL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cddaf15a
+
+### Reland "[ios] Add support for copy-to-surface"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17ce820
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f05926d
+
+### [a11y] Move test helpers out of the product
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9133b3c
+
+### Use LacrosOnly for Shelf related unittests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6747045
+
+### [Omnibox] Avoid increasing height of toolbar in smallest variant
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09e973f
+
+### [FilesBulkPinning] Show tooltip for clear offline storage setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7309ac
+
+### [Extensions] Add extensions to request access button tooltip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/550ac02
+
+### WebUI: Deduplicate redundant grit() "resources" dependencies.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd8b8e0
+
+### Remove spurious visual data sync updates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dbd333
+
+### Enforce a call to GraphImpl::SetUp() and GraphImpl::TearDown()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77b434a
+
+### Disable CSC on Chrome pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47ab65d
+
+### Display device lock page in sync before allowing users to sync in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d30022a0
+
+### App Service: Remove Observe methods from CapabilityAccessCache::Observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cf9968
+
+### Add tab dragging metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/927f617
+
+### Skip AccountPickerBottomSheetRenderTest on automotive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a225514
+
+### [ Tab Groups Save ] Fix visual data synclones.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a72a3b7
+
+### Fix FirstRunActivitySigninAndSyncTest for automotive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94fa50e
+
+### sync: rename SyncEncryptionKeys to TrustedVaultEncryptionKeys
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f209898
+
+### [Extensions c2s] Update icon size in menu's main page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bce0cb8
+
+### [Read Anything] Move IPH to ReadAnythingCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3646910
+
+### [omnibox][CR23] Update starter pack icons per ChromeRefresh2023 spec.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06213a1
+
+### [Extensions c2s] Update icon size in menu's permissions page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5bfa8b
+
+### [Color correction] Remove settings not planned for launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c3af3f
+
+### [CSC] Added postmessage for opening URL in browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8692609
+
+### arc: Discard graphics-tracing tool.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eeaa18c
+
+### Reland "[CR2023] Add section 3 of the profile submenu."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da54cc1
+
+### [FedCM] Align mismatch dialog with redlines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f67df5f
+
+### Removed unused fields from ^chrome java code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/372e501
+
+### [User Education] Rewrite some tests to track down very occasional flakes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80c61c7
+
+### Remove policy change handling error metrics and convert to CHECK.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca07df8
+
+### Bookmarks++: Change compact description text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/526f407
+
+### Flags UI: Introduce flags-experiment web component.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af821dc
+
+### Rewrite ContentSettingConstraints to store creation time & lifetime
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e837313
+
+### CrOS Settings: Use scoped_user_pref_update.h in metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ced396de
+
+### Convert ContentSettingConstraints from a struct to a class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4486fdd
+
+### [Extensions] Remove unnecessary code from extensions tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aad2c3e
+
+### [cr2023][omnibox] Implements Cr2023 action chip icons (WIP)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91c4069
+
+### Move grit() targets from c/b/r/BUILD.gn to their corresponding folders.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5521749
+
+### SAA: Listen to content settings changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57a7f5a
+
+### Mark some CastDialogSinkView methods as const
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8920f2e
+
+### [FedCM] Align IDP sign-in pop-up window with redlines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdc3c5f4b
+
+### SAA: Add permission entries to StorageAccess bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/527ae3c
+
+### [waffle]Implement the UI for the waffle list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b379f281
+
+### [user bypass] Add new cookie controls observer methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b73319
+
+### Remove HideNonDisplayableAccountEmail flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7536f50
+
+### Reland "Delete signin_metrics::AccessPoint::ACCESS_POINT_MEN, IDC_SHOW_SIGNIN and IDC_SHOW_SYNC_ERROR"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8f2a937
+
+### [Code Clean] Remove TabStripUI::HandleThumbnailUpdate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ec32d1
+
+### [StartTablet] Add SURFACE_POLISH_OMNIBOX_SIZE and SURFACE_POLISH_OMNIBOX_COLOR variations to flag surface polish
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f663ab
+
+### cros settings:add deprecate sync metrics toggle flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cd2db09
+
+### Add chrome flag: enable-friendlier-safe-browsing-settings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a930e9c
+
+### CrOS: hibernate: Implement experimentation features/flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1c24556a
+
+`);
+              </script>
+            </body>
+        </html>
