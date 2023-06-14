@@ -1,0 +1,372 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-14
+### [Files]: Use XfBreadcrumb in place of XfPathDisplayElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f828b50
+
+### [FilesF2] Swap the directory tree to the new implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bceb557d
+
+### [keyboard-alt]: Add kNone to SixPackShortcutModifier enum
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60267581
+
+### Tab Search: GM3 update part 1
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/690ddbb
+
+### [FilesF2] Add menu/rename support for directory tree container
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7865f5db
+
+### [keyboard-alt]: Implement GetRemapRightClickModifier
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e11c1ed
+
+### Update side panel background for chrome desktop refresh 2023
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cfb6cd
+
+### [FilesRefresh] Update quick view test to check iframe color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc78fe3
+
+### gpu: win: Upgrade global DComp device from IDCompositionDevice2 to IDCompositionDevice3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbf76f5
+
+### lacros/color-management: support more formats
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c98d204
+
+### bubble_frame_view: Ensure minimize is before close when tabbing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ff6953
+
+### User Education: Add fallback values for colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9dd78f9
+
+### CR2023: Fix cr-toggle focus state.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aaa9d12
+
+### WebUI: Remove {add,remove}ColorChangeListener helpers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/930839c
+
+### Convert /ui/base:unittests to use ARC
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efd26fd
+
+### WebUI: Leverage EventTarget in cr_components/color_change_listener/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12a5bae
+
+### [color] Set PreferredColorScheme to track the Browser for WebUI
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6b1f22d
+
+### Wayland min for viewport size without logging
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95114ed
+
+### Fixes Jaws / NVDA announcement in an empty omnibox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/888e97b
+
+### [Color correction] Updates color correction settings per mocks
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/829f78e
+
+### viz: Re-Enable HDR promotion to overlay
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0fc261
+
+### [CR2023] update primary background color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b0c577
+
+### Linear buffer modifier for front buffer rendering
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d64b903
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a32b043
+
+### [//ui] Move gl_image_test_template.* to sit next to its one consumer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c31f71
+
+### ui: fix leaked raw_ptr in GLibWaylandSource
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58d28c8
+
+### [a11y] iwyu cleanups
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a72b32
+
+### Extract Textfield touch selection dragging into helper functions.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e1d13d9
+
+### [FilesBulkPinning] Make the cant-pin icon be less bulky
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/013c2ba
+
+### [Battery Saver] Power Setting UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d404b6dd
+
+### Fix crash when try to start a presentation request (1-UA) while tab mirroring from the same tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46595f1f
+
+### Reduce contrast in the generated title bar color for tabbed apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89558179
+
+### [WebUI] Add trusted_types_util to the Ash WebUI common directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47ec54cc
+
+### CrOS GMC V2: Fix bugs for adding cast media items to updated CrOS media view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab3ce67
+
+### Use LacrosOnly for StartupBrowserCreator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c82485
+
+### [NP] Reenable NPService unittests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d817228
+
+### [DownloadBubble] Refactor views pt. 4: Track adding and removing rows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c6459f
+
+### [ntp][realbox] Add tall realbox feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/899492d
+
+### IWYU ui/color/color_provider_manager.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8b51a2
+
+### WebUI: Leverage build_webui() in c/b/r/internals/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a708fc8
+
+### App Service: Remove InstanceRegistry::Observer::Observe methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de81623
+
+### [Omnibox] Optimize ScrollToTLD
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcd30ad7
+
+### Revert "[Extensions c2s] Display confirmation message on request access button"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d366015
+
+### webauthn: update new hybrid UI to match UXW request.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37b4e1d8
+
+### WebUI: Leverage build_webui() in c/b/r/sandbox_internals/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27f9c5e
+
+### cr23: Update omnibox content settings icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd779f5
+
+### Add logic to get student assignments based on different filters
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0d30e5
+
+### [FedCM] Align mismatch dialog with latest redlines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac86146
+
+### Printer settings: Correct printer status crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e90087
+
+### Convert browser_tests and /chrome/test:test_support_ui to use ARC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5af0dfc
+
+### PrivacyIndicators: Fix launching settings for web app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ce2a529
+
+### Enable Favicon cache to reduce image flicker.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8129bc3
+
+### [Color correction] Adds color correction to a11y quick settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9b3365
+
+### [Extensions c2s] Use ColorSysNeutralContainer for menu's message section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62e6e93
+
+### [omnibox][realbox] Track focus to fix FocusToOpenTimeAnyPopupState3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d61a1d0
+
+### [Performance Settings] Fix add exception dialog current sites list a11y
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa49e16
+
+### [password manager] Add passkey edit dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c76c93
+
+### [CR2023] Update download bubble row hover color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0af8a5e
+
+### [Extensions c2s] Display confirmation message on request access button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc1fceb7
+
+### [Welcome Tour] Create the welcome tour dialog - Part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/385425d
+
+### Disable WebAppIntegration flaky tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d551802
+
+### [Android] Add back Signin.UserRequestedWipeDataOnSignout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7bda81e
+
+### Revert "Flags UI: Introduce flags-experiment web component."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d294a726
+
+### CrOS Settings: Add the toggle button for low battery sound
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c616872
+
+### [camera_preview] Add a feature flag for camera preview ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f5e4a5
+
+### [webui] Remove the kWebUIDarkMode flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfe0e796
+
+### dlp: Simplify retrieval of DlpFilesControllerAsh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57a3282
+
+### [user bypass] Rename CookieControlsBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5b9e13
+
+### [user bypass] Return the actual site counts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53cd9f5
+
+### Revert "ChromeRefresh2023: Update more internal paddings for tabs."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a1f555
+
+### Use LacrosOnly mode for UnpinnedBrowserShortcut test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95bb934
+
+### DanglingPtr: mark unretained dangling ptr in ChipController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1efd989
+
+### Revert "[WebAuthn] Use consistent namespaces in components/webauthn"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4fd8c0
+
+### [WebAuthn] Use consistent namespaces in components/webauthn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f89b779
+
+### [Autofill][Android] Make the unit tests for autofill popup controller run on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41811b6
+
+### Remove PrinterConfigurer from internal API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/809237e
+
+### Remove "=false" from BookmarkModel::UpdateLastUsedTime's just_opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e125ffb
+
+### Revert "[dPWA] Maybe fix flaky draggable regions tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bed5dda
+
+### [OOBE][QuickStart] Remove Shape Verification step
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d590ad2
+
+### [Promise Icons] Create AppServicePromiseAppItem and ModelBuilder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac0f4e1
+
+### [dPWA] Maybe fix flaky draggable regions tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a2cf0cd
+
+### Adding classifier host for visual search.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fb6267c
+
+### [SFL] Add experiment flag for tracking by default
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5c8c8e3
+
+### added safe-search flag for Android integration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f8482bc
+
+### [camera_preview] Add camera preview to chrome://flags page
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dcd994e
+
+### shortcuts: Add feature flag enable-search-customizable-shortcuts-in-launcher
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/72ae8d1
+
+### Enable screenshots for Incognito tabs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9ff75407
+
+### ChromeOS Battery Saver Always On feature and flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/778e6c2
+
+### Add ServiceWorker static router feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9dc8ebe
+
+`);
+              </script>
+            </body>
+        </html>
