@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-21
+### Make CreateIOSurface return a ScopedCFTypeRef
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f091d6b
+
+### [js-code-coverage] Generate source maps for //ui/file_manager/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/282ef40
+
+### Revert "Files: Grant temporary ownership to WebUI team"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65ba57b
+
+### inputs: enabled AlwaysConfirmComposition by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06cda3c
+
+### inputs: ensure clients support kAlwaysConfirmComposition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a805800
+
+### [User Education] Conditional and branching tutorials
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9b5f3a
+
+### wm: Fix a UAF in TransientWindowManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7a8f4c
+
+### Revert "[Pulsing ink drop] Apply pulsing action highlight to all Buttons"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e630875
+
+### [BRP] Manual rewrite exclusion to raw_ptr on Ash (June 15th)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d33547
+
+### Convert /ui/display:display to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e04cc51
+
+### [BRP] Automatic rewrite to raw_ptr on Ash (June 13th)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06c3c3cd
+
+### Update notification state when blocker is removed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e419b2a2
+
+### Fix control character normalization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8872353f
+
+### [Element Capture #⁠1'] Update SubtreeCaptureId to be backed by base::Token
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a18a5bd
+
+### [Ozone/Wayland]Apply SetWindowScale on latest in_flight_requests_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fbd5f07
+
+### Add metric for side panel combobox
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4946a5
+
+### Update side panel container text and icon colors for chrome desktop refresh 2023.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55413142
+
+### Fix incorrect use of scoped enumerations in format strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e39fab
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5089344
+
+### Wait SetInputType sending if IME is not yet activated.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1d33eb3
+
+### IWYU: returning a unique_ptr<NativeDisplayDelegate> in OzonePlatformX11 requires its include
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa0078a8
+
+### XfCloudPanel: Simplify code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5729f7e
+
+### [FilesBulkPinning] Maintain set of untracked path root in PinManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/157601a3
+
+### TabDrag: Add crash key to CanAttachTo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb693966
+
+### Intents: Enable Intent picker test case on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2fd04b
+
+### Lacros: Add chrome://management back to Ash WebUI allow-list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1caf90d
+
+### [Office upload] Move ConvertFileErrorToUploadError to ShowIOTaskError
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be6800b
+
+### [Office upload] Error notification for generic error in ODFS open flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24ab517
+
+### Fix the order of setting \`current_bubble_type_\` in the mandatory re-auth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c25134
+
+### Convert the task manager to use ARC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d40b0af
+
+### Move GetTabBackgroundColor from TabStrip to TabStyle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/492b0a4
+
+### [Chrome Refresh] Update the layout insets based on text changes in avatar_toolbar_button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb203a22
+
+### Reland Flags UI: Introduce flags-experiment web component.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02414af
+
+### Deflake OmniboxActionsTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a624ed9
+
+### [CR2023] Fix chip label in profile sub menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc7e89a
+
+### [Reauth][Android] Enable showing confirmation snackbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1fc577
+
+### Fix ExtensionInstallDialogViewInteractiveBrowserTest DCHECK-failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23b0776
+
+### Fix ProfileSupplier assert from the StatusMediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d268ae3
+
+### [CR2023] Align centers of icon and label for download bubble security view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e7b343
+
+### Update caption bubble language label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/435cd63
+
+### Revert "Add the Sec-CH-UA-Form-Factor header"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a2f1ef
+
+### [dPWA] Connecting all ML installation pieces together, install tracking
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fc0cffc
+
+### [PriceInsights] Trigger icon after price insights info is available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1225087
+
+### Update the p-link for Adaptive Charging settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8d3048
+
+### [desktop promo] Showing the iOS bubble promo when a user saves password
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa3a15f
+
+### Fix unnecessary call of set_close_on_deactivate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/765588c0
+
+### Add the Sec-CH-UA-Form-Factor header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3aa4fb98a
+
+### [dpwa] Adds new actions and CUJs to cover part of the P1 "PWA General
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df25a12
+
+### Disable flaky MenuItemViewTestRemove21.RemoveItem21 on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5f6faf
+
+### [desktop iOS promo] Promos utils and needed prefs
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/53fa814
+
+### [color] Integrate kUserColor and kGrayscaleThemeEnabled prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cbd76a
+
+### [autocomplete delete] Update design after UX review.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a311564
+
+### [sheriff] Disable flaky HighEfficiencyExclusionListBrowserTest.ExclusionListMatchesWildCards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bbce5e
+
+### [PriceInsights] Cache price insights info in tab helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9af7142
+
+### [Passwords] Sunset password strength indicator
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/12abe2d
+
+### [UPMLocalPwd] Introduce the deletion dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ebf42e
+
+### [Metrics] Remove obsolete histogram reference in code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c581f64
+
+### [signin] Better access point for histogram signin.signIn.Completed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/453ec56ff
+
+### [signin] Use raw_ref in SigninManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1915890
+
+### ContentSetting: Add SettingInfo parameter to GetContentSetting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/425c4cc
+
+### SAA: Update strings to match current mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/135e4619
+
+### [CR2023] Fix missing download bubble row hover color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36201ae
+
+### [CR2023] Fix Side Panel control button contrast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61b3158
+
+### [Office upload] Show appropriate error message for ODFS Copy/Move flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0f188c
+
+### [Clank][UX Enhancements] Highlight Confirm CTA for OTP input dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33e4f70a
+
+### [Office i18n] i18n strings for File Handler dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/966fd69d
+
+### [Clank][UX Enhancements]Highlight the Send CTA for challenge option selection dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d3ae8dc9
+
+### [FedCM] Convert the IDP sign-in status API flags to top-level flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/88c92264
+
+### Show DIAL media route provider on about:flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/99ab198
+
+### Add Speak on Mute Opt In Nudge Prefs Reset chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cb7f1d48
+
+### [Android] Remove GaiaIdCacheInAccountManagerFacade
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7e02c63e
+
+`);
+              </script>
+            </body>
+        </html>
