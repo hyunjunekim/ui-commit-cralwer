@@ -1,0 +1,380 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-22
+### Revert "[FilesBulkPinning] Ensure metadata changes invalidate all cached rows"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c253d0c
+
+### Fix general issues with configure-sync w.r.t. throttled requests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12e4a7d6
+
+### lacros/client: Propagate top inset from lacros to ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5f2ddec
+
+### Migrate /ui/native_theme to ColorProviderKey
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74318bc
+
+### Enable Dual GPU rendering by default on Mac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70d908c
+
+### Migrate /ui/qt to ColorProviderKey
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f90e0e7
+
+### Migrate /ui/gtk to ColorProviderKey
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4526daa
+
+### Migrate /ui/views to ColorProviderKey
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a27a2d
+
+### Migrate /ui/views/widget to ColorProviderKey
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/caead132
+
+### Migrate /ui/color to ColorProviderKey
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9048a49
+
+### gpu: win: Avoid unconditionally QI to IDCompositionVisual3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/586b0bd
+
+### Move ColorProviderKey into its own header and make aliases
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bdc63cb
+
+### [Side Panel Journeys] GM3 updates for Side Panel Journeys
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c6c7e4
+
+### Fix Netflix not going fullscreen on some monitors.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8b9e1e
+
+### [realbox] Cleans up rounded corner feature and flag
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3fb4ea67
+
+### Android: Add ResettersForTesting.register() to //net, //services, //ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fbfe254
+
+### Remove kAndroidFrameDeadline feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6b611d
+
+### Disable flaky ExamplesTest.TestViewsExamplesLaunches on Win.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f03564e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f303aa8
+
+### WebUI: Make it possible to display the label first in cr-radio-button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b95194
+
+### [Files]: Fix UMAs for Removable volume search.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18b8d007
+
+### [Office upload] Add Reauthentication Required State custom ODFS action
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe5a8c6
+
+### Add \`UserEducationDelegate::LaunchSystemWebAppAsync()\` API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9a20da
+
+### Migrate /chrome/browser/ui/web_applications to ColorProviderKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddef3b8
+
+### Intents: Clean up obsolete feature flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4157057
+
+### Make Ash's ShowSingletonTab use Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9162fb5
+
+### [CSC] Fix possible race condition by fetching text query in one place.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af83aea
+
+### [GM3][Panorama] Use new GM3 set and get for theme color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45c66f2
+
+### multipaste: Add clipboard history menu header when UI refresh is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d1199e
+
+### Refactor paint logic in TabStyleViews to use TabSelectionState enum.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e2f1f5
+
+### [Extensions c2s] Add metric when opening menu while ext. requests access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3cb530
+
+### Don't disable ARC when ARC app gets pinned in XDG mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cdbcdb
+
+### Migrate /chrome/browser/ui to ColorProviderKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c387e50
+
+### Migrate /chrome/browser/ui/views/media_router to ColorProviderKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca5be8b
+
+### Migrate /chrome/browser/ui/views/frame to ColorProviderKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06ef476
+
+### Migrate /chrome/browser/ui/views to ColorProviderKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/441ed79c
+
+### Migrate /chrome/browser/ui/webui/side_panel/customize_chrome to ColorProviderKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44c84746
+
+### ChromeOS FilesApp UMA to track drive bulk pinning enabled source
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba9f1b0
+
+### Fix incorrect use of scoped enumerations in format strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38b2d041
+
+### Migrate /chrome/browser/ui/webui/new_tab_page to ColorProviderKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13fc35e
+
+### [NP] Add piping for NP identity types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9f432c3
+
+### Migrate /chrome/browser/ui/color to ColorProviderKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fc83a1
+
+### Migrate /chrome/browser/ui/views/borealis to ColorProviderKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37c2827
+
+### Replace ReloadType::ORIGINAL_REQUEST_URL with LoadOriginalRequestURL.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c53a96
+
+### Fix Lacros external protocol dialog focus test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/447662b
+
+### [ntp][gm3] Dynamically color Panorama's GM3 Mini New Tab Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61632d2
+
+### [Extensions c2s] Configure Extensions Menu in-product help feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cc5ec5
+
+### Floatify printing code and APIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c61b68a
+
+### [CSC] Handle opening URLs from context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d59f6a7
+
+### [webauthn] Synced GPM passkeys on conditional UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/775ab71
+
+### [dpwa] Modify an action and add CUJs for P1 "PWA General Functionalities" manual tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14be958
+
+### Fix focus test on Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39c64cd
+
+### chromeos: Make supervised user quick settings button clickable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5c11aa
+
+### CrOS GMC V2: Use CastDeviceEntryViewAsh for CrOS updated UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39772e2b
+
+### [Color correction] Adds UMA metrics for color correction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd5eeb4
+
+### Add a vector to maintain the insertion order of TabGroupIds added to the TabGroupModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ced72a9d
+
+### [omnibox][CR23] Fix ThemeIntegration test on Linux.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88e1af39
+
+### Check managed status of pref early
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84a62a8
+
+### Update side panel content border for cr2023 and combobox icon color for pre-cr2023.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a43c8b2
+
+### [RDSD] Clean up obsolete code paths after launch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7a3ec53
+
+### Bump the macOS deployment target to 10.15
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94eb86e7
+
+### [omnibox][webui] Fixes crash when toggling suggestion headers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0497f70
+
+### Buildflag changed to more relevant.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c903d85
+
+### [CR2023][Profiles] Update sync info container style in Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0198ff
+
+### [lacros] Fix lacros failing to open after a browser crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/857bdc2
+
+### Use consistent naming for deprecated modes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ca6d56
+
+### [headless] Added headless command execution result codes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acc8fce
+
+### [CR2023] Update permission bubble typography
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a0b6ef
+
+### [user bypass] Return the expiration of the active exception
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29334a5
+
+### Text to inform clearing cookies will keep supervised accounts signed in
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ac54955
+
+### [CR2023][Profiles] Add bottom margin and update width for Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8af620a
+
+### Disable all GoogleDriveHandlerTest tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/089ff14
+
+### Updated colors and radii for ChromeRefresh2023 in ShareThisTabDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a6cc8e
+
+### [omnibox] Removes accessors to unowned instances in OmniboxEditModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d98986
+
+### ambient: Add test expectation to clean up data when policy is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c7f532
+
+### Migrate ChipController to PermissionPrompt::Delegate WeakPtr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cea7f3c
+
+### Updated button styles for ChromeRefresh2023 in ShareThisTabDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcdd3a2
+
+### Revert "CrOS Settings: Clearing pref when UMA consent is revoked."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cff84f
+
+### Remove unused replacement_android_app extensions manifest field
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d16f684
+
+### [Office] Adjust some dialog heights
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8311b178d
+
+### gardener: Disable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7ff7a6e
+
+### Add SetSupportedScheme for WebUIDataSource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e9242d
+
+### [PriceInsights] Add title section in side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abb841d
+
+### [Emoji Picker] Add admin policy to disable GIF support in emoji picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b61df59
+
+### Revert "Enable Fuzzy match for Omnibox in Launcher"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/77e87c1
+
+### multipaste: Expose clipboard history refresh flag in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b78ba32
+
+### [FedCM] Remove flags for shipped features
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8c6c9ac
+
+### [Phone Hub] Cleanup expired error handling flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/074cc69
+
+### Expose LacrosProfileBackwardMigration feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/661e475
+
+### [Fontations-backend] Add a feature flag to enable the backend
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/94487ec
+
+### Crostini: Update #crostini-container-install to allow installing Bookworm
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f12b0d2
+
+`);
+              </script>
+            </body>
+        </html>
