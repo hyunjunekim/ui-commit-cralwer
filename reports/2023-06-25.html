@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-25
+### Always initialize TSF text stores
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a997ccf
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce333c7
+
+### win: Remove 10Glass from Windows10Glass function and var names
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce223a6
+
+`);
+              </script>
+            </body>
+        </html>
