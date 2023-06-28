@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-28
+### [ChromeRefresh2023] Fix square radio button regression
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63c7967
+
+### A bunch more cleanup of overly-complicated metrics and code.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2291f5a
+
+### QsRevamp: Move down popups when there's not enough space above bubble
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e767cf
+
+### WebUI: Expose d3.min.js from chrome://resources/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/adc4837
+
+### gpu: win: Make DCompPresenter report SupportsViewporter instead of SkiaOutputDeviceDComp
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3eed001
+
+### Switch to using AVSpeechSynthesizer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1299120
+
+### CR2023: Update color for checkmark icon in cr-checkbox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c084db0
+
+### Fix empty context menu section
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ad0f3b
+
+### Remove the pimpl in ui/base/test/cocoa_helper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95f8f941
+
+### Convert /ui/views:test_support to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a169c7f
+
+### Convert views_unittests to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7cb456e
+
+### Revert "[CR2023] Fix Textfield hover when selected."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab3ce53
+
+### [a11y] Record the count of AX nodes with memory metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abd77fa
+
+### Fix for supported buffer formats in wayland.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94c35158
+
+### [ntp-gm3] Add Material NewTabPage color mixer
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1e0e09
+
+### [CR2023] Minor adjustments to Mac menus.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d558da4
+
+### [fix-swo-violations] Fix sort comparison function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/119d1f7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/417eafb
+
+### [a11y] Move old_hypertext_ out of AXPlatformNodeWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/553c9a639
+
+### Annotate Cross task dangling pointers detected on Linux builds
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4332a2f
+
+### [WebUI] Enable trusted type CSP in assistant optin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8412a63
+
+### [CrOS WebUI] Deprecate JS Trusted Type CSPs to deduplicate policy creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c8da9b
+
+### CrOS GMC V2: Move device selector view into MediaNotificationViewAshImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e2d7b18
+
+### Revert "Rename blink::UrlPattern to blink::SafeUrlPattern."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8426112
+
+### Rename blink::UrlPattern to blink::SafeUrlPattern.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91be4bca
+
+### Do not hide cursor when Borealis windows are focused.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fcde0f
+
+### feedback: Add text to inform users that feedbacks may be shared
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21e53e0
+
+### [a11y] Chromevox uses a different pitch for dictation hints.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd2a21e
+
+### Resolve TODO in isolated_web_app_test_utils.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bb211f
+
+### Add \`HoldingSpaceFile\` to \`HoldingSpaceItem\` constructor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2a6a771
+
+### [Red Warnings] Integrate with HaTS Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10938ca
+
+### MaterialNext: Fixed DeskClientTest when Jelly is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd15ff02
+
+### [omnibox] Break inheritance between OmniboxPopupViewViews and *ViewWebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96e6483
+
+### Remove MultiProfileUserControllerDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01536cf
+
+### multipaste: Finalize strings for clipboard history menu header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1290345
+
+### [Expired Histograms] Remove Download.DuplicateInfobarEvent.{Type}
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7abc35
+
+### [metrics] Fix logging for history submenu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4024ca3
+
+### Allow LocationIconView to be hovered during page action chip animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd2c5ea
+
+### [desktop ios promo] Triggering logic for desktop iOS password promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e4a5aa
+
+### [Auto-disable Accessibility] Remove AccessibilityManager dependency from AutocompleteEditText
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6e004d
+
+### [Settings] Removed detailed desktop language settings flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/abfb91f
+
+### Add metrics for mandatory reauth confirmation bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6bab40
+
+### print-preview: hide manage button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86b866fc
+
+### media: Remove Ctrl+S shortcut for "Save video as ..."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b952966
+
+### [Clank][UX Enhancements] Allow the entire row of a challenge option to be selected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ab5e97
+
+### [Rounded Windows] Update corner radius for frame headers and overlay borders.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5cf162
+
+### [Clank][UX Enhancements]Set authenticator option title to primary text and its description to secondary text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/820e5d1
+
+### pip2: Ensure the close button always works
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af9589e
+
+### [Extensions c2s] Add histogram to record extensions granted access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a850774
+
+### Rename kReadAnythingDefaultFontName to kReadAnythingPlaceholderFontName
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cde449f
+
+### [desktop ios promo] Triggering logic for desktop iOS password promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34f3615
+
+### [ SavedTabGroups ] Update Save Toggle Accessible Name when pressed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e5e8ea
+
+### Rename cloud_devices::printer::MediaType to MediaSize
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32842f7
+
+### Remove out-param from SharingHubModel::GetFirstPartyActionList()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72a41e9d
+
+### [CR2023] Fix some page info icon colors and text styles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d008bfc
+
+### assistant: Reduce the retries of service restart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/152149058
+
+### Update file system type when initializing holding space item.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffe4999
+
+### Add spacing between rows in hovercard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5a8103
+
+### [headless] Don't create initial page for headless command target
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8916aadd
+
+### [CSC] Add error page when navigation fails.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22c8c761
+
+### Reland "Refactor GetSettingsForOneType API to avoid out-param"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86d098d
+
+### [DTC] Add identifiers for device signals consent dialog buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec5d273
+
+### 🧪 Reland "Refactor Make*AccountAvailable* identity test utils methods"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbcdb33
+
+### Remove explicit conversion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdf1e67
+
+### Revert "Prevent non-closable tabs from being closed"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0208972
+
+### [Signin][Android] Fix the a11y string for the signed-out avatar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9a896ec
+
+### Rounded preview corners for ChromeRefresh2023 in ShareThisTabDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1e5330
+
+### GaiaScreen handles identifierEntered event
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/895cce9
+
+### [Gardener] Disable flaky SaveCardBubbleViewsFullFormBrowserTest tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed23eb0
+
+### SAA: Tweak content settings bubble UI to match mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5631b4
+
+### [BRP] Manual rewrite to raw_ptr (June 21st)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b745729
+
+### [Emoji Picker] Add nudge & menu item (help) for GIF support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82019ce43
+
+### language_packs: Create flag to enable Language Packs in Settings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f930363
+
+### Add a feature flag to toggle AVIF gainmap HDR images support.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/26d1a41
+
+### Add data: URLs for SiteInstanceGroup feature and flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f68d8c3
+
+### Reland "Enable Fuzzy match for Omnibox in Launcher"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6cae745
+
+`);
+              </script>
+            </body>
+        </html>
