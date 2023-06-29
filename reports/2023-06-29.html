@@ -1,0 +1,372 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-29
+### CR2023: Use shared variable for disabled colors and add HCM fallbacks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26bc283
+
+### BulkPinningDialog: Add missing member init
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b93ac1
+
+### [Side Panel Journeys] Add carousel GM3 updates to side panel journeys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16a78805
+
+### Hide menu when selection dragging in views::Textfield.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/771df83
+
+### [Files app] Convert background crostini to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d7ced5
+
+### Adjust padding around CrOS touch selection handles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/954c0bb
+
+### Remove scoped_cgl.{h|cc}
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/660b53f
+
+### Update the component for ui/display
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ef19a6
+
+### Clean up ash::input_method::ImeKeyboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/610deead
+
+### Remove rjkroege@chromium.org from ui/base/wayland/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ccc0da8
+
+### Use VectorIcons with ColorId for aura touch selection handles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36df50c
+
+### [Test Automation] Provide description for Check[Result]()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f60ea7
+
+### Tooltip: Reset TestTooltipView before ~Widget()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac32a9d
+
+### Add new cros.sys.highlight-error color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4fe0ab8
+
+### WebUI: Introduce new test mechanism, without js2gtest and test_api.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23b7a05f
+
+### [a11y-extensions] remove lingering references to chrome.automation.getTree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88cbd63
+
+### Do not use std:vector::swap() in WaylandSurface::set_opaque_region()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83e8b09
+
+### gfx: Add constructor RectF(const Size&)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d07b408
+
+### Initial implementation of scrollbar-color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ef69ea5
+
+### Rewrite touch selection magnifier without singleton interface.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/723bb71
+
+### [CR2023] Adjust menu separator color on Mac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2cee71a
+
+### [CR2023] Fix menu selection/highlight/hover colors.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e5960b9
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86a63a3
+
+### Revert "Report URL sources for focused frames even when non-editable"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d09974
+
+### Reland: "[Pulsing ink drop] Apply pulsing action highlight to all Buttons"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abb59d5
+
+### CR2023: Update toasts in side panel
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ce7129
+
+### Revert "Always initialize TSF text stores"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73c65e5
+
+### [automation] Migrate automation API from legacy IPC to mojo
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b41f204
+
+### [Select-to-Speak] Clean up AccessibilitySelectToSpeakPageMigration
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/94df048
+
+### Remove rjkroege@chromium.org from ui/aura/gestures/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee1dd23
+
+### [CR2023] permission bubble refinement round 2
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5d5006
+
+### Allow select to have writing mode vertical
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8cdaba
+
+### Send keyboard layout name changed only on real layout change.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c27651
+
+### [Files app] Convert the drive sync handler to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/880f26c
+
+### [Files]: Fix UMAs collection for pure JS approach.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/21d3930
+
+### [Emoji Picker] Support direct GIF insertion  in Lacros - Part 1
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d97a55
+
+### Manually refresh file list of non-watchable volumes after all IO tasks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d721ae
+
+### [Extensions UI] Update sidebar styling to cr-nav-menu-item style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/157b85d4
+
+### CrOS Settings: Incorporate about page into main page container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5f8e6b
+
+### [Rounded Windows] Apply rounded corners to all four corners of frame in Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71f14dc3
+
+### Fix InkDrop::Get call to get from correct ink drop view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e12e82f
+
+### [CSC] Fix WebContentsDelegate behavior for companion side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ede8ff4
+
+### [office] localisable welcome screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de2b3a7
+
+### [ChromeRefresh2023] Add padding when textfield hovered.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35c45f8
+
+### Create a banner telling user they are using test policies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25ccd1b
+
+### [Password Manager Tutorial] highlight menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/631760c
+
+### Fix hover card icon color change on system theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0c94c2
+
+### Reland "Rename blink::UrlPattern to blink::SafeUrlPattern."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51abed9
+
+### [CR2023] Add 'Clear browsing data...' item to top-level menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbda1f7
+
+### [omnibox] Fix OmniboxButtonRowView action index selection plumbing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d46efb2
+
+### Update tab discard ring to use finalized color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77013650
+
+### Navigate to settings via high efficiency dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b439fa0
+
+### Reland Flags UI: Remove jstemplate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f85a97
+
+### [CSC] Only listen to error navigations at most 1 level down in WebUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ec265a
+
+### Remove U2F API related permission prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d2d283
+
+### Add CUJ browsertest for visual search.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b37176
+
+### [ntp][lms] Verify non-uploaded custom background image links
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75e08319
+
+### Operate over cc::Region @BrowserDesktopWindowTreeHostLacros::UpdateFrameHints()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9425f990
+
+### [Extensions c2s] Add in-product help feature for request access button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/629df76
+
+### [Extensions c2s] Add metrics when toggling site settings using menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64bdbfb6
+
+### [CR2023] Password 'key' icon should use the open version most places.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/465fdff
+
+### [PriceInsights] Condition the high price label with a feature param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66adae79
+
+### Operate over gfx::RRectF @BrowserDesktopWindowTreeHostLacros::UpdateFrameHints()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e623f92
+
+### Fix padding when switching from hovercard with 2-row footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da088f3
+
+### [dPWA] Enable AppHome by default on ToT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6ae742
+
+### Ash: updating some tests to use GetDeskAtIndex
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b0a65c
+
+### [omnibox] Update Views UI when suggestion remove X button is pressed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/937eb5b
+
+### Move margins to child views to not clip ChromeRefresh2023 focus frames
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d48d3e5
+
+### Add tovep@chromium.org to desktop_capture/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d30bc59
+
+### [dpwa] New actions to enter/exit fullscreen and check the toolbar for an
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28ed4c9
+
+### [OOBE] Split UserCreationScreen and AddChildScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9581ff
+
+### Stop AppHomePageHandlerTest pinning to the taskbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fbd4be
+
+### Added the basic UI to the policy test page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/518d19c
+
+### ChromeRefresh2023 colors and radii for DesktopMediaPickerDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b3b65e
+
+### Passwords: Check if delegate is null SaveUpdateBubbleController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9ae2ba
+
+### [user bypass] Support creating user bypass exceptions in the controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/326df1d
+
+### Revert "[Browsing Data Model][site data] Report storage accesses to BDM"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/798393d
+
+### Updated button style for ChromeRefresh2023 in DesktopMediaPickerDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a32fa09
+
+### Disable WebUITabStripDragInteractiveTest.CloseTabDuringDragDoesNotCrash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4e6412
+
+### Enforce that non-closable PWAs are only launched a single time.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39cef76
+
+### [waffle]Make dialog resize itself based on its content height
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa25ccf
+
+### [Emoji Picker] Support direct GIF insertion  in Lacros - Part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35cc46f
+
+### [Office] Add a function to launch setup without files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99045eb
+
+### [Browsing Data Model][site data] Report storage accesses to BDM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f265b00f
+
+### [Jellybean] Expose cros-slider in cros-components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cb27f5
+
+### sharing: remove #shared-highlighting-amp on desktop & Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/759b745
+
+### [FedCM] Skip well-known check behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/70a988f
+
+### iwa: Add feature flag for automatic IWA updates
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d532bbb
+
+### Add Chrome flags to control input compatibility logic
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d94860
+
+`);
+              </script>
+            </body>
+        </html>
