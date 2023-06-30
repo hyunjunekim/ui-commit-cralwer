@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-06-30
+### Add ActiveState property to DisplayUnitInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9dc9cf99
+
+### [a11y] Migrates DispatchActionResult to automation mojo.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54252391
+
+### [FilesBulkPinning] Remove all attributes prior to setting them
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2167ca
+
+### [color] Update sys token header colors to reflect spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57c2119
+
+### Avoid dangling ptr warning in FocusTraversalTest.PaneTraversal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78a8711
+
+### Inroduce FocusManagerTest::RemoveFocusChangeListener().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78a3ca0
+
+### Ref-count shared event list in FocusManagerTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40b90e7
+
+### [mac] Fix child widget rendered behind its parent in fullscreen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/640f92d
+
+### Revert "[flatland] Enable overlays for GpuMemoryBufferVideoFramePool output"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c042483
+
+### Annotate all Across tasks dangling raw_ptrs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/508dce9
+
+### Make ax_android_constants.h Android/ChromeOS only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78711f5
+
+### Re-enable test after approving Skia image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/798e0d18
+
+### [wayland] Adding single pixel buffer protocol client for chrome
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15246b41
+
+### Fix NOTREACHED() crash in gl::init::CreateGLContext()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94ac4a3
+
+### [CR2023] update AppMenu separator border padding to 20pt
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/191b1ea4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb816cd
+
+### Accessibility: Improvements to the ChromeVox OOBE dialog
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/888750d
+
+### Add support to parse ABS_MT_TOOL_(X,Y)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/023805da
+
+### Move file_system::FakeDiskMountManager to chromeos/ash/components/disks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57ddbd8
+
+### bruschetta: Remove DownloadService-based downloading
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c72da0b
+
+### Fix teardown crash for DeskIconButtonScaleAnimation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ee3d91
+
+### Update inactive tab fill for gm3 to match selected and hover fills.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5eabac1
+
+### Fix UAF when exiting a nested run loop in TabDragContextImpl::OnGestureEvent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63d6b8b
+
+### [dPWA] Cleanup some includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb50817
+
+### [Sheriff] Turn off various flaky tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dd85f7b
+
+### Fix incorrect tab supplier is used by ToolbarTabController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba67d8f
+
+### Changed ash/lacros to lock focus on accessbility bubble if it exists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30ff1cb7
+
+### Shortened url for account signin test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4d83f7
+
+### Addressing nits in prior browser test CL.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eb1898
+
+### [iOS desktop promo] Fix UI label layout bug for certain platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08ee1ff
+
+### Prevent non-closable windows from being closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34a3ae9
+
+### [omnibox][cr23] Update mixer to use tokens for SS omnibox BG colors.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7a140ae
+
+### [NTP Quests V2] Add flag to toggle between header types
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/daec9081
+
+### Parameterize DesksClientTest for Jelly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78a8dde
+
+### Reland "[Empty States] Add empty state illustrations to tab switcher UI"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2906591
+
+### Reland "Prevent non-closable tabs from being closed"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85b180c
+
+### [CSC] Add post communication to server on link open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1453a65
+
+### dPWA: Change "choice" to two "choices"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2fe577
+
+### [Panorama][GM3] Clear color prefs and not image
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d23c01
+
+### [PriceInsights] Add Price Tracking section in side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6631d97
+
+### [Extensions c2s] Add metrics when opening chrome://extensions from menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e82148e
+
+### print-preview: add localized manage printer button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6848f3
+
+### Update title in the VCN autofill progress dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4325c25
+
+### Make apps not shown in shelf not pinnable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48376b3f
+
+### [Refresh 2023] Update toolbar inkdrop highlight to use a floating size constructor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b156c2e
+
+### [Extensions c2s] Move show requests toggle callback to view controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8dde8ff2
+
+### Reland "[CR2023] Add 'Clear browsing data...' item to top-level menu."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fb690df
+
+### Browser tests for chrome://policy/test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c06aef8
+
+### Reland "Reland "[PolicyLogs] Adding chrome://policy/logs on Desktop""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a78c7673
+
+### [webauthn] Remember last used phone from sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42747a4
+
+### [SFL] Update price tracking toggle string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a939d4d
+
+### Move AddressUIComponent to work with ServerFieldType.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb8d53b
+
+### sharing: remove some unido histograms (3/n)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b28b2c
+
+### Rounded preview corners for DesktopMediaPickerDialog ChromeRefresh2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8920f7b7
+
+### Revert "[CR2023] Add 'Clear browsing data...' item to top-level menu."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d028ec
+
+### Fix the issue that access empty arc window info of ghost window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/565b2a1
+
+### [dPWA] Replace SetSubsystems() with SetProvider()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd7803c
+
+### Rename list to table since it is a table
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54748b7
+
+### Revert "Create a feature flag for PDF portfolio"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f722ccb
+
+### Add about flags for signed-out view demotion
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0895cee
+
+### Create a feature flag for PDF portfolio
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/747748b
+
+### Only include Android headers on Android for //components
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7c0c589
+
+### Clean up unused SU Interstitial code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/622f576
+
+`);
+              </script>
+            </body>
+        </html>
