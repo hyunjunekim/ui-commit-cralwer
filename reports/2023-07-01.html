@@ -1,0 +1,292 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-01
+### Virtual display test prospective fixes and logging for macOS 14
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ff2121
+
+### [Win] Don't adjust window position when the browser window is snapped.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e74a6b73
+
+### Return scoped_refptr<> from LayerAnimator creation methods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce83030
+
+### Separate Automation Mojom from Service Mojom
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04b8d4fa
+
+### Add basic display device logging
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb91398
+
+### [a11y] Serialize text deletion/insertion offsets for accessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36441f97
+
+### [ios] Updates for Dawn
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5ad2b6
+
+### ozone/wayland: Remove some DCHECKs, convert some to CHECKs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7831073
+
+### Add video processor based Auto HDR support on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2fae4c9
+
+### Revert "Realbox: Listen for selection changes"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bb98dc5
+
+### Realbox: Listen for selection changes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1dcf0f
+
+### Fix dangling pointer in ScopedGObject destructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a81b2e
+
+### ui/qt: make qt6 working without sysroot
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad986be
+
+### [CR2023] Fix font size inconsistency on Linux
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcfdc10
+
+### Make ax_dump_tree not crash with Firefox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96b13577
+
+### Merge in ui/base arc targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4241ece
+
+### ozone: On fetching connectors, verify that they ain't zombies
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac858e0
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/292b292
+
+### ozone/wayland: Move all ui-controls initialization to constructors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b16af97
+
+### [GPU] Remove GLImageNativePixmap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5442494
+
+### [Viz] Remove resource_format.h includes from //ash and //ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19839cd
+
+### [FilesBulkPinning]: Correct handling of unavailable offline Google files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4714a5b
+
+### [omnibox] Moves header toggle state pref observation to OmniboxEditModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da3a885
+
+### Disable restore for unresizable browser apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aa3603
+
+### [PriceInsights] Add history section in side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abe51b4
+
+### [omnibox] Rename WebUIOmniboxPopupView to OmniboxPopupPresenter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f032a37c
+
+### [ SavedTabGroups ] Fix bug for synced devices displaying wrong tab order
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0a27d7
+
+### Update frame drag handle extension for GM3.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/804f480f
+
+### autopip: Add kEnterAutoPictureInPicture to services/media_session
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b293fe8
+
+### customization: Add customize tablet buttons row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eefcfad
+
+### [Cros Hotspot] Add Ssid validation and error UI in hotspot config dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ee7c88
+
+### Fix touch event handling for app uninstall dialog checkbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ff69ab6
+
+### Do not show fullscreen exit button while in pointer lock mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fad5c2c
+
+### Enable CSC feature via an alternate field trial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d846dddf
+
+### Add load time metric for side panel entries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ac6b1f
+
+### [dPWA] [CodeHealth] Constructor to enforce start_url and manifest_id
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cb3006
+
+### Implement completion state logic in extensions review panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/843d4fe
+
+### [ChromeRefresh2023] Fix Tabstrip Controls bugs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b61509c
+
+### [Chrome Refresh] Fix focus ring and adjust padding for bookmarks buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d10f6a3
+
+### [OOBE] Modal screen container
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ffe92cee8
+
+### Reland "Launch Password Manager redesign by default on desktop."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/203e329
+
+### Clean up launched kDesktopPartialTranslate feature code
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ccabe025
+
+### Fix crash of the stale footer view reference in the Autofill popup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8d7897
+
+### [gardener] Disable a test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/128a3c1
+
+### multipaste: Expand clipboard history menu to show more content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5064474
+
+### [dPWA] Parameterize ML promotion tests on the basis of dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/331df0d
+
+### [CSC] Add new tab support for link click post message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e42faa2
+
+### [Omnibox] Hide url actions when their width is needed to show UrlBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/029155ab
+
+### Revert "Launch Password Manager redesign by default on desktop."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67b4463
+
+### [omnibox][realbox] Early bind omnibox controller to RealboxHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5788878e
+
+### Fix disabled test ShouldShowForStateUsesChromeVersionForRefresh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b963536
+
+### Roll Android Lint from kqQgSDAgfuKTUIT8g... to DjoXGsdMeTwnppye9...
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/052ca42
+
+### [user bypass] Add CookieControlsContentView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/986e6e3
+
+### Make AutofillSuggestionTriggerSource available to selected suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f43b5f
+
+### screencast: Delete enable-projector flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6e3f3f2
+
+### Navigate to the local password manager UI from the generation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34325a8
+
+### Fix Chromeguard crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77610c2
+
+### [Signin] Add unit test for profile switch strings in Signin Intercept
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8c8b265
+
+### [sheriff] Disable failing DesksClientTest subtests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c959e80
+
+### Launch Password Manager redesign by default on desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcda0e1
+
+### Remove the 'Show Google Drive suggestions' setting
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/60a679d
+
+### [Signin] Clean up code after Sync Promo for Signin Intercept launch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/baecdec
+
+### PinManager: Simplify code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffca310
+
+### [Office upload] Move fake ODFS test classes to file_manager_test_util.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11ed1fba
+
+### Add device.mojom.GeolocationInternals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e1b802
+
+### Remove keep alive feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eba3b361
+
+### Clean up PolicyMergeMultiSource feature/flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/23c1d44
+
+### Remove landmark flag from chrome:flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0162766
+
+### Delete the Password Manager redesign flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d00355b
+
+`);
+              </script>
+            </body>
+        </html>
