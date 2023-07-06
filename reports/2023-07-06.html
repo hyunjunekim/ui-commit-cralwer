@@ -1,0 +1,236 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-06
+### Only allow empty-trash shortcut when on trash root
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4629e55
+
+### Fix some unnecessary data() and size() calls with string::assign()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15d9395
+
+### Stop setting clipboard text/uri-list for external files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0653c7f
+
+### SystemNotificationManager: Display different bulk-pinning notifications
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbdeb4c0
+
+### [ChromeRefresh2023] Adjust experiment conflicts between Passwords and
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a418dc4
+
+### Convert /components/metal_util to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc08d74
+
+### [ios] Enable overlay scrollbar as default feature in iOS-Blink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d3813c
+
+### PinManager: Pass the emptied_queue bool through the file_manager_private API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05c929a5
+
+### Use absl::optional in ui::PlatformWindow::SetInputRegion()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d68b3bf
+
+### Tooltip: Reset TestTooltipView before ~Widget()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19d656f
+
+### Assume unrendered tables are data tables
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c678c8a
+
+### (Reland) Realbox: Listen for selection changes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb2c20b
+
+### Reland "[CR2023] Fix Textfield hover when selected."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d42f9bb8
+
+### Reland "Re-enable test after approving Skia image"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d00a3ed
+
+### [chromevox]: prevent duplicate landscape announcements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41b31c0
+
+### Revert "[mac] Fix child widget rendered behind its parent in fullscreen"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10740f7
+
+### Convert remaining bits of /ui/gfx to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1233602
+
+### Use absl::optional in ui::PlatformWindow::SetOpaqueRegion()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/449dd415
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc0d89f
+
+### Revert "[linux/wayland] Implement touchpad hold gesture"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2cb8109
+
+### Revert "Re-enable test after approving Skia image"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c99713e
+
+### [Files F2] Update tree item focus logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01368c2
+
+### [File F2] Use VolumeManager.isAllowedVolume() to filter volumes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f15874be
+
+### [FilesBulkPinning] Show queued state for items waiting to be pinned
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/afefaf65
+
+### [MirrorSync] Send sync_status=QUEUED from backend when dirty
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e4da71
+
+### Prerender: flip the DSE shareable cache flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60874f9
+
+### Improve paragraph spacing in prompt for deep scanning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5f37a99
+
+### [FilesBulkPinning] Update all OS settings strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0019477e
+
+### cr23: Update PWA, framebust, popup icons in toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fab7f6
+
+### [dPWA] Add 'x' button back for reparented tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6242c94
+
+### [PriceInsights] Add clickable parent bookmark folder name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4641a46
+
+### [Clank][UX Enhancements] Change title to verify it's you when only one
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7be34c
+
+### [page info][site data] Clean up after site data dialog launch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d5e7181
+
+### cros_next: Enable SystemUIDeskTemplateUserTemplateCountHistogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27f2601
+
+### [Omnibox] Experiment with disabling click-to-refresh behavior on SRO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b86b00b
+
+### WebUI: CrOS Settings: Inform no profiles were found by scan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98731c88
+
+### Remove the need for FooterView::CalculatePreferredSize
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bb9f5a5
+
+### [Start] Change the background color of the Start Surface and NTP (Part 1)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ad5ff0
+
+### [Omnibox] Adjust header minheight to match reduced padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06929f2
+
+### [SHv2] Add a control for unused site permissions auto-revocation [1/2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac4afcb
+
+### [QuickStart] Add button for quick start on the network screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1560f2
+
+### Revert "[SHv2] Move kSafetyHub feature from chrome/ to components/."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/431fe56
+
+### [Client Hints] Support custom Clear-Site-Data method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07f74c5
+
+### [UPMLocalPwd] Add trigger source and the user action metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca1e3438
+
+### [user bypass]: Fix CookieControlsIconView visibility logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3133ff5
+
+### [Android] Remove AccountChangedObserver::onAccountsChanged() method - part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54866cf
+
+### [user bypass] Check if the site has high site engagement index
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecfcbde
+
+### Remove NOTREACHED in AppLaunchSplashScreenHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/194331d
+
+### [Password Manager] Update favicon for Password Manager page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/798c6df
+
+### Make jkeitel@google.com an owner of Autofill UI code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/653a430b
+
+### [PWAs-in-Play] Clean up ApkWebAppService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4cac54
+
+### arc: Remove expired feature flag arc-fixup-window
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/46e00b3
+
+### [Drag Drop]Creates feature flag for drag drop into omnibox
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d28093
+
+### [VoiceIsolation] Add new stream effect VoiceIsolation.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6eac3ae
+
+### Introduce a file for password manager features used in the browser process.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d64f314e
+
+`);
+              </script>
+            </body>
+        </html>
