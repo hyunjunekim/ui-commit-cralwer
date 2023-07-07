@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-07
+### [Office i18n] i18n strings for empty state in OneDrive folder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/515d6ca
+
+### [MirrorSync] Add tests for sending "queued" when file is "dirty"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fafc8e6
+
+### Remove rjkroege@chromium.org from ui/gfx/OWNERS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ea4fd4
+
+### Fix menu scroll artifact when using scroll bar buttons at edge of menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8efe232
+
+### [QT] Fix initialization hang
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32012345
+
+### Populate AX attribute enum mapping during initialization.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14a21f0
+
+### Update gfx::OverlayTransform comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a976efa
+
+### [1/3] Add transform variant to overlay structs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c12b858
+
+### Return an absl::optional from MaybeParseAXEnum.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7601333
+
+### [CrOS Cellular] Add a11y for APN list item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc26743
+
+### Use direct calls for hdr ratio over reflection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d93584
+
+### Lacros: remove PlatformRuntimeProperties::supports_tooltip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78b5e4a
+
+### [a11y] Add trace events for accessibility COM calls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/722eda6
+
+### Reland: "[linux/wayland] Implement touchpad hold gesture"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d09256
+
+### Reland "[ios] Updates for Dawn"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8976373d
+
+### Graphite: Add graphite support for gainmap and color conversion filter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17a6f8e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7667538
+
+### [CR2023] Polish up the History menu.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c57be5
+
+### [file manager] Add CSE icon to the end of the line
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea61fa3
+
+### [OOBE][Jelly]: Update oobe-modal-dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2a6d7f
+
+### [Ozone] Fold gl_image_test_template.* into unittest that uses it
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81cea52
+
+### dlp: Fix policy resume params error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6efdfab
+
+### Hide new tab button for tabbed apps if URL is in home tab scope.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee52bdf
+
+### crostini: Modify ImportContainer to emit Crostini.MultiContainerCreation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f5fd6a
+
+### os settings: add test flag for chrome refresh
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a6d5945
+
+### CR2023: Update side panel scrollbar color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf1f67f
+
+### [Office upload] Refactor setup code in upload browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/692f307
+
+### Policy UI: Handle policies sent from chrome://policy/test page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd9f034123
+
+### Reland "Bookmarks++: Add fieldtrial_testing_config"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/764afec
+
+### [Omnibox] Reduce status view padding in incognito focused state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e05da1c
+
+### Reland "Rename CookieControlsBubbleViewTest"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f970cf
+
+### CrOS GMC V2: Create MediaItemUICastFooterView for cast media view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b6db26
+
+### [FedCM] Add IDP sign-in tab on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ed9a76
+
+### Revert "Bookmarks++: Add fieldtrial_testing_config"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc54800
+
+### Add a loading spinner to Gellerization UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b9cd7f2
+
+### cros_next: Fix bar animation when jelly is on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bc2dcc
+
+### multipaste: Get rid of remove-all button in menu header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c19c87a
+
+### [Chrome Refresh] Update font in tab group, toolbar and bookmarks bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/378f74e
+
+### [ SavedTabGroups ] Flip the overflow chevron in RTL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7805c1
+
+### Revert "[user bypass] Check if SAA was granted or blocked"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b56fdc4
+
+### Revert "[user bypass] Display title and description in page info"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbf843f
+
+### Revert "Rename CookieControlsBubbleViewTest"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a616a4c
+
+### fwupd: Add feature flag to disable fwupd client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32813af
+
+### [FSA] Implement C++ Observer to Trigger UI Updates on File System Settings Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86bc0be
+
+### [GM3] Fixing more layout issues with passkey account dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a73f58
+
+### float: Pre flight CL for supporting float to bottom left in clamshell
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd23bdec
+
+### WebUI: Migrate c/b/r/bookmarks/ tests to WebUIMochaBrowserTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57173925
+
+### Rename CookieControlsBubbleViewTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/064de99
+
+### [Extensions c2s] Use GM3 icons in extensions menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6de9d2d
+
+### [Toolbar] Fix Toolbar Swipe leaving toolbar in wrong state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c618cb
+
+### [Autofill] Fix dangling raw_ptr in TestCardUnmaskPromptWaiter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f78bebd
+
+### Bookmarks++: Add fieldtrial_testing_config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30f433d
+
+### [Autofill] Launch and clean up AutofillPopupUseThresholdForKeyboardAndMobileAccept
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43368c9
+
+### SAA: Add tooltip messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62980bb
+
+### [user bypass] Check if SAA was granted or blocked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b51aa8
+
+### [DTC] Handle redundant device signals consent dialog trigger
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d17d02d
+
+### [user bypass] Display title and description in page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0fca50
+
+### Camera and Mic in-use indicators
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/693a6cc
+
+### [Android] Remove AccountChangedObserver::onAccountsChanged() reference - part 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/555413f
+
+### [DTC] Fix consent dialog dangling pointer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56e4006
+
+### Refactor \`PageSpecificContentSettings::MicrophoneCameraState\` to EnumSet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c63dd78
+
+### [Android] Remove AccountChangedObserver::onAccountsChanged() reference - part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7de21fd
+
+### Rewrite FindInPageTest.SelectionRestoreOnTabSwitch to solve flakiness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/196f7cf
+
+### [Autofill] Load real form in OfferNotificationBubbleViewsBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af16b8f
+
+### Move TrustedVaultEncryptionKeysTabHelper under c/b/trusted_vault
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e09831
+
+### [OOBE][DebugOverlay]: Fix debug overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/159dfb1
+
+### [Expired Histograms] Remove UMA metrics for bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b499424
+
+### Reclassify raw pointer in AutofillProgressDialogController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb891fee
+
+### Reclassify raw pointers in AutofillContextMenuManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b21286c
+
+### iwa: Add IWA owners as IWA test utils owners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbfb6fd
+
+### Introduce shared dictionary tab in net-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6e17f4
+
+### os_languages_page: Inline enableLanguageSettingsV2Update2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/790c235
+
+### Update tab context menu for tabbed web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c007cfa
+
+### Clean up kTranslateSubFrames feature and all related code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cd0e855
+
+### Add chrome://flags to enable ml install prompt
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6df7a319
+
+### Adding ReadAloudController (very simplistic for now).
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5564585
+
+### [Fast Pair] Add Feature Flag for Fast Pair Devices in Bluetooth Settings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9708496
+
+### [SurfacePolish] Polish Single Tab Module
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5ce06cd3
+
+### [Page Zoom] Add feature flag for new experimental smart zoom feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cc2476f
+
+### Move CompressionDictionaryTransport related feature flags to network
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b697e7b8
+
+### Revert "[VoiceIsolation] Add new stream effect VoiceIsolation."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8525e45
+
+`);
+              </script>
+            </body>
+        </html>
