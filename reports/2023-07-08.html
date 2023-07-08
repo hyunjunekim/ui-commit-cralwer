@@ -1,0 +1,240 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-08
+### [ChromeRefresh2023] Add spacing between menu title and potential child views.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f154a73
+
+### Migrate ash events pref string constants to inline constexpr.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7fb64a
+
+### Switch to the span version of CommandLine::CopySwitchesFrom() in content
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c0ef15
+
+### [CrOS Cellular] Update Edit APN strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61ab8a25
+
+### CR2023: Turn off forced-color-adjust for cr-button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64ff5ac
+
+### Convert /components/remote_cocoa/app_shim to use ARC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66ce933
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ce10e5
+
+### [iOS] Migrate to new UIGraphics API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/809561b
+
+### [MediaPicker]: Modernize use of permission const.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa18bb2
+
+### dlp: Pass number of block/warn items to Files app
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf5953f
+
+### [file manager] Update the encrypted icon asset
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c94e568
+
+### [file manager] Remove CSE icon after the file name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4404404
+
+### [FilesBulkPinning] Remove breadcrumb tick
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b32902e
+
+### [Ozone] Change test to create NativePixmapGLBinding directly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6fdb31
+
+### [FilesBulkPinning] Update battery saver text for Files app
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4411b77
+
+### [Files F2] Another fix attempt for the tree focus logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/714d1cd
+
+### [FilesRefresh] Fix the text overlap issue on default task dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d77d87c
+
+### print-preview: display correct contextual message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92fddb9
+
+### window_app_type: Update kAppType property for system web app windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87b5602
+
+### [win] Keep the new tab button background transparent when Mica is on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0a0d4e
+
+### [omnibox] Update document provider with options to relax requirements.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/613ba80
+
+### saved_desks: Don't require active_tab_index to be set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a6962c
+
+### Remove dead code from ExtensionSettingsUIBrowserTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aca11fc9
+
+### [ SavedTabGroups ] Remove unused todo in test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2702eaf
+
+### Remove Code Geolocation.HeaderSentOrNot Histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8d00ad
+
+### 🧪 Refactor FirstRunService for construction-time dependency injection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cbbfd31
+
+### Handle ExclusiveAccessBubble creation for download notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acbd3be
+
+### Fix RTL issues in saved tab group bar drag and drop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1fcdce
+
+### [DTC] Add Kombucha UI browser test for consent dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6d88e8
+
+### [Extensions c2s] Add SetTitleText to HoverButton when title_ exists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd72d66c
+
+### Mark enable-gpu-benchmarking flag as unsafe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f38fff2f
+
+### Update Live Translate icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bffd76
+
+### Add implementation for GlanceablesClassroomClient::OpenUrl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd5196a
+
+### [Profiles] Remove local profile customization in Profile Picker strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ed397f
+
+### Handle URLs for classroom glanceables
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b078c62
+
+### Revert "os settings: move search mojom to its own dir"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e23983a
+
+### 👤 Avoid profile name resolution with a secondary account's info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b584eb2
+
+### os settings: move search mojom to its own dir
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99e7126c
+
+### [user bypass] Add reloading view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acb0159
+
+### [Sheriff] Disable HelpBubbleFactoryRtlWebUIInteractiveUiTest/*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/467dd655a
+
+### [Profiles] Remove customize themes handler from Profile Picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/840dfdd
+
+### Have PageContentAnnotationsService fetch from remote Opt Guide via HistoryServiceObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4bc8de
+
+### [Chrome Refresh] Add new bookmark overflow icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db3d506
+
+### Nuke WebUIWebViewBrowserTest.AddContentScriptIncognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a216c0b
+
+### SafetyCheckExtensions: Implement The Extensions Safety Check Details Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0958eb
+
+### Move kAutofillWalletImportEnabled into components/sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33cd6f2
+
+### [reland][user bypass] Display title and description in page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10f44f2
+
+### Reland "[user bypass] Check if SAA was granted or blocked"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8833ee57
+
+### Chromeguard: Attempt to deflake test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7aaeb14
+
+### [waffle]Do not show the waffle dialog on top of the settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf8f8db
+
+### [user bypass] Refactor page_info_row_view to be a reusable view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80abdec3
+
+### Fix triggering issue due to iFrame race condition.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d46a1cd
+
+### bruschetta: Add uninstaller confirmation text.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c979472
+
+### Reland "Create a feature flag for PDF portfolio"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b095640
+
+### [RDSW] Add flag for Request Desktop Site window setting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b27e971
+
+### [Passwords] Add chunking password generation experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bd7e2d24
+
+`);
+              </script>
+            </body>
+        </html>
