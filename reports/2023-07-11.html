@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-11
+### jellyroll shadow [part 1]: add shadow details key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/546cdd7b
+
+### Add appropriate font_faces attributes to typography
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ca3009
+
+### Support PreferredInterval in ExternalBeginFrameSourceMac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/958b7f8
+
+### [GMNext] Rename baseline neutral variant colors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd450051
+
+### [Auto-disable Accessibility] Add a ConfigurationUtils class
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5137dd31
+
+### Add local diff output for SkiaGoldPixelDiff
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fddf73
+
+### Fix divide by zero crash in ScrollBar.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb00d0d
+
+### Bookmarks++: Keep bookmarks bar icon from clipping
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65e9765
+
+### [ChromeRefresh2023] Fix padding for profile row
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6e30936
+
+### [GM3] Fixed tonal button color on high contrast mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0322a376
+
+### Avoid dangling ptr warning in GestureRecognizerTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa5ab0b
+
+### Adds UMA to capture unfold latency metric.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f16361d
+
+### [GMNext] Rename baseline neutral colors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c79b41
+
+### Avoid dangling ptr warnings in WindowEventDispatcherTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/859a5a9
+
+### ui/display: Move manager/fake to manager/test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6dd70f6
+
+### fixup! Use absl::optional in ui::PlatformWindow::SetOpaqueRegion()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c1da52a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5b1a9a
+
+### Fix non-fully-qualified typemap types.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4384fd4
+
+### [file manager] Block archive creation for an encrypted file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57f81a3
+
+### [Android] Refactor the modal dialog to include DIALOG_STYLES property
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3a9f18
+
+### Incognito Reauth: Add Incognito style support to fullscreen dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23158893
+
+### [GPU] Remove GLImageNativePixmap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31e7b56
+
+### [Viz] Merge and rename resource_format* GN targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c2db73
+
+### Reland "exo: Create cursor bitmap from buffer when possible"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b65410a
+
+### file_manager: Simplify code used in tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e4ac91
+
+### XfBulkPinningDialog: Start adding unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2deb42
+
+### Add 'New Tab' to the 3 dot menu for tabbed web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b45a45
+
+### [Files] cros-checkbox in SMB dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8aa8582
+
+### Revert "[FedCM] Fix contrast ratio issue for IDP branding"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a05326e
+
+### Revert "[omnibox] Instantiate presenter with webui omnibox popup view, etc."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94a30e5
+
+### Re-enable test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04b9d47
+
+### [responsive toolbar] Add feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be83f68
+
+### [FedCM] Fix contrast ratio issue for IDP branding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f894e9
+
+### [FilesBulkPinning] Update more OS settings strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f5833f
+
+### [PriceInsights] Add feedback button in side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c85b98a0
+
+### Clean up launched Screencast flags.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9be828f
+
+### [Rounded Windows] Do not round frame headers in overview mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7404b0
+
+### Show all items in Ash Zenith when opened via Presentation API while casting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ba550a
+
+### [omnibox] Instantiate presenter with webui omnibox popup view, etc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4de5ce6
+
+### [ChromeRefresh2023] Refactor NTB and TSB into LabelButtons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac0fd87
+
+### CrOS GMC V2: Add MediaItemUICastFooterView to quick settings media view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50597e9
+
+### Destroy CastDeviceListHost during KeyedServices shutdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffc0dfe
+
+### [Extensions c2s] Display toolbar IPH in the correct priority order
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e163b70
+
+### [Color correction] Add color correction to subpage description in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1d6ee8
+
+### [PriceInsights] Add buying options button in side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4151a86
+
+### Fix empty footer when experiments are disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50ba4d1
+
+### Reland "[Lens]Send accurate side panel webview size"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/954b7328
+
+### [color] Ensure contrast for inactive tab text on custom frames
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e084bc
+
+### Revert "[dpwa] Adds the CUJ to check the app toolbar in (non)full screen mode."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/580969d
+
+### Migrate Read Anything pref string constants to inline constexpr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30493f5
+
+### [Omnibox] Increase min height by 4dp when wrapping lines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93d2d13
+
+### Revert "[Local Network Access] Rename content setting from private to local"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c8be54
+
+### Adds UMA metric for new device histogram.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37133e2
+
+### [dPWA] Standardize printing debug info on test failures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8037cc0
+
+### Remove deprecated ExplicitLanguageAsk code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e5dad93
+
+### [dpwa] Adds the CUJ to check the app toolbar in (non)full screen mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43022b5f
+
+### Update memory metrics immediately on loaded idle
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b04518d
+
+### [color] Force incognito browsers to grayscale
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94671f3
+
+### Replace tab helper method to get memory usage with utils method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52358ef
+
+### Mac: collapse ImmersiveModeTabbedControllerMac into parent class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/899776d
+
+### SAA: Add favicon to omnibox bubble view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/868588d
+
+### [mullet m2] Add delete profile suggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e28a5d
+
+### User Bypass: Add UI Test and adjust pointers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d85805de
+
+### [ManagedSyncSettings] Sync Settings on Desktop Reflect Managed State
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d345e9e
+
+### [autofill] Hide delete autocomplete button on arrow navigation to a different cell.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83b8804
+
+### Delegate handwriting from the fake search bar to the omnibox on NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e48e4699
+
+### Privacy Sandbox Settings: Add HaTS surveys from settings pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64757a5
+
+### iwa: Implement update discovery
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/465e7deb
+
+### [page info] Update third-party cookies icon for Chrome Refresh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d11efe4d
+
+### Update string for blocked extension dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9e38e6
+
+### [SAA] Reorder the prompt favicons and resize to 28px
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdb1e22
+
+### [dPWA] Test draggable regions behind open widgets don't steal clicks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fd521e
+
+### [waffle]Remove second button based on new mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae2a7c7
+
+### [SHv2] Add password status check service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a538a655
+
+### Fix and re-enable WebAppIntegration tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e709fe
+
+### App Service: Migrate to main app_service gn target everywhere
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e913dd
+
+### Add feature flag for Zstd Content-Encoding
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/da37462
+
+### [PCCT-SideSheet] Remove PCCT usage in Discover Feed Settings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/979e5e6
+
+### [PCCT-SideSheet] Enable PCCT in multi-window
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce91e554
+
+### Allow SalientImages from page image service on Android flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/68091d4
+
+### Clean up SRP Language Prompt feature code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab91771
+
+`);
+              </script>
+            </body>
+        </html>
