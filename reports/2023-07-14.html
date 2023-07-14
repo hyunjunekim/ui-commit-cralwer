@@ -1,0 +1,368 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-14
+### [FilesBulkPinning] Remove tick from folders when bulk pinning enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/499fe1b
+
+### Merge ObjectProxy::CallMethodAndBlock{,WithErrorDetails}.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f1f7233
+
+### Reland "Update notification state when blocker is added"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/267b846
+
+### [a11y] Migrates DispatchTextLocation to automation mojo.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9b3065
+
+### Expose radio and checkbox name from label
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b43cde
+
+### [ChromeVox] Remove launched flag and obsolete code for tabs menu
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/039c5f9
+
+### [NTP] Add more context for more actions button labels
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e6db378
+
+### [AX-Unserialize] Remove unserialize experiment related code
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/295b288e
+
+### ash/testing: Add a Port-to-EDID-based ID relationship for tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60ecaa9
+
+### [a11y] Delete AxNodeData IPC macros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45a712a
+
+### MS Windows Screen bounds calculated incorrectly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5bf7cfd4
+
+### ash: Concludes event metrics in PreDispatchEvent for nested events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c9f6b9
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f97e2b9
+
+### Fix missing #includes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c67c01a
+
+### dlp: Use warning i18n strings for visual signals
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2dd106b
+
+### [keyboard-alt]: Show notification for Six Pack rewrites
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3897057
+
+### Revert "Update notification state when blocker is added"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df5ed95
+
+### [CrOS WebUI] Enable trusted types CSP for emulator UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e84b568
+
+### Revert "[CR2023] Fix icons in app menu."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a67064
+
+### WebAppService Crosapi: Expose MigrateLauncherState()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/859a8c9
+
+### [dPWA] Move uninstall APIs from WebAppInstallFinalizer to WebAppCommandScheduler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fff66fe
+
+### Revert "Authentication content control: SAML blocklist"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/659bd14
+
+### Avoid a PNG conversion in AppIconWebUIHandler::OnImageLoaded()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c4909c3f
+
+### Revert "[dpwa] Replaces 2 check actions CheckAppToolbar[Not]Visible with"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8f633f
+
+### SensorInfo Webui Part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f085f39
+
+### [Office upload] Remove old TODO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89fd461
+
+### [Extensions c2s] Add chrome flags for extensions IPH
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/68dc37e
+
+### iwa: Migrate Storage Partitions GC from Extensions to Web Apps system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cba199
+
+### CrOS GMC V2: Enable the start casting button on the quick settings media view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06a588c9
+
+### SystemTrayClientImplTest cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/017b964
+
+### [CR2023] Fix icons in app menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26dd7b6c
+
+### Print Preview: Give NativeLayer's print method a more unique name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9640d30
+
+### Revert "Fix race condition and re-enable tests."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b61b08b
+
+### [Gardener] Disable MenuItemViewTestInsert02.InsertItem02
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5365998
+
+### [Tab Previews] Only capture preview on actual tab switch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd8572c2
+
+### Consolidate classroom course work related structs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51d53b4
+
+### [Extensions Cleanup] Combine show reload bubble methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/318aa04
+
+### Reland "[user bypass] Add bubble unit tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/220f6c4
+
+### [Extensions c2s] Vertically center icons in menu header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8481ffb
+
+### ash: Move all element identifiers into ash/ash_element_identifiers.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecac6ac
+
+### CrOS Settings: Add an alternative search tag \`TTS\` for Text_to_speech
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e65f0b19
+
+### [Nearby Share] Update NS Privacy Notice Text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77250e4
+
+### [FedCM] Keep bottomsheet alive when a tab is hidden
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c7707c
+
+### multipaste: Paste first item when Ctrl+V is pressed and menu is open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bad620bf
+
+### Vertically align actions with suggestions text.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e40c25fa
+
+### Revert "[user bypass] Add bubble unit tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c54dd9c
+
+### Revert "[user bypass] Fix dangling browser in unit tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5aff73
+
+### Rewrite T& field into const raw_ref<T> in tab_strip_control_button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0588569a
+
+### [omnibox][cr23] Enable more features in fieldtrials.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edd14cd
+
+### Ash login: Remove confusing NetworkStateInformer helpers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af0673e
+
+### [sync] Introduce UserSelectableType for payment methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4a4e35
+
+### Reland "[user bypass] Observe the controller in page info"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a8986a
+
+### Reduce usage of getLastUsedRegularProfile in FirstRun.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94a370d
+
+### Include display name in tooltip text for page info remove button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81ddf97
+
+### wallpaper: rm two WallpaperControllerClient fns
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/004d659
+
+### [Chrome Refresh] Update tab group vertical placement within the tabstrip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd48af2
+
+### multipaste: Fix non-parameterized tests when refresh is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed314dc57
+
+### Revert "Update memory metrics immediately on loaded idle"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/71a1e33
+
+### [user bypass] Fix dangling browser in unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45d2036
+
+### Fix race condition and re-enable tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a19121b
+
+### Ash login: Deprecate ERROR_REASON_PORTAL_DETECTED
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de9cfac
+
+### Authentication content control: SAML blocklist
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a734afc
+
+### [dpwa] Replaces 2 check actions CheckAppToolbar[Not]Visible with
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eda64a5
+
+### [mullet m1] Allow clicks and selection if mouse was outside of cell for the manual fallback case.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe28444
+
+### [Password Manager] Clean-up settings code from password manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f33cf9c
+
+### Fix test by checking all the cloud-off related features.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/133f902
+
+### Add trigger source parameter to GetReopenPopupArgs() and UpdatePopup().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12bfb50
+
+### [CR2023] Renamed 'Recently Closed' to 'Recent Tabs'. Added separator to tab sub-menus.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e369dfec
+
+### usb: Add connection count tracking methods for UsbDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2ce417
+
+### HaTS: Add feature flag for desktop webui surveys
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/04c9bfe2
+
+### Add a test for mic indicator popup bubble in NTP page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68e6670
+
+### Add metrics for glanceables APIs (2nd CL / N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c67077d
+
+### [Passwords] Trigger the Shared Passwords Notification when appropriate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a36594
+
+### [keyboard-alt]: Link to remap keys settings page from notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83d7dfe
+
+### [Android] Refactor getAccounts() usage in SyncConsentFragmentBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5a875d
+
+### Show radio-button for Mic indicator on NTP page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee8781f
+
+### [Passwords] Record the shared password notification bubble disposition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbe0b26
+
+### [user bypass] Add bubble unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05cb7a9
+
+### User Bypass: Connect to Feedback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/199698e2
+
+### Avoid dangling pointer in FormFetcherImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9aacc81
+
+### [Passwords] Add SharePasswordNoMembersDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7de9f8d
+
+### User Bypass: Create toggle row in bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ff3021
+
+### [Privacy Hub] Fix blinking effect in camera hw switch notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe675ec
+
+### Revert "Reland [omnibox] Instantiate presenter with webui omnibox popup view..."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59457f0
+
+### Reland "[VoiceIsolation] Add new stream effect VoiceIsolation."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/817c7d4
+
+### [chrome][android] Add text selection drop-down FF to UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/da653a0
+
+### [Android][3PPWM] Introduce feature and flag for Virtual View Structures
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a574519
+
+### [VC] Add extra feature flag for web API support.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fe455bc
+
+`);
+              </script>
+            </body>
+        </html>
