@@ -1,0 +1,228 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-15
+### [Code Health] clean up raw_ptr in webview
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f33cbb
+
+### Remove reversed 6 pack aliasing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/815e060
+
+### Fix menu scroll artifact at edge of menu when using scroll buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/101ccef
+
+### Remove manual memory management in dialog_delegate_unittest.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51e071e
+
+### CR2023: Fix cr-input styles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c5cc2fd7
+
+### [views] Fix MenuHost::InitParams::anchor bounds calculations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a41dc7a
+
+### Allow dialog delegate callbacks to decide if callback should close
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88c6c69
+
+### Accessibility: Implement Dictation keyboard improvements
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/68cbe69
+
+### Change color_utils::CalculateKMeanColorOfPNG() to take a span
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c8b7e3
+
+### [views] Fix the leading position hints in MenuController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3162ffc
+
+### [Color correction] Enable color correction feature in M117
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/673c5846
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85d5db5d
+
+### Only attempt reflection once and then give up for MotionEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a69786
+
+### [MirrorSync] Add missing metadata field to updateCacheItemInlineStatus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18a8cb8
+
+### [FilesBulkPinning] Update text from synced to on
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b79144
+
+### [Files app] No type or size to XfIcon should render nothing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d37bc5b
+
+### Drop unused Header functionality for BaseCarouselSuggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5108573
+
+### [CR2023]Use the history vector icon for the back/forward menus.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/481d60f
+
+### [CR2023] Use kColorMenuIcon color id for the update icon in the app-menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b9f44a
+
+### [SFL] Allow email consent to show at most 3 time per month
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b277c7
+
+### Introduce ItemDecoration to coordinate element spacing in Omnibox.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d192d9a
+
+### Verify that the device lock coordinator is not null before destroying
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad2154edd
+
+### [ ChromeRefresh2023 ] Update LocationIconView text and icon colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5393bf3
+
+### Reland "[CR2023] Fix icons in app menu."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cced210
+
+### Reland "iwa: Migrate Storage Partitions GC from Extensions to Web Apps system"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f0de70
+
+### Parameterize hover card test to run with GM3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72470e2
+
+### [ ChromeRefresh2023 ] Update OmniboxChipButton text and icon colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2e6a93
+
+### Make dialog part of Welcome Tour tutorial.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b9fef4
+
+### [dPWA] App identity update dialog knows when uninstall is scheduled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80a2b47
+
+### [ntp] Update Panorama "Classic Chrome" thumbnail on 'Themes' page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c09c37d
+
+### [FedCM] Fix accounts bubble showing up on the wrong tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2503c6b
+
+### [gbb-cct] Enable automatic triggering of Page Insights hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a844ec
+
+### [Quests V2] Image formatting and fix date to bottom of cluster
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c863d50
+
+### Refactor all the PasswordGenerationPopupViewTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/566a4c6
+
+### [mullet m2] Add UI only for address and name group filling suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94d5f73
+
+### [gbb-cct] sWAA checker for page insights
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5318ed38
+
+### Revert "Privacy Guide: Update PS link description"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cbe1ef
+
+### Pad Revamped Omnibox Actions for more vertical space.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d06e85
+
+### [ntp-journeys] Add V2 module page handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cdfd92
+
+### Remove undefined function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4119b31
+
+### User Bypass: Tweak dialog width
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0fcafe
+
+### [relaunch_notification] Fix interactive UI test on macOS and Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55b56cb8
+
+### [Affiliations] Use match_type enum instead of booleans
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34ee36f
+
+### Privacy Guide: Update PS link description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08afce2
+
+### Remove MathML runtime flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c179bc
+
+### Reland "WebAppService Crosapi: Expose MigrateLauncherState()"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b25ebf7
+
+### ambient: Fix flakiness for the managed screensaver login screen test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6372275
+
+### Revert "iwa: Migrate Storage Partitions GC from Extensions to Web Apps system"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c79a04a
+
+### Revert "WebAppService Crosapi: Expose MigrateLauncherState()"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfce430
+
+### Reland "Reland "Close the blank tab opened by clicking target=_blank links to home tab""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a6056b
+
+### [Autofill] Remove kAutofillAlwaysReturnCloudTokenizedCard code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/09ba02c
+
+### media/gpu: Wire MT21Decompressor into Chrome behind flag guard
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ac2364ee
+
+### Remove debug-history-intervention-no-user-activation flag and all related code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f9c312b6
+
+`);
+              </script>
+            </body>
+        </html>
