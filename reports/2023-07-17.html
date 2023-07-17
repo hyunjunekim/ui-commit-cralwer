@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-17
+### Revert "Accessibility: Implement Dictation keyboard improvements"
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a8ab45d
+
+### Disable browser_test WebAppTabStripBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af18c14
+
+### chrome: don't return Browsers scheduled for deletion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/deb3612
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdbcab3
+
+`);
+              </script>
+            </body>
+        </html>
