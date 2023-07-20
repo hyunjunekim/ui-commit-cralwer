@@ -1,0 +1,292 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-20
+### [Files app] prevent RateLimiter infinite recursion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c87eaa
+
+### Adjust touch selection menu anchor rect test for padding.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45e0d79
+
+### wifi: Remove HiddenNetworkMigration flag
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7f54667
+
+### [Wayland] Allow cursors with an image count of 0
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77f6060
+
+### [GTK] Support per-display scale factors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35c9edb1
+
+### [QT] Support per-display scale factors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/103e9c18
+
+### [Test Automation] Observe states and wait for state changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3065bd
+
+### [X11] Support per-display scale factors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/572ece8
+
+### [keyboard-alt]: Reorder six pack shortcut modifier mojo enum
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db5c859
+
+### Display the most recently modified files for SkiaGold local diff
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb4ff7d
+
+### [omnibox][cr23] Replace hardcoded colors with tokens.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91b39a7
+
+### Revert "[CR2023] Update window shadow and border"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/945915d
+
+### [Multi Apps] Disable permission toggles on sub app settings page
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da24197b
+
+### Extend tooltip to supervised users to desktop
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/704fe53
+
+### Implement support for multiple IDREFs in aria-errormessage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5564249
+
+### Rename DanglingAcrossTasks to AcrossTasksDanglingUntriaged
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6361d0
+
+### [ntp][gm3] Change Classic Chrome tile's border on Category page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52818cc
+
+### Split build target of /c/common/url_constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae28ff4
+
+### Refetch task lists when glanceables bubble gets reshown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0a32b6d1
+
+### shimless_rma: Allow profile to load IWA/extension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c37a882
+
+### Add learn more links to installer errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18674c2
+
+### Reland^3 [omnibox] Instantiate presenter with webui omnibox popup view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ff71de
+
+### print_preview: Prevent variable-sized media in UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bc2a022
+
+### [DragDrop] Enables drag and drop to omnibox for links.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98a7d05
+
+### File Handling: CreateAboveAppInfoView: Modernize use emplace
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/feaa36fe
+
+### [Chrome Refresh 2023] Keep tabstrip top margin in maximized windows on Linux.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/437444d
+
+### [Nearby][Self Share] Add updated strings to visibility dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bba78ea
+
+### CrOS GMC V2: Add accessibility labels and focus rings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/accbbfc
+
+### crosint: Add QuickSettingsIntegrationTest.OpenOsSettings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/525ece4
+
+### [chrome gardening] Fix PermissionRequestChipGestureSensitiveBrowserTest.ChipFinalizedWhenInteractingWithOmnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/503cbf6
+
+### [Omnibox] Enable OmniboxConsumesImeInsets by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/907c3d4
+
+### Drop single-use accessors in BaseSuggestionView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc6bdfa
+
+### Fix Tiny Icons on Tablets.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e7c529
+
+### [CR23] update test for tab search to be more correct and include windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b9f392
+
+### [CR2023] Added metric for switching directly to another profile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c562e4f
+
+### Fix layout for security subpage on dangerous deep scans
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/477cbf6
+
+### [CVC Storage][Desktop] UI for local cards - view interactions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4141cc5
+
+### [CR2023] Added 'Request mobile site' icon in ChroMenu for CrOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc943c0
+
+### Simplify content::NavigationController::LoadPostCommitErrorPage()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a477083
+
+### Revert "Cookie Controls: Refresh Page & show Refresh screen"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31523c03
+
+### Improve placement of the Modernized Omnibox Dropdown on Tablets/RTL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13a2375
+
+### Dont show popup if its bounds intersect with permission prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/583f07e
+
+### Don't register ExtensionSettingsUIBrowserTest in multiple test binaries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9320bd2
+
+### [ SavedTabGroups ] Enable sync toggle in settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32fa8b1
+
+### [ChromeRefresh2023] Update icons and labels of the Tab Group Edit Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b5130c9
+
+### Fix Entity Image view rounding.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71667767
+
+### [CVC Storage][Desktop] UI for local cards - view components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef5df6a
+
+### [CR2023][Profiles] Add pixel tests for Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/322374e
+
+### [ntp] Prevent background image from being set twice on initial NTP load
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30d68cc
+
+### Count button usage on chrome://policy page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17251d5
+
+### Chrome App windows: Respect OTR WindowOpenDisposition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/236e381
+
+### Fix mic indicator Manage button crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf8a6d5
+
+### Add Dark Mode Fields to "chrome://webapks"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/542cf11
+
+### [dpwa] Adds CUJs to check if toggle icon exists in app fullscreen mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30f1c3b
+
+### Cookie Controls: Refresh Page & show Refresh screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd97ce5
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6ce742
+
+### [mullet M2] Add Delete address profile dialog interface and lifecycle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d440ae
+
+### RTL layout: fix decoration icon placement.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a78cc2f4
+
+### Implement manual fallback explicit triggering metric.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5719afb
+
+### [cookie controls] Reset reload counter after navigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad0448c
+
+### Make AutofillContextMenuManager a RenderViewContextMenuObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/404368c
+
+### Update visibility for new cookie control icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6397ab
+
+### Fix dangling pointer in page info bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39bbc5d
+
+### [Passwords] Add SharePasswordFamilyPickerDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21b76e3
+
+### [App Details] Fix launch button for web apps from the Play Store
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7b63c0
+
+### [cookie controls] Add page info pixel tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9fbef5
+
+### hibernate: Introduce a feature flag for hibernate to S4
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9537d58
+
+### Removing "cct-retaining-state-in-memory" in m116
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab3184e
+
+### [omnibox][ml] Add feature variation for increased num candidates.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8cff3bf
+
+`);
+              </script>
+            </body>
+        </html>
