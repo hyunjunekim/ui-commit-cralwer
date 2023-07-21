@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-21
+### Enable CrOS Touch Text Editing Redesign.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/009f951
+
+### Remove @VisibleForTesting from ForTesting methods
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81090fd
+
+### Fix some Textfield touch selection dragging polish bugs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c607b70
+
+### Simplify various Chrome OS build rules
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2aa0e43
+
+### [CR2023] Fix SolidRoundRectPainter stroke width with scale.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a432fd4
+
+### Fix arc notification grouping bug
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b36bb67
+
+### Reland "Temporarily invalidate old LocalSurfaceIds of DelegatedFrameHost for all navigations."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f88840b
+
+### Add josephjoopark@ to ui/views/ OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c8bd6c
+
+### [GM3 Updates] Horizontal carousel test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d289751
+
+### Change calls to SkImage::makeSubset et al
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/46368f7
+
+### [GMNext] Rename baseline error colors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/968a994
+
+### ozone/wayland: Implement DRM modifiers filtering for Vulkan
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5d53fe
+
+### Plumb prefers-reduced-transparency for Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a49732
+
+### [ios] Do not default override_bgra_to_rgba to true
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c53c6881
+
+### Permit absl::InlinedVector. Deprecate base::StackVector
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af2708e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e7e197
+
+### dlp: Open DLP help page from panel items
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/33f66c0
+
+### Revert "Files app & GuestOS: Fix duplicated PlayFiles"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbe509bb
+
+### [WebUI] Enable trusted types CSP for FileManagerUI
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0ba719
+
+### ozone/wayland: Set clip rect from augmented_surface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b48a75
+
+### WebUI: Migrate c/b/r/extensions/ tests to WebUIMochaBrowserTest, part 5.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ec88d73
+
+### [Office upload] Add Cancel button to upload progress notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b191296
+
+### [omnibox][cr23] Add selected text colors.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7004fb6cd
+
+### Add use counter for tabbed display mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/541ae57
+
+### Default enable mirroring stats for AccessCodeCast users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b89dbe95
+
+### [Glanceables] Order teacher classroom assignment lists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/089277a
+
+### Drop manual decoration icon positioning.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe71d58
+
+### Reland "Authentication content control: SAML blocklist"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb62a8d
+
+### Add RequestImmediateMetrics to ProcessMetricsDecorator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfa92f3
+
+### Revert "[ChromeRefresh2023] Update icons and labels of the Tab Group Edit Dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d196899
+
+### [ChromeRefresh2023] Update selected tab color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51c40fa
+
+### Cancel Eye Dropper selection when window is deactivated.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf8c484
+
+### [webauthn] Introduce multi source passkey selector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0b1f10
+
+### crosint: Support DemoIntegrationTest.NewTab on ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f99142
+
+### arc-overview-tracing: allow bad, decimal max times
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/099f6787
+
+### Replace cloud_devices::printer::Media ctors with MediaBuilder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19eadc3
+
+### [UrlBar] Add information to the error message to debug failed assert
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7125ad
+
+### [CR2023] Clean up UI in page info dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c8ae99
+
+### [Extensions] Display IPH only on tab changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12fc488a
+
+### Apply rounding to Omnibox Favicons, matching them with MV Tiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8068ba6
+
+### [omnibox] Make OmniboxPopupUI::SetOmniboxController thread safe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46a961c0
+
+### [cookie controls] Fix icon in the page info subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/715cee8
+
+### [dPWA] Replace SingleThreadTaskRunner with SequencedTaskRunner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea66a7f7
+
+### [cookie controls] Add OWNERS file for cookie_controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efa0bd1
+
+### cellular: Add strings for profile discovery consent page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41f4507
+
+### Fix flakiness of NoMenuItemOnPasswordManagerPage test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05936c9
+
+### [iOS Desktop Promo] Fix QR code race condition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49b263a
+
+### mgs: Hide shelf when Chrome App requests fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8f036b
+
+### Fail uploading office files to Drive when offline or sync disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72e6cc81
+
+### [Autofill] Introduce [Browser]AutofillManagerTestApi classes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b913ac
+
+### [CR2023][Profiles] Fix edit icon size on refreshed Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/755dfe5
+
+### [WebUI] Enable trusted types CSP for CameraAppUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/357629aa
+
+### 💁 Give FlowControllers more control to trigger the end of the flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7cb381
+
+### Privacy Sandbox: Tweak empty state strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aae475a
+
+### Add a pixel test for the new cookie controls bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ef2fd2
+
+### [Jelly] Allow colorChangeUpdated to respect light/dark changes even when jelly is off.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fa3c75
+
+### Update ArcAccountRestrictionsEnabled() and tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35a5977
+
+### Reland "Cookie Controls: Refresh Page & show Refresh screen"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54a25c2
+
+### Add and expose new PasswordFactorEditor mojo to os-settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d91124b
+
+### [Autofill] Make usages of FooTestApi, test_api() consistent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae130ca
+
+### Reland "[Office upload] Always use a Copy IO Task when uploading to Drive"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a85a94f
+
+### Retry downloading Screen AI component if triggered again.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3518a6e
+
+### Add CrOSLateBootAudioSuppressSetRTCAudioActive
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/26ecee6
+
+### [Jellybean] Introduce cros-components feature and flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7787e3b
+
+### Propagate rounded window flag params to ARC
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5b6308f
+
+### [omnibox][shortcut] Super shortcut boosting.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/581794bd
+
+### [Viewport Segment API] Expose the flag to chrome://flags UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5518cf3
+
+### flags: Show Vulkan in flags list on CrOS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/61a568d5
+
+### Allow permission_broker to call features service
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/db4d680
+
+### [WebAuthFlowInBrowserTab] Remove the feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6faa396e
+
+`);
+              </script>
+            </body>
+        </html>
