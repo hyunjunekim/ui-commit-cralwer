@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-25
+### preload: Add New Tab Page triggers for prerender
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e37eb225
+
+### ime: Ensure SetCompositionText is called if text selected
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed5118a
+
+### Files app: Fix an HTML injection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34a5257
+
+### [CR2023] Fix focus ring size for ToggleButton.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06d2f53
+
+### QsRevamp: Not move down popups when notification added
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c860828
+
+### [UIA] Expose all text fields as 'edit', not email, telephone or url
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1363e4b
+
+### Add dayeung@ to ui/views/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b33689a
+
+### [APS] Tab strip hover behavior - part 1
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e66c05
+
+### QsRevamp: Close tray bubble or popups when there's not enough space
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d50c73c
+
+### [GM3 Updates] Fixes margins, truncation for related searches
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ee8859
+
+### [Rounded Windows] Add UpdateWindowRoundedCorners method to NonClientFrameView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/289af2d
+
+### [responsive toolbar] Expose CanBeVisible()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c23612c
+
+### Reland "[ChromeRefresh2023] Update icons and labels of the Tab Group Edit Dialog"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c769e2d
+
+### [User Education] Fix visuals for WebUI help bubble buttons.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31ab750
+
+### Only use GLFenceAndroidNativeFenceSync in Android/Chrome OS/Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c686f5a
+
+### Fix content_shell DCHECK crash with --single-process
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9501191
+
+### cros_next: Apply dynamic color to window control buttons
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/360a1ff
+
+### [views] Fix Icon Button sizes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce8e567
+
+### [ios] wantsExtendedDynamicRangeContent is exposed for ios16
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/643a864
+
+### [UIA] Expose <output> as UIA control
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f1f696c38
+
+### jni_zero: Change name mangling scheme for CalledByNatives
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9050c42
+
+### Fix checkmark/radio vertical positioning on menu items.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11db441
+
+### Reland "Accessibility: Implement Dictation keyboard improvements"
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1fab429b
+
+### Add event_latency_id to other EventLatency types.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5098a639
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e8fb4a
+
+### dlp: Use block i18n strings for visual signals
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3aa52ed
+
+### [MirrorSync] Batch update completed state after holding it for 0.3s
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6eba95b
+
+### Fix bad math change made during cleanup.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f993735b
+
+### Update Textfield tests according to new touch selection behaviour.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7f0eba
+
+### Add list of printers that prefer IPP-USB
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ef1e0b
+
+### CodeHealth: include-what-you-use in web_app_provider.cc/h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38c4f7db
+
+### [Office upload] Close progress notification before complete notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e90bcbc
+
+### [Office upload] Add message to upload progress notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff8365d7
+
+### [ChromeRefresh2023] Fix tab close positioning on small tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03bbf05b
+
+### [Refresh] Update toolbar chip to a separate layer to preserve text color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a367fd
+
+### [ ChromeRefresh2023 ] Update padding and colors for dangerous chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d400ad
+
+### [DownloadBubble] Fix notification behavior for Lacros tab fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc3a8e9
+
+### [CR2023] Fix page info typography.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8148e45
+
+### [bookmarks] Add new folder picker activity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb5cdd1
+
+### Refresh top teacher assignment submission status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/541d0659
+
+### Display blocked icon in quiet chips
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/047a42f
+
+### Add Read Aloud context menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1671581
+
+### [FedCM] Use CCT for showModalDialog() part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05ac91b
+
+### [Extensions] Make extensions context menu label more accessible.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fa3a5b
+
+### Pass UserDataAuthClient as parameter to AuthFactorEditor ctor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41249b87
+
+### [Start] Polish Fake Omnibox size on NTP (phone)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f80bb2a
+
+### CR2023: Add row in Settings to update color scheme mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47db9ce
+
+### Disable flaky AccessibilityFocusHighlightBrowserTest.FocusAppearance for Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ffb58f1
+
+### Privacy Guide: update MSBB strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de60d67
+
+### libstdc++: do not add unneeded assignment to nullptr in declaration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a677ff6
+
+### Replace logging::LOG_FOO with logging::LOGGING_FOO in //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a13b809
+
+### Add the basic dropdown for the existing reading mode settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e083f7
+
+### Change maximum value of tab dragging metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/600db5b
+
+### multipaste: Record success of browsing history queries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cf82ea
+
+### chrome: make GetIndexAndBrowserOfExistingTab() check delete scheduled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9278b97
+
+### [autofill]: Fix autocomplete row accessibility.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/185bc75
+
+### Remove sensitive policies from chrome://policy/test page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ba64c20
+
+### [Policy Test UI]: Create enums for policy type values in TS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8858f2
+
+### Speculative fix for nullptr-deref in reload UKMs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f892e1
+
+### [SAA][Settings] Remove wildcards from urls display name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d436f1
+
+### Quick Delete: Update more options button to fit the UX proposal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b545230
+
+### Update label when the status is toggled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8188875c
+
+### [Profiles] Enable some pixel tests on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92703b1
+
+### Restore bottom handwriting bounds of URL bar when suggestions are shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aeb50f3
+
+### Clean up code related to manual fallbacks in context menu
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0c533c3
+
+### [B4P] Enable Butter for Passwords opt-in on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25e84d9
+
+### [SAA][Settings] Add expiration and embargo to exception description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c45e469d
+
+### [cookie controls] Add a11y name for toggle in page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4547001
+
+### [Multi Apps] Add permissions prompt for sub app install
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01f9fef
+
+### crostini: Updates Port Forwarding settings page to include IP/Interface information
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62c106ab
+
+### Media App: Delete PDF signature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e61a5b6
+
+### Expose Welcome Tour flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/87bc7b7
+
+`);
+              </script>
+            </body>
+        </html>
