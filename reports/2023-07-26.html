@@ -1,0 +1,332 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-26
+### inputs: Use base::span instead of std::vector<>*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/622ae73
+
+### [Files app] Rename ONELINE to ONLINE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f887afb0
+
+### Globally enable ARC on Mac/iOS targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ce2256
+
+### [customize-chrome][cr2023] Establish dependencies of features in code
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0db7b8
+
+### [GM3 Update] Use smooth scroll behavior and use dynamic scroll threshold
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68850d7
+
+### dlp: Use timeout i18n strings for visual signals
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/169a223
+
+### [Extensions c2s] Show enterprise tooltip when extensions are blocked
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3800aa4
+
+### [Test Automation] Make ElementIdentifier debug output more consistent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f3e7c1
+
+### Speculative fix for keyboard vis crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdf1099
+
+### CR2023: Center loading spinner icon in cr-toolbar-search-field
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbc5634
+
+### Change menu metrics from MenuItemView statics to SubmenuView members.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a57a9e
+
+### Misc. cleanup.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/059b0faa
+
+### event: Add new constructor to avoid enum cast to char16_t
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26d782c
+
+### Android: Add missing direct deps
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5c02101
+
+### [Test Automation] Make WidgetFocusWaiter into a StateObserver
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa46e73
+
+### [User Education] Allow multiple annotations on a menu
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eafb24
+
+### Introduce VulkanImplementation::IsExternalSemaphoreSupported
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb1d3bd6
+
+### [CR2023] Adjust some menu metrics. Separators span full width, font updated, check vertically centered.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e2fd7aa
+
+### Alphabetize the ui/views/OWNERS File
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc3add0
+
+### Reland "Enable CrOS Touch Text Editing Redesign."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/015a6b60
+
+### [file manager] Fix visibility of the CSE icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/820251f
+
+### [CR2023] Add tooltip text to icon button in CreateIconButton()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27759c1
+
+### XfBulkPinningDialog: Unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4608ade
+
+### inputs: ensure js bindings are generated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8755921
+
+### [Promise Icons] Create context menu for Launcher promise app item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ed4931
+
+### inputs: ensure client focused before insert
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e6cc173
+
+### [CR2023] Permission bubble polish round 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1df7354
+
+### Allow manually upload enterprise profile report
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38d6433
+
+### [Refresh] update the left and right padding of the extension badge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/269f456
+
+### [CR2023] Update "Update Chrome" icon with outline
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d85eb563
+
+### iwa: Clear IWA data in ChromeBrowsingDataModelDelegate::RemoveDataKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84d6492
+
+### [Read Aloud] Add line spacing submenu for the WebUI toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/995e93c
+
+### add comments and remove DanglingUntriaged in pointer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24a322e
+
+### [Welcome Tour] Activate welcome tour windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76b6b89
+
+### [Toolbar] Use translation instead of space width during focus anim
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23b72c8
+
+### [Read Anything] Rename ReadAnythingUi to ReadAnythingUntrustedUi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/208e3825
+
+### Fix HandleSetAndRevertLocalTestPolicies test crashing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d866bcc
+
+### [StartRefactor] Allow tab switcher returns to Start surface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72898a8
+
+### shortcuts: Remind user to update layouts w/ chrome accelerators change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc32629
+
+### [ SavedTabGroups ] Update SavedTabGroupButton look and feel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd5836ef
+
+### [ChromeRefresh2023] Extend tab shape when tabs are small to fit favicon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a78b5a
+
+### Speculatively re-enable SSLClientCertificateSelector* tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d83a52c
+
+### [ChromeRefresh2023] Use GM3 icons in extensions menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc6dcc7
+
+### [Extensions c2s] Update extensions menu when active web contents change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6644d50
+
+### Rename ThirdPartyCookies UKM to not start with a digit in metric names
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ee90d8
+
+### [Refresh] Update the background color of Super G icon to be white.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a00ee9ef
+
+### shortcuts: Remind user to update layouts if ash accelerators are changed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/226644c
+
+### settings: Update UI and rearrange mouse scroll settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44d9a2e3
+
+### Show (no-op) color options when clicking the theme settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/548691d
+
+### [bookmarks] Add option to sort be last opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/574e8a81
+
+### Run WebAppIntegrationTest with unique ash for Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fb0ad0
+
+### [gbb-cct] Smooth scroll-in upon autotriggering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b805ab8
+
+### [Omnibox] Keep url action container hidden while width too low
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d1e820
+
+### [Omnibox] Reset visible hint for non LTR text 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d61b14a
+
+### [ntp][ntp-modules] Update Drive Module UI for Launchpad 2.0 effort
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/539aa55
+
+### [ChromeRefresh2023] Increase windows frame padding/button sizes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05a99049
+
+### Prefetch teacher glanceables data soon after login
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e95c6c
+
+### [Shelf] Support removing apps from shelf when pin policy changes, 2/2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f2795d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/496e59fd
+
+### Enrollment Nudge: prefill email on enrollment screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/203ac77
+
+### [PaymentHandler] Always refresh icon for service worker payment apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/449b268
+
+### [Passwords] Acknowledge shared passwords upon closing the bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3206ba
+
+### 🧑‍🌾 Revert "[DownloadBubble] Fix notification behavior for Lacros tab fullscreen"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eac7d37
+
+### Move \`kPasswordManagerLogToTerminal\` to the browser-only file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24caade
+
+### [SHv2] Update Safety Hub Page UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bff5cc
+
+### [signin] ProfilePicker uses DiceTabHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd5da244
+
+### Adapt more browser tests for LacrosOnly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4305943d
+
+### Bruschetta Installer: Set a window title.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f4a771
+
+### Refactor sensor_disabled_notification_delegate.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/592f50829
+
+### Cookie Controls: Enforced state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22ebb8f2
+
+### Enforce time threshold before accepting KeyboardAccessory suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b57d3e
+
+### [signin] DiceTabHelper creates the TurnSyncOnHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0542c19
+
+### Reland "Reland "Authentication content control: SAML blocklist""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e152a245
+
+### inputs: broker mojo connection from mako
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1e5fcbf
+
+### Borealis installer: Set window titles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ff0e02
+
+### borealis: Clean up windowing test helpers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ea7eb91
+
+### Add features, switch, and flag for improved download warnings
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/43d6f4d
+
+### [Shelf] Add feature flag for RemoveStalePolicyPinnedAppsFromShelf
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7d404fa
+
+### Add flag for suppress text messages feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/155bce6
+
+`);
+              </script>
+            </body>
+        </html>
