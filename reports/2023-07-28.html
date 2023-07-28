@@ -1,0 +1,332 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-28
+### CloudPanelContainer: Simplify unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ff3053
+
+### XfBulkPinningDialog: Unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cd9ade3
+
+### [ntp] Move Customize Chrome feature flag to //ui/base
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6889cc8
+
+### QsRevamp: Bubble should not be closed when a popup close
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f122d7b
+
+### Add ScreenInfo debug logging on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07cfeda
+
+### [ChromeRefresh2023] Adjust profile row background margins
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b449ba06
+
+### Allow labels to be updated on DialogModel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd5a5b8
+
+### ui/base: add README
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/510aee2
+
+### Use Set methods in TooltipIcon
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f52abc
+
+### [dPWA/Link Handling] Create AppManagementPageHandler connectors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1999e05
+
+### AnyWidgetObserver: Remove \`Callback\` from the class example comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80fc464
+
+### Fix a global static initializer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dab8018
+
+### Revert "Enable passthrough command decoder by default for Android"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/621087ba
+
+### Migrate to CheckedObserver in ash::input_method::ImeKeyboard
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f880725
+
+### [PhoneHub] Add distinct inline reply send button accessible name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c43f9c7
+
+### Make devtools docked location avaliable in browser_view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4551c79
+
+### inputs: wrap mako webui with page handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/885ee21
+
+### Add MirroringStats to cast-feedback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b50678de
+
+### Update Live Caption settings strings for system-wide live caption
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e91bc5a
+
+### Fix error plink for DlcNeedSpaceError
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/948227a
+
+### Ignore launching missing pWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80d7f19
+
+### [metrics] Add a histogram measuring from when the tab search button is pressed to successful presentation of the next frame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d2f491d
+
+### Infobars need to respect platform OK/CANCEL button order.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df426d1c
+
+### [ChromeRefresh2023] Round tab dividers (separators)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db97977
+
+### Integrate the companion loading state in CompanionPageHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f520e638
+
+### [cookie controls] Record a setting when the entry point was animated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66e3731
+
+### [Rounded Windows] Add ability to round the background of SidePanel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61b5a4c
+
+### [Rounded Windows] Notify SidePanelViewStateObservers when panel is opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/686fcf1
+
+### Disable flaky OsSchemeRedirectSucceed test on linux-lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b69ba4a
+
+### [User Education, a11y] Some help bubbles should be focused by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d50addd99
+
+### [Refactor] Rename GetContentView() to GetContentContainerView()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/642cea96
+
+### Rename Friendlier Settings feature flag and all of its references
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f1a8912
+
+### [ImprovedDownloadWarnings] Download bubble string and icon/color changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0c3351
+
+### [FedCM] Increase the size of the IDP sign-in text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/040c37e
+
+### Magic Toolbar read aloud button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eef43d1
+
+### Add additional glanceables API metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5578836
+
+### [ChromeRefresh2023] Adjust shadow for FindBarView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12adb56
+
+### Add password manager tutorial branching step to handle new menu layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76ade50d5
+
+### Ignore offer-to-save IBAN option should add strike database.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/452ba51
+
+### [ChromeRefresh2023] Use GM3 pin icon for side panel pinning.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ab7bd6
+
+### Reland "crosier: Add ChromeOSIntegrationTestMixin to ash-chrome tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f76175e
+
+### iwa: Refactor TestSignedWebBundleBuilder class into its own file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c6062c
+
+### [ChromeRefresh2023] Align items in menu using GM3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0805c1b
+
+### [Refresh] Hide page info background when omnibox popup is present
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/add29e45
+
+### Use correct RenderFrameHost in SystemWebDialogDelegate::OnDialogShown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cc3527
+
+### qrcode: use WeakPtr for WebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f1c3b9
+
+### [Passwords] Adjust the tooltip text for shared passwords notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6439b8c
+
+### [responsive toolbar] Clean up unused flex rules
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c5d498
+
+### Fix showing error for reauth endpoint after network error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc4d8c7
+
+### CrOS Settings: Define System Preferences Section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ceb27e3
+
+### Use ScopedObservation for focus events in PopupBaseViews.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abaedbf
+
+### Turn DCHECK into CHECK inside PopupBaseView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78932ee
+
+### settings: Separate scroll acceleration for mice and touchpad
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1aa3e0
+
+### Clear fixed width before laying out download bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ff71df
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bd3de4
+
+### Reland "[DownloadBubble] Fix notification behavior for Lacros tab fullscreen"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9900a4
+
+### [SAA][Settings] Add changing description to collapsible element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98bfb27
+
+### dlp: Remove explicit DlpFilesControllerAsh deletion in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6554cd
+
+### support-tool: Make chrome://support-tool strings translatable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1ea3d9f
+
+### [kiosk] Remove \`is_network_required_\` from AppLaunchSplashScreenHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6360cf
+
+### [Passwords] Add unavailable state for share recipient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/173fd7f
+
+### Hide blockage indicators after 60 seconds
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/389c3d8
+
+### FSA: Update \`GetOriginsWithGrants\` to return a set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0c91110
+
+### Cookie Controls: Animate entrypoint when effective setting changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d39861
+
+### [CodeHealth] Minor cleanups for ChromeShelfController and friends
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9572e75
+
+### [SAA][Settings] Add labels to buttons in SA settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efc62da
+
+### [SAA][Settings] Add collapsible permission pairs in SA settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20e72e3
+
+### Add UMA metrics for CookieControlsIconView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a743d26
+
+### [CodeHealth] Remove id muxing from chrome_shelf_prefs.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38c1d1ff
+
+### Revert "crosier: Add ChromeOSIntegrationTestMixin to ash-chrome tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c729f8a
+
+### [Passwords] Update the string in the Shared Password Notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6058789
+
+### [waffle]Rename 'waffle' to 'search_engine_choice'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/955d85b
+
+### Cookie controls: Animate cookie controls icon on Clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f998d5a
+
+### Add Chrome flag for ARC XDG mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f59c4f7
+
+### Convert 3p profile management feature to a Finch flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/51ac6ed
+
+### Reland "Add FileTransferEnterpriseConnectorUI feature"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/621ea063
+
+### RFC 7616 HTTP digest auth: Add support for SHA-256 and username hashing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/507fd35
+
+### pip-pinch: Add feature flag to enable/disable pip pinch to resize
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/57ef2d9
+
+### Move CrOSLateBootBluetoothTelehphony
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/27142d2
+
+`);
+              </script>
+            </body>
+        </html>
