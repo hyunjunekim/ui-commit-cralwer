@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-04
+### [CrOS WebUI] Enable trusted types csp is file manager test base
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c590e7b
+
+### ui: component_extension: Quick spelling correction in a comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/92b6a2c
+
+### [js-code-coverage] Ensure sourcemaps are in the deps for_image_loader
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/899275d
+
+### Remove expired histograms DisplayManager.UpdateDisplayConfigurationTask.ExecutionTime
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60780811
+
+### [BRP] Increase BRP coverage: ViewBuilder::CopyAddressTo
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae958c4
+
+### [Test Automation] Fix a bug in WaitForState()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0e388cd
+
+### views: make ViewTargeter::delegate_ never dangle
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77bb443
+
+### views: remove broken ImageView repaint optimization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/477ecf3
+
+### Bookmarks++: Make rows draggable from image
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e26be5c
+
+### shortcuts: Support Globe key for all external devices
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d448bd
+
+### CR2023 WebUI: Fix cr-checkbox ripple positioning in RTL mode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a097f3
+
+### Add and use new BASE_(CONCAT,IF,UNIQUIFY) macros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71f64d7
+
+### [dPWA/Link Handling] Move supported_links dialog to cr_components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e1f8bb
+
+### [gbb-cct] Add Resource files for toolbar view of Page Insights Hub.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bd585c
+
+### [GM3] Add theme-color-picker to profile customization dialog
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae450e38
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4185ce51
+
+### Revert "Apply a strike to font parameters for glanceables tasks."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7933bce
+
+### DialogExample::Delegate SetCloseCallback
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3108b8d
+
+### Replace bool with an enum in as suggested in DevtoolsManagerDelegate.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/daa9772bb
+
+### [odfs] stop handling early ODFS builds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e14b9a6
+
+### [Jellybean] Expose cros-tag in cros-components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c5a09d
+
+### Simplify EntitySuggestionProcessor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9499a163
+
+### Ensure suggestions always have fallback icon and retrieve images.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1f6fbf
+
+### bruschetta: Learn more link and general name from policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/899271a
+
+### [keyboard-alt]: Display launcher/search in 6 pack dropdowns
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17ea530
+
+### [CSC] Accept -1 from server as valid metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74730f1
+
+### [Gardener] Disable EntryShowsExtensionIcon Test On Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75e8407e
+
+### [Settings] Update the standard protection text and layout on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63224e0
+
+### [Refresh] Update color of three dot menu button for image based themes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b958eac
+
+### UpdateCaptionButtonColors(absl::nullopt) when ChromeRefresh2023 disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6082982
+
+### Remove ScopedDisableClientSideDecorationsForTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/964b720
+
+### [ ChromeRefresh2023 ] Update bookmarks leading padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8708e00
+
+### [PriceInsights] Avoid highlighting the icon after clicking
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/004908d
+
+### Reland "[CSC] Ignore search links to handle in companion."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd47b1b7
+
+### Make CastNotificationControllerLacros listen for freeze events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6ce7bc7
+
+### [Welcome Tour] Prevent tour for managed accounts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9740a6b
+
+### [keyboard-alt]: Change "Off" dropdown option to "disabled"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a933fc
+
+### [CodeHealth] Move dlp test helper files to test dir
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d71d816
+
+### Adding UKM logging for VQS in CSC.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00d4fb3
+
+### [ntp][drive] Update Drive v2 module colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09a028d
+
+### Reland "[webauthn] Refactor cable pairings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff3baed
+
+### geolocation: Fix for system permission bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3133524
+
+### [ ChromeRefresh2023 ] Update bookmark folder icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4f2f9e
+
+### Draw lighter shadows on unfocused Linux browser windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd4721f
+
+### [Refresh] Add pressed state for new tab button and tab search button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2cb4f0b
+
+### [desktop promo] Impressions histogram adjustment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/106ee52
+
+### Factor editing: Use AuthSessionStorage instead of QuickUnlockStorage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c91dee
+
+### Pass Browser as param to CookieControlsIconView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b722d8
+
+### [Omnibox] Add flag for short-circuiting unfocus animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13547db
+
+### Indicate fetch success in classroom assignment getter callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ff93eb
+
+### Stop creating FcmInvalidationService for sync old invalidations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95b3692
+
+### [ImprovedDownloadWarnings] Use primary text style for learn more link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56accea
+
+### [CSC] Add accessibility name for entry button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d927b9
+
+### Add missing check for device submenu item in RecentTabsSubMenuModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac7f5ec
+
+### Cookie controls: Report animation to CookieControlsController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86c1e035
+
+### mgs: Rename chrome_user_manager_util::IsPublicSessionOrEphemeralLogin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc0bfd06
+
+### [ReduceToolbarUpdatesForSameDocNavigations] Cleanup after launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db68d74
+
+### [fyfre] Add action to buttons and register messages for default browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c879b8b
+
+### Do not override OnThemeChanged in SaveAddressProfileView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f90053
+
+### [ntp][gm3] Chrome Webstore Toast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc876bf
+
+### SAA: Also show permissions in pageinfo that were blocked on access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad5a997
+
+### [desktop promo] Added no thanks button to desktop iOS promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abce97d
+
+### ChromeUserManager: Reset profile controller on TearDown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7376d41
+
+### Quick Delete: Add time period duration to snackbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/070f72f
+
+### Quick Delete: Add zero state to the data rows in the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/520fa15f
+
+### [Payments] Stub virtual card enrollment bottom sheet bridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52021ae
+
+### [fyfre] Add strings and images to default browser promo page in FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d25d4a
+
+### Change type of in-session authentication token
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f76c2a0
+
+### Cookie Controls: Ignore focus loss for reloading view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fb3372
+
+### Changing the strings from clear to delete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d52db5a
+
+### Reland "Move ownership of CrdAdminSessionController up"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2338f45
+
+### [Signin][Android] Readjust landscape view layout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e60c726
+
+### mgs: Rename user_manager::IsLoggedInAsPublicAccount
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/772b069
+
+### Revert "[CSC] Ignore search links to handle in companion."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a84e96a
+
+### CookieSettings: Show BrowsingDataModel counts in omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07973cc
+
+### SAA: Add icons for StorageAccess API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b366f43
+
+### LinkPreview: mojom and content API plumbing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95ef2be
+
+### Simplify User to Profile mapping in ProfileHelper for testing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0b03c9
+
+### Add continuous overview animation chrome flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b7e178f
+
+### Add overview scroll layout for clamshell chrome flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/be3fd75
+
+### [CCT] Prevent taps from the overlay activity
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a6531d4
+
+### [TLDD] Define feature flag for tab and link drag and drop.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5087216b
+
+`);
+              </script>
+            </body>
+        </html>
