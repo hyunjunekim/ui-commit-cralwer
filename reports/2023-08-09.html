@@ -1,0 +1,416 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-09
+### Fix Windows 11 test failures.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ecf59601
+
+### ui: Enable passthrough by default on CrOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52fb6bd
+
+### Shrink menu top padding to 4 DIP on Win 11 pre-refresh.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf8aabe7
+
+### [Auto-disable Accessibility] Disable feature for WebView and CCT embedders
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c39c7d2
+
+### Allow combobox dropdowns to use bubble borders.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c719a8a
+
+### [automation] Remove obsolete language annotation code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/33977a1
+
+### [A11y] Fix for longstanding hypertext errors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a57107f
+
+### Always reserve space for icons/checks on Win 10 pre-refresh.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/416108d
+
+### CR2023: Update colors for disabled cr-checkboxes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6769d42
+
+### [Android] Add @CheckReturnValue to ViewUtils.* that return ViewAssertions
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/936e165
+
+### Mac immersive: handle events while showing alert in fullscreen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6db6fd3
+
+### More consistent icon handling for menus.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d0322b
+
+### Add 2 DIP between menu items on Win 11 pre-refresh.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6db1451
+
+### Settings Split: Add metric for device classification of combo devices
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a13b34c
+
+### Allow DialogModels to spec buttons that keep the dialog open
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1411e73
+
+### [gpu] Remove \`GL_LATENCY_QUERY_CHROMIUM\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70c5eae
+
+### Support submenu overlap for bubble menus.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ca5a8c4
+
+### [ChromeRefresh2023] Adjust checkbox focus ring insets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ffcbd05
+
+### Round item selection corners on Win 11 pre-refresh.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4914dcc
+
+### [color] Address hover contrast issues for window accent frames
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d6196b
+
+### [Default Nav Transition] Enable \`capture_exact_surface_id\` on Android
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6dcb0eb
+
+### [Accessibility] Add flag for experimental GameFace integration
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1ee0a86
+
+### Ban [w]ctype.h: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ceb59f6
+
+### Accessibility: Enable ChromeVox OOBE dialog improvements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a002589
+
+### [Default Nav Transition] Relocate CopyOutRequests (COR) when
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27194655
+
+### [android][trackpad] Allow Trackpad Gesture Improvements for Android U+
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57015ad
+
+### [dPWA/Link Capturing] Move supported_links items to cr_components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7cc1ba1
+
+### viz: Don't set OOW clip rect on Browser process
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/589c213bc
+
+### Check touch selection menu client is valid before doing button actions.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38d0fdd
+
+### Remove KeyboardCapabiility::Observer.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e60cf89a
+
+### BulkPinning: Allow the queue size to be specified via a Finch flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8da0a4
+
+### [Extensions Cleanup] Move CanShowActionsInToolbar to ToolbarModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0df164a
+
+### Add URL to eSpeak-NG license file to allow-list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9494e66
+
+### ChromeOS: Add chrome://chrome-urls to the acceptable URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f9f2264
+
+### Lacros: Change OpenURLFromTab to open the URL in the proper browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86c6721b
+
+### [office] metric for IO task error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2b9b82
+
+### [office] helper to extract the first IO task error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dcc292
+
+### [APS] Update hover tooltip text for toolbar buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1d4ab3
+
+### Reland "Make "CreateShortcut" use document title not web app (manifest) title"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cc56a9
+
+### [Payments] Java side of virtual card enrollment bottom sheet bridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51235e0
+
+### [Office upload] Add logging for the Drive upload generic error message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24705cb
+
+### customization: Update dropdown to include key combination
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69f648b
+
+### [Refresh] Update the foreground color of guest profile chip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a1dae4
+
+### [ ChromeRefresh2023 ] Adjust caption button heights on Windows with no Tabstrip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06b1949
+
+### [Policy Test UI]: Change target to scope in table header.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b3bcbc
+
+### Printer settings: Use Save button for discovered printers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2a2177
+
+### [CR2023] Update download progress bar ring color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/946cd51
+
+### [switch access]: more narrowly scope EventHandler observation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03668da
+
+### Remove extra resize frame area on Windows in GM3.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a50a408
+
+### Don't call GURL::spec() if the instance isn't valid.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffebb29
+
+### Enable demo mode for Customize Chrome IPHs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b6a50d
+
+### [Glanceables] Order student assignments with no due date
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93780ed
+
+### [Rounded Windows] Update frame when devtools get hidden due to resizing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d5c73776
+
+### CrOS Settings: Add IsPowerwashAllowed() and backfill tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f23acc4
+
+### [Desktop][UX Enhancement] Move Gpay logo to right for Autofill bubbles and dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93b4156
+
+### [Media Remoting] Enable Media Remoting from Zenith on Chrome OS
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8cefe39
+
+### Revert "[OOBE] SoftwareUpdate screen update subtitile for cellular step"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/568396b
+
+### SAA: Fix omnibox bubble layout and icon size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e37ae34e
+
+### [X-Device Restore] Add sync metric for local synced tab count disparity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6002f3d
+
+### Reduced height of redesigned getDisplayMedia picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1d8bb4
+
+### [Survey] Add SurveyConfig for Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/312b48c
+
+### Settings Split: Fix tests to work with flag off by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58b5743d
+
+### Add navigation id to History Service NotifyURLVisited param to be passed to observers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9aeae5
+
+### [GM3] Fix profile signin tests for ChromeRefresh2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaf4968
+
+### [autopip] Add AutoPictureInPictureTabHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/520e3f6d
+
+### [Survey] Move active survey filtering into survey_config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e35e47
+
+### crosier: Add QuickSettingsIntegrationTest.ManagedDeviceInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b61e15
+
+### [Policy Test UI]: Create browser tests for the policy test page UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/061fb1a
+
+### Revert "Refactor PageIconCookiesContentView"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5609a8
+
+### Force Cookie Controls icon size to match Page Info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7deefb1b
+
+### Commit Autocompletion when User presses physical <Tab> key.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8369631
+
+### wallpaper: rm WallpaperControllerClient fns
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/463f025
+
+### SAA: Add favicon metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d67b8023
+
+### Revert "cros: Add a password selection screen to OOBE"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9b38374
+
+### cros: Add a password selection screen to OOBE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fa7995e
+
+### Cookie Controls: Reset Controls Controller info on new WebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87feceb
+
+### Revert "exo: Remove weston-test"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d38d4b
+
+### Removed erroneous DanglingUntriaged from audio_toggle_button_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da9afbf
+
+### Add action buttons in lock screen reauth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7730ca1
+
+### Cookie controls: Update strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b34a4b71
+
+### [Passwords] Add SharePasswordConfirmationDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a155f7
+
+### [SAA][Settings] Update strings, add screenshots and send to translation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7db806bd
+
+### Refactor PageIconCookiesContentView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/627ac62
+
+### Split browser forms into renderer forms before passing them to PWM.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaf3040
+
+### Autofill update prompt, fix edit icon for it and ko langs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2965b66
+
+### exo: Remove weston-test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8b066c
+
+### SAA: Use 'off' icon in PageInfo with UI refresh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/905bbc3
+
+### [SHv2] Add entry point in privacy settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37b9247
+
+### Show on tab red indicator at least for 5 seconds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56affdc
+
+### [Multi Apps] Add uninstall notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebabd96
+
+### [Profiles] Fire removed-profile when omitting and removing it from list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0605bd
+
+### Fix accessible name for customize and control app button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1ad0e9
+
+### Cookie controls: Add new IPH to the page info entry point
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba5c272
+
+### [iOS] Use scoped observation in bookmark menu delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5382cae
+
+### [OOBE] SoftwareUpdate screen update subtitile for cellular step
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0e7ffd
+
+### [Promise Icons] Add context menu with pin option for promise shelf item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f60ef0a3
+
+### Move MultiUserSignInPolicy functions to user_manager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c6b266
+
+### Feature flag for enabling FPAN risk-based retrieval
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fc0ae27
+
+### Revert "[floss] Disable Floss when A11Y settings are enabled."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df512a54
+
+### Add a chrome UI flag for kDeprecateUnload.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b6e8163
+
+`);
+              </script>
+            </body>
+        </html>
