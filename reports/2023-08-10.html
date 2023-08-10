@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-10
+### Add SCOPED_MAY_LOAD_LIBRARY_AT_BACKGROUND_PRIORITY to PenIdHandler
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ac9596d
+
+### [Files]: Adds framework for interacting with search images by query.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93046408
+
+### Files app: Better error handling in FileManager.initBulkPinning_()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f27955c
+
+### Use RefCounted to share DisplayColorSpaces when copying Display
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85322b6
+
+### Make Windows pre-refresh menus more accurately emulate native.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44ac5f0
+
+### Reland "Dont use NativeThemeFluent when OverlayScrollbars are on."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9c307e
+
+### Shrink icon-to-label distance by 2 dip on Win 10 pre-refresh.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2f49db2
+
+### Refactor Theme ExtraParams to use absl::variant not a union
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2ea97a
+
+### evdev: Add devices to keyboard + mouse block lists
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abad3d8
+
+### Revert "Dont use NativeThemeFluent when OverlayScrollbars are on."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b9174f
+
+### [SFL] Implement simplified bookmark save flow
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e187fd7
+
+### Misc. menu code cleanup.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8147690
+
+### Support \`use_outer_border\` with bubble borders.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3345afd
+
+### [ui fonts] Add --system-font-family command line switch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/527c476
+
+### Dont use NativeThemeFluent when OverlayScrollbars are on.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3642e73
+
+### Add needed bits to start honoring target in event rewriters
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9428360
+
+### Plumb inverted-colors for macOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38e10ec2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9431e27
+
+### Plumb inverted-colors for Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8058e2c
+
+### Use the normal border color for bubbles with shadows.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70be0a6
+
+### Add 'move tab to new window' to tabbed app tab context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46fd3fdc
+
+### orca: add feature toggle in the setting page and connect with prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3edbfd
+
+### Do not use a localizeable message for a placeholder-only message.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9a96ef
+
+### gardening: Disable ExtensionUninstallDialogViewInteractiveBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2301015
+
+### Add ChromeOS trace events in ['/c/b/ui/views/apps', '/c/b/ui/web_applications']
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5283984
+
+### Add ChromeOS trace events related to login/lock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb168dd1
+
+### Add ChromeOS trace events in ['/chrome/browser/apps', '/chrome/browser/ash/app_restore', '/chrome/browser/ui/ash/shelf']
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ade3132
+
+### StatusAreaTester: Add Chrome page for the tester
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8421a9e
+
+### Extensions: ExtensionId: Use alias instead of std::string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa0a75c
+
+### Add ChromeOS trace events in ['/c/b/ui/views', '/components/saved_tab_groups']
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3aab017
+
+### arc-overview-tracing: new min time only if active
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81b9043
+
+### Add ChromeOS trace events in ['/c/b/ui/startup', '/c/b/ui/views/relaunch_notification']
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9958c27
+
+### arc-overview-tracing: test timestamp range filter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82f8717
+
+### CrOS Settings: Add ResetSection to SystemPreferencesSection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/541b53d
+
+### Add ChromeOS trace events in /chrome/browser/ui/ash/desks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74db796
+
+### Add ChromeOS trace events in /chrome/browser/ui/ash/keyboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb01816a
+
+### Add ChromeOS trace events in /chrome/browser/ui/webui/settings/ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28972ee8
+
+### Add a FollowSystemTheme pref to ThemeService for use in BrowserFrame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bc18f4
+
+### Clean up ToolbarControlContainerTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae17f45
+
+### [Passwords] Record metrics for shared passwords notification bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23e73fe
+
+### Remove redundant setter function.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eba1af
+
+### Remove URL validity assertions from AutocompleteController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4429a9d
+
+### Add ChromeOS trace events in /chrome/browser/ui/ash/network
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c89144b
+
+### Fix incorrect accessibility label.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99f6f043
+
+### Exclude hidden bookmark bar children from a11y tree
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7e60c8a8
+
+### [CSC] Match URL using prefix for registration and IPH blocklist
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7213b90
+
+### Added searchable input for policy name on chrome://policy/test page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/892bca6
+
+### Migrate AutofillProfile from //chrome to //components to match C++.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e39daaf
+
+### [FedCM] Update Java Account object
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/516f322
+
+### [Cast2Class] Update dialog to use updated styles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7ef843
+
+### [Omnibox] Fix #testWindowAttachment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b2fd4f1
+
+### [Refresh] Remove inkdrop configurations from UpdateInkdrop in tab strip control button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6865a11
+
+### Enable permission dialog browsertests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf05eb4
+
+### Static imports for ToolbarControlContainerTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14fdfa6
+
+### Lens Direct Upload functionality for NTP.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9f1df5
+
+### Fix ChromeLabs button does not close bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dac58b4
+
+### Do not capture during fullscreen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07f264e
+
+### [metrics] Add histogram for measuring the widget creation time of Tab Search bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad41276
+
+### [min-font-size] Stop localizing "Minimum font size"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3ad4d3
+
+### Remove unused tabSwitcherFullscreenToolbarStub param.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2205835
+
+### Make WebAppSettingsNavigationThrottle wait for the web app registry to be ready.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f7977b0
+
+### [Garden] Disable failing OmniboxSuggestionsDropdownEmbedderImplTest#testWindowAttachment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0dcba87
+
+### Remove unused import from TitleOriginLabel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/440d42c
+
+### Create empty UI container for Read Aloud mini player
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d888e9
+
+### Fix PermissionIndicatorsInteractiveUITest for Chrome UI refresh 2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48b096d
+
+### Add backend support for dedicated CPSS settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bb3230
+
+### Update TopToolbarCoordinator constructor javadoc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc2bd5be
+
+### Move local test infobar implementation to profile policy connector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d8dbdd1
+
+### Add ChromeOS trace events in /chrome/browser/ui/ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/becfc46
+
+### Cookie Controls: Update third-party blocked / allowed site count logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcdd0229
+
+### Page Info: Tweak separator length under GM3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/033df0cd8
+
+### iwa: Test SignedWebBundleReader with actual IWAs instead of mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6c3a1f9
+
+### [UPMLocalPwd] Change the progress bar title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b13be6
+
+### Revert "Dont show new tab menu option if app doesnt have new tab button"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6acf6a38
+
+### [autofill autocomplete] Remove mouse observed outside bounds check for autocomplete being deleted case.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45877740
+
+### [File tasks] let PWAs open non-native files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72d61ec
+
+### Convert CreditCard::RecordType enum to enum class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8621cd
+
+### Replace AsyncWaiter-s with TestFuture<> in chrome/browser/ui/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e800bb
+
+### Reland "cros: Add a password selection screen to OOBE"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff04f19
+
+### Dont show new tab menu option if app doesnt have new tab button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf86846
+
+### Revert "[X-Device Restore] Fix unexpected omnibox focus on tab switcher"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0120b60
+
+### [Omnibox][ML] Add sync TFLite ML model execution API.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c1e7dd1
+
+`);
+              </script>
+            </body>
+        </html>
