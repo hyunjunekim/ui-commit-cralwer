@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-11
+### jellyroll shadow [part 4]: window shadow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8b5100a
+
+### Add ChromeOS trace events in ['/ui/base', '/ui/views']
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53c79543
+
+### viz: Do not set resource size for resource-less overlays
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/746435b3
+
+### views: triage dangling raw_ptr in WebView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e90365
+
+### Reduce ScreenMac logging verbosity for harmless condition
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27cf26c
+
+### Incrementally build visual tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81cac89
+
+### Make DefaultScreenPositionClient::root_window_ const
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c95608
+
+### WebUI: Allow hiding ripple and expose parts in cr-slider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f64e153
+
+### [view-transition] Force a BFCache-restored page to show its fallback
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7cc3858
+
+### Modernize aura::Window::SetBoundsInScreen and GetScreenPositionClient
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b2b495
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/408b2b7
+
+### Add gfx::RRectF::CornerBoundingRect()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dd8a98
+
+### p13n: migrate to store_ts.ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/888324fc
+
+### [gbb-cct] Adding Layout files for toolbar view of child page
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abc6ecb
+
+### ui: component_extension: Add explicit constructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5e2893
+
+### Revert "[Files]: Adds framework for interacting with search images by query."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f866f4
+
+### [Store] Fetch new file tasks for empty new selection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e87ca4
+
+### [Files app] Prevent search bar expansion from overflowing right pane
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce62f769
+
+### Remove crosapi::browser_util::IsLacrosPrimaryBrowser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16bb891
+
+### [FilesBulkPinning] Extract Google Drive settings to behind new flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7edc637
+
+### Add IPH test cases to interactive ui test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f43d111
+
+### Add skeleton UI changes for migration of Borealis installer to webui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15602c4
+
+### Remove NOTREACHED statement causing crash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5f53293
+
+### system-live-caption: Add kFeatureManagementSystemLiveCaption.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2326029
+
+### BulkPinning: Remove unused #includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d94df7e
+
+### [ ChromeRefresh2023 ] Fix caption button infinite layout loop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbd75a4
+
+### Extensions: ExtensionId: Use alias instead of std::string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bd5dd1
+
+### Add a span constructor to der::Input
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7bb0b0
+
+### De-flake high efficiency favicon pixel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5a5e3c
+
+### Remove RecordHistogram from ToolbarControlContainerTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25b731b
+
+### [CSC] Disable companion when Lens standalone is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdd9a23
+
+### [GM3] Insert missing cr-theme-color-picker strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8e917b2
+
+### [gardener] Disable PageInsightsSheetContentTest#childPageRendered failing test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbc2fe7
+
+### Remove unneeded content_browser_client.h includes from other headers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a94c38
+
+### CrOS GMC V2: Update labels for the start casting button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d74ad7f
+
+### [Omnibox] Change ScrollToTLD assert
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac09bba
+
+### Revert "Show legacy tech report information on chrome://management page."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c85cc27
+
+### Support media type in ChromeOS printing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/deee87d
+
+### Update page info toggle buttons to animate on state change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98d0926
+
+### Parent Access: Changed Dark Mode Background Color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de16afd
+
+### [dPWA/Link Capturing] Build WebAppRegistrar observers for link capturing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3fec9a
+
+### [menu test] Fix shutdown ordering in MenuControllerUITest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/653db97
+
+### Tab Organization: Add feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a30131
+
+### Rename all IBAN to Iban.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/554d54a9
+
+### [Settings] Clean SiteSettingsHandler of friend tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/854f6b6
+
+### Extensions: ExtensionId: Use alias instead of std::string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25f4a58
+
+### [fyfre] Check if default browser callback is not null in handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cef27f3
+
+### [gbb-cct] Add finch flag for duration for page insights hub auto trigger
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ac1d9b40
+
+### [3PCD + 3PSP] Check if storage is fully partitioned
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25fca03
+
+### [Signin][Android] Update DIR_METADATA for Android signin files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e59af88
+
+### [fyfre] Check if browser can be set as default before showing prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd3f912
+
+### Add browser platform DIR_METADATA for supervised_user directories.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/638ee86
+
+### Show legacy tech report information on chrome://management page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f600678
+
+### [SurfacePolish] Delete SURFACE_POLISH_OMNIBOX_SIZE and SURFACE_POLISH_SINGLE_TAB_CARD variation from flag surface polish
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/77a2c981
+
+### [Read Anything] Fix destruction ordering in test fixture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13f1c13
+
+### Revert "Reland "Enable Gaia reauth endpoint for all online reauth flows on login screen"" & disable feature flag GaiaReauthEndpoint
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09b246a
+
+### [3PCD + 3PSP] Read partitions in BrowsingDataModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54c1570
+
+### [UPMLocalPwd] Add Chrome channel name strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96f8486
+
+### [SHv2] Add the empty state module and show when no recommendation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af145102
+
+### ChromeOS: Allow passwordless user creation under a flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e1b1a5
+
+### Reland "exo: Remove weston-test"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/730cd16
+
+### Reland "Dont show new tab menu option if app doesnt have new tab button"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da2751a4
+
+### Add additional UMA metrics + reliability fix.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0c464c
+
+### [FilesBulkPinning] Use content cache storage instead of pinned bytes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fca303
+
+### Add flag for enabling WebUI installer for borealis.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a1780b5
+
+### Privacy Guide: Add new flag for the upcoming UI update
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/330b6de
+
+### Move deprecate-unload flag to the deprecated flags section.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d08e2c0
+
+### [ntp-journeys] Support for Text-Only view
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ff32de8
+
+### Trim LacrosMode and LacrosAvailability
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aaaae452
+
+### Cleaning up old features from flag-metadata.json
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0f4aca6d
+
+### [FilesBulkPinning] Introduce new Google Drive settings page flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1e1401c
+
+`);
+              </script>
+            </body>
+        </html>
