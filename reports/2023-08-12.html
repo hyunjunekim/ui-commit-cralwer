@@ -1,0 +1,176 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-12
+### Revert "Reland "Enable CrOS Touch Text Editing Redesign.""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd3bb8a
+
+### desks: Fix window out of bounds in the mini view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/491b10e61
+
+### [Auto-disable Accessibility] Deprecate the old isTouchExplorationEnabled method
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8093792
+
+### Connect the Webshell TypeScript to the Browser Process with Mojo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9fef16af
+
+### Augment unit tests with \`alphaType\` and \`SkPreMultiplyARGB\` coverage.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e6dcce9
+
+### Fix prefers-contrast on Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8ee9760
+
+### Fix custom cursor scaling logic for viewport checks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b3c412
+
+### Add spacing in between buttons in ToggleButtonExample
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4f0e6a
+
+### Convert gfx::BaselineStyle enum to enum class
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19a77d4
+
+### Migrate ImageLoader from fileManagerPrivate to imageLoaderPivate API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2aae80
+
+### Remove Lacros-SideBySide sync warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1c4a6d
+
+### [lacros] Add lacros impl of ScreenCaptureNotificationUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/983718cd
+
+### Reland "os settings: move constants mojom to ash dir"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2db603ce3
+
+### Support some commands in PWAs when no windows are open on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6fb9da
+
+### Add skeleton for Read Aloud expanded player bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9c441f
+
+### [Quests 2.0] Add translation strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49984d38
+
+### editor_menu: Implement controller skeleton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3143f7
+
+### [CSC] Add and use companion specific entry point for region search.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76c3045
+
+### [GM3] Make promotions require WebUI refresh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/896b97b
+
+### Integrate PlusAddressService with autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ac5c84
+
+### Revert setTooltipText for StatusView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d19224f
+
+### Check keep alive registry registry shutdown status before attempting to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d41ade6
+
+### Reland "Show legacy tech report information on chrome://management page."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/270f6900
+
+### [Gardening] Disable InvokeUi_ManualUninstallShowReportAbuse on windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64e5f3e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21dab11
+
+### [signin] Fix redirection to the NTP after enabling sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85e079b
+
+### fix deleting autocomplete issues mouse move.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f6ff27
+
+### Refactor: Rename create first-party storage key method in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eeb7a0
+
+### Add Deep link for Recovery setting in os://settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1f3cd4
+
+### [Code health] Maintain chrome-privacy-controls alias freshness pt.2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c6a2474
+
+### [Passwords] Rename ItemBubbleController to match view name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93e9491
+
+### [UPMLocalPwd] Update the introduction string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3db87262
+
+### [fyfre] Check if browser is already default before showing prompt in FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdd98c0
+
+### Only call AutofillPopupDelegate::OnPopupShown if popup was shown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cce9e84
+
+### [Passwords] Delete old password management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66d752ec
+
+### Replace AsyncWaiter-s with TestFuture<> in search_handler_unittest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3e7e23
+
+### [Passwords] Clean-up the kRevampedPasswordManagementBubble feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6beca09f
+
+### cco test 1
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/49caaf5
+
+### [Discounts] Add feature flag for showing discount on navigation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/254be65
+
+### [Passwords] Enable PasswordsImportM2 by default
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5eea842
+
+`);
+              </script>
+            </body>
+        </html>
