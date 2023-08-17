@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-17
+### Ash: Invoke click event handler on middle-clicks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fea2d1e
+
+### ozone/wayland: Use implicit sync interop on kernel >= 6.0 if explicit sync protocol is unavailable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/67d69c1
+
+### Add handwriting_language to ComponentExtensionEngine
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d236590
+
+### wayland: standardize event listeners in wayland_zaura_shell
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0f4b5c4
+
+### wayland: handle zaura_shell.compositor_version event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5db950f
+
+### Add metrics for ChromeOS touch selection dragging and menu actions.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58ac8470
+
+### Move scoped_nsautorelease_pool to base/apple, leave a forwarding header
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5289ab25
+
+### Move scoped_mach_port to base/apple, leave a forwarding header
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd92b53
+
+### [Gardener] disable failing test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/651ccf5
+
+### Move mach_logging to base/apple, leave a forwarding header
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b20071
+
+### [Quests V2] Update Quests V2 context menu
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fdcc21
+
+### WebUI: Fix cr-action-menu alignment when set to BEFORE_START
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9491653
+
+### [mac immersive] Fix issue where browser window fails to activate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d820c4
+
+### Move ScopedTypeRef to base/apple
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b9a8e50
+
+### display,viz: HDR10 for external displays
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/183a53ca
+
+### Switch to a non-deprecated API for doing sheets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22ad010
+
+### Move OSStatus logging to base/apple
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/280c58a
+
+### Add support for web_app_id in ChromeOS notification grouping
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bfd9a2
+
+### [android][dropdown] External Selection Action Menu Callback Wiring for
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8763ca1
+
+### Rename message_pump_mac to "apple" because iOS uses it too
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d32f18
+
+### Add VRR always on flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b9506fb
+
+### [dPWA/Link Capturing] Implement link capturing on chrome://app-settings/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41433c97
+
+### [CrOS Cellular] Add APN enable error toast string
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb4e8e28
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e82a2fea
+
+### Fix crash in CastOS touch selection tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/455c95d1
+
+### Add basic layout for Editor Menu view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/950e8b0
+
+### Change the icon for Lacros Cast notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a236a3
+
+### iwa: Modify web-app-internals to allow installing an IWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8facfcb
+
+### Revert "Fix accessible tab title for tabbed web apps"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/415985b
+
+### Leverage web components in chrome://site-engagement.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/167ec62c
+
+### [ ChromeRefresh2023 ] Fix caption button heights... again
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/083ecc76
+
+### Revert "Tab Organization: Add feature flag"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce4ea63
+
+### Unify chrome://version for ash and lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56fd4b2
+
+### Update Live Translate icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b25c189
+
+### [Gardener] disable failing mac test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fcc47b8
+
+### HaTS: Add Boilerplate for HaTS chrome-untrusted webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/892801a9
+
+### CrOS Settings: Updates strings for device display subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e97e049f
+
+### Make sure side panel rounded corner runs layout correctly even when not visible.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68c4510
+
+### StatusAreaTester: Add functionality to configure privacy indicators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/129174b
+
+### Refactor ChromeOS ash to use platform_version rather than os_version
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f4c459
+
+### Deflake tests interacting with \`CreateChromeApplicationShortcut\` dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6413311
+
+### Settings: Delete unused IDS_SETTINGS_NETWORK_PREDICTION_ENABLED_LABEL string.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b016ab3
+
+### Cleanup AutofillFillMerchantPromoCodeFields as it's fully launched.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdaf45c6
+
+### [Panorama] show extensions card when feature enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1328f3f
+
+### extensions: remove legacy notification system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a7315bc
+
+### Unescape URL ahead of editing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/346ae8a
+
+### [Lacros tests] Switch Access doesn't change Ash windows in test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/228b4aa
+
+### Add overscroll history navigation toggle to a11y settings on Win/Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38805c76
+
+### Remove {} in single arg @Enabled/DisabledFeature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d4ceb1
+
+### StatusAreaTester: Change the name to chrome://status-area-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/687ff01
+
+### Cleanup IBAN related flags as it's fully launched.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eccecf9
+
+### Remove features::PreloadingDesktopSettingsSubPage flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d26a5a1b
+
+### Restore SysUI download notifications on ChromeOS Lacros builds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/817b602
+
+### This CL creates an additional SaveCreditCardPromptResult metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/424841d
+
+### [Survey] Add SurveyClient interfaces
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b43f709
+
+### Make os-settings password prompt work with local passwords
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/193dbe0
+
+### Remove TODOs for cleaning up lifetime migration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd0d21a
+
+### iwa: Add support for passing key_pair and app_name to swbn builder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af76858
+
+### Ensure raw_ptrs are initialized in chrome/browser/ui/sync/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7215eb0
+
+### iwa: Refactor TestSignedWebBundleBuilderOptions to be a class instead
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad16cf2e
+
+### SAA: Adjust bottom margin of omnibox bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df4795b8
+
+### Update DIR_METADATA for codepaths owned by chrome-privacy-controls@
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4061ba1
+
+### Cookie Controls: Set Highlight button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2270a3
+
+### Privacy Guide: Android fix Incognito strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/066f94df
+
+### Add DIR_METADATA files for signin and profiles directories
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a8df94
+
+### Remove deprecated value USER_TYPE_ACTIVE_DIRECTORY
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd77c2ab
+
+### BulkPinning: Add debug toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/226fefc
+
+### Remove obsolete flag: TabShareInGuestModeBugfix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abef13d
+
+### [FilesBulkPinning] Offline files storage row behind a new flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2154250
+
+### Almanac: Add feature flag for the Almanac migration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/33ebf998b0
+
+### [DIPS] move dips_features to //content/public
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b601bb0
+
+### [omnibox][actions] Add OmniboxActionsUISimplification feature and flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d1ef274
+
+### [ntp][ntp-modules] Increase number of files shown in Drive v2
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b137e03
+
+### [Tab group][Tablet] Cleanup feature flag Bug: 1467580
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4888410
+
+### [SFL] Add feature flag for ShoppingPageTypes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1ce9b46
+
+### Remove audio-peripheral-volume-granularity feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b21a888
+
+`);
+              </script>
+            </body>
+        </html>
