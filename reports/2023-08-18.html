@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-18
+### Move foundation_util to base/apple, leave a forwarding header
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eac566b0
+
+### file_manager_strings: fix cases where Bruschetta used $1 twice.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/204b286
+
+### Change localized-link element to trigger click handler on middle-click
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/358e628
+
+### Fix GetTextLocationResult API bindings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73703b74
+
+### [GTK] Fix invalid type-class reference in GTK4
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0180037
+
+### Customize Chrome: Update hue slider positioning
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b53df4
+
+### [metrics] Add histogram to measure time between when app menu host initialization is started to when the menu is presented.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c85e93a
+
+### Revert "cros_next: Revert window caption bar size changes"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec882ef
+
+### Update corner radius from side panel to page content based on UX feedback.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78f5b41
+
+### [DragDrop] Set up URL for image search for dropping into omnibox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b080f5bbd
+
+### Consolidate string <-> String16 conversions in WebUI js code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7444ee0
+
+### Customize Chrome: Replace native color picker with custom hue slider
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b23153d
+
+### Export Linux ui-toolkit command line option
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09e3fa4
+
+### Move scoped_cftypreref to base/apple, leave a forwarding header
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a09d7dd
+
+### Fix issues with scrollbar-color invalidation with currentColor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d969c04e
+
+### Reland "[Auto-disable Accessibility] Point ChromeAccessibilityUtil to AccessibilityState"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ecd39ec1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dc19ad
+
+### [CR2023] Re-enable bubble border for Linux.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c684f0f
+
+### [Files app] Ducks proposal - convert search
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d86fdb4
+
+### Automatically annotate dangling ExperimentalAsh pointers [1/N]
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8abf215
+
+### Record DriveOfflineOpen.Unavailable uma for drive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0df9920
+
+### Add handwriting language to InputMethodDescriptor
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2f413ad
+
+### [Search] Normalize Image Metadata
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c556cd3
+
+### Web Apps: Run WebAppIntegrationTest with shared Ash on fixed versions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b37bece
+
+### Reenable BrowserNavigatorTestChromeOS.OsSchemeRedirectSucceed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e8b7be4
+
+### Populate the webui theme values from the page handler instead of the ReadAnythingModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e80ea21
+
+### Extensions: internals_source: Save memory by using flat_map instead
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4de40a5
+
+### Add link from a11y settings to trackpad system settings on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a9eff0e
+
+### [Gardener] Disable InvokeUi_UninstallByExtensionShowReportAbuse
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ec4292
+
+### [bookmarks] Add option for manual sort ordering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5906668
+
+### [omnibox][actions] Move button row onto same line as suggestion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c741859
+
+### Fix and re-enable test for Win11.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7823fc8
+
+### [autopip] Create settings UI helper class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c5b2a2f
+
+### Add support for "Open PDF in Preview" for cloud content analysis
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33af91c
+
+### Fix gap in outline around side panel content and corner radius.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba53b16
+
+### [Refresh] Adjust margin between tab indicator to tab close button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f404f09
+
+### Measure download toolbar button click to full view shown latency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f65604d
+
+### Add IPH to the BrowserCommandHandler's open Enhanced Protection flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72a520b
+
+### Update side panel combobox icon color for non-chrome refresh 2023.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf1d9e9
+
+### Add basic Editor Menu chips view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30a5156
+
+### Adjust @Enable/DisableFeatures annotations for shorter lines.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dc65ab
+
+### Delete "Profile.Update" histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f90556
+
+### ARC testing: builder for ARC task windows (reland)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1f62c99
+
+### [Survey] Modularize upstream SurveyController (1/5)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4a9cdf
+
+### Allow EditUrlSuggestion to fill the Search Query back in the Omnibox.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4da5d3889
+
+### [Tab Switcher] Remove TAB_GROUPS_ANDROID flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3521b6b9
+
+### [webauthn] i18n new UI strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92cc392
+
+### Eliminate parameter in ChromePasswordManagerClient constructor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75d60aa
+
+### Settings: Create feature for moving preloading subpage to performance settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/753aeb5
+
+### SAA: Fix PageInfo without PageSpecificContentSettings crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99988c57
+
+### Automatically annotate dangling ExperimentalAsh pointers [9/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34efeb8
+
+### FSA: Store Persistent Permissions Pref bit in-memory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0055d9f
+
+### Revert "Cookie Controls: Fix flaky UI tests due to relative test run time"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6290c7e
+
+### bruschetta: More descriptive aria text for the uninstall button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95767434
+
+### Hide Autofill Popup if hidden behind Pip window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3722137
+
+### Ensure raw_ptrs are initialized in chrome/browser/ui/webui/sync_internals/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b92bd47
+
+### bruschetta: Raise an accessibility event upon radio button removal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e68c788
+
+### [Passwords] Change sharing notification pixel test to the root view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a66de69
+
+### Cookie Controls: Fix flaky UI tests due to relative test run time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d45097c3
+
+### Reactivate Autofill popup test for window move.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54440fb
+
+### Reactivate Autofill popup test for deleting external delegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abafd3a
+
+### bruschetta: Add an a11y description to the progress bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d91d45
+
+### [FilesBulkPinning] Rename totalPinnedSize to contentCacheSize
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b89d3d7b
+
+### Make destroying external delegate more natural in popup controller test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/056dcd2
+
+### Default Apps: Clean up flag for Messages preload
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b9d83a95
+
+`);
+              </script>
+            </body>
+        </html>
