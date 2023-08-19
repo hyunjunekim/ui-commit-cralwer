@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-19
+### Mark windows as occluded if root window is hidden.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0451f57
+
+### Make "submenu fits on screen" test more correct.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/557660b
+
+### Misc. cleanup.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f48af30
+
+### [QT] Ensure QT platform matches Ozone platform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa139976
+
+### [GTK] Fix various crashes with --gtk-version=4
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e195357
+
+### [mac-a11y]: avoid performance issues with text range attribute retrieveal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5061c20
+
+### Reduce log spam for linux-chromeos startup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a97aa4
+
+### Move MenuControllerTest out of the test:: sub-namespace.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbb11fa3
+
+### Remove TestMenuItemView*Shown.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5504a48
+
+### Adds a commandline switch and a flag for enabling the Canvas OCR feature
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cdf05ce
+
+### Provide a ShowSubmenu() helper to make test behavior consistent.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/181bb3fd
+
+### Cleanup for cr-theme-color-picker
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7b8358
+
+### Change stroke width from px to dp
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ae638d
+
+### Speculatively fix dangling raw_ptr issue in PrintDialogGtk
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0725cfb
+
+### [ntp][CR2023] No scrollbar when error shows in edit shortcut dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22600fc
+
+### Plumb inverted-colors for Android
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da3d590
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb134fa
+
+### dlp: Add warning summary panel i18n title
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1299882
+
+### Move native_web_keyboard_event.h to //content/common/input
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3115496
+
+### Reenable FileTransferConnectorFilesAppBrowserTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d3c372e
+
+### DLP: Add feature flag for new UX
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c021059
+
+### WebUI: Refactor common script loading logic in test_loader_util.ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7e419a7
+
+### [NTP] Remove nesting of a and button in mv tiles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aebb18b
+
+### [Desktop][UX Enhancements] Autofill Progress Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cfcc58
+
+### [Nearby Share][Jelly] Enable dynamic colors in NS animations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b757a9d
+
+### Strip autocompleted text from \`UrlTextChangeListener#onTextChanged()\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b0b866
+
+### [Desktop][UX Enhancements] Center-align the error icon vertically with the first line of error message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d918610
+
+### CrOS Settings: Add SearchSection to SystemPreferencesSection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed9e7785
+
+### [User Education] Allow auto-configuration of IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bb7516
+
+### [User Education 2.0] hook to configure FE from IPH registry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb6b157
+
+### Re-enable FaviconTreatmentOnDiscard Pixel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/142c714
+
+### [User Education] Move user education service down into c/b
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa5def4
+
+### Re-enable status icon tests, add context menu test, and refactor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd9f131d
+
+### Remove old long-press move suppression mechanism in UrlBar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51c8fa3b
+
+### [Omnibox] Disable view pool warming for low-memory devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a5b138d
+
+### webauthn: dedup platform authenticator credentials.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d76769
+
+### [Whats New] Update whats_new_handler to provide the correct URL for
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d540b81
+
+### webauthn: various behaviour changes for iCloud Keychain
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fb6bd88
+
+### [keyboard-alt]: Announce state changes to connected devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb966d0
+
+### [Media Router] Merge MediaRouterDesktop and MediaRouterMojoImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7167e0d
+
+### Fix an NOTREACHED issue when converting GURL to string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62a22246
+
+### [Gardener] Disable flaky test InvokeUi_ShowDeviceList
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab761d2a
+
+### Update IDS_MENU_LISTEN_TO_THIS_PAGE screenshot
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82f26fe
+
+### Reland "[Auto-disable Accessibility] Fix for spannable edit text events"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a708574
+
+### PageInfo: Remove security-enamel mailing list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad4c659
+
+### [SHv2] Add functionality to run password check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/218d2c2
+
+### StatusAreaTester: Add etuck@ an an owner for the chrome page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09c46d8
+
+### [ChromeVox] Fix hit test offset errors with magnifier & high DPI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d990a6
+
+### Replace incorrect "Permissions" component in DIR_METADATA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b918971
+
+### Remove bottomsheet minimize refocus suppression mechanism.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9623805
+
+### [Refresh] fix TabStripRegionView browser tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98969a2
+
+### [signin] Move signin code from c/b/ui to c/b/ui/signin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21f66b0
+
+### [Android] Update enhanced protection portion of the settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0edbd477
+
+### [Settings] Link help center articles to enhanced protection page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/593dba21
+
+### [Passwords] Bubble footer only in manage passwords bubble edit mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42c2014
+
+### Fix dangling pointers in CardUnmaskPromptViews.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7341c7e
+
+### [profiles] Move profile code to c/b/ui/profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/101f4cc
+
+### [mullet m2] Add edit address suggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6dccde
+
+### Eliminate PromoCodeLabelButton::OnThemeChanged().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b89805
+
+### [ntp] Remove code for feature: NtpRemoveScrim
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/955b7a0
+
+### Revert "ChromeOS: Allow passwordless user creation under a flag"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/881e9e18
+
+### [waffle]Add screenshot tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b42b780
+
+### Revert "Privacy Guide: Update MSBB string on clank"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35ccfc9c
+
+### Automatically annotate dangling ExperimentalAsh pointers [10/N]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebfd4c1
+
+### Add test for StopApp and make PauseApp use same "close app" logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcb397f
+
+### Privacy Guide: Update MSBB string on clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7038c89d
+
+### Browsing Data Model: Shared Worker Integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38b03c93
+
+### Eliminate IconView helper class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f68fda0
+
+### Disable BookmarkBubbleViewBrowserTest.InvokeUi_bookmark_details_on_trackable_product
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c734a66
+
+### [FedCM] Prototype AutoReauthnFlag behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/55757e1
+
+### Adds WGC feature flags to the chrome://flags UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee412e70
+
+`);
+              </script>
+            </body>
+        </html>
