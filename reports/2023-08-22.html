@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-22
+### [FilesBulkPinning] Clear listedFiles_ on close
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b1f0c0
+
+### Move ScopedTypeRef and ScopedCFTypeRef into base::apple::
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28154a6
+
+### [file manager] Make executeTestMessage error more informative
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b99e2d9
+
+### Move some base/apple/ files into base::apple::
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42f9d8f
+
+### [CR2023] Fixed button border disabled color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e830075
+
+### ntp: Remove useTitlePill.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6b22f4
+
+### Remove msw from ui/views/controls/tabbed_pane/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/afe9492
+
+### ozone/drm: Uevent Log to Include Enum Value of Trigger Prop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5d28c17
+
+### Revert "[A11y] Implement accessibility mapping for dfn element"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95dda11
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b53a1e
+
+### ozone/drm: add support for psr2 damage rects
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e72fcc6c
+
+### ozone/drm: Log a Warning when a Sterile Connector is Skipped
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4e156c
+
+### ozone/drm: Leave Link Status=Bad when a Connector Has no Modes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3bb1cf
+
+### [omnibox] Apply device scale factor when drawing action chip border.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a72320
+
+### Store HUE as degrees on blink::Color when parsing HSL and HWB
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b3743fa
+
+### Change PageHandler.Navigate to Take a url.mojom.URL Instead of a String
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71e035f
+
+### [A11y] Implement accessibility mapping for dfn element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63af068
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74d95183
+
+### Use the shorter path for raw_ptr/raw_ref.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a27b309b
+
+### Add blocked files error only when kNewFilesPolicyUX is set
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90e53cbd
+
+### dlp: Fix pausing of RestoreToDestinationIOTask-s
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/643ce91
+
+### Reduce ID3D11VideoProcessor churn in DCLayerTree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc943a0
+
+### [file manager] Block CSE files from being copied
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8920cf7
+
+### dlp: Add mixed summary panel integ test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/871caef
+
+### [dPWA] Add link capturing support for scope_extensions on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6d2fa6
+
+### BulkPinning: Refactor IsOobeDrivePinningEnabled()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f1d3851
+
+### Reland "Renames \`Journeys\` in various UI surfaces"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/32189391
+
+### Lacros: Fix check of source url in Navigate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4f65bc3
+
+### Create pending dialog for FPAN risk-based retrieval
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b43ed67
+
+### [ChromeRefresh2023] Extend tab hit test up (and down) more better.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be00ee7e
+
+### [Extensions UI] Show tooltips when the enable toggle is hovered
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd06b3d
+
+### Linux: Make middle-clicking the new tab button work again for CR2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1546b10
+
+### os settings: move cpp files to new location (1/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ed4f27
+
+### Revert "Renames \`Journeys\` in various UI surfaces"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/137d192e
+
+### Add basic Editor Menu textfield view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7058a7
+
+### webauthn: fix browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb461d66
+
+### [Discounts] Add icon label for the offer notification omnibox icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c371bc2d
+
+### Reland "Introduce DrivingRestrictionsManager to monitor for driver optimizations"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/737292e5
+
+### Revert "Move mac system settings proxy out of settings_shared"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16688ab
+
+### Revert "Dictation: Show toast when toggling Dictation fails"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfbab005
+
+### Move mac system settings proxy out of settings_shared
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8251a0c3
+
+### [Survey] Modularize upstream SurveyController (3/5)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e93a110
+
+### [SFL] Enable "track by default" in field trial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a1cd3c
+
+### Fix Live Caption IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d9b1778
+
+### [User Education] Rename OpenPageAndShowHelpBubbleImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/507f04fc
+
+### Renames \`Journeys\` in various UI surfaces
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1cd5666
+
+### [CSC] Fix missing entry point and dangling pointer in region search unit tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e60183
+
+### Revert "Introduce DrivingRestrictionsManager to monitor for driver optimizations"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abe4939
+
+### [lens] Fix dangling raw_ptr in LensSidePanelCoordinatorTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ae95a7
+
+### [kiosk] Hide back button on ErrorScreen when shown during kiosk splash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6426c2b
+
+### [DownloadBubble] Refactor security view to avoid dangling pointer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90eb07e
+
+### Introduce DrivingRestrictionsManager to monitor for driver optimizations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8e4d15
+
+### [Refresh] Show the bookmark bar separator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26148dd
+
+### cellular: Minor UI/string changes for SM-DS Support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07c49cd0
+
+### Dictation: Show toast when toggling Dictation fails
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ece65e4b
+
+### [UPMCleanup] Remove UPM branding checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0f4299
+
+### [accessibility] Move ScopedContentAXModeSetter out of product code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/708c581
+
+### iwa: Share custom gtest matchers across tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c573d87f
+
+### [SurfacePolish] Polish Logo size on Start and NTP (phones and tablets)
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f4803a2
+
+### Do not use Gaia reauth endpoint when SAML authentication is used
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddac2fe
+
+### [SHv2] Fix leaked and reused passwords not being detected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f266c4
+
+### [profile] Remove \`profile_chooser_constants.h\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97983c3
+
+### Apply const to ProductInfo in ProductInfoCallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d44f489
+
+### Rename metrics-only APIs related to sync sign-in state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0ce5de
+
+### [Accessibility] Include GameFace flag in Settings loadTimeData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a975dab
+
+### Reland "Privacy Guide: Update MSBB string on clank"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a47f7a3
+
+### Privacy Guide: Add search suggestions card to clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32359b5
+
+### gardening: Disable flaky SignInViewControllerBrowserTest.SyncConfirmationDefaultFocus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86bcb53
+
+### gardening: Disable flaky AccountManagerUIHandlerTestSuite/AccountManagerUIHandlerTest.OnGetAccountsNoSecondaryAccounts/0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d3e19d
+
+### Comment for hiding battery saver button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55c9e2f
+
+### Lacros Test: Add support to verify/close web based UIs in ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea1ad5d
+
+### [Capture] Remove features::kLacrosAuraCapture
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bd7980c
+
+### Add Mac PWA notification attribution feature to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7cf256d
+
+### Remove expired flag enable-sync-history-datatype
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dd4379f
+
+`);
+              </script>
+            </body>
+        </html>
