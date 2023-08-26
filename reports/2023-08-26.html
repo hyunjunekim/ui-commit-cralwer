@@ -1,0 +1,288 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-26
+### [Android] Disable new select file path that breaks non-audio/image mime types.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ca485c
+
+### gpu: win: Add support overlay 3D transform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a15dd6
+
+### [views] Ensure browser theme change notifications propagate to children
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72c9e4f2
+
+### Disable UsePrimaryMonitorVSyncOnSV3.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5e26c087
+
+### WebUI: make a generic StoreClient
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e1706ed
+
+### [A11y] Workaround for AccessibilityFatalError() issues from stale data
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99d3f3b
+
+### [ios] Include ios.ui_base_unittests.filter in bundle data
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68e3707
+
+### customization: Validate graphics tablet settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa020701
+
+### Add nested ActionItemBuilder class to ActionItem.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ac90be
+
+### Parameterize AXTreeSerializer by vector type
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbc4551
+
+### wayland: standardize event listeners in wayland_data_*.{h,cc}
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/127a15d
+
+### Widget: support initialization with native theme.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ae45a5
+
+### Add AX Selection Event when an aria selected node is added to the tree.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c59aee
+
+### Move NativeWidgetMac::SetSize implementation to remote_cocoa.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56734fd
+
+### [Downloads] Format and simplify/truncate URLs on chrome://downloads page
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a1e2fc
+
+### Add \`ImageDecoder.Png.UiGfxInto...\` metrics.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ccf1fbee
+
+### gfx::HDRMetadata: Fix IPC comments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fefe5c
+
+### [Office] Disable OneDrive when offline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b9a3d57c
+
+### [Files app] Ducks: reducer migration: current directory
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df917da
+
+### [ChromeRefresh2023] Fix tab hover bottom padding being 1px too small.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f38d55cf
+
+### Add view delegate for Editor Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b89113
+
+### [Discounts] Make notification bubble view ChromeRefresh2023 compatible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e1d02e5
+
+### [Glanceables] Add screen play tag to browsertests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2832d5
+
+### CrOS Settings: Apps Google Play Store String Update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d682c46
+
+### [color] Remove BrowserFrame::SelectNativeTheme()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e46d92d
+
+### [Discounts] Add data plumbing for Quest 1.0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fc8ba1
+
+### [DownloadBubble] Security view checkbox: start invisible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e710bf2
+
+### CrOS Settings: Update strings for Device Power subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/476153f
+
+### [FedCM] Actually fix crash when the UI cannot be created
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ea3213
+
+### customization: Add set graphics tablet settings method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34d9a9b
+
+### customization: Keep track of connected graphics tablets in device settings controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/192f529
+
+### [CR2023] Page Info dialog does not respect security information view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2782f1a0
+
+### Handle escape key press on Editor Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5143ce2
+
+### Rename/move autofill_popup_controller_utils to //components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b788a3
+
+### Plumb download bit to ExclusiveAccessBubble constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b64d9f4
+
+### [gm3][ntp-modules] module background color is base container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f76547b
+
+### Revert "[ChromeRefresh2023] Update document pip windows for Chrome Refresh"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc25fa4
+
+### [ Labs ] Modernize emplace_back usage by removing temporary object
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c95bd02
+
+### [Survey] Rewrite SurveyThrottler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dea0bd3
+
+### [ntp] Add owners for new tab page mixer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bc5e986
+
+### [Families TS Migration] Migrate AddSupervision WebUI to TS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/951a042
+
+### Fix path generation for tabs on the ends of tabstrip in dense state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fecc36b
+
+### [Passwords] Disable Save Button when Password Field is Empty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0502610
+
+### [ChromeRefresh2023] Fix tabstrip layout issues from changing the top padding.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d140043
+
+### [CR2023] Use outset focus ring for horizontal buttons in Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4452f9
+
+### Revert "ChromeOS geolocation bubble"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85d871b
+
+### Revert "Reland "HaTS: Add HaTS Api Key""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08be09ec
+
+### Enable WGC Capture for Eye Dropper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/949923c
+
+### ChromeOS geolocation bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/238fb2c6
+
+### Cookie Controls: Tweak regular exception check logic in incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2cf795
+
+### [Extensions] Add accessible name to extension's pin button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7610b2c
+
+### Adds ContentSettingsForOneType for the TPCD metadata
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70e46a2
+
+### [waffle]Set the corresponding preferences on submit click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38840a86
+
+### Add a feature to disable PopupCellView paint checks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc91cff5
+
+### [ntp-modules] V2 container layout column count param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dab23f2
+
+### Provide data to the Android save card bottom sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aac0ecb
+
+### iwa: Fix \`OpenIsolatedWebApp\`, which previously opened two windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b69e4a3
+
+### only show toggle setting if allowed for use
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea9a1149
+
+### Adjust Desktop privacy guide for hash-prefix real-time lookups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3f97dd7
+
+### Implement red interstitial facelift color and icon changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fcb41f
+
+### Only handle enter keystrokes at the PopupCellView level.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/412c6ea
+
+### Reland "HaTS: Add HaTS Api Key"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8475f683
+
+### webauthn: update "Manage passkeys" label on macOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4241620
+
+### Remove UserManager::GetGuestAccountId,IsGuestAccountId.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30869c01f
+
+### [Profile Reordering] Sorted profiles check to use the feature param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bec8a26
+
+### Move accept handling from PopupRow to PopupCell.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8679f3d
+
+### Implement the non-deprecated builder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/703aa9d
+
+### Add additional flags options for ring opacity
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/67893fe
+
+`);
+              </script>
+            </body>
+        </html>
