@@ -1,0 +1,376 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-08-31
+### Differentiate between CanFullsize and CanMaximize
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ea982d
+
+### [Files app] Ducks: action typing clean up
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aae77dc
+
+### android: DWC after LoadFromApkOrFile fails
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc07c50
+
+### [uia] Fix for \`Compare\` and \`IsEmbeddedObjectInParent\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96c9807
+
+### Fix leak in SelectFileDialogLinuxPortal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ee86ce
+
+### [Files app] Ducks: reducer migration: root reducer & actions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/21bfeb9
+
+### Files app: Improve logging
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9c4d3d
+
+### wayland: standardize event listeners in connection/surface/buffer/output code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61e17165
+
+### Customize Chrome: Update segmented button colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82c84d2
+
+### Customize Chrome: Add focus state for hue slider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3eef06c0
+
+### Fix AcrossTasksDangling in select_file_dialog.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41c119a5
+
+### Create cr-chip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/879a90b
+
+### Remove VariableGoogleSansFont feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e2a3ac2
+
+### [waffle]Build info dialog UI
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/927444d0
+
+### mac fullscreen: reparent web dialogs on entering and exiting fullscreen
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dba406
+
+### Multiplanar: Implement GetSupportFormatsForTexturing for Ozone X11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6fc8b57
+
+### graphite: Set UI texture layer flipped flag correctly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e8ca029
+
+### [file manager] Remove availableOffline from testCSEFile
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0256636
+
+### input_method_util: Add handwriting language to input method ID map
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e40b11
+
+### [Shortcut] Create 'open' option in the shelf context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0c22d95
+
+### [UI] Remove unused \`kColorPageActionIconPressed\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d503afc
+
+### Refactor enum ConnectionStatusType -> enum class ConnectionStatus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24f7912
+
+### Reland "Fix accessible tab title for tabbed web apps"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f9310c1
+
+### CrOS Settings: Add LanguagesSection to SystemPreferencesSection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af7a002
+
+### Move deep-scanning command handling to ProcessDeepScanClick
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae46265
+
+### Reland "Add --host-resolver-rules to kBadFlags"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb1e4ba
+
+### [AF] UPI cleanup CL 2/3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d235c47
+
+### pip2: Add ability to resize to fit child dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5104e4e5
+
+### [Discounts] Show discount chip in Quest 1.0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fc3fea5
+
+### [APS] Add hover highlight to location bar(tablet only)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bbbf100
+
+### Adds temporary debug logging to investigate policies on Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab7b634
+
+### CrOS Settings: String update for System Preferences Network File Share
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5d3609
+
+### [Discounts] Update the shopping service offer notification if url has discount tag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d30e13d
+
+### [ntp-modules] Add V2 GM2 hover color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f829f3a
+
+### Reduce number of JNI calls when querying TabModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1e96aa
+
+### Factor out logic creating vertical suggestions group. Clean up code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b3d250
+
+### Fix dangling raw_ptr in ShippingAddressValidationDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39584c1
+
+### [read-anything] Move logging text style to the page handler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd337ea1
+
+### [AF] UPI cleanup CL 1/3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62a1308
+
+### os settings: move cpp files to new location (5/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9bcc250
+
+### Update BorderlessIsolatedWebAppBrowserTest to use "window-management".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffe9282a
+
+### [Tab Switcher] Remove isTabGroupsContinuationAndroidEnabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26503b9
+
+### win: Stop AppHomePageHandlerTest creating shortcuts in startup dir
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e159f8d
+
+### [GM3][Panorama] Remove theme preview and add button when uploaded image
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e861993e
+
+### Revert "BulkPinning: Don't sync when connected to a metered network"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/292eabb
+
+### [Refresh] Update the inkdrop color for feature attention case in toolbar and location bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98da322
+
+### Clean up passwords provided to archive file analyzers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f060a8
+
+### [iOS] Search Passwords widget metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35f5ab12
+
+### [Refresh] Update border of IconLabelBubbleView on animation progressed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23e8579
+
+### Revert "Add cujs for adding new tab to an app."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31eb722
+
+### [a11y] Announce when version is copied to clipboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3678bb
+
+### Apply color and style to Editor Menu title bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49318041
+
+### os settings: move cpp files to new location (4/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23bbb59
+
+### Make sure PWAs have the correct colors in their BrowserThemePack.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd37185
+
+### [Copyright] Fix copyright headers in Chromium.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c6ee39
+
+### Revert "[autopip] Plumb allow / block UI to video overlay window."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce8ff089
+
+### [omnibox][webui] Rewrite presenter sizing logic without GetTargetBounds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d63530e
+
+### Print dialog: add support for borderless printing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fadae4b
+
+### Isolate Adaptive Suggestions logic to simplify List creation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6866b07
+
+### os settings: Remove unused flag allowTouchpadScrollSettings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8306fdd7
+
+### Add inkdrop effects to Editor Menu buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11668a0
+
+### [PriceInsights] Add configs in fieldtrial_testing_config.json
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54cb3cf0
+
+### os settings: move cpp files to new location (3/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/560f801
+
+### Revert "Refactor enum ConnectionStatusType -> enum class ConnectionStatus"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc34501
+
+### PDM::IsSyncEnabledFor()->IsSyncFeatureEnabledForAutofill()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff7f6bd
+
+### [PageInfo] Fix PageInfo width for long about sections.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/925af447
+
+### [SavedTabGroups] Fix Tab Discarding causing crashes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d1833d
+
+### [Lacros] Fix profile menu for guest sessions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a81691e0
+
+### [Payments] Model and View for virtual card enrollment bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/954df99
+
+### [autopip] Plumb allow / block UI to video overlay window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff9b843
+
+### [Payments] Coordinator and Mediator for virtual card enrollment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9d3ce0
+
+### Bind the Save Card Bottom Sheet UI. 3/X
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b363c019
+
+### OOBE: Clean up \`OobeNetworkScreenSkip\` feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edd1768
+
+### [Shortcut] Launch shortcut when item selected in shelf.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/189f6d0
+
+### [Autofill] Remove ContentAutofillRouter::last_queried_{source,target}_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/863c1ac
+
+### [Autofill] Move popup-hiding on frame deletion to AutofillPopupControllerImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/228bd753
+
+### [FedCM] Fix TalkBack announcements for the IDP sign-in dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3804711
+
+### [office] fix UMA logging on QuickOffice fallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8526d1b
+
+### Bring notification info string back
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a6543b
+
+### [office] dedupe Google Drive open errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc4bc68
+
+### [office] dedupe OneDrive open errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a818da07
+
+### [dPWA] Remove unused old_name parameter in OnWebAppManifestUpdated()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9351ced
+
+### preload: Fix BookmarkBar Mousedown trigger can trigger non HTTPS url.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd5f5d2
+
+### Add cujs for adding new tab to an app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b9bed7
+
+### Refactor enum ConnectionStatusType -> enum class ConnectionStatus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5897f9
+
+### [FedCM] Pass token error from ID token response to UI code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88a788b
+
+### Battery Saver settings final strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6767b18
+
+### [Office] Prevent QuickOffice from intercepting document navigations
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/05aa52f
+
+### scalable-iph: Add scalable-iph-debug flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6abef7e
+
+### os settings: Remove touchpad scroll acceleration feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/07b8e9c
+
+`);
+              </script>
+            </body>
+        </html>
