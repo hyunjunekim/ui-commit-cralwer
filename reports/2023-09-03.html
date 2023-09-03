@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-09-03
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd80aff
+
+### [PageZoom] Text Size Contrast Factor Web Preference
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/829f5d5
+
+### [responsive toolbar] Add ToolbarController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97b31c0
+
+`);
+              </script>
+            </body>
+        </html>
