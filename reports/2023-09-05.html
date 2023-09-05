@@ -1,0 +1,168 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-09-05
+### [Files app] Remove drive JS notifications for Docs Offline/mobile data
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/869b73b
+
+### Use dedicated polling thread for wayland event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26f9f64
+
+### lacros: Mark PresentationFeedback as failed if fail flag is present.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d4e7f1
+
+### [FilesBulkPinning] Add tast class name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5a4fc3
+
+### [FilesBulkPinning] Update cloud panel to include metered wording
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6229a19
+
+### [FilesBulkPinning] Remove translateable="false"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e285731
+
+### [FilesBulkPinning] Update sub-icon to show paused on metered networks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc65d26
+
+### wayland: avoid name collision in WaylandBufferHandle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3aea5d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63a39be
+
+### InteractiveTest: Identify more Matchers correctly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fbb349c
+
+### [//gpu] Eliminate ScopedRestoreTextureBinding
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9288210
+
+### [RDSW] Hook up user agent override for RDS window setting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8232ce5
+
+### [Office] Fix disabling multiple ODFS volumes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/930968cd8
+
+### [FilesBulkPinning] Centralise drive connection state in store
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1173c8fa
+
+### Simplify browser tests DriveUploadHandlerTest.*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8de5a43
+
+### Add feedback logs for App Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67b7976
+
+### Clear user prefs when glanceables are disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36b6a6c
+
+### [Mullet m2] Sub-popup, fix captured by child shadow mouse events.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/822db0d0
+
+### [Mullet m2] Sub-popups, sub-popup arrow style and positioning.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b368b0f
+
+### Extensions: WFH: Enforce one of two valid launch_type values
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27518ba66
+
+### Reland "Update build to pick right DrivingRestrictionsDelegateImpl"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c31c8c1
+
+### [Mullet m2] Open a sub-popup functionality.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae4fe11
+
+### Browsing Data Model: Report Service Worker Access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef60d723
+
+### [Mullet m2] Autofill sub-popups, new cell's highlighting state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca4d9f69
+
+### Removing obsolete strings from settings_strings.grdp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28c08064
+
+### [Mullet m2] Sub-popups, sub-controller/view creation methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4f5828
+
+### Add more functionality to set local password input element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/daaa4d2
+
+### Don't themify Password Manager favicon on bookmarks strip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5333b25
+
+### [PEPC] Add EmbeddedPromptViews enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b13e7d9
+
+### [SHv2] Update password issue count on password changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4206c7
+
+### [mullet m2] Provide a cancelation callback to address editor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0ae02e
+
+### [gbb-cct] Adding loading indicator which loads until PIH data is fetched from server
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3198fb
+
+### [SHv2] Make latest result readily available in services
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a92111
+
+### [Settings] Embed preloading page on performance page behind flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f1d505
+
+### Add pwl parameter in the Gaia URL to allow passwordless login
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ec955c
+
+### Simplify DriveIntegrationService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a50d67
+
+### CodeHealth: Remove circular includes in web_app_publisher_helper->//c/b/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a205cd6
+
+### ash: Create feature flag for Cellular Carrier Lock
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/61c34d6
+
+`);
+              </script>
+            </body>
+        </html>
