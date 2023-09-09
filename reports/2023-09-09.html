@@ -1,0 +1,288 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-09-09
+### gpu: Fix potential CurrentGL dangling pointer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02192f2
+
+### Adding a forced colors mixer to the color pipeline.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e5b0147
+
+### Remove DanglingUntriaged from AtomicViewAXTreeManagerTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39cd8ae
+
+### Unify the way callers invoke TypographyProvider functionality.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/697bf729
+
+### [a11y] Rename SingleAXTreeManager to TestSingleAXTreeManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f42b2bb
+
+### lacros/client: Allows float to be set to different locations
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c775c31e
+
+### [uia] ListItem element name computation fixed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51871f2
+
+### Ensure reg key observers are not created in tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/190189b
+
+### Remove unused variable in ui::AXNodePosition::CreatePosition()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e000f30
+
+### Create Fluent Overlay feature flag.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c06696
+
+### jni_zero: moving generate_jni gn template into third_party
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cb3f6d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32cd5db
+
+### Revert "Use the new STACK_ALLOCATED tool on ScopedNSAutoreleasePool"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/390ec7ca
+
+### Use the new STACK_ALLOCATED tool on ScopedNSAutoreleasePool
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af3de102
+
+### [A11y] Update mapping for pre element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17e2b3c
+
+### [gbb-cct] Changing background color of PIH dynamically from peek to expanded state
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f90c5b
+
+### [file manager] Include encrypted badge hover text in aria labels
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be496ac
+
+### ozone/wayland: Use ui_controls protocol with Weston
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b5e6f2
+
+### [Office] Provided icon style in new directory tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4c396b
+
+### [Office] Navigation out of ODFS when offline for new directory tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24e1c52
+
+### Prepare to replace TS importsNotUsedAsValues
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fda2b85
+
+### mac: Fix a bug with double tracking area.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a80ad5a
+
+### Re-enable disabled test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f247f87
+
+### Add resolution param to Wallpaper search
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/35a1ab8
+
+### [Survey] Introduce MessagesUiSurveyDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b393abf9
+
+### customization: Add mojo API to stop/start button observing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b250e39
+
+### [dPWA] Fix ghost apps created due to policy installs with error URL load
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf5b26c
+
+### chromeos: Port the rest of shelf.AutoHideSmoke to browser_tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c489b7
+
+### Connect wallpaper search pipeline
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/153f3b3a
+
+### [PriceInsights] Polish graph a11y and y-labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f88001
+
+### Remove remnants of in-band text track support.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d2ac06c
+
+### iwa: Refactor error handling in WebAppInternalsHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7244e00b
+
+### customization: Implement widget observing within provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d59153
+
+### Added ScopedProfileKeepAlive while we uninstall web app using
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9eb9922
+
+### CrOS Settings: Create StorageSection under SystemPreferencesSection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e09e98
+
+### customization: Fix flag state in front end to follow utility functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa8bc63
+
+### [APS] Center hover highlight on phones
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f50563
+
+### quick_answers: Add ReadWriteCardsManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b892cd
+
+### [SavedTabGroups] Prevent SavedTabGroups from exposing non http(s) URLs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4a8c74
+
+### [CSC] Persist contextual panel selection across side panel toggles on a tab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/daa5385
+
+### [SidePanelPinning] Create a feature flag for side panel pinning changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4cb3a3
+
+### Allow keyboard to be dismissed even if suggestions list doesn't scroll
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4300766
+
+### Setup PlusAddressClient to get a plus address by sending a request to the enterprise-specified plus address server.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8b3b1b2
+
+### chrome views: Remove linux-specific codes from Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a09538
+
+### chromeos: Port part of shelf.AutoHideSmoke to browser_tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fabcfe
+
+### [User Education] Add FeaturePromoCloseReason to passwords
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c6c9d9
+
+### [User Education] Add FeaturePromoCloseReason to battery_saver_button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b82040
+
+### [Payments] Log the metric for link click in virtual card enroll sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/467789b
+
+### [User Education] Add FeaturePromoCloseReason to side_search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f81547
+
+### Preloading: Move prefetch_prefs to chrome/browser/preloading/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0977bd0
+
+### Introduce \`TaskRequestPayload\` struct
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c326698
+
+### iwa: Wait for ongoing updates to complete before serving requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/139240a
+
+### [Mullet m2] Sub-popup keyboard control support.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10e1e82
+
+### [Mullet m2] Move LEFT/RIGHT handling from row view to popup view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7357545
+
+### [Mullet m2] AutoselectFirstSuggestion as a parameter for popup openings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/479197f
+
+### [Mullet m2] Autofill popup views, close by no selection in children.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a63fc0c
+
+### [Android][Mfill][CredMan] Render Passkey as chips in password fallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48c718e
+
+### Move affiliations related files to it's own GN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/756614da
+
+### Update \`RequestData\` so that
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff60e4564
+
+### Cross Device: Remove Android Messages integration [part 1].
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87341d1
+
+### Privacy Guide: Add preload card to clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e76d7f61
+
+### Add EnableRuntimeCountersTelemetry to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/06b4961
+
+### Add ChromeOS availability to download-warning-improvements
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d40a7b
+
+### Remove Download Bubble flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3629ca99
+
+### Allow legacy tech report use top level url
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/db2c3f5
+
+### Add a feature flag for Secure Payment Confirmation Extensions.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4cf8b3d
+
+### Add feature flag for new generated password confirmation bubble
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1667a5c4
+
+### Remove Fast Checkout from about_flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f92e48
+
+`);
+              </script>
+            </body>
+        </html>
