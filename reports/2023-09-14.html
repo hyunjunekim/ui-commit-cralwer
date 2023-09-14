@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-09-14
+### ozone/wayland: Initialize WaylandBufferManagerGpu with bug fix ids
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c50616b
+
+### Add cc/paint to ui/touch_selection deps.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41f3a7ce
+
+### Use color provider for touch selection magnifier border and shadows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0496df1
+
+### Inline touch selection magnifier background offset computation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/823cc6d
+
+### Add a BrowserUiTest for the intent chip.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f302862a
+
+### Accept gfx::SizeF when creating image with RRect background
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5cad0c
+
+### Fix and re-enable permission chip test.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aadfe7e
+
+### Customize Chrome: Add tooltip to close button in hue slider dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfb5f75
+
+### Remove unused NativeThemeBase::GetHighContrastControlColor method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7da4ba5
+
+### WebUI: Don't use bold font when a <cr-tabs> tab is focused.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65d0ed5
+
+### Fix IWYU issue in display_link_mac.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60d7e1b
+
+### [CR2023] visually align bubble close button with the content edge
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a44252
+
+### [TTS] Add flag for High Quality Google TTS Voices
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/db584018
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70918c2
+
+### [accessibility] Suppress fatal logging in AXTree when fuzzing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f616d3
+
+### [Files app] Ducks: Add slice typing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9870bb
+
+### ui: removes sadrul from owners
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60853dd
+
+### Cellular: Add Settings UI toggle for suppressing text messages
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c34be3a
+
+### Add no-op highlight toggle button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82bb274
+
+### [Shortcut] Make sure pinned shortcuts present on shelf.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfabd61
+
+### Gardending: Disable flaky WAI_32WcoNoShortcutWindowedWebApp_34Wco_112WcoShown_168_169 test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/880c143
+
+### CodeHealth: Remove dead code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c25eda9b
+
+### [ SavedTabGroup ] Fix drop indicator bug / Fix separator bug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce37714
+
+### Use aggregate init/designed initializers more: /chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/902311d5
+
+### Revert "[AutofillFeedback] Restrict feedback to dogfood clients only."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d28cc52
+
+### [Discounts] Change the expiration date format
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6529037
+
+### Highlight the current sentence.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32eb140
+
+### [Promise Icons] Use kCrOsStandardMask effect for all promise statuses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c80371b
+
+### Remove blanket implementation from interface and clean up its use.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10f7b8a
+
+### [Saved Desks] Fix broken unavailable apps toast.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5c3adc7
+
+### [Code Health] Reenable flaky GMC browser tests on Linux and Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3302a2d5
+
+### Trust safety sentiment service with downloads UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13235c6
+
+### [AutofillFeedback] Restrict feedback to dogfood clients only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4aec23b
+
+### [ SavedTabGroupGroup ] Fix crash with guest profiles SavedTabGroupBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93fb0e5
+
+### [X-Device Restore] Handle nullptr instance for serialized navigation observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69000ac
+
+### customization: Adds mojo API to notify Settings app of button presses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8ad549
+
+### [Omnibox] Add wall time based layout/measure/inflate histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd41555
+
+### Do not hang the renderer if attempting to open document pip window from about:blank URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57b48499
+
+### [DownloadBubble] Change IconInfo to IconUpdateInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0731e5
+
+### ARC tracing: fix DCHECK fail activating sep window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73ca334
+
+### arc-overview-tracing: categorize optional fields
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8236f16
+
+### [Mac Fullscreen Tests] Fix BrowserFSContentFSSwapDisplay in Mac immersive fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f377954f
+
+### [TabOrganization] Add TabOrganization class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2e8db4f
+
+### Add basic implementation of adding new tasks to the glanceables client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa9da6e
+
+### Deflake PlusAddressController DirectCallback test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/079eba7
+
+### Migrate TrustedCdn Java to GURL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4138a2
+
+### Add remaining search engine choice screen strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f2db73
+
+### Filter out sanctioned countries upon controller creation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdb6fff
+
+### [CSC] Open CSC in new tabs spawned from tab with CSC opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c75b19
+
+### Cross Device: Remove Android Messages integration [part 2].
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3afc639
+
+### Add tests for the webui toolbar callbacks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58de401
+
+### CrOS Settings: Update input subpage title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b92a47a
+
+### [SHv2] Add three dot menu button to the module headers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c4d5fa
+
+### WebUI: Migrate chrome://net-internals tests to WebUIMochaBrowserTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2bce35
+
+### [SidePanel] Remove old side panel toolbar container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/938a035
+
+### Add histogram that checks infrastructure implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a50c5c3d
+
+### Reland "Reland "HaTS: Add HaTS Api Key""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ed896bb
+
+### [DownloadBubble] Move DownloadDisplay to //c/b/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aadce97
+
+### Safety Check V2 Extensions Entry Point Update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2532f4f
+
+### win: Fix dir override for AppHomePageHandlerTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0894375d
+
+### Enable SWAs in kiosk mode behind the flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaaa622
+
+### Rename chrome/app/ branding strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d78ab26
+
+### kiosk: refactor IsKioskSession.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76d2477c
+
+### [Shortcut] Load shortcut icon in the shelf.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebc2a290
+
+### [Link Capturing] Allow link capturing while in a web app window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5d43f0
+
+### Stop storing Print Preview request data in PrintPreviewUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79fc6aa
+
+### [SavedTabGroup] Replace a map with a vector of webcontents.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0473eacf
+
+### Revert "Add scaffolding for performance side panel"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dfef91
+
+### Remove "welcome-screen" flag from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bcac896
+
+### [FreezeCast] Remove access-code-cast-freeze-ui flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/40ab7227
+
+### [gbb-cct] Reduce auto trigger duration for testing.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/386bd24
+
+### soul: Add CrOS feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b6766236
+
+### add flag for japanese os-settings page
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1ffcd60
+
+`);
+              </script>
+            </body>
+        </html>
