@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-09-21
+### Follow-up cleanup from transfer system print dialog settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9be642
+
+### Files app: ducks: update redux readme
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99ebb1a
+
+### Video: Stop promote overlay if video processor doesn't support P010 content
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/383e95d
+
+### Make RenderText respect forced alignment.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e33f548
+
+### [X11] Fix scale factor on initialization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/edb8059
+
+### Files app: Ducks: Improve selector debugging
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dd8f91
+
+### Prevent CVDisplayLink from constant stop/restart on Mac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d4a808a
+
+### Set the NSApp Application Policy to Regular
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6392ec1
+
+### views: add TODO for dangling raw_ptr in WebDialogView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb31821
+
+### [views] Enforce subclass of BDDV to always have metadata.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/570a608
+
+### ui: add setters for WebDialogDelegate properties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/254c967
+
+### Remove std::ranges usage.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28c480f
+
+### gtk4: fix building with >=gtk-4.1.0
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8248ff23
+
+### Revert "[view-transition] Stop BrowserCompositorMac from calling WasShown while"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa363388
+
+### jellyroll shadow: bubble border shadow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76586eda
+
+### Avoid dangling pointer in Separator unit test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfa1512
+
+### Explicitly initialize raw_ptrs in DialogModelHostField.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0a2c42
+
+### Add observer to ViewsComboboxModel to fix dangling pointer.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/297093a
+
+### [Android][CredMan] Implement BottomSheetContent for No-Passkeys sheet
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95ab58a
+
+### Remove expired GPU.IntelVpSuperResolution.* histograms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aed6afc
+
+### CrOS Settings: Incorporate Suggestions subpage into Inputs subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64a5038
+
+### gd: Add Send Feedback Button Support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc0c2a43
+
+### immersive mode mac: fix DCHECK failure in tabstrip stroke painting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d73831f
+
+### Add events for shelf item activation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bc189d1
+
+### Prevent IPH showing on website where Read Anything doesn't work.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b15ac9c54
+
+### [Discounts] Rate control OfferNotificationBubbleView for navigation from history cluster
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee483c7
+
+### Fix PrivacyHubV1InteractiveUiTest.SettingsPage on official builders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c497aea
+
+### [Promise Icons] Pin promise app item in shelf if sync position exists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/824e42e
+
+### [Gardener] Turn off some flaky IntentPickerIconBrowserTests on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3025fb7
+
+### Disable PrivacyHubV1InteractiveUiTest.SettingsPage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18c6e0c
+
+### [csc][Page content setting] Wire in page content preference
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0f3f4fb
+
+### [Office upload] Add kCancelledAtFallback to enum OfficeTaskResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd583016
+
+### Tab Organization: Start request on button press
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a490e56b
+
+### Handle escape key press on editor menu promo card view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/021bd46
+
+### Extensions: WFH: Explicitly test stable channel on Ash using allowlist
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca0fcf6
+
+### Prerender: Disallow prerendering for effective URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d77864c
+
+### iwa:Manage Isolated Web Apps subpage and toggle for chrome://os-settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc3e40f
+
+### Add CPSS settings in the settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca7b83e6
+
+### [Gardener] Turning off flaky MultiProfileTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffd1087
+
+### Add requireDeviceLockReauthentication arg to DeviceLockActivity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ca8409
+
+### Update plus_addresses desktop modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14242c9
+
+### [ForceSignin] Handle reauth in Profile Picker with a different account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df8a816
+
+### chromeos: Port Tast privacyhub.SettingsPage to interactive_ui_tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13733ea
+
+### [DownloadBubble] Fix empty security subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb07f85
+
+### Add delegate for clipboard history feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dd2b8f
+
+### os settings: move cpp files to new location (15/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb49e02
+
+### Remove the use of a localizeable message that just consists of a placeholder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90213ff
+
+### [AppLaunchAutomation] Preserve Z Ordering on Admin Templates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d16942
+
+### views: remove redundant NonClientFrameView overrides
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77c20ae
+
+### Invalidate layout in DownloadBubbleSecurityView after SizeToFit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/024634d
+
+### [SHv2] Add user education module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b851cf6
+
+### [MV Tiles] Adds ranking debugging info to chrome://ntp-tiles-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc64ef9
+
+### [User Education] Fix bug in FeaturePromoController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/281d7e7a
+
+### [ForceSignin] Move the reauth flow to the profile picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbcc8e0
+
+### os settings: move cpp files to new location (14/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cb33780
+
+### Revert "Reland "[SHv2] Small fixes for password check module""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a2dc042
+
+### [SidePanel] Replace Combobox with Label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8de9665
+
+### [Discounts] Update UTM tags for Discounts in Quest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf8c65f
+
+### [browser] Remove unnecessary std::move
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9451fb7
+
+### Update plus_addresses android modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a28d551
+
+### [Chrome Gardening] Disable failing test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e02352df
+
+### Reland "[SHv2] Small fixes for password check module"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/376bb70
+
+### [waffle]Move the privacy sandbox dialog to the next run
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc789b5
+
+### SiteSettings: Add early return for empty deletions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddf51e5
+
+### [gardening] Disable AppInfoDialogBrowserTest test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/279c4bce
+
+### Use ScopedObservation in DriveUploadHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0706cf
+
+### Update MakoPageHandler with privacy url and cached caret bounds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2021234
+
+### [gardening] Disable TabSearchUIBrowserTest.SwitchToTabAction test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19b9201
+
+### [TranslateMessage] Add parameter to show Snackbar
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2ee03c1
+
+### [omnibox][perf] Cleanup.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e904cb7e
+
+### Clean up flag IgnoreCSPInWebPaymentAPI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d8a864b
+
+`);
+              </script>
+            </body>
+        </html>
