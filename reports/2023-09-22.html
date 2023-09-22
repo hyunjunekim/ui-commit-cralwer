@@ -1,0 +1,380 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-09-22
+### [Files] Convert password dialog to TS widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8cb7b92
+
+### [Files]: Merging search container and search controller.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc96f5b
+
+### WebUI: Update selected cr-chip border
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff43983
+
+### Files app: Convert volume_info_impl to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f52513d
+
+### Set the throbber color in the Material UI color mixer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9222131
+
+### graphite: Fix GL interop with RGBA IOSurfaces
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b706cb2
+
+### Mac immersive: rename Enable -> Initialize on app shim side
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c89146
+
+### win: disable MaximizedOccludedByFullscreenWindow test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa9412f
+
+### [metrics] Add time to show metrics to BubbleDialogDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f651285b
+
+### [pulsing ink drop] Fix pulsing highlight incorrect offset
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc6ca709
+
+### [lacros][color]: fix srgb_hdr mapped since version
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a8a098
+
+### AXBacklight: Implements the IsOcrEnabled and IsAccessibilityEnabled APIs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/025629f
+
+### [lacros][color]: update wayland_zcr_color_manager to version 6
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f67d12d
+
+### A follow up cl of
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c93e68f
+
+### IWYU: missing includes in fake_linux_ui.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/605a37a
+
+### [Metrics api] Add BubbleMetricsApi feature flag to ui/base.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e65d760
+
+### Switch to NSViewToolTipOwner to fix a deprecation warning
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc35d5385
+
+### Fix Context Menu Check When Right-Clicking in the WebView Element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/512a228
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fbfc07
+
+### ui: add base impls of some WebDialogDelegate methods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6cfdfc8
+
+### Use ScopedObservation in GoogleDrivePageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3f7c0bd
+
+### Simplify DriveMirrorSyncStatusObserver in test code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec8bc09
+
+### Don't deregister side panel entry from NTP destructor if still needed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e59579
+
+### [dPWA] Cleaning up intent helper & intent tab helper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f16c3c8
+
+### Show download bubble as inactive if there is a content context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08b6434
+
+### [SHv2] Add Chromenu notification string and command ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/555a96c8
+
+### Move ClipboardHistoryUrlTitleFetcher ownership to feature controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b789d03
+
+### [SavedTabGroup] Prevent saved tab group button from being dropped to browser of other profile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be3e1f5
+
+### [SHv2] Use method factory for creating SH results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17b98a4
+
+### Move ClipboardImageModelFactory ownership to feature controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e45f606
+
+### Set AutoPiP setting view bubble title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe1c291
+
+### [omnibox][actions] Fix inlined action chip focus ring getting cut off.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5caef80
+
+### mac: fix detached child window during tab dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56c24bd
+
+### [Tab Organization] Basic triggering structure.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62140a5
+
+### [CodeHealth] Reduce duplicated calls when setting the icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5e1fdb1
+
+### [Survey] Move survey test support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/580cd6ed
+
+### Remove unnecessary devtools_window.h includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7624fa6
+
+### Move editor menu icons into chromeos::editor_menu namespace.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/275ecc9
+
+### Fix SidePanel TimeFromEntryTriggerToShown metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed888b9
+
+### [Extensions c2s] Set color and typography of site permissions button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c001406
+
+### Reland "Add scaffolding for performance side panel"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9aba046
+
+### [Extensions c2s] Remove vertical spacing on site permissions button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/231fa5a
+
+### Clean up spurious headers in devtools_ui_bindings.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/448386d
+
+### Move plus_address string format into C++ only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/394a33e
+
+### Disable Cross-Device features when feature flag is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/959645e
+
+### Disable flaky AppInfoDialogBrowserTest.InvokeUi_default on ChromeOS MSan.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6fe2a36
+
+### Remove unused parameters in hover button secondary view constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29d4e00
+
+### Enable debug page for ScalableIph off case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0eab172
+
+### Add new profile prefs for side panel pinning update.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b665b2
+
+### Mac: null check when checking for content fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/437be2d
+
+### [WebUI] Add tests for HandleSetCategoryPermissionForPattern
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54c34ac
+
+### Add experimental flag to paste to web contents from clipboard history.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dd30b469
+
+### Disable the RedInterstitialFacelift feature in failing tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aa4091
+
+### [gbb-cct] Add UMA histogram logging for Page Insights Hub.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c82b78a
+
+### Extensions: constexpr: Prepend inline to constexpr to avoid duplication
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/409d380
+
+### Disable flaky TabHoverCardFadeFooterInteractiveUiTest.HoverCardStopShowingDiscardStatusOnReload test on ChromeOS MSan.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca6c428
+
+### Disable AppServiceShortcutShelfItemControllerBrowserTest.ContextMenuRemove
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4590b4f
+
+### [User Education] Add CanShowFeaturePromo() for complex IPH triggers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57ec3de
+
+### Disabling FragmentActivityReplacer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dcae6b
+
+### [TabOrganization] Add an Observer interface for TabOrganizationService.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e147f98
+
+### Revert "[Mac Fullscreen Tests] Fix unexpected keyboard unlock"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5c7ee5
+
+### [ForceSignin] Add back button to the reauth step in Profile Picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89a3fb6
+
+### [User Education] Fix possible race condition in app tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79a8231
+
+### [User Education] Convenience method to mark an IPH feature as used.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64b3f1c
+
+### Reland "[SHv2] Small fixes for password check module"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2335fc8a
+
+### [TabOrganization] Create a basic TabOrganizationService object.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb4c0653
+
+### [Mac Fullscreen Tests] Fix permission prompt detection of fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9001b444
+
+### [UrlBar] Remove error message with url
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4c11fe
+
+### [bookmarks] Refactor CanBeEditedByUser() and CanSyncNode() to one
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4d8065
+
+### [Extensions c2s] Remove stale TODO for enterprise icon in menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df44cc9
+
+### quick_answers: Use singleton pattern
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2795139
+
+### Moving password export files to a separate BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff2c0538
+
+### Add IPH Config for TrackingProtectionOnboarding Notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d16635
+
+### Replace DeviceAuthRequester with DeviceAuthSource
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b217b42
+
+### [muller m2] Use single callback in View address editor dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02640f27
+
+### [Mullet m2] Add sub-popup control instructions to a11y message.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1072b5
+
+### SiteSettingsHandler delete partitioned data along with unpartitioned data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ad067a
+
+### [OOBE] Move GetAccountId into OnlineLoginHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e64a0b6
+
+### Sync integration tests: Clean up "sign in" vs "enable sync"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49a37a2
+
+### [mullet m2] Run callbacks when editor dialog is closed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a164cc
+
+### [office] fix result/UMA leaks in OpenFileFromODFS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e2f9fb
+
+### Settings: Improve partitioned deletion from site settings handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48dd5da
+
+### Hide SupervisedUserService implementation detail from the testing framework.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c244ab4
+
+### [Privacy Sandbox] Enable attestations feature by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5170ac5
+
+### [waffle]Remove the dialog's close button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/074bd0a9
+
+### Add logging to OobeTestAPIHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a52cab
+
+### Extract view util functions to separate file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52d26564
+
+### Reland "Make forbidden and escaped host characters compliant with URL Standard"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/746863d
+
+### cros-apps: add CrosAppsTabHelper to control blink runtime features
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52c7351
+
+### [gpu] Remove EnableDrDcVulkan feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/66fbb04
+
+### [Cross Device Internals] Adds LinkCrossDeviceInternals feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f2c15fa
+
+`);
+              </script>
+            </body>
+        </html>
