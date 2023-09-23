@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-09-23
+### views: Add Widget::SetCheckParentForFullscreen().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d9b186
+
+### [views] Fix check to enforce BDDV to have metadata.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e632f1f
+
+### Implement rounded corner and native theme fluent changes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e0aa6f
+
+### flag: Remove new-shortcut-mapping flag usage
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe5eeb2
+
+### Remove OSExchangeData::GetFilename() and associated plumbing.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0921186
+
+### display: Fix a bug when determine native mode for external display
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdcc1b7
+
+### [GL] Free the X11 pixmap in the NativePixmapEGLX11Binding destructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42d57d0
+
+### [headless] Add support for independent PRIMARY and clipboard buffers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2220280
+
+### Return the callback subscription from AppendActionItemInitializer.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/359e0cd
+
+### Work around AVSpeechSynthesisVoice bug
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b2fb20
+
+### highlight border cleanup: context menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5a39532
+
+### Remove the string16 version of base::Hash()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d61f182
+
+### Grant //ui/base/dragdrop/OWNERS ownership of X implementation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12974936
+
+### wayland: add VLOGs to data drag controller functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36e14af
+
+### Add option to slide out views using trackpad gesture
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89e614b
+
+### Remove usage of wstring StringPrintf(): ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec5bf68
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf7b92b
+
+### Validate the URL before Creating a Mojo URL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88d5125
+
+### [Animation Perf] Move animation performance tracking to a separate class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d18e7dd
+
+### Files app: Convert metrics*.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/33aaac7c
+
+### Convert lru_cache.js and unittest to ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72be6ef
+
+### [Extensions c2s] Decrease extensions menu width
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6756b5c
+
+### Use base::ranges::transform() instead std::transform in //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/167ba4d
+
+### Move DeviceLockBridge APIs to //components/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e675c3
+
+### [Survey] Add SurveyUiDelegateBridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab51e47e
+
+### [TabOrganization] Create IsValidForOrganizing function for TabData.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14ba681
+
+### [CR2023] Fix extension menu present test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab97ffe
+
+### [TabOrganization] make TabData a TabStripModelObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66de77c
+
+### Use UnlocalizedTimeFormatWithPattern() more: chrome/browser/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a95f2bd
+
+### [Uno-D] Dark backdrop for signin interception bubbles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bef3eeb
+
+### [DTC] Add Debug "Delete Key" Button on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/878ac4c
+
+### Update strings from clear to remove/delete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fcc25fb
+
+### Simplify WebAppToolbarButtonContainer color handling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f408712
+
+### libstdc++: fix incomplete type in TabOrganizationButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/307ae64
+
+### [Gardener] Partial disable ProfileHelperTest.OpenNewWindowForProfile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78409ce1
+
+### Revert "[🧼] Clean up UrlBarData."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a25a31d
+
+### Move deletion of copy and assignment operators to BrowserUserData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dbeaa2
+
+### Consume Windows FSCTL mitigation in sandboxed processes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b859c2c
+
+### Update mini player layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/419b8da7
+
+### Splitting battery settings tests from performance settings tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a13518
+
+### Remove estade@ from //c/b/ui/autofill/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c40f7462
+
+### [Read Anything] Open RA panel automatically with flag enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4b998f
+
+### [ProfileSelections] Fix crashes that expect to retrieve keyedservices with a null profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bb678a
+
+### gd/gc: Get app name for GD menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3808ab
+
+### [SidePanelPinning] Add actionIds for all the sidepanels.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95757f4
+
+### [waffle]Create icons python script
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0446271a
+
+### [Mac Fullscreen Tests] Reland of fix unexpected keyboard unlock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5754c81
+
+### [SHv2] Add a control for unused site permissions auto-revocation [2/2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea44cac
+
+### [ATP][SiteSettings] Add fsenra as a owner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c57b93b
+
+### breadcrumbs: graduate from field trial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f8982f
+
+### Moving well known change password files to a separate folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1287907
+
+### [PEPC]Add previously granted view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9256804
+
+### Add AddUsername bubble controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/906af41
+
+### Sync E2E tests: Allow signing in without enabling Sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf0b3162
+
+### [Shortcut] Close the shortcut removal dialog if shortcut been removed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/231c6eb
+
+### Revert "HaTS: Add mojo to hats webui"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9681be
+
+### Moving files to dedicated directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3dd89a7
+
+### HaTS: Add mojo to hats webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a0d66c
+
+### [Passwords] Add no family members state to sharing dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a7ab6bf
+
+### [OOBE][Gaia] Refactor OnlineLoginHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2026d088
+
+### [webui tab strip] Remove webui-tab-strip-tab-drag-integration flag expired.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7d81a1c
+
+### Add URL params to MakoPageHandler methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9f9d17d
+
+### Pass preset categories from EditorPanelManager to EditorMenuController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a0dfbe8
+
+### feedback: Pass feedback context via dialog args
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f1d4aeb
+
+### feedback: Launch from login and oobe screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66744af
+
+### bruschetta: Prepare to enable the bruschetta flag by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e01f36
+
+### [App Details] Simplifying the rendering of storage for apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c7f804
+
+### quick_answers: Fix session_observation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70030a8
+
+### [Rounded Windows] Make the feature flag available in lacros
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f7ecb037
+
+### Printing: Add feature flag for local printer observing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a57d6a1a
+
+`);
+              </script>
+            </body>
+        </html>
