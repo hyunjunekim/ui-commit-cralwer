@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-03
+### Revert "[Files]: Merging search container and search controller."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d1544e4
+
+### Enable wexit_time_destructors config in ui/actions production targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d3c6e4
+
+### Exclude IS_CHROMEOS_LACROS from CompleteSwaptWithNewSize
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8e9850
+
+### WebUI: Remove usages of the "public" TypeScript modifier.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/272dde6
+
+### Touch event should no update the cursor position.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6476a82
+
+### Replace some ptr/len APIs in //url with std::string_view
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc4d2b2
+
+### Log serial tracker info
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1490de
+
+### snap-group: Divider stacking order with transient windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a69d054
+
+### Check the dst_display only on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a1112f
+
+### Make ActionManagerTest more robust
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90e86207
+
+### Remove absolute path for md_select arrow.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb1e0527
+
+### common-webui: Common webui changes for carrier lock
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/084fdd62
+
+### Remove ui/base/glib/glib_signal.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81d6b73
+
+### [CR2023] Update distance from bubble close button to bubble edge to 20px
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90dba61
+
+### Add some aliases for ui::ActionManager maps
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5168c9a
+
+### Reland "[Test Automation] Improvements to WebContents action handling"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61864b9
+
+### Don't disable ANGLE features with Chromium's workarounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5177dc
+
+### Missing hue for (ok)lch does not make chroma zero
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38bacdb1
+
+### Revert "Convert display_frequency int to float"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8653f60
+
+### [dPWA] Show origin in web app title bar when navigating across origins
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c83a3f
+
+### Rename *AutofillCreditCardEnabled to *AutofillPaymentMethodsEnabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02d58fe
+
+### [Emoji Picker] Update bubble border radius to 20px
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c645121
+
+### Move web_app::AppId and web_app::ManifestId to a more public place
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12de8e74
+
+### [Shortcut] Test the shelf icon loading bug.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b620141
+
+### Adjust layout and styling of editor menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d39210
+
+### Update editor menu chips to mostly match specs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1364d8cd
+
+### [Promise Icons] Fix crash when ShelfItem poorly created for promise app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18dd968
+
+### inputs: Add deep link + add the logic to open settings from the gear
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/654bc11
+
+### [TranslateMessage] Add auto-translate Snackbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a65620
+
+### Bookmarks++: Fix bookmarks menu color bug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40892aa
+
+### Use new API for wallpaper search
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9530edef
+
+### Fix "bookmark all tabs" enabled state in context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e03f374
+
+### [webauthn] Fix QR code sheet not focusing button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4181bda
+
+### Horizontally places the tab modal dialog at the center of the content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5532c89
+
+### [webauthn] Fix extra button appearing incorrectly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5695068
+
+### [DownloadBubble] Limit progress ring update frequency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c15ea1
+
+### CrOS Settings: Improve readability for subsection method calls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97c00fd
+
+### Switch android plus_address modal title to C++ side
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/578a8f8
+
+### [Site Info - Tracking Protection] Modify 3pc title and description if toggle is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7de9edd
+
+### [Tracking Protection] Fix links on settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8843f8f
+
+### Compose: Add some setup code for chrome://compose
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f04169c
+
+### [webauthn] Rebuild extra button on sheet change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20d041f
+
+### Add webUI toolbar for reading mode without read aloud.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5454f00
+
+### [omnibox][actions] Fix icon foreground colors to better align with spec.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1e9de77
+
+### [oobe][NetworkScreen] Update strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/823208f
+
+### [Site Info - Tracking Protection] Update the title and description if
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0259bc5
+
+### [User Education] Replace MaybeShowPromo params with struct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab6ccfe1
+
+### quick_answers: Add to Shell observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b92b28e
+
+### manta: move feature to //components/manta
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/01725a3d
+
+### [E2E] Wrap OS calls to enable instrumentation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03516bfa
+
+### [signin] Rename preferences to include Sync in the name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/662cb5e2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72e2bb2e
+
+### Launch Device Lock UI before saving credit cards in automotive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1eeb93
+
+### Quick Delete: Update CBD Advanced strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33a7ed9
+
+### Cleanup: Remove password_bubble_experiment::HasChosenToSyncPasswords
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dacfa6
+
+### [Autofill] Eliminate StringToFormControlType("foo")
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b049f6a
+
+### support-tool: Update data collector strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e3a92e0
+
+### [Autofill] Move popup hiding on navigation into controllers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8406d1
+
+### Add view for the AddUsername bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/797da17
+
+### [mullet m2] Open delete dialog from the Autofill popup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c9d1cb
+
+### [mullet m2] Open DeleteAddressProfileDialogView from the controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af9da906
+
+### [3PCD] block ads apis with experiment feature param
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/23d4bed
+
+### Add extensions to secure payment confirmation responses.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/64dc287e
+
+### Initial feature/param/flags for Hub.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1cfc091
+
+### [omnibox] Add company entity feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/905e8bdd
+
+### FSA: Add locking scheme to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8d1ea92
+
+### media: Add CdmStorageDatabaseMigration Flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9a8f56c7
+
+### Revert "Added feature flag to reset onboarding prefs on startup"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/615a99a
+
+### [3PCD] Add chrome://flags entry for 3PCD experiment facilitated testing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b5b5abb0
+
+### [Android] Cleanup SafeModeForCachedFlags flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3cd27b4
+
+`);
+              </script>
+            </body>
+        </html>
