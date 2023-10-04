@@ -1,0 +1,348 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-04
+### [metrics] Add filter to log only a list of subclasses of BubbleDialogDelegateView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9cbe800
+
+### iwa: Create InstallIsolatedWebAppVirtualTask
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fff7fd3
+
+### [Win] Ensure the file picker gets closed when its owner window is closed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/608075fc
+
+### Tab Organization: Implement loading state
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd81a57
+
+### [headless] Fixed min/max/restore problems on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acf4a1c
+
+### Reland "Convert display_frequency int to float"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aedada1
+
+### [GTK] Listen for changes in gtk-enable-animations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db1a2ea
+
+### [view metrics] GetClassName will not work on the constructor of BDDV.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1cce3b3b
+
+### Reland "[CR2023] Update distance from bubble close button to bubble edge to 20px"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee56fd96
+
+### Update action id maps to use string, rather than string_view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e3e034d
+
+### Avoid dangling pointers in views::LinkFragment unit test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d10f7df
+
+### Avoid dangling pointer in StyledLabel.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f57c13a
+
+### wayland: fix crash when entered window is reset during data fetching
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/556902c
+
+### HDR/macOS: Disable HDR for Intel laptop screens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78d571c
+
+### Mark TextField::cursor_view_ as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c150f1b4
+
+### Use IsViewClass<T> rather than class name comparisons.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d836b83f
+
+### [Reland] WebUI: Update several toolchain dependencies to latest versions.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23ac8cbb
+
+### Avoid dangling pointer in views::Link unit test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0193b8b
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6ea5bc
+
+### viz: pass swap_trace_id to trace a frame submission
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4af8f68
+
+### Revert "[CR2023] Update distance from bubble close button to bubble edge to 20px"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5169926
+
+### [OOBE] MultiDevice Buttons not translated correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4978752
+
+### sheriff: Disable IntentPickerIconBrowserTest.PushStateURLChangeTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/571ba56d
+
+### [Files app] Add FilesGoogleDriveSettingsPage check in ClearOfflineFiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3a5edb
+
+### [Office upload] Share OfficeDriveOpenErrors and Errors metric name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c8146b
+
+### feedback: Record feedback dialog opened from oobe or login screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cebdc4f
+
+### Modernize chrome://system UI implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bace900
+
+### [ SavedTabGroups ] Keep tabs from closing when a synced group is removed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbfb179
+
+### [App Details] Tooltip to read out Web App URL when selected in ChromeVox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1da0c1c
+
+### Reland "Changed the mute toggle behavior for volume down key/BT devices"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b08d0b3
+
+### Move web_app::AppId and web_app::ManifestId to a more public place
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cbc21c
+
+### Site Settings: Display the content setting for MIDI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75da1d2
+
+### [Office upload] Pass CloudOpenMetrics through the entire Clippy flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7de3e6c
+
+### [Discounts] Bug bash - Offer notification shouldn't show if no UTM
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f437a97
+
+### Drag and drop: prevent cross-origin same-tab drags that span navigations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d149f95
+
+### Swap animation for promise app into actual app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/512c58a8
+
+### Enable 3 tests in TabDragBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61a3573
+
+### iwa: Define WebAppUiManager::LaunchIsolatedWebAppInstaller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2c5b2b
+
+### [Extensions Cleanup] Remove extension dialog unused files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4351c2
+
+### [Read Anything] Add destructor for ColorInfo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7828602
+
+### Move web_app::AppId and web_app::ManifestId to a more public place
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21cec65
+
+### Fix nullptr exception when saving card on automotive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91224ce
+
+### [TabOrganization] Create a tab from a group on Accept.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4db0c6d
+
+### Avoid polluting the global namespace in web_app_install_info.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f88c8b8
+
+### [dPWA] Move intent_helper/ reusable classes into c/b/apps/link_capturing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae23c42
+
+### remove posts from SavedTabGroupUpdates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de04070
+
+### Propagate task edits to the server
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ecd765e
+
+### [AF] Disable flaky LocalCardMigrationBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79ba9fe
+
+### CrOS Settings: Build additional accounts settings card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d325b10
+
+### [CVC Storage][Android] Adds CVC and Expiration date text fields for Local card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a776a18
+
+### [TabOrganization] Implement PopulateOrganizations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29f3486
+
+### Query compose for Autofill suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6a690d
+
+### [omnibox][actions] Move load time data feature state bool to common use
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1db3c1
+
+### Implement initial download info class for DownloadBubbleRowView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77a85df
+
+### SharedPreferencesManager -> ChromeSharedPreferences (part 1)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbcebd8
+
+### Simplify //url's Android targets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e352095
+
+### [PriceInsights] Update folder name when bookmark is moved
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a39a9a
+
+### Remove spurious browser_dialogs.h includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46d40dc5
+
+### Compose: Add color pipeline to Compose UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15856b93e
+
+### Add pen spark icon to components/vector_icons build file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5775010
+
+### Reland "Enabling page classification from renderer agent."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/472355cd0
+
+### [Hub] Create HubLayout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6cbaf3
+
+### Clean up SendTabToSelfSigninPromo flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/84ed1f6
+
+### [webauthn] Clean up sheet view code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d812f8b
+
+### [ExclusiveAccessBubble] notify_overriden_: check if animation is showing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6611247
+
+### Set description text on autofill save card local prompt.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e310f5b
+
+### [Site info] Update the settings CTA text.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe9bf55
+
+### [Page Info] Update block 3pc toggle subtitle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2ad6484
+
+### [UserBypass] Reduce reload animation threshold from 3=>2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/210ab20
+
+### Move partition_alloc into a "partition_alloc" dir.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bcc023
+
+### Simplify PageInfo test helper and give better error messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae4c8bc
+
+### Sync the SessionTab::last_active_time field on Desktop and iOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efdf977
+
+### Revert "[dPWA] Show origin in web app title bar when navigating across origins"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10252c4
+
+### App Management: Filter not-installed apps from overlapping apps list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14ac793
+
+### Change the icon of the ash browser for debug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c625ab
+
+### [Cormorant] enable by default at ToT on specific locales
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a61314e
+
+### [Remote Playback] Add feature flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/90e57b0
+
+### [AF] Clean up AutofillUpstreamAuthenticatePreflightCall
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/426f5bf4
+
+### [Omnibox][ML] Enable annotators for omnibox sync scoring flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/600d745f
+
+### [AF] Clean up AutofillUpstreamUseAlternateSecureDataType
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e2d78486
+
+### view-transition: Remove ViewTransition flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/53a44c4
+
+### [E2E] Add a Feature/Flag to check E2E in content/
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/888a3ef
+
+### [Signin][Uno-D] Add Uno desktop feature flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b98ec34c
+
+`);
+              </script>
+            </body>
+        </html>
