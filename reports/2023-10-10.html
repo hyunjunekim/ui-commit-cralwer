@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-10
+### Add PinManager::Progress:should_pin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94b13bf
+
+### [FilesRefresh] Remove legacy styles for all xf UI widgets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7cfeb52
+
+### [FilesRefresh] Use gm3 CSS files to replace old ones
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e341c1d
+
+### [Files F2] Add placeholder entry back after volume unmounts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cac3bb4
+
+### Somewhat modernize clipboard custom data helpers.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/928f08d
+
+### Fix menu controller danlging ptr
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40b65da
+
+### [CR2023] Fixed MdTextButton tonal disabled background color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d488c65
+
+### Harden DCHECK to a CHECK in AXFragmentRootPlatformNodeWin::Create
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24ca75f
+
+### Revert "Add SurfaceFrameType::OVERLAP"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebb6afd3
+
+### WebUI: Remove WebUiSystemFont feature flag.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bf448166
+
+### display: Fix display UI inconsisdency
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/812f5d0
+
+### [uia] Dont expose GridItemPattern if no table-like ancestor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3174d9d
+
+### [headless][win] Moved headless specific code to a subclass
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a898627
+
+### Adds an accessibility action that performs tree stitching: 2 of 5
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09b5199
+
+### Update metadata MACROs for specifying the ancestor in the header.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d27632
+
+### [CR2023] Update cocoa new badge style
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce4bd94
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30e6cd9
+
+### Adds an accessibility action that performs tree stitching: 1 of 5
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7c0873
+
+### gfx::HDRMetadata: Add SDR white level
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f89a5aa
+
+### [FilesTS] Convert file_operation_handler to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35c085a
+
+### [Office upload] Explicitly extend OfficeFilesSourceVolume
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2de5345
+
+### Fix opt guide mock for unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/967fd81
+
+### [ImprovedDownloadWarnings] Add accessibility labels for dangerous icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b03ab2
+
+### Add a ToString() method to SidePanelEntryKey.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54d8328
+
+### [Media Router] Remove launched features.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/038413b
+
+### Remove expired histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/478e511
+
+### Move web_app dialog functions into their own header.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f62288
+
+### Ensure Compose's Material colors are applied
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e18b5ea
+
+### Fix PDF Printing Issue with Missing File Extension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80e31b5
+
+### [ SidePanelPinning ] Disable flaky interactive ui test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f7d298
+
+### [TabOrganization] Hook triggering into service.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c68644b
+
+### [Remote Playback] Implement prompt() and send connection state to sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6242896c
+
+### Fix NTB hit test on maximized windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1827d4a
+
+### [responsive toolbar] Add identifiers to support pop out
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e3a6fe
+
+### [ SidePanelPinning ] Add context menu entry point for Reading Mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/512c0fa
+
+### Connect to model executor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db9ef25
+
+### Reland "[CIC] Account height of content view for omnibox suggestion list"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/285e23e
+
+### Speculative fixes for crashes seen with hovercard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9386d31
+
+### Remove obsolete histogram Download.Shelf.VisibleTime
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4b1ac9
+
+### Create toolbar container for pinned actions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b39ab9
+
+### Rename FindBrowserWithWebContents to FindBrowserWithTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82d9bb0
+
+### Bookmarks++: Remove feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d3a63bf7
+
+### [omnibox][actions] Fix inconsistency with action button row left margin.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ba2ea0
+
+### [CSC] Do not log show or open UKM events on navigation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5afafa8
+
+### [CodeHealthRotation] Remove obsolete Extensions.InstallPrompt histograms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/933c8d8
+
+### [android] Rename AdaptiveToolbarPreferenceFragment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4a4e3f7
+
+### [AutofillFeedback] Restrict feedback to Dogfood clients only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7447ed7c
+
+### Refresh all Chrome prepopulated search engines.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3c35f5
+
+### Printing: Observe local printer updates from Print Preview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d4bf33c
+
+### [VCN Card on File] Add new browser element ID for standalone CVC case.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/041dd15
+
+### Simplify AddressEditorController and AddressEditorView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5eed3da
+
+### iwa: Allow IWA to register non-HTTP scheme Protocol Handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d4f507
+
+### [gbb-cct] Add last UMA histogram logging for Page Insights Hub now that the data loading for PIH works.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c02e9d6
+
+### Disable hover card discard status and memory refresh tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ef25c44
+
+### Add some footer text to Compose dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/629b1bd
+
+### Replacing GetShownOriginAndLinkUrl with GetShownOrigin and GetShownUrl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0da6ae5ac
+
+### Remove PrimaryViewInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00b24b6
+
+### [bookmarks] Do an accessibility announcement view options are selected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e573d526
+
+### [SHv2] Add notification permission review to three-dot menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cee407
+
+### [gbb-cct] Add XSurface logging.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa4fcf1
+
+### Remove getLastUsedRegularProfile from SyncPromoController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7019c5a
+
+### [Multi Apps] Combine sub app id and parent id
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4b826c
+
+### FSA: Add strings + formatting to site settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/667abae
+
+### [CVC Storage] Update description text for card save with CVC prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2bce52
+
+### [signin] Change ChromeSyncUrlArgs::continue_url type from std::string to GURL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a30a914
+
+### [Code Health] Update SU interactive dialog test with Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/571336a
+
+### [Office] More fine-grained UploadResult metrics for Drive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef463b1
+
+### [CVC Storage][Android] Update CVC save message icon color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a5222e42
+
+### Remove SessionSyncService::ProxyTabsStateChanged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a96f6f
+
+### Cross Device: Remove Android Messages integration [part 6].
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7f687c5
+
+### Add feature flag controlling presence of Query Tiles in ZPS on NTP.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f144778
+
+### Remove drive-fs-chrome-networking flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/abe334f
+
+`);
+              </script>
+            </body>
+        </html>
