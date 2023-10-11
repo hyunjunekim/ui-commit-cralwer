@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-11
+### Disable mouse movements, and native capture in tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/578d23ba
+
+### WebUI: Rename assert_ts.ts to assert.ts, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81bd922
+
+### WebUI: remove WebUIBrowserTest and js2gtest on non-Ash platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5742401d
+
+### Update menu location code for macOS 14
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8c1c426
+
+### [Files F2] Use the new directory tree flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abf45a1
+
+### [FilesBulkPinning] Rename PinManager to PinningManager
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19267de
+
+### Add crosapi for EyeDropper to provide lacros support
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10f8be24
+
+### Fix for prefers-color-scheme media query bug in High Contrast mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99dc6f74
+
+### Use screen coordinates in NotificationViewBaseTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4fd7514
+
+### [Color correction] Remove launched feature flag
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/710a52a
+
+### [ViewsAX] Add AXPlatformTreeManagerDelegate::GetTopLevelNativeWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61cbbfe
+
+### [ChromeVox] Remove flag for launched options page feature
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/33e372b
+
+### WebUI: Remove Roboto web fonts files from all non-Linux builds.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dd5ff7
+
+### [views metrics] Add unit tests to BubbleDialogDelegateView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ada743
+
+### Mark pointer to model in views::TableView as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/841cfa3
+
+### Revert "Update metadata MACROs for specifying the ancestor in the header."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0dc668
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce20093
+
+### Avoid dangling pointers in TextFieldTestApi.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc30764
+
+### Revert "[FilesRefresh] Use gm3 CSS files to replace old ones"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf06d4b9
+
+### Clean up Media Router metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cf2ee6
+
+### frame: Flip fullscreen state on TabletModeToggled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8af6e20
+
+### [ SidePanelPinning ] Re-Deflake OpenReadingModeSidePanel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5a0b73
+
+### IPH for starting local media casting session from GMC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f669e9
+
+### [dPWA] Adding command for enabling user link capturing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec5131b
+
+### [CloudOpenMetrics] Add LogSourceVolume()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e978ab3
+
+### [CloudOpenMetrics] Add LogGoogleDriveOpenError()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/051adb1
+
+### Make the Cast dialog sources button tonal again
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3170682
+
+### Create WebUI dialog for ChromeOS web app installation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3116c81
+
+### Tab Organization: Delay chip state change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/824bb85
+
+### [CloudOpenMetrics] Add LogOneDriveOpenError()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f04a028
+
+### [CloudOpenMetrics] Add LogUploadResult()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ced32c5
+
+### Tab Organization: Add a close button to the chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2c160a
+
+### Try to avoid mystery Mac crash, or track it down
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0daee65
+
+### Update TpcdSupportManager to directly observe origin trial status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4a8a8f
+
+### os settings: move cpp files to new location (25/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69c802e1
+
+### Move //c/b/ui/views/eye_dropper to //components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49148a8
+
+### borderless: AppIsBorderlessPwa() shouldn't check IsBorderlessModeEnabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/052c542
+
+### fetch descriptors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b9a88e
+
+### [dPWA] Implementing the link capturing info bar with metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f377763
+
+### Move GetCurrentCountryCode to another build target
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d11aaccc
+
+### os settings: move cpp files to new location (24/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e279887
+
+### [ntp-modules] header color fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87b242cb
+
+### [ SidePanelPinning ] Deflake OpenReadingModeSidePanel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/036c115d
+
+### os settings: move cpp files to new location (23/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a636ffc0
+
+### [Tracking Protection] Add aria-labels for Learn more links
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fce30e4
+
+### De-generalize TabBase and rename to TabModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eba1575
+
+### Add more keyboard behavior to the toolbar as indicated by greenlines.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddfb8d20
+
+### Printing: Fix local-printers-updated event format
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fca74c8
+
+### borderless: Maybe fix flaky PopupSize tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2c0225
+
+### os settings: move cpp files to new location (22/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7b08de
+
+### manta: move proto, orca, snapper to //components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4613fef30
+
+### [autopip] Don't hide top bar icons during allow/block popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2156034
+
+### iwa: Add skeleton IWA installation UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6abd139
+
+### Remove unnecessary chrome_notification_types.h includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/724a6d1
+
+### [SidePanel] Unify the bookmarks side panel entry point icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2405f8
+
+### nit: Remove redundant IS_CHROMEOS_ASH flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81ed517
+
+### Drag and Drop: Make browser tests use https server
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b474dc
+
+### [What's New] Allow Refresh What's New to show in latest milestone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6e2bd5
+
+### Site Settings: Include partitioned size in partitioning site
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d85199e
+
+### [ForceSignin] Create a histogram to track the reauth results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6a8792
+
+### Disable CookieControlsBubbleViewControllerTest.ThirdPartyCookiesAllowedTemporary
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d94f356
+
+### [UB] Don't animate label if UB is not visible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3762b0
+
+### Gray out 'camera allowed' toggle when it's force disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2ce11bc
+
+### Add EyeDropper support for ChromeOS Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a1aa19
+
+### [dPWA] Add chrome://flags entry for user link capturing on WML
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0eb8407
+
+### Add a finch flag to control the donation cap for the auxiliary search
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/710034a
+
+### IndexedDB: add flag for changing default IDB transaction durability
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b1c7f2f7
+
+### [webauthn] Add about:flags for filtering google.com passkeys
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d982968
+
+### [ntp-xdtr] Add flag for tab resumption
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c7628b2
+
+### [Flags] Remove VAAPI image decoder flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce6408d
+
+### Removes the 'stylus-rich-gestures' flag's parts that are visible to Chrome users
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9d2cca60
+
+### [FedCM] Update flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a280fd6
+
+### [RWS] Remove flag entry
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bbc6473f3
+
+### [Shortstand] Create a flag for shortstand.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b339531
+
+### [Files F2] Add a flag for the new directory tree
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dbbb2a6d
+
+### [TTF][Refactor] Add PasswordSuggestionBottomSheetV2 feature flag to
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d73cbc0f
+
+`);
+              </script>
+            </body>
+        </html>
