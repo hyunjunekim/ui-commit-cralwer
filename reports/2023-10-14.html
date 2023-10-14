@@ -1,0 +1,284 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-14
+### viz: Allow registering a pending HostFrameSinkClient
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b01cf7
+
+### Remove x11::Event::window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a104dfc3
+
+### [Auto-disable Accessibility] Fix for recreate issue from touch exploration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4c6869
+
+### Revert "[Auto-disable Accessibility] Fix a11y recreate issue with ToolbarManager"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe3d5ba
+
+### [Mac Sonoma Tests] Fix a CGVirtualDisplay issue in interactive_ui_tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/817aeca1
+
+### [X11] Fix large event parsing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/657c7fa
+
+### [ChromeRefresh2023] Round permissions info button
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b7c86e
+
+### [CrOS Cellular] APN dialog "Add/Save" btn enable state a11y announced.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7aa02e97
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef23092
+
+### Fix "enabled" in PrintViewHierarchy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6c7ab59
+
+### Show the review button when some custom dialog setting is set
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ff12e5
+
+### Image Loader: Enable ts_library() to initiate TS conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8de52a27
+
+### Image Loader: Remove deps from test_error_reporting.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/399c6c5
+
+### Avoid dangling pointers in EditableCombobox test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00ee89fd
+
+### Cross Device: Remove Android Messages integration [part 9].
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5be39fe
+
+### Scalable Notifiers: check eligibility before help app pin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b5e16d
+
+### Update Device Lock dialog for Chrome UI Review
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66f8621
+
+### [Sheriff] Disable flaky WebAppIntegration test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20f2f01
+
+### [Sheriff] Disable flaky test WebAppIntegration.SwitchIncognitoProfile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44f1dc6
+
+### os settings: move cpp files to new location (30/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0d923c
+
+### os settings: move cpp files to new location (29/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f03262
+
+### Populate QueryTiles carousel with QueryTile views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e533a94
+
+### os settings: move cpp files to new location (28/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81854ff
+
+### jni_zero: Migrating all JNI annotations in /chrome to jni_zero copies  #cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4166a7d
+
+### [A11y clean-up] Make autoclick rect/point const
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90ae4e2
+
+### [SidePanelPinning] Add entry point for history cluster in 3 dot menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/012f9f0
+
+### set wallpaper search result as background
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/363b723d
+
+### Check that the Device Lock page's property model is not null before destroying it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64e4d8e
+
+### Add DownloadCheckResult and DownloadDangerType for local archive inspection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4747739
+
+### Add UMA histograms for duration of select HTML fullscreen sessions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/965ec98
+
+### Removing deprecated Neutrino logging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2039b8d
+
+### Add basic Compose dialog with positioning logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cf2437
+
+### Rename //chrome's password_store_factory.cc to *_profile_password_*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/018e1189
+
+### Revert "Reenable BrowserNavigatorTestChromeOS.OsSchemeRedirectSucceed"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3b374b
+
+### Rename //chrome's PasswordStoreFactory to *ProfilePassword*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/034bac8
+
+### Remove and extend some histograms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12d7e2e
+
+### Make sure PinnedActionToolbarButton tooltips and accessible names are set correctly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85853576
+
+### cellular: Fix cellular page labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45910e8
+
+### Tab Organization: Force hide chip on click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/461c6919
+
+### Pull Read Aloud strings out of android_chrome_strings.grd
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d6fe03
+
+### PopupCellView refactoring: remove dead callbacks from cell view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6620ffd
+
+### [gbb-cct] Increasing Assertion Delta because of tests failing in Android 13.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e84631
+
+### [DownloadBubble] Maintain order of models when creating row list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e710afa
+
+### [SmartLock] Remove SmartLockUIRevamp feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efc6df3
+
+### Add device section OWNERS to ChromeOS Settings SWA code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97b4663
+
+### PopupCellView refactoring: move RETURN handling to the row.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c538967
+
+### [FedCM] Align desktop error UI to redlines and update strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f5a3a6
+
+### Remove redundant IS_CHROMEOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e3fd4f8
+
+### [Android] Remove AutofillPopupViewAndroid and AutofillPopupBridge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f04d23
+
+### Connect new badge tracker with new button for compose row.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0da7cec0
+
+### Link test file into browser_tests binary
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61ecc3eb
+
+### [waffle]Do not trigger dialog on navigations in background tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08cdd122
+
+### [Signin][Uno-D] Change Turn on Sync button on History page for web-only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d4bd55
+
+### PopupCellView refactoring: move HandleAccessibleAction to the row view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/262a8a8
+
+### Site Settings: Create partitioning sites for origin grouping keys
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e85b8f
+
+### Factor out logic to close the bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10da601c
+
+### Refactor GrantWindowManagementPermission to not require elementId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b8c074
+
+### Pass --disable-field-trial-config to tests that need it.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0be66c5
+
+### Create new strings to replace the Discover title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15ec80f
+
+### [CVC Storage] Add interactions to CVC save prompt for server cards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0265cd
+
+### [QsRevamp Clean UP] Remove browser flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5af7e14
+
+### Remove user-facing Jelly Flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2f48363
+
+### [responsive toolbar] Add ResponsiveToolbar to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0a7dd9f
+
+### Add Reading mode webui toolbar flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/503408d
+
+### [IP Protection] Add chrome://flags entry to disable feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dd84030c
+
+### [Passwords] Add a feature and a flag for using predictions on saving
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c828d90
+
+### [Files]: Separate flag for local image search in Files app.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03f19b6
+
+`);
+              </script>
+            </body>
+        </html>
