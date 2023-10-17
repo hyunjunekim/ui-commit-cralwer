@@ -1,0 +1,440 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-17
+### Files app: Enable TS for Integration Tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23364a2
+
+### Files app: Preparte Integration Tests for TS conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2319c0
+
+### [Files F2] Handle document.activeElement properly for new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0eb603
+
+### Change popup wrapper impl to accept {0,0} sizes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/913521f6
+
+### Refactor action id enum maps for easier testing
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50dfb8b
+
+### Use 30 minute timeouts instead of never timing out
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9538e86
+
+### Enable keyboard-triggered tooltips in Views.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96ec1f1
+
+### WebUI: Rename assert_ts.ts to assert.ts, part 7 (last)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7a2ea67
+
+### [uia] Culture property being incorrectly exposed on UIA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b87352
+
+### Support Arc custom notification grouping in Ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eda985f
+
+### Reland "Update metadata MACROs for specifying the ancestor in the header."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acee994
+
+### WebUI: Migrate content/browser/resources/gpu to TS Mojo bindings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa11104c
+
+### Don't issue capture lost when mouse moved out on linux-x11
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3453f75
+
+### Avoid dangling pointer in MenuRunnerImplAdapter.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76e6dd71
+
+### Avoid dangling pointer in TreeView's internal data structure.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b10bd0
+
+### Avoid dangling pointer in TabbedPane.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a2ae130
+
+### Avoid dangling pointers in ScrollBar test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/593aa35a
+
+### Avoid dangling pointer in MenuButtonController test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4724ab
+
+### Avoid dangling pointer in FillLayout test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/33fda98
+
+### Avoid dangling pointer annotation in MenuRunner.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e168300
+
+### Avoid dangling pointer in MenuModelAdapter test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a797b40
+
+### Avoid dangling pointer in ResizeArea test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57c7ce4
+
+### Avoid dangling pointer in ThemeTrackingImageView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a705499
+
+### Avoid dangling pointer in MenuItemView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57ff56c
+
+### Avoid dangling pointers in TabbedPaneA11yMac test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7bbe2f4d
+
+### Avoid dangling pointer in MenuController test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16b15290
+
+### Avoid dangling pointers in TableView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/458ebf42
+
+### Avoid dangling pointer in ToggleButton test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8752275
+
+### Avoid dangling pointers in MenuRunnerCocoa test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d0de2e
+
+### Avoid dangling pointer in ImageButtonFactory test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9611c88
+
+### Avoid dangling pointer in EditablePasswordCombobox test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26ca9b9f
+
+### Avoid dangling pointer in MessageBoxView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/311b56b
+
+### Avoid dangling pointer in Button test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b6f885
+
+### Avoid dangling pointers in LabelButton test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35c1d2e
+
+### Avoid dangling pointer in Checkbox unit test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acbbe05e
+
+### Avoid dangling pointer in ProgressBar unit test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a3d8a1
+
+### Avoid dangling pointer in AnimatedImageViewTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0083e1
+
+### Avoid dangling pointer in Combobox unit test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c1fbe6
+
+### Avoid dangling pointer in WebView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e87a71
+
+### jni_zero: Migrating all JNI annotations in /ui to jni_zero copies #cleanup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51efdbc
+
+### Files app: Preparation for checkJs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b97bc088
+
+### [Files F2] Refine focus logic for the tree widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e8f5b0
+
+### Move AppRegistryCache::OnApps to the private method.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8476581
+
+### [CloudOpenMetrics] Handle every inconsistency the same way
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27bc13f
+
+### Add an API to allow the webui to act on a different WebContents.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df3e89ce
+
+### [CVC Storage] Show local CVC save prompt in a Message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/668fdbda
+
+### [CVC Storage] Use AutofillSaveCardUiInfo for setting message properties
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89e9500
+
+### Disable flaky WebAppIntegration tests on lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/431bfb60f
+
+### os settings: move cpp files to new location (34/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f96d2f93
+
+### [omnibox][ml][chrome://omnibox] Add chrome://omnibox/ml (6/6)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/670341e
+
+### assistant: Update strings on related info page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b5f606
+
+### CrOS Settings: Add device menu item description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a2b4608
+
+### [omnibox][actions] Update width calculation to fix broken tail suggest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5d7d67
+
+### Pass --disable-field-trial-config to tests that need it.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b9c744
+
+### [ChromeRefresh2023] Update Hover color to be inactive header hover.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee73933
+
+### cellular: Align consumer installation flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4418449
+
+### Add ShowUI method so BE knows when the FE has registered listeners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc31f2c
+
+### Plumb close dialog method through mojom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/545a1fc
+
+### Revert "[3PCD] Fix data flow for Tracking Protection 3PCD site info bubble"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dc2b26
+
+### os settings: move cpp files to new location (33/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58a6b4f
+
+### Add DataControlsRule parsing to ChromeDlpRulesManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ee7f71
+
+### WebUI Mojo bindings: Explicitly set use_typescript_sources = false
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d4374f
+
+### [AF] Clean up AutofillEnableOfferNotificationForPromoCodes
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9a84be7
+
+### remove unused wallpaper search methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25033a5f
+
+### Site settings: Web MIDI Permissions special case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a29efec
+
+### os settings: move cpp files to new location (32/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e85ef0b91
+
+### Delete orca key.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d294864
+
+### [Omnibox] Round corners of tablet dropdown w/ revamp on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac47fd1
+
+### Replace over-inclusive header in viz's local_surface_id.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ce5b98
+
+### pip2: Don't discard tabs that own a picture-in-picture window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52b496d
+
+### Remove passing of ComposeDialogCallback to ShowComposeDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d09f16a
+
+### PopupCellView refactoring: remove unused tooltip methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1cb82e
+
+### [DTC] Cleanup Device Trust Connector feature flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63b1ceac
+
+### os settings: move cpp files to new location (31/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adef9d6
+
+### [Autofill] Merge {Preview,Fill}FieldWithValue()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c5fb08
+
+### [FedCM] Update generic error UI on android to match new mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3c8ebd6
+
+### [ SidePanelPinning ] Re-Re-Deflake OpenReadingModeSidePanel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85cfc8f0
+
+### Pass --disable-field-trial-config to tests that need it.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66c459d
+
+### Add QueryTileView element to properly reflect Omnibox selected state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c108975
+
+### [3PCD] Fix data flow for Tracking Protection 3PCD site info bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6ca2697
+
+### Remove ChromeCleaner declarations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a59aca7
+
+### pip2: Fix incorrect icon size from Chrome Refresh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c2aab7
+
+### [mullet m2] Add granular filling labels.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07b763d
+
+### Simplify error label creation in payments editor view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78edba6e
+
+### Sync: Hide recent tabs promo when Tabs type is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd9d3bc
+
+### Pass --disable-field-trial-config to tests that need it.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a7e2b5
+
+### [gbb-cct] Changing Peek Height based on Privacy Notice Conditions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15f05f4
+
+### [autopip] Allow pip 1.x window dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afd5fa230
+
+### replace query input with descriptor selections
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fbf9409
+
+### Give dullweber@ old_cookie_controls* per-file OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a69c97e
+
+### [dPWA] Implementing intent-picker delegate class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9bca6a47
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/702b657
+
+### Move kPasswordGenerationExperiment to the browser-only file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae163ec
+
+### [Android] Delete AccountManagerFacade.getAccount() method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/272b5f8
+
+### Replace InfoBarManager::infobar_{count,at}() with infobars()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5ffdbb
+
+### Fix Unicode string in NotificationPlatformBridgeTest, and change hex
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9161158
+
+### [Autofill] Add ForTesting suffix to PDM::ClearAllServerData()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4aa98c8
+
+### Cookie Controls: Re-enable flacky unit test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d057458
+
+### Disable flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78bee96
+
+### Make structured metrics build on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75ff4888
+
+### Introduce SAML_INTEGRATION_OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db68ecd
+
+### Dump without crashing when thumbnail image instance is null
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6631d01
+
+### Use cached context caret bounds to show mako UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bf37cc7
+
+### borealis: remove storage ballooning flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bdeb42f
+
+### Revert "Add bluetooth-long-autosuspend flag"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/66d7ffe
+
+### Prerender: Remove SearchPrefetchUpgradeToPrerenderIsEnabled()
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f061c2a
+
+`);
+              </script>
+            </body>
+        </html>
