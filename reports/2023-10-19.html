@@ -1,0 +1,396 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-19
+### Reland "Files app: Enable TS checkJs in the tsconfig"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ebfd296
+
+### Revert "Files app: Enable TS checkJs in the tsconfig"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5627b353f
+
+### [Files F2] Support eject button for zip archive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7560af6c
+
+### Files app: Enable TS checkJs in the tsconfig
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71e2b9e
+
+### WebUI: Stop using glob() in bundle_js() to discover .js.map files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/443a115
+
+### [F-Keys]: Enable feature flag by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78f6128
+
+### [FilesTS] Convert FilesFormatDialog to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7aec5cf
+
+### Add Heatmap Support in event_device_info
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fa4550
+
+### Draw rounded corners in aura scrollbars only for form controls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ce1bc1
+
+### webui: Add support for the placeholder attribute to cr-textarea
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a471902f
+
+### Reland "[Files]: Merging search container and search controller."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad449b4
+
+### WebUI: Create cr-loading-gradient element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2735c5
+
+### Update notification control button icons/spacing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1c53844
+
+### Make StringPrintf() calls use constexpr format strings: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f0fece
+
+### media: Cleanup obsolete use-r16-texture feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d4dcee
+
+### Use local statics of RE2 instances to reduce perf impact
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03aa059
+
+### lacros/client: Fix issue with hidden caption buttons for snap+overview
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/276e212
+
+### IOSurfaceSetColorSpace: Set primaries, matrix, and transfer keys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5eba93
+
+### Use the passthrough command decoder by default on CastOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18b487d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c62d39
+
+### Make DCHECK -> CHECK
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/083a0143
+
+### Revert "Enable keyboard-triggered tooltips in Views."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f84138b
+
+### Convert main.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66e13b9
+
+### [Files F2] Refine rename/focus logic for directory tree container
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60e5fe3
+
+### gd/gc: Remove window observer from toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/780f6d7
+
+### Revert "[ SidePanelPinning ] Migrate search companion pref"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae84432
+
+### [CloudOpenMetrics] Print metrics at ERROR log level
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fc17fe1
+
+### customization: Add new static shortcut actions to rewrite events to key events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0dfd3b0
+
+### Reland "frame: Flip fullscreen state on TabletModeToggled"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06750fe
+
+### [App Service] Move PackageId into app_types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90e88ec
+
+### Add borealis installer to webui urls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6791c5d
+
+### [CloudOpenMetrics] DumpWithoutCrashing if an inconsistency was found
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da2b093
+
+### [CrOS Hotspot] Rename "Hotspot" to "Instant Hotspot" in search keyword
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f89acda9
+
+### [SurfacePolish] Simplify search bar coloring state and flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94bc673
+
+### [CloudOpenMetrics] Check for all inconsistencies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc11ba7
+
+### [dPWA] Move infobar calling logic into WebAppUiManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e904fde
+
+### [ SidePanelPinning ] Migrate search companion pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8b1913
+
+### Printing: Record Print Preview GetPrinters request time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42accf5
+
+### customization: Button name validation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d16392d
+
+### Revert "[responsive toolbar] Add menu item activation"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7e7c3f
+
+### [omnibox][search_engines] Remove vestigial comment from SE makeover.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1058d86
+
+### Pass --disable-field-trial-config to tests that need it.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae19210
+
+### [PriceInsights] Add the filled background for the chip label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eeac87f
+
+### Plumb app data through to the install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e7f810
+
+### [omnibox][ml][chrome://omnibox] Handle not-yet-loaded model (8/6)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb59d02b4
+
+### [CloudOpenMetrics] Check for all inconsistencies based on TaskResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad847c1
+
+### Tab Organization: Add app menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f8db73
+
+### [CloudOpenMetrics] Add companion metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2191905
+
+### [Families TS Migration] Migrate EDU coexistence WebUI to TS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2e6e11
+
+### Fix discard ring contrast with dark themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c6638b8
+
+### Fix DownloadCommands::Command enum numbering and histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/448e595
+
+### [Cookie Controls Bubble View] Update the cookie settings bubble view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a32dee1
+
+### Add IPH config for TrackingProtection Rollback Notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/251ef80
+
+### [ntp] Replace concatenated Drive i18n strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d52ee6a1
+
+### add descriptor d
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6380f66
+
+### Revert "[dPWA] Adding support for intent picker UX in WebAppIntegrationTestDriver"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b159a2a1
+
+### Misc. cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df7301c1
+
+### Re-enable device lock page UI when challenges are not passed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d6b67e
+
+### Rename NightLightController::GetEnabled().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ca0d3b
+
+### Flags UI: Add flags search UI tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaaa9c0
+
+### [autopip] Use correct icons in settings UIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa4fa87
+
+### [responsive toolbar] Add menu item activation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/483e694
+
+### os settings: move cpp files to new location (36/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90885d24
+
+### CrOS Settings: Add Privacy menu item description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3e8b03
+
+### [E2E] call setDecorFitsSystemWindows only once
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa5ab9c
+
+### [ChromeSigninIntercept] Create chrome-signin subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0e2275
+
+### [ntp-modules] Fix CWS comprehensive theme module color(s)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2ae61b
+
+### iwa: Move IWA installer to //c/b/ui/views/web_apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9fa38ad
+
+### [Extensions] Remove "external_install_default_button"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1c9d9d
+
+### Enable hovercard setting by default and remove fieldtrial testing config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da10953
+
+### [Payments] Remove expired CheckoutFunnel.Aborted histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecbde70
+
+### Add a devtools issue + protocol for sites allowlisted for third-party cookie deprecation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5beee05
+
+### [Read Anything] PDF Integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/124deadc
+
+### [dPWA] Adding support for intent picker UX in WebAppIntegrationTestDriver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36f2c72
+
+### Remove remaining clang-format comments in java files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/732c4f65
+
+### arc-overview-tracing: readable time in filename
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/920d20aa
+
+### Enable new Chrome update strings by default on ToT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c48c475
+
+### [oobe][QuickStart] Configure network based on transferred credentials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a8f46f
+
+### Reland "HaTS: Add mojo to hats webui"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7d695d
+
+### [signin] Sort GetOrderedAccountsForDisplay based on cookie jar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9091d05
+
+### Combine RefreshRateThrottleController and VariableRefreshRateController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70ed8cc
+
+### Enable UserBypass by default for M120+
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6a81e96
+
+### [SHv2] Show notification with icon in Chromenu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e7ef1b6
+
+### Remove some includes from deprecated base/strings/string_piece.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f817d8b
+
+### Make StringPrintf() calls use constexpr format strings: chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a3e2d2
+
+### Remove DanglingUntriaged from TPS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b82305f6
+
+### Move promise item attributes to the installed app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83bd8ae
+
+### Decouple Autofill and Payments sync toggles on Desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3567e9
+
+### Adjust mako UI bounds to keep it on screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b527f56
+
+### VariableRefreshRateController: Observe PowerStatus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56eaae2
+
+### Remove features::kDisableSlowMSAAInGraphite
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/71aae29
+
+### customization: Create customization notification ff
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e162db7
+
+### [wallets] Rename flags: MDocs -> Digital Credentials
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a067ac6
+
+### Remove Private State Tokens flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6fe6764
+
+### Remove expired flags in flag-metadata.json
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0e16cec
+
+`);
+              </script>
+            </body>
+        </html>
