@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-21
+### Rename many Time functions:
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08b91b4
+
+### [ChromeRefresh2023] Add variations of the new tab button.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/83bd68d9
+
+### Add flag to launch notifications require interaction change
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0cbdb92
+
+### Add notification_delegate#GetDelegateForParentCopy.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/138386e4
+
+### [Auto-disable Accessibility] Add histograms and info logging to AccessibilityState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f2a871
+
+### [Layout Manager] Allow manual setting of view visibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f980374
+
+### Switch Theora test case to vp8 for file manager tests.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/156a506
+
+### LSC: Reformat remaining *Test.java files with google-java-format
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9fcc1f
+
+### Fix arrow key behavior with vertical number input types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5fd7fcb
+
+### Printing: Fix parameter type for local printer observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/045b3a9
+
+### CrOS Settings: Add new dialog when toggling DNS to OFF
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1de2bc
+
+### os settings: move cpp files to new location (41/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1eab6ce
+
+### [Blink] Remove input_field_type from ContextMenuParams
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aa401b
+
+### Implemented proper handling of column visibility in Task Manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8105df44
+
+### CrOS Settings: Add tethering description strings back
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec6f9e1b
+
+### Don't open download on BYPASS_DEEP_SCANNING command
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5479a1
+
+### os settings: move cpp files to new location (40/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b84acb
+
+### Make ReadAnythingUntrustedPageHandler.browser_ a weak ptr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d1db68
+
+### [3PCD] Fix broken browsertest by mocking time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a4b8553
+
+### Reland "[responsive toolbar] Add menu item activation"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aeeb270
+
+### Omnibox Carousel: Guarantee one tile is always 50% exposed on Phones.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd5c6a7
+
+### [Price tracking] Prevent reshowing FUE for accounts that have already decided
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac946e8
+
+### [commerce] Disable shopping page actions in incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5d6879
+
+### os settings: move cpp files to new location (39/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b04ceb
+
+### Modify Feature Engagement's ConditionValidators to take a TimeProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81b4ce13
+
+### Propagate model execution errors to clients
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/322b870f
+
+### Revert "[Mac Immersive Fullscreen] Reland of prevent spaces switch on child window removal"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fae31a5
+
+### Fix the context when dump is getting triggered
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62ba0754
+
+### Reland "[Blink] Add FormControlType, is_content_editable to context menu params"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/230de40
+
+### [Performance Settings] Add learn more link for preloading setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2830cfc4
+
+### [gbb-cct] Fix UI bugs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35a84670
+
+### Update ToolbarView to use ManualLayoutUtil
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/941932d8
+
+### [Discounts] Add histograms to break down icon and bubble usage for history cluster
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97d6a57
+
+### iwa: Implement GetMetadataScreen installer UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3afcd96
+
+### [Price tracking] Prevent bad data access with absl::optional
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d28753f
+
+### [omnibox][webui] Keep popup width correct by handling LBV bounds changed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2b354e
+
+### [PM] Add support code to track frames capturing video
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/188cc00
+
+### [Discounts] Allow flex layout view to adjust height for width
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e87f412
+
+### win: Add app user model id to NotificationLaunchId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a098760
+
+### Update APIs of consumers of SimpleHttpClient to take a Profile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a64a5ec8
+
+### Remove unused reading list tutorial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51ce4a56
+
+### [oobe] Open portal page only when network is in portalled state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/813785b
+
+### Refactor absl::optional in AutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bc926b
+
+### Suppress the privacy sandbox dialog during signed-in profile creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3ec86e
+
+### [DBSC] Append DBSC info on state update in chrome://signin-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dc961c
+
+### Support deep link to redirect users to payment method details page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5746cab
+
+### Revert "[oobe] Mark OOBE ready for testing when wizard is initialized"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/553a929
+
+### show desc c img
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18c79f5
+
+### [3PCD] Just pass in profile rather than OriginalProfile to TPS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/103a183
+
+### Enumerate PopupItemId items in util methods instead of default section.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca9f811d
+
+### [gbb-cct] Implementing the agreed conditions of showing Page Insights Hub privacy notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6aa599b
+
+### Revert "Reland "[dPWA] Adding support for intent picker UX in WebAppIntegrationTestDriver (not on Lacros)""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87675c3
+
+### Reland "Add Observer to Safety Hub Extension Handler"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6aaf296
+
+### WebUI Mojo: Remove some unnecessary use_typescript_sources=true
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71eaf79
+
+### Introduce \`GlanceablesTasksView\` view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53fa756
+
+### [oobe] Mark OOBE ready for testing when wizard is initialized
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c411e7
+
+### [SFL][a11y] Bookmark price tracking toggle always has the same name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0291d3d9
+
+### Reland "[AWC] Use \`PageUserData\` to store the web-API-altered \`can_resize\`"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36e72a9
+
+### Site Data: Update strings on site data dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30a166a0
+
+### Reland "Add fieldtrial entry for NewConfirmationBubbleForGeneratedPasswords"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4f6511
+
+### [Autofill] Merge FormFieldData::datalist_{values,labels}
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1672129b
+
+### [waffle]Change how the search engine looks in settings when chosen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b8bb75
+
+### [AWC] Add BrowserViewTest.SetCanResizeFromWebAPI unittests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d53c7e6
+
+### Set app type to ash-chrome PiP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6af6168c
+
+### Update tooltip for editor menu textfield arrow button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f359b5
+
+### Handle compose CloseUI with close button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80331430
+
+### [omnibox] Add logic/feature params for company entity adjustment.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5d81f22
+
+### [gbb-cct] Surface personalized fetching flag in chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/40d4c95b
+
+### Remove --digest-auth-enable-secure-algorithms
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dc10d9c6
+
+### [Passwords] Remove PasswordsInCredMan flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0e81132
+
+`);
+              </script>
+            </body>
+        </html>
