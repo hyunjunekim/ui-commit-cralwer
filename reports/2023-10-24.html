@@ -1,0 +1,388 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-24
+### Files app: Remove unused test extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6bac69
+
+### [FilesTS] Remove unnecessary mocking of strf
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bde5a33
+
+### [FilesTS] Move more entry related functions to entry_utils.ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9403de
+
+### [FilesTS] Create common \`isFlagEnabled\` function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73f8dfe
+
+### [FilesTS] Remove FileSystem from type guards
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0229fdf
+
+### WebUI: Don't hardcode common excluded WebUI URLs into bundle_js().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d10706
+
+### Add color pipeline colors for the loading gradient
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bad78e51
+
+### [User Education] Use 2023 Refresh lightbulb icon
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c2e85a
+
+### [FilesTS] Extract more functions from util.js to entry_utils.ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76fc617
+
+### Revert "Re-land "Enable keyboard-triggered tooltips in Views.""
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dcbcee
+
+### Re-land "Enable keyboard-triggered tooltips in Views."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/228ff92
+
+### [X11] Lazily parse events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c427fe1
+
+### aria-details should set DescribedBy UIA property
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59525e29
+
+### Revert "Remove handling of esoteric run loop modes"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8059136
+
+### gl: add GLContext::GLContextObserver.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2fd3212
+
+### [UIA] Expose the right UIA_AriaRole for ins & del
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/86f463c
+
+### Remove some legacy estade@ OWNERS entries.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42e0dab
+
+### Don't call the polling state callback unnecessarily.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/607e6b48
+
+### [base] Rename DIR_SOURCE_ROOT to DIR_SRC_TEST_DATA_ROOT
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac1a283
+
+### Forward declare View in ViewTracker and fix indirect dependencies
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b300b5c4
+
+### [Exo]Animation fix w.r.t RecreateLayers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c09358
+
+### Remove handling of esoteric run loop modes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a171b2
+
+### Move strings to grd file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3b175b
+
+### [Cros Components] Add cros-components as owners for our browser test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fee821
+
+### Enables textfield for use in cros-components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d645ca
+
+### ThumbnailImage: Fix a nullptr check that could cause a crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b17b020
+
+### Migrate geoposition code in night light.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2add40
+
+### [ntp-modules] Context menu tweaks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/458ea9b
+
+### [FilesRefresh] Remove legacy styles for CloudUpload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3ed606
+
+### customization: Move disable dropdown option to bottom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b60991e
+
+### [CodeHealthRotation] Remove expired histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caa9592
+
+### webui: get rid of ChildWebDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/315cf02
+
+### CrOS Settings: List separator string for variable length description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de896c1
+
+### Misc. cleanup: chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0926739e
+
+### [Promise Icons] Record metrics for promise Launcher/ Shelf Item creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37959419
+
+### Use revised strings for the "Always use secure connections" setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f777d5
+
+### webui: refactor AccessCodeCastDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65397e7
+
+### [Read Aloud] Use a internationalized string for voice previews.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b43ce29
+
+### Peripherals: Update DIR_METADATA coverage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c75c989c
+
+### Tab Organization: Add tab context menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fdb01a2f
+
+### Fixed translate button showing on all pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/801aa52
+
+### [gbb-cct] Handle back presses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/271d6947
+
+### webui: refactor feedback dialog's WebDialogDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41dd52b5
+
+### [waffle]Change the list of search engines in settings to a dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b14380c
+
+### Refactor wallpaper search API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aaf1f784
+
+### Check PolicyTestPageEnabled before applying test policies at restart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa5a4bb
+
+### Replace "internal value" API usage with non-deprecated versions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0c430f
+
+### Add a browsertest for starting casting in GMC on Chrome OS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7b9cfb
+
+### Move dlp_reporting_manager* to chrome/browser/enterprise/data_controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efef630
+
+### Add switch to force refresh rate throttling state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a50e56
+
+### Set descriptors on request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb1fc2c
+
+### Reduce reference to HomeButton from ToolbarLayout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca5e40e
+
+### Update the voice pref to be a dict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ded3ed9
+
+### [CrOS Hotspot] Add and log set hotspot config shill error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77cdf5b
+
+### [User Education] Fix incorrect bubble arrows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1f9092
+
+### CrOS Settings: Add System Preferences menu item description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b4bbee0
+
+### Tab Organization: Add first run experience pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70062097
+
+### Add medium and low confidence UMA counters
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea4c5f8
+
+### Improve PlusAddress tests, no functional change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc7dc32f
+
+### [PWA] Prevent ml installation from occuring in app windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58043e3d
+
+### Remove kCctResetSettingsHash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f93bf1eb
+
+### Remove trigger for tab groups tutorial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6787ac3
+
+### Allow Carousel elements to be activated from Keyboard.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58c86995
+
+### [Cookie Controls Bubble] Display sub-title and description on site exception
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79ce326
+
+### Remove incorrect Classify() parameter from AutocompleteController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc16812e
+
+### [3PCD] Explicitly disable 3PCD in ContentSettingBubbleDialogTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfb9eb90f
+
+### [mullet m3] Manual fallback option for unclassified fields.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af06b14
+
+### [Policy] Unify export policy logic across platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fcc25d
+
+### [gbb-cct] More UI fixes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2319d01
+
+### [Gardener] Disable flaky AppMenuTest#testAppMenuButtonHelper_DownUp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/889861d
+
+### Moving android only files from components/ to chrome/ folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcf9b91
+
+### Don't open the dialog if Reserve() returns an already-confirmed address.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b061989
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a449b1d
+
+### [Multi Apps] Fix incorrect string conversions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8960b2
+
+### [SHv2] Update version card strings and add for CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93a7f12
+
+### [mullet m3] Improve AutofillContextMenuManager tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99369a2
+
+### [Page Info] Reintroduce a check that prevents a rerender.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af0d5c0
+
+### [Element Capture][restrictTo] Rename crop-version
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3ecca84
+
+### Extensions: WFH: Lacros feature parity with Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d5b513
+
+### [dPWA] Loosen scope checks during web app launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98de28d
+
+### Hook up dynamic colors to orca
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b18d049
+
+### Add cros-card in chromium
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17eed62
+
+### [Shortcut] Move CrosWebAppShortcutUiUpdate flag to chromeos features.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a4c5fae
+
+### Add flag to use flexible loopback to provide system loopback
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3945b77
+
+### arc: Remove arc-trackpad-scroll-touchscreen-emulation flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8ef2130
+
+### snap-group: Add Chrome flag for \`kFasterSplitScreenSetup\`
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7605839
+
+### [DataRetentionPolicies]  Feature Cleanup
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/471c8c2f
+
+### [FedCM] Update feature name to be more concise
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/81bfd62
+
+### wallpaper: remove daily-refresh-revamp flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/10c713ca7
+
+### [Enterprise] Delete deprecated feature flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e738394
+
+### [Passwords] Add flag for voting on UFF with intermediary fields
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fe05514
+
+### Move kLacrosAvailabilityPolicy* switches to standalone_browser
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f3d3575
+
+### [DSE] Identify EEA countries
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f4c1c5e
+
+`);
+              </script>
+            </body>
+        </html>
