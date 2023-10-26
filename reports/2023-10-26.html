@@ -1,0 +1,444 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-26
+### Stop unnecessary occlusion updates after unpause
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b97953e
+
+### [Files F2] enable successful tests for the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/818008e6
+
+### Files app: Convert to cr.ui.List, cr.ui.Grid and FileGrid to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45b7ea36
+
+### Files app: Convert volume_manager_impl to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38ce9f7
+
+### Re-land "Enable keyboard-triggered tooltips in Views."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78e1a0e
+
+### Notification: Update child notification view inside a group when needed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39b4dba
+
+### [Files F2] Expand the tree item when it's a drop target
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6602bf5
+
+### [Files F2] Fix the paper ripple issue for the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/587570d
+
+### Add and use \`StringPrintfNonConstexpr()\`.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfe93d2
+
+### Files app: Add presubmit to block @ts-ignore in TS files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23d752b0
+
+### Revert "[X11] Refactor event parsing"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/836a941
+
+### WebUI: Move test infra only used by ChromeOS Ash to ash/ folder
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ed8640
+
+### Revert "Backlight OCR: Implemented the \`DocumentUpdated\` API"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/687ca1c
+
+### [Hub][Tab Switcher] Move GtsRectAnimator to hub/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30bb5eb1
+
+### Make icons in the title bar of PWAs show as disabled in inactive widgets again.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/498dcff
+
+### ash/cc: Drop pending event metrics if the frame has no damage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41cd7f0
+
+### customization: Differentiate between BTN_SIDE and BTN_EXTRA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7896da
+
+### ozone: evdev: set reports_pressure in HardwareProperties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a89419a
+
+### Backlight OCR: Implemented the \`DocumentUpdated\` API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/befe557d
+
+### [lacros][hdr] Add RGBA_F16 support for ChromeOS and Lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a98232
+
+### ui: add a unit test for WebDialogDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77f46c2
+
+### Fix UBSan failure in accessibility_unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df7b6a2
+
+### [X11] Refactor event parsing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4942bfe
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e12a20
+
+### Revert "[Exo]Animation fix w.r.t RecreateLayers"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/afb5667
+
+### Files app: Fix presubmit for selector.ts using Lit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90d3684
+
+### [Fixit] Add Foldable as a form factor option to UMA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50291cf
+
+### [document pip] Focus the window when opened manually
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e221cc
+
+### Update "Visit your google account" link to GPay web.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc685434
+
+### Use a string for orca translation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ccc016
+
+### Avoid comparing class name returned by View::GetClassName() by pointer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b1e9c5
+
+### Page info: Web MIDI Permissions special case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3569d7
+
+### [SysUi download integration] Create download display manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbdfc4d
+
+### [CSC] Remove CSC from Chromium
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1133b22
+
+### Pipe the app package id to shelf items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b6a439
+
+### Update Performance Hats to use a consistent pref service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b7b6a3
+
+### CrOS GMC V2: Update more text fonts to Google Sans
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86b9d13a
+
+### Add flag to make Lens contextual versus global panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b63191
+
+### Reland "Reland "[SidePanelPinning] Add enabled state for global sidepanel actions upon creation.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1017fe0
+
+### [MCT] Add IPH for the minimize button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/028db484
+
+### Fix CompoundTabContainerTests when animation turned off
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7fd94a
+
+### [responsive toolbar] Remove Lacros hack if responsive toolbar is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/412ed15
+
+### [SHv2] Update and add some string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d15df6e
+
+### customization: Disallow duplicate button names
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f36fa3a
+
+### [E2E] Monitor onContentChanged on every Tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ff0929
+
+### [User Education] Add StartTutorialInPage API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60a83ad3
+
+### customization: Add ability to rewrite events to mouse events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d664e67
+
+### Revert "[ SidePanelPinning ] Fix failing test with PinnedToolbarActionsModel"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/036227d
+
+### iwa: Implement the installed IWA file structure.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84f095c
+
+### Revert "Reland "[SidePanelPinning] Add enabled state for global sidepanel actions upon creation.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eb48e6
+
+### customization: Wire ShortcutInputProvider in the Settings SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4cd296
+
+### [PM] Simplify ViewportIntersection to IntersectsViewport
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7686d9c
+
+### Revert "Move side panel code out of PinnedToolbarActionsContainer."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/095e9ce
+
+### [mullet m3] Render payment methods context menu entry.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a66853d
+
+### Reland "[SidePanelPinning] Add enabled state for global sidepanel actions upon creation."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45cd253
+
+### Port AddNewKeyboard tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cce58b
+
+### Move side panel code out of PinnedToolbarActionsContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a46498b
+
+### [ntp-history] Enable feature by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a083c00
+
+### CrOS: Remove last chrome://test usages in WebUIBrowserTest instances.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12a1a37
+
+### [Cookie Controls] Switch from calling \`AnimateIsOn\` to \`SetIsOn\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11af57f
+
+### Add hue slider to descriptor d's menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71c3fd301
+
+### [SHv2] Add metric whenever password check is run
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eb6c70b
+
+### Remove continuous reading app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20e6c35
+
+### [SurfacePolish] Polish real omnibox appearance on Start Surface and NTP(phone) part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41d8330
+
+### Relanding adding highlighting to open pinned side panel button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eee50b2
+
+### [ SidePanelPinning ] Fix failing test with PinnedToolbarActionsModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd2e5cd
+
+### [History] Persist state depending on last selected state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3bd2e189
+
+### [Autofill] Remove ftirelo@ from //c/b/ui/autofill/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b87adb5
+
+### dPWA: Add runtime feature check and test for manifest scope_extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42dd222
+
+### [Lacros] Open trusted vault reauth pages in WebUI dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3d3357
+
+### Revert "Represent form-factor client hint as a list"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6b6243a
+
+### Switch Android plus_address modal to bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f1300a6
+
+### Feedback WebUI: Limit jelly_colors.ts to CrOS builds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdf52a17b
+
+### New field on chrome://policy/test for sign in restrictions policies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a16506
+
+### Better usage of conversion functions to/from Unix epoch: chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd2e8a2
+
+### Site Data: update reload info bar message string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd518a0
+
+### [dPWA] Implement desktop version of intent_picker delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0144dd0a
+
+### Get AccountInfo each time when needed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65773613
+
+### [waffle]Move generated icon resources to a standalone file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58134bd
+
+### Update Local password flow to correctly handle GAIA password
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a33e49
+
+### Revert "[CVC Storage][Android] Shows the delete saved CVCs confirmation dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2b287e
+
+### [AWC] Make min/max/restore JS APIs work on all Aura platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b602660
+
+### [mullet m3] Rename UI string and context menu command ids.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb1fa60
+
+### inputs: add the metrics to show the number of times write or rewrite mode is shown for the native ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3ff57f
+
+### webui: refactor SigninEmailConfirmationDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9246e01
+
+### [Multi Apps] Add 'manage [permissions]' link to install prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a241cec
+
+### [AWC] Refactor setResizable functions to use \`WebContentsDelegate\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb8a6bf
+
+### [mullet m3] No manual fallback context menu entry when user has
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d050834
+
+### [mullet m2] Email 'fields' are also part of group filling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a901d94
+
+### Make the local password setup dialog reusable for password reset
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a49b1c80
+
+### Reland "[Waffle] Show Search Engine Choice as part of FRE on desktop"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eba6311
+
+### [PEPC] Previously denied class creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bf13a7
+
+### borealis: extend startup metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03f1968
+
+### input_page: Add message for when an IME's language pack requires reboot
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00681d2
+
+### [dPWA][SystemMediaControls] Add WebAppSystemMediaControlsManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa8fa1d
+
+### Remove \`AutofillPopupControllerImpl::GetDriver\` declaration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfa0ba2
+
+### Remove borealis disallowed dialog association with kLauncherSearchAppId.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/878dced
+
+### input_page: Show language packs error message on IMEs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48dadf95
+
+### editor: make EditorMediator a KeyedService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b96f4de
+
+### Extract annotators into stand-alone classes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8e65b9
+
+### about_flags: Merge consecutive #if BUILDFLAG(IS_CHROMEOS) sections
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b3ab09ea
+
+### explose tracking proteciton rollback flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d19c7ca
+
+### [omnibox][actions] Add OmniboxKeywordModeRefresh feature and flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4342b6e
+
+### Remove TrackingProtectionOnboardingForceEligibility flag as it is superseded by a different flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df8ab90c
+
+### Added flag for adding logs to the Autofill Rater Extension Report
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f62d4b2
+
+### Add chrome://flags entry for password strong label experiment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/44fc1bd
+
+### Make audio-flexible-loopback-for-system-loopback available to LaCrOS also
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/94ce09b
+
+`);
+              </script>
+            </body>
+        </html>
