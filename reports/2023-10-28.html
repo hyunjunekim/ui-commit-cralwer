@@ -1,0 +1,352 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-28
+### WebUI: Allow mapping entire URLs and not just prefixes in bundle_js().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59fe596
+
+### Reland "[X11] Refactor event parsing"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/404e53b
+
+### Add base::AppendHexEncodedByte(), and use hex-encoding APIs more.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abc2bc3
+
+### Remove load_time_data_deprecated.js usage in network errors UI.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8243e64
+
+### Add VRR availability flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50fc44e7
+
+### WebUI: Remove unnecessary use_typescript_sources = true in mojo targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d502fb
+
+### ui/display: Minor refactoring of EDIDParserTest for readability
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80bae55
+
+### Mac immersive: ensure infobar is always visible
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e36b92f
+
+### [UI AX Cleanup] Move constant definition out of header file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0066715
+
+### [UI AX Cleanup] Simplify logic for ax export definitions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49d7bf97
+
+### Skip tracking stationary state of non client view window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53178ae
+
+### [file manager] Transfer dialog tests: check labels and button names
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52d7e66c
+
+### [file manager] Check innerText in installLinuxPackageDialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cdd9400
+
+### Files TS: Add support to @override in the conversion script
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/180c9a4
+
+### FlexLayout uses GetPreferredSize(const SizeBounds& available_size) instead of GetPreferredSize().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70ffe8a
+
+### [responsive toolbar] Enable feature on fieldtrial_testing_config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09975f6
+
+### [responsive toolbar] support profile button to overflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21f4a2b
+
+### Dismiss customize chrome IPH only when navigation happens from active tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9afb4bd
+
+### Add bottom margin to checkbox for the missing device lock dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff4ccd0
+
+### customization: Update screenshot action to partial screenshot
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2696e73
+
+### [Gardener] Revert "[SidePanel] Hide pin button for incognito and guest mode"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dd8638
+
+### Prepare for QsRevamp remaining clean up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e46b5b8
+
+### Re-use RecyclerViewSelectionController with OmniboxSuggestionsDropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71393cdc
+
+### Apply renames causing git to misdetect file rename.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b7a1bdc
+
+### Extract Selection manager from BaseCarouselSuggestion component.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f06b56
+
+### kiosk: add browsertest for task manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53ca964
+
+### [SidePanel] Hide pin button for incognito and guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc8ab4c
+
+### Tasks-API: Move client interface and type definitions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc96b7d
+
+### customization: Finalize UI for key combination dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1702abd
+
+### Show modal when Reserve() returns a confirmed address.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0b4606
+
+### Send CSBRR on BYPASS_DEEP_SCAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b3b1ff
+
+### customization: Utilize shortuct_input element in key combination dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4aa7d74
+
+### [Tracking Protection] Add unit tests to cookie_controls_bubble_view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f54afe5
+
+### Defer showing Android modal until the plus address is fetched.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1dbda4b
+
+### Create HttpErrorTabHelper to track 3PC Breakage Indicator UKM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8b872a
+
+### [Security Page] HaTS integration to potentially trigger a survey after a delay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fff28e
+
+### Extensions: WFH: Require an extension and decision on extension feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8323287
+
+### Revert "Remove uses of implicit conversion of ScopedTypeRef in /chrome"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0ae6e8
+
+### Revert "[Passwords] Disable share button according to policy"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a10a5be
+
+### Remove uses of implicit conversion of ScopedTypeRef in /chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82fec35
+
+### [waffle]Stop using favicon loader to load search engine icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/590d7f8
+
+### [views-metrics] Add Tabstrip failure reason.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76244166
+
+### Remove content description for expiration date fields in local save card.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65bad84
+
+### [SidePanelPinning] Make unpinned active actions appear ephemerally in the toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0748fc2
+
+### [SHv2] Add notification trigger logic for SB
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d44d841
+
+### WebUI: Remove circular dependency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68b8e0a
+
+### privacy-hub: Disable search features in guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3fe2ca
+
+### Remove un/selection callbacks from the cell class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbd74b6
+
+### [DiceWebSigninIntercept] Cleanup Guest option
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3f3c75
+
+### Use BrowserView as Compose dialog anchor view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e290f8d
+
+### Tab Organization: Add sync states
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36e0dad
+
+### [E2E] Add logging for manual tracking of usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22b848c
+
+### [ChromeSigninIntercept] Update bubble UI params on extended info updated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/945bd37f
+
+### [PEPC] Chrome is missing system level permission view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc0d113
+
+### Revert "Change over to using BoringSSL in place of net/der and net/cert/pki"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4763ed3e
+
+### Show bubble when password was updated via Credential Manager API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5690797
+
+### Removing reauth_purpose.h from the codebase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c43ecd
+
+### [Omnibox] Inset divider clip rect by view margins
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a790ec
+
+### [Omnibox] Don't round bottom edges w/ keyboard up and full height
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c397e9
+
+### Change over to using BoringSSL in place of net/der and net/cert/pki
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88963e9
+
+### [gbb-cct] Delete now unused sWAA checker files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d04c371
+
+### [mullet m2] Add magic button icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9da2eb
+
+### [Passwords] Disable share button according to policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d19f3d6
+
+### [ntp-modules] Customize modules IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e31991f
+
+### Rename GetIban() in test util into GetLocalIban()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b4be6e
+
+### Site Data: Update RHS cookies access dialog strings to on-device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d33044
+
+### [Gardener] Disable a PrerenderBookmarkBarOnHoverNavigationTest...
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a37ef96
+
+### [SHv2] Add a logic for entry point subheader creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25222d6
+
+### [PEPC] Add view that instructs to go to System Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/309615ba
+
+### support-tool: Remove feature flag that guards copy token button
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6c20ef9
+
+### [QuickStart][OOBE] Polish QuickStart WiFi steps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7252c54
+
+### Notify a permission request chip if a prompt view was removed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c70b2e
+
+### [Page content setting] Expand "things to consider" strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bead2a7
+
+### [TTFPassGen] Make password label tappable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b62e5bd
+
+### customization: Announce state changes to connected graphics tablets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60a5b00b
+
+### [waffle]Record whether the choice was made in the dialog or fre
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dee402ad
+
+### Revert "Remove SearchEngineLogo generation logic; rely on modern mechanisms."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bec9d64
+
+### Allow editing submitted input for Compose
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/571c7f49
+
+### Revert "[omnibox] Clean up \`AutocompleteProvider::Type\` enum."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13fcd6d
+
+### Add a chrome:flags feature flag for FillMultiLine
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e2f74e
+
+### Removed CalendarJelly flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2bfb6764
+
+### Add parameter controlling placement of QueryTiles.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1da8dd8
+
+### [Parcel tracking] Add flag for fake data
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7953439
+
+### Add Flag for CrOSLateBootVmMemoryManagementService
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5210c31
+
+`);
+              </script>
+            </body>
+        </html>
