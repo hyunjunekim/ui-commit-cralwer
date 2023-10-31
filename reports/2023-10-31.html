@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-10-31
+### Add a cros.sys.system-warning-inverse token
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/caa74b1
+
+### [Files,TS]: Converts directory_contents_unitest to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1086f8
+
+### Set icon and display source for Chrome grouped ARC notification parent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85e152b
+
+### [Ozone Wayland] Accept both HTMLUtf8 and HTMLUtf as the HTML MIME type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5c0192
+
+### Add non-CR2023 colors for cr-loading-gradient
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/910845c
+
+### [PageColors] Add page colors theme options to the forced colors key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b2e8ea
+
+### [Code Health] Remove expired histogram InputMethod.MouseWheel.ScrollCharacters
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae0d011
+
+### [Android] Remove tests that enforce Android Nougat
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa5453c
+
+### Delete TempPalette in ui/color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6b0cb9
+
+### ozone: demo: Fix crash in skia_demo with Intel GPU on Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc3d2ecb0
+
+### WebUI: Stop accepting a \`host\` parameter from test loader URLs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/803408f
+
+### Make kIdleThicknessScale have a single definition.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32b010a
+
+### webdialogs: expose more lifetime hooks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11f2073
+
+### [Code Health] Remove expired histogram InputMethod.MouseWheel.ScrollLines
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c42c6c6
+
+### Paint horizontal separators properly on Win 11 with fractional DSFs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db77ccc
+
+### WebUI: Rename util_ts.ts to util.ts, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea3ab26
+
+### [TLDD] Use instanceId to differentiate dragsource. Moved shared states to static class and made TabDragSource non-static.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bf60e0
+
+### WebUI Mojo Bindings: Use TypeScript for url.mojom-webui on non-Ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83cb0460
+
+### Wait for "keypress" instead of "keyup" in PermissionBubbleInteractiveUITest.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b18d2b0
+
+### views: Mark CalculatePreferredSize() of views::Label as final
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf2f84a
+
+### [FilesTS] Convert util.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5f69d9
+
+### Files TS: Convert table_list.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3701a41
+
+### ui: Fix no scroll up when dragging an item in menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11a53dd
+
+### [CloudOpenMetrics] Eagerly dump state for inconsistency found in flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0903b9
+
+### Properly mark new installs with promise apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f544bee
+
+### Record tab dragging engagement metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/570619c
+
+### Add a timing histogram for chrome://theme/colors.css
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51b6074
+
+### [3PCD] Add divider above cookie dialog button not below 3PC container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb068234
+
+### [dPWA] Launch app directly if link capturing on with single app no overlaps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b561221
+
+### Update languages in the Live Translate dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aced02f
+
+### Remove third_party/xdg_shared_mime_type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac1c45a
+
+### assistant: Remove LibAssistantV2 flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d2a4ff88
+
+### Add metrics for Missing Device Lock dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e82b982b
+
+### iwa: Add InstallabilityChecker to IWA installer UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa54e00
+
+### [ntp] Review comments / cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3ce1124
+
+### Split wallpaper search from customize chrome handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8001fcb
+
+### Print Preview: Migrate trusted UI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9d58037
+
+### Revert "Printing: Listen for status updates in Printer settings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51bff91
+
+### Printing: Listen for status updates in Printer settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/152d3f8e
+
+### [dPWA] Move desktop intent picker behavior under desktop PWA flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/534653a
+
+### Move ProfileMigrationCompletedForUser related functions from c/b
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ac559d
+
+### [waffle]Record when the user clicks on the learn more link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9e4e31
+
+### [SurfacePolish] Tweak lateral padding and fix gap discrepancy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c581f861
+
+### Tracking Protections: Finalize strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c59ffd8
+
+### [SHv2] Update omnibox pedal strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef1b0ab
+
+### Add text entrypoints for reporting fishfood bugs from Compose dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15a0e320
+
+### WebUI: Extend webui PLATFORM_OWNERS ownership to config registries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4a5050
+
+### Reuse RecyclerViewSelectionController with ActionChips.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84b2c857
+
+### [Passwords] Clear previewed form on mouse exit in edit password row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a239d84
+
+### Make CheckWindowCreated failure fatal.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c3dde9b
+
+### [responsive toolbar] update new icons for overflow toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aab72a2
+
+### [waffle]Record the search engine that was chosen in the choice screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96105c3
+
+### [SHv2] Update Safety Hub Chromenu icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/151c859
+
+### Enable chrome://policy/test on iOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b206dca4
+
+### Hook up app-menu entrypoint to performance side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e829572
+
+### [Reland] Remove SearchEngineLogo generation logic; rely on modern mechanisms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d466831
+
+### Fix ProfileSeparationDataMigrationSettings opt-out data option ignored
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55f43d4a
+
+### Reland "[Passwords] Disable share button according to policy"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8146853
+
+### Android: Roll Guava library 31.1->32.1.3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ab7e27
+
+### Add protos to be used for model quality logging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/248cf79
+
+### clang-format browser_navigator.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aea3b82
+
+### Fix crash when ProfileSeparationDomainExceptionList is set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac7e036
+
+### Privacy Guide: update search suggestions strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bc9605
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2404db66
+
+### [Autofill Desktop] Edit dialog uses SetInfo for NAME_FULL types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0750a62
+
+### Verify a permission requests list is not empty before resolving it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10e9fb6
+
+### kiosk: Refactor KioskAppManagerBase::GetApps to return a vector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78bd22137
+
+### [PEPC] Save setting without finalizing request and allow switching screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d8e293
+
+### [waffle]Add histograms to record the choice location
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41584e1
+
+### [SHv2] Run PasswordStatusCheckService on browser startup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e831131
+
+### [3PCD] Show permanent exception text for settings-enforced exceptions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f737866
+
+### [waffle]Add tests for Search Engine Choice with Privacy Sandbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abadf458d
+
+### [mullet m3] Rename Mullet M1 suggestion trigger source.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cbdda6
+
+### [CloudOpenMetrics] Keep the cloud provider up to date
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2e99c1
+
+### [gardener] Disable flaky WebAppLinkCapturing browsertest on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37ba04e
+
+### Link Capturing: Enable app-to-app capturing for target="_self" on CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5dcf4a
+
+### [gardener] disable a flaky mac NativeAppWindowCocoa browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d0f1301
+
+### [CloudOpenMetrics] Disable CloudOpenMetrics for multiple files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75faa09
+
+### [gardener] Disable flaky extension UI test  on win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25fc690
+
+### [gardener] Disable flaky Notification UI test on Linux Msan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cc6778
+
+### ash: implement fast ink software cursor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5fac4cb
+
+### [omnibox][calc] Enable by default.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/593a7e4
+
+### [Passwords] Create flag for new prediction field study
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a6b126e
+
+### [Read Aloud] Add feature flag for Read Aloud to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7320deb
+
+### Define supervised user extensions permissions feature for Desktop platforms only.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e68c8c
+
+`);
+              </script>
+            </body>
+        </html>
