@@ -1,0 +1,380 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-01
+### [Files F2] Move volume nesting logic to volumes duck
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fc1b6d
+
+### add new attribute to cr-checkbox for label of backup-restore checkbox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdc9c74b
+
+### [Files F2] Enable FolderShortcuts tests for the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2a461d
+
+### Files TS: Convert file_table_list.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb7b5bc
+
+### [App Details] Metrics for play store link being clicked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fba932a
+
+### Files app: Fix List.getSelectedItems() to filter out undefined
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59f2e4e
+
+### [Files app] Remove FilesDriveShortcuts flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5df3996
+
+### Reland "Send a11y announcement for silent notifications"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8134430
+
+### gfx: add PNGCodec.DecodeGamma test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ce1aa6
+
+### Add some missing check_op.h includes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb2722b
+
+### Respect Widget::GetMaximumSize() for Widget::SetBounds() on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7632e10
+
+### Update glanceables tasks integration to use const \`ui::ListModel\`s
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0acba7f
+
+### Remove call to DirectWrite.Fonts.Gfx.Initializetime histogram
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d5b100
+
+### Add metadata to view classes.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb99dc64
+
+### CrOS Settings: Add border radius to collapsible menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfb52f4
+
+### [X11] Move utils into x11::Connection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f3647e
+
+### Move GetLocalizedHtml() from security_interstitials/ to ui/base/webui/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03b41903
+
+### display: Preserve zoom factor when changing display mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a0aa13
+
+### kiosk: Create a new enterprise extension API to set Kiosk input methods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50a6e62
+
+### [accessibility] Unfriend AtkUtilAuraLinuxTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/239109a
+
+### TableView: FocusRings Size Not Updating with Column Width Changed.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5db1d543
+
+### FillLayout uses GetPreferredSize(const SizeBounds& available_size) instead of GetPreferredSize()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/33dc5c3
+
+### [Files] Check volume validity in the removeVolumeRecuder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36237e5
+
+### [FilesTS] Convert CircularProgress to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7dd5c05
+
+### Revert "[SHv2] Run PasswordStatusCheckService on browser startup"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7943294
+
+### crosapi: Remove obsolete browser init params
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8225ac0c
+
+### [omnibox][actions] Add support for starter pack 'instant' keyword mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7939ae3
+
+### Parse task's PATCH response and update the item stored in cache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc9536d8
+
+### [Office upload] Remove unnecessary cloud provider change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5d8905
+
+### [CloudOpenMetrics] Log the companion metric inside Metric class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09bd46e
+
+### [CloudOpenMetrics] Print Chrome error logs in one line
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdd9b64c
+
+### Fix All/DesksClientTest.SystemUILaunchSnappedWindow/* timeout on chromeos bots
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e52bd1b3
+
+### Printing: Register CupsPrintersHandler as a LocalPrintersObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6245e1d
+
+### [Office upload] Update the description for the cloud provider metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85f759b8
+
+### Remove UnifiedMessageCenterBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/971fd4d
+
+### WebUI: Merge all non-Ash untrusted config map additions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c55c7b
+
+### [CloudOpenMetrics] Expect metrics from another provider are not logged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45e64c2
+
+### [CloudOpenMetrics] Keep track of both Drive/OneDrive metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00b1f26
+
+### Forward declare PerUserStateManagerChromeOS instead of added dependency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b75eeed
+
+### Deps: Split out image_fetcher out of the browser target
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/716cf2a
+
+### Update the design of the Secure DNS setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68721e5
+
+### tote tour: Add method for observing holding space tray bubble open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51d785bf
+
+### [SHv2] Hide Safety Hub entry points in guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36ae2d2
+
+### display: Observe display configuration change in UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca90634
+
+### Fix \`ProgressIndicatorAnimation::IsAnimating()\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a89576
+
+### Revert "CrOS Settings: Add Internet menu item description"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0888048
+
+### WebUI: Migrate more UIs to WebUIConfig, update documentation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26b32f4
+
+### Update SpacingRecyclerViewItemDecoration to be configurable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fda73e9
+
+### [SidePanelPinning] Add toolbar divider between pinned and popped out buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c907f0b
+
+### [DownloadBubble] Remove unnecessary OnThemeChanged overload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69b61292
+
+### Respect Jelly theme in Security curtain
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/714b6f0
+
+### [User Education] Some restructuring in components/user_education
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3bc456
+
+### [SHv2] Update Safe browsing URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2faa3ef
+
+### update tile color to use side panel mixer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7de430a4
+
+### Remove mentions of authentication extension
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/347bc3c1
+
+### [Nearby Share] Use internal resources in WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f0e356
+
+### Show different update strings in the Chrome 3-dot menu button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77e39bb
+
+### [SHv2] Add extensions result to Chromenu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89411d3
+
+### overview: Remove non-jelly code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a56b14ff
+
+### Disable horizontal carousel fading edge on tablets.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30bcbcb
+
+### Enable MV Tile dynamic spacing on Tablets where Revamp is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4add5c
+
+### 🧇 Revamp the choice screen condition checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50d9dcd
+
+### Remove uses of implicit conversion of ScopedTypeRef in /chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da9ff66b
+
+### Add DIR_METADATA for Print Preview C++ source
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/209278b
+
+### frame: Notify FullscreenStateChanged asynchronously on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06a0ae4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f92e668
+
+### [ntp-xdtr] Added handler and mojom for converting tab query to mojom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c56b7d7
+
+### [SHv2] Add extension module result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c8101d
+
+### [gbb-cct] Fix bug with privacy card colour; UI tweaks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58ae788
+
+### [ntp-history] Header done action button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/565bfe7
+
+### Reland "[3PCD] Add divider above cookie dialog button not below 3PC container"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b73dfa
+
+### [PG][Android]Update Search Suggestion strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfb71a0
+
+### Make PermissionPrompt::Delegate& const in PermissionPromptChipModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7537d6
+
+### Simplify GetManagedAccountsSigninRestriction params
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85a00f5
+
+### [Multi Apps] Fix the check for IsolatedContext
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/139f6a0a
+
+### Disable Search Engine choice tests whenever the flag is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a35b33
+
+### Fix the confirmation chip's animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d43cc12
+
+### [AutofillDataModel] Avoid AutofillProfile default initialization.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cd9e4e
+
+### [AutofillDataModel] Avoid default initialization of AutofillProfile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/719cc09
+
+### 🧇 Ensure we skip the FRE choice screen to show sync settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0c473a
+
+### [AWC] Make display-state CSS work on all platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c740f96
+
+### Use warning when background.scripts is specified in MV3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da4d041
+
+### Revert "[3PCD] Add divider above cookie dialog button not below 3PC container"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cb690f
+
+### [waffle]Remove build flag check for strings in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4374887
+
+### Remove MessageCenterUiDelegate code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/baf5b8e
+
+### [Per-App Language] Add Chrome flag for ARC Per-App Language feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c4e6987
+
+### Move all PCA flags that continue to be experimented with to M130
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce89c25
+
+### snap-group: Add a Chrome flag for \`kSnapGroup\`
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6717dcd
+
+### [Tab Cleanup] Update CloseTabSuggestions flag for the current feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a152a3af
+
+### Fenced frames: Relax the enrollment requirement for post-impression
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3efe70d
+
+### [Tab Switcher] Cleanup landscape thumbnail aspect ratio flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/24ccc7e5b
+
+`);
+              </script>
+            </body>
+        </html>
