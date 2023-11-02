@@ -1,0 +1,244 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-02
+### [FilesTS] Add HTMLElementTagNameMap for CircularProgress
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/184bba0
+
+### Files app: Delete mock_background.js as it is unused
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d88023
+
+### Use chevron instead of arrow for submenus in Cr2023.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6385f20
+
+### Allow non-textfield views to create text positions.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ade0367
+
+### Fix GetDecoratedTextForRange when obscured
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06def50
+
+### [CrOS Cellular] Add finalized <apn-detail-dialog> error strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3325854
+
+### [Read Anything] Introduce a new experiment showing an icon in the omnibox.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0831a46
+
+### [views-metrics] Use the auto generated variant allow list in BDDV
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b38f4bd
+
+### content/cc: Safely drop stale callbacks with RenderDocument + CC reuse
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b51eba
+
+### Run clang-format on display_manager.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68c8fce
+
+### Replace deprecated SkFontID with SkTypefaceID
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3e9e5c
+
+### ui-controls: Add server implementation for display protocol
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4858233
+
+### webdialogs: remove OnDialogClosingFromKeyEvent()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8495c38
+
+### Add View metadata to templated classes. Some Macro work.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/062c240
+
+### Prepare for separating owning and non-owning net:IOBuffers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12abc68
+
+### Remove implicit dependencies on Skia's default font/typeface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2416602
+
+### Add an owner of _headless.* files in //ui/views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f68d8c1
+
+### [guest_view] Bind the components interfaces to a RenderFrame
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b9ebd9c
+
+### [iOS Blink] Fix PNGCodec.DecodeGamma unit test failure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e2447f8
+
+### [modelutil] Merge ListModelBaseTest to SimpleListObservableTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b27b763
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4546268
+
+### Delete unused GetAutocorrectCharacterBounds.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1303803
+
+### Files app: Extend the Office integration nudge expiry
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9705100
+
+### Open web app install dialog in native window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a78d459
+
+### Update chrome://downloads UX for local decryption
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3952953
+
+### Pipe shortcut app badge to shelf model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3d4a4c
+
+### UX for local inspection of encrypted archives
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/656d6681
+
+### Remove non-jelly test for saved desk tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10de5ef
+
+### [a11y] Updated chip descriptions in download home
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf38017
+
+### [TabOrganization] use mojo version of u16string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a82a0a3
+
+### [live_preview] Live media (Camera/Mic) preview, Base CL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22bc8dc
+
+### Introduce DynamicSpacingRecyclerViewItemDecoration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98ea6110
+
+### [tab search] Report time-to-show metrics using the bubble compositor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a16b824
+
+### Reland "Printing: Listen for status updates in Printer settings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f63c9eb
+
+### [DTC] Replace Y_OFFSET for TopToolbarOverlayCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0eef37
+
+### [omnibox][cr23] Fix action chip color for high-contrast / themed clients
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ae262e
+
+### Rename Compose mojo interfaces to match Session and Client binding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cebbe6c0
+
+### Rename RegionSearchWithLens() to SearchWithLens()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b894e5
+
+### desk_profiles: Expose desk profiles delegate in ash::Shell
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08d7fc8
+
+### Add Android plus_address bottom sheet mediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb426a3
+
+### wifi: Stop creating hidden networks during OOBE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b11282a
+
+### Centralize initialization of Profile at the Activity level.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7786743
+
+### Make Lens + companion one side panel entry when Lens is contextual.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/066e592
+
+### Hats UI: Resolve circular dependency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f281b79
+
+### [responsive toolbar] Grey out menu items for unusable overflowed buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb08159
+
+### Add DeviceLockDialogAction metric to track user action on the device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7fc3bd
+
+### Fix failing PolicyTestUITest browser_tests on branded builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36662c8
+
+### Disable flaky PaymentRequestNoShippingTest.InactiveBrowserWindow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5beb4f20
+
+### [gbb-cct] Don't wait for controls to be off-screen if a11y enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6cf486
+
+### [Shortstand] Move kCrosShortstand flag to chromeos features
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dc88a2a
+
+### Google Drive Settings page observes the drivefs.bulk_pinning.visible pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efc7c6d9
+
+### [ntp-xdtr] Added handler and mojom for converting tab query to mojom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c56b7d72
+
+### [omnibox][shortcut] Update flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0d6e1b4
+
+### firmware_update: Add flag for Firmware Updates app v2
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5c4a18f
+
+### browser: Expose DefaultANGLEVulkan on Vulkan platforms
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/de9f729
+
+### customization: Create enable input device settings logging ff
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0a14c0c
+
+### Add flag for disabling Steam client scaling.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6776d649
+
+`);
+              </script>
+            </body>
+        </html>
