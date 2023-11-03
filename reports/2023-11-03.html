@@ -1,0 +1,404 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-03
+### Files app: Fix the conversion script to account for inexsistent BUILD file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7038f90
+
+### Files TS: Convert table_header.js and table.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af2bfdd
+
+### Convert xf_button element to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85a83b42
+
+### Enable -Wexit-time-destructors for ui/display production code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ddd9ee
+
+### inputs: Delete unused chrome.inputMethodPrivate.GetTextfieldBounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3e2a13
+
+### Remove enabled-by-default Lacros input related flags.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c3d6b5
+
+### TS-ify exif_constants
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9d5374
+
+### Files App: Reacts to bulk-pinning becoming [un]available
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55ff0a5
+
+### TS-ify file_system_metadata_provider and test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6cc3e3c
+
+### Files app: Convert mock_progress_center to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02b8862
+
+### Files TS: Isolate Image Loader Closure compilation from Files app
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2d7f08
+
+### [MirrorSync] Clean up Inline Sync Status flag
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/10e6b34
+
+### Dictation: Enable keyboard improvements feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/afec7f60
+
+### Files app: Remove unused build targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35211d9
+
+### Add callback to ViewTracker to run when view is deleted.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4628a8a
+
+### cros: Revert back to runtime vlog with a tweak
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28d809d
+
+### gpu: win: Add switch to allow overlay promotion of unlimited video quads
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c597b4
+
+### gpu: win: Enable DCompVisualTreeOptimization by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4df30cc
+
+### [AssistData] Add histograms to track when max timeout or nodes is exceeded
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5a7cd01
+
+### Change \`Clipboard::GetSource\` to return a copied \`DataTransferEndpoint\`
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c95ca12
+
+### [A11y] Quiet down AccessibilityFatalError
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec47f2e
+
+### Remove cell's a11y delegate.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c79c0098
+
+### [GM3] Add gm3 icons to realbox
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fde81b
+
+### wayland: skip pointer events when there is a dnd session in progress
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0a1b46
+
+### [GM3] Update expanded state icons in realbox.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f80dc7a
+
+### gbm: nvidia: use separate bo to verify modifiers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bdcc23e
+
+### [headless] Handle Show() with min/max/fullscreen on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2b8852c
+
+### A11y serialization size metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/405a08d
+
+### Stop injecting jstemplate_compiled.js from C++ in network errors UIs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85c1a15
+
+### Revert "[FilesTS] Convert files_toast_unittest"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d1c3727
+
+### [Files,F2]: Convert files_app_state and to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84bb400
+
+### Files TS: Convert table_column.js and table_column_model.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d92c95a
+
+### [FilesTS] Remove icons.js and use icons.html.js directly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8db737b
+
+### Files App: Ensure banners get sync'ed with bulk-pinning visibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e508071
+
+### Convert metadata_item to ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c02a3bfd
+
+### Files TS: Convert file_table_list_unittest.ts to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4689b4a
+
+### [FilesTS] Convert FilesSpinner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea1bb02
+
+### TS-ify metadata_provider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/869f3c8
+
+### [FilesTS] Convert files_toast_unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1ed7be0e
+
+### Files app: Convert mock_crostini to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab584c8
+
+### Make the Reading mode side panel a local side panel instead of a global one.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d642dde
+
+### Check reauth status before attempting upload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70b1a72
+
+### [Chime] Create UI files for chime Debugging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6b13dd
+
+### CrOS Settings: Add Apps menu item description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e861353
+
+### Remove asset_id and url from OnlineWallpaperParams.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7410486
+
+### Move Mock(Accessibility)SelectionDelegates into separate files to reuse.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7b3ab8
+
+### [Tab Organization] Next trigger policy iteration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31f86dfd
+
+### [DefaultOffline]: Removed obsolete feature flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9db9634
+
+### Remove row strategy from row constructor, provide content view instead.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1082381c
+
+### Settings: Add strings for experimental features section.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d256df79
+
+### [responsive toolbar] support new tab button to overflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71cdad50
+
+### [CrOS Hotspot] Replace correct chromebook hotspot HC link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e42a72c
+
+### [gbb-cct] Allow specification of different heights in experiment.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/429bddda
+
+### Mark performance round 2 as enabled by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5c39ab
+
+### Updating the bookmarks side panel icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f05660b
+
+### Settings: update gpay link based on sandbox and prod flags.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7697a9b
+
+### [FedCM] Add a idp_login_url parameter to OnSigninToIdP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca635a4
+
+### [TabOrganization] Add TabData::Observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3539e0c
+
+### Add metric to measure time to get images for autofill pop-ups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91a7537e
+
+### Add v2 file extension for projector metadata
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b94b48fd
+
+### Improve caption button appearance on Windows 11
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aeff0b7
+
+### [Extensions] Enum modernisation for passwords_private.idl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/028beded
+
+### [QsRevamp Clean Up] Sliders, volume, brightness, etc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecebdee2
+
+### Add proper accessibility descriptions to MV and Query Tiles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5af0094
+
+### Port AddCustomAcceleratorAndReset tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88b78376
+
+### Add uma for opening performance settings via 3-dot menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/572a8e4
+
+### Add generic error state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a26b7af
+
+### PrivacyIndicators: Remove disable state and clean up parameterized tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89a22db
+
+### Don't focus background tabs that are reloading after crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f14661
+
+### Only ignore search URLs with "/search" paths.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f90e28
+
+### [Kartoffel][Clank] Clean-up old privacy sandbox consent and notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58d9641
+
+### [TabOrganization] add mojo conversions to tab_search_page_handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edbf97dd
+
+### [mullet m2] New popup styles are applied for granular filling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80f9a79f
+
+### Move sub-suggestions expanding control from strategy to row class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c0759c
+
+### Disable IconCollapseAfterBubbleWidgetIsClosed on Linux MSan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8f01d4
+
+### Remove "ConfirmationChip" flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/34eb9019
+
+### Remove dead supervised user code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35d8005
+
+### HaTS: Add fjacky to owners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/687eef0
+
+### Refactor LegalMessageView in payments_view_util
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/883a44bd
+
+### [autopip] Ensure that the autopip setting widget closes when pip hides
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96bc3f7e
+
+### HaTS: Use new WebUI in HatsNextWebDialog and pass params via mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/568ea8e
+
+### [signin] Add pixel tests for signed in profile menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae8179b
+
+### privacy-hub: Create custom element to display apps in subpages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c615eee
+
+### AppService: Use Name() instead of ShortName() by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63aff2fb
+
+### Change string wording from Remove to Delete
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98bf6a9
+
+### LinkPreview: Add basic open-in-new-tab sequence
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7904d34
+
+### [omnibox][ml] Adds flag to pretend all suggestions are defaultable
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a84e489
+
+### Clean up expired (and unused) autofill-enable-virtual-card-fido-enrollment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5d7cb27
+
+### Add feature flag for the new prompts to restart Chrome
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d2c0ef2
+
+### Add chrome://flags entry for enabling VideoToolbox AV1 support.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b20f54e
+
+### follow: remove #upcoming-follow-features
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8e9fb22a
+
+### [omnibox][ml] Fix missing shortcut signals for docs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9dbc9ac
+
+### [Thumbnail Cache] Cleanup refactor flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee6f468
+
+### Calling getAllLoginsWithBrandingInfo
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a78ae4f
+
+### [LongClick] Add feature flag to being accessibility long click experiments
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/deba2f8
+
+### Fenced frames: Add another M120 feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/005b63b
+
+### Remove expired Android Context Menu String flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ff48e19a
+
+`);
+              </script>
+            </body>
+        </html>
