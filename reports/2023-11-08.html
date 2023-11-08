@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-08
+### Fix |driver_supports_vp_auto_hdr_| in SwapChainPresenter.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/465a18b
+
+### Remove remaining base/strings/string_piece_forward.h usage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5f765d5
+
+### WebUI: Remove obsolete chrome://test URL from CSP headers.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4ae5c9
+
+### WebUI Mojo Bindings: Remove unnecessary use_typescript_sources = true
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2a51c7
+
+### cr-elements: Update cr-toggle to match CrOS styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bbba36
+
+### Initialize CoderErrorMgr when decoding JPEGs.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c90d3d
+
+### Refactor Renderer ColorProvider instances to exist in blink::Page
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26b9199
+
+### WebUI: Rename util_ts.ts to util.ts, part 5 (last).
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03eb0b9
+
+### Reland "[headless] Add full screen state handling on Windows"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/144039c6
+
+### aura: implement DesktopNativeWidgetAura reparenting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c19f65a
+
+### [gfx 3/5] Implement truncate text eliding during layout phase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82c1f29e
+
+### [views] Add metadata to view classes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4720989b
+
+### [Gardener] Disable ActionViewControllerTest.TriggerAction on Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8dc29f
+
+### Fix ui_base_unittests under UBSan
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2cd288c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42caa42
+
+### [Files F2] Fix the flaky tests related to the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf879567
+
+### Include exo child surface layers in layer debug listing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f1505cec
+
+### Support Registering and Updating Gpu Fence with Dxgi Token on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f97ebd
+
+### gardener: disable ActionViewControllerTest.TriggerAction on Win&Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5f1ede
+
+### Files TS: Try to avoid conflict on file_names.gni
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ca56da
+
+### Fully distribute remaining height in TableLayout.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b967d88
+
+### Make chrome://net-export available in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59ed434
+
+### Add HTTPS-First-Mode-in-Incognito flag and pref
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e4d44b4
+
+### Plumb insetRect from IPHCommandBuilder to IPHCommand.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64460f9
+
+### [FastCheckout] Remove fast checkout flag from TOT.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/241a971
+
+### [ChromeLabs] Add ChromeWebuiRefresh experiment
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/004ecc3c
+
+### iwa: Add installation screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/678ba834
+
+### Add Kombucha test for wallpaper search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf08786
+
+### Rename NavigationObserver to NavigationExtensionEnabler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75e2eec
+
+### iwa: Add ShowMetadata installation screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07d866a8
+
+### [3PCD] Update settings_interactive_uitest for 3PCD
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4fa332
+
+### Tab Organization: Add feedback UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d019b026
+
+### [omnibox][actions] Apply keyword mode refresh text labels and icon logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/235f30b
+
+### Log wallpaper search session ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/050eee56
+
+### Update WebAppLinkCapturingBrowserTest.HandleClickFromSandboxedIframe for OOPSIF.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78fd7bc
+
+### [TabOrganization] Hook up TabSearchUI to TabOrganizationService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c027f31
+
+### [TLDD][Refactor] Setting drag listener via toolbar manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0a6cf7f
+
+### [QsRevamp Clean Up] remove the use of UnifiedSystemTrayView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2480e206
+
+### Prevent crash for unregistered IPH when SidePanelPinning is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e605e6
+
+### [ SidePanelPinning ] Add context menu entry point for Extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/906546c
+
+### [omnibox][ml][chrome://omnibox] Fix bugs & expand chart range
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b2a8da
+
+### [PEPC] Fix strings bugs and replace a string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fc89eb7
+
+### WebUI: Migrate ReadAnything test to WebUIMochaBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6243454
+
+### WebUI: Remove obsolete TestDataSource class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16aa6b9
+
+### [SHv2] Add extensions module logic to the entry point handlers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9506f8669
+
+### Fix flaky performance discard policy test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a303eb1
+
+### Adding virtual to public methods of FirstRunService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbe3d4b
+
+### Remove base/strings/string_piece_forward.h usage in //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52c3208
+
+### [SFL] Add histogram for price tracking icon interactions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80d2bcb
+
+### Purge routing IDs from blink.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/982c053
+
+### [SidePanelPinning] Add a new toggle API to control the action callback for sidepanels.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/746a2fc
+
+### Printing: Enable Local Printer Observing by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/772bdec
+
+### [SidePanelPinning] Fix header layout while feature enabled for pre ChromeRefresh2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/074d3f7
+
+### gif_recording: Add a browser test that verifies encoding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab5b3d7
+
+### [Extensions c2s] Remove corner_radius optional value in hover card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb8af09
+
+### Refactor holding space browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bb366db
+
+### [Read Anything] Hide icon when reading mode is opened.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7510c7
+
+### [ChromeSigninIntercept] Record metrics and user actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1143f0
+
+### Integrate Polymer in chrome://dlp-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc7dc0e
+
+### Add API to expose DLP Reporting events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47b8496
+
+### Move and rename SUS::IsSubjectToParentalControls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4eb1e1d
+
+### [QuickStart] Remove 'debug' WiFi step
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76ace5b
+
+### Use Suggestion::Icon enum in android Java code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c14602d
+
+### Change the constructor of autofill::Suggestion to accept icon as an enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5038201
+
+### Replaced Suggestion::icon's type from std::string to Icon enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8915e4ab
+
+### Reland 1: Theming for NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45a1521
+
+### Add a flag to refresh feeds when chrome restarts
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c90d3b7
+
+### Add chrome flag: safe-browsing-new-gms-core-api-for-browse-url-database-check
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c1418e3
+
+### snap-group: Remove arm2, kebab button, expanded menu
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/be000bd
+
+### [Autofill] New VCN enroll loading and confirmation flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9b983ab
+
+### [Autofill] New Save Card Confirmation Feature Flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7eda62e
+
+`);
+              </script>
+            </body>
+        </html>
