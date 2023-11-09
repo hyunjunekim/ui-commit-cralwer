@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-09
+### [Files F2] Enable TabIndex tests for the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e8bdab
+
+### [Files] Fix the "unsupported media view root type" error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c048f718
+
+### Files TS: Better event type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74c9534
+
+### CrOS cr-elements: Only show focus ring when focus outline is visible
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2089b3
+
+### [reland] lacros/client: Fix issue with hidden caption buttons for snap+overview
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d7d36d
+
+### Replace base::WStringPiece usage with std::wstring_view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69278837
+
+### Add metadata to Views classes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f59d2a3
+
+### CrOS cr-elements: Override focus ring color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b263cad
+
+### CrOS cr-elements: Fix cr-toggle focus ring on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c75da43
+
+### Switch browser context to RasterDecoder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b9c9e829
+
+### Use wl::EventMillisecondsToTimeTicks utility in wayland_touch.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0f78c91
+
+### Remove tapted@ from ui/views OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51a9694
+
+### Files TS: Convert list_container.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d589f33
+
+### Send SwapWithNewSize notification only in Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e91bc9
+
+### Files TS: Convert list-related files to TS (part 2)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/330f4d4
+
+### Files TS: Convert list-related files to TS (part 1)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12cd282
+
+### wayland: Notify immersive mode change before fullscreen mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c9fb2e
+
+### Add 4 new inverse colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/48142aa
+
+### Add gaming color tokens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7345a95
+
+### Enable new model store by default
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1e601cd8
+
+### Add token handling and context cancellation logic to OnDeviceModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c98a8e
+
+### Revert "[Autofill][Passwords] Split //c/b/touch_to_fill"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccfd1cf9
+
+### Sort Cast sinks alphabetically in the Chrome OS quick settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93f7a4a4
+
+### Revert "[Mac File Menu] Display and enable correct Close menu items"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26f32182
+
+### [Emoji Picker] Add metrics for GIF insertions / copies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d61a6f
+
+### CrOS: Remove incorrect call to base::FeatureList::IsEnabled().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2404b94
+
+### Update suggestions dropdown surface elevation for modern visuals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71875ce
+
+### Remove forgotten RunOnAcceptedForEvent declaration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d6001b
+
+### Remove build flags for save IBAN methods from autofill_client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55988c58
+
+### Extensions UI: Migrate registration to WebUIConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/144029c
+
+### [SFL] Correct inverted icon histogram reporting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d784e8
+
+### Fix HatsHandlerTests for chrome branded builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ffd2c9
+
+### [gbb-cct] Make the peek height ratio more accurate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93ada047
+
+### Fix some incompatibilities with std::variant from narrowing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a922686
+
+### Style descriptor comboboxes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d089b78
+
+### [User Education] BrowserFeaturePromoController factory method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a1bafd
+
+### Remove unused PopupCellView::HandleKeyPressEvent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a86f81
+
+### [Mac File Menu] Display and enable correct Close menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ed5cc9
+
+### Tab Organization: Disable feature if null service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4edd38b
+
+### Add GameWindowOpened event
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00e6e62
+
+### [TabOrganization] Stop using OptimizationGuideURL for request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a805153
+
+### [Remote Playback] Enable feature on M121 for win/mac/linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fd2e138d
+
+### Revert "[SHv2] Show menu notification for passwords"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ae4a9b
+
+### [SHv2] Show menu notification for passwords
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d80dddd
+
+### Extract setting up online password to a separate screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c946e83f
+
+### p13n: set SeaPen image as wallpaper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/747ec7f1
+
+### Fix some additional incompatibilities with std::variant from narrowing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a578832
+
+### Make PopupCellWithButtonView a row view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52564d69
+
+### Remove IncognitoCctProfileManager from LocationBarModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2df5466
+
+### Revert "Disable BrowserNonClientFrameViewChromeOSTest.TopViewInset on LaCrOS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/764b578
+
+### [live_preview] Live media (Camera/Mic) preview, Camera CL, Part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/477232c
+
+### [ChromeSigninIntercept] Record the time for the user to decline the bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0f4b75
+
+### [ImprovedDownloadWarnings] Add WebUI dialog for download warning bypass
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4974022
+
+### Refactor SU Preferences AreExtensionsPermissionsEnabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c624828
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/601b3712e0
+
+### kiosk: Make account_id non optional in KioskAppId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/459204f
+
+### [SAML] Add SamlRedirect to Gaia paths and improve tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/436def2
+
+### Refactor wait for first run service on app launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c7a318
+
+### Tracking Protection: String fixes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb9159f
+
+### [Autofill][Passwords] Split //c/b/touch_to_fill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b6c695
+
+### Rename popup_cell_utils.cc:GetIconImageViewByName
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78ca5f2
+
+### Use switch instead of ifs for Suggestion::Icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/824ee3db
+
+### privacy-hub: Make ARC++ app permissions read-only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cb2d55
+
+### Rename CreditCard::CardIconStringForAutofillSuggestion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7905cb65
+
+### kiosk: Rename the KioskAppManager to KioskChromeAppManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f2ad56
+
+### Allow CFMs to start capturing the current tab without prompting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93d9903
+
+### [PEPC] Ensure grouped permissions are prioritized as expected w/ screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74b5449
+
+### Dismissible issues / errors messages in Harmony
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e049e6
+
+### Help app: Add the HelpAppCrosComponents feature flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/142fdb2
+
+### [CrOS Hotspot] Add TetheringExperimentalFunctionality feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/94b6dcf
+
+### Show Fluent Overlay Scrollbars on chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2c7d5bb
+
+### Remove the kFillMultiLine flag since we are not using it
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e066222c2
+
+### Extend hash-prefix real-time lookups chrome flag to apply to Desktop
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3620bcd8
+
+`);
+              </script>
+            </body>
+        </html>
