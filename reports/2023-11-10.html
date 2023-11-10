@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-10
+### [Per-App Language] Saves App Package Locale Info to AppManagement mojo
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90ea43be
+
+### aura: add a kill switch for desktop widget reparenting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d8936b0
+
+### Extract DialogModel fields to a DialogModelSection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c23511f
+
+### WebUI Mojo bindings: Remove unnecessary use_typescript_sources=true
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ea95f2
+
+### Announce match numbers in find bar results in screen readers.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f84f03
+
+### Fix 1 pixel gaps in toolbar by rounding automotive scaling factor up to a multiple of 20
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e4aa91
+
+### Move DialogModel GetPassKey() to a base class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e225fef
+
+### Remove PassThroughImageTransport and GLSurfaceAdapter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8d4ce8
+
+### Revert "Remove handling of esoteric run loop modes"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/843241d
+
+### Reland "[Exo]Animation fix w.r.t RecreateLayers"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d67504c
+
+### FocusManagerEventHandler: Add a GetFocusManager() return value check to avoid browser crashes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/450b8fe
+
+### Notify Renderer of Surface Eviction and Determine Locked Memory
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f525198
+
+### Remove handling of esoteric run loop modes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adb4628a
+
+### CrOS cr-elements: Update cr-radio-button styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5160d2
+
+### Accessibility: Rename gameface and facetracking to FaceGaze
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9dd35fa
+
+### [Auto-disable Accessibility] Create method to inject AccessibilityServiceInfos for testing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1a94d53
+
+### [AssistData] Add flag for stress testing snapshotter
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/841229d
+
+### Dictation: Enable lacros C++ tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/670703b
+
+### Update AccessibilityState touch exploration flag to manual calculation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5f63e2
+
+### [chrome][android][selection] Add padding to list menu divider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f008bb3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aa506e
+
+### ozone: Virtualize GetTabletState implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8497ef8
+
+### [FilesTS] Fix up connectionType in state.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5001f8e1
+
+### login_handler: Remove self notification.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7b8ccdd
+
+### remove non http/https urls from organizing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfaa15f
+
+### HTTPS-First Mode: Count daily navigations and save them in a pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a1fc2e
+
+### Modify the shortcut implementation to align with the icon key change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/225999506
+
+### [Tab Organization] Fix getting stuck after an organization is accepted.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b9dcad33
+
+### CrOS Settings: Update languages link row URL from Browser Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73dbcf37
+
+### Revert "[SHv2] Fix dismissing notification on SH visit"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61095ebf
+
+### Rename PaymentsClient to PaymentsNetworkInterface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/570dfc3
+
+### [codehealth] remove NOTIFICATION_LOAD_STOP from find_bar_views uitest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba7ed0e
+
+### Show the same update text in all browser windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fcd150
+
+### [codehealth] replace NOTIFICATION_LOAD_STOP TabDragController tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/075456b
+
+### Do not hide the media UI after starting casting on Chrome OS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d65bb32
+
+### Revert "[Nearby Share] Use Placeholder Strings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cac765e
+
+### Add the owner of AccessibilityMainHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b318e4f
+
+### Port AddCustomAcceleratorToUnlockedAction to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e6e0ab
+
+### Rename PrerenderTriggerType to PreloadingTriggerType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f37992
+
+### [Jellybean] Add import test for cros-sidenav
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/936ada8b
+
+### Remove check for incognito for TabOrganization.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1311ac0
+
+### [Nearby Share] Use internal search concept tags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7111c73
+
+### [Downloads] Remove bad CHECK in Safe Browsing state for Downloads UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef72866
+
+### Port EditDefaultAccelerator tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3251844
+
+### Pass StripLayoutHelperManager for ToolbarManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61cd437
+
+### [Holding Space] Do not add/remove/update items without service init
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddab483
+
+### [Nearby Share] Use Placeholder Strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90645d4
+
+### Crash diagnose on chrome lacros by omnibox_popup_closer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df5d9d5
+
+### Show PlusAddress android modal then load in the plus address afterwards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80b2f37
+
+### Split ASYNC_SCANNING for local password scanning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd79115
+
+### Move the dropdown list incognito background elevation to all dimens.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb663bb
+
+### [dpwa] Enable CheckSite[Not]HandlesFile actiosn on ChromeOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f97f58
+
+### Refactoring: Separate code flows for Recovery and simple reauth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55c97be
+
+### fws: Allow floating workspace to override full restore after crashes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bef441b
+
+### [Survey] Use ChromeSwitch to force show survey for testing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fa546d
+
+### delegate: integrate carrier unlock notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57afcbc
+
+### Fix UAF in EmbeddedPermissionPrompt by using a ViewTracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b44d5d1
+
+### [PEPC] Change tab switching behavior to ensure the prompt gets hidden...
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0babfb
+
+### Add additional spacing above the password prompt in the download bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/476403d1
+
+### Forbid have multiple managed profiles with the same account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5044948
+
+### [gbb-cct] Update Privacy message.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7ca35de
+
+### geolocation: Remove Geolocation.HeaderSentOrNot
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f44aa0
+
+### IWYU for chrome/browser/ui/views/dark_mode_manager_linux.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9a7b28
+
+### Add screen for OSAuth errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3911d6e
+
+### [dPWA] Update link capturing tests for Windows/Mac/Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f4934c
+
+### [SHv2] Fix dismissing notification on SH visit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dd3036
+
+### [AWC] Block \`window.resizeTo(x,y)\` and \`window.resizeBy(x,y)\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a79bab72
+
+### [AWC] Refactor \`window.setResizable\` value to live in PageImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f1ab74
+
+### Remove support for WebRtcAllowLegacyTLSProtocols enterprise policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39d28bb
+
+### Disable PopupFullscreenTest.AboutBlankFullscreen on LaCros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/442b800
+
+### [mullet m2] DidAcceptSuggestion handles sub-popups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fb8ef3
+
+### Fix some items introduced by crrev.com/c/5014265
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cfe0906
+
+### Reland "[SHv2] Show menu notification for passwords"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/866b91c3
+
+### [Android] Use standalone string for decline sync button for translation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06acd34
+
+### Rename launch_web_app_command.cc to avoid confusion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7250ba3
+
+### Disable HatsHandlerTest.SecurityPageInteractions on Chrome OS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9a7d99
+
+### kiosk: Delete WebKioskAppLauncher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6380eb4
+
+### Add UMA tracking tab-sharing of discarded tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d2c31c2
+
+### [waffle]Refactor the default browser promo step in the FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f516438
+
+### Remove cell's "selected" state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/032305b
+
+### [DTC] Add feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4480c7e
+
+### Revert "[Gamepad] Remove WGI data fetcher feature flag"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fd386a7
+
+### [FedCM] Add a flag for "Add Account"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7d5d112
+
+### Compute pressure: Add flag for break calibration mitigation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/da5fb28c
+
+### compute pressure: Add flag to disable rate obfuscation mitigation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/abb00e0
+
+`);
+              </script>
+            </body>
+        </html>
