@@ -1,0 +1,368 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-14
+### Convert metadata_model to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4064625
+
+### [views] Add metadata to View subclasses in chrome/browser/ui.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70b4a99
+
+### Expand dead key fix beyond Terminal.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf1ba67
+
+### Allow menus to retain their effective z order level, on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc6361b
+
+### [omnibox][cr23] Fix action chip icon colors in ChromeRefresh2023.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79404c84
+
+### [FilesRefresh] Remove all JS Jelly check logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8526041
+
+### [automation] Avoid calling GetUnignoredChildCount() on invalid nodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/957b6b4
+
+### Migrate base::Is{Base,Once}Callback to use C++20 concepts.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/915d255
+
+### Avoid undefined memcpy(NULL, 0) call in DecompressIfNeeded
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55f9665
+
+### Downgrade NOTREACHED in SANITIZER_NOTREACHED
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b91702c
+
+### Downgrade NOTREACHED in gl::init::CreateGLContext
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2e84ebe
+
+### Avoid that MenuItemView::icon_view_ becomes dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d75a87d
+
+### Avoid dangling pointers in ScrollView unit test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad2d66e
+
+### [User Education] don't draw 1 dip border around help bubbles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aea9e24
+
+### Avoid dangling pointer in TreeView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/113f784
+
+### CrOS cr-elements: Update md-select styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e730e738
+
+### Avoid dangling pointer in Textfield unit test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09d16f6
+
+### Avoid dangling pointers in MenuButton test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95a8a16
+
+### Avoid dangling pointer in LabelButtonLabel test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2ab6ee
+
+### [metrics] Report create-to-presentation time metrics for menu host using the menu host compositor.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e12ec0
+
+### Don't remap lightness for oklab/oklch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/421d517
+
+### Move asully@ to secondary clipboard owner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7193d4
+
+### Update ui/base/data_transfer_policy/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88e611d
+
+### Detect ATOMs exhaustion on COM initialisation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/664dcc1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a4bb731
+
+### Launch LiveCaptionMultiLanguage on Mac/Windows/Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e9f81c
+
+### p13n: kSeaPen wallpaper type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9fd7145
+
+### [Jellybean] Fix owners of cros_components_browsertest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07aad81
+
+### [CloudOpenMetrics] Fix typo in comment about cloud upload flow exit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28bd22c
+
+### Invalidate Outline when corner rounding is changed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95aaf8b
+
+### Position bottom controls above bottomControlsMinHeight
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61b4f3b
+
+### iwa: Show error dialog on install failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9199de3
+
+### [Files]: Clean up KeyedService factory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa6d7b9
+
+### [Extensions cleanup] Use context menu source to update icon visibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad3ffc1
+
+### Grand Transformation of VoiceRecognitionUtilTest into a unittest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2025d3
+
+### tests: fix Camera test failures on branded builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca82e98
+
+### Tracking Protection: Don't animate the status icon when IPH is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e0f67c
+
+### [TabOrganization] Deduplicate tabs in TabData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1378556
+
+### Feedback UI: Add initial test setup and tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59d1f74
+
+### Reland "Enable companion panel on tip of tree."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7170f5
+
+### Remove asully@ from most Storage OWNERS files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38ce1a5b
+
+### Isolate which of these test cases is failing by splitting them up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/976c1a3
+
+### [DanglingPointer] Remove dangling pointer in device_chooser_extension_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46ef45db
+
+### About UI: Move to dedicated folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d34db1
+
+### Relocate the Finch feature flag from permission/ to content/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a03e68f
+
+### Revert "Move kPermissionElement feature to content from components"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eb58db2
+
+### CrOS Settings: Add Internet menu item description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d02b7eb
+
+### Move kPermissionElement feature to content from components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d48cd2b
+
+### [TabOrganization] Fix crashes when destructing tabsearchUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a519ea5
+
+### change cookie_controls browser tests to use MockCertVerifier
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3be8a8
+
+### Disable 3PCD in CookieControlsInteractiveUiNoFeedbackTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff0b649
+
+### Tab Organization: Bug fixes for paused state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a85a60
+
+### [AF] Remove outdated TODOs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9c170b
+
+### Tasks-Api: Create basic API components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/811bcdc
+
+### [Gardener] Disable flaky test ClearRevokedPermissionsListAfter30d.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b704cc2
+
+### Log the image id for wallpaper search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a6e167
+
+### Don't include regular tab usage except in tab titles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14423bc
+
+### [SysUi download integration] Add primary text to tote downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3355af
+
+### Make testing interception policies using chrome://policy/test safer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e927aa1
+
+### sync: don't return windows with no tabs in LookupSessionWindows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d771215
+
+### Reapply "[Autofill][Passwords] Split //c/b/touch_to_fill"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/696283b1
+
+### [PriceInsights] Fix metrics on omnibox chip show and click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c750da
+
+### Revert "Re-enable previously flaky test"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb06519
+
+### Lacros-Test: Ash browser window api supported by stable ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c071708
+
+### Move PopupRowView::Create into the factories file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b28731
+
+### Disable 3PCD for PageSpecificSiteDataDialogBrowserTest 3PC allowed case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bac5913
+
+### Actually create a TestDelegate in app_management tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e956a8e
+
+### Policy test: Ensure applied test policies are always shown in the UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6843efbd
+
+### Rename PopupCellView to PopupRowContentView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de21e1d
+
+### Explicitly disable 3PCD in pre-3PCD PageInfoBubbleViewBrowserTest case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/186ede1
+
+### [PEPC] Add interactive kombucha tests for basic PEPC prompt flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c027f5
+
+### Revert "Reland "[SHv2] Fix dismissing notification on SH visit""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/929cd0af
+
+### [Gardening] Disable AppListWithRecentAppBrowserTest.RecentAppsNotUpdatedAfterShowingSearch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df323e9
+
+### User Bypass - Use Last Committed URL instead of visible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55ec03ee
+
+### Refactoring: move some of the OOBE screen files under /osauth/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b6c79d
+
+### [DanglingPointer] Remove dangling pointer in sanitized_image_source_unittest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c02ffe05
+
+### [3PCD] Add tests for page info main view Tracking Protection button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84c15c15
+
+### [PEPC] Do not show buttons if the OS is not supported
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4df70a
+
+### Reland "[SHv2] Fix dismissing notification on SH visit"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd5be37
+
+### privacy-hub: Create camera subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b89dbd
+
+### [Multi Apps] Make uninstall dialog synchronous again
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0b9459
+
+### Use channel.h instead of version_info.h in headers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97862a6
+
+### Remove \`SpeakOnMuteOptInNudgePrefsReset\` flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5dfaca1c
+
+### [webauthn] Remove expired flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/11a3e6b
+
+### [FedCM] Prototype exempting IdPs that already have access to 3P cookies
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d65d98a
+
+### [Pcct] Remove unused feature flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/605e9d3
+
+### camera: Remove expired flag more-video-capture-buffers
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/154b3228
+
+### Link Capturing: Add App-to-App link capturing flags to Lacros
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4a33191
+
+`);
+              </script>
+            </body>
+        </html>
