@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-15
+### [Files F2] Enable SearchWithLaunchParams test for the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a001b5e
+
+### Replace ShareBitmap with SharedImage in Viz OutputSurface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/177e3a0
+
+### [FilesRefresh] Remove bold args for createDropdownItem
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb2b2dc
+
+### [FilesRefresh] Maintain the old initial loading behavior
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1bac12
+
+### Remove \`will_cause_resize\` from WebContents::ExitFullscreen()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1abc874
+
+### [AssistData] Add histograms to measure timeout and node limits
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d545d8
+
+### [A11y] Alert events must only be fired on alert roles
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be4826d
+
+### [responsive toolbar] Refactor SetBrowserWidth by resizing widget
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd67890
+
+### [uia] GetText for empty button with author specified name
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81e21a7
+
+### Updating loading gradient for tab organization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5da3eb9
+
+### [realbox][cr23] Update realbox expanded state layout to cr23.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69639d1
+
+### Fix tab switcher thumbnail size and resolution for automotive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14236086
+
+### [display] Propagate change state on display config update
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11e791d
+
+### Reland "Use fastset for VRR modesetting"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2f893e6
+
+### dPWA: Scope Extensions UI - Fix screen reader bug on App Content Dialog close button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5bfd97d
+
+### Replace dangling pointer MenuRunnerImpl::menu_ by unique_ptr.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d5065a
+
+### [UI AX Cleanup] Format accessibility_features files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0caa488
+
+### Avoid dangling pointers in NativeViewHostAura test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cdd1b3b
+
+### Add a histogram counter for number of clones between submits
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdeb704
+
+### Avoid dangling pointer in MenuHost.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54df6d8
+
+### Add CSS classes for replacing a11y messages.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06bf5af
+
+### [Files] Unwrap the entry before calling getEntryProperties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbddc18
+
+### Avoid dangling pointer in TableHeader.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/872b97c
+
+### [Files F2] Enable remaining MyFiles tests for the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/649e1e8
+
+### Files app: Change IDL to use 1-argument callbacks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84cc65b
+
+### chromeos: Update TabletState description to deperecate the class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0f6147b0
+
+### Fixup comment referencing deleted target
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6948043
+
+### Structured Metrics debug page in metrics-internal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4587066d
+
+### CrOS Settings: Show \`Wi-Fi\` only if the device doesn't support cellular
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/734fae3
+
+### Update color for Compose result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fab746e7
+
+### TabletState: Convert chromeos::TabletState to display::Screen methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f20353
+
+### Fix ApplyTestPoliciesAfterRestart on branded builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89677a72
+
+### Import cros-tab-slider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/954bd1e
+
+### Reland "[Nearby Share] Use Placeholder Strings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85479b7
+
+### Tasks-Api: Add updated field for tasks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abc92b6
+
+### base: Adopt std::to_address.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a20c3c2
+
+### [Discounts] Default enable the navigation flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33f9448
+
+### [PlusAddress - Desktop] Keep the dialog open until Confirm() finishes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00ceb30
+
+### Add initial Consent state UI for Compose dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a2a9dc
+
+### Initialize AutofillPopupControllerImpl::trigger_source_.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9282065
+
+### Allow pre-warmed tab to be used by any regular tab creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13e70e8
+
+### Always pass DriveFS mount path from ash -> lacros with no /root
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/469e334c
+
+### arc-overview-tracing: do not modify unset trace
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e860af45
+
+### [CodeHealth] startup_browser_creator.h: Remove LeakedDanglingUntriaged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bd8c97
+
+### WebUI: Move chrome://system C++ files to dedicated folder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7c2ae37
+
+### CrOS Settings: Announce build details copied to screen reader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d461fcb
+
+### arc-overview-tracing: init active_trace only once
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65497a3
+
+### [DanglingPointer] Remove dangling pointer in toolbar_actions_model_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c303ee
+
+### WebUI: Add a way to list all registered WebUIs and use in chrome-urls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/184d907
+
+### Remove unused references to ExtendedAuthenticator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41b8abf
+
+### Rename IsCapturingVideoStream to IsCapturingMediaStream and Co
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/205d262
+
+### Lifetime of Compose's BubbleContentsWrapperT matches its BubbleDialogView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eda1c0c
+
+### fws: Disable floating workspace when there is crash loop. Make fws policy check null safe.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c6578a
+
+### Pass in a non-null icon in test SharingHubActions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eed7228
+
+### [webauthn] Update usb security key icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad87fab5
+
+### privacy-hub: Implement the first section of camera subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00d1d89b
+
+### [Topics] Remove BrowsingTopicsXHR feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37ecf29
+
+### [Passwords] Add custom keyboard logic for edit password experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce926c6
+
+### [SidePanelPinning] Add ability to drag/drop to reorder pinned actions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/914e59b2
+
+### [waffle]Record search engine choice in profile creation metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1c27a5
+
+### Deflake test by sending multiple keypresses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93eb006
+
+### [waffle]Add the search engine choice step to profile creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab15c3d
+
+### Extract FactorSetupSuccess into separate screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5e4d1d
+
+### Remove bruschetta flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/47d8221
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eebabf4
+
+### [OOBE] Move utility for checking family link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6ae7e5
+
+### Add pixel tests for different types of suggestion row views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a912eb3
+
+### Fix a11y label for the passwords list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7d7405
+
+### Replacing std::unique_ptr<PasswordForm> with PasswordForm
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d0f778b
+
+### [Multi Apps] Readability cleanup of sub_apps_service_impl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c35e73
+
+### [OOBE]: Remove race condition in loginForTesting for enrollment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70fd792
+
+### Override a11y message for IBANs in Settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b761bb2
+
+### Reland2 "[SHv2] Fix dismissing notification on SH visit"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdc3281d
+
+### Refactor PWM promo_cards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d452fd
+
+### [gbb-cct] Resize web contents in sync with page insight sheet
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/993a39c
+
+### [Multi Apps] Adds icons to the sub apps list in the app uninstall dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e058d4
+
+### ui_test_utils: Fix dangling pointer in Browser{Dea,A}ctivationWaiter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96973a4
+
+### Use concepts in PopupPixelTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c94eb5
+
+### [waffle]Refactor the profile creation flow using the new API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e87da39
+
+### Downgrade NOTREACHED in SetRadioModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84d3ac3a
+
+### [AF] Clean up Upstream Additional Domains flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/137df43
+
+### Add BoardingPassDetector to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b77044b5
+
+### [dPWA][SystemMediaControls] Add basic system media controls tests
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/28b4cfd
+
+### [omnibox][shortcut] Split search boosting params
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0bd4701
+
+### Add flag for ARCVM memory size
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/83a8ffa
+
+`);
+              </script>
+            </body>
+        </html>
