@@ -1,0 +1,380 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-16
+### Files app: Convert test_util_base to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22deda4
+
+### WebUI: Remove some unused CSS files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b2dd51
+
+### Remove ATL Window dependency in LegacyRenderWidgetHostHWND
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d489fa4
+
+### [Auto-disable Accessibility] Split heuristic calculation into separate method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea92db81
+
+### content: Reuse CC instance for main frame navigations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/402d1c9
+
+### Change DataTransferEndpoint pointers to optional_ref in DLP code
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0fb7890
+
+### Switch bit counting to std functions in /ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ac3c469
+
+### WebUI: Add a shared element for providing feedback for a feature
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65d754f8
+
+### [LFF] Try adding foldable form factor to UMA dashboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34021691
+
+### [ui/a11y] Replace uses of '-webkit-filter' with 'filter'
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b41ca2
+
+### Migrate certificate viewer dialog tests to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5b0f6dd
+
+### [Automation] Clean up some of Automation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07b06aa
+
+### [ui/webui] Replace -webkit-linear-gradient() with linear-gradient()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ccc7c3a
+
+### Return Rect instead of Point in GetLookupDataForRange
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd8d3fb
+
+### Revert "[display] Propagate change state on display config update"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa442f2
+
+### Guard View::AddChildView (and variants) to ensure view class has metadata.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/080f886
+
+### TabletState: Remove chromeos::TabletState
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a94a690
+
+### [Files F2] Enable metadataDrive test for the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/623f093
+
+### Files app: Change IDL to use 1-argument callbacks (part 2)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c8ffd4
+
+### Do not prelaunch Lacros if no user has activated it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eedad7bb
+
+### Set editor menu as disabled once query is submitted.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4a9bd0
+
+### Fix shadow variables in assistant_timers_browsertest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d820f1d
+
+### QA Rich Card: remove QuickAnswers references
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/137a3c8
+
+### [SidePanelPinning] Add context menu for pinned container buttons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efab56b
+
+### Add some EditorMenuViewTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc7672b
+
+### Remove includes left behind from crrev.com/c/5008933.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5887fc
+
+### [Gardening] disable flaky mac webui test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed521f95
+
+### iwa: Switch to callback instead of delegate for InstallabilityChecker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a001ca9
+
+### [Nearby Share] Add Placeholder to Multidevice Sublabel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a55620
+
+### [Remote Playback] Fix flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcb343c0
+
+### [webauthn] Fix multi source picker focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60a7a8c
+
+### [Read Anything] Only show the label the first 3 times.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/527e4b2
+
+### Allow for GetFocusManager to return null
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0a7b00
+
+### Delay showing bubble, for video pip, until after scrim animation completes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6875e6a
+
+### chromeos: Clean up AppListIntegrationTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3fb2b1
+
+### Move fake_content_analysis_sdk_client and manager to connectors/test folder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b134117
+
+### webui: refactor certificate viewer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5e98d7
+
+### arc/tracing: move perceived FPS to TraceTimestamps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21d7d81
+
+### Remove old comment that was not cleaned up.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a60d71b
+
+### Fix side panel combobox title color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/291f463
+
+### [Gardening] disable ContentResizeInAutoResizingDialog on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1ec142
+
+### Revert "[ SidePanelPinning ] Allow pinning of extension side panels from panel"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b0b0192
+
+### Tab Organization: Theme tab highlight
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1bc8e1
+
+### [ SidePanelPinning ] Allow pinning of extension side panels from panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/033dcbbe
+
+### [DTC] Toggle tab strip visibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fad5ff
+
+### Add separate UI for when the user's current wallpaper is from search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d67d2cba
+
+### [codehealth] remove NOTIFICATION_LOAD_STOP from UrlLoadObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba53950
+
+### Tasks-Api: Add AddTask and UpdateTaskTitle to delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dd72e1
+
+### Fixing a crash when popped out button is removed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6efa2148
+
+### Reland "Represent form-factor client hint as a list"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/176f907
+
+### Use kCrOsStandardIcon effects for promise icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/daac169
+
+### UrlBar: do not compute scroll position if text layout is unavailable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/318071b
+
+### Add util for sending accelerators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42f59cd
+
+### iwa: Launch IWA at the end of the install flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/286cebf
+
+### Log previewed and selected image quality for wallpaper search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/983a12c
+
+### [dPWA] Complete origin text animation if CCT UI is about to appear
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20f669f7
+
+### [ SidePanelPinning ] Fix navigation while menu open bug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c547c36
+
+### Revert "[gbb-cct] Resize web contents in sync with page insight sheet"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/266ffbdb
+
+### [AF] Check and recreate Android view before usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8faa26b
+
+### [Read Anything] Show the omnibox icon when the active page is distillable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c704d5
+
+### Create missing WebContents user data in PageInfoTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcd99dc
+
+### [sync/android] Reformat SyncConsentFragmentBase and SyncServiceImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/983977f
+
+### [Survey] Populate default values for message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/136a892a
+
+### Print Preview: Disallow network requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd3e8f88
+
+### [PlusAddress - Desktop] Make the description link open the settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9528052
+
+### Pass user affiliation id from register result to first policy fetch request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b2cfcc
+
+### [chrome] Use image-set() instead of -webkit-image-set()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfa9983d
+
+### [PlusAddress - Desktop] Add a loading indicator on Confirm button press.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0db7078
+
+### [PEPC] Add scrim view to obscure web-contents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2703afdf
+
+### Cleanup: Remove reference to ExtendedAuthenticator in SAML feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01f7e08
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e63f6e2
+
+### [mullet m3] Generate payments manual fallback suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b8b5ac
+
+### [base] Split RunOnceCb<> -> RunOnceCb<> & RunOnceCbRepeatedly<>
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30c110b
+
+### [ChromeSigninIntercept] Add icon text during ChromeSigninInterceptBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7c7abef
+
+### [PEPC] Trigger OS level prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4caadfe
+
+### privacy-hub: Tie geolocation dropdown to pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c242db
+
+### privacy-hub: Add Websites section to camera subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2da5f33
+
+### privacy-hub: Add app list to the camera subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/714066f
+
+### [Signin] Delete unused DiceWebSigninInterceptionBackdropLayer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45cbca3
+
+### [PEPC] Fix grouped permissions requests and add tests that verify label text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a2b9f9
+
+### Always show all the media objects in Global Media Controls on CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/972b35a1
+
+### Show correct title when updating PSL matched form
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8fa7ac7
+
+### kiosk: Clean up kKioskEnableAppService
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/36fcb0e
+
+### Add missing icon in DownloadBubbleSecurityViewTest.ResizesOnUpdate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/271126b3
+
+### Save current wallpaper search background to history
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73cea2b
+
+### Added a flag for Calendar for Glanceables
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/22a5920
+
+### Remove context-menu-search-with-google-lens expired flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab88dc46
+
+### Implement suspicious site detection for RT lookups
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/432d619
+
+### Add new flag for card benefits
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4b30bf9
+
+### [Read Anything] Add ReadAnythingOmniboxIcon to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f57125
+
+### Help app: Create the HelpAppAppsList feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bafec42
+
+`);
+              </script>
+            </body>
+        </html>
