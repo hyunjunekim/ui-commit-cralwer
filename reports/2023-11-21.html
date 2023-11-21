@@ -1,0 +1,336 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-21
+### Files TS: Convert menu_unittest.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eae2127
+
+### Files TS: Convert menu.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1b2a10
+
+### Add a cros.ref.neutral15 token
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c745276
+
+### [CodeHealth] Remove expired InputMethod.CompositionWithImm32BasedIme histogram
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50f3ebc
+
+### [CodeHealth] Remove expired histograms Event.TouchSelection.Duration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bf2206
+
+### [CodeHealth] Remove expired histograms Event.TouchSelection.EndedWithAction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3fca176
+
+### Files app: Convert file_type.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9b8bd3
+
+### [CodeHealth] Remove expired histograms Event.TouchSelection.WasDraggedDuration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99fd406
+
+### [X11] Change WindowEventManager from a singleton to owned by Connection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abd5220
+
+### CrOS cr-elements: Update cr-toolbar-search-field styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/efea339
+
+### [view-transition] Add a regression test for VT with BFCache on Mac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ad0173
+
+### [X11] Eagerly initialize extensions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/933c401
+
+### [file manager] Add a test for skipped encrypted files notification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f016fd
+
+### Switch to using async/await in metadata model unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0b32b6
+
+### [Files F2] Disable rename context menu for Drive grand roots
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90c6322
+
+### [omnibox][webui] Remove unused SetupDropdownWebUIDataSource method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52332ab8
+
+### Show the Cast notification silently when flinging/remoting on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0398b685
+
+### [User education] Disable segfaulting tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e346f28
+
+### CrOS Settings: Enable CR2023 styles with revamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82e30bc
+
+### [CodeHealth] Remove expired History.ClearBrowsingData.PasswordsDeletion.AdditionalDatatypesCount histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8be845
+
+### [Shortcut] Use Shortname instead of Name for the parent app name.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc8370fb
+
+### [SidePanelPinning] Avoid deregistering a sidepanel entry if it is currently ongoing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8c204c
+
+### CrOS Settings: Create page-specific OWNERS files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9d651f
+
+### Revert "[Layout] Remove hintAtTabSelection from startHiding"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d0e0250
+
+### [responsive toolbar] Merge element_ids_ into element_info_map_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d609a82
+
+### [User Education] User Ed Experience V2 Session Policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/268c1a6
+
+### Convert histogram macros to functions in app_menu_model.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb6ab01
+
+### [User Education] Allow overriding default 'focus on show' behavior.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16f422ec
+
+### [DTC] Add user action metrics for Device Signals Consent Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4503a34
+
+### focus-mode: Add feedback button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c8b8e2
+
+### [media_prefs] Rank devices before gUM device selection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36c1ca5
+
+### Keep the global media controls open after starting casting on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/931fd43
+
+### Revert "Use kCrOsStandardIcon effects for promise icons"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a8b6da8
+
+### [webauthn] Hide "other devices" if no other devices are available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fea0b7
+
+### Exclude Fuchsia from MediaPreview
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f02f26f
+
+### [Price tracking] Exclude save location text for non-bookmarked tracked products
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bb8cc8
+
+### [Extensions] Remove ExtensionMessageBubbleFactory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b6575e5
+
+### [Tab Organization] Add feature params for triggering logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccd32384
+
+### [omnibox][webui] Fold SetupDropdownWebUIDataSource into SetupWebUIData..
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2c866d
+
+### Revert "[commerce] Rename ShoppingListUiTabHelper to CommerceUiTabHelper"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f453e5c
+
+### p13n: set Sea Pen recent image as wallpaper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91dc201
+
+### Revert "Add SyncDecoupleAddressPaymentSettings to field trial config"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/029b288
+
+### fws: Not init full restore when floating workspace is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/869d667
+
+### Disable 3PCD in UserBypass pixel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/877f823
+
+### [SidePanelPinning] Add button to toolbar when extensions side panel is open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df089ce
+
+### Reland "Move kPermissionElement feature to content from components"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/835ec86
+
+### Reland "Incorporate policy override for OOPPD feature"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/661060f8
+
+### [commerce] Rename ShoppingListUiTabHelper to CommerceUiTabHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/390d68b
+
+### LoginPromptBrowserTest cases fail in 3PCD
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1564e88
+
+### Reland "Refactor SU Preferences IsURLFilteringEnabled"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc3eadff
+
+### Move performance entrypoint in the app menu behind experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c5adb8
+
+### [Toolbar] set focus % on every mUrlBarLaidOutAtFocusedWidth edge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8df5896
+
+### [live_preview] Permission Prompt supports camera and mic preview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f92a4fe
+
+### Update VQS naming in renderer/ code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95aaf5d4
+
+### Replace SetImage method of ImageButton With SetImageModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/421f8d9
+
+### Revert "Add Relaunch Chrome promo card"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de4c06d
+
+### Fix unbranded unit tests to work when branded companion feature is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46d0d58
+
+### Add Relaunch Chrome promo card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac044d9
+
+### [Read Anything] Add Andika font
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd25d34
+
+### Add SyncDecoupleAddressPaymentSettings to field trial config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfe9bb7
+
+### [SHv2] Change map operations with result unique_ptr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d0a496
+
+### [SHv2] Validate WebsiteSettingsInfo when serializing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6d2ee19
+
+### [ChromeSigninIntercept] Disable avatar button while the intercept is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6287381
+
+### [FedCM] Fix parameter name style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8062bdd1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d322c5
+
+### [CodeHealth] Remove expired IncompatibleApplicationsPage.AddedPostCrash histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8994d16
+
+### [Multi Apps] Remove non-user-friendly origin from install prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5237bff
+
+### [DownloadBubble] Use ShowInactive to avoid stealing input focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e558964
+
+### Remove feuunk and eokoyomon as owner for HaTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36c83e9
+
+### Add view for the "Relaunch Chrome" bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ac3532
+
+### Make MediaItemUIDeviceSelectorView always use \`show_devices\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e782cf
+
+### Update the Media.GlobalMediaControls.EntryPoint histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96c3539
+
+### Tracking Protection: Animate status icon before triggering IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84e009b0
+
+### [mullet m3] Trigger payments suggestions from the context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a02bda
+
+### Reland "Moving last bits to password_store subfolder"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0534ab2
+
+### [PEPC] Changed opacity of scrim to 0.5
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41805d8
+
+### [SysUi download integration] Add notification display client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65f9270
+
+### Disable Flaky PaymentRequest*UseStatsTest.RecordUse tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f1f963
+
+### Introduce a new flag to reduce TransferSizeUpdated IPC
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e78a4a0
+
+### Removed unused flag kAttachLogsToAutofillRaterExtensionReport
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d564867
+
+`);
+              </script>
+            </body>
+        </html>
