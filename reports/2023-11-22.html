@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-22
+### Files app: Fix logic errors in progress_center_panel.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5aa619c
+
+### Remove unnecessary defineProperty()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39427bf
+
+### [Files F2] Turn on NewDirectory flag temporarily
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f63f3ba
+
+### [CodeHealth] Remove unused IsImm32ImeActive function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef8a66b
+
+### Files app: Convert storage.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c56546b0
+
+### Add a flag to guard the local side panel code.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4005cd9
+
+### Revert "[exo] Ensure exo clients always see a valid Output configuration"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4300dd7
+
+### Remove Windows affinity from Fluent term usage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6db323f
+
+### TS-ify dlp_metadata_provider
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/356c6276
+
+### Fix arc notification animation jank
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12e6b919
+
+### [User Education] Fix root cause of failing tests.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c5d198
+
+### [Read Anything] Add flag for enabling rules based algorithm.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e8b76d6
+
+### bounds_tracker: Remapping or restoring the window on alt+search+m
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a10e5fb
+
+### Add new definions for base highlight colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a8a9b79
+
+### Enable access to Fluent scrollbars on Linux
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d8d5506
+
+### Change parameter of CheckMediaAccessPermission from GURL to URL::Origin
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5fda97
+
+### Revert "[Reland] WebUI: Move web_ui_test.mojom and related code to CrOS-only folder."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/370559f2
+
+### [Reland] WebUI: Move web_ui_test.mojom and related code to CrOS-only folder.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/67b08a5
+
+### Remove unnecessary defineProperty()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/edc9e32
+
+### Make tabbed app scope updates apply immediately to existing windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/141bc4b
+
+### Implement user avatar and email in the save card bubble footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b117169f
+
+### Add new HTTPS-First Mode tri-state settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13b765e4
+
+### [CodeHealth] Remove expired IncompatibleApplicationsPage.NumApplications histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c04206c
+
+### Split TestAcceptDialogCallback into two to better match prod behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed2f0297
+
+### Enhanced feedback dialog part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8104cf
+
+### [Promise Icons] Remove temporary fix for shelf item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9698332d
+
+### [PWAs] Introduce utility to notify a view becoming visible in an active widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efc2726
+
+### [Tab Organization] Record triggering metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a6d7f7
+
+### web-app: keep system_app_accessible_name as member variable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b42144b
+
+### [UNO] Use profile colors in signin bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d284e89
+
+### Fixing a crash when side panel pinning feature is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e336d5
+
+### Automatically download Live Caption language packs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7614f7e
+
+### audio-settings: Add RenderAudioPage interactive uitest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa83e56
+
+### [Extensions] Remove the sidePanel.open() base::Feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3014a5d
+
+### Add owners to chrome/browser/ui/ash/desks folder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f0a743
+
+### [SidePanelPinning] Add lens action item and update the text and icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be0652f
+
+### Load campaigns component at Demo Mode session.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aeac5b
+
+### Add screen reader text to Toast IPH for side panel pinning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bdcdf3
+
+### [codehealth] remove NOTIFICATION_LOAD_STOP from webapp ui test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad53f91
+
+### Remove the media history database
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5bb0ed1
+
+### Play a voice preview when preview play button is tapped
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/424bce4
+
+### Update strings for error states.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bccbde9
+
+### Allow tasks editing right after adding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f77afd7
+
+### Reland "[live_preview] Page Info sub-pages supports camera and mic preview"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f866ed2
+
+### arc: Add ArcPackageInstallPriorityHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/661d1db
+
+### [Nearby Share] Fix a bug with flag enabled search results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da5a239
+
+### printing: switch PPD viewer to printscanmgr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b41040f6
+
+### cros: Remove mouse support for partial magnifier
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de4bfd32
+
+### [AF] Remove GetDeletionConfirmationText from BrowserAutofillManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d43925
+
+### Remove the bulk of <portal> code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0c69be
+
+### TabletState: Skip checking HasScreen() before getting TabletState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ffa267
+
+### [permissions] Remove device selection from content settings bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4029e3da
+
+### add titles for history tiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3996262
+
+### Reland "Add Relaunch Chrome promo card"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f02146
+
+### Update the autofill/popup/README.md file according to refactoring changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd092068
+
+### Update all side panel related icons for chrome refresh.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1187bdf
+
+### [waffle]Remove the \`kSearchEngineChoiceSettingsUi\` feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc6d599
+
+### Remove wait_for_windows_closed on user login sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f7fcae6
+
+### Add IbanSaveManager functionality to send UploadIban request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2841770
+
+### Disable side search on tip of tree.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/017cfa2
+
+### Extract a platform-independent VirtualCardEnrollDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/090c50e
+
+### [waffle]Do not display dialog if window size is too small
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62bf731
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/812bc47
+
+### Migrate signed-in non-syncing users to per-account selected type prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84f42a2
+
+### [shell] Disable EventLatencyMetricsTest.NoReportForWebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57cc5411
+
+### Privacy Sandbox: Remove V3 feature and solidify some V4 pathways
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef0a9c0a
+
+### Add a new bit "fixed storage partition" to BrowsingInstance and friends
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21873705
+
+### [Settings] Add a11y description to learn more links that open in new tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6290aa1
+
+### Ash: Simplify flow name generation for inline login flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6aeff2
+
+### Show the auth dialog straight away during the upload flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/004c044
+
+### [Nearby Presence] Add Nearby Presence feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cb34175
+
+### Help app: Create the HelpAppAppDetailPage feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/123753a
+
+### CrOS Settings: Remove OsSettingsTestChromeRefresh feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d8192dc
+
+### Remove useOfflineContentProvider feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bc093dc
+
+`);
+              </script>
+            </body>
+        </html>
