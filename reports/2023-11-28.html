@@ -1,0 +1,332 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-28
+### Replace base::invoke with std::invoke
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72efdc1
+
+### Fix header guards in ui/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43cbfce
+
+### Revert "Refactor common functions out of AshNotificationView"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cc3abd
+
+### Files app: Remove VolumeManagerCommon namespace
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ffb2758
+
+### Files TS: Remove menu_button.js and its tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5e05e1
+
+### [headless] Propagate headless flag to child widgets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3c187af7
+
+### Don't pass -1 values to EGLConfig
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87bdaa9
+
+### Avoid dangling pointers in ViewAxPlatformNodeDelegate test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aac9b48
+
+### Check NativeThemeFluent doesn't have css colors when HC is on.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c0c0b5
+
+### Files TS: Convert multi_menu_unittest.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ac57fc6
+
+### [A11y] Add CHECK and DUMP for IsIgnored() crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/370671d
+
+### Remove color correction in linear space
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e077673
+
+### TS-ify external_metadata_provider and test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60ca121
+
+### [sidepanelpinning] prevent button highlight from disappearing due to other interactions.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/976be2f
+
+### Remove expired histograms Gpu.GL.ProgramBuildTime
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c033a856
+
+### Refactor common functions out of AshNotificationView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/571556c
+
+### Skia utils: Clean up and centralize helpers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ce4904
+
+### Remove fake ES2 path for Skia
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdaf88b
+
+### [Reland#2] WebUI: Move web_ui_test.mojom and related code to CrOS-only folder.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5efd0a9
+
+### Reland "[Read Anything] Enable Read Anything on TOT preparing for 100% rollout."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41711da
+
+### views: Avoid always creating the default widget delegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8a7000
+
+### Add OnViewHierarchyWillBeDeleted to ViewObserver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be80671b4
+
+### Cleanup GLSurfaceFormat
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74019d5
+
+### Fully allocate space when there is a size mutation in the custom flex rule.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1999486
+
+### Avoid dangling pointer in InteractiveViewsTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5148da2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2dec46
+
+### Convert mock_metadata to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c96b1a
+
+### [Tab Strip Redesign] post launch clean-up - part 1
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aa0acd1
+
+### [media_prefs] Tie device ranking pref to chrome://settings/content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d70a7b6
+
+### internet_page: OS settings update for carrier lock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0965306
+
+### Crash diagnose on chrome lacros by omnibox_popup_closer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b8158b
+
+### arc: Introduce SetIdleState replace the SetInteractive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a58d97c
+
+### Replace TabCountProvider with a supplier
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f906a6
+
+### Fix typo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d06c40
+
+### Remove Navigation.BackForward.NavigatingToEntryMarkedToBeSkipped
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8ce998
+
+### [Android] Move MutableFlagWithSafeDefault to //base
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e173175
+
+### [sidepanelpinning] Make the side panel header pin button read out state change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e28e817
+
+### shortcuts: Utilize ShortcutInputProvider to send and receive key input events.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f8dd54
+
+### Fix flaky desks client browser test caused by cache not ready.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b2a0731
+
+### [Extensions] Rename SettingsApiBubbleDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ff66085
+
+### Lacros-Test: Re-enabled TopViewInset test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21587068
+
+### [Extensions] Simplify logic in SettingsApiBubbleDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d770ae
+
+### Reduce WindowedNotificationObserver down to still needed functionality
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dad748
+
+### Implement thumbs up and down buttons for wallpaper search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f464fd
+
+### chromeos: Add AppListSearchBrowserTest.SearchBuiltInApps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29634679
+
+### [SidePanel] Record metrics for pinning/unpinning through context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56349c1
+
+### Remove unused logo from tab switcher toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2f8a5c
+
+### Tab Organization: Dark mode support for chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abf4da3
+
+### Wait for shopping service to be ready
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c85afbb
+
+### Make Organizations move the tab to the left of the unorganized tab strip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/401a606
+
+### [User Education, Responsive Toolbar] Don't show IPH when collapsed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1c8409
+
+### Fix exception of accessing TabModelSelectorProfileSupplier early.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86c3f30
+
+### [waffle]Modify the UI to handle snippets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8988eb8
+
+### Fix forward declarations in web_app_run_on_os_login_notification.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e355f5c
+
+### Remove GetWebContentsAt from TabGroupController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcf1d094
+
+### [gbb-cct] Properly support keeping peek state after expansion, or don't.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8f80eac
+
+### [ntp-xdtr] Test(s) cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51a2963
+
+### Tracking Protection: Fix capitalization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0770adc
+
+### Remove CreateTestAddressFormData with out parameter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/074055d
+
+### Remove expired histogram Reset.ChromeOS.PowerwashDialogShown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72f516bb5
+
+### [sidepanelpinning] prevent context menus showing on long press for actions in the toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64fbec6
+
+### [Passwords] Remove advancing field focus on edit password clicks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3cc2b9
+
+### [passwords] Drop unused PrefService* arg in account storage functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e07bedb
+
+### [OOBE][Gaia] Simplify the handling of client certs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba754825f
+
+### Using base::WeakPtr<content::WebContents> instead of raw ptr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/632907f
+
+### Rename Welcome profile screen sources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bcadfb
+
+### Implement allowlist based boarding pass detection triggering
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fd77f34
+
+### Reland "Add feature flag for vertical automotive back button toolbar"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/089895a
+
+### Remove about:flags entry for force-disabling text autosizing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d3595fd
+
+### Revert "Add feature flag for vertical automotive back button toolbar"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c6ceb71
+
+### Split Reporting Attestations Changes from M120 features.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b73d29d
+
+### Add feature flag for vertical automotive back button toolbar
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f28db31
+
+### [HiDPI Capture] Remove kWebContentsCaptureHiDPI base::Feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f942e4c
+
+### [PriceDrop] Add feature flag for Price Change Module
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bfa082c
+
+### [realbox][cr23] Create flags for cr23 themed realbox.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b9df9f87
+
+### [realbox][cr23] Add flags for cr23 realbox consistent row height.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e0ca7e
+
+### Remove chrome://flags entry for hover card image setting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b42c7a8
+
+### [CSC] Add a chrome://flags entry
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c0408c5
+
+### Propagate resize compat flag params to ARC
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/38db4f6
+
+`);
+              </script>
+            </body>
+        </html>
