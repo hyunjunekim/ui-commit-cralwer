@@ -1,0 +1,416 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-11-30
+### Convert image_parsers to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/266278c3
+
+### [FilesTS] Remove @suppress closure annotations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aefce77
+
+### Files TS: Convert CommandEvent to CustomEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22fcf3d
+
+### Files app: Convert filtered_volume_manager_unittest to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/462196b
+
+### Files app: sort TypeScript common modules
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d74637
+
+### [FilesTS] Convert directory_model_unittest to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff087c4
+
+### [FilesTS] Convert mock_directory_model to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ca5fee
+
+### [FilesTS] Convert directory_model from JS to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c631980f
+
+### [Extensions] Add lastAccessed property to chrome.tabs.Tab
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a56b5cf
+
+### [UIA] Views text offsets computation
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57dc072
+
+### [Files F2] Update DirectoryTreeContainer unit test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c46e95d
+
+### [Files F2] Do not select Drive root if My Drive is active
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85d6b1c
+
+### [FilesTS] Convert directory contents scan-failed to CustomEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc70f850
+
+### Replace feature_list's Initialize* methods with Init*.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89627a67a
+
+### Revert "Reland "Refactor common functions out of AshNotificationView""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db7860a
+
+### Use std::move() to pass PressedCallback in //ui/views.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23bff75c
+
+### webui: rename store_ts.ts to store.ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84f7080
+
+### Support leading attr for TextViewWithLeading in TextAppearances.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5b07c9
+
+### Reland "Refactor common functions out of AshNotificationView"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76d42bb
+
+### [realbox][cr23] Make realbox row heights consistent.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8612adc
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0850021
+
+### gpu: ozone: reuse texture holders from compatible contexts.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c69aaf0
+
+### Bubble Frame View: Allow Character Break
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7675e5e2
+
+### Files TS: Convert command.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6797d75
+
+### Replace vector<display::GammaRampRGBEntry> with display::GammaCurve
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2a7acf
+
+### Revert "[PageColors] Integration of PageColors feature with NativeTheme"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb40df5a
+
+### Files TS: Convert progress_center.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/953719c
+
+### [Office upload] Determine TaskResult in DriveUploadHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a134ff
+
+### [SysUi download integration] Avoid showing closed notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a194c04
+
+### [Office upload] Move UrlIsOnODFS() for easier sharing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ffe5e
+
+### frame: Send Immersive Mode change even when the state is same
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37059829
+
+### Ash: Capitve Portal: Logging improvements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f75851
+
+### Use TabData to filter tabs during trigger scoring.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b8dbd2
+
+### Set PDF to SAMPLED_PING
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f85cf3e
+
+### [VC] Hide screen_share_icon_ when kVcStopAllScreenShare disabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25209f2
+
+### Improve SBClientDownload.DeepScanEvent histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/363ae52
+
+### Add empty browser health component to the performance side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c72457d
+
+### bluetooth: Remove old browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc5977b
+
+### [Extensions cleanup] Update GetByID() for enabled extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b7aaba
+
+### [live_preview] Quick adjust for Media Preview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b12e75
+
+### add wallpaper search to background histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed17dde
+
+### Update Compose dialog footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92fa4a8
+
+### [PlusAddress - Android] Show a spinner as the Confirm() call is loading
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93686ae7
+
+### [Tab Organization] Fix crash when starting second request.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d934e54a
+
+### privacy-hub: Add geolocation warning UI to the Time Zone page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57fdc818
+
+### In-use/blockage indicator: Web MIDI Permissions special case
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edd3b7f
+
+### app_icon: Shuffle code to implement persistent icon color cache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/026743c
+
+### [ SidePanelPinning ] Pinned side panels now update in incognito mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e363c8a
+
+### Create OOBE EnterOldPassword screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0019da
+
+### Revert "Show Relaunch Chrome bubble"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ec6e583
+
+### Make Click() and MoveMouseTo() be Ash test util funcs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5530383
+
+### Use const reference instead of by-value for status objects which are
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73f786a
+
+### Add notifications for forced app relaunch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9982e0a
+
+### Reland "Integrate compose consent dialog with related profile prefs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa990bb9
+
+### Reland "[Layout] Remove hintAtTabSelection from startHiding"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5f9041
+
+### [Omnibox] Add android platform to pref based consent helper field trial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4170d62
+
+### Support opening a popup page as tab modal in Navigate()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4806ad23
+
+### [CrOS Network] Update Network subtext
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c890299e
+
+### webui: remove overrides in bluetooth pairing dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b30f4d4
+
+### Reland "[responsive toolbar] Add menu separator"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc0f670
+
+### [live_preview] Live media (Camera/Mic) preview, Camera CL, Part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c64764
+
+### [waffle]Add boiler plate code that will help in snippet generation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/860d241c
+
+### ODMS: Implement response retraction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1998cfe
+
+### [gbb-cct] Fixes for two issues in PIH.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/087561d
+
+### [Omnibox] Force phone-style UI on search widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68e6177
+
+### CrOS Settings: Add icon for restore apps on startup setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/061617c3
+
+### Reland "[waffle]Disable submit button before scrolling to the bottom"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b3cd23
+
+### Update owners of CrOS Family team code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6562bd
+
+### Lacros-Test: Enable DragAndDropBrowserTest.DragStartInFrame.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f015d02
+
+### Lacros-Test: Enable HandleExternalProtocolURLs test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/555eccd
+
+### NTP to Ntp in UrlUtilities.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a80820
+
+### Use std::move() to pass PressedCallback in //chrome/browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdea8cb9
+
+### [document pip] Allow resizeTo()/resizeBy() via user gesture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f17e2aa
+
+### usb: Add usb-unrestricted to permission policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75cab10
+
+### Rename AutofillDownloadManager to AutofillCrowdsourcingManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ac56263
+
+### [AutofillDataModel] Avoid profile default initialization in fast checkout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6ca206
+
+### [Passwords] Adjust popup displaying logic in nudge password experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d20c0d
+
+### Set up the observer in ExpsRegistrationSuccessObserverTest.MatchURL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85986d0
+
+### Move AM::GetCreditCardAccessManager to BAM.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de0ad60d
+
+### [Waffle] Save choice version in search engine prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c549c54
+
+### Move content analysis print utils to shared directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3939d86
+
+### [sync] Avoid unnecessary call to StopAndClear()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d89a2a3
+
+### Create OOBE LocalDataLossWarningScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b308817
+
+### privacy-hub: Implement search concepts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/808ff2a6
+
+### Remove RecordPermissionExpiration feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d094bcc
+
+### Remove Open in Chrome button from browser menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/febbc15
+
+### [signin] Remove OnProfileAdded() and OnProfileWasRemoved()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9db0207
+
+### Add PickerClient for PickerController to communicate with browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce0944a
+
+### Add explicit call to default parameter during profile creation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0a4d5d
+
+### Revert "Integrate compose consent dialog with related profile prefs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/833b431
+
+### Revert "Revert^2 "Move boarding pass flag to chrome/common/""
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f2cc7d2
+
+### Revert^2 "Move boarding pass flag to chrome/common/"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f5d5a3a
+
+### Add flag for ProjectorV2 feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e34ffaf
+
+### [Tab Declutter] Rename close tab flag to archive tab
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/63e5218
+
+### [MerchantTrust] Clean up about_flags entry
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/effdc6f
+
+### focus-mode: Add chrome flag for Focus Mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/20e206e
+
+### Revert "Move boarding pass flag to chrome/common/"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d3e43f
+
+### Move boarding pass flag to chrome/common/
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/85366ca
+
+### Adding Ads Notice for CCTs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5a4f73d
+
+### Revert "Build a flag to enable the cco feature." 
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0b974d
+
+`);
+              </script>
+            </body>
+        </html>
