@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-03
+### Remove GL_CHROMIUM_texture_filtering_hint
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/92ed25e
+
+### [PageColors] Adding the PageColors mixer to the color pipeline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b6fe6f
+
+### Use base::EraseIf()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c29d84a
+
+### Adding minimum notification time for forced app relaunch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a75c1611
+
+`);
+              </script>
+            </body>
+        </html>
