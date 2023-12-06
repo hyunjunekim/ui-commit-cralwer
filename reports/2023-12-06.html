@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-06
+### [App Management] Remove OptionalBool type from App Management mojo
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc2dd86
+
+### Convert id3_parser to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fab2731c
+
+### Files TS: Convert navigation_uma.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd9b549
+
+### [Files F2] Add a new concurrency model: KeyedKeepLatest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b2936d
+
+### [FilesTS] Add getTreeItemEntry to conditionally retrieve entry property
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eeacd46
+
+### [Files F2] Fix a bug for processing multiple partitions USB
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac15a9a
+
+### [Files F2] Add new action to update FileData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac84be4ce
+
+### Files TS: Convert runtime_loaded_test_util.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1ba442
+
+### Files app: Make FilesAppEntry.getURL() abstract
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/017a2e189
+
+### [FilesTS] Convert array_data_model to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11f685d
+
+### Files app: Convert files_app_entry_interfaces.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0149be
+
+### Skip wl_surface.commit when there are no changes to the (sub)surface
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/671b2ad5
+
+### [MVC] Add tracking entire View hierarchy deletion to view tracker
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/127b6e3
+
+### Revert "[X11] Make window bounds tracking simpler and more robust"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07cdb58
+
+### Add Media Compression buffer support for ChromeOS Video Decoding
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d669931
+
+### [Android API] Add histograms to track aria-labelledby usage stats
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9620aa
+
+### [X11] Make window bounds tracking simpler and more robust
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d49345d
+
+### [AssistData] Add fieldtrial param to stress test experiment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/367e4eb
+
+### immersive fullscreen: route omnibox events to tab or overlay
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2816341
+
+### Only switch focus state for non-repeat keydown events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1942920
+
+### display::NativeDisplayDelegate: Add higher level methods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a514659
+
+### Files app: Convert fake_android_app_list_model to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c21bf58
+
+### Reland "[a11y] Expose text bounds for Textfields & Labels to platform APIs"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b84b3dfa
+
+### [a11y]: fix line feedback for upstream positions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35fb3b4
+
+### ozone/wayland: Make window minimizing an async operation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6173c50
+
+### Fix and/or re-enable various tests.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e74fd51
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35a07d25
+
+### Remove gfx::test::CreateImage()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3301e4
+
+### Files F2: Convert android_app_list_model to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e5fcc8
+
+### [Files,TS]: Converts spinner_controller_unittest to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb72073
+
+### Files app: Convert files_app_entry_types.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6e4773
+
+### [Files,TS]: Moves scan_controller to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5559d62
+
+### [FilesTS] Convert permuted event to CustomEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c089028b
+
+### Fix bug in Id3Parser
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f29ff4
+
+### Revert "[Office upload] Introduce OnAbandonedUpload() to avoid duplicate uploads"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bab9a7
+
+### Nit: remove an unused field from WebContentsViewAura
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc992fe6
+
+### fws: refactor test p3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2df3a0
+
+### update wallpaper search strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d26955
+
+### TPS Metrics: Add additional login metrics and trace events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a92a6b9
+
+### Disable Escape key closing in chromium
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1432bdd
+
+### WebUI: Make WebUIBubbleDialogView hold a weak pointer to BubbleContentsWrapper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47de8d5
+
+### [sidepanelpinning] fix drag crash by moving empty icon to unnamed namespace.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cca4f9c1
+
+### [Office upload] Introduce OnAbandonedUpload() to avoid duplicate uploads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d3e9f7e
+
+### Migrate UMABrowsingActivityObserver off of NotificationService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77789ff
+
+### Add Read Aloud policy and only enable feature if true
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52f5242
+
+### Tab Organization: Update strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbb0e82
+
+### Replace nearby share protos with those from third_party.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b3961c
+
+### Settings: Update strings for experimental advanced page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c19d2bd8
+
+### Update Compose strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/478362a
+
+### Update the Compose icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fada4a
+
+### Slight refactor to toolbar color code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9609f3c
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a0abc3
+
+### [Nearby Presence] Make NearbyPresenceService::PresenceDevice copyable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0976c6
+
+### Wallpaper search color picker a11y
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f49e3c
+
+### Migrate absl::optional to std::optional in //chrome/browser/ui/views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2778c1b
+
+### CrOS Settings: Update search result icons for a11y settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23a0f07
+
+### Replace window location url when a bad path is used on chrome://policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f66aa549
+
+### [SidePanelPinning] Make pinned actions as toggled buttons for accessibility.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/843991e3
+
+### WebUI: Add CrLitElement superclass holding additional functionality.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/031d62f
+
+### Fix capture error for tablet toolbar buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9080ebe3
+
+### Remove fully qualified setAlphaComponent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09d121d
+
+### Add switch to auto capture windows by title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24d1b3e
+
+### [Uno-D] Update UI for clear browsing data dialog when signed in with UNO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/335ca8a
+
+### Remove redundant include header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71ae515
+
+### Fix typo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83f0b19
+
+### [3PCD] Add checks that verify the toggle row icon for page info unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70f338a
+
+### [dump_colors] Add //chrome/services/sharing/nearby to deps for CrOS build
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a184207
+
+### Reland "Reland "[Signin][Uno-D] Add UnoDesktopM0 in fieldtrial testing config""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0cd270
+
+### [gardener] Revert "Add mojo bindings for Privacy Sandbox DevUI"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/479fb4d
+
+### [CodeHealth] Fix dangling raw_ptr in QuitWithAppsController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0c241b
+
+### Ash: Add getDeviceId message handler in lock screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4cc6c9
+
+### Create a BUILD.gn for //chrome/browser/permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3631542
+
+### OOBE: Add getDeviceId message handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75a661d
+
+### Privacy Sandbox GA Cleanup:  Solidify cookie settings and exceptions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eb90a5
+
+### Privacy Sandbox GA Cleanup: Remove v3 from HaTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/097fb60
+
+### CrOS Settings: Update Apps page search result icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f01bb21
+
+### [Cast Streaming] Remove kOpenscreenCastStreamingSession and more.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1a112383
+
+### [PIX] PIX detection flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ed7178
+
+### cellular: Remove kSmdsSupportEuiccUpload flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cbf732ee
+
+### Adding feature flag for kRemoveUPMUnenrollment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d2df41e5
+
+### [Start Surface] Remove Carousel Tab Switcher
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c1306f2
+
+`);
+              </script>
+            </body>
+        </html>
