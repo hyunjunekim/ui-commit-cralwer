@@ -1,0 +1,396 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-07
+### [FilesTS] Remove directoryModel from ActionsController constructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6cfa1d9
+
+### [Files TS] convert mock_chrome to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c27e780
+
+### [Files,TS]: Converts file_manager_ui to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a4b11d
+
+### Files app: Downgrade log level from error to warn
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df24a2d0
+
+### Files app: Convert guest_os_controller to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e8a207
+
+### TS-ify metadata_cache_set and test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a7cd05
+
+### [FilesTS] Convert all commands to actual classes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14c61b5
+
+### TS-ify metadata_cache_item and test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbf1ad8
+
+### [FilesTS] Update entries == 0 to entries.length === 0
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd722fc
+
+### [FilesTS] Remove the createVolumeSwitchCommand function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10f0f09
+
+### [FilesTS] Remove selectionHandler from CommandHandler constructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2868c6
+
+### [X11] Fix use-after-free in GeometryCache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b66c6c21
+
+### Add accessibility performance histograms with linear bucket spacing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02bb5f9
+
+### [realbox] Fix focus state for non-inlined actions chip.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9cbd86
+
+### [ActionManager] Add ActionViewController support to ToolbarButton
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2636f6c
+
+### Reland "Remove kForceUseLegacyPreferredSize feature."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/190ca36
+
+### [AssistData] Add page absolute bounds to the assist data Bundle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10e767f
+
+### Remove base::bits::IsPowerOfTwo in ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7688a4a
+
+### WebUI: fix cr-dialog aria-describedby
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbf706ce
+
+### Use concepts and if constexpr to simplify ClassPropertyMetaData.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e9b9cb
+
+### Files F2: Convert mock_folder_shortcut_data_model to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/017bede
+
+### Plumb display parameters to ui::DrmGpuDisplayManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/610ee9a
+
+### Files F2: Convert folder_shortcuts_data_model to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3a5faec
+
+### [FilesTS] Fix up canExecute to be on event instead of command
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3df765c5
+
+### Reland "Fully allocate space when there is a size mutation in the custom flex rule."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f76718e
+
+### Revert "Files F2: Convert folder_shortcuts_data_model to TS"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ad0fab0
+
+### Files F2: Convert folder_shortcuts_data_model to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b882994
+
+### Convert mpeg_parser to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/734bcfb
+
+### login_handler: Begin removing test dependencies on notifications.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/114b9841c
+
+### Migrate absl::optional to std::optional in //chrome/browser/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc07189
+
+### Extract MakoConsentView and MakoRewriteView into their own files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b48e92d
+
+### [Office Upload] Pass FallbackReason directly to callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6701f32
+
+### Disable ReloadButtonBrowserTest.AllowExternalProtocols on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/803cbda
+
+### Add flag: seal-key
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab2e5eb
+
+### Disable ConstrainedWindowViewTest.FocusTest on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/710f275
+
+### [Clippy] Assign/unassign default file handlers when prefs change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a40b6d
+
+### TabDrag: Skip CanAttachTo check when window is closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1698c1
+
+### Fix optguide keyed service null check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/305337e
+
+### [SysUi download integration] Add the download pause button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/258daeb
+
+### Disable failing TabHoverCardInteractiveUiTest tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e5f2b8
+
+### Check if default search engine is Google before allowing ReadAloud
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b6c06f9
+
+### Revert "[3PCD] Add pixel test for the cookies controls bubble when 3PCD is enabled"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1280265
+
+### Disable ConstrainedWindowViewTest.TabSwitchTest on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b194877
+
+### [Lens]Log encoded image file size to latency logs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7420066
+
+### [3PCD] Add pixel test for the cookies controls bubble when 3PCD is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9efd4d9
+
+### [sidepanelpinning] Announce pin state change when pinned/unpinned from button context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eab2c51
+
+### [FixIt Week] Clean up CookieInfoView + obsolete strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2303526
+
+### Replace various uses of Log2Floor and Log2Ceiling with std calls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd7ef99
+
+### [TabOrganization] Hook up ModelQualityEntry into OnLogResults.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6599e5f7
+
+### [TabOrganization] Add implementation of logging ModelQualityEntry.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f313c0
+
+### Fix GM3 enablement crash on ChromeOS Ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94c88f1
+
+### CrOS Settings: Change section back to Network from Internet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94374ed
+
+### [SysUi download integration] Add the download cancel button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbe91ec
+
+### [ SidePanelPinning ] Allow cross device changes to update Container view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d84404e
+
+### CrOS Settings: Update DIR_METADATA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/595dc2c2
+
+### CrOS Settings: Fixing Wallpaper row title and subtitle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9082329
+
+### [Glanceables] Remove teacher related code, part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29beb2b
+
+### [document pip] Use correct titlebar height of 34px
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ea042d
+
+### Add plus address desktop modal test check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3d85286
+
+### Migrate absl::optional to std::optional in //chrome/browser/ui/webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0f1d14
+
+### [Fullscreen] Record User actions for entering/exiting fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f8b079d
+
+### [omnibox][ml] Remove async ML paths
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a778b71
+
+### Tab Organization: Add bubble image, update icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80b2876
+
+### [dPWA] Add CrOSEvents logging to detailed install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/050c841
+
+### Reland "[dPWA] Connect link capturing IPH to link captured app launches"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c53b91
+
+### [FixIt Week] Clean up pre-UserBypass cookie controls logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78aa51f1
+
+### [document-pip] Enable resizing for child dialogs in Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b22924
+
+### cros: Show an error screen in Add Account flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2cec47
+
+### Don't show RWS info for off-the-record profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5454d6a
+
+### Rename getWindowCloseButton to GetWindowCloseButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d82558
+
+### [mullet m3] Remove trigger source from AED::DidAcceptSuggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cf7ef3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1358dd70
+
+### Change PWA window close button enablement dynamically
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8454361
+
+### [mullet m3] Remove trigger source for AED::DidSelectSuggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92e5ec3
+
+### Require country on chrome/browser tests profile creation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da60df1
+
+### Update editor menu badge styling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d640a7
+
+### Fix flaky MediaDialogViewBrowserTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48c351a
+
+### LinkPreview: Add context menu item "Preview link"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ba47e54
+
+### [dPWA] Cease deriving launch disposition based on launch container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32ae6c8
+
+### chrome_shelf_prefs: Use base::span for function arguments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b87aee2
+
+### OOBE: Extend OOBE test API with CHOOBE screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fff1e7
+
+### [FedCM] Use dedicated flag for the button mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f79a0dff
+
+### Add support for encrypted AV1 (behind a flag)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f9065b4c
+
+### Add a feature flag for manatee in launcher for keyboard shortcuts
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/64c466d0
+
+### Delete allow-repeated-updates flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ef66be
+
+### Clean up LXD 5 flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b2a4354b
+
+### Remove expired use-sha1-server-handshakes flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8ca38a3a
+
+### [Default Nav Transition] Add the content feature flag to about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c224e75
+
+### Remove infobar-scroll-optimization flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c2b6de9
+
+### Remove 'kSystemNudgeV2' flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/19ea3915
+
+### [Autofill] Make chrome://autofill-content-editables platform-independent
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f3af2ea
+
+### [//chrome] Remove stale "use-shared-images-for-pepper-video" flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e438e35
+
+### Add feature flag for butter on desktop followup work.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5ea47ad
+
+### [waffle]Add a search engine choice entry in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/213e537
+
+### CCA: Add a feature flag camera-app-digital-zoom
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c4f1b04e
+
+`);
+              </script>
+            </body>
+        </html>
