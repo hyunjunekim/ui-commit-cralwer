@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-08
+### Files app: Convert mock_entry.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09e5263
+
+### Update loading gradient animation to match spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3b99a2
+
+### Reland "[X11] Make window bounds tracking simpler and more robust"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c191bc0
+
+### [FilesTS] Migrate filtered_volume_manager to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0b7516
+
+### [FilesTS] Convert 'hide' and 'show' events to CustomEvents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d97056b4
+
+### Files TS: Migrate test_util.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c827ac
+
+### [FilesTS] Extract CommandUtil to separate file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/21c0719
+
+### Swap clipping setup for NativeThemeBase SliderTrack.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c28cadf
+
+### Remove duplicated includes for views::label
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae235e47
+
+### Replace SkFontMgr::RefDefault with platform-specific calls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6166e8
+
+### Add missing include for setw(), et cetera in png codec unittest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70bc5629
+
+### Reland "Add metadata to Views classes for ash/chromeos"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79d994a
+
+### Remove most Resources#getColor().
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/786b549
+
+### [Responsive Toolbar] Fix animating layout bug.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28b832d
+
+### Replace calls to deprecated SkTypeface::Make functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/239c1bd
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f927c2058
+
+### TabbedPane: Fix tab switching issue in RTL layout.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e375b04
+
+### [accessibility] Move AXMode out of ui::AXPlatformNode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc4cbf2
+
+### [accessibility] Introduce ui::AXPlatform
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbe1532b
+
+### Track animating compositors in OcclusionTrackerPauser
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9f244d
+
+### [Per-App Language] Integrate app-locale picker dialog with AppService
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b74bbab
+
+### [Office upload] Rename fallback log function & update enums.xml comment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04a257c
+
+### Make shelf app icon > "New window" send NEW_WINDOW launch disposition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2364d337
+
+### [HaTS] Accept trigger id argument as part of launch survey call.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/becaa17a
+
+### snap-group: Move \`SnapPosition\` to \`split_view_types.h\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11c9ad84
+
+### CrOS Settings: Update description for Nearby Share row setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4d7be5
+
+### [CloudOpenMetrics] Add DidEndAtFallback helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37588ef4
+
+### QA Rich Card: populate cards with StructuredResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/656cfcc9
+
+### Move battery saver mode from string to bits psd
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d3e20e
+
+### Reland "[Office upload] Introduce OnAbandonedUpload() to avoid duplicate uploads"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc076dc
+
+### Ordering performance side panel cards based on active notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a753fc5f
+
+### [ SavedTabGroup ] Fix flaky tests when chrome refresh 2023 is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35921cd
+
+### [FixIt Week] Clean up performance subpage move logic
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/51a822b
+
+### Update Wallpaper Search page + tile strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfdd731
+
+### [Read Anything] Remove kReadAnythingAXMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf00556
+
+### Tab Organization: Add IPH on accepted suggestion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cff5699
+
+### [sidepanelpinning] fix potential crash for trying to hide an action that doesn't exist.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c1f821
+
+### Disable LocationIconViewTest.HideOnSecondClick
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/602a7ea
+
+### CrOS Settings: Fixing Storage Management > Apps name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/722bdebf
+
+### Revert "login_handler: Begin removing test dependencies on notifications."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a06cb5
+
+### Remove unused function in AppHomePageHandlerTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60ace37
+
+### [SidePanelPinning] Skip SidePanelToolbarButtonTest if feature is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8c32e5b
+
+### [OmniboxTextAndAnimationOptimizations] cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2239fea2
+
+### Lacros-Test: Fix and enable a DesksTemplatesClientLacrosTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2e3a19
+
+### Delete PaymentRequest.SecurePaymentConfirmation.Funnel.* metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69bf725
+
+### Add regression tests to verify hovercard children size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7d642a
+
+### Revert "picture-in-picture: Disable permission prompts occluded by pip windows"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61e1c77
+
+### [ForceSignin] Fix dangling pointer issue when the signin flow is cancelled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f647c7b
+
+### Compose Enabling code cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a288a8
+
+### UI tests for geolocation permission prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/771b24ec
+
+### Extension Safety Check Hats
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dcd0c12
+
+### Fix PolicyTestHandlerTestDisabledByPolicy in branded builds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d2228f
+
+### Do TestingProfile::Builder::AddTestingFactory(), not SetTestingFactory()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b300511
+
+### Split PopupItemId::kFieldByFieldFilling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c1ab62
+
+### [3PCD] Add explicit checks to prevent unwanted UB icon animations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bebb366
+
+### [SurfacePolish] Change toolbar background color and status bar color on NTP when search engine is not Google (Phone)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ada6d3a0
+
+### [Payments] Remove expired CheckoutFunnel.NoShow histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41fc8c3
+
+### [mullet m2] Maximum popup width is respected.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/037d3a9
+
+### [Code Health] Remove Signin.A* expired histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dd3537
+
+### Introduce SOCS cookie fetcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49ad2ff
+
+### [mullet m3] Add PopupType::kAutocomplete for popup showing autocomplete.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a343a44
+
+### [AF] Log autocomplete delete metric from the keyboard accessory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/485c230
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc3831a
+
+### [mullet m3] Remove APC::GetAutofillSuggestionTriggerSource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/763a9041
+
+### [mullet m3] Split kEntryNotSelectable popup item id.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0eb02be
+
+### [User Education] Add metadata and update Tester Page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/235c1ca
+
+### Set Time Dialog: Setup TS build target for set-time WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c35290a
+
+### Reland "[1/N] Use IS_OZONE_{X11, WAYLAND}"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c125a2e0
+
+### Add learn more link to wallpaper search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fa42d9
+
+### [Rounded Windows] Remove the feature flag in Lacros
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/07ef41a
+
+### [realbox][cr23] Create flag for realbox cr23 hover.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b1a71bc
+
+### Delete consumer-auto-update-toggle-allowed flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c757f0c
+
+### [PriceInsights] Add about_flags entry on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a493170
+
+### Remove exo-consumed-by-ime-by-flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1b55be9
+
+### [FixIt Week] Pre-UserBypass logic cleanup 2/2
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5716395
+
+### Site Data Improvements: Cleanup flag code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d1a90dc
+
+`);
+              </script>
+            </body>
+        </html>
