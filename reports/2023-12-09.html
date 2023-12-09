@@ -1,0 +1,232 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-09
+### guest_view: Improve SetOwnerHost() with per-owner type checks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be7cc8c
+
+### [FilesTS] Move the CommandHandler to a separate TS file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e731c3b
+
+### media/gpu/test: Remove OzonePlatform from VideoTestEnvironment
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8bcc3eb
+
+### Reland "Swap clipping setup for NativeThemeBase SliderTrack."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d139bc2
+
+### Revert "Reland "Add metadata to Views classes for ash/chromeos""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a40ebd9
+
+### Support multiple custom format types in ClipboardNonBacked
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de9fc06
+
+### [X11] Eliminate most round trips to obtian display configuration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37e4cda2
+
+### Improved web native theme update for Aura, Mac and Win
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4523e77
+
+### Revert "[A11y] Add CHECK and DUMP for IsIgnored() crash"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19f0a84
+
+### Use newer version of METADATA_HEADER macro.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0b789e
+
+### [4/N] Use IS_OZONE_{X11, WAYLAND}
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e953a2b
+
+### [FilesTS] Remove polymer_elements externs, update FilesFormatDialog type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f99f82
+
+### android: Use nanoseconds for MotionEvent pre-U
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/966e565
+
+### [accessibility] Migrate AXModeObservers to AXPlatform
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e87ba1
+
+### [accessibility] Move the AXModeObserver collection to ui::AXPlatform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f5827c
+
+### Files F2: Convert file_list_model_unittest to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d56895
+
+### TS-ify multi_metadata_provider and test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27249fe
+
+### Revert "Swap clipping setup for NativeThemeBase SliderTrack."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b68cc2b
+
+### Files F2: Convert file_list_model to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8123498
+
+### QA Rich Card: update QuickAnswersView layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfc3c2f
+
+### [DTC] Mark different timing points for tab strip transition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a40aab5e
+
+### Update Compose dialog positioning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc061ec
+
+### [DTC] Update tab strip visibility for onLayout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4606171
+
+### Fix crash when TabDragController is destroyed during Init.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d735cd8
+
+### [E2E] Restrict to gesture-enabled phone
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10691eb
+
+### [multi-window] Make the 'close window' dialog scrollable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/247fbf1
+
+### Use public descriptor JSON for wallpaper search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80d95bf
+
+### [FedCM] Implement "Add Account" for Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cf8fa2
+
+### [FedCM] Fix sign in to IdP in the button flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46c4278
+
+### [CSC] Send page title to companion after both DidFinishLoad and OnLoadingState.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b99331
+
+### [iOS Desktop password promo] Cleaned up feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/43d36ae
+
+### [ SidePanelPinning ] Enable the new side panel pinning flow by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d3f395
+
+### iwa: Create all installer views eagerly to fix size computation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/567db9b
+
+### gd: Implement Screen Size Support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4fc58d
+
+### iwa: Move View implementation to ViewImpl class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f6ce29
+
+### iwa: Add simulated progress bars to installation UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c213c5a
+
+### [gbb-cct] Cancel fetch callback after page change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd2d8cc
+
+### [dPWA] Integrate Link Capturing IPH with web_apps guardrails
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d9c5fc
+
+### [dPWA] External resolution command includes all operations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd2509e
+
+### [VCN Enroll] Log "sheet shown" metric in bottom sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ab8e86e
+
+### Update shortcut icon in removal dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3889cd9
+
+### arc/tracing: avoid crash on delayed trace start
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/939a615
+
+### display: Add display settings usage metrics - resolution/refresh rate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73f9ff78
+
+### arc-overview-tracing: same timestamp in model path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8f540d
+
+### Fix chromeos build errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e459701
+
+### Revert "[SysUi download integration] Add the download cancel button"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/780eda4
+
+### [omnibox] Cleans up searchbox stats logging migration features and flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b7c3b06
+
+### Move CRD remote command code in its own subdirectory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/148ee30
+
+### Add support for Relaunch Chrome bubble and promo to Linux
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8456ccd
+
+### [mullet m2-3] Deleting addresses works for all new address popup items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28ee850
+
+### Disable flaky test (interactive_ui_tests/DetachToBrowserTabDragControllerTest.DragDirectlyToSecondWindow/TabDragging)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81d66376
+
+### Revert "[SysUi download integration] Add the download pause button"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db7e57e
+
+### Adjust MakoRewriteView bounds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7257d2b
+
+### [Fast Pair] Display the debug metadata flag in os://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aac5c3e
+
+`);
+              </script>
+            </body>
+        </html>
