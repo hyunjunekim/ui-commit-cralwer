@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-12
+### Files app: Convert task_history.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/579c5fa
+
+### Revert "Use base::Erase/base::EraseIf()"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2214cb13
+
+### Use base::Erase/base::EraseIf()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5498474
+
+### wayland: Flush connection after pin/unpin window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fa279e
+
+### [FilesTS] Migrate position_util to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e79fafa
+
+### [FilesTS] Convert file_manager_commands to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50c80de0
+
+### Fix issue with views_examples_with_content not exiting properly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3e9b98
+
+### Remove the UseCommonSelectPopup feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/605e748
+
+### p13n: prepare SeaPenStore for sharing with VC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c7e6d6
+
+### ui,viz: Embed white level into gfx::ColorSpace
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c9dc7a
+
+### dPWA: Add web app icon to app titlebar on Windows
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6add44
+
+### Upgrade DCHECKs in ui/base/models/dialog_model*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f23904
+
+### [FilesTS] Add chrome.wallpaper definitions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6df66ea2
+
+### Only NotifyEnterExitOfDescendant if mouse_move_handler_ exists
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bad0e19
+
+### [Test Automation] Minor fixes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/90ed311
+
+### Fix dangling ptr in AXSystemCaretWinTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5fbb976
+
+### [Test Automation] Switch from SFINAE to concepts/constraints in API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e728b0
+
+### callback_helpers.h cleanup: Remove IsOnceCallback<>.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e8eb20
+
+### [X11] Fix bounds passed to geometry cache callback
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/17172f11
+
+### [Default Nav Transition] Remove edge from BackGestureEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5eeb4a
+
+### [RenderText] Change DCHECK To CHECK in GetGraphemeIteratorAtIndex.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8389dba
+
+### ui/display: Move DisplayConnectionTypeString to Display Constants
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/652eb2b
+
+### Fix dangling ptr WindowOcclusionChangeBuilderTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9992797
+
+### Avoid dangling pointers in BubbleFrameView.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b1393f
+
+### WebUI: Remove "useDefineForClassFields" from default TS config, part1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/988e7db
+
+### Fix dangling pointer in CursorManagerTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fbe48ec
+
+### [RenderText] Add set truncate length to render text fuzzer.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6aa31f7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8785cf4
+
+### Remove the expired Media.MediaKeysListener.RegisterHotKeyResult histogram
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d6fe3d1
+
+### [Files,TS]: Converts naming_controller to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d96cd982
+
+### [//ui] Restrict GpuMemoryBuffer::SetColorSpace() to Apple
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8ae77c
+
+### [Files TS] convert test_error_reporting to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/870ea74
+
+### [Files,TS]: Converts import_crostini_image_dialog to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d36f9df
+
+### Files TS: Convert combobutton.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74a2779
+
+### App Service: Clean up AppUpdateWaiter and variants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df6056e0
+
+### login_handler: Continue cleaning up login_handler_browsertest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12dbe76
+
+### [UI] Update browser/ui files to rename high efficiency to memory saver
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/278c6612
+
+### Merge the battery saver button with the Performance toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70a9173
+
+### CrOS: NetworkPortalSigninController: Add metric for signin times
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b4e0ba
+
+### [Reland][SysUi download integration] Add the download cancel button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/408481b9
+
+### Force-enable animation for TabDragController tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66625fc
+
+### preload: re-enable a PrerenderBookmarkBarOnHoverNavigationTest test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffa56eb
+
+### [Views] Rename high efficiency to memory saver in Views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eaa80e
+
+### Update test callers of content_settings::ProviderInterface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3adf99
+
+### [ntp-modules] Add new HaTS trigger scenarios
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32cd7b5
+
+### [FixIt Week] Preloading subpage cleanup 2/2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec000fd8
+
+### [TabOrganization] Use the active tab for the TabContextMenu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98af229
+
+### display: Add display settings usage metrics - orientation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2d0526
+
+### Log complete latency for wallpaper search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1785aca
+
+### Reland 1: login_handler: Begin removing test dependencies...
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c80f076
+
+### Rename high efficiency to memory saver in PageActionIconType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd6b1bf8
+
+### Add cancel button to OOBE LocalDataLossWarningScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f30fdfb
+
+### Cleanup kEnableCloudScanAfterPreview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3fb579d
+
+### Clank OTP: Set up native logic for one time grant support
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/127cabf
+
+### Update color of compose logo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60a7446d
+
+### Add was_checkbox_visible boolean to OnUnmaskPromptAccepted.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a30a5d6
+
+### [Extensions cleanup] Update GetByID() for terminated extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84e6c26
+
+### p13n: make Delete Wallpaper button work and refetch Sea Pen images
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbefe5e
+
+### Update performance features to rename high efficiency to memory saver
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8c712b4
+
+### Remove unused methods in ToobarManager and Invalidator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3936035
+
+### Add "Fetching IBAN" and error dialog when unmasking an IBAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee711be
+
+### Refactor iban_metric to take \`is_upload_save\` parameters.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/581812b
+
+### Add support for reordering pinned actions using keyboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77ac2e6
+
+### [sidepanelpinning] update pinned container ui on side panel change before notifying entries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/951109ac
+
+### Remove AutocompleteRowWithDeleteButtonTest outdated TODO.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5782d86
+
+### Rename message names to use memory saver instead of high efficiency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e502e9
+
+### Update histogram names to rename high efficiency to memory saver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5418bd
+
+### Add junit for management page on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a029abf
+
+### [OOBE] Make QuickStart a common screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c96725728
+
+### Rename high efficiency icons to be memory saver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7c9581
+
+### (Clean-up) Remove unused variable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f393fd5
+
+### Replace deprecated RunLoop::QuitCurrentWhenIdle[Closure]Deprecated() with Quit[WhenIdle][Closure]()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0836bea
+
+### tests: stop using legacy gtest APIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a536cd
+
+### [CSC] Define the captured-surface-control PermissionPolicy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dac5de9d
+
+### display: Add display settings usage metrics - scaling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/add06af
+
+### Revert "Privacy Sandbox: Cleanup the old consent and notice prompt values"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5557b79
+
+### Update metric description for account capabilities latency tracking.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4464b3
+
+### OOBE: Separate out getDeviceId message handler from gaia_dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4aa59b4
+
+### [Clippy] Refactor cloud_upload.mojom to separate dialog-specific args
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1238d0b
+
+### Remove DCHECK for checking shelf icon click behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba18aeb
+
+### Privacy Sandbox: Cleanup the old consent and notice prompt values
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5de41f1
+
+### [Office upload] Remove error log in GetODFSInfo()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b2cfa7
+
+### WebNN: Enable WebNN API feature flag with chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5e8d2452
+
+### [CCT] Clean up a feature flag kCCTPreventTouches
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/68fbc4ce
+
+### Remove the EnableProtoApiForClassifyUrl experiment.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/671e007c
+
+`);
+              </script>
+            </body>
+        </html>
