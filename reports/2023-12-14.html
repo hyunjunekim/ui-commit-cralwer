@@ -1,0 +1,412 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-14
+### [Files,TS]: Converts files_confirm_dialog.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/306897d
+
+### Files app: Convert metadata_update_controller.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c499fe0
+
+### [Files TS] Convert elements_importer to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/908140b
+
+### Rename gfx::OverlayTransform rotations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/316d5fb
+
+### [Files,TS]: Converts files_alert_dialog.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75c8313f
+
+### [X11] Replace DUMP_WILL_BE_CHECK with CHECK in ui/gfx/x
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fca3e72
+
+### Video: Add \`kUseDisplaySDRMaxLuminanceNits\` feature for video
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac505aff
+
+### Files app: Convert crostini_controller.ts to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e50de83b
+
+### Add GpuChannelLost Observer to LayerTreeFrameSink
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b3c6b7d
+
+### [Test Automation] Migrate interactive test internals to modern C++
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09f2e67
+
+### Add null check for notification delegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94c4d62
+
+### Change edging paintflag to fix fluent arrow artifacts.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8ede1d
+
+### Added check for recursive metadata parents.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31c16bd
+
+### Speculative fix for Chrome-Linux crash at OnNativeThemeUpdated
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c333a26
+
+### views: ignore InkDrop base color callback when widget is missing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53aa201
+
+### Convert enum to enum class for GetInternalNodeCreateType
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9fcd210
+
+### Add UI tests for the special case of MIDI permissions
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5961f881
+
+### Add test support for color providers in Blink::Page
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/782a4d3
+
+### Subscribe to DialogModelSection callback directly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d06a720
+
+### Remove extra CGColorSpace parameters from skia and ui helpers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dbbfede
+
+### wayland: Fix WaylandWindowTest with designated initializer list
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/157f2b1
+
+### [Tech Debt] Clean up expired ntp-desktop-lens
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/132c277
+
+### QA Rich Card: add read/copy buttons to translation card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49ce892
+
+### Reenable a WebAppBrowserTest on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe01ea2dc
+
+### desk_profiles: Save & Recall with lacros profile support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/608c362
+
+### Disable flaky ExtensionsHatsHandlerTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ad5091
+
+### [omnibox] Conditionally disable flaky browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e5d200
+
+### [SysUi download integration] Add the download resume button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a5c576
+
+### Link Capturing: Clean up types in AppsIntentPickerDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae0caab
+
+### [OOPIF PDF] Fix saving full-page edited PDFs by saving by PDF plugin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8395ad6
+
+### [ SavedTabGroup ] SetTextStyle when TopChromeFont flag disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/556cb44
+
+### Tab Organization: Implement a11y spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc23566
+
+### [CodeHealth] Rewrite LegacyFindInPageTest.FocusRestoreOnTabSwitchDismiss to Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bfb465
+
+### Tab Organization: Create refresh button experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc56385
+
+### Replace SetProminent() with SetStyle(ButtonStyle::kProminent) in views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00a75f36
+
+### [ChromeRefresh2023] Revise profile row chips and labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ff29502
+
+### Update/add some TODO comments to link disabled tests to more context.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/121e45b
+
+### Revert "Add method to DeviceLockBridge in order to reuse more code for IBAN"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e237fdb
+
+### Fix Document PiP title bar borders on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e6ee0a
+
+### documentScan: Add handlers to start and cancel a scan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19b2190
+
+### [realbox][cr23] Theme realbox steady state to cr23.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d259c8b
+
+### Add more UI tests for the special case of MIDI permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bcbf698
+
+### [Gardener]Disable OmniboxPopupViewViewsTest.SpaceEntersKeywordMode test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08c7076
+
+### Add method to DeviceLockBridge in order to reuse more code for IBAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61b3ffa
+
+### [fixit] Clean up launched track-by-default flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/12f213e
+
+### Reland "[commerce] Add price tracking controller"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32f5ee7b
+
+### Remove FEED_BACK_TO_TOP
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1511362
+
+### Remove need to pass hover card width to footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3c62b2
+
+### CrOS GMC V2: Fix the flow for pressing on media view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d42fd57
+
+### [Reland][SysUi download integration] Add the download pause button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43cf51a3
+
+### Reland 1: login_handler: Continue cleaning up login_handler_...
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7128dc3
+
+### connect: Process carrier locked SIM from shill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7655e45
+
+### [Discounts][fixit] Clean up the kShowDiscountOnNavigation flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5da464c
+
+### Update on device model to allow for providing full file paths instead of directories
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45c0146e
+
+### [Share][Fixit] Remove image_editor references
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b01d64a
+
+### [SysUi download integration] Set notification's title and progress
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4eb3992
+
+### [ OWNERS ] Add dljames to c/b/ui/views/side_panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d12b4ce6
+
+### Remove SafeBrowsingCsbrrNewDownloadTrigger feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/760da9e
+
+### [Iban][Clank]Add AutofillSaveIbanDelegate class to provide callback functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6feeb8a
+
+### Revert "[commerce] Add price tracking controller"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35755d1
+
+### [Discounts][fixit] Clean up the kNtpHistoryClustersModuleDiscounts flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f0c4460
+
+### [CSC] Sends main frame's innerHTML to companion side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2969e0cb
+
+### CrOS: Captive portal: Request either Shill or Chrome detection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32a1454
+
+### [commerce] Add price tracking controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf7d3b19
+
+### [Share][Fixit] Remove WebNotesStylize from Android
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ff3e1b10
+
+### [E2E] Fix a WrongConstant warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e464c64
+
+### Update the accept button text to reflect inserting or replacing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08c9cef
+
+### customization: Add customization restriction for graphics tablets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cf011b
+
+### [Omnibox] Clean up unused revamp variants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/487c8a5
+
+### Removed WrenchMenu.RecentTabsSubMenu UMA histogram.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d660e63
+
+### [Tech Debt] Remove expired enable-lens-ping
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f56b9c1
+
+### [Omnibox] Clean up perf features
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/829fbdb
+
+### [Omnibox] Clean up Journeys chip / short circuit flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b363f1
+
+### [commerce] Add controller base class for commerce page actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96796e9
+
+### [dPWA] Rename test function for navigation to URL and waiting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/526400a
+
+### [TabOrganization] Fix issue where services are being destructed OOO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0d12d2
+
+### Replace discard ring color with one more contrasty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d706d10a
+
+### Update CR23 CI bots test exclusion list and disable those still failing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64e23ea
+
+### [sheriff] Disable flaky InvalidDownloadsPath test on MSAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f5a41a9
+
+### Reland "[dPWA] Field trial testing configs for link capturing experiment"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5caa457
+
+### [CrOs][Guest] Fix three point menu item to open new tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf43d8a
+
+### Reland "Privacy Sandbox: Cleanup the old consent and notice prompt values"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf016a7
+
+### [sheriff] Disable flaky PageTitleNotifiesViaPostMessage test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f020555
+
+### Lacros-Test: Remove outdated comment about WebAppIntegrationTest in ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d2f9147
+
+### Add debug dump to investigate crash in ScreenAIServiceRouter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20e3fb3b
+
+### Add "open app" functionality from install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d1fe33f
+
+### Revert "Reland "picture-in-picture: Disable permission prompts occluded by pip windows""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7c0582
+
+### [ChromeRefresh] Fix failing tests for three dot menu model.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c73e8e0
+
+### Fix javadoc @tag capitalization.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2d6f7c
+
+### [Garden] Disable T.HoverCardStopShowingMemoryOnNavigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a6f3a5
+
+### [fixit] Clean up the merchant wide flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/81089a8
+
+### Revert "[CCTTextFragmentLookupApiEnabled] Cleanup for fixit"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4f6194b
+
+### [CCTTextFragmentLookupApiEnabled] Cleanup for fixit
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/36c5651
+
+### [CriticalPersistedTabData] Cleanup for fixit
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d92e127
+
+### Remove FEED_HEADER_STICK_TO_TOP
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/442d4ef
+
+### Add flag to silently pass sync passphrase to GmsCore
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8831dca
+
+### [Start] Clean up START_SURFACE_DISABLED_FEED_IMPROVEMENT related code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fa8da3d
+
+### [bookmarks] Remove unused bookmarks refresh feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6da8db9
+
+### p13n: chrome://flags SeaPen entry
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/da5a5705
+
+`);
+              </script>
+            </body>
+        </html>
