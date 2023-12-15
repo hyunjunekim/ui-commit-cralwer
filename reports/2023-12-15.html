@@ -1,0 +1,404 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-15
+### Files app: Convert file_metadata_formatter to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f570654
+
+### [Files, TS]; Converts file_manager_dialog_base_unittest.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d10a3cf
+
+### Files app: Convert providers_menu.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19d6dca
+
+### [Rounded Windows] Add an UpdateRoundedWindows() method to the ClientView class.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db52932
+
+### [Files TS] Convert fake_file_selection_handler to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c41af7c
+
+### Files app: Convert action_model_ui.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db526c36
+
+### CrOS cr-elements: Update cr-search-field styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61d582e
+
+### Move DialogModelHostField into ContentsView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aaefcd5
+
+### [Files F2] Fix the flaky tests for the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36f9656f
+
+### Revert "[sidepanelpinning] Make button check anchor count when made visible."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f99ecab
+
+### [a11y] Fire UIA_Text_TextSelectionChangedEventId for Views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34630ee
+
+### Replace SetProminent() with SetStyle(ButtonStyle::kProminent)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e70c769
+
+### ash: Update notification control button icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e14a72
+
+### [realbox] Fix realbox suggestion text truncation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4276c964
+
+### Tab Organization: Bring tab navigation up to spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53a0b90
+
+### WebUI: Replace FlattenedNodeObserver usage in cr-action-menu.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69f81ef1
+
+### DumpWithoutCrashing() if registering too many window classes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c8862d
+
+### CookieSettings: Avoid redundant notifications from WebUIAllowList
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb08955
+
+### Make ContentsView observe DialogModelSection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57d59fd
+
+### Convert enum to enum class for TableTypes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99dae87
+
+### [X11] Fix crash in PropertyCache when connection goes down
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ff476e
+
+### [realbox] Fix action chip cutoff when browser size is narrowed.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e21e50f9
+
+### Refactor TestNativeDisplayDelegate to own snapshots
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13cb805
+
+### [combobox] Schedule a paint when the model changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b54f7f8
+
+### Mark pointer in BubbleBackground as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d631984
+
+### Add CHECK to AXPlatformNodeWin::InternalRelease to detect double-free
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3186a0b
+
+### [sidepanelpinning] Make button check anchor count when made visible.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8455085
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53c8a56
+
+### [Files, TS]: Converting file_manager_dialog_base.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b463c65
+
+### Remove usage of DanglingUntriaged in ViewsAXTreeManagerTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d0b4509
+
+### Files F2: Convert gear_menu_controller to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20b4526
+
+### [FilesTS] Prefer AbortController over EventTracker
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bad19b16
+
+### Revert "[Desktop] Add an ESB promo IPH bubble on a dangerous download"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d74737a
+
+### CrOS Settings: Searching for Reset doesn't link to the right place
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bb2e4a
+
+### ash: Add crosier version of wmp.VirtualDesksBasic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a487c8
+
+### [Rounded Windows] Refactor out ClientView rounding logic out of
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/804d2dc
+
+### [Fixit] Remove flag AndroidAppIntegrationSafeSearch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5703c09
+
+### Revert "[CodeHealth] Rewrite LegacyFindInPageTest.NavigationByKeyEvent to Kombucha"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9fdac9a
+
+### login_handler: Test cleanups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/074719a
+
+### Revert "[CodeHealth] Rewrite LegacyFindInPageTest.ButtonsDisabledWithoutText to Kombucha"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e6e978e
+
+### Revert "[CodeHealth] Rewrite LegacyFindInPageTest.MatchOrdinalStableWhileTyping to Kombucha"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81a76ba
+
+### [Fixit] Clean up BaselineGM3SurfaceColors
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3ef96fa
+
+### [responsive toolbar] Support pinned items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/565e72f5
+
+### Revert "[SidePanelPinning] Add IsSidePanelPinningEnabled() method to guard the pinning feature."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ff9128
+
+### [SidePanelPinning] Add IsSidePanelPinningEnabled() method to guard the pinning feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/346d9f8
+
+### CrOS Settings: Add GoogleDriveHandler test variations for revamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a49ba7
+
+### Fix the issue that when the side panel entry is local, the browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc12c4f5
+
+### [1/n] Emoji picker cpp search: Move python scripts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/493e77b
+
+### Add empty inspiration card.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f5fd46
+
+### [Tab Organization] Add demo mode for triggering.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/096c024
+
+### [CodeHealth] Rewrite LegacyFindInPageTest.MatchOrdinalStableWhileTyping to Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e97641
+
+### Add context to feedback controls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a753c6
+
+### [CodeHealth] Rewrite LegacyFindInPageTest.ButtonsDisabledWithoutText to Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a866d8
+
+### login_handler: Delete login_handler_test_utils.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/098f46d
+
+### [Discounts] Elide the host in terms and conditions dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/973d114e
+
+### [DTC] Ignore transitions when control container has an invalid width
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/227fa29
+
+### Add metric tracking initial display time for first print
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb9b6fd
+
+### [FedCM] Update "Use a different account" UI per mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fca726e
+
+### Avoid use of RenderViewHost in RenderViewContextMenu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fd0e96
+
+### Tab Organization: Deflake browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3024ded
+
+### Disable flaky VideoOverlayWindowViewsTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee05718
+
+### [CodeHealth] Rewrite LegacyFindInPageTest.NavigationByKeyEvent to Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68677a8
+
+### Fix function order in SaveCardOfferBubbleViews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc77830
+
+### [FSA] Create \`FileSystemAccessScrollPanelView\` for UI elements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c82eae1
+
+### [E2E] Add padding to snackbar views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c86b4e2
+
+### [ImprovedDownloadWarnings] Hook up suspicious warning bypass
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77e08a1
+
+### Remove expired histograms WrenchMenu.TouchDuration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dd8285
+
+### PDF OCR: clean up TODOs for crbug 1442928
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/924ebca
+
+### Clear out images in case of Wallpaper Search for ModelQualityLogging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d20c62
+
+### Allow QueryTiles to be optionally shown as List.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/02d104b2
+
+### [CodeHealth] Rewrite LegacyFindInPageTest.CrashEscHandlers to Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85cdcb50
+
+### Compose dialog overrides GetBubbleBounds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/364acbf
+
+### [Multi Apps] Create the SubApps permissions policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fc038d
+
+### Fix info bar button icon colors in PWA windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98e49f9
+
+### Add metric for wallpaper search errors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a671db
+
+### [Rounded Windows] Fix scaling of rounded border of SidePanel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a16c040
+
+### Revert "Reland "[commerce] Add price tracking controller""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2aae42
+
+### [Desktop] Add an ESB promo IPH bubble on a dangerous download
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/368bfeb
+
+### Stop StartupBrowserWebApp tests creating shortcuts in start menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4116327
+
+### Remove SB_THREAT_TYPE_URL_CLIENT_SIDE_MALWARE threat type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e32289
+
+### Rename remaining instances of high efficiency to memory saver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a43a5f
+
+### [waffle]Remove marketing snippet feature param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac8e85c
+
+### [fixit] Avoid automatic defaults for MockShoppingService and use NiceMock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a040a2
+
+### [Android] Remove kAutofillTouchToFillForCreditCardsAndroid flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d989e513
+
+### Revert "Reland "Privacy Sandbox: Cleanup the old consent and notice prompt values""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c254bd5
+
+### Porting Mac System Permission Bubbles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2df0675
+
+### [Shortcut] Add accessible name for shelf items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b82bafb6
+
+### Add histograms for keyboard/pointer locks and fullscreen usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18bbab6
+
+### [gardener] Disable PrivacySandboxDialogViewBrowserTest.InvokeUi_Consent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a970e3
+
+### Dismantle obsolete HandwritingGestureEditing flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aaf3c8c
+
+### Add flag for Wallpaper Search inspiration card.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/de5dd079
+
+### Remove Flag and Entry points to GVR
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/83d415a
+
+### [bookmarks] Remove unused improved save flow feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/30ccb4c
+
+### Update chrome://flags arms for 3PCD heuristics.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eb11686
+
+### [Read Anything] Add ReadAnythingLocalSidePanel to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c355e8a2
+
+### Post-launch ECH cleanup
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1808fed
+
+### [Site search policy] Add entry to chrome://flags to enable policy
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6063029
+
+`);
+              </script>
+            </body>
+        </html>
