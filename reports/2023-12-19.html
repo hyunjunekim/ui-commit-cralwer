@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-19
+### [Win]update overlay swap chain size for power saving on battery mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd39e592
+
+### [FilesF2] Re-scan MyFiles after add/remove UI entries
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cc93e4
+
+### CrOS cr-elements: Dynamic color support for cr-searchable-drop-down
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93eacf9
+
+### Revert^2 "[a11y extensions] Move generate_manifest.py out of ChromeVox"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59dfb71e
+
+### autocorrect: prevent autocorrect_range being set
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f20e48b
+
+### Suppress the chooser dialog when modal dialogs are suspended
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13b71ab
+
+### Supported Links: Trap Focus in Supported Links Dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74b0f63
+
+### Verify resource order in data pack files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4b2e62
+
+### Move ContentsView outside BubbleDialogModelHost
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/826f44e
+
+### Use aria-label on cros-switch instead of aria-labelledby.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38b691e
+
+### FullscreenType: Migrate immersive and fullscreen on wayland
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47b01b0
+
+### [Shortstand] Use InstallShortcut interface part 3.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2194b3
+
+### Disable tests that are still flaky on lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55bb9dd
+
+### Disable GlobalErrorServiceBrowserTest.BubbleViewDismissedOnRemove on asan lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf1b3b7b
+
+### Remove an unnecessary DCHECK which causes Lacros to crash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b170957
+
+### customization: Add hasLauncherButton to provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a08d4ea
+
+### Make unified checks everywhere for ComposeEnabling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6e5ff2
+
+### [ChromeRefresh2023] Add additional sign in tests and revise existing tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7b9ccd1
+
+### [Extensions] Remove Extensions.AppTabLaunchType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64e2048
+
+### frame: Set immersive state only when changed from previous request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01122ad
+
+### WebUI: Patch Lit to use 'lit-html-desktop' trusted types policy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81068df0
+
+### [SHv2] Only use menu notification service when SH is running
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/662a7b8
+
+### QA Rich Card: add phonetics button to definition card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3d4c9f
+
+### Use 2-param metadata macro in header for c/b/ui/v/extensions/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f534fea
+
+### [SurfacePolish] Slight refactor of code for search box appearance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c1c17f6
+
+### [Fixit] Remove AdaptiveButtonInTopToolbar flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/08a994f8
+
+### PDF OCR: Encapsulate the Settings toggle button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/639d2dfd
+
+### [Birch] Add birch keyed service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15a0785
+
+### Reland (again) "[commerce] Add price tracking controller"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc8cd8f
+
+### [ntp] Stop granting 3P cookies for OGB on Chrome OS Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b01af1f6
+
+### iwa: Check and Observe Ash pref to enable/disable IWA installer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afae5a2
+
+### Cleanup flag WebApkInstallService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bca40cb
+
+### Reland - shortcuts: Add new search-based shortcut for open feedback app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a023935
+
+### display: Add display settings usage metrics - nightlight
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bb3902
+
+### [Nearby Share] Move NS string add function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e9e64a40
+
+### [GTM] Relayout the Tasks glanceable, part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28ddb4b
+
+### Hide Compose nudge on typing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbf6b117
+
+### Rename a few more instances of high efficiency to memory saver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb3b7c5
+
+### Always set all PSD for the DownloadWarningUi HaTS trigger
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ad8605
+
+### Revert "Don't run SynchronizeVisualProperties on Mac when display-state updates"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf1fd9a
+
+### [CodeHealth] Remove expired histograms in Extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fbb59a
+
+### display: Add metrics to measure default settings performance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a55501
+
+### [Chime] Adding piping to debug UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbb7981
+
+### [sidepanelpinning] update pinned container ui before notifying entries of state change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25530a15
+
+### chromeos: Refactor InteractiveAshTest for Crosier
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1c49c4
+
+### [mullet m3] Add not selectable flag instead of popup item id.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e457d80
+
+### [Tech Debt] Cleanup enable-lens-image-format-optimizations
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/140752d
+
+### SmartCard: Custom text for the "always allow" button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b51fb9e2
+
+### Re-enable BubbleCorrectlyReportingMemorySaved Test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4c6f97
+
+### Add \`UnselectSuggestion()\` instead of \`SelectSuggestion(nullopt)\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce18c19
+
+### Verify the omnibox will display the MIDI indicator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e599645a
+
+### [TabOrganization] Destroy the session when a tab is added or removed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cec732
+
+### [gbb-cct] Resize web contents in sync with page insight sheet
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f3b237a
+
+### Remove expired histogram Net.HttpAuthPromptType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea2469b
+
+### Revert "[gardener] Revert "Add mojo bindings for Privacy Sandbox DevUI""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b2e553
+
+### [dPWA] Move link capturing test utilities to be reusable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a76b9c0
+
+### [TabOrganization] Fix observers for TabSearchSyncHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f11678
+
+### Show default context menu in Compose webui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2e4e6ce9
+
+### [DTC] Update tab_strip_height dimen references
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff758262
+
+### Don't run SynchronizeVisualProperties on Mac when display-state updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5966873
+
+### Split cryptohome recovery screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34625d0
+
+### [a11y] Add accessible node data for Edit Password row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3aea707
+
+### Refactor PermissionPromptBubbleBaseView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/187fedf3
+
+### [a11y] Set correct node data description in cross device experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee77080
+
+### Rewrite and enable BrowserFocusTest.FocusTraversal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/329f4e3
+
+### Add metrics to new Cros app install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8f621a
+
+### Use mojo feature for WebMachineLearningNeuralNetwork
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ae9128
+
+### [Fixit] Clean up CCTRealTimeEngagementSignals
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c8d1001
+
+### [Android] Cleanup kOfflinePagesLivePageSharingFeature deprecated flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f09dd97
+
+### [DBSC] Expose EnableBoundSessionCredentialsSoftwareKeysForManualTesting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2ecfe218
+
+### Remove legacy labels feature flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0adf357
+
+`);
+              </script>
+            </body>
+        </html>
