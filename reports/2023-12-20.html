@@ -1,0 +1,384 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-20
+### TS-ify install_linux_package_dialog_unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4310278
+
+### Replace kFlexBehaviorKey in BoxLayout with kBoxLayoutFlexKey.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c2d3ac
+
+### CodeHealthRotation: Remove expired GPU.DirectComposition.NumPendingFrames
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d8120bb
+
+### [mac-a11y]: remove workarounds for VoiceOver performance regressions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/edd343c
+
+### Add unit tests for Id3Parser
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d6aee4
+
+### Reland "[exo] Ensure exo clients always see a valid Output configuration"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c00c8c4
+
+### [Files F2] Improve performance for the new tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89a3753
+
+### [DragDrop] Fix Uri read permission flag missing for image link
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c40c6e3
+
+### [Files,TS]: Converts install_linux_package_dialog to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d93d432
+
+### App Service: Remove AppType::kMacOs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26831ab
+
+### CrOS cr-elements: Update colors for tooltips
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2456a58
+
+### Files app: Avoid reading properties of null object
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa044fa
+
+### Break out DialogModelButton from DialogModelFields
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c07ba0
+
+### Tab Organization: Fix tab underline in dark mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9094aba
+
+### [realbox][cr23] Fix realbox hover fill shape in ZPS for narrow browser.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a98139b9
+
+### [realbox] Fix text truncation in realbox due to remove button.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aeadaf4
+
+### Remove Enabled EvictSubtree and NavigationUpdatesChildViewsVisibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/248c2e5
+
+### Button::GetTooltipText should return const reference
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb929b1
+
+### Optimize ClampSizeToMinAndMax to avoid unnecessary calculations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ced51bd
+
+### Convert MessageWriter APIs to base::span
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71bf932
+
+### Reland "Reland "Add metadata to Views classes for ash/chromeos""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2f2d21
+
+### jni_zero: pre-java_ref move required cleanups
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f75db3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31f7bd0
+
+### Files app: Convert actions_submenu_unittest.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a89d31
+
+### Enrich Event::ToString.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f888382
+
+### Convert drag_selector to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25643d4
+
+### [SysUi download integration] Enable resumption from notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/629277c
+
+### [Per-App Language] Add routing to open app language subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f23a46db
+
+### [AsyncSB] Use AsyncCheckTracker to determine if main page load is blocked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72177bd
+
+### Fix bug reference for fixing nogncheck
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/962bae5
+
+### TabletState: Remove TabletMode::IsInTabletMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14dad0c
+
+### Remove AppType from calls to AppServiceProxy::LoadIcon in //c/b/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57bed80
+
+### Reland "EyeDropperView test for cursor and touch movement"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d5ca69
+
+### Allow 3P cookies for sign in and companion in untrusted WebUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72980d7
+
+### [Shortstand] Use InstallShortcut for AppServiceShortcutShelfBrowserTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50d002d
+
+### [E2E] Pad the Contextual Search peek when ToEdge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01c8cff
+
+### [SysUi download integration] Enable pause from notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f9ea11
+
+### Extensions: CodeHealth: Prefer using over typedef to improve readability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d56bf3
+
+### [CSC] Sends page title and innerHTML together in same postMessage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f6030a4
+
+### Remove the MessagesForAndroidInfrastructure flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/14c8c2b
+
+### [webauthn] Fix "Back" button on QR sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb21c4c
+
+### borealis: Simplify hardware-checking in advance of rework
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63b0a3b
+
+### jni_zero: final cleanup before moving scoped_java_ref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c37fbd3
+
+### [Extensions] Remove unnecessary extra button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad7e729
+
+### Remove GVR Implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e430554
+
+### Add memory saver tab picker tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d62db94
+
+### [SysUi download integration] Ensure holding space backing file update to date
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c1aded92
+
+### [sidepanelpinning] update SidePanelCoordinatorTest tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc65c85
+
+### [DTC] Fix unexpected shift for Android toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ebeeb5
+
+### Add memory saver browser test mixin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b12c1e
+
+### [Extensions c2s] Add extensions controls buttons directly to container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15f41a2
+
+### customization: Update help section on mouse button page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f7ee8e
+
+### Read Anything: Set kPDFOcr only when the PDF OCR feature flag is on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41b5823
+
+### Move GetNextColor util to tab_groups component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f756a29
+
+### [Read Anything] Add pref for disabling links in reading mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f4cb25
+
+### [ImprovedDownloadWarnings] Hook up dangerous warning bypass prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcf7be3
+
+### [SurfacePolish] Slight refactor of code for search box appearance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8d47f7
+
+### Display download progress in the caption bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd3a558
+
+### History UI: Migrate registration to WebUIConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6f6017
+
+### [ImprovedDownloadWarnings] Clean up kImprovedDownloadBubbleWarnings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b68daa
+
+### [SysUi download integration] Enable cancellation from notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/752bf42
+
+### [Site search policy] Ordering for site search engines set by policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cba0d89
+
+### [RWS] Remove kStorageAccessAPI feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d1ed70df6
+
+### Lacros-Test: Remove outdated comment about WebAppControllerBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01b6d19
+
+### [SHv2] Enable password checkup command to make the row clickable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa9e3cc
+
+### [Fixit] Cleanup AdvancedPeripheralsSupport flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/adf7ee49
+
+### Record if and why the user is ineligible for ReadAloud
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c28e6e42
+
+### Uninstall odfs extension on disallowed event
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb7836cf
+
+### [Uno-D] Keep signed in account on reload with clear on exit for UNO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5c0858f
+
+### Make ChromePaymentsAutofillClient a WebContentsObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e50b4d65
+
+### [Extensions c2s] Add ToolbarChipButton with flat edges
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5018745
+
+### Revert "EyeDropperView test for cursor and touch movement"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e43940
+
+### [User Education] Emit metrics for when an IPH is not shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db5ae22
+
+### Fix screen capture notification taskbar grouping
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea1dfb5
+
+### Revert "WebUI: Patch Lit to use 'lit-html-desktop' trusted types policy."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f71c923
+
+### Clank OTP: Add support for showing one time grant in page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/104fb6d
+
+### [ForceSignin] Hide toolbar when navigating back from reauth screen to the profile picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2637d4e
+
+### [SAA] Show the etld+1 for the sites shown on the permission dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c950cfb
+
+### Record address deletion using shift+delete on a first-level popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b4ebcd
+
+### Rename UI resources, elements & urls to ManagedUserProfileNotice pattern
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19d3656
+
+### Reland "[SidePanelPinning] Add IsSidePanelPinningEnabled() method to guard the pinning feature."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97adbc1
+
+### Reland "Don't run SynchronizeVisualProperties on Mac when display-state updates"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86498c72
+
+### EyeDropperView test for cursor and touch movement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f59ccc5
+
+### Disable RecordingServiceBrowserTest.RecordFullscreen on MSAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f64cb4f
+
+### Revert "[SurfacePolish] Slight refactor of code for search box appearance"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfa9a90
+
+### [E2E][CiC] Add feature flag for fullscreen API migration
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/23bd7b80
+
+### Introduce android:elegantTextHeight = true behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/18620fc
+
+### [Fixit] Deprecating query tiles feature code for NTP and Start.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eda153eb
+
+### borealis: add flag for enabling zink in borealis
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/94c2f81
+
+### Remove back-gesture-refactor-activity-android flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/070f7fc
+
+### [Linux Audio Capture] Add features and flag for loopback audio capture.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9a3d5ea8
+
+### Revert "Graduate thus dismantle kHandwritingLibraryDlc flag."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef83d5a
+
+`);
+              </script>
+            </body>
+        </html>
