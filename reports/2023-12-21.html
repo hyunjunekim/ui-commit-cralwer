@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-21
+### [Files,TS]: Converts default_task_dialog.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2a1085
+
+### Partial Revert "Reland "[X11] Make window bounds tracking simpler and more robust""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e4a4a03
+
+### Enable verbatimModuleSyntax compiler option
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6953fe17
+
+### Mark type-only imports
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18eb766
+
+### Tab Organization: Navigation UI tweaks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b701d72
+
+### WebUI: Include Lit in prod builds and exclude Lit bundle in bundle_js().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bae8254
+
+### Don't send IME Candidate selection a11y event in autocomplete suggestion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce14d42
+
+### ozone: evdev: Expand Project Imposter to Mice
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/da4d03cd
+
+### cr-checkbox: Fork between Ash and Desktop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64da9197
+
+### WebUI: Enforce "import type" imports for folders that already use them.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6369424
+
+### CodeHealthRotation: Remove expired GPU.IOSurface histograms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/581f3a6
+
+### Consistently test ARC support with \`HAS_FEATURE\`.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06d4831
+
+### Rewrite vector<T*> into vector<raw_ptr<T, VectorExperimental>>
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e63cbaf6
+
+### [SurfacePolish] Change search box color on NTP when search engine does not have logo (Phone)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d3d322c
+
+### Remove expired TimeToScrollUpdateSwapBegin metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0900de
+
+### Remove BubbleDialogModelHost* from contents
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b3a4b0
+
+### CodeHealthRotation: Remove GPU.DirectComposition.ApprovedPresentDuration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d429f16
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/492b54c
+
+### Replace serial= with tracker_id=
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9613eb
+
+### Clean up readFileBytes helpers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96c5730
+
+### [Files app] Prefer AbortController over EventTracker
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09cd1128
+
+### Remove Function{Parallel,Sequence}
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01884d6
+
+### [Files F2] Add a test for addUiEntry after readSubDirectories
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/400f6d6
+
+### [Office upload] Handle escape key as a "cancel" in Connect to OneDrive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f281991
+
+### [Office upload] Handle escape key as a "cancel" in Move Confirmation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/101e1dc
+
+### Add structured logging to new app install experience
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26d084e3
+
+### Revert^5 "Revert "Reland "EyeDropperView test for cursor and touch movement"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/687c32b
+
+### [Files app] Remove FilesGoogleDriveSettingsPage flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c16ef65d
+
+### Revert^4 "Revert "Reland "EyeDropperView test for cursor and touch movement"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1154d8
+
+### Revert^3 "Revert "Reland "EyeDropperView test for cursor and touch movement"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75618b2
+
+### WebUI: Return error instead of empty response in SanitizedImageSource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a91740
+
+### [Extensions c2s] Resize permissions button after its content changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cd87f9
+
+### Fix Battery Saver and Adaptive Charging search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fabf36
+
+### Revert "Disable tests that are still flaky on lacros"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76fe574
+
+### shortcuts: Port AddAccelWithConflict tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9c83ed
+
+### [dPWA] Support web app integration tests for new intent picker UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a07f0be
+
+### Add additional methods to memory saver test mixin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d2fa72
+
+### [omnibox][ml] No longer identify matches stripped_destination_url.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57a1a19
+
+### Merge ash/system/message_center into ash/system/notification_center
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/283be8c
+
+### Updating spacing between bookmark buttons for GM3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e9f9b0
+
+### Remove an unused function and a few done TODOs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb076b9
+
+### App Management: Rename page handler to AppManagementPageHandlerBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d82c9d
+
+### Stop PageInfo test from modifying desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c302bf
+
+### [Nearby Share] Add in alternative tag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c437af
+
+### Use newer 2-param METADATA_HEADER macro c/b/ui/views/web_apps|webauthn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2796809
+
+### [Tab Organization] Fix inverted sensitivity score.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27915cd
+
+### Add controller and resources for DevUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66119fe
+
+### Use new 2-param METADATA_HEADER macro for views classes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63160c4
+
+### Add histograms to evaluate conversion rate of default browser promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0477e1e
+
+### pass history entry to saving of history
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fb46ee1
+
+### Fix timing out test case on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82b3d541
+
+### display: Add display settings usage metrics - mirror
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9187c36
+
+### Isolate attributes controlling carousel background and padding.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f06c907
+
+### [Reland] Add method to DeviceLockBridge in order to reuse code for IBAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6acf8d
+
+### Fill form with returned full IBAN value from Payments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcc5d45
+
+### [views] Update METADATA_MACRO to use newer version.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dab2d7d8
+
+### [Reland] WebUI: Patch Lit to use 'lit-html-desktop' trusted types policy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39f4e26
+
+### a11y: Use a Promised-based API to check screen reader state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99f2cde
+
+### WebUI: Prevent HTTP requests in SanitizedImageSource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d69b01
+
+### iwa: Add buttons to chrome://web-app-internals to update dev mode IWAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84f3377
+
+### Use 2-param metadata macro in header for c/b/ui/v/toolbar/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4444aa
+
+### [PlusAddresses] Update image on Desktop modal to use new internal icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f931ec3
+
+### Fix crash on ROOL notification button click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1d6713
+
+### [AWC] Remove initializing resizable value in BrowserView's constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8971124a
+
+### [Uno] Account menu and UNO Bubble overlap
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/342aa4d
+
+### Rename AutofillTable to PaymentsAutofillTable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c74d994
+
+### Revert^2 "Revert "Reland "EyeDropperView test for cursor and touch movement"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7541179f
+
+### [CodeHealth] Fix dangling pointer in PageInfo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da11294
+
+### Revert "Revert "Reland "EyeDropperView test for cursor and touch movement"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9a9ca4
+
+### Revert "Reland "EyeDropperView test for cursor and touch movement""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e6052be
+
+### Extensions: CodeHealth: Prefer using over typedef to improve readability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5412e719
+
+### Revert "Add memory saver tab picker tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be02c8da
+
+### [Shortstand] Skip create shortcut in window mode tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f33ead1
+
+### Skip all WebAppIntegration tests that use {Enter,Exit}FullScreenApp on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0ab7f5
+
+### [Office upload] Handle escape key as a "cancel" in File Handler dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cad1e46a
+
+### [SysUi download integration] Add feature flag description
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/caf8bd7
+
+### [FedCM] Skip well-known checks if RP and IDP are same-site
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dab04cfd
+
+### [FspCache] Introduce new feature flag for content cache work
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/963dd09
+
+`);
+              </script>
+            </body>
+        </html>
