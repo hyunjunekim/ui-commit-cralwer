@@ -1,0 +1,348 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-12-23
+### Support "Microsoft Basic Display Driver" and ensure extended topology.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa0db309
+
+### Disable BRP for VectorExperimental trait
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08d8110
+
+### Remove ExperimentalAsh trait usage from ui/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5544d74
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3b9b610
+
+### [X11] Reenable Sync extension on non-ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3374784
+
+### Deduplicate BrowserContext's ResourceContext
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff83758
+
+### Revert "Add a screen-ai CIPD package for PDF OCR E2E tests on Linux"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c99abbc
+
+### Reland "Don't send IME Candidate selection a11y event in autocomplete suggestion"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e8bbc0
+
+### Fix a crash in gl::SwapChainPresenter::PresentToSwapChain
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/770cc86d
+
+### Revert "Create a feature flag DirectCompositionVerifyDrawOffset"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2be8d35
+
+### [realbox][cr23] Fix fallback color vars when theming flag is off.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f22f6da4
+
+### Remove BubbleDialogModelHostContentsView Init()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e10ac45
+
+### Create separate class for http auth handler for ash.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06d9c76
+
+### CrOS cr-elements: Apply Jelly styles to cr-searchable-drop-down
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/403ddc4
+
+### cr-elements: Fix cr-searchable-drop-down overlay issue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/507409e
+
+### Add a screen-ai CIPD package for PDF OCR E2E tests on Linux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c00567
+
+### [realbox] Change URL ellipsis color to match URL text color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b36486
+
+### WebUI: Enable CrElementsTest.CrLitElement test on prod builds.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0305782a
+
+### Remove owned_by_widget reference from Widget.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78aa342
+
+### Replace DialogModelHost's OnFieldChanged
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19386650
+
+### IWYU: missing include for usage of bitset in visual_manager.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9985ed4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ad77e63
+
+### Draw shadows for BubbleBorder arrows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c01cff9
+
+### Revert "Don't send IME Candidate selection a11y event in autocomplete suggestion"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b69f471
+
+### Change MetadataModel functions to take in MetadataKey rather than string
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d170e8d
+
+### oobe: update Gaia Info Screen test api.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/318471cf
+
+### Pass a value type for std::string_view in //services/audio
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ba4f97
+
+### app_icon: Implement persistent icon color cache
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb0631b
+
+### Add mojo method to access TPCD_METADATA_GRANTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e49b1c
+
+### Move ash code onto HttpAuthDialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88baa91
+
+### Improve LoginHandler (Part 2 / N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dec2d586
+
+### Introduce the keyboard focus bit for autofill sub-popups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0493273
+
+### [WIP][Sync] Reduce sync frequency of last_active_time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b352412f
+
+### Gardening: Disable EditorMenuBrowserFeatureEnabledTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3cf109
+
+### [AF] Introduce AutofillPopupController::GetMainFillingProduct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/396857b9
+
+### [AF] Introduce AutofillPopupDelegate::GetMainFillingProduct.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bcb0f3d
+
+### Improve LoginHandler (Part 1 / N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/349a642
+
+### Revert "Add MSBB dialog state to chrome://compose"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/518d4c6
+
+### Replace Omnibox png bookmark icon with its svg equivalent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12e9d52
+
+### Replace default_favicon with globe
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5b6589
+
+### [SysUi download integration] Support showing downloads in browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0350d3c
+
+### Add kombucha helpers for memory saver mixin.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1ac51c6
+
+### Gardening: Disable AppShimMenuControllerBrowserTest.ExtensionUninstallUpdatesMenuBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e7f42ec
+
+### Drive-by cleanup: remove duplicate mic resource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/193640a
+
+### Add a11y context to edit and thumbs up/down buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/705fde8
+
+### Cleanup the test a bit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/934c0c8
+
+### Fix NPE when closing tab while e2e is on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08a9bcc
+
+### Move URL constants to the shared header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/891e8af2
+
+### Add configuration and triggers for side panel pinning IPHs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc82568
+
+### [Plus Addresses - Clank] Use internal logo on the bottomsheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76f93e0f
+
+### [CodeHealth] Eliminate AcrossTasksDanglingUntriaged in CaptionBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41ac082
+
+### Migrate to TestURLLoaderFactory::GetSafeWeakWrapper() in ['/chrome/browser/search', '/chrome/browser/ui/webui/side_panel/customize_chrome', '/chrome/browser/ui/webui/side_panel/customize_chrome/wallpaper_search']
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc7d18e
+
+### Stop granting 3P cookies for companion on Chrome OS Ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82d247b
+
+### [Extensions] Implement parsing for trial_tokens manifest key
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8824035
+
+### [DTC] Fix NPE when finding ViewStub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d014b8f
+
+### Link handlers and WebUI bindings on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa06be9
+
+### Add battery saver browser test mixin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a62b0e
+
+### Add MSBB dialog state to chrome://compose
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/258bf86
+
+### Add performance controls team as owners for performance settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a905cf5
+
+### [mullet m3] Remove kAddressEntryNotSelectable popup item id.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/564139e4
+
+### Fixing cases where extensions side panel toolbar button isn't shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32f347d
+
+### Add missing AWC flag to protect calling visual properties
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b17d247
+
+### [FedCM] Populate mismatch IDPs in idp_infos_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c270ed
+
+### Remove expired histogram Settings.SafetyCheck.ExtensionsResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9988d81
+
+### Force scale factor to 1 for OmniboxViewViewsTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9277fb
+
+### [autofill][refactor][noop] No-op Refactor on \`ChromeAutofillClient\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4216474
+
+### Move mojo bindings to become an Android dep
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cff63e
+
+### [dPWA] Remove web_app_prefs_utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a7e42a
+
+### [SecurityPageHaTS] Change HaTS trigger condition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ee01d2
+
+### Make sub-popup open on a row, rather than a specific cell.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4440b04
+
+### Ensure that AutofillPopupControllerImpl only observes a RFH once.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ced6e2
+
+### [Uno-D] Revert primary account if aborting sync with secondary account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f3e461
+
+### Stop AppServiceInternals tests from modifying desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c13f84
+
+### [UNO] Use bookmark ids in HistoryService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37a51db
+
+### Reset AutofillManagers observation before starting to observe.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e157ffd
+
+### [live_preview] Live media (Camera/Mic) preview, Mic CL (Part 2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1ac8dfc
+
+### Prevent close depends on force install list pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/621f185
+
+### Add pixel tests for expandable suggestion rows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1967613
+
+### [Waffle] Generate code to map search engine to icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcd9d1d
+
+### Created client for manatee.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8be9189
+
+### AppService: Remove AppType from remaining calls to LoadIcon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71777ad1
+
+### [MagicStack] Add flag for enabling magic stack
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/335e462
+
+### [IBAN][Clank]Add the feature flag to protect IBAN save on clank bottom sheet feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/508c706
+
+`);
+              </script>
+            </body>
+        </html>
