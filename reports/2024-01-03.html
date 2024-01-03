@@ -1,0 +1,272 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-03
+### [X11] Add fallback for certain XWayland compositors for WmSync
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77d2dccf
+
+### Remove considerOpacity version of getColorWithOverlay.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7282e61
+
+### [Files F2] Add a type util to extract Payload type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c4c7d12
+
+### Skia: Remove unused CGColorSpace parameters
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a76a526
+
+### Manual raw_ptr rewrite: //ui/aura/window_occlusion_tracker.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41fff39
+
+### [TLDD] Fix for drop onto compositorViewHolder.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e767a5
+
+### Add first iteration of SidePanelModel
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0b24f1
+
+### [Refresh 2023] [GTK] Fix gap above toolbar with fractional scaling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eea8e36
+
+### Tab Organization: Tweak chip UI, tooltip, tabs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a8f7e6
+
+### Manual raw_ptr rewrite: //ui/base/models/image_model.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d6a7b51
+
+### Manual raw_ptr rewrite: //ui/display/display_observer.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b22f6d0
+
+### [realbox][cr23] Fix weather AiS background color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb71b59
+
+### Mark MenuItemView::parent_menu_item_ as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/925da8db
+
+### Mark pointers inside MenuPart as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/437da63b
+
+### Avoid dangling pointers in Widget unit test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f1e248eb
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/049c08c
+
+### [ui][dom] Make DOM_KEY_* declaration less prescriptive
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d623e41
+
+### display: Fix reading getBoundingClientRect of undefined issue
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4330227
+
+### dlp: Fix summary title with single error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5fdfd70
+
+### [Files F2] Support optional name for source/combined selectors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2f3400
+
+### [Jellybean] Expose new cros components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0877f38
+
+### BrowserFrame: Always set native theme after Widget::Init().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c18bb1
+
+### Reland "Created client for manatee."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/014946a
+
+### Show toast on attempt to close unclosable app for window closure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da3dd1e
+
+### Show toast on attempt to close unclosable app for tab closure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b81c858
+
+### Revert "[Price tracking] Replace the UI logic in the tab helper"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/618d01b
+
+### Emit histogram when attempting to open empty files from Holding Space.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70dcf5e
+
+### [DTC] Fade out tab strip in-place for DTC transition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74f769b3
+
+### [Office Upload] Improve search terms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b204e43
+
+### [Android] Metric for duration plus address modal is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b238ce3
+
+### [FedCM] Trigger dismiss callback upon closing button flow pop-up desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ba608c
+
+### Revert "[SysUi download integration] Show downloads in browser from"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/405acbc3
+
+### Add Photoshop Web items to Holding Space.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd844c6
+
+### Create helper class for "sticky" synthetic field trials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b057c85
+
+### [QuickStart] Fix initial UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c181ae5
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcde809d
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab523c1
+
+### [AWC] Ensure updating titlebar when setResizable API is called
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c9415e
+
+### [SysUi download integration] Show downloads in browser from notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66edfbb
+
+### [Autofill][Desktop] New Save Card Loading View
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4114d8d
+
+### Make base::MakeFixedFlatMap consteval
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45e5a32
+
+### [Downloads] AddWarningActionEvent for SHOWN on chrome://downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea47b06
+
+### Improve opaque color logic, no effect on output.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/550dbfa
+
+### Remove IPH_NewTabPageHomeButton.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5699cb2
+
+### Remove already launched DelayTransitionsForAnimation feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73a48e04
+
+### [Price tracking] Replace the UI logic in the tab helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b66586a
+
+### Unit test mixin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cd1caa
+
+### borderless: Loosen minimum size for window.open / window.resizeTo|By
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4da654e
+
+### Reland Performance Settings Picker Tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e35aefd
+
+### [FedCM] Add IDP mismatch button on desktop multi-idp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0002182
+
+### [Downloads] Consolidate and fix Download.ShowedDownloadWarning logging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ac2d25
+
+### Flip side panel minimum width to enabled on tip of tree.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15459dc
+
+### display: Add display settings usage metrics - primary display
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9a973c
+
+### [QuickStart] Add setup complete step
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60698bf
+
+### [realbox][cr23] Fix realbox text highlight color and background.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6010fcd
+
+### Disable flaky Live Caption tests on Mac builders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cb0a38
+
+### Add a11y landmark and labels for passwords detail card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d32958
+
+### [Desktop] Metric for duration plus address modal is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e5138af
+
+### display: Add display settings usage metrics - unified mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04d7b96
+
+### Record histograms for LCP of non-tab WebUI content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80995e9
+
+### Add missing webui_url_constants.h include
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5df0057
+
+### Add tests for the string displayed in the MIDI indicator tooltip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e82ace
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b938931
+
+### Clean up abandonned Probabilistic Memory Saver
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4afe4c7
+
+`);
+              </script>
+            </body>
+        </html>
