@@ -1,0 +1,244 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-04
+### Files TS: Add some ES lint rules
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5df0db
+
+### Remove unused DEPS that violate the Content API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aafaad49
+
+### Make the local side panel available only when the WebUI toolbar is enabled.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b39cea
+
+### [Files TS] Convert file_tap_handler_unittest to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b962a32
+
+### events: Rename set_flags to SetFlags
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4687d1e1
+
+### WebUI: Convert cr-a11y-announcer to a native web component.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36326c0a
+
+### [realbox][cr23] Get rid of outset action chip border on active state.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa6e82e
+
+### customization: Apply modifiers to other pressed DomKeys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac32bf9
+
+### customization: Refresh Key Display and DomKey before sending event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b39dc0
+
+### [realbox][cr23] Update hover color for action chip and chevron icon.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbb8551
+
+### Rewrite getOpaqueColor to call fewer methods.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee8986e
+
+### Manual raw_ptr rewrite: //ui/views/widget/drop_helper.h
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7ab6888
+
+### Manual raw_ptr rewrite: //ui/views/layout/table_layout.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43f05c3
+
+### Avoid dangling pointer in TableExample.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04e9581
+
+### Replace SetProminent() with SetStyle(ButtonStyle::kProminent)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b53b376
+
+### [//ui/gl] Remove deprecated codepath from ScopedRestoreTexture
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f18b8e2
+
+### win: Remove expired UpdateDisplaysTime uma metric
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0bda293
+
+### [Files F2] Put DEBUG_STORE in the local storage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec39eb7
+
+### [Files,TS]: Converts dialog_footer.js to TypeScript.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b62be2e
+
+### [Files F2] Move promisify() to prevent circular dependencies
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b420f0
+
+### Close compose dialog when the associated page is scrolled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f991553f
+
+### [realbox][cr23] Change realbox light mode expanded state shadow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d835b6
+
+### [media_preview] Show the active devices in page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4460397
+
+### Update assistant and ambient OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/483ae69
+
+### PeopleHandler: Fix dangling reference to PrefService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8744cf90
+
+### Add webui interactive test mixin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/343d5afc
+
+### [DownloadBubble] Remove unused dangling pointer member
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c445cfb
+
+### Disable NotificationDisplayClientBrowserTest.ClickCompletedDownload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87b29d7
+
+### Add andyphan@ to various c*/pdf/OWNERS files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79cebd1
+
+### Include recently viewed files in launcher continue section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36e788e
+
+### Remove windows switch for testing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/190038c
+
+### [sidepanelpinning] Update checks for kSidePanelPinning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f78af415
+
+### [CodeHealth] Remove expired histogram Extensions.PowerfulCount
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd962910
+
+### CrOS Settings: Re-link on Restore Apps notification link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8497bec
+
+### Add command line arg to disable FRE signin on automotive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7857b98
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73e0d8d
+
+### [Birch] Populate file data into model from keyed service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0eb055e
+
+### [CSC] Add client-side handling for SERVERSIDE_URL_FILTER_EVENT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35a9d81
+
+### Remove memory saver discard exceptions when clearing site data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12c0eba
+
+### Clean up HeaderView padding and spacing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a7b71a
+
+### Reland "Autoselect in sub-popups open with LEFT/RIGHT keys only."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cff30c2
+
+### [TabOrganization] Theme the "Not Started" image with CR23 colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96c54196
+
+### Revert "borderless: Loosen minimum size for window.open / window.resizeTo|By"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b92f45
+
+### Privacy Sandbox GA Cleanup: Remove deprecated SetPrivacySandboxEnabled method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee1264ea
+
+### support-tool: Redirect to Ash when URL is trigerred on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d38067
+
+### GTMOOC: Add HaTS survey from the settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c3ddcb
+
+### [Reland]SysUi download integration] Show downloads in browser from notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bba6b2b1
+
+### Replace the caption settings button with a label button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfff54d
+
+### [Multidevice Setup] Revamp start multidevice setup UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afee26d
+
+### Implement OpenXrHandTrackerMeta and add WebXR Hand Input flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d2d3bfd
+
+### Remove flags to enable WebHID/WebUSB for extension service workers
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c2e2f2b6
+
+### tote tour: Expose feature flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b99df8ee
+
+### [realbox] Cleans up two-column zps feature and flag post launch
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e4d2f68
+
+### Clean up flag InstallableAmbientBadgeMessage
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b3d78a18
+
+### Remove unthrottled-nested-timeout flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bb57aff
+
+### about:flags: Surface kV4L2FlatStatefulVideoDecoder
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cde15a28
+
+### Clean up feature kAutofillPreventOverridingPrefilledValues
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2682938a6
+
+`);
+              </script>
+            </body>
+        </html>
