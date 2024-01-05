@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-05
+### Files TS: Remove externs part #2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6905a08
+
+### [RELAND] Files TS: Add some ES lint rules
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/173daf8
+
+### [Files] Use PluralStringHandler to handle plural strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ba3c36
+
+### [Files F2] Allow custom equal function for selector
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd30d47
+
+### Files app: Fix fall-through and prefer arrow-function lint rules
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fab58fe6
+
+### [a11y] Implement GetUnignoredSelection for Views (Textfield & Label)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7ad18a
+
+### Revert "ash/display: Report more display info from EDID and native mode"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c847514
+
+### Files app: Replace == with === and != with !==
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/daa8191
+
+### Close combobox menu if open when model changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2d0b93c
+
+### [A11y interop] Fullscreen magnifier follows Select to Speak highlighting
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/39046c2
+
+### [realbox][cr23] Fix hover color for action chip and "remove" in realbox.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a7b10d
+
+### ash/display: Report more display info from EDID and native mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0cd08edc
+
+### Fix hue slider in high contrast mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e92e71fc
+
+### Replace setAlphaComponent with setAlphaComponentWithFloatAlpha when alpha is float.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e79e390
+
+### Tab Organization: More IR fixes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5843653
+
+### Add tracing for PointerEvent.deviceId
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28ed386
+
+### Textfield::GetPlaceholderText should return const string reference
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c575a95
+
+### Mark pointer to FocusManager in View as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c8f48fb
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e7bf57e
+
+### WebUI: Add cr-dialog tests for ignorePopstate, ignoreEnterKey, closeText.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fcdafc4
+
+### WebUI: Add roleDescription, accessibilityLabel tests in cr-action-menu.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cf28cb7
+
+### Files TS: Remove some externs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a8139d3
+
+### Files app: ESlint --fix
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1feb00d
+
+### Files app: ESlint --fix preparation for CL:5166470
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2f6726d
+
+### Revert "Files TS: Add some ES lint rules"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/474595d3
+
+### iwa: Use fake pref observer in IWA installer unittest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3ac79b
+
+### QA Rich Card: migrate to BoxLayout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6efecd6b
+
+### [TabOrganization] Prevent StartRequest if sync isnt configured.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d3b48c
+
+### Tab Organization: A11y review - add aria-labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93ee10c
+
+### editor: remove duplicate accessibility label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1eb7fc
+
+### editor: use shorter placeholder text of the native UI write/rewrite dialog in case the widget width is narrow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cf1a290
+
+### [Emoji Picker] Tidy up after Jelly is enabled by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7caa0ebe
+
+### Update file handler prefs to SYNCABLE_OS_PREF
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b184e7c
+
+### Ensure there is always an active tab in nonempty TabStripModels.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b082e2bc
+
+### [Tab Organization] Fix crash when accepting an organization while a PWA is open.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/316cb0e
+
+### [Rounded Windows] Refactor out ClientView rounding for app window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d4a110
+
+### Deprecate compose PCO consent flows and replace with FRE dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7426213
+
+### [sync] Avoid deep copies of DeviceInfo in DeviceInfoTracker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c6b332
+
+### [omnibox] Moves StopAutocomplete and StartPrefetch to OmniboxController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c36dea2
+
+### [FedCM] Only focus the continue button when confirming an account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2aa04a
+
+### Fix android plus_address modal view check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4506079
+
+### Side Panel Pinning: Disable AnimatingLayoutManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf958eaf
+
+### Add metadata for side_panel directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa787875
+
+### Suppress QueryTiles on low-end devices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/184917e
+
+### Add download open dialog to improve pdf opening experience
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6883d403f
+
+### [OOPIF PDF] Add helper function to get PDF embedder host
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc63a79
+
+### [Rounded Windows] Optimize UpdateWindowRoundedCorners() for ash browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14be662
+
+### Fix download bubble width
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f37a2d8
+
+### [realbox][cr23] Remove steady state shadow and add variants for shadow.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/78dd05c
+
+### [SAML] Use Gaia reauth endpoint in SAML reauth flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/668a33f
+
+### [views] Remove commented out function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f389263
+
+### [Downloads] Log DownloadItemWarningData from ChromeOS notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3810a85
+
+### Privacy Sandbox GA Cleanup: Remove unused Privacy Sandbox v3 HaTS code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d43a5d4
+
+### Privacy Sandbox GA Cleanup: Remove deprecated IsPrivacySandboxEnabled method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59e9654
+
+### [Uno] Do not disable Uno flag in ProfileMenuViewSignoutTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c23093e
+
+### Refactor CheckCanResize to be a class func instead of a lambda
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/095c579e
+
+### Make autofill prompts footer style consistent with other popups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/317436fb
+
+### Link Capturing: Update tracking bug for failing Intent Picker mac tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f868f8f
+
+### [AWC] Make sure window.moveTo|moveBy are not blocked by setResizable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/706f7e5
+
+### Add flag for OpenXr Extended Feature Support
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/af0a090a
+
+### [RSearches] Remove RelatedSearches flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b7ecf35
+
+### [omnibox][ml] Add 'enabled with fixes' flag option
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef19ca51
+
+### assistant: Add the IPH feature to about flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03c8d07
+
+`);
+              </script>
+            </body>
+        </html>
