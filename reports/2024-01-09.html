@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-09
+### Files app: Remove unused property \`hasMedia\` and fix typo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab89d678
+
+### [Files app] Remove Drive sync strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/670f0dee
+
+### Image Loader: Create thumbnail with the video frame at the midpoint.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8f020085
+
+### Revert "Do not update the surface if the layer already have the same surface id"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5c8f55a
+
+### Files app: Restore externs' doc in the implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab585c6
+
+### Update "Create with AI" tile illustration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/769e5cb8
+
+### Fix hover background on cr-toolbar-search-field
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f631f8e
+
+### display: kInvalidDisplaySizeList can be constexpr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55a22c5
+
+### [headless] Implemented code to center a headless window on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c39a5996
+
+### Files app: Merge volume_manager definition into its implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/937aaf9
+
+### Remove histograms Compositing.Renderer.CALayer.ChangedIOSurfaces*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fc615a
+
+### Manual raw_ptr rewrite: //ui/views/window/dialog_client_view.*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af12b3e
+
+### Files app: Merge volume_info and volume_info_list definition with their implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14181f54
+
+### CrOS Settings: Consolidate primary-toggle class
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9b1a547
+
+### Tab Organization: Separate tab indicator background
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2dad9b
+
+### Address Extra VPBlit Operations During Media Foundation fullscreen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1fcb998c
+
+### gfx: refactor deprecated runloop usage
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a59786
+
+### Remove remnants of ExperimentalAsh trait
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/447e6fd
+
+### [SHv2] Use callback to log SH metrics in AppMenu
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7c8988
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7c694ab
+
+### Files app: Merge files_app_entry_intefaces.ts into files_app_entry_types.ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/822af5f
+
+### Remove ExperimentalAsh trait usage from chromeos/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b2b6f5a
+
+### [ozone/wayland] Adding tluk to OWNERS of ozone/wayland.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/157463df4
+
+### Prerender: stop prerender from overcounting not triggered failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f16e811f
+
+### [Chrome Labs] Fix dialog corner rounding and title spacing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfa97398
+
+### iwa: integrate Isolated Web Apps installer with ChromeOS Shelf
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfd4a70
+
+### iwa: Disable resizing the installer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cffd91
+
+### [UI] Fix Linux browser window border color in dark themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a0ae82
+
+### TabletState: [4/N] Use TabletModeControllerTestApi to enable tablet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e041eca
+
+### [bookmarks] Add account reading list into bookmark manager browsing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fba242
+
+### update experimental feature disclaimer text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1603834
+
+### [Read Aloud] Move Views toolbar test to a separate file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd5216e
+
+### Remove input param show_expand_button from MediaItemUIDeviceSelectorView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d82dee
+
+### [User Education] Add required features to metadata for internals page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55ff1b4
+
+### QA Rich Card: add additional definitions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0aacf4
+
+### iwa: Limit 1 Isolated Web App installer instance per file path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7991416
+
+### Add IPH promo for experimental AI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db1eb85
+
+### Do not trigger OS notifications from browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0972b9c
+
+### [ntp-modules] Check pointer before dereference bug fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cde4eb
+
+### [views] Fix toolbar button inkdrop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88532325
+
+### [User Education] Actionable Alert IPH subtype.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b17af42
+
+### Remove duplicate instantiation of ChromeComposeClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4711a89
+
+### Revert "Link Capturing: Speculatively re-enable flaky test on Mac"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7539efc
+
+### [views] Update metadata to v2 in c/b/ui/views from Page* to Perf.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c72a247
+
+### [views] Update metadata header to v2 in c/b/ui/views from P* to S*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd10dfd
+
+### [Cleanup] Share TestBrowserClosedWaiter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5693a9
+
+### [User Education] Tester page: display promo data and allow clearing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f287c46
+
+### Use newer 2-param METADATA_HEADER macro.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48f34e6
+
+### Clean up in ToolbarColorObserverManager and related files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e35cece
+
+### ui: Promote DCHECK to CHECK in ContentSettingMediaStreamBubbleModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/185e014
+
+### [Downloads] Elide beginning of display URL on chrome://downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6a1ebbe
+
+### [views] Update metadata header to v2 in c/b/ui/views from L* to O*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1b11c68
+
+### Fix flaky \`AddPhotoshopWebItem\` unit test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d588bcba
+
+### Add screenshot for Compose placeholder text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cddc205a
+
+### [SidePanelPinning] Add SidePanelPinning to ResponsiveToolbar field trial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/807c75f4
+
+### [Instant Hotspot] Add tether host section to internet_page network list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0552d32
+
+### [Printing] Add new content setting for Web Printing, 2/2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a4bcdb
+
+### Log tailored warning type that is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6502311
+
+### Use newer 2-param METADATA_HEADER macro for Views. c/b/ui/views/tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/711efefb
+
+### Remove autofill assistance toggle from PCO settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f26306a
+
+### [Printing] Add new content setting for Web Printing, 1/2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/890ffd11
+
+### 🧇 Record waffle metrics on Android OS choice import
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f5f6f0
+
+### Extension Hats Survey Config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b341b71
+
+### 🧇 Remove "with-forced-scroll" feature param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/505b283
+
+### [SidePanelPinning] Add margins between buttons for pinned action container.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1c4911
+
+### [Waffle] Support for high DPI icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02650b93
+
+### Add confirmation toast after moving single password to the account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e05b27
+
+### Add entry in settings to move passwords to account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24bc931
+
+### [AF] Remove AddSuggestionStrategyContentCellChildren.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/441349d
+
+### [enrollment] Remove AD enrollment status.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/951ae7a
+
+### Protect permission prompt click after modal dialog activated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dfb082
+
+### Add option in password details card to move saved psw to account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc7d313
+
+### [Android] Replace usage of deprecated SigninManager.signin() method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d55055d
+
+### Use string_view for ash::test::CreateFile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97b28bdd
+
+### Remove ExperimentalAsh trait usage from chrome/*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f57934
+
+### Link Capturing: Prevent prerenders from being link captured
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c9c396
+
+### [Android TRM] Add #enable-tab-resumption-module to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c560624
+
+### feedback: Remove obsolete feature flag EnableGetDebugdLogsInParallel
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0d13267
+
+### [MagicStack] Add flag for enabling magic stack
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ae1d66e
+
+### shortcuts: Add enable-shortcut-customzation-logging flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bd60670
+
+### Add an entry to about://flags for the Web Printing API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d3e7d17bd
+
+`);
+              </script>
+            </body>
+        </html>
