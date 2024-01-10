@@ -1,0 +1,360 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-10
+### [Rounded Windows] Add rounding logic for system dialogs that have frames in ash
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90acacb
+
+### Remove [Get/Set]Prominent() in favor of [Get/Set]Style
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/295aa0e
+
+### PinnedState: Support pinned state in PlatformWindowState
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7592590
+
+### PinnedState: Introduce pinned state to configure event on wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c524af
+
+### [Files] Update more plural strings to use PluralStringHandler
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81ee4fa
+
+### Add button to deselect hue for theme generation
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6642487
+
+### Fix a few assertions when running views_examples on macOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4e0772
+
+### Adjust the baseline of the [new] chip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bcc1d446
+
+### Fix positioning issue with keyboard tooltips on Lacros.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3df7a8
+
+### Remove Widget::IsTranslucentWindowOpacitySupported
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/667c9184e
+
+### [Rounded Windows] Round chrome apps and native windows opened by lacros
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49887d62
+
+### Mark member in ChildLayout as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98a2e0e
+
+### Clean up the WriteHTML clipboard pipeline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd13e4b
+
+### [android][gm3][menu] Add Default GM3 Menu Styling to ui/android
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc53bed
+
+### Fix dangling pointer in GtkCssContext destructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c0837d
+
+### Remove View::SetNativeThemeForTesting and associated dangling pointer.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b898ec
+
+### Avoid dangling pointer in FocusManagerTest fixture.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/854226c
+
+### Avoid dangling pointers in AxVirtualView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4a4c3a
+
+### Avoid dangling pointers in AnimatingLayoutManager test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9468834
+
+### Avoid dangling pointers in AxTreeSourceViews test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9083c1c
+
+### Textfield: Draw partial cursor when partially clipped
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4636a28
+
+### Use ViewsTestBase in InkDropImpl test fixtures.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47d6367
+
+### Avoid dangling pointers in FocusManager test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/366ec81
+
+### Avoid dangling pointers in CustomFrameView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43804ff
+
+### Avoid dangling pointers in BubbleFrameView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2db6b29
+
+### Avoid dangling pointers in FocusTraversal test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6d38e1c
+
+### Mark NonClientView members as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77c16b8e
+
+### [realbox][cr23] Fix hover fill shape for non-inlined action matches.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/27f536d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1875f527
+
+### [Code Health] Clean up gin function templates on isolate disposal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/deda181
+
+### Add links across browser and OS pages for chrome://system
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c8439d
+
+### [Shortstand] Instantiate nudge to show when a web app is opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bfc3a4
+
+### Extract providers into SearchEngine
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33ef62e
+
+### PinnedState: Support PinWindow API on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bff4de
+
+### Reland "iwa: integrate Isolated Web Apps installer with ChromeOS Shelf"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/882a239
+
+### [Shortstand] Add education nudge to notify users of app opening change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/524a2d22
+
+### families: Add Interactive test version of families.IncognitoModeDisabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f11ab84
+
+### Remove PaymentsNetworkInterface from the FormDataImporter constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75a8c0aa
+
+### Add download settings UI for pdf open pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52e4690
+
+### browser_navigator: Move ash files to IS_CHROMEOS_ASH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a326478
+
+### Move FindToolbarTablet out from the toolbar_container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bece096
+
+### [Cloud Upload] Remove unnecessary IgnoreResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/626b9f9
+
+### [reland] ash: refactor LoginWebDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/277f000
+
+### [Compose] Add IPH for launching Settings from MSBB dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f5e512
+
+### [Office upload] Remove modal_parent plumbing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f53783d1
+
+### save descriptors to history and show them in aria-label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1960f93
+
+### Disable companion feature on ChromeOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2320380
+
+### Add compose footer for on-device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c1d298
+
+### [FedCM] Remove TODO for dismiss upon closing button flow pop-up Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8797cd4
+
+### dPWA: Implement 'app-title' meta tag for web app windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/533aa35
+
+### Format localized strings provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61984b2
+
+### Add more test coverage to ContentSettingPatternSource
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aae993a
+
+### [LHS indicator] Add PermissionDashboardView
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/257741b
+
+### [Code Health Rotation] Migrate WebAppFrameToolbarInteractiveUiTest to Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8373d8
+
+### Mahi: Add menu widget and anchoring logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23d8089
+
+### Decouple MVP (trusted testers) and stable launch glanceables features
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f35597
+
+### Delete certificate reporting code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9390d19
+
+### [views] Update metadata header to v2 in c/b/ui/views from E* to L*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ffc0b
+
+### Check user account capability for model execution
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65538c8
+
+### Mahi: Add menu controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad2c447
+
+### [IBAN][Clank]Add skeleton IBAN Clank bottom sheet bridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7746d0e
+
+### [autopip] Allow localhost to open document pip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dcf801
+
+### Change app icon mask
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5017907
+
+### CrOS Settings: Include \`Instant hotspot available\` for Network
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c9837e
+
+### Remove ehez@chromium.org from chrome/browser/ui/safety_hub/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/653dcdbb
+
+### Removed unused function from WebAppRelaunchNotificationBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a36ee3
+
+### Add Move passwords promo card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e09dcc2
+
+### [Refactor] Remove autofill feature switch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b20d7ce
+
+### [DownloadBubble] Remove IPH promo for download toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7aa1fc
+
+### [UserBypass] Only trigger page reload when 3PC access changes via UB
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8285e6
+
+### Add icon for autofill suggestions for Plus Addresses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a89dcb3
+
+### Implement prevent-close toast for Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96664a5c
+
+### Add a ReadPref method to the mojo interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df6cc23
+
+### Record "confirmed" address deletion from keyboard accessory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2054062
+
+### Trigger a11y announcement when showing the Compose nudge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed2e901
+
+### [autofill - hats] Add initial ongoing users satisfaction survey config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6b65e5
+
+### Privacy Sandbox 4 cleanup: Re-introduce browser tests, disabled on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afc6f79d
+
+### Add custom key press handling for Compose nudges.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8da522a
+
+### Revert "iwa: integrate Isolated Web Apps installer with ChromeOS Shelf"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a972e219
+
+### [Extensions c2s] Create extensions toolbar coordinator + view controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec92a98
+
+### [Extensions c2s] Add policy-blocked sites to site access computation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89907f8
+
+### Allow users to turn on all experiments in testing config
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fc73aa92
+
+### ChromeOS: Remove zram writeback
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b9047cf
+
+### personalization: restrict SeaPen feature to dev
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/370903d
+
+### Revert "Enable screenshots for Incognito tabs"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce73534e
+
+### CrOS: Add experimental feature flag for CRAS DSP Offload
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d385fc
+
+`);
+              </script>
+            </body>
+        </html>
