@@ -1,0 +1,292 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-11
+### display::GammaCurve: Add curve concatenation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/83f31151
+
+### Update FrameSequenceTrackerV3 to handle late arriving frames
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5233732
+
+### Remove the Windows.Menu.Win11Style Histogram
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88aae5c
+
+### Do not expose internals in snapshot_win
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c9b52e
+
+### Revert "Show a system nudge when website telemetry reporting is enabled"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4ef73b
+
+### Add UpdateItemList() to SimpleComboboxModel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e835c29
+
+### shortcuts: Enable shortcut customization by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9df5f42
+
+### ui_controls: For drag-ending LMB release, post task after dispatch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e3315b
+
+### Revert "[Files] Update more plural strings to use PluralStringHandler"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4d15024
+
+### PinnedState: Control pinned state from Ash asynchronously
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c702d5
+
+### Add tooltip to cr feedback buttons.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce6b1bba
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6577dd73
+
+### Reland "Add a screen-ai CIPD package for PDF OCR E2E tests on Linux"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7df2364
+
+### [gardening] Disable a flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96e8dae8
+
+### Revert "Improve LoginHandler (Part 8 / N)"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cd7fa3
+
+### Remove CreateProfile2 from SiteSettingsHandlerInfobarTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a62f64e
+
+### Mahi: Add summary button to MahiMenuView and create event handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/307b982
+
+### face-ml: Remove FaceML since it's been abandoned
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d6a84cb
+
+### iwa: Support capturing nested dialogs in installer screenshot tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71635377
+
+### gardener: disable ComposeInteractiveUiTest.OpenAndCloseCompose
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9959553
+
+### Make TabModels movable between tabstrips.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/773a4e1
+
+### [TLDD] Show toast when tab dropped into different model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0a8505
+
+### Fix failed DTC test due to threshold change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc22085
+
+### [Tab group] Fix tab group label height change with emojis.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ec5b5e7
+
+### lacros: Re-enable more TabDragging tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e89e5a
+
+### Update Metrics Internals OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f14b226
+
+### [realbox][cr23] Fix highlight color and action icon hover color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2091ecb
+
+### [Traffic Annotations] Dedupe an annotation ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aef4aba
+
+### [TabOrganization] Add UMA histograms for Success Metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/810f69f
+
+### fix wrong footer for on-device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bdd630
+
+### document-pip: Allow chrome-extension:// URLs to open document pip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ece22
+
+### [User Education] Extend timeout for flaky ShowPromoInPage test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55c7e7c
+
+### [Read Aloud] Workaround for bug where colors don't always load.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/352fe78
+
+### [CVC storage] Add metrics cases for card save with CVC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfe7940
+
+### Add picture-in-picture owners to the pip browser frame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bea2143
+
+### Extension Hats Survey To Show on Page Navigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c9f2be
+
+### Show Inspiration A in Wallpaper Search UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64e79690
+
+### Clear the \`device_sub_menu_items_\` map.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7ac270
+
+### [Refactor]  Use ColorId instead of SkColor in views/overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d054a21f
+
+### chromeos: Speculative fix for SmartDimLacrosIntegrationTest.SmartDim
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd7eeb8
+
+### [LHS indicator] Show Media indicator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ba259f
+
+### [autopip] Move IgnoreInputEvents to the setting overlay view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d30875
+
+### [CVC Storage] Add cancel button to the CVC save message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1631330
+
+### [DTC] Update transition threshold
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb100e0
+
+### [AF] Add pixel tests for credit card suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9db71b1
+
+### Retrieve Inspiration images from gstatic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1af555b
+
+### Revert "Prerender: stop prerender from overcounting not triggered failure"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e34ac67
+
+### [DTC] Add histogram to capture transition success rate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88fffd6
+
+### Create an end-to-end UI test for Compose.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46ff1c1
+
+### Revert "[Waffle] Support for high DPI icons"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/152eb2b
+
+### [AF] Set PopupType and FillingProduct in AutofillPopup pixel tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08ce936
+
+### Enforce CHECK in DownloadBubbleSecurityView::UpdateViews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed8f9ed
+
+### [DTC] Block tab strip transition when find in page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22d98b9
+
+### Fixed optional toolbar button not updating icon tint correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b358fc1
+
+### Prevent code inlining/folding in UMABrowsingActivityObserver to investigate crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b597dda
+
+### Use std::erase[_if]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac4b2b0
+
+### [AF] Remove PopupType from AutofillClient.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/576d6e7
+
+### Ensure plus_addresses UI handles web contents close on android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8910bd
+
+### [SystemWebApp] Fix \`FindSystemWebAppBrowser\` to exclude destroying ones
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5202ef7
+
+### Revert "Disable companion feature on ChromeOS."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b507ea3
+
+### [sharing] Decouple SharingTargetDeviceInfo from syncer::DeviceInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ae5784
+
+### Fix title line break in relaunch chrome bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c61d9f8
+
+### Make footer part of non-root popup scrollable with other items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8e8ec9
+
+### Update GetWallpaperSearchResults to use mojom object
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57c94ecd
+
+### [Extensions c2s] Set color and typography for extensions menu main page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/458985c
+
+### [Policy] Update screen reader scope and strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02e7b85
+
+### [PZv2] Add new feature flag for follow-up work on Page Zoom
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/883055a
+
+### Add chrome://flag for chrome://privacy-sandbox-internals
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/345ab8cc
+
+### tote tour: Add feature param for reduced rate limiting
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab9d4f83
+
+`);
+              </script>
+            </body>
+        </html>
