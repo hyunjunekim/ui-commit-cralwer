@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-12
+### Polish tiled browser window UI on Linux
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6f8853
+
+### Delete obsolete unused InputMethodDelegate::GetDisplayLanguageName().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a69c28b
+
+### Files app: Convert allowed_paths to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f20605
+
+### Revert "ContentSettings: Implement GetRule for WebuiAllowlist"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/facf354
+
+### ContentSettings: Implement GetRule for WebuiAllowlist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1557023
+
+### Support aura::WindowTreeHost lookup for LegacyRenderWidgetHostHWND
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fe73f3f
+
+### Revert "Remove GrabWindowSnapshot"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac8a60a
+
+### Add LabelButtonImageContainer into LabelButton
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be73eee
+
+### Remove GrabWindowSnapshot
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/957ab64
+
+### customization: Allow button remapping for graphics tablet buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34156418
+
+### [ImprovedDownloadWarnings] Show toast for discard dangerous
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0d9c7d
+
+### Move all callers of GrabWindowSnapshot to the async version
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca16dbc0b
+
+### Do more snapshot cleanup
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b08fb8f
+
+### Actually remove views::View::native_theme_.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/86900446
+
+### Mark pointers in DialogModelHostField as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/189c1ac
+
+### Remove DCompPresenter feature flag and adjust code to assume true
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f168d77
+
+### Avoid the unnecessary resetting on the hot tracked button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d83f34d
+
+### Avoid dangling pointers in NativeWidgetAura test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24dee88
+
+### Disable SwapChainPresenter Floating Point Adjustments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b68a29a
+
+### Mark pointers in ExternalFocusTracker as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8760d6c
+
+### Mark previous/next focusable view members of View as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5cda45a
+
+### Avoid dangling pointer in WindowReorderer.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59a3edf
+
+### Avoid dangling pointers in BubbleSlideAnimator test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60bc509
+
+### Avoid dangling pointer in NamedWidgetShownWaiter.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/497809f9
+
+### ui/display: Add ChromeOS tiled display support feature flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/29bff45
+
+### ui/display: Parse DisplayID in EDID for tile properties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bc6497b
+
+### [Rounded Windows] Prevent null deref of wayland_extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9040846
+
+### Return const reference in Badge::GetText
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0090dac
+
+### Exclude fields from vector<raw_ptr> rewrite
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd436c5c7
+
+### Clank OTP: Add UI support for Clank one time permissions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b93b2c2
+
+### Rename {absl => std}::optional in //content/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c686e8f
+
+### Convert the media app "piex_module.js" & "piex_module_loader.js" to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e6570af
+
+### [OOBE] - Migrate App Launch Splash screen to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/478c2fb
+
+### [Office upload] Handle escape key as a "cancel" in Fallback dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/411e543d
+
+### Tab Organization: Ensure tabs switch appropriately
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60a77fe
+
+### Update text string for disclaimer footer on compose.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/825adb5
+
+### Improve LoginHandler (Part 9 / N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cc967a7
+
+### Log the latency of risk data loading
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ebb26
+
+### Reland "Improve LoginHandler (Part 8 / N)"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb56aa5
+
+### [Shortstand] Instantiate nudge to show when first affected app is opened
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39a0bc2
+
+### editor: make sure quick answer / mahi show when editor is absent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5bb4fd3
+
+### [Shortstand] Record when a shortcut is removed by Launcher/ Shelf
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba248a2
+
+### Proactive Topics Blocking - Manage Topics Desktop UI Skeleton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d68cc1
+
+### Remove synchronous callback from ChromeHttpAuthHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa7d72a
+
+### Add automated mount error function to odfsConfigPrivate extension API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ec8e8a8
+
+### Add feature to control visibility of on device compose footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acd90b8
+
+### [VC] add callback for the CreateImageButton.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32fc88c
+
+### [Tab Organization] Fix crash when the browser closes while multiple organizations are pending.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de4ef99
+
+### Don't open Chrome when launching a PWA on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/209118c
+
+### [Read Aloud] Fix failing tests when Read Anything WebUI toolbar flag is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc27285f
+
+### [headless] Force browser shutdown after command execution on Macs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2528771
+
+### Reland "[Price tracking] Replace the UI logic in the tab helper"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99c66d5
+
+### [dPWA] Refactoring commands to remove all re-entry.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77abe975
+
+### [FedCM] Support the add account button on multi IDP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/deac4ccf
+
+### chrome/browser: Refactor Quit.*Deprecated() RunLoop usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a05db79d
+
+### [dPWA] Fix punycode start_url host name in detailed install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ade6641
+
+### Add chlily to Downloads Page WebUI owners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee964fb
+
+### Turn off companion on ChromeOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7bb7c7
+
+### [CVC Storage] Add illustration icon for save CVC bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/246022c
+
+### Remove getLastUsedRegularProfile from SignOutDialogCoordinator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caf4112
+
+### [gbb-cct] Move tab null check earlier in launch().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e39713d
+
+### Change butter icons in helium bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58807c73
+
+### Remove Keystone from Chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e25bd3
+
+### [Autofill][Desktop] Reprompt Save Card Bubble on Link Click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dac4cab
+
+### Reland "[Waffle] Support for high DPI icons"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a1b7c11
+
+### IWYU for chrome/browser/ui/tabs/organization/trigger_observer.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bc1754
+
+### [AF] Remove PopupType from row factory and cell util.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f32bda
+
+### [top chrome] Fix paint invalidation issue during immersive mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46aa2c1
+
+### Make PaymentsAutofillClient the RiskDataLoader instead of AutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d26b4bd
+
+### [gardening] Disable a failing test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d3cbee9
+
+### [Shortstand] Record when shortcuts are launched from Launcher/ Shelf
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a168790
+
+### Enable CrOSLocalImageSearch in testing config.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d516b0
+
+### usb: Add exposed flag for unrestricted usb
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/68a496b
+
+### [CrOS Bluetooth] Add Bluetooth Disconnect warning flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab83a2c
+
+### [ASH] Add AppSpecificHistory feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/63dce1c
+
+### [ForceSignin] Create the kForceSigninFlowInProfilePicker entry in chrome:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/671c1dc
+
+### [Tab Group Parity] Add feature flag for tab group parity
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2c372f0
+
+### [Passwords] Add a feature and a flag for Shadow DOM support
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6742da6
+
+`);
+              </script>
+            </body>
+        </html>
