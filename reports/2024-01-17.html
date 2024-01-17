@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-17
+### Revert "Make the event type check for d&d more explicit"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69a1f42
+
+### Revert "Automated T* -> raw_ptr<T> rewrite "refresh""
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d23c943
+
+### ui: Refactor Quit.*Deprecated RunLoop usage
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87fd1f9
+
+### Revert "Create VirtualDisplayUtil interface and implement it on Mac."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e686294
+
+### Mark LOG(FATAL) [[noreturn]]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9f6668
+
+### Refactor VelocityTracker into separate component
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/460129a
+
+### Make the event type check for d&d more explicit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e095dd
+
+### Create VirtualDisplayUtil interface and implement it on Mac.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79fc88e3
+
+### Revert "Make legacy colors store [0,255] internally"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d7c30c
+
+### Disable validating command decoder on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b928f68
+
+### Mark DropHelper::root_view_ as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02183b1
+
+### [buganizer] Migrate DIR_METADATA for ash/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a46a376
+
+### Mark RootView::widget_ as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5fb0ebb
+
+### Avoid dangling pointer in WidgetTest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b3251e
+
+### Remove ContentLayerClient::PaintableRegion()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c62101c
+
+### Avoid that pointers in TouchSelectionController become dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a68e3c7
+
+### Avoid dangling pointers in InteractionTestUtilViews test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5139481
+
+### Avoid that pointer to ContextMenuController in View becomes dangling.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/669ac01
+
+### Make legacy colors store [0,255] internally
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b98dc57
+
+### [realbox] Fix action chip click and keydown behavior.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a54bb5
+
+### display::DisplaySnapshot: Separate out ColorInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e0e54f0
+
+### [CodeHealth] Fix a leaked raw ptr in ScopedMultiSourceObservation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61027f8
+
+### Automated T* -> raw_ptr<T> rewrite "refresh"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e407f3d9
+
+### Revert "[Shortstand] Run WebAppIntegrationTest with Shortstand flag off."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b07752
+
+### ChromeKeyboardControllerClient: Fix dangling reference to PrefService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6132c99f
+
+### [Rounded Windows] Round Assistant Web UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3bbbb58
+
+### [Shortstand] Skip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94631ea0
+
+### iwa: Widen installation dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6c9853
+
+### chromebox_for_meetings: Delete cfm_network_settings codes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2e238ce
+
+### [DTC] Add param to configure min width for transition
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/104d962
+
+### p13n: SeaPen metadata use base::TimeToValue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1eeb146
+
+### [Shortstand] Implement syncable pref to only show nudge once
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e81f2f7
+
+### Reland "Fix crash when triggering the ESB IPH Promo on a dangerous download"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f8c4ff9
+
+### Don't show tab strip context menus during tab drags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c720e7
+
+### Privacy Sandbox Cleanup: Disable the Consent native dialog test on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9811b384
+
+### Add a new site setting to control the V8 JIT engine
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b632bdf
+
+### Add screenshots for Compose settings strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14e4d03
+
+### Adapt OnDeviceModel service to support TS scoring
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37db3df
+
+### [bookmarks] Refactor APIs to introduce enum NodeTypeForUuidLookup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1722ba
+
+### Link Capturing: Do not link capture popup clicks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17e2de5
+
+### Shortstand: Skip obsolete PreventClose test cases
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d0d61d
+
+### Fix plus address modal metric crashing chrome on error state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e083312
+
+### Create utils for retrieving the sets of all item/filesystem types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d97739
+
+### [APS] Fix chrome keyboard shortcut labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16e99f14
+
+### SM Debug: Loads events that had been recorded before debug page was loaded.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/352ac5c
+
+### [Extensions cleanup] Remove unused method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e0c9cac
+
+### iwa: Remove "Manage your Chrome profiles" link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aecd6b5
+
+### [realbox][cr23] Remove consistent row height from realbox cr23 all flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/009ea0081
+
+### privacy-hub: Add system apps to sensor subpages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61fe8a8
+
+### [DTC] Block tab strip transition when omnibox has focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7607e2f
+
+### Inspiration: Add descriptions to inspiration tiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/619baff
+
+### Hook up MenuButtonCoordinator for hub.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/931bc159
+
+### Add battery saver settings learn more
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1318fdd
+
+### Compose: Animate the result text color from primary color for CR2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7923d16
+
+### Title Wallpaper Search's inspirations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/483b5a2
+
+### [SidePanelPinning] Hide the pinned button container's divider when the last pinned button is hidden.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d48b3a3
+
+### UMABrowsingActivityObserver: Only assert observer existence on non-Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f72d5d
+
+### [ImprovedDownloadWarnings] Add screenreader announcements for actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b01b293
+
+### Fix scrollable area height calculation for sub-popups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57aec94
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b7eaa3
+
+### [Waffle] Remove DumpWithoutCrashing from SearchEngineChoiceUi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c73a194
+
+### [AF] Make AC::HasCreditCardScanFeature const.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ce36b6c
+
+### [Sheriff] Disable flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/984b7f1
+
+### [waffle]Add ShowSearchEngineOmnibox pixel test back
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/228d13f2
+
+### Revert "Protect permission prompt click after modal dialog activated"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22e85b6
+
+### [Shortstand] Fix web app shelf context menu browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/314ea43
+
+### preload: Remove Prerender.Experimental.BookmarkUrlButtonEvent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f64f72
+
+### borealis: Add a flag to bypass some hardware checks
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3bffbac
+
+### nudge-migration: Add \`SystemNudgeMigration\` chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/08b3a49
+
+### [IP] Add feature + flag for IP protection v1
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b27b15f
+
+### Remove CanvasOopRasterization flag on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c9a445a
+
+### [omnibox][ml] Search blending & don't force keywords to be default.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8d35771
+
+### Clean up AutofillEnableMerchantOptOutClientSideUrlFiltering flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/069a462
+
+`);
+              </script>
+            </body>
+        </html>
