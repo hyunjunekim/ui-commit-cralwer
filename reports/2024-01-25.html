@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-25
+### Add support for light/dark status bar icons in Android S+
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e3a4a2c
+
+### Improve MessageView extensibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8de083c
+
+### Update WaylandCursorPosition during a drag and drop session
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2807fd0e
+
+### Make sure OnAcceleratedWidgetMadeVisible is called
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9de8326
+
+### [X11] Handle GravityNotify events in GeometryCache
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06e4f42
+
+### Add root_surface_visual check when adding DelegatedInkVisual to tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d80ebc
+
+### Rename NativeTheme::PaintArrowButton extra_param arg
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87df167
+
+### Consolidate ash's debug print and aura::Window::GetDebugInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a93e3bf9
+
+### ui-controls: Add client implementation for display protocol
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c325fe
+
+### Add CrOS enterprise policy for VirtualKeyboardSmartVisibilityEnabled.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fef27ec
+
+### [mac-a11y]: improve errors in ax_dump_* cli binaries
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26c75ba
+
+### [omnibox][webui] Fix focus indicator.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/613ad34
+
+### immersive fullscreen: bring back the thin controller
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd387b6
+
+### Make AiS text size and color to match entities.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0edb9e24
+
+### Use correct time stamp for latest event in velocity tracker.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3de077a
+
+### [X11] Remove most QueryPointer calls during startup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3fa2981
+
+### Migrate tab discard exceptions pref to include time
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/002bbfa
+
+### Fix BrowserWindowMacA11yTest.A11yTreeIsWellFormed on macOS 14
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/954bba2
+
+### immersive fullscreen: cleanup titlebar observer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c65f8e1
+
+### input: Rename MigrateInputMethod to GetMigratedInputMethod
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/84f527c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e7535d
+
+### Use LAYER_NOT_DRAWN if frame will not be used
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/147657f
+
+### Image Loader: Add @ts-ignore for image_request_task.js
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cc51d45
+
+### [CodeHealth] Rename mouse lock to pointer lock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4661871d
+
+### preload: Remove Prerender.Experimental.BookmarkUrl*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a5449c
+
+### Fix WebCore.Fullscreen.LockStateAtEntryVia* metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff1287a
+
+### [Shortstand] Update install method in web app tab strip tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f128e6
+
+### [LHS indicator] Introduce PermissionChipView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16f613b
+
+### [Cros Bluetooth] Add reload functionality to bluetooth_internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54d34652
+
+### [Autofill] Clean up kAutofillContentEditables feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9f798309
+
+### [Extensions] Add tooltip to edit button in chrome://extensions/shortcuts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9f629a
+
+### add generic error states that include inspiration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/026b8d8
+
+### Add tests for ESB IPH Promo on Downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb9ee4fc
+
+### Remove references to hover card setting feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eae3858
+
+### [Eche] Fix app streaming window issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af94651a
+
+### Suppress secondary requestLayout and Font loading during layout pass.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be912a63
+
+### [ReadAnything] Don't cast bool pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dd7ce4
+
+### Disable flaky ReadAnythingAppTest on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3986b43
+
+### Revert "[Mac File Menu] Reland of Display and enable correct Close menu items"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/253e8df5
+
+### settings: Port OpenTouchpadSubpage tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83df472
+
+### Implement alternative notification unsubscribe UX.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/085ac77
+
+### [autofill][desktop] Retain loading view during focus changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2af2a27
+
+### Reland "[ReadAnything] Add Link toggle to webui toolbar"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/791c168a
+
+### Reland "Remove Backpress capitalization."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce911ed
+
+### [Birch] Add birch client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c55ad72eb
+
+### Supports activate promise Arc app icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61afc60
+
+### [Mac File Menu] Reland of Display and enable correct Close menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62f26e9
+
+### [dPWA] DownloadedIconsHttpResults measures results per icon URL and size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1084de0
+
+### [AWC] Maybe fix flaky WindowSetResizableDoesntBlockMoveToAndMoveByApis
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa4402c
+
+### [IBAN][Clank]Add coordinator and mediator for IBAN local save on Clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0545747
+
+### [Passwords] Remove kPasswordNotesAuthValidity feature param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48c30b7
+
+### Announce changes to download bubble security subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/938560a
+
+### [gbb-cct] Adding RequestContextMetadata in GetHintsRequest to check various Privacy Conditions in Page Insights Hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/616bb80
+
+### Add web app integrations tests for a chrome:// app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49b313b0
+
+### Move ComposeStatus to components/compose
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/634ae98
+
+### [ForceSignin] Add a feature param to control the reauth url used
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ce5c64
+
+### [accessibility] Decouple PdfOcrController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b6c4eb6
+
+### Disable flaky BookmarkBarViewTests on windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3b30bf
+
+### [Android] Fix crash in SigninFirstRunMediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bed76a
+
+### Add gaia_id as a member of LockScreenReauthHandler class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f624ff01
+
+### [AWC] Add browsertests how setResizable blocks window.maximize|restore()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f882dd9
+
+### [ForceSignin][SAML] Redirect ForceSignin SAML flows to the Profile Picker flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29c7df74
+
+### Add metric for NextIdleTimeTicks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff574436
+
+### [AWC] setResizable() should also block window.restore() when maximized
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/878e4772
+
+### Transfer DiacriticsChecker to chrome/browser/ash/app_list/search/files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba9419b
+
+### [TLDD] Disable touch events thru CoordinatorLayoutForPointer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0e734c
+
+### Lacros: Fix some uses of BrowserInitParams::SetInitParamsForTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f453d28
+
+### [TabGroupIndicators] Add feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6b8ab71
+
+### Add the feature flag GlobalMediaControlsUpdatedUI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ba1ac9f
+
+### [bookmarks] Expose kEnableBookmarkFoldersForAccountStorage to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6fafce6c
+
+### [Flags] Remove expired media flags and extend a couple of others.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/835c877
+
+### Revert "Allow content shell to enable the built-in DNS resolver"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/edbb2fc
+
+`);
+              </script>
+            </body>
+        </html>
