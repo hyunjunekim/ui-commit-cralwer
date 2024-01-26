@@ -1,0 +1,232 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-26
+### [DTC] Use TabObscuringHandler to block transition
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17af365
+
+### Mark DefaultANGLEMetal as launched on ARM Macs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec549a2d
+
+### [Rounded Windows] Pass corner radius to the ClientView::UpdateRoundedWindows()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52da26a3
+
+### [Rounded Windows] Update window rounded corners on widget initialization
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33f6dcf
+
+### [AXMode] Remove feature flag logic
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2ff7fa3
+
+### [omnibox][webui] Combine remove and update selection.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b159786
+
+### [ActionManager] Add support for view controller to respond to view changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd2c62b2
+
+### Crosier: Add ui_controls for evdev
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c60de29
+
+### Add support for icons in notification items
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bd8eda
+
+### Fix tab drag crash from libwayland: unknown object
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eeec66f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/787e0c3
+
+### Reland^2 "Automated T* -> raw_ptr<T> rewrite 'refresh'"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5eeeba
+
+### Revert "Add support for light/dark status bar icons in Android S+"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13e26316
+
+### Move Background drawing logic out of \`AshNotificationView\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a3b931
+
+### WebUI: Enforce querySelector<Type>() pattern via ESLint, part 4.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4889137f
+
+### Prepare some tests for enabling ChromeRefresh2023.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd5332b
+
+### Update the Compose dialog fallback positioning logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4ec2c3
+
+### [SysUi download integration] Create a progress mojo type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/401f5aa2
+
+### settings: Port OpenKeyboardSubpage tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b13f785
+
+### [Android] Fix crash in SigninFirstRunMediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42982e4
+
+### webauthn: observe the model in AuthenticatorRequestWindow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8872129
+
+### [Site search policy] Add interactive UI test for the policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10edd12b
+
+### Reland "[Autofill] Simplify ContentAutofillDriver initialization"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/959dd14
+
+### Fixing crash in BackForwardMenuModel due to navigation when menu is open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/376c3b9
+
+### [Extensions c2s] Add tooltips to extensions button based on site access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96501f5
+
+### Remove FSCTL lockdown off-switch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2e6858
+
+### [autofill][desktop] Move SaveCardLoadingAndConfirmation feature check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/784210b6
+
+### [User Education] Proper queueing and contention for startup promos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2686c1f6
+
+### WebUI: Migrate autofill/password manager internals to use WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d900e89
+
+### [AsyncSB] Add interstitial histograms for async checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0a8e26
+
+### Remove hover card setting feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/759a348
+
+### [AWC] Enable WindowSetResizableBlocksResizeToAndResizeByApis on non-aura
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7d40b388
+
+### cros: Rename birch feature flag to forest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf7297d
+
+### Responsive Toolbar: fix AnimatingLayoutManager race condition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14bd7d66
+
+### [Tab Organization] Fix typo in trigger metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75a8576
+
+### Fix ThemeColorPickerHandlerTest tests to work with CR2023 enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c125f1
+
+### Revert "[Autofill] Simplify ContentAutofillDriver initialization"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d36c8746
+
+### [dPWA] Removing AppLauncherHandler from old Apps Home page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93abb66
+
+### Use span form of base::HexEncode() where possible.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e02610c
+
+### [UI] Fix bottom shadow clipping on Linux browser windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67594b3
+
+### [Browsing Data Model] Deprecate storage migration feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b13ffc
+
+### 🧇 Add OWNERS file to //c/search_engines/search_engines_choice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1cd960
+
+### Explicitly set SafeSites URL classification client in supervised filter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba0fe8b
+
+### [hats] Fix supplied trigger id value propagation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/905edd7
+
+### [UNO] Enable TurnSyncOnHelperBrowserTestWithParam/TurnSyncOnHelperBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5eecb2e
+
+### Revert "[Android] Fix crash in SigninFirstRunMediator"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f816ac4d
+
+### [Autofill] Simplify ContentAutofillDriver initialization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b90869
+
+### Cryptohome errors: Migrate usage of CryptohomeErrorCode to ErrorWrapper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6179612a
+
+### [waffle]Add a confirmation toast in the settings page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/211193aa
+
+### Settings: Proactive Topics Blocking - connect Manage Topics UI to backend implementation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3e44c8
+
+### [Fixit] Cleanup HideTabOnTabSwitcher
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/68740b7
+
+### [Fixit][RDSZ] Cleanup Request Desktop Site Zoom implementation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b56269c2
+
+### [Site search policy] Enable code paths on ChromeOS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9fc885b9
+
+### [Auto-disable Accessibility] Remove feature flag checks
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/40ec80d
+
+`);
+              </script>
+            </body>
+        </html>
