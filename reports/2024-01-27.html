@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-27
+### ui: avoid include linux_ui.h on non-linux platforms.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd06065
+
+### [UIA] Expose kLabelText as a UIA_Group instead of text
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bdcdba54
+
+### WebUI: Fork localized_link for Ash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45f89f2
+
+### ui: Support lottie-based cursor logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f1c57d
+
+### Disable or skip tests that are failing under the ChromeRefresh2023 flags.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc5fb4b
+
+### Fix zarya hover and focus background height.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f390d0
+
+### jni_zero: Preparing for jni_zero to no longer depend on base
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fe12c1
+
+### Revert "Mark DefaultANGLEMetal as launched on ARM Macs"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c4265a
+
+### Remove some redundant @After logic in tests
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/426c958a
+
+### Wayland: fix positioning of menus with ChromeRefresh2023.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e7a5fe
+
+### Fix libwayland fuzzer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61d04be
+
+### ui::HardwareDisplayPlaneManager: Use new color management methods
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a808d13
+
+### Rename ShoppingListHandler and move WebUI api to be a top-level resource
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f34a0f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b266891
+
+### Limit autofill popup web contents top overflow.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3dd3a6
+
+### Revert "[DTC] Use TabObscuringHandler to block transition"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e36094
+
+### ui::DrmNativeDisplayDelegate: Fix crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d79e56c8
+
+### Drm: Fix flash when Kohaku encounters HDR content
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5fc01e9
+
+### Remove aura::client::kMenuType
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03084e0
+
+### Add feature to enable baked-in gamut mapping of oklab and oklch
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e7cb67
+
+### Part 2: StyledLabel support CalculatePreferredSize(SizeBounds)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f1eb825
+
+### Part 3: TabbedPaneTab support GetHeightForWidth
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e36c89f0
+
+### Simplify ScreenAI trigger mechanism and separate features ready state.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fdaf0f
+
+### Android: Rely on test runners for PostTask.resetPrenativeThreadPoolExecutorForTesting()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab785b6
+
+### iwa: Add celebration image to success screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b41946
+
+### Revert "[CodeHealth] Remove dangling pointer in WebContentsModalDialogManager"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d06a6b4d
+
+### [CodeHealth] Remove dangling pointer in WebContentsModalDialogManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eed9f4
+
+### iwa: Update placeholder installer icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34921cf
+
+### [MCT] Add minimize failure toast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c73a899
+
+### Fetch and display ungrouped visits when doing grouped history searches
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9a8fa4
+
+### iwa: Handle upgrade case in installer UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fcc79eed
+
+### Replace span::subspan(0, N) with span::first(N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d76d61e
+
+### [RDSG] Clean up RDS default-on post-launch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/38dd454
+
+### Reland "[DTC] Use TabObscuringHandler to block transition"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a55ff6a8
+
+### Remove unused pref registrar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/678ae38
+
+### [VCN] Move progress dialog controller to components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9efc95d
+
+### iwa: Add privacy_tip icon for installer security warning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67a20ac
+
+### Disable more tests in preparation to enable ChromeRefresh2023 flags.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfd661e8
+
+### shortcuts: Port search_for_shortcuts tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3db591
+
+### Clean up the shopping collection flag post desktop launch
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fc66c49
+
+### Status bar updates when suggestions shown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5c461b
+
+### audio-settings: Add interactive uitest for ChangeInputDevice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c7993a
+
+### [toolbarpinning] Use ActionViewController/Interface for PinnedActionToolbarButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c39b624
+
+### [TabOrganization] Add logging in failure states for ModelQuality.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2f452d
+
+### iwa: Add IsolatedWebAppInstallerBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51463e66
+
+### Fix crash when chrome is closed while page info sub page is open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d64d67
+
+### [Birch] Add birch tab provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0e71da
+
+### Add histogram variants for compose on-device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80edd25
+
+### Revert "Simplify MetricsHandler::HandleRecordInHistogram"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7937c45
+
+### [Urlbar] Remove a flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43c6000
+
+### Add MultiImageContainer to PermissionChipView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/286c572
+
+### WebUI: Migrate accessibility and bluetooth internals to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a58d7c5
+
+### [Android] Record Cancel metrics for Swipe to dismiss plusAddress modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9a1bc82
+
+### [PIX] Browser architecture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9ed387
+
+### [extended-updates] Add new directory for Extended Updates dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6636153
+
+### EndpointFetcher: Use \`base::TimeDelta\` for timeout values
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55934de5
+
+### [waffle]Center radio button disc inside initial cell content
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f84421
+
+### [Uno] Adapt SigninInterceptFirstRunExperienceDialogBrowserTest tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2daf10
+
+### [sharing] Avoid unique_ptr when dealing with target devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b034ae
+
+### Change strings in the move password bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed92a2c9
+
+### Add TODO to OmniboxChipButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f592d3a
+
+### iwa: Fix IsolatedWebAppInstallerShelfItemController WindowObserver crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bb3d8f1
+
+### Move BookmarkButton into its own file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cfd7e1
+
+### add aria-current and announcement for inspiration descriptors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/183a136b
+
+### [SafetyCheck] Revoke unused chooser permissions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f825a9
+
+### [Autofill] Turn AutofillClient pointer into a reference
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/408adc2
+
+### iwa: Rename isolated_web_app_builder.h/cc to avoid collisions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0cac22
+
+### desk_profiles: Expose browser flag for desk profiles
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7ff9b08d
+
+### Add flag to enable new launcher drive suggestions
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dc1109c
+
+### [wasm][jspi] Remove architecture reference from JSPI flag defn.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/244e32c
+
+### Add flag + feature for cookie settings UI alignment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/92c57377
+
+### Add chrome://flags/#notification-one-tap-unsubscribe.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aba6ac7
+
+### Clean up AutofillEnableEmailOtpForVcnYellowPath feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e854c3c
+
+### [Omnibox] Add a flag for the shortcuts on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/93e8ab386
+
+`);
+              </script>
+            </body>
+        </html>
