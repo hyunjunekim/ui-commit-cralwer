@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-30
+### lacros: disable delegated out-of-window clip rect
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/baaadc7
+
+### Fix build for targets that don't support nocompile tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20526029
+
+### preload: Integrate preconnect with new tab page triggers
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a461711
+
+### Remove SetInputScope function decl.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9f77e0
+
+### [SysUi download integration] Show/hide the progress bar depending on
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/398053e
+
+### Default border thickness to zero for CreateThemedRoundedRectBackground()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e4065e
+
+### Fix difference in Fluent scrollbar grays caused by their alpha
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfa0a699
+
+### Convert superclass Layout() calls to LayoutSuperclass<>(): ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bcc06c
+
+### [Layout Metrics] Change metrics reporting to ui category
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc650e80
+
+### Replace Layout() calls with DeprecatedLayoutImmediately(): ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82819e7
+
+### Add LayoutSuperclass<>() and DeprecatedLayoutImmediately().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26addd25a
+
+### Add LayoutImmediately().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4284ca
+
+### [Gardener] Revert "Enable all GM3 features by default."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abb8cae
+
+### [Rounded Windows] Round dialogs that use non_custom_frames
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3661c655
+
+### [Rounded Windows] Set window corner radius property in NonClientFrameViews
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0374f35
+
+### Avoid that PreMenuEventDispatchHandler::menu_controller_ dangles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97116d1
+
+### Avoid dangling pointers in Widget interactive UI test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c11fad
+
+### immersive fullscreen: fix toolbar visibility in content fullscreen
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15b117c7
+
+### Update notification icon size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/458a2e86
+
+### Mark pointer in BubbleDialogDelegateView as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dfc591147
+
+### Mark RootView::announce_view_ as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20c658a9
+
+### Avoid dangling pointer in TableView.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8d3f6a6
+
+### Avoid dangling pointers in ElementTrackerViews test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a97c03c
+
+### Avoid dangling pointers in DialogClientView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c2908c
+
+### Avoid that MenuItemView::delegate_ dangles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/72883a71
+
+### Reduce references to \`Layout()\` in comments: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/56717dd3
+
+### Declare sparkle tokens
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1bde3122
+
+### Avoid dangling pointers in InteractionSequenceViews test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8546f2a
+
+### Avoid that WindowEventFilterLinux members dangle.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7ebbc8
+
+### textfield: Change SystemTextfield to a PreTargetHandler
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aebd9a7
+
+### Enable all GM3 features by default.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab07fbb
+
+### Remove OTR checks in ClipboardHostImpl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2cdc6a9
+
+### [Gardener] Revert "Introduce KeyboardModifierEventRewriter."
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/599e2b5
+
+### Improve comments.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0cc5102
+
+### Introduce KeyboardModifierEventRewriter.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0610ea6
+
+### [Office upload] Compare case insensitive OneDrive emails
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8673c55
+
+### Add localized string for the "Other results found" for Grouped History
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92547af
+
+### Update strings based on ICO feedback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3ac8e7
+
+### [FSA] Cleanup Persistent Permissions flag removal comments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9323653
+
+### Add robertlin@ to be in the OWNERS of c/b/u/v/b/bookmark_button.*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec0a7bf
+
+### Fixes to the saved tab group tutorial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bfb1c4
+
+### iwa: ShowDialog returns the child Widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3db117d
+
+### iwa: Dim the main widget when a child dialog exists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12b7dc2
+
+### [Gardener] Disable ToolbarControllerUiTest.DeactivatedActionItemsOverflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf43742
+
+### [Network] Add network::NetworkContextGetter callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e5ee10e
+
+### Convert superclass Layout() calls to LayoutSuperclass<>(): chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca21eb9
+
+### display: Add display night light schedule setting metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be803a2
+
+### Settings: Proactive Topics Blocking - changes to Ad Topics Page and Site suggested ads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba0b0bbb
+
+### Remove last_active_browser_cocoa.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adc91f01
+
+### firmware_update: Add basic interactive UI test for Firmware Update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb0c0a29
+
+### [Omnibox] Clean up AndroidNoVisibleHintForTablets experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbe65a4
+
+### [Omnibox] Minor cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef7b8569
+
+### iwa: Use InstallerCoordinator directly in browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/825a720
+
+### [FedCM] Pass the IDP config URL through to NotifyResolve
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d40c1b
+
+### display: Turn on unified mode not count to new display connected metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b4f564
+
+### [ TabGroup ] Remove unused editor bubble code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43c394c
+
+### Port DeviceMouseScrollAcceleration tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2aed529
+
+### Deprioritize shared with me file suggestions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/923293d
+
+### display: Add display nightlight setting details metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35cbe4e
+
+### [ TabGroup ] Closing a group with all tabs no longer closes browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d88ee43
+
+### [UB] Align content across 1% + 99% UB states
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6159184
+
+### Test that IPH doesn't show when safe browsing is set by policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a3624c9
+
+### Trivial comment cleanups.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba62972
+
+### Remove some deprecated forms of base::Base64Encode().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/801251c4
+
+### Don't clear cached task lists when closing UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e483283
+
+### Add new EnterpriseProfileBadging feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/16b94d6
+
+### [FSA] Remove kOneTimePermission flag dependency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c4c590e
+
+### Make sync opt-in screens minor-mode safe, but disable this by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd84cfd
+
+### Add interactive UI test for IBAN save flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/051a345
+
+### Fix return value for WebAppBrowserController::ShouldHideNewTabButton().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b30dda
+
+### settings: Port TrackpointEnabled tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dff8cf0
+
+### Some followup cleanup to Fuchia files in chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44e1ca2
+
+### Reduce references to \`Layout()\` in comments: chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbb5c6db
+
+### [AF] Remove PopupType from ios code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cec8ac9
+
+### [Gardener] Disable T.HoverCardShowsMemoryWhenAvailable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab38fe7
+
+### win: Fix shutdown hang in VirtualDesktopHelper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef22e79
+
+### Add view for the DefaultStoreChanged bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05f7d0d
+
+### Add implementation of the \`OnMovePasswordLinkClicked\` method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cd738c
+
+### Add controller for the default store changed bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90e73578
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d85da5
+
+### [PEPC] Add TimeToAction Metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e37eea
+
+### [Gardener] Revert "Implement sanitization feature for ChromeOS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fdef08
+
+### Reland: "Allow content shell to enable the built-in DNS resolver"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/696c6de
+
+### [CodeHealth] Remove expired flag enable-css-selector-fragment-anchor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f010fc95
+
+### display: Add feature flag for Display Performance Mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/baecb2f
+
+`);
+              </script>
+            </body>
+        </html>
