@@ -1,0 +1,392 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-01-31
+### Remove HideHelper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d15e5e9
+
+### Remove deprecated code.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a68346e
+
+### Implement HeatmapPalmRejectionClient on the chromium side
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73a6ee42
+
+### WebUI: Preserve aria-expanded attribute in a disabled cr-expand-button.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bea222
+
+### Fix TestViewsExamplesLaunches when Fluent scrollbars are enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b021ebb
+
+### Fix Crash in gl::TryGetVSyncParamsFromDwmCompInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a68b12d
+
+### Avoid dangling pointer in WidgetAnimationWaiter.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e5c8390
+
+### Mark BubbleSlideAnimator::bubble_delegate_ as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4538d25
+
+### Image Loader: Remove @ts-nocheck from unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fdb358
+
+### Avoid dangling pointers in BoundsAnimator test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b2831e2
+
+### [Clipboard] Remove ClipboardContentType enum.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18ac05c
+
+### WebUI: Add stroked style for cr-inputs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0c589c
+
+### Add log message if the src and target layer doesn't have the same root.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1de675b
+
+### Revert "Remove ATL Window dependency in LegacyRenderWidgetHostHWND"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6dbd71cb
+
+### Mark MenuController::drop_target_ as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e03f86
+
+### Mark MenuModelAdapter members as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb753624
+
+### Use WeakPtr for MoveLoopMouseWatcher::host_.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e0435f
+
+### [ActionManager] Add action view controller support for checkbox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2c37ce
+
+### [Action Manager] ActionViewController cleanup
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6969a1d
+
+### Alias positive and negative colors to success and error
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70e8939
+
+### [realbox][cr23] Move zarya hover fill logic to cr-realbox-match.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5b7089
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f27f6f2
+
+### Image Loader: Remove @ts-nocheck from remaining JS files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8de91f
+
+### LayoutManager supports bounded preferred sizes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1217318
+
+### Files app: Convert cache_unittest.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aafac216
+
+### Files app: Allow @ts-ignore on test files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f95487f
+
+### Add gif insertion support for Picker.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c015abd
+
+### Revert^3 "[Shortstand] Run WebAppIntegrationTest with Shortstand flag off."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6c942c
+
+### Don't rely on +load in ChromeSwizzleServiceMenuUpdater.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be036e9
+
+### [sync] Add scaffolding for new data sharing ModelType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07390546
+
+### Prerender: Add tests for SearchEngineTabHelper with target hint
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb0bb75
+
+### Use BrowserWithTestWindowTest's UserManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af46f1162
+
+### iwa: Add Manage isolated web apps subpage and toggle to search concept
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36531129
+
+### Used \`std::string base::Base64Encode(StringPiece)\` instead of \`void base::Base64Encode(StringPiece, std::string*)\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f606e1
+
+### [live-preview] Add a minimum for audio level in the mic meter to render appropriately
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d47ca74
+
+### Feedback UI: Modernize chrome://feedback UI implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0718bb5
+
+### [Emoji Picker] Render <seal-app /> under flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5542cf01
+
+### Remove usage of preloading subpage in performance settings feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e39744d
+
+### [ Extensions ] Fix tabGroups.Move bug with adjacent groups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a57a94c02
+
+### Settings: Proactive Topics Blocking - Ad Topics Page Empty States
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ba8d4e
+
+### [User Education] Fix repeated show problem with toast IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28069ca
+
+### Speculative fix for a shutdown hang
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f24ba88
+
+### [AndroidVisibleUrlTruncation] Cleanup and switch to V2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf797ed
+
+### Prepare for extension_messages.h removal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7a04b2
+
+### [Cast2Class] Update dialog to support dynamic colors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0ba1106
+
+### Add ToolbarAvatarSettings policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ac3c9b
+
+### [Read Anything] Revert "[Read Aloud] Workaround for bug where colors don't always load."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/322881c
+
+### Update Extension HaTs Survey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fe000d
+
+### [FaceGaze] Add simple cursor subpage settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6a1593
+
+### Remove off-switches for ksecdd closing and cryptbase warmup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/804caf0
+
+### Enable features::kResponsiveToolbar on lacros by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e53f262
+
+### Temporarily show bookmarks bar when a tab group is saved
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7efb5d69
+
+### [accessibility] Add support for viewing image labeling via webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f146d1d
+
+### \`StrictNumeric\` in \`base::span::first(...)\` and \`last(...)\`: Prep 2/N.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b391d15
+
+### Revert "Ensure SadTab is shown even when previously hidden due to speculative"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d17e190
+
+### [Read Aloud] Disable links when Read Aloud is playing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f3ca84
+
+### [extended-updates] Create skeleton for Extended Updates dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/359b990
+
+### [live-preview] Add scroll bar for multiple previews as well as longer ones
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d57db1b
+
+### [Settings] Add WebUI booleans for Tracking Protection settings features
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d66a105
+
+### privacy-hub: Dynamic strings for location subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/795c1ff
+
+### Remove getLastUsedRegularProfile from ConsentAuditorBridge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46eb98e
+
+### Experiment with measuring NextIdleTimeTicks after a delay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9db698
+
+### [camera_preview] Use a better quality interpolation algorithm
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48b2024
+
+### CrOS Settings: Add Multitasking Settings card to System Preferences
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65eadb34
+
+### Apply content settings to allow SameSite=None cookies in sandboxed pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/757ec52862
+
+### Use new enum-class style value for UserType.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3e167e
+
+### Rename CanOfferExtendedSyncPromos capability to CanShowHistorySyncOptInsWithoutMinorModeRestrictions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/778ca08
+
+### Fix typo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f47f0f3
+
+### OOBE: Extend OOBE test API with HWDataCollectionScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72229ef
+
+### cros: Introduce BrowserExtraInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/690b497
+
+### Clean up ClearingCookiesKeepsSupervisedUsersSignedIn flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/724eda7
+
+### PEPC: Clean up metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/711b144
+
+### [gardener] Disable flaky ToolbarControllerUiTest.DeactivatedActionItemsOverflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3c1d743
+
+### Part 4: Specified PageInfoSubView content size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/159eb3a
+
+### [gbb-cct] Add new fields to PageInsightsConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f72f3cb
+
+### kiosk: Add a parent window to the diagnose dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e40ada2
+
+### audio-settings: Add interactive uitest for ToggleInputNoiseCancellation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e3a8002
+
+### audio-settings: Add interactive uitest for ChangeInputVolume
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8aaea9f
+
+### Split file settings for OneDrive and cloud upload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b94322e
+
+### privacy-hub: Open browser settings in lacros chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a3a9de
+
+### [accessibility] Migrate to ScopedAccessibilityMode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f855bf8
+
+### Add general ReadContentSettings() mojo method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df0cbd6
+
+### Reland "Implement sanitization feature for ChromeOS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1684ef64
+
+### [Mahi] Rename MahiManagerAsh and create an instance of MahiManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b3a361
+
+### Fix crash in ManagePasswordsBubbleController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1193e87
+
+### [PIX] Allowlist check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ff6de9
+
+### [Gardener] Disable IsolatedWebAppInstaller related tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/191c6f9
+
+### [CloudOpenMetrics] Add crash keys before dumping state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0be1b6c
+
+### Add event source to \`holding_space_metrics::RecordItemAction()\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0b36c7
+
+### Add web app AppTitle feature to chrome://flags. This is done in preparation for origin trial of this feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7e2706d
+
+### Add flags for product specifications
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f9d0d90
+
+### [2/n] Emoji picker cpp search: Create chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d78f0a
+
+### [Fast Pair] Delete fast-pair-software-scanning Flag and All Uses
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c2f5026
+
+### [Passwords] Extend / clean up Chrome flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e83ed41
+
+`);
+              </script>
+            </body>
+        </html>
