@@ -1,0 +1,296 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-01
+### Files app: Adopt auto generated file_manager_private.d.ts
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ebbf1c5
+
+### Image Loader: Move required JS files from the .grd file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce7ce80
+
+### Directory Tree: Update the font of the "rename" directory tree element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b6f63a8
+
+### Remove image() fn from LabelButton
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afd10b1c
+
+### Refactor occlusion state plumbing in ozone/wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c65bef
+
+### Revert "lacros: disable delegated out-of-window clip rect"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/158f272
+
+### Revert "Add CHECK to AXPlatformNodeWin::InternalRelease to detect double-free"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4097f08
+
+### [a11y] NextOnLine/PrevOnLine computation on aria-hidden nodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25f10df
+
+### [Win-a11y] Fix accessibility hit testing on Views with multiple monitors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a153318
+
+### Fix dangling pointer in InkDropHostTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9056836
+
+### WebUI: Migrate cr-action-menu to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba1578a
+
+### [Layout Metrics] Add trace events for layout calls within View
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/92658fe
+
+### wayland_connection: Use base::CheckedNumeric operations for time conversion.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9d2427
+
+### Refactor MenuControllerCocoaDelegateImpl.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6c43a6
+
+### Avoid dangling pointers in WindowReorderer test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62425c8
+
+### Reland "Introduce KeyboardModifierEventRewriter."
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2892252
+
+### Remove dead code from MenuRunnerImplCocoa.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e058e3d
+
+### Revert "Use LAYER_NOT_DRAWN if frame will not be used"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2dde764
+
+### Reland "Consistency check between AXObjectCacheImpl and AXTreeSerializer tree"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44c52c1
+
+### [realbox] Add support for vertical secondary suggestions in Zarya.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbd3fcf
+
+### [Gardener] Disable WaylandClipboardTest.WriteToClipboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38fa0942d
+
+### Remove misuses of Empty{GURL,String,String16}(): ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f2a8673
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4f8990
+
+### Update PdfOCR and ScreenAIAnnotator's use of ScreenAIServiceRouter.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e20ea3e
+
+### Avoid dangling pointer in ButtonDragUtils.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ac0c95
+
+### QA Rich Card: fix card rounded borders
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82be434
+
+### Avoid two-arg base::HexEncode() and RandBytes() calls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80e9e6e5
+
+### [Office] More fine-grained UMAs for invalid alternate URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8f8d6936
+
+### Use recent drive file suggest provider for birch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0c5fe6
+
+### Remove CHECK_IS_TEST in UMABrowsingActivityObserver::TabHelper::NavigationEntryCommitted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d14fa7f
+
+### Specify deps for //chrome/browser/ui/ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80e2e79
+
+### [Product specifications] Add webui boilerplate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc14237
+
+### QA Rich Card: support all unit conversion formulas
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5786823
+
+### [omnibox][cr23] Update Answer-in-Suggest suggestion styling per spec.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b69d007
+
+### [Read Aloud] Move logic for checking for max text length back to WebUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d47dfed
+
+### [Rounded Windows] Round document pip windows for ash chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db1df23
+
+### Tab Organization: Observe settings changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4b89dd
+
+### immersive fullscreen: fix content fullscreen child window handling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84602d7
+
+### [Autofill] Replace unique_renderer with renderer_id 3/8
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c34484
+
+### Remove the speech menu tag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0c3ab75
+
+### Revert "[Gardener] Disable IsolatedWebAppInstaller related tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a663db
+
+### Hand-format the main menu builder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/171e077
+
+### display: Add display unified mode setting metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4451431
+
+### Use macOS 14 menu sections
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75cc9b2
+
+### headless: allow chrome:// URLs on startup behind a command-line option
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9902e91
+
+### Histogram cleanup for voice search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c56c23
+
+### Re-enable the test of clicking a completed download's notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be226d0
+
+### Add a param to make Compose respect the browser window boundaries.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d2f2df
+
+### Remove getLastUsedRegularProfile from SyncConsentFragmentBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/838fe75
+
+### CrOS Settings: Rename Quick answers load time boolean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13d10f89
+
+### Add CreatePopup Functionality in ChromePaymentsWindowManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3043062c
+
+### Replace Layout() calls with DeprecatedLayoutImmediately(): chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7db01ff
+
+### Remove misuses of Empty{GURL,String,String16}(): chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0968622
+
+### display: Add display mirror mode setting metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63e2364
+
+### Replace USER_TYPE_* in comments.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c356fdff
+
+### Fix ProfileMenuControllerTest.SetActiveAndRemove
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04ce786
+
+### Fix crash when password was moved using the account store opt in flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95c205d
+
+### audio-settings: Add interactive uitest for LockScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77ade226
+
+### [FSA] Update FileSystemAccessScrollPanel to static method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5b3985
+
+### [Page Info] Align content across 1% + 99% TP page info states
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c9b3be
+
+### iwa: Fix memory leak from DimOverlayView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee9dfd1
+
+### Remove unnecessary ScreenAI buildflags from Reading Mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e0233c4
+
+### Fix type mismatch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5874eb4
+
+### Remove overscroll history navigation setting about flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3762be8
+
+### CrOS: Introduce CaptivePortalPopupWindow flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/554bc4a
+
+### [Dr-Dc] Remove features::kForceGpuMainThreadToNormalPriorityDrDc.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/878828a
+
+### [mullet m3] Add AutofillForUnclassifiedFieldsAvailable to Chrome flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0de049f
+
+### [mullet m2] Add AutofillGranularFillingAvailable to chrome flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/db3b627
+
+### [FSA] Persistent Permissions - Create flag for updated Page Info UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bfbe512
+
+### Remove CrOSLateBootAudioFlexibleLoopback flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cad8395
+
+`);
+              </script>
+            </body>
+        </html>
