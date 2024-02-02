@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-02
+### Lacros testing: Make browser init param overriding more robust
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5f6f14
+
+### Files TS: Merge definitions from prod and integration tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/88473f0
+
+### Add a feature flag for heatmap palm detection.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/62ca051
+
+### [Share] Fix crash when web share after theme switches
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b3afd0
+
+### Extend node count consistency check to AXTree::Unserialize()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0bc6e9
+
+### WebUI: Support "notify: true" in CrLitElement reactive properties.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6083871b
+
+### WebUI: Migrate cr-dialog to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8a1b95
+
+### views: fix misleading comment in DialogDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/edd097a5
+
+### Count unnecessary layouts.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74bf24c
+
+### Android: Remove references to remoting_apk
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/062fc81
+
+### cr_components/app_management: Move files to app_settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/67e94640
+
+### Add browser command to open AI settings page from What's New
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97d29c4
+
+### Move FontConfig initialization off of the UI thread
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d753c6a
+
+### WebUI: Add a public fire() helper method in CrLitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdc8b982
+
+### Lock down access to LayoutSuperclass<>() and verify protections.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/134e9e5c
+
+### Remove rsesek@ from //ui OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18a87927
+
+### Close the Chrome instance when the last tab is dragged out.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca09e3cc
+
+### Change View::Layout() to take a PassKey.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e3a1e99
+
+### Add inline settings for conversation notification view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fad4fe2
+
+### Manuarlly remove more deprecated forms of base::Base64Encode()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/207184ff
+
+### Replace Layout() calls with DeprecatedLayoutImmediately(): misc.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e1678d4
+
+### Adds a metric to see how many Uris are outside the apps data dir.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78e00b8
+
+### Files TS: Use type definition from prod in integration tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/63be2c4
+
+### [ ChromeRefresh2023 ] Remove InkDrop from Google G icon in the Omnibox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b1491f
+
+### picker: Store and maintain a \`Profile\` pointer in \`PickerClientImpl\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ba760a
+
+### Prevent temporary bookmark bar from potentially lingering after Saved Tab Group tutorial ends
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa54cdd
+
+### Multi-Calendar: Add GetCalendarList to Client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30c7ef1
+
+### [pip] Enforce maximum size >= minimum size for document pip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53310093
+
+### Remove unused browser commands from WhatsNewUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ffd310
+
+### [FedCM] Show modal dialog for single account button flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d23ad35
+
+### Clean up ownership in BrowserWithTestWindowTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/496c9a3
+
+### Remove flag guarding clipboard history footer feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66d64b2
+
+### [headless]: deflake command handler shutdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c86d0fac
+
+### Add trace event in TabSearch startup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a14440d
+
+### [User Education] Fix incorrect bubble arrow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d3e372
+
+### [view metrics] Remove Tabstrip failure reason.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d2f004
+
+### Add Campaigns Manager session.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06d804f6
+
+### [ SavedTabGroup ] Record tab group metrics appropriately
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f146f8
+
+### Drop unused PedalSuggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb2078e
+
+### [FSA] Persistent Permissions Code Cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc28c59
+
+### [Read Aloud] Add tests for play previous granularity and highlighting.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71ca21cd
+
+### [URLF custom message] Implement custom message for block page interstitials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2249512
+
+### Add InitVcn3dsAuthentication function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/723ccc3
+
+### power_sounds: Remove the launched flag \`kSystemSounds\`
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6b3cd57
+
+### Revert MIDI permissions Android UI changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/282ecb84
+
+### [gbb-cct] Populate context metadata on request (behind params).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/681a203
+
+### download: Reduce max display URL size in about://downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f098789
+
+### Port AddAcceleratorDisruptive tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1424671
+
+### document-pip: Use title from opener for the pip browser window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f258c6
+
+### Disallow keyboard navigation to non-focusable elements.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aee1113
+
+### Parse 3DS challenge option
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab48b8d
+
+### [Gardener] Disable flaky ProfilePickerCreationFlowBrowserTest on linux msan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77f5ba0
+
+### Settings: Proactive Topics Blocking - string name changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87a1f85b
+
+### Reland "Add MultiImageContainer to PermissionChipView"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/167a071
+
+### [autofill][desktop] Create a Confirmation Bubble View for Save Cards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89593024
+
+### Remove combobox in SaveUpdate bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8729749
+
+### [UB] Replace cookie counter with allow/block state in User Bypass
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f80fc7
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b0804d
+
+### Show \`DefaultStoreChanged\` bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c36496
+
+### [Uno-D] Create function to check if UNO features are enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd57c0de
+
+### [mullet m3] Context menu persists M3 metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e71ea5d
+
+### [UNOp2][Android] Create skeleton classes for history sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c38b2e7
+
+### Update ScreenAIInstallState's Ready and Failed states.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ca02c0
+
+### [AF] Remove GetPopupType from AED and Autofill popup controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a5ef8f
+
+### Remove expired flags entries for Theora and macOS AV1 HW decode.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/05808d3
+
+### #ifdef kForceSigninFlowInProfilePicker out on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9aa6924
+
+`);
+              </script>
+            </body>
+        </html>
