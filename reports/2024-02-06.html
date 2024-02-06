@@ -1,0 +1,288 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-06
+### viz: Refactor GpuVSyncBFS to be Windows only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2034369
+
+### [ozone/wayland] Fix half screen tiling geometry and rendering
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3734137
+
+### WebUI: Migrate cr-expand-button to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01989e1
+
+### Image Loader: Convert image_loader_client.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7f090e3
+
+### cr-elements: Use --cr-drawer-header-font var for Ash only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/748bcdd
+
+### [pdf-a11y]: clarify AXMode::kPdf
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be477fc
+
+### cr-elements: Fix font style override issue in cr-drawer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b7f615
+
+### Accessibility: Enable high quality TTS voices by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/09f6ef7e
+
+### Define new color for Fluent Overlay minimal mode thumb.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/adf22b1
+
+### Revert "Increase IdlePollingService interval to 15s"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b312d25c
+
+### [Animation Policy] Add build rule for webstore extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/324148b
+
+### [views_ax] Renaming custom_data_ to override_data_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b97657
+
+### Ozone: Fix flickering for Rec709 video overlays
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/931c7a2
+
+### Revert "Update BoxLayout to be a subclass of LayoutManagerBase"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/147eacd
+
+### Revert "webdialogs: remove OnDialogClosingFromKeyEvent()"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdbe776e
+
+### Increase IdlePollingService interval to 15s
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ece01e
+
+### Use kViewIgnoredByLayoutKey everywhere.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0139cef
+
+### Lacros (wayland) allow Vulkan Angle.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58ac227
+
+### Fix parameter name comment style.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a8d65fb
+
+### [accessibility] Remove ui::AXPlatformNode::GetAccessibilityMode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f7dab6
+
+### [accessibility] Remove ui::AXPlatformNode::SetAXMode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e7854a
+
+### Files TS: TS migration script improvements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c2de2f
+
+### Files TS: Convert test files_tooltip.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61ade46
+
+### [js-code-coverage] Include *.ts files when preprocessing image loader
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c39a123
+
+### Create a type for validated GIF urls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46d2aed
+
+### Update download progress string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ade4e3e
+
+### [Read Anything] Animate the omnibox icon the first 3 times shown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dcf4730
+
+### [toolbarpinning] Create new feature flag for toolbar pinning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53437cb
+
+### snap-groups: Fix auto-snap during session restore
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8776b2
+
+### CrOS Settings: Add Multitasking search tags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1de61f5
+
+### preload: Introduce kMouseHoverOrMouseDownOnBookmarkBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f8c9e7
+
+### Update chrome/browser/ui/webui/net_internals/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2154853
+
+### Port SwapPrimaryMouseButton tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9ea76c
+
+### Add birch weather provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aadc580
+
+### snap-groups: Split out faster splitview toast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2df25b7
+
+### Tasks-API: Add completed status to UpdateTask
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26a02330
+
+### [ SavedTabGroup ] Close overflow menu when no buttons present
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ab2827
+
+### [extended-updates] Add extended updates handler to AboutHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/621d4e8
+
+### [IncognitoLFF] Add long press menu for tab switcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a2d6aa
+
+### QA Rich Card: optimize rounded corners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9d4ec84
+
+### Speculate: Re-enable a test disabled long time ago
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/814a79b
+
+### [ SavedTabGroup ] Fix crash when dragging a group in incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b19e038
+
+### views: run callback on Esc in CryptoModulePasswordDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cce5b07
+
+### Add extension policies to chrome://policy/test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c514879
+
+### Fix aux click opening two tabs in lens side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b35fbc
+
+### [passwords] Remove PasswordManagerClient::GetSyncState()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/564dd22
+
+### Cleanup histogram CloudExtensionRequestDialogAction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3352d57
+
+### Add a callback to loadUrl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1e02a9
+
+### [FedCM] Allow API to be called when the call site is invisible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2df33c
+
+### Use ChromeLayoutProvider to set the side panel icon size for search companion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a98b9f2
+
+### [Android] Support EnableBookmarkFoldersForAccountStorage in bookmark promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21c5814
+
+### CertificateManager: Disable private key export on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03952ccf
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4342049
+
+### [Uno-D] Update guest profile label and color on Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d1b4f6
+
+### Register iph anchor for account storage toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67b8851
+
+### Remove top/bottom paddings from the autofill popup with scrolling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43dd719
+
+### [UNOp2][Android] Create SigninAndHistoryOptInCoordinator and Activity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60ad0b3
+
+### [Deprecate CookiesTreeModel] Clean-up PSCS dead code for storage access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97323d5e
+
+### [Signin][Android] Clean up tangible sync experiment
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b16dce7
+
+### Fix dangling pointer issue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da854c5
+
+### privacy-hub: Add app permissions experiment to field trial testing config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/047f07e
+
+### Reland "[InterceptBubble] Adapt identity pill effect for each intercept type with a bubble"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3cfc89
+
+### Revert "Add the TabResourceUsageCollector to query for tab usage metrics"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39c4894b
+
+### Add an about:flag to disable prerendering
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9983c30
+
+### Add flag to enable different glyphs for campbell
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4535ddd
+
+### [Data Sharing] Adding flag for Android Data Sharing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3ceeadb
+
+### Expose the minor-mode-restrictions feature via chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/856e63d
+
+### Add CSS gamut mapping to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/563a538
+
+`);
+              </script>
+            </body>
+        </html>
