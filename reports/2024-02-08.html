@@ -1,0 +1,384 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-08
+### fontconfig_util: Add Ash-only "add app font directory"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3f9e4e1
+
+### Revert "Reland "Mark DefaultANGLEMetal as launched on ARM Macs""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60a504d
+
+### Add edcourtney@ to ozone-wayland OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3494107e
+
+### Remove scheme from resource imports used by Compose.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07841a4
+
+### Image Loader: convert piex_loader.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8e1419
+
+### Files app: Convert ImageLoader to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e630364
+
+### Avoid dangling pointer in TestInkDropRipple observer.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13e869e
+
+### WebUI: Auto-generate Lit shared styles from equivalent Polymer styles.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/017d278
+
+### Avoid Layer::delegate_ that becomes dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae0e7e0
+
+### Expose wayland's RoundTripQueue in WaylandExtension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b85d808
+
+### Initialize NativeThemeWin web instance with the system color info
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/19ce3d2
+
+### ozone: Remove RDing FootSwitch1F1 from keyboard blocklist
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec5d77a
+
+### Reland "Increase IdlePollingService interval to 15s"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dcf6eac
+
+### gfx::ImageSkiaRepOfScaleFromUIImage: Be robust to failure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0072067
+
+### WebUI: Deploy "import type" imports in ui/webui/resources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d8ace04
+
+### cr_elements: Use Ash fork in nearby_internals, rm cros_color_overrides
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1298570
+
+### [Clipboard] Don't add meta charset tag for async write() method on Mac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a05892
+
+### Make sure CreateView() is called before UpdateImage() for LabelButtonImageContainer
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42e1f71
+
+### ui::HardwareDisplayPlaneManager: Remove old color management path
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b409113
+
+### [UIA] Expose <legend> as UIA_GroupControlTypeId, not Text
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f16b46b
+
+### [UIA] Expose <figcaption> as UIA_GroupControlTypeId, not Text
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a071d2ce
+
+### [UIA] Expose <abbr> as UIA_GroupControlTypeId, not Text
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2f205ac9
+
+### Reland "[A11y] Remove some |subtree| parameters in mark dirty code"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3d4c8d
+
+### Reland "Mark DefaultANGLEMetal as launched on ARM Macs"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2397d3e
+
+### Fix dangling pointer issues in ui/aura/window_unittest.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/48b0a28
+
+### Avoid dangling pointer in NativeWidgetMac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/30c30ef
+
+### Reland "Lacros testing: Make browser init param overriding more robust"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c375051
+
+### Replace DirectCompositionSurfaceWin in DelegatedInkPointRendererGPU test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af41945
+
+### Avoid dangling pointers in Compositor test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1cfe442b
+
+### ime/CharacterComposerTest: make \`character_composer_\` a std::unique_ptr
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/084fdd0
+
+### Convert open_files_in_web_drive integration test to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a39f671
+
+### [Files TS] Convert trash integration test to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/daf2674
+
+### picker: Add omnibox provider to \`PickerClientImpl\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dad1e3e
+
+### AppManagement: Move PageHandler method impls to platform subclasses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52990fd
+
+### Create primary user by default for ChromeOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ff2bfb
+
+### Port KeyboardSixPackKeys tast test to interactive_uitest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99bdef7d
+
+### [CloudOpenMetrics] Add tests for when TaskResult is FailedToOpen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c9dbd1
+
+### Add unit tests for PickerClientImpl to test GIFs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e1180f6
+
+### Headless: also keep profile alive while processing headless commands
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ae8daa
+
+### preload: Fix new tab page third party webui when preconnecting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8921712f
+
+### [DTC] Update status bar color to match toolbar color when the tab strip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9142c6f8
+
+### CrOS Settings: Constant apps notifications row sublabel in revamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2b75786
+
+### App Management: Add boilerplate Platform-specific subclasses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e242ea9b
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr. (c/b/u/v/bub)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/202ce54d
+
+### Simplify MultiProfileUserController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19241526
+
+### Remove a few vector<const T> that are easy to remove
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66854c17
+
+### [3/n] Emoji picker cpp search: Set up c++ search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19ece56
+
+### Create Navigation Observer when OmniboxMatch is selected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fad7a21
+
+### p13n: helper function to convert SeaPenQuery to Value::Dict [p2]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7184cc9
+
+### firmware_update: Update interactive UI test to start + finish update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/154edab
+
+### Remove BubbleUIInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00e63ee
+
+### chromeos: Clean up ash feature flag ContextualNudges
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fd29bb68
+
+### Remove flag guarding clipboard history adoption of web contents pasting
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c56696b
+
+### [android] Add badge on settings menu icon in case of identity error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caed9ef
+
+### [FedCM] Show modal dialog for multiple account button flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c92889b
+
+### immersive fullscreen: fix double bookmarks during fullscreen transition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/836f765
+
+### Tab Organization: Reland bubble host observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1001f4
+
+### Move resource_attribution namespace out of performance_manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92a91af
+
+### firmware_update: Add OWNERS file for Firmware Update integration tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/864aa1f
+
+### [live-preview] Make VideoStreamCoordinator inherits from viz::ContextLostObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/037eb22
+
+### Add DeviceSettingsBaseTest class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9d6c38
+
+### [Structured Metrics] Change recording API to StructuredMetricsClient::Record to deprecate recording from events directly for //chrome/browser/ui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb17c3d
+
+### Settings: Proactive Topics Blocking Topics Page Unblock Button Aria Label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4561f6e1
+
+### Update loadUrl and loadUrlWithPostData in AutocompleteDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14b3756
+
+### [omnibox] Update OmniboxMatchCellView test for ActionsUISimplification.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c018c83a
+
+### Mac: remove the ScreenTime enterprise policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f81011a
+
+### Clean up lingering getLastUsedRegularProfile from SyncConsentFragmentBase.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f72840dc
+
+### [FedCM] Fix adding observer twice in button mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4d083b
+
+### [gbb-cct] Support all bottom sheet states in the PIH Translator. Throw exception for unsupported states.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fda26fd
+
+### Move hover card discard status to alert row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8755ab0
+
+### Remove PDMObserver::OnBrowsingHistoryCleared()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3eeac649
+
+### Settings: Proactive Topics Blocking
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb3e0a5
+
+### Add enterprise badging on toolbar avatar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85c0bfe2
+
+### [discounts] Add field trial for auto popup experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6da2d9a
+
+### [DLP custom message] Add custom rule message for downloads action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5b7f00
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78772c7
+
+### [Deprecate CookiesTreeModel] Remove unused IndexedDBHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ef91c
+
+### [gbb-cct] Add alternative privace notice message.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6756c50f
+
+### Set display layout using UpdateDisplay in tab_drag_controller uitest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a6a547
+
+### Remove useless IS_CHROMEOS_ASH condition in tab_drag_controller uitest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e899ff8
+
+### Fix popup's scroll view rounded corners on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0f78c3
+
+### picker: Add CrOS Search engine to \`PickerClientImpl\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02c8c5a
+
+### Remove Profile dependency from MultiProfileUserController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aba6c3e2
+
+### [OOBE] Migrate error_mesage to TS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adce7b0c
+
+### Consolidate UserManager related pref keys into user_manager_pref_names.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27bd0fa1
+
+### picker: Add \`PickerClient::StartCrosSearch\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e60c18d
+
+### print-management: Remove print-management-jelly FF
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/549de00
+
+### firmware-update: Remove firmware-update-jelly FF
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/20389ac
+
+### chromeos: Clean up ash feature flag StylusBatteryStatus
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/024aefe
+
+### [omnibox][ml] Update UrlScoringModelMappedSearchBlending for doc matches
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b3d00a8bd
+
+### [bookmarks] Update chrome://flags to also enable reading list feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/21613b6
+
+### [dPWA] Adding universal install and go/shortcuts-not-apps flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/06b11460
+
+`);
+              </script>
+            </body>
+        </html>
