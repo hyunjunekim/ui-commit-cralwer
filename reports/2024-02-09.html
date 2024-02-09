@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-09
+### Files app: Convert image_loader_util.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e998aaa
+
+### [ozone] Update ozone_unittests to run with zaura_output_manager_v2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/491b0287
+
+### Add synchronized occlusion to configure (client change)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0f6064a
+
+### [ozone] Add zaura_output_manager_v2 client side impl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/169ad73
+
+### Improve readability of DesktopDragDropClientOzone code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/deca1d2
+
+### Revert "Add feature flag to enable media compression"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/390a216
+
+### [Linux UI] Lazily initialize font settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec25503
+
+### Add remote-cocoa support for context menus.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f339a9d
+
+### WebUI: Enforce "import type" ESLint checks in default config
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08578ee
+
+### Close wayland connection in PostMainMessageLoopRun()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22f02eb
+
+### Support loading adaptations in OnDeviceModelService
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5680824
+
+### Remove layout override from notification_view_base
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78ae3e3
+
+### Update Metadata docs and comments.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64d9914
+
+### Add new conversation notification type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ca69e97
+
+### Revert "Reland "Lacros testing: Make browser init param overriding more robust""
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc1194a
+
+### IWYU: Fix missing <string> include in ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a14ce3
+
+### Revert "gpu: don't store GLSurface in SharedContextState"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e942722
+
+### gpu: don't store GLSurface in SharedContextState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5024c2
+
+### Image Loader: Convert load_image_request.js to TS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1563e93
+
+### Files app: remove isAllowedVolumeType_(VolumeType.DRIVE)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b604df
+
+### [ozone] Add AuraOutputManagerProtocol enum
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db90d8f2
+
+### Use enum instead of bool for scrollbar orientation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb53189
+
+### [CloudOpenMetrics] Check UploadResult leakage independent of TaskResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef17071
+
+### QA Rich Card: create alternative units section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b18f9397
+
+### chromeos: Clean up ash feature flag CameraPrivacySwitchNotifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/237d670e
+
+### Revert "Improve window positioning strategy of GetEditorMenuBounds()."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ceabcf8
+
+### Rewind the MV/QT carousel when new suggestions arrive.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0ec2c1
+
+### Reorder some tests for clarity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4b7f67
+
+### browser: delete BeforeUnloadAtQuitWithTwoWindows regression test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae46a9c
+
+### [toolbarpinning] Add NewIncognitoWindow ActionItem
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75cfef2
+
+### Improve window positioning strategy of GetEditorMenuBounds().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bc8d76
+
+### Tab Organization: Update FRE trigger and language
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea85277
+
+### Add feature to reenable companion on ChromeOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31e21919
+
+### CrOS Settings: Enhance connected devices sublabel when none eligible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/857659a4
+
+### cros: Bundle some AppRestoreData params into WindowInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d5babe0
+
+### [DTC] Measure control container after toolbar margin updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f099b522
+
+### Fix leftmost tab corner alignment on fullscreen Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4887b376
+
+### snap-group: Trigger a11y announcement when entering SVOVS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83aa0e5
+
+### [Benefits] Shows benefits tag if benefits are available for the card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/597e7fd
+
+### Add enterprise badge on the profile menu avatar for managed profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/284c648
+
+### Improve permission prompting with app shim notification attribution.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83953c7
+
+### Mahi: Add menu views hierarchy and children views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/344524e
+
+### WebUI: Update SetJSModuleDefaults to better support untrusted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4390aca
+
+### [Gardening] Disable flaky FullscreenControllerInteractiveTest on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7e1ba30
+
+### [NTP XDTR] Add dismiss button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79d84f77b
+
+### Remove \`FakeQRCodeGeneratorService\` from \`qr...bubble_unittest.cc\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbd1b88
+
+### Remove Quick Commands
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/02d83d4
+
+### [CBE Watermarking] Add WatermarkView to BrowserView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fca7e643
+
+### Create AutofillPopupHideHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa96c9d
+
+### iwa: Replace Unretained with WeakPtr in CallbackDelayer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd72ef7
+
+### Update Web MIDI permission strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe4d5180
+
+### Expose WeakPtrFactory::BindToCurrentSequence to PM nodes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f6f611
+
+### test: Introduce utility class for ChromeOS UI browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38a6587
+
+### Move MultiProfileUserController to components/user_manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4016fdb
+
+### Move high memory usage check to tab helper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33c56c0
+
+### Disable/remove tests that are failing under ChromeRefresh2023.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e43740
+
+### Mac: Remove ScreenTime integration (again)
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1f91764
+
+### [FedCM] Don't add disclosure text if !request_permission
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbe6217
+
+### [Settings] Language page: call out that languages are sent to websites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d61bc10
+
+### Add managed by label to profile menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a453c48
+
+### Revert "[OOBE] Fix the  'Use as personal device' button on EnrollmentScreen"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9db3fe3
+
+### Fix restrictions on the autofill popup height.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85a407b
+
+### Make code that sets sync confirmation mode more compact.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa6fc68
+
+### [Signin][Android] Remove nullness checks for SigninView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d7ccf7
+
+### Fix crash when manually opening DefaultStoreChanged bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1510ee
+
+### [OOBE] Fix the  'Use as personal device' button on EnrollmentScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ab647a
+
+### Add UI test for extension handling for supervised users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca9de3a
+
+### snap-groups: Add a11y traversal for faster splitscreen views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf2f322
+
+### Change the color of secondary suggestion labels.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a533f8d6
+
+### [Office Fallback] Show more specific strings for each FallbackReason
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eb5f32
+
+### App Management: Move PreferredAppsList observer to be CrOS only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1aa6199
+
+### App Management: Observe WebAppRegistrar for WebAppSettings only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/013c53b
+
+### Replace uses of BarrierCallback/BarrierClosure with ConcurrentCallbacks/ConcurrentClosures in web apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc91a60
+
+### chromeos: Clean up ash feature flag MicMuteNotifications
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1005a87
+
+### Introduce Search in CCT feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/61c4951ca
+
+### Improve force-webxr-runtime logic
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c147b98
+
+### CrOS Settings: Add deprecate DNS dialog feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8275fe0
+
+### chromeos: Clean up ash feature flag ImeTrayHideVoiceButton
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/91a1532
+
+### [Fixit] Deprecate ShareSheetMigrationAndroid flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3154a996
+
+### Add flag to enable AutofillSharedStorageServerCardData
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d6a8c87
+
+### Remove V1 backend implementation of Compression Dictionary
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/40d4e43
+
+### [FspCache] Add FileSystemProviderCloudFileSystem feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8e3f967
+
+`);
+              </script>
+            </body>
+        </html>
