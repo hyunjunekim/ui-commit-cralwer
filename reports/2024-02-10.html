@@ -1,0 +1,276 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-10
+### Add missing states to WindowStates::ToString
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0186bb5
+
+### WebUI: Script for migrating a Polymer element to Lit.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/964d7c6
+
+### Add layer radii information to the debug output
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/186707f
+
+### [Test Automation] Better error message when step fails on element hidden
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/34d6ef2
+
+### [views_ax] Introducing ViewsAXCompletedAttributes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eadb275
+
+### Ozone/wayland: Pass trace ID to Exo for frame submission.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad1b7f9
+
+### ui::HardwareDisplayPlaneManager: Disallow invalid primaries
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/578b7f8
+
+### Add macOS 14 implementation of WarmScreenCapture
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0d3928
+
+### [Settings] Add support for aria-description to settings toggle sub-label
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ede413e
+
+### Drm: Always specify GAMMA_LUT
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/584e032
+
+### Remove yilkal@chromium.org from ui/webui/resources/js/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81c18d68
+
+### Use EnclosingRectIgnoringError when converting dp->pixels
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3afd74c
+
+### Update PositiveIfOnlyImageAlgorithm comments
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31a129f
+
+### WebUI: Migrate cr-view-manager to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5648c1
+
+### [Layout Metrics] Adjust layout traces
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7f0cbc
+
+### Rewrite std::set<T*> into std::set<raw_ptr<T, SetExperimental>>
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/133b2d9
+
+### Interactive UI tests for PlusAddressCreationDialog
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f64fb5c
+
+### Rename {absl => std}::optional in //ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3eb9fd51
+
+### Revert "WebUI: Enforce "import type" ESLint checks in default config"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5a52f0
+
+### [//ui/gl] Disallow validating command decoder on Linux-CastOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8ead9d2
+
+### Files app: Convert navigation.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/319b9c5
+
+### Remove ScopedTestUserManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5175df2
+
+### Ignore drag events while waiting to exit a nested run loop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d933cbd2
+
+### [User Education] Add metadata to Tutorials.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f45e0e
+
+### Promote TabStripModel reentrancy DCHECK to a CHECK.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88c3adc
+
+### [User Education] Move metadata to its own module.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98e16d6a
+
+### flag: Remove os-feedback-jelly feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/27a0232
+
+### Cleanup PlusAddressCreationDialog BrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4373f9
+
+### [3PCD] Validate DT status on 3PC access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72d5ab8
+
+### Ad Privacy: Tweak Privacy Guide strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/515cb4c
+
+### Port top_row_are_function_keys tast test to interactive_ui_tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/423a05a0
+
+### [bookmarks] Refactor BookmarkModel::Load() signature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfefe05
+
+### Settings: Manage Topics Learn More link change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d88cda4
+
+### [ Companion ] Migrate Companion pref into PinnedActionsToolbarModel Fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58df160
+
+### [FedCM] Fix modal type in button flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51747de6
+
+### Add additional guard to LocationIconView to prevent crashes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e18ce31
+
+### Remove some redundant logic in download icon generation code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8abd229
+
+### [live-preview] Add antialiasing to video stream view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb2d62d3
+
+### [live-preview] Adjust Media Preview ScrollBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a520001
+
+### [FedCM] Support requestPermission for Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe09721e
+
+### [gbb-cct] Fix bug where PIH comes back in broken state after being suppressed due to other bottom sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2859b955
+
+### [Webauthn] Add GPM onboarding view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99a4c789
+
+### Make a dedicated folder for top chrome WebUIs integration files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/609b992
+
+### Fix hover card footer test flakiness
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1210366
+
+### [BrowserSwitcher] Record LBS UMA metrics on startup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e54f2d
+
+### [toolbarpinning] Add Print ActionItem
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f23643
+
+### Implement deadline for desktop and configure all deadlines.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70ca7cf
+
+### Add a11y label to the list element in psw management bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/903e4de
+
+### [Sub Apps] Reenable sub app integration test by enabling IWA installs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd1d730
+
+### Use "chrome" related URL constants in web_app_integration_test_driver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f8b553
+
+### [Printing] Enrich CupsPrintingNotification for Web Printing API jobs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c84166
+
+### [Deprecate CookiesTreeModel] Enable feature by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94db528
+
+### [Deprecate CookiesTreeModel] Remove deprecated FileSystemHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eca11ad6
+
+### [Site Data Dialog] Check for allowed partitioned storage access for entry origin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d5106a
+
+### Revert "Fix leftmost tab corner alignment on fullscreen Mac"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9064a4d
+
+### privacy-hub: Add tests for app permission feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b71c2b
+
+### Reland "Reland "[UNO] Change reconcilor behavior when user not signed in to chrome""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af9e8af
+
+### [Android][Mfill] Create keyboard_accessory/ component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79549be
+
+### Move card unmask authentication selection to components/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dd85b5
+
+### picker: Populate CrOS search results with URLs as \`BrowsingHistory\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51efeba
+
+### Customize Chrome: hook up click targets for extensions card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71e4bb4c
+
+### Add more OWNERS to download UI code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4b2f980
+
+### [MagicStack] Add an option to show all modules.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/31b552a
+
+### Add ad-hoc signing of PWAs to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cc21d264
+
+### Create Finch feature for triggering special embedder behavior.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e36f953
+
+`);
+              </script>
+            </body>
+        </html>
