@@ -1,0 +1,388 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-13
+### Fixed formatting in layer debug output
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e52a40
+
+### [FilesTS] Convert office.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00d3401
+
+### [FilesTS] Convert file_list.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5dd1070
+
+### [FilesTS] Convert toolbar.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/994c80b
+
+### Files app: Convert zip_files.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8858797
+
+### [FilesTS] Convert keyboard_operations.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2e1531
+
+### [FilesTS] Update converter to rewrite testcase namespace
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47a1026
+
+### Reland^2 "Lacros testing: Make browser init param overriding more robust"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a2d42f
+
+### [FilesTS] Convert format_dialog.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00a488b
+
+### [FilesTS] Convert breadcrumbs.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3be51caa
+
+### [FilesTS] Convert my_files.js to typescript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/77b351b
+
+### Files app: Convert quick_view.js to TypeScript
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/441cb81
+
+### Remove the EnableAccessibilityExposeIgnoredNodes flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/32d2e0b
+
+### [Part 1] Rename virtual display utils to follow naming convention.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3ece90
+
+### wayland: dnd: implement data fetching cancellation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/418b7e6
+
+### Add UMA histogram and tracing for FontConfig initialization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb44288
+
+### [Tab Group Parity] Properly define tab group colors and variants
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6789bd3
+
+### Mark MessagePopupCollection::PopupItem::popup as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac48afd
+
+### WebUI: Migrate cr-toolbar to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9077aaf
+
+### Avoid dangling pointer in NotificationControlButtons test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/551bf113
+
+### Avoid dangling pointers in NotificationView test.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5d0a07
+
+### Move isGestureNavigationMode to ui utils
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdf7801
+
+### Reland "WebUI: Enforce "import type" ESLint checks in default config"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38a7f0c
+
+### Remove dangling pointers in TestInkDropHost.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c6dea5
+
+### Mark pointers in MenuTestUtils as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9701ffa
+
+### display: Format display_change_notifier file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb9dc396
+
+### [Viewport Segments API] Implement Android support.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a704886d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f29780ed
+
+### Add occlusion info to Window::GetDebugInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2b308e
+
+### [Files]: A different approach to slow recent sources.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65e3284
+
+### [Gardening] Disable a flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4e889d4
+
+### Record new SourceId type for notification related UKMs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08c4d2c0
+
+### Add title attribute to browsing history results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f998dce1
+
+### [Extensions c2s] Hide site setting toggle for policy-blocked sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86fabba
+
+### [Extensions refactor] Move WindowControls method to view controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9e4ab0f
+
+### Fix CHECK() failure for fullscreen tabs started from another window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fc9966
+
+### snap-group: Don't start SVOVS if the to-be-snapped window is the only one
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43b9a80
+
+### Tab Organization: Rename sync -> sign in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd7bac09
+
+### [gardener] Disable flaky \`DetachToBrowserTabDragControllerTest\` tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21425dc
+
+### CrOS Settings: Fix SettingsUserActionTrackerTest for revamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56b7bd5
+
+### cros-preview: Add skeleton CrOS preview SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69f58fc
+
+### Slight string change for the permission prompt bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f860ee6
+
+### Tab Organization: Remove sync dependency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dbb7217
+
+### Port Shortcut Customization launcher tast tests to browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48f9d398
+
+### [ SavedTabGroup ] URL fragments no longer reload tabs across devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d6bb2c
+
+### Reland "Improve window positioning strategy of GetEditorMenuBounds()."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddad965
+
+### Add param for ElementIdentifier to LaunchSettingsApp method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d106c7
+
+### Birch: Fix crash on shutdown due to BirchKeyedService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54ed3360
+
+### Add extra controls for default browser promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43e617e
+
+### [live-preview] Fix margins for scroll bar contents in page info camera/mic subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8baf49
+
+### shortcuts: Refactor tests to use InteractiveAshTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61783f2
+
+### App Management: Split app creation by platform
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51fa2eb
+
+### [gardener] Extend disable of \`OpenMenuOnClickAndHold\` to Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d2d0b1
+
+### CrOS Settings: Fix SearchHandlerTest for revamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b99d4719
+
+### lacros: Introduce 100ms delay to deflake tab dragging test DragAll
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21cbcede
+
+### customization: Update UI to match spec for graphics tablet + mouse page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32e8c879
+
+### [Birch] Notify on response to birch data fetch request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7450699
+
+### [VCN] Use WeakPtr for progress dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0027d21
+
+### [Waffle] Run generate_search_engine_icons.py as part of the build
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7d5fff
+
+### CrOS Settings: Disable Secure DNS Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f8b43e
+
+### [autofill][desktop] Integrate the UI Model into the Confirmation View
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5444574
+
+### Multi-Calendar: Fetch by Calendar ID in Client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/695b6b09
+
+### [buganizer] Migrate DIR_METADATA in chrome/browser/ui/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c95ad1b
+
+### Add CSS display-mode experimental support for picture-in-picture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/feec591
+
+### Tab Organization: Fix AddObserver crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c97b29
+
+### Remove usage for overscroll history navigation setting feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0633d3b
+
+### [Security Page HaTS] Add Friendlier Safe Browsing Settings state to HaTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8100f95
+
+### CrOS Settings: Add metrics for snap window suggestions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb92e321
+
+### Update Download Bubble security test to work under GM3.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3b3835
+
+### [UNO] Create SignIn util function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb77743
+
+### Port LaunchFeedbackFromLauncher tast test to browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/247d23d
+
+### [Webauthn] Add GPM pin creation view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14f426c
+
+### Tasks-API: Force refresh data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f0859af
+
+### [UNO] Rename Sync to SignIn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da36859f
+
+### Move CreditCardUploadCompleted() to PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86e05d49
+
+### [gbb-cct] Apply translator in Mediator class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0c504f
+
+### Add a11y labels to account storage related elements in pwm webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bac6d233
+
+### Refactor PolicyConversions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b691e89
+
+### [Deprecate CookiesTreeModel] Remove deprecated ServiceWorkerHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41c49a5
+
+### [mullhet] Generate manual fallback password suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5c92bb1
+
+### [Deprecate CookiesTreeModel] Remove deprecated DatabaseHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4353358
+
+### [UNOp2][Android] Implement accept and decline buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee0c0a1
+
+### [Android]: Update Language settings description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1e1f8dd
+
+### iwa: Properly support IWAs in \`windows.create\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60223116
+
+### [waffle]Add an interactive test for the search engine choice dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9684fbac
+
+### Add triggering for the account storage toggle iph
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b203667
+
+### Remove myself from watchlists and ownership
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/460eca9
+
+### [AvatarButton] Refactor showing external text on the button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd9b823
+
+### extensions: Add a kill switch for Controlled Frame
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e06e0fc3
+
+### Move the flag for rendering pdf inline to //content
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9662d0d
+
+### Launch and remove kAndroidSurfaceControlMagnifier
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5d6bdb8a
+
+### Use force_ota feature flag for installing termina-dlc
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8eb4808
+
+### [AssistData] Add feature flag for unified snapshot path
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d2b9046
+
+`);
+              </script>
+            </body>
+        </html>
