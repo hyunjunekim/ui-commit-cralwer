@@ -1,0 +1,412 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-21
+### Files app: Fix error handling command for text
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b74a5393
+
+### frame/wayland: Set immersive only when changed on Lacros
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c40f152
+
+### [Layout Metrics] Add new proto for layout trace events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/731e798b
+
+### [IME] Make methods pure virtual in InputMethod interface.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a020714
+
+### Revert "Drm: Always specify GAMMA_LUT"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc981b2f
+
+### Files app: Adopt eslint to enforce importing type when applicable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82f561a
+
+### [Files] Include sub folders under .Trash to hidden files filter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/116383a
+
+### [Layout Metrics] Combine DeprecatedLayoutImmediately and LayoutImmediately metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96505c6
+
+### [bookmarks] Disable folder picker row when moving incompatible url
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59c71b6
+
+### WebUI: Migrate cr-toggle to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a9a01eb
+
+### Add an UMA counter to track reentrant calls to Layout() in views.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e9aaf99
+
+### Add "preprocessor_defines" argument to build_webui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa9eb63b
+
+### Add command line switch to force prefers-no-reduced-motion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1dbbcce
+
+### Cleanups for angle-related code
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b367adb
+
+### Add UMA counter Views.InvalidatesDuringLayout.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee5045c
+
+### ui: gfx: Add Transform::Preserves2dAffine
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c941fac
+
+### WebUI: Leverage more data bindings and some cleanups in cr-checkbox.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/076b436
+
+### WebUI: Stop passing unnecessary defines to grit() from build_webui().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a23c2f90
+
+### [lacros] Cancel menus when browser widget has a show state change
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/46affb6
+
+### peripheral-metrics: Add metrics for F-key rewriting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d76e3b
+
+### [views_ax] Introducing ViewAccessibility setters for IsSelected
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/82aef0c
+
+### [views_ax] Replace OverridePosInSet/ClearPosInSetOverride
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a931625
+
+### display: Adjust SDR white level according to display brightness on CrOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5aa7f0b
+
+### [views_ax] Migrated the ui/views path from OverrideRole to SetRole
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65a6ced
+
+### immersive fullscreen: allow overlay views to appear disabled
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cad7060
+
+### [views_ax] Added deprecated warning for OverrideRole in favor of SetRole
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/794dc05
+
+### Obliterate ExperimentalRenderer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f473c24b
+
+### [A11y] Don't do any work when AXTreeCombiner combines only 1 tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/683e305
+
+### Android: Remove unnecessary deps between java and native targets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64bd553
+
+### [Security curtain]: Disable all input devices while curtained
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76d92e33
+
+### content: remove unnecessary includes from browser_test_utils.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/247f72f
+
+### Add TODO for Lacros autocomplete provider bitmask
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfa0d4b
+
+### extensions: remove unnecessary include from browsertest_util.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/901b2ce6
+
+### Prevent calling GIF callbacks if they do not match the current query
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f9a8c8e
+
+### Make clicks on screen capture notification open default handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/254c9ec
+
+### App Management: Move more ChromeOS-only code to the ChromeOS PageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/619cedf
+
+### Reland "Help app: Add Welcome Tour as a launch source for the Help app."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e5b320
+
+### [bookmarks] Truncate long folder titles to keep move snackbars bounded
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d3bfd5
+
+### Make Lacros tests ready for async update of last active browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58afb797
+
+### pine: Improve browser tests for feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abd2c93
+
+### [User Education] Rework idle detection and session logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7b0f45
+
+### [SysUi download integration] Record holding space item actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92d568c
+
+### [SmartLock] Remove Smart Lock HaTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/446950b3
+
+### desk_profiles: Add desk action buttons to tabbing order in overview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3c105b4
+
+### Add header metadata to BrowserFrameViewLinux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c86bda
+
+### App Management: Directly use WebApp uninstall dialog on Web App Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66d7a91
+
+### Settings: Add the Automatic Fullscreen content setting UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ac832f1
+
+### birch: Wait for refresh token before fetching calendar events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3eea7bf
+
+### intent-picker: Modify intent picker tests OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b874dfc
+
+### [autofill][desktop][metric] Add save card loading & confirmation metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eef17b8
+
+### [media_preview] Move kCameraMicPreview feature definition to blink
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8502305
+
+### [ReadAnything] Add End to End test framework.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/183078b
+
+### Fix location icon view crash when icon name is nullptr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc94c37b
+
+### [Extensions cleanup] Update GetExtensionById() in c/b/ui/webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72360a96
+
+### [autofill][test] Enable features at setup for Save Card Controller tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10377a56
+
+### [Extensions c2s] Refactor OnExtensionToggleSelected()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14f01c8
+
+### [Omnibox] Reduce incidence of layout-in-layout, remove assert
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e8ca4f
+
+### Add dino widget sizing diagnostics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba0a3d4
+
+### Reenable Wallpaper Search Interactive UI tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b1f5c31
+
+### [webauthn] Clean up screen reader mode flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b330b7b
+
+### Move TasksClientImpl to c/b/u/a/a/t
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b897664
+
+### FwupdClient::InstallUpdate: Use a callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/caca221
+
+### chromeos: Add BirchCalendarProvider at the chrome/browser/ui layer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f129f4
+
+### [Autofill][Desktop] Add views in the confirmation bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6ac254
+
+### Clean up old experiment default prompt logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5c72d5
+
+### Log metrics when history clusters app menu button is clicked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac559ab
+
+### [LHS indicator] Add colors for Light and Dark themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8a38b9
+
+### Notify PictureInPicture observers once the window has been created
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f478934
+
+### [TabGroups] Fix sizing of tabs on collapse of a group when adding tab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70dd4a0
+
+### [TabHandles Migration] Update tests to use new detach/attach methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d0367c
+
+### QR code: Only return \`SkBitmap\` (no \`gfx::Size\`) from \`GenerateBitmap\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8e0b244
+
+### [accessibility] Use ScopedAccessibilityModeOverride in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eb49134
+
+### [skyvault] DownloadDirectory policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ab476c
+
+### Pass base::range in AutofillProfile::ConstructInferredLabel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76b6fba
+
+### Fix signin bottom sheets getting stuck when signin is aborted.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75acf4d
+
+### Revert "[Android] Add tests for SigninFirstRunFragment"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf3a254
+
+### [Cake] Modify title and description of Google Activity setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/876fff4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5a0c43
+
+### [Uno-D] Update close profile windows label on Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7fab62
+
+### Properly handle time shown when improved timing checks V2 are enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c6e19a
+
+### [UNOp2][Android] Fetch the account image in the history sync UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed2387b7
+
+### [waffle]Remove not needed function that was making tests flaky
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6d66e5
+
+### [Office] Refactor CloudOpenTask's for Android OneDrive support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ad0c06
+
+### [Android] Add tests for SigninFirstRunFragment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d8de3ab
+
+### Add simple date search.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a71f98fc
+
+### cleanup: Make use of WaitForWindowCreation overload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9348d2
+
+### [Office upload] Remove file_name from CloudUploadNotificationManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a44e56c
+
+### Remove feature flag and switch for frame-throttling.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dbc26a4f
+
+### Quick Answers: create flag for Material Next refresh
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9f1baa00
+
+### Default enable the fullscreen API migration on automotive
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d68bd6b
+
+### WebSQL: Remove flag in M124
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f6cbb68
+
+### [omnibox] Add feature param to allow overriding starter pack url.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7fb1327
+
+### Remove expired enable-runtime-counters-telemetry
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2ba59c5
+
+### Adds flag: audio-style-transfer
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7aa0e05
+
+### scanning-app: Remove scanning-app-jelly FF
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/41d0f2a
+
+### flag: Remove print-management-setup-assistance ff
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a33bba8fa
+
+### [CrOS WiFi] Add a feature flag for WiFi direct
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8e2af18
+
+### [Uno-D] Add ExplicitBrowserSigninUIOnDesktop feature to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5d4044e5
+
+### Clean up SupervisedPrefsControlledBySupervisedStore flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a458f03
+
+`);
+              </script>
+            </body>
+        </html>
