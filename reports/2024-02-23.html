@@ -1,0 +1,396 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-23
+### Revert "Reland #2: "[A11y] Stable ids for AXObjects with DOM nodes""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50ae48d
+
+### Reland #2: "[A11y] Stable ids for AXObjects with DOM nodes"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db09b1ea
+
+### [views_ax] Added deprecated comment to IsIgnored
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6450192b
+
+### Exclude NOTREACHED()s hit in 123.0.6300 or later
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed8b102
+
+### WebUI: Update fallback colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52be01f
+
+### [Files]: Corrects collection of search root type metrics.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d0f4993
+
+### Detect lack of X in aura_test_helper.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/741cc0a0
+
+### Fix radio button colors in high contrast mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbb441e9
+
+### [UIA] Allow IGridProvider::GetItem to respect author-supplied aria values
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/608f2ec0
+
+### WebUI: Fix cr-expand-button instances with no tooltip.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/937a941
+
+### [AriaNotify] Add AriaNotification enum attributes to AXNodeData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/910f642
+
+### WebUI Toggles: Updates to hover state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16d4cc86
+
+### Video: Fixed issue of brightness transition for VP Auto HDR feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd7269f
+
+### [Long Descriptions] Update to manifest v3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e701effa
+
+### Setup new cr-history-embeddings component
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06199b2
+
+### Revert "[ViewsAX] Add method: CanFireAccessibilityEvents to RFHImpl"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b24f38
+
+### [ViewsAX] Add method: CanFireAccessibilityEvents to RFHImpl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e05b149
+
+### Disable WarmScreenCapture() for macOS 14-14.3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea3b5def
+
+### [mac] Remove option to swap of Backquote and IntlBackslash keys
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9119387
+
+### Set inputscope as IS_PRIVATE for top level inprivate/incognito window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/afe3d7e
+
+### [views_ax] Introducing setters for SetIsOverrideHasPopup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/508af606
+
+### [focus manager] guard View::AddObserver with View::HasObserver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45cc051
+
+### [High Contrast Extension] Only send messages to initialized tabs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f07012
+
+### [views_ax] Removing OverrideIsSelected
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5d9a4431
+
+### Avoid that TableView::observer_ becomes dangling.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d0317e
+
+### Reland "Update BoxLayout to be a subclass of LayoutManagerBase"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc411218
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4be919
+
+### [lacros] Remove use of deprecated augmented_sub_surface_set_clip_rect()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2bf47f
+
+### Files app: Avoid crash in isFakeEntry if entry is null
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22ab92f
+
+### [Files F2] Reenable the dirCreateMultipleFolders test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e6c1b5d
+
+### Revert "[FedCM] Implement modal verifying sheet"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/135a8f0
+
+### Reland "[dPWA] Make WebAppIconDiagnostic checks be a command"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2153554
+
+### [Office upload] Attempt to open all Android OneDrive files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c49ff7
+
+### Revert "Reapply "[FedCM] Protect from \`this\` getting deleted""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cd94ca7
+
+### Port ShortcutOnKeyboardPluggedIn to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/379bc09
+
+### Revert "Privacy Guide: clean up search suggestions and preload cards"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0fba51a
+
+### QA Rich Card: set up browsertests for all result types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba01f5a7
+
+### Add file search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92524bc
+
+### Continue effort: Make Lacros tests ready for async update of
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb2802e
+
+### [User Education] Promote IdleObserver/Policy to top-level class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f4934e
+
+### [Extensions c2s] Override tooltip in accessible mode for menu toggles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/488e300
+
+### [dPWA] Implement new dialog view for PWA installation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03ba8fd
+
+### Add experiment check before allowing expiry of default browser bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e457d7
+
+### Fix flaky PluginVmInstallerViewBrowserTestWithFeatureEnabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8c16e8
+
+### Address an UAF issue potentially caused by the loader pointer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b163047
+
+### Reapply "[FedCM] Protect from \`this\` getting deleted"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cbdbb9
+
+### Use weak pointer to self throughout TabDragController::Init.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc73148
+
+### Tab Organization: Add entrypoint group # metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e86b91
+
+### Add link to system notification settings to page info for PWAs on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/957a66c
+
+### Prevent tabs of size less than 2 from being sent to the OptGuide
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8845d9
+
+### birch: Set recent tabs list empty in some situations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14cfa66b
+
+### Apply carousel lead-in spacing on the trailing edge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddb379a
+
+### [toolbarpinning] Add Chrome Action IDs for Toolbar Pinning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f793176
+
+### [FedCM] Show the newly logged in account on desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/519b720
+
+### birch: Add more data to calendar event items in birch model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5550308
+
+### Privacy Guide: clean up search suggestions and preload cards
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/01170d7
+
+### [3PC Controls] Deprecate usage of confidence levels for web
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbb028f
+
+### [Structured Metrics] Debug page enabled on Windows, Mac, and Linux.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c11650
+
+### Create experiment for updating how cast is found in the chromenu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c61f5c
+
+### Fix bookmark side panel menu item metrics bug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/680c9a5
+
+### [Webauthn] Implement OnAccept for AuthenticatorGPMPinSheetModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3155e66
+
+### Revert "[TabGroups] Fix sizing of tabs on collapse of a group when adding tab."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bb2d971
+
+### [DefaultPrompt] Add feature and params
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5997941
+
+### [FedCM] Implement modal verifying sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39f5b1d
+
+### [Webauthn] Implement focus interaction in pin textfield
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e5bf4b
+
+### [AvatarButton] Make the states request updates upon active update
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8158ef
+
+### [Omnibox] Enable phase 3 revamp by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd3b6ce
+
+### [media_preview] Fix use-after-free bug in ActiveDevicesMediaCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/626bd50
+
+### [AvatarButton] Intro to refactoring the state management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e89f9ed
+
+### [TE2E] Add a Flag for Totally Edge To Edge
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bfb78b4
+
+### Guard autocomplete model code properly with BUILD_WITH_TFLITE_LIB
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0f76e7e
+
+### [Uno-D] Update sign in promo on profile menu for signed out profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8df6e2f9
+
+### Remove alancutter from chrome/browser/ui/views/apps/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79b760b
+
+### [SHv2] Remove unnecessary data from pref dict
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da64c95
+
+### display-settings: Add myself as code owner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/978615b
+
+### Mass rename PersonalDataProfileTaskWaiter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac41910
+
+### Add new content setting for Direct Sockets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b554eba
+
+### [AvatarButton] Add browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a59a85
+
+### [Uno-D] Remove account image in Profile Menu header for web-only state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3c30da
+
+### [Autofill] Fix use-after-move in AutofillPopupHideHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5438636
+
+### Pass controller instead of view to pip detection lambda.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd0c129
+
+### [Uno-D] Update buttons to add new and manage profiles in Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e61255b
+
+### Remove occurrences of deprecated DualControlLayout.createButtonForLayout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db5b5aae
+
+### [UNO] Support Sign in paused - SigninManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27e1fae0
+
+### [Code Health] Modernize base.Value.Dict creation in kiosk files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1320741
+
+### iwa: Add debug logs of IWA policy manager to chrome://web-app-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bc51f2
+
+### Revert "Stabilize Peripheral Customization tests"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d101911d2
+
+### Revert "[dPWA] Make WebAppIconDiagnostic checks be a command"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2df6e47
+
+### Revert "[FedCM] Protect from \`this\` getting deleted"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e91874a
+
+### Disable flaky test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96a276a
+
+### [Data Sharing] Make data sharing flag command line only
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1cd9e77
+
+### Remove reader mode experiment from chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5744495
+
+### [TSLO] Add feature flag TabStripLayoutOptimization
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/191234f
+
+### [Quick Delete] Update phase 2 flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3e3b5db
+
+### CCA: Add feature flag for CrOS Events
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4766d9b1
+
+`);
+              </script>
+            </body>
+        </html>
