@@ -1,0 +1,292 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-24
+### Add tokens for GM3 Shadows in CSS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6cceff
+
+### [A11y] Cleanup duplicate table-related sanitization and checks.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42d96615
+
+### WebUI: Migrate cr-checkbox to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d9575eca
+
+### viz: win: Add feature to allow overlay promotion of non-scanout resources
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98eb347
+
+### [pdf-a11y]: move PluginAXTreeSource|Serializer to AXObject
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9760566
+
+### Fix gap between omnibox and keyboard on automotive
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84b25de
+
+### Support FILE_CONTENTS for drop
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f246bf35
+
+### Disable the inner border stroke for toggle buttons on ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1e108ee
+
+### [views_ax] Introducing setters for SetCharacterOffsets et al.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3eb501
+
+### [simple_combobox_model] Return nullopt default index when empty
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e17294
+
+### [AriaNotify] Refactor AriaNotification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff50bde91
+
+### [android][trackpad] Enable Trackpad Features by Default on Chrome
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aabd5d3
+
+### [ozone/wayland] Use XDG_ACTIVATION_TOKEN env var to activate window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/157df64
+
+### Add metric for wallpaper search session setting theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/015fa09
+
+### [PWA] Deflake PWA install views browser tests on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d904e68
+
+### Sync Confirmation: Add exception to load images from anywhere
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c65ba96c
+
+### [omnibox] Update icons to spark for starter pack expansion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71448f2d
+
+### Allow SurveyClientBridge access LifecycleDispatcher from Activity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/669d3d21
+
+### cros: Remove some TODOs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d64325
+
+### Reland "Privacy Guide: clean up search suggestions and preload cards"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/45c57594
+
+### [Extensions c2s] Add accessible name to extension's tolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42ff833
+
+### [ASH] Open full Chrome history button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd9cc292
+
+### Delegate HID permission to Chrome App in webview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8633025
+
+### Cleanup unused includes and fwd declares in content/b/webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2af756c
+
+### Reland "[FedCM] Implement modal verifying sheet"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2eaa784
+
+### Disable the flaky tests on branded Lacros builder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd4151c
+
+### iwa: Move manifest.webmanifest location to /.well-known
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00ccd98
+
+### Implement account management confirmation for bottom sheet signin flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fb76f9
+
+### Convert font menu and granularity container tests to Mocha+TS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dba266
+
+### Make Lacros tests ready for async update of last active browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98f344dd8
+
+### Implement Customize Chrome Appearance Page Wallpaper Search button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/067e96c
+
+### Add missing import to TabOrganizationService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fa6951
+
+### [CBE Watermarking] Hoist \`watermark_view\` to a member variable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dd23448
+
+### Reapply "Reapply "[FedCM] Protect from \`this\` getting deleted""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/953d064
+
+### CrOS Settings: Remove OsSettingsAppBadgingToggle feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8f5e13e
+
+### [picture-in-picture] Disable permission prompt buttons when occluded
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77cfa22
+
+### WebUI: Update some img-src restrictions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a265907
+
+### CrOS Settings: Update date time settings route from system tray
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19a358d
+
+### [dPWA] Make the WebAppInstallDialogCoordinator be a WidgetObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5529d7
+
+### shortcuts: Generalize shortcut helper methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b379608
+
+### [3PC Controls] Remove confidence levels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1db102e
+
+### Revert "Lacros-Test: Enable DnD test DetachToOwnWindowFromMaximizedWindow."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d93036db
+
+### Consolidate the SessionModel Enumeration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc5bc010
+
+### [3PC Controls] Rename \`OnUserBypassIconStatusChanged\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3289f21
+
+### [gbb-cct] Ensure no references to XSurface views remain after dismissal.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81f1277
+
+### Stop recording Signin.Signin.Started for reauth events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85b78ce
+
+### Android CCV/CRS cleanup: remove feature flag allowing toggle of CCV/CRS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/659fd1a6
+
+### [LHS indicator] Blocked indicator does not override in-use indicator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/438fdcb
+
+### Clean up FilterWebsitesForSupervisedUsersOnDesktopAndIOS flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/41e67f3
+
+### Revert "Make AudioInputDevice pass glitch info to CaptureCallback::Capture()"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f64bd603
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cb544e
+
+### [LHS indicator] Add blocked on system-level activity indicator's theme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e88b0b
+
+### [UNOp2][Android] Show sign-in steps according to the mode enums
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae345dd
+
+### Make AudioInputDevice pass glitch info to CaptureCallback::Capture()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d5108ef
+
+### [Autofill] Fix PIP detection in AutofillFieldPromoControllerImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f76ae25f
+
+### [3PC Controls] Remove unneeded observable from \`OnPageReloadDetected\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/213c868
+
+### Reland "[Android] Add tests for SigninFirstRunFragment"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89d96f0
+
+### Lacros-Test: Enable DnD test DetachToOwnWindowFromMaximizedWindow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48a171e
+
+### Adding additional flags for testing User Education 2.0
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f97b289
+
+### diagnostics: Remove diagnostics-app-jelly FF
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/149ddfbca
+
+### [Price tracking] Add flag for 'track by default' on mobile
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2e47b969
+
+### [Benefits] Add separate flags for Amex and Capital One
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eebe42b
+
+### [omnibox] Pass search terms in a header for @google keyword navigations
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aaa4040
+
+### Add EnterprisePolicyOnSignin to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/670bbc67
+
+### [VCN] Remove launched feature switch and flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bf2046b
+
+### Remove Chrome flag for Autocomplete delete.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/20a2c57
+
+### Create flag for Appearance Wallpaper Search button
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e04e09c
+
+### Bluetooth related flags updates
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/941b058
+
+### Retire managed by parent UI flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b7e314ea
+
+`);
+              </script>
+            </body>
+        </html>
