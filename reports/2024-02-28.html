@@ -1,0 +1,332 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-28
+### Use dynamic cursor size on Intel GPUs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d979546
+
+### [views_ax] Removing OverrideCharacterOffsets et al.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d393fe88
+
+### ozone/wayland: Fix menu popup grab input rerouting with insets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/314c2da
+
+### [IME] Remove SetPrivateInputScope from InputMethod interface.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4bd329
+
+### [views_ax] Migrated the ui/views path from OverrideName to SetName
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8368eae
+
+### [pdf-a11y]: enable tree consistency checks for plugin tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6f948e
+
+### [AriaNotify] Rename AriaNotificationMessage for consistency
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c460c86b
+
+### Color updates for ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4fdcc31
+
+### Enable VRR independently per display
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9b9539
+
+### Mark DefaultANGLEMetal as launched.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49a7f5b
+
+### [CodeHealth] std::unique_ptr<T[]> -> HeapArray in input_method_win_base.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c391584
+
+### Revert "Adding/removing ignored children should not invalidate layout managers."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b89de236
+
+### [Part 2] Rename virtual display utils to follow naming convention.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70b357df
+
+### Add handler, mojo, and browser proxy for cr-history-embeddings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d815ead
+
+### [CodeHealth] std::unique_ptr<T[]> -> HeapArray in gl/gl_surface_egl.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee0c8de
+
+### Ozone: Track and log plane and output primaries
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7f0f82
+
+### Cache more layout sizes in StyledLabel.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb12cba4
+
+### [base] Update Erase()/EraseIf() calls for std::vector<> in ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b0a148
+
+### ash: Always report smoothness for test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/876cd38a
+
+### Add myself as a ui/accessibility owner for test files (e.g. baselines)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5381c2
+
+### [CodeHealth] std::unique_ptr<T[]> -> HeapArray in gl_test_helper.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d6a0e2
+
+### [//ui] Remove ContextFactory::SharedMainThreadContextProvider()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db350740
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97e0a302
+
+### Revert "ui::HardwareDisplayPlaneManager: Remove old color management path"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e56069a
+
+### Add more logging to diagnose root layer mismatch case.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4e301a0
+
+### Add feature flag to control AuthPanel use in ChromeOS settings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba68140b
+
+### Fix split screen issue for modal dialogs with button groups
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df40ffd
+
+### [CloudOpenMetrics] Use DidEndBeforeCallingOpenOrMoveFiles check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df727c6
+
+### [Office upload] Trim ODFS file names during name-finding step
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99f1657
+
+### Make lacros tests ready for async last active browser update.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7749527
+
+### Add helper method TabStripModel::GetActiveTab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7137154
+
+### [E2E] Adjust Bottom Controls Toolbar height
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/868ff7f6
+
+### Add more scaffolding for lens overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cebfd47
+
+### Remove leftover discard ring flag clean up code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c708957
+
+### QR code: Paint quiet zone underneath \`//components/qr_code_generator\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9106cb5
+
+### [Extensions c2s] Update action hover card to GM3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6de3309
+
+### Add basic scaffolding for lens overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c07829
+
+### [Omnibox] Add flag and params for answers with actions
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d5e629
+
+### immersive fullscreen: fix tab drag window size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa0a0bd
+
+### [Autofill][Downloads] Close Autofill popup before showing Download bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4253dbb
+
+### Disable All/TabHoverCardFadeFooterInteractiveUiTest.BackgroundTabHoverCardContentsHaveCorrectDimensions on Windows due to high flake
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78153cc6
+
+### [LHS indicator] Set in-use color for permissions icon in PageInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab9a369c
+
+### display: Add display Shiny Performance toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b113fc4
+
+### birch: Fix event attachment queries to Google Calendar API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c59596
+
+### Block user-triggered extension popups on possibly overlapping security UIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ae9242
+
+### immersive fullscreen: fix infobar missing clicks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cdaec6b
+
+### Move WebDataServiceFactory into subdirectory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a598753
+
+### Show error dialog during the VCN 3DS flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14a5b32e
+
+### [VCN] Add browser commands to manage autofill error dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38a71ae
+
+### [FedCM] Cleanup signin failure dialog method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea4bb3f
+
+### [SysUi download integration] Add "copy to clipboard" button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7c3689
+
+### [views_ax]Migrated the chrome/browser/ path from OverrideName to SetName
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7d4f85
+
+### StorageAccess: Remove prompts flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/735ff7d
+
+### [Sync] Enable ImageServiceObserveSyncDownloadStatus by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9796ee7
+
+### [dPWA] Remove erroneous callers of testing install method with rename.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5211fdc
+
+### Overview: Add callback that opens page to button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca35c50
+
+### [Passwords] Add pixel tests for all generation experiment arms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78b66c9
+
+### [UNOp2][Android] Add landscape layout for history sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d7ee981
+
+### [Quick Delete] Show a snackbar post CBD deletion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4d4996
+
+### Add missing enum value in PasswordManagerPromoCard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4023505
+
+### Remove rendundant methods determining supervision status.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec50fae
+
+### [Journeys] Clean up clank journeys part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c26d1a7
+
+### Mahi: Connect MahiMenuView with MahiWebContentsManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3f09f9
+
+### Tab Organization: Move TabOrganizationService::AddObserver calls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c8a0ca
+
+### Add progress dialog cancelled callback for VCN 3DS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbb90a2
+
+### [Autofill] Delete 'Remove copy' button from Clank settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/698d627
+
+### [FedCM] Fix memory leak in FedCmAccountSelectionView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4abec04
+
+### [Quick Delete] Add tabs checkbox to CBD advanced
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51c82e52
+
+### [gardener] Disable flaky ToolbarControllerUiTest on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/202e7c8
+
+### [waffle]Add the search engine choice step to lacros FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1c77e1
+
+### Privacy Guide: add Chrome feature flag to force privacy guide available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eae7b5c
+
+### [UNOp2][Android] Hide FRE title until native is initialized
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b05da10
+
+### Only search for specific categories in StartCrosSearch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e50c865
+
+### [extended-updates] Add WebUI controller and config for Extended Updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b223ab2
+
+### Add full size to GIF search result and copy GIF with full size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/098f6be
+
+### Add bookmarks test data to PickerClientImpl tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c33fe6
+
+### Cleanup: Remove unused game fetcher and migration flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d3781d3
+
+### [omnibox] Update new starter pack URL to prompt vs app.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8fda07f
+
+### Remove expired private-aggregation-developer-mode flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dadefda
+
+`);
+              </script>
+            </body>
+        </html>
