@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-02-29
+### Simplify WidgetActivationWaiter usage
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2b01c7
+
+### Files app: Add new UMA FileBrowser.ViewingVolumeType
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0fe791
+
+### Fix Dangling raw ptr in callback_layer_animation_observer_unittest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa4e32b
+
+### WebUI: Migrate cr-toast-manager to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/779af59
+
+### WebUI: Fix regular expression to extract CSS in lit_migration.py.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc3997b3
+
+### WebUI TypeScript Mojo bindings: Update type definitions to match runtime
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a29a479
+
+### Minor clean up remove buffer_updated_in_pending_transaction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e1e3c2
+
+### [CrOS Cellular] Move create new APN button into overflow menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8797be2
+
+### Expose refresh rates to RefreshRateController
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f68b63a1
+
+### [Mac Keyboard Shortcuts] Make Shift-Cmd-V trigger Paste and Match Style in Arabic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05a9ab2
+
+### Enable NotificationGestureUpdate by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b097c939
+
+### [CodeHealth] std::unique_ptr<T[]> -> HeapArray in ax_inspect_utils_win.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea93794
+
+### OverlayProcessorSurfaceControl handle VFlip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f635aef
+
+### WebUI: Migrate cr-input to Lit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43197a9
+
+### Switch to SysUTF8ToCFStringRef/SysUTF8ToNSString
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81f994b
+
+### [views] Fix dangling pointers in views_unittests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec23497
+
+### carrier_lock: Updates to match mocks
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aea1b50
+
+### Reland "[Reland] Use LAYER_NOT_DRAWN if frame will not be used"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/108b4e5
+
+### Revert "Video: Fixed issue of brightness transition for VP Auto HDR feature"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9418379
+
+### [CodeHealth] std::unique_ptr<T[]> -> c-style array in ui/gfx/icon_util.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b0459d
+
+### [CodeHealth] std::unique_ptr<T[]> -> HeapArray in gesture_recognizer_unittest.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c70882
+
+### Add current Mac team to ui/base/cocoa/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e091fa7
+
+### SetBoundsSync waits for latched state to contain updated bounds
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee31b7b
+
+### Revert "[Reland] Use LAYER_NOT_DRAWN if frame will not be used"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8158634
+
+### iwa: Fix region labels in IWA installer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fd46587
+
+### cros settings: remove duped string res
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4d277e
+
+### [cfm-a11y]: ash side toggle for ChromeVox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e52c03
+
+### Update dialog icon and title based on dialog state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/034442f
+
+### [Autofill] Wrap AutofillPopupHideHelper in std::optional, not unique_ptr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/635b0d2a
+
+### Revert "[TE2E] Add smooth transition ToEdge"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28051753d
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr. (4)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53bbf87
+
+### Tab Organization: Create actions component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/796f172
+
+### [Extensions c2s] Add action title to toolbar action's hover card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c828a5
+
+### [Read Aloud] Convert update_content_selection.js to TS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/772335d
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr. (3)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8dc2ba
+
+### Fix updating of Print Action status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2510a7
+
+### [Windows][dPWA] Fix PWA ToolbarButton icon color not matching rest of controls sometimes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/986ccc0
+
+### Mahi: Refactor ReadWriteCardsManagerImpl and QuickAnswersMenuObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bfee025
+
+### [Data Sharing] Add count tile for shared image tiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13d252b4
+
+### [Autofill] Eliminate AutofillPopupDelegate deletion callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95325b0
+
+### Mahi: Add use-fake-mahi-manager to facilitate UI development
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38da62b
+
+### Remove reader mode icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f3ebdf3
+
+### Add state machine and screenshot capability to lens overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f82737a5
+
+### [User Education] Simplify idle detection and session logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e71fec
+
+### [ui][memory_saver] Fix MemorySaverChipView not to overflow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c601b94
+
+### Move screen_ai directory from components to services.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a63c57
+
+### [SurfacePolish] Fix bug about toolbar flips to white when navigating
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c24369
+
+### Fix std::unique_ptr to std::make_unique in default browser delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64039a6a
+
+### [TE2E] Add smooth transition ToEdge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc27a15
+
+### Revert "[Sync] Enable ImageServiceObserveSyncDownloadStatus by default"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5449389
+
+### [ChromeLabs] Move Chrome Labs files to separate folder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e40ba95
+
+### [AvatarButton] Migrate SyncError/Paused state to the State Manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a18c22
+
+### Tab Organization: Send existing group data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ac9d82
+
+### Remove active_directory_managed from login_types.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac63961
+
+### Use cached url bar data for tablet snapshot.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/086e3fe0
+
+### webui: use preloaded contents to show top chrome WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2af4aa08
+
+### Remove redundant first run check around the default browser prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5890cb
+
+### [AvatarButton] Migrate showing name state to the StateManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f32f3a
+
+### [Signin][Android] Fix a11y issues with account picker.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ce4789
+
+### p13n: uint32_t to id SeaPen images
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2405ccb
+
+### [SHoA] Replace safety chceck entry point with safety hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1352cc7
+
+### Fix PiP crash on Linux with a non-GTK LinuxUiTheme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/905be4a
+
+### Remove DropdownBarHost
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a57017
+
+### Remove a few more vector<const T> in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e2f85a0
+
+### [Autofill] Check if focused frame is a descendant of delegate_'s frame
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a66fefb4
+
+### [Price tracking] Fix label width calculation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb4c589
+
+### [Android] Add uno signin flow from bookmark sync promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52bbfa5
+
+### Modernize some browsing_data enums
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26663c6f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99f362b
+
+### [UNO] Remove primary account on signout from profile menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d438b5e
+
+### [Passwords] Add generation popup experiment pixel tests to buildbot
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38bc2fea
+
+### Add test accepting suggestion on Android (preventing crash regression)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5a7f47
+
+### Birch: Fix file provider crash correctly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfa67442
+
+### Reland "[UNOp2][Android] Add landscape layout for history sync"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff4ad8c
+
+### Autofill-based saved state notification implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48fe3baa
+
+### Revert "[UNOp2][Android] Add landscape layout for history sync"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5516b74
+
+### [CrOS Bluetooth] Bind HidPreservingController to JS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b07c1a028
+
+### Remove old serviec worker flags from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/85a9c84
+
+### Remove Storage Buckets flag from about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9a4dabe5
+
+### Move the kBackgroundListening flag to media/base layer
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/24b7e360
+
+### Remove the expired flag ash-overview-button
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d91537c
+
+### [PWA] Remove OS integration synchronize flag metadata
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8bbc009b
+
+### [Start Surface] Remove START_SURFACE_REFACTOR flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/546c974
+
+### Cleanup heavy ad flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/071aa59
+
+### Add flag for card benefit syncing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b88a38c
+
+`);
+              </script>
+            </body>
+        </html>
