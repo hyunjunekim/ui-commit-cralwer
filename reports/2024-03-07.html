@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-07
+### Files app: Add helper function and remove confusing test
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa54e50
+
+### Flag on native occlusion for lacros by default.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7aae8c5a
+
+### WebUI: Migrate cr-slider to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a1bebd
+
+### Files app: Change from Entry to FileData in the new DirectoryTree #3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/44e024e84
+
+### [Views] Update tooltip and acc name when changing title or subtitle
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f184a2
+
+### Refactor kColorForcedColor* colors to kColorCSSSystem*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0f7a8fd0
+
+### [Rounded Windows] Windows should have rounded corners in overview mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b37c45f
+
+### [CR2023] Update icons in "Edit bookmarks" dialog.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/885674d
+
+### Minor cleanup removing ifdef for side and extra buttons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9910b337
+
+### Use base::HeapArray in GetFontTable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37a5cc4
+
+### Update search field icon when history embeddings is enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93b3efa
+
+### Revert "Mark DefaultANGLEMetal as launched."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10667ceb5
+
+### Update tests to pass with Settings Split flag disabled
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb407e0
+
+### [Guest View] Add metrics for created guest view type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/152877b
+
+### [accessibility] Remove some memcpys when serializing a tree update
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06beadb
+
+### Convert enum to enum class for BubbleArrowPart
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1ae36c
+
+### Use an actual FillLayout for View::SetUseDefaultFillLayout(true).
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13f6e5a
+
+### [base] Remove unused cxx20_erase & cxx20_erase_vector headers
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7742172
+
+### Ozone: Fix flickering for Rec709 video overlays (reland)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/768015ae
+
+### Fix AppModalPresenterTest flakiness with espresso 3.2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4a92b0a
+
+### Files app: Change from Entry to FileData in the new DirectoryTree #2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8316f443
+
+### Disable browser download start animation on CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f056c0e
+
+### [CloudOpenMetrics] Check UploadResult is logged before accessing it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b7ac43
+
+### [omnibox] Adds UKM event for the types of omnibox mediated navigations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d14a059
+
+### [Tab Organization] Fix chip appearing on all windows in a profile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a17b13
+
+### Convert highlight tests to Mocha+TS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0dadd8
+
+### [Extensions c2s] Fix ReorderViews in the extensions container
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf809af
+
+### [Office] Fallback dialog for file waiting to be synced to Drive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0d861e
+
+### [E2E] Set the right navigation bar color when going from E2E to non E2E
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7552654
+
+### [Gardener] disable another failing test on PageInsightsCoordinatorTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/892d0e2
+
+### [autofill][desktop][view] Move loading spinner to match mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f47dbbb
+
+### Fix tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e6f2db
+
+### [Mall] Force pin the Mall app to the shelf
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0cf3fd5
+
+### tutorial: Add callback for restart
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7ea796
+
+### Tab Organization: Add group number in header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d144c6db
+
+### Fix scheduling of sub-popup hiding.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b7d4636
+
+### Reland "Add use counter for web app AppTitle feature."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/060929d
+
+### Reland display: RefreshRateController use DisplayPerformanceModeController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72f88534
+
+### Add widget to display Lens overlay view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06fdca6
+
+### Remove reader mode pref.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a099f2
+
+### Use Suggestion Group Section as a Grouping delimiter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a0e72e
+
+### snap-group: Add faster split screen option to old Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a87095
+
+### [tab group v2] Replace overflow button with everything button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9142605
+
+### [Gardener] Disabled flaky tests on PageInsightsCoordinatorTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11c5efd
+
+### Allow for ephemeral non-active button in the PinnedToolbarActionContainer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05cc078
+
+### display: Create the mojom link between Display UI and Display Controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b538de
+
+### Move the rest save part of SaveUpdateAddressProfileBubbleControllerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73fc614
+
+### iwa: Refactor installer shelf logic to ensure title is never empty
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3280b6
+
+### Polymer scaffolding for Lens overlay WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83305549
+
+### iwa: Overhaul web app database storage schema for IWAs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72f1a50
+
+### [gardener] Disable ShowNameOnSignin / ShowNameOnSignin_ThenSync on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0a69e3c
+
+### [NTP XDTR] Update preredesign UI to match drive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/724ca2d8
+
+### Show caption bubble when automatically downloading language packs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc9f281
+
+### Add optional session parameter for passing topk/temperature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c21ddf8
+
+### [Uno-D][passwords] Disable confirmation dialog for account storage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c0669a
+
+### [AvatarButton] Move update Icons from specific state to the StateManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6646747
+
+### [waffle]Remove fake omnibox and its animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6b662a
+
+### [gbb-cct] Ensure cookie dialog animation works going to hidden
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa007da
+
+### Remove WebUIFeed
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d5d86a7
+
+### ToolbarColorObserverManager now observers overview color.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ee98c9e6
+
+### Revert "Reland "Convert max speech length and highlight toggle tests to Mocha+TS""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f5d130
+
+### [Signin][Android] Add proper label for unselected accounts without name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2acc7e3
+
+### [dPWA] Implement universal install behavior change, no dialog changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0afea43
+
+### Toggle NTP Wallpaper Search button w/ Wallpaper Search setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9387cff
+
+### PopupBlockerBrowserTest.WindowFeatures flaky on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6cd357f
+
+### HostedOrWebAppTest.CtrlClickLink flaky on LACROS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a08db9f
+
+### Separate out save part of SaveUpdateAddressProfileBubbleControllerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12141ff
+
+### Disable flaky ShowTooltipFromWebContentWithCursor on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f648d6
+
+### Refactor CrosapiNewWindowDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cae546
+
+### [Garden] Disable flaky ToolbarControllerUiTest on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f63dae
+
+### Port AddMultiShortcutsAndReset tast test to interactive_ui_test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91d215c
+
+### cleanup: Remove printer-settings-printer-status in backend
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/71a543f
+
+`);
+              </script>
+            </body>
+        </html>
