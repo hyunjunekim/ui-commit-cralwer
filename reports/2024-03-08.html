@@ -1,0 +1,412 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-08
+### [a11y]: provide [un]register event methods for AXEventGenerator
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3141a23
+
+### wayland: disable eye dropper blink feature till it's properly supported
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8fc2fe1
+
+### Files app: Change from Entry to FileData in the new DirectoryTree #4
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1848b761
+
+### snap-group: Add \`cros.sys.inverse-whiteblack\` color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b78fb06
+
+### WebUI: Migrate cr-search-field to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/898dd7f8
+
+### [A11y] Reduce redundant ignored change processing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50cb444e
+
+### WebUI: Don't use Lit's changedProperties for non-costly calculations.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bff4ff2
+
+### Add support to disable background in views::Textfield
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8612f7
+
+### Fix rounding error in non-AA curve edge smoothing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f23c78d
+
+### WebUI: Fix bug in cr-tabs which set 'undefined' as the selected tab.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25bdcf1
+
+### [TabTearing] Add feature flag and API integration
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2f336b6
+
+### Fix ThroughputTracker stopped DCHECK
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95a84c3
+
+### Explicitly Disable ANGLEDebugLayer if kANGLEDebugLayer feature is not enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de8bcec
+
+### Clean up OSExchangeDataProviderMac's CONVERT_FILENAMES
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d6e1fe3
+
+### wayland: harden dnd data fetching handler
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e8b1abd
+
+### [A11y] For performance, skip text deletion and insertion events on ignored nodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4482ddd6
+
+### [views_ax] Removing OverrideLabelledBy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d00f43
+
+### [BRP] Triage dangling pointers in \`base::ObserverList<T>::Unchecked\`
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bacc1fc
+
+### Use term as the ARIA and internal role for the dt element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f7098e
+
+### android: SurfaceControl same AHB with new fence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b7c9a57
+
+### Revert "WebUI: Migrate cr-slider to LitElement."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/849a64e5
+
+### Don't assume STL iterators are pointers
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2af5aee
+
+### Revert "lens: Add a close button to the overlay."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc65dd0
+
+### [Office upload] Add tests for DriveUploadHandler::OnGetDriveMetadata()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f61f61b
+
+### Move TestStructuredMetricsRecorder to components/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8eaa9b
+
+### [Office upload] Remove unused GetGenericOneDriveAccessErrorMessage()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/061f59c
+
+### welcome_tour: Add A11y support
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7519458e
+
+### snap-group: Add deep link for the snap window suggestions to old Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7042141
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr. (c/b/ui)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c9d165
+
+### Add outline button to Mahi menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fdb1df
+
+### Fix incorrect Exception when signing in through sync and blocked signout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/419812e
+
+### Disable Java Adaptive Suggestions when Native is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b25e64b
+
+### Update mahi menu input container styling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/119bc2c3
+
+### QA Rich Card: update colors ids for Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f66955c
+
+### lens: Add a close button to the overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b0472c
+
+### [media_device_settings] Use new MediaDeviceInfo to get device list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f459d08
+
+### Revert "[UNOp2][Android] Hook up the history sync UI to the parent coordinator"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fd2306
+
+### Revert "[UNOp2][Android] Allow showing accounts list when sign-in flow starts"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f137897
+
+### Revert "Gardener: Disable WorkProfileTextBadging test on Mac build"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe8c1135
+
+### Don't assume STL iterators are pointers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b378d23
+
+### Change NTP Wallpaper Search button's visibility logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30139ce
+
+### Revert "Reland "Enterprise toolbar badge only shown on unmanaged devices""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6bf8b98
+
+### Update AddPopOutButton function name to match other names in PinnedActionToolbar*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81a739bf
+
+### birch: Limit BirchModel data to the primary user under multi-profile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e1a8631
+
+### Adding MediaPreviews.UI.PageInfo.Camera.NumDevices and MediaPreviews.UI.PageInfo.Mic.NumDevices metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1c16d5
+
+### Make unit test ready for async last active browser update for Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5469108
+
+### Rename PageActionIconType::kSaveAutofillAddress to ::kAutofillAddress.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6faf8f6
+
+### [SysUi download integration] Use icon from download status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6d984c
+
+### [History] Add check for valid int in SetLastSelectedTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c265de2
+
+### Adjust spacing between permissions labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9a39bc
+
+### Rename SaveUpdateAddressProfileIcon* to AddressBubblesIcon*.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4dd22a
+
+### Revert "[E2E] Set the right navigation bar color when going from E2E to non E2E"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb473ac
+
+### ash: Fix top level dialogs not marked as SYSTEM_APP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a502e6
+
+### Reland "Convert highlight tests to Mocha+TS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3b01ff
+
+### cleanup: Remove printer-settings-printer-status in frontend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e65bbb
+
+### Update default browser info bar to show across tabs and browsers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a25cda
+
+### Gardener: Disable WorkProfileTextBadging test on Mac build
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51a3023
+
+### Implementation of GroupedTabCollection class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d06de97
+
+### [gtm] Implement showing cached tasks before fetching
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f83cf7a
+
+### Add local state pref to track the effective DoH URI template
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/354240ab
+
+### Implement overlay widget on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/871b0f3
+
+### Tab Organization: Remove refresh experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/039c031
+
+### Pass Number of Visible items to Android Typed Section.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6db893962
+
+### Tab Organization: Update results footer styling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/800257ee
+
+### Rename SaveUpdateAddressProfileBubbleControllerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6df4de
+
+### [dPWA] Update test install to use os integration when it is suppressed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40e925d
+
+### [PWA] Rename function for simple install dialog showing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87dfd8c
+
+### [E2E] Use InsetObserver to manage inset and safe area observation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0934ad6
+
+### Update accessibility for More button for PIN in Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0e9d86
+
+### Add device counter into page info string for camera and mic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6f2708
+
+### [Views] Remove unnecessary test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24fd27ec
+
+### [UNOp2][Android] Allow showing accounts list when sign-in flow starts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1993079
+
+### [LHS indicator] Fix camera & mic in-use a11y announcement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7697308
+
+### Reland "Enterprise toolbar badge only shown on unmanaged devices"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20a6b54
+
+### [Privacy Hub] Remove outdated V0 flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bde1d45
+
+### Make the profile management label a link to chrome://management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5a194a
+
+### [UNOp2][Android] Hook up the history sync UI to the parent coordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f296e24
+
+### Fix CHECK crash in ManagePasswordsUIController::ShowMovePasswordBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa09886
+
+### Revert "Convert highlight tests to Mocha+TS"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c20311e
+
+### Reland "[PEPC] Add command line switch that disables pepc disable logic"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bf71b9
+
+### [mullhet] Add "Manage password" button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65e7f18e
+
+### [UNOp2][Android] Add option to open the expanded sign-in bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4ead32b
+
+### [Owners] Update chrome/browser/ui/views/profiles/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df961f2
+
+### [UNOp2][Android] Fix failing HistorySyncTests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38773816
+
+### [Uno-D] Add account card for web only signed in account in Profile Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a1a706
+
+### [gardening] Temporary disable WebAppTitleBrowserTest.AppTitleNavigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6288295
+
+### [Clank Code Health] Feature flag cleanup ManualFallbackForVirtualCard
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8b8f45e
+
+### Separate out update part of SaveUpdateAddressProfileBubbleControllerImpl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/270e55b
+
+### Remove the flag for suppress text messages feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b259275
+
+### Make lens untrusted UI a "bubble" controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51920ce
+
+### Remove IsRunning() check before Autofill popup timers stops.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71b773c2
+
+### iwa: Owned bundles can now be dev-mode or prod-mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cfba0a
+
+### [Birch] Implement Release Notes Provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27ad2c4c
+
+### Localise strings in the app install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b2df13
+
+### Revert PiP Tilt feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c3ce42e
+
+### modifier-split: Create modifier split feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b08f1da
+
+### [DSE] Add "skip EEA country check" option for testing.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/84b80ac
+
+### [Cast Streaming] Add flag to disable VP8 encoding
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4fd99c3
+
+### Add an entry to about://flags for the Direct Sockets API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3cb8572
+
+`);
+              </script>
+            </body>
+        </html>
