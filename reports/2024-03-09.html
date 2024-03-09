@@ -1,0 +1,328 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-09
+### WebUI cr-chip: Default to CR2023 styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3346986
+
+### [Reland] WebUI: Migrate cr-slider to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55e77b00
+
+### Get rid of DeprecatedLayoutImmediately in composite_layout_tests.cc.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3f59c9
+
+### WebUI: Move cr-searchable-drop-down to only user
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7246277
+
+### cr-radio-button: Simplify computed attributes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23f00ea
+
+### WebUI md-select: Default to CR2023 styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a21edc7
+
+### views: invalidate FocusRing when its host is invalidated
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f425c43
+
+### [ViewsAX] Remove WebAXPlatformTreeManagerDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab0be72
+
+### WebUI cr-toast: Default to CR2023 styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5524c1
+
+### Make Fluent scrollbar's thumb square in web tests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/331de8e
+
+### [Views] Support dynamic enabling of buttons from ui::DialogModel
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26e951d
+
+### ozone/drm: Remove double-negative
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/201608d0
+
+### WebUI: Remove unused circleRipple parameter from cr-button.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3cf8accd
+
+### Emit movement status based on ACTION::MOVE instead of ACTION::DOWN
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ba203276
+
+### Use EnumSet for ModesetFlags
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5686c95
+
+### cr-radio-group: Migrate to Lit
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20a39d4
+
+### ozone/wayland: add some benchmark tracing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c240b45
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4c51ea
+
+### wayland: Disable oow clipping if the server is too old
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0c10021
+
+### [IpProtection] Clank IP protection settings introduced.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77fb4c6
+
+### snap-group: Add search tags in the old Settings app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5903b3
+
+### Revert "[History] Add check for valid int in SetLastSelectedTab"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1899f32
+
+### Fix crash in LoginHandlerViews.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ce85a09
+
+### [TabHandles Migration] Update more files to new detach/attach methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f1029b
+
+### [Benefits] Split Benefits feature logic to new Amex and Capital One flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d2f856
+
+### Tab Organization: Fix TabOrganizationSession UAF
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fde1df2
+
+### Add delays to FakeMahiManager callbacks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f47f4653
+
+### [media_preview] Add media_preview OWNERS to related settings page code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e77d235
+
+### Add CastDeviceSelectorView as a new MediaItemUIDeviceSelector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6105e2
+
+### [FSA] Add Page Info UI for Persistent Permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6bb020c
+
+### Lens Overlay: Pass screenshot to WebUI and render it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b249726
+
+### [FS Shortcut] Add ExclusiveAccessManagerTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9680dae
+
+### Remove DisableContentSecurityPolicy and DisableReplaceExistingSource
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dfcb20
+
+### Remove feature_guide feature.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3140d35
+
+### lens overlay: minor cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df69fc0
+
+### [Product specifications] Setup communication with browser via existing mojo interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aad1a1e
+
+### Temporary fix for send tab to self icon size bug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdbe6293
+
+### DanglingPtr: mark unretained dangling ptr in BookmarkBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed9dc00b
+
+### lens overlay: Remove unnecessary policy overrides.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33a2cfb
+
+### Move ash include into ash buildflag includes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94d6a3e
+
+### [ Gardener ] Disable WebAppLinkCapturingBrowserTest.JavascriptAboutBlankNavigationCleanUp on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48636447
+
+### settings: Consolidate device settings interactive tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32f0563
+
+### [extended-updates] Add initial directory for controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a538a7e
+
+### Block or allow all MIDI using the existing SysEx permission
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44aadf5
+
+### [LHS indicator] Add blocked on system-level status in PageInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5524773
+
+### IPH for removal of download deep scanning prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f45859
+
+### Add \`BLOCKED_SCAN_FAILED\` to \`DownloadCheckResult\` and \`DownloadDangerType\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bea8091
+
+### [VCN] Update progress dialog constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2197f92
+
+### DanglingPtr: triage unretained dangling ptr in SafetyCheckHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e05ed8c
+
+### [Android] Do not consider "long" clicks as drags in AppMenu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bacaa4ec
+
+### Call SetLastActive with BrowserView::Activate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05a450d
+
+### [Android TRM] Update tile recency and domain texts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed2b677f1
+
+### Modify PersonalDataManager to be profile keyed on the java side.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5623c4f
+
+### PageInfo: Add elklm@ to owners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/958b5ef
+
+### Reland "[UNOp2][Android] Hook up the history sync UI to the parent coordinator"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a601c33
+
+### Make the icon tooltip a setup param and remove IsSaveBubble().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e444e6d
+
+### [mullet] No manual fallback in incognito mode when no address exists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e663501
+
+### [Office] Fallback dialog for Android OneDrive unsupported location
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dba4b6f
+
+### Move specifying the bubble view type outside class instance.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d0c992f
+
+### [UNOp2][Android] Setup scrollviews for history sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5856506
+
+### [Android][3PPWM] Factory to create correct client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bef628f2
+
+### Change AddressBubblesController show API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b7f114f2
+
+### [PEPC] Add new flag PermissionElementDialogPositioning
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d4b650
+
+### Remove no longer needed extra-button in ConfirmInfoBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e10bf04
+
+### Remove kMaybe* values from WebExposedIsolationLevel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0cb90f
+
+### Separate TabSharingInfoBar independent of ConfirmInfoBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65cb9e9
+
+### Add OnUserSessionStartUpTaskCompleted() to SessionManagerObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e492636
+
+### Rename SaveAddressProfileOfferUserDecision to AddressPromptUserDecision.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abc1b5c
+
+### [Reland 1] lens: Add a close button to the overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ff0c6a
+
+### Add accessible name for send button in Mahi menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b22d948
+
+### App launching should not rely on GetLastActive() for app browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4afe4b
+
+### customization: Remove enable input device settings logging ff
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/89a88ac
+
+### Add a chrome://flags entry for Fingerprinting Protection.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/930d001
+
+### modifier-split: Add modifier split feature key
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/21417fa
+
+### [LogoPolish] Add flag and variations for enabling logo polish.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d9c5718
+
+### [autofill][flag]  Add AutofillEnableSaveCardLocalSaveFallback to flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bb9d26c
+
+### [gbb-cct] Create bottom bar flag to enable the feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/747bbc2
+
+### [UPM] BuiltInBackend IsAbleToSave returns false if no saved passwords
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4a11be6
+
+`);
+              </script>
+            </body>
+        </html>
