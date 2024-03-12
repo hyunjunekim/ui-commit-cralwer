@@ -1,0 +1,348 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-12
+### Fix wayland unit test setup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa9563d0
+
+### cr-input: Simplify computed attributes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c59306e72
+
+### Remove unused file manager private api functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce45bbc
+
+### WebUI: Check-in Lit template *.html.ts wrapper files, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05f9157
+
+### New unit tests for gfx::RectF ApproximatelyEqual method.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4bf611
+
+### Replace tabs with filter chips when history embeddings is enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60b2b6c
+
+### Add an AXMode for AXMainNodeAnnotator.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fae35f1
+
+### Remove last uses of base::{Read,Write}BigEndian
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/963684f
+
+### Remove OzonePlatform::IsWindowCompositingSupported default impl
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3af264
+
+### Fix tests failing due to global screen coordinates CHECK
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b56b42b
+
+### Convert OSExchangeData HTML to use std::optional
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/314a1766
+
+### [views_ax] Removing OverrideHasPopup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e41296
+
+### [ash] Ensure nested DisplayManager changes are ordered correctly
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a031ef
+
+### [views_ax] Removing OverrideDescription
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9017fa4c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96a92024
+
+### Reland "gpu: don't store GLSurface in SharedContextState"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6669aae
+
+### Add URL field to ChromeSearchResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d04e161
+
+### Remove unused WebContentDelegate::GetDelegateWeakPtr()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/611d54a
+
+### lens overlay: Use WebContentsUserData to glue WebUIController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/164a42d
+
+### Revert "Automatic Fullscreen: Block for a short time after exit"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de3e269
+
+### [Office] Add Android OneDrive invalid URL UMA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82c0492
+
+### Enable kTabSearchUseMetricsReporter by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0fe1c40
+
+### Disable AddNewAddressProfileTest.AddAddressAccept for Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9025f7f
+
+### editor: introduce proofread
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8352c44
+
+### Use the emit pattern for sending link toggle from the toolbar to the app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a0dc9b
+
+### Automatic Fullscreen: Block for a short time after exit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd6b6a6ac
+
+### [PWA] Remove AreSubManagersExecuteEnabled()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ddabae6
+
+### [a11y] Adjust OmniboxViewViews UIA test to account for border
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45b1bb0
+
+### webui: misc cleanup in webui_bubble_manager.[h|cc]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4901093
+
+### Add ModelType and UserSelectableType for sync integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74eb507
+
+### Add device counter into permission prompt labels for camera and mic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04a675c6
+
+### [QuickStart]: Fix gaia info screen strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4fb306
+
+### Resize overlay with window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7511e56
+
+### Add a feature flag for keyboard and pointer lock permission prompt
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d6fa18
+
+### Add triggering "add new address" bubble triggering from context menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc15ee41
+
+### CrOS Settings: remove passpoint-arc-support flag use
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1986da8
+
+### Update chrome/ and content/ tests to expect same-site RenderFrameHost changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c06ef3a4
+
+### [Rounded Windows] Use window radius property to get the radius of window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc89dc2
+
+### [DoH] Update owner for SecureDNS UI settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1376a09
+
+### [WebAuthn] Add passkey save confirmation bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69063cc
+
+### Add UMA logging to default browser info bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/515f26d
+
+### [PWA] Introduce app installation dialog for DIY apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cb1aad1
+
+### Reland "Update android to use androidx_espresso"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91e8427
+
+### Migrate MissingDeviceLockLauncher to use profile-aware PersonalDataManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5c7f9e
+
+### [E2E] Prevent E2E navigation bar settings from being overridden when
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0a44bb2
+
+### [fedcm] Introduce a permission prompt for the IdP Registration API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ac074a
+
+### webui: move warmup level code to top_chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c49d6df
+
+### [UNOp2][Android] Make sign-in bottom sheet accept all access points
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfd34d2
+
+### [WebAuthn] Close bubble on step transition when needed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc2acdf
+
+### [AvatarButton] Fix button being enabled in Ash Guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c289ebf
+
+### Update description of owning_model in TabModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb378479
+
+### Update UI strings for LocalPassword according to latest UX mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22839ebc
+
+### [TSLO] Disable DTC support when TSLO is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/548f6f55
+
+### Adjust hover card title and domain spacing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cdbb075
+
+### What's New: Update CSP to accurately limit https sources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bd9d47
+
+### Add API for triggering the add new address bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2136fc5f
+
+### Prevent toolbar visibility from triggering dirty.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fd4948
+
+### convert the rest of the callsites for DetachWebContentsAtForInsertion to DetachTab*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea318fc
+
+### [media_settings] Rename some of the API to be less confusing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5037394
+
+### fix TabTest.ExtraAlertPaddingNotShownOnSmallActiveTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/159f891
+
+### [UNOp2][Android] Test the new launch mode in AccountPickerBottomSheetTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/735e38f
+
+### [LHS indicator] Add LHS indicator feature to field trial testing config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a5e260
+
+### Auto dismiss save card confirmation dialog after 3 sec.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fffb9cf
+
+### Add new EnterpriseLogoUrl policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97cdd46b
+
+### [UNOp2][Android] Use the correct layout on orientation change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/402164e
+
+### Make UnmaskResponseDetails callback params const references
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a6f191
+
+### privacy-hub: Update Geolocation learn more plinks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f914209f
+
+### [FedCM] Fix ownership of IdentityProviderDisplayData in new account IDP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b3d46d
+
+### [UNOp2][Android] Rename SigninFirstRun* MVC classes to FullscreenSignin*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bb9a955
+
+### Introduce the "add new address" bubble view with its controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82b8210
+
+### [OOBE] Implement skeleton for the CategoriesSelectionScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a68deb9f
+
+### [Android][3PPWM] Make provider available in guest/ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc12b7d1
+
+### Reland "[UNOp2][Android] Allow showing accounts list when sign-in flow starts"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e93b60
+
+### [LHS indicator] A11y announcements for media indicators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5442d239
+
+### [Site Data] Clean up cookies in use expired metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/600d58e
+
+### Fix some more incompatibilities with std::variant from narrowing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0d26ea
+
+### Prepare CertificateManagerModel to use Kcer for PKCS#12 import
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cee5b06
+
+### [UNOp2][Android] Support different strings in the Signin FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32db0826
+
+### [waffle]Remove the possibility to scroll the list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6840326
+
+### chrome/browser: extract ScopedKeepAlive from BrowserManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95179f1
+
+### Do not show saved state notification on focus change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e090146
+
+### audio: Add audio selection improvement feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/413fe5d
+
+### cleanup: print-preview-discovered-printers ff in backend
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ef6c7ef
+
+`);
+              </script>
+            </body>
+        </html>
