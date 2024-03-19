@@ -1,0 +1,408 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-19
+### Fix some issues with printing window hierarchy.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/01420ee9
+
+### Make sure R is in MSB in BGR_565
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55d7fc1
+
+### Rename the cr_components omnibox/ directories to searchbox/.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb53788
+
+### [Product Specifications]: Extract product URLs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ea4dc9
+
+### Handle multiple webview instances case for frame metrics listener
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4fc394f
+
+### [views_ax] Removing OverrideRole
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/609bae8
+
+### Start implementation of history embeddings results view
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61bb0ef6
+
+### Set content window visibility based on compositor visibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/131a0431
+
+### ui/aura: adds Eliot to ui/aura/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/46d3745
+
+### [Text Contrast] Use Skia defaults if no registry keys present
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb1a82a
+
+### [A11y] Support name and focusable state on rows in grid/treegrid used for textfield
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a7bf07
+
+### [views_ax] Added check for Role in the Merge util func
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07253a9
+
+### [Image Descriptions] Enable augmented image descriptions by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58df37d
+
+### Refactor HostBeginFrameObserver out of Android CompositorImpl.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0733754d
+
+### [Fluent Scrollbar] Deferring typeface initialization to first PaintArrow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/836942ec
+
+### wayland: suppress pointer button release events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b331943
+
+### [A11y] Remove class name changed, which is unused
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c5f4ae
+
+### Reduce logging from drm_framebuffer.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62d7f6d
+
+### WebUI: Use cr-grid instead of custom cr-profile-avatar-selector-grid.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c8fd44
+
+### [ozone] Fix YUVATriplanar format check from NativePixmapEGLBinding
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8165536f
+
+### [A11y] Move caret blink rate to NativeTheme, use pref in ChromeOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89a842f3
+
+### [Clipboard] Remove \`MarkAsConfidential\` on Mac pasteboard.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/76a318b
+
+### WebUI: Migrate cr-feedback-buttons to LitElement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a99245c
+
+### Reland "ozone/drm: Retry test modesets w/ all possible CRTC-connector permutations"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a41613f
+
+### [A11y] Enable extra large mouse cursor by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57d0466
+
+### Fix VoiceOver doesn't read dropdown menu items
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/076ef13
+
+### Remove the colors param in UpdateSystemColorInfo() pipeline
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2b85b2
+
+### fix: ime: Prevent TSF hang Chromium window when DPI changed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9577a67
+
+### views_unittests: fix BridgedNativeWidgetTest on macOS 14
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4012676
+
+### Remove ImageTransportSurfaceDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8d3e3e8e
+
+### x11: Always sets given insets_px
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5440d27
+
+### Let VideoCaptureLock affect root window occlusion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dd4a6a
+
+### kbd-backlight: Add direct link to rgb customization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2700d42
+
+### Refactor FacilitatedPaymentBottomSheet files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b728d6b6
+
+### Port immersive_mode_controller_chromeos_browsertest.cc to Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4801b7d2c
+
+### Improve a DownloadBubbleInteractiveUiTest test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfb7d28
+
+### Reland "modifier-split: Add right alt to drop down for all keyboards"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbf33eb
+
+### [Gardener] Disable AvatarToolbarButton tests on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0535585
+
+### clean up the flag in SearchActivity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a73014
+
+### Suppress calls to Native Libraries before Native is initialized.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/225e4d2
+
+### [PWA] Enable WebAppUniversalInstall via field trial testing configs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48cce2c
+
+### [extended-updates] Implement logic for extended updates controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e35c36
+
+### Turn some MediaRouter browser_tests into interactive_ui_tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80a62e5
+
+### pine: Save and display a temporary title for non browser apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff5c8ab
+
+### Make feedback available in chromium
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c85d199
+
+### Populate learn more link during immediate deep scans
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a634b1
+
+### Adding Metric MediaPreviews.UI.Preview.{Location}.Camera.PixelHeight
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d1c63c
+
+### [Gardener] Disable WindowsOffsetForMultiWindowPWA on linux-lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4843811
+
+### Exclude incognito and guest profiles from default browser infobar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e43084
+
+### [Read Anything] Remove TODO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b85a95
+
+### [SysUi download integration] Fix indeterminate download progress bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51bc3960
+
+### [WebAuthn] Use MdTextButtonWithDownArrow for pin options button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6a1695
+
+### Remove donnd@chromium.org from chrome/browser/ui/android/edge_to_edge/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/140221e
+
+### Add logging of the "Add new address" prompt outcome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c5b6b2c
+
+### Tab Organization: Fail gracefully if browser doesn't support tab groups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b8c27e0
+
+### iwa: Refactor IsolatedWebAppBuilder to fix its behavior in unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dafbbf9
+
+### [DownloadBubble] Produce accessible alerts on updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa81c2c
+
+### [E2E] Fix NPE due to window inset consumer race
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76c8e643
+
+### [commerce] Update ShoppingService to deal with unified BookmarkModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf14ddd
+
+### Detect shutting down Telephony in PlatNetworksManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5957fe0
+
+### [Gardener] Disable WebAppTitleBrowserTest.ValidAppTitle on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76d4fe56
+
+### [User Education] "New" Badge data on inernals page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d141ff
+
+### Implement EmbeddedA11yExtensionLoader to manage installation and
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db2b6ab
+
+### [User Education] Convert existing New Badge to new API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7922898
+
+### Revert "[waffle]Move search engine step to picker in signed out flow"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57e4f8b
+
+### Tab Organization: Add reorganization feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be4f8e5
+
+### [PWA] Fix name handling of DIY dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edb54054
+
+### Add touch support for SavedTabGroupButton.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79de312
+
+### privacy-hub: Add sub-label to Geolocation dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87ef0b9
+
+### [Gardener] Disable OpenGMCDialogInWebApp on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4819a4c
+
+### Add Sync toggle for WebAPKs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13d31e3
+
+### [CrOS Network] Remove unused SetTechnologyEnabled function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0908ef9
+
+### [Instant Hotspot] Rename tether to hotspot on multidevice page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0175026
+
+### WebUI: Add chrome://userimage to allowed image source for ChromeOS Ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91809de
+
+### [Extensions] Fix opening side panel in split mode incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea1285154
+
+### Reenable TestSelectedKeywordViewIsExtensionShortname on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06efcc4
+
+### Move Tab Search metrics logging out of WebUIBubbleManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/728fcbd
+
+### Update \`device_name_label_\` on combobox selection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4af9de7
+
+### Plumb OmniboxLoadUrlParams further up to simplify data passing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af4fba4d
+
+### Crashes UI: Don't require ConsentLevel::kSync for is_internal check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9969482
+
+### Prepare to convert SBThreatType to an enum class in /chrome/browser/ui/hats
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3335222
+
+### Show bookmarks bar when saved tab group exists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/897f2b3
+
+### unit_tests: fix ProfileMenuControllerTest.InsertItems on macOS 14
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6c08aad
+
+### [Gardener] Disable flaky test in WebAppLinkCapturingBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f574061
+
+### Reland "Record metrics for drive suggestion subtypes"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ac62474
+
+### [UNOp2][Android] Improve string management for signin bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a251c97
+
+### Various cleanups of kiosk related code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6ca26129
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ee7acc0
+
+### [UNOp2][Android] Use a different footer string depending on the flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/145843b
+
+### Remove AddressBubblesController::address_profile_.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26c9ff5
+
+### Add test for asynchronous case of reading capabilities on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a8ca0a
+
+### [waffle]Move search engine step to picker in signed out flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aec1c9e
+
+### [OOBE] Migrate security_token_pin_browsertest to TS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d509424
+
+### Tab Organization: Reset observer on sync shutdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a86d209
+
+### Land forest flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f650f2bf
+
+### Revert "Make web feed feature enabled for supported countries by default"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9afb3ee5
+
+### Make web feed feature enabled for supported countries by default
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/956ea64
+
+### Makes A2HS shortcuts always open in browser tabs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee6815b
+
+`);
+              </script>
+            </body>
+        </html>
