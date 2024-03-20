@@ -1,0 +1,380 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-20
+### Move "open" and "select" out of Files app manifest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b073192
+
+### [views_ax] Introducing SetProperties convenience function
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5afb417
+
+### WebUI: Move segmented button to customize_color_scheme_mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6869ed
+
+### WebUI cr-url-list-item: Default to CR2023 styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f2657db
+
+### Convert OSExchangeData pickle access to use std::optional
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d73f543f
+
+### Rename the "omnibox.mojom" module to "searchbox.mojom".
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b70da14
+
+### Plumb forced colors state to NativeTheme paint methods
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d4b905a
+
+### WebUI: Migrate cr-lottie to LitElement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed5bfe1
+
+### Remove GL_RGB_YCRCB 420, 420v, P010 extensions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef9abce
+
+### [views_ax] Removing OverridePosInSet and ClearPosInSetOverride
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94f4905
+
+### [views_ax] Removing OverrideName
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78058f7
+
+### WebUI: Migrate cr-profile-avatar-selector to LitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f6c18e
+
+### Use vsync parameters in the SyntheticGestureController on Aura platforms
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50683a30
+
+### [Default Nav Transition] Integrate Native page screenshot capturing into
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4511c1
+
+### WebUI: Update cr_elements documentation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/11ec94d
+
+### WebUI: Migrate cr-loading-gradient to LitElement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/939f80ea
+
+### Video: Select HDR metadata of the display where the current window is located
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d7102c
+
+### [Text Contrast] Enable by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6be94be
+
+### [A11y] Check to prevent initial non-null position with a null anchor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1fac51
+
+### ImageSkiaStorage::FindRepresentation: Prefer downscale over upscale
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e0073eb
+
+### Reland: [pdf-a11y] series of changes for PDF a11y stabilization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/85938e0
+
+### nit: Fix typo in PlatformWindowDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/566136c
+
+### [Gardener]: Disable failing test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e7994e
+
+### Birch: Add id member to BirchFileItem
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89edd21
+
+### [media_previews] Add Expected and Actual FPS metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/760e5c7
+
+### [PDF] Move generic utils from //chrome to //components/pdf (1/2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf5bf9d7
+
+### Revert "[FedCM] Fix dangling ptrs in button flow modal"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/101ccc1
+
+### Convert FixedFlatMap to a regular flat_map in ToolbarController tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20bfc13
+
+### Fix the logic of EditorMenuPromoCardView::GetHeightForWidth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ce7a8e
+
+### [Read Anything] WebUI computes whether an AXTree is a doc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85caa74
+
+### [SearchActivity] Set toolbar height in XML file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64ff916
+
+### Prepare to convert SBThreatType to an enum class in ['/chrome/browser/ui/webui/interstitials', '/ios/components/security_interstitials']
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fd073f
+
+### Birch: Add BirchItemRemover to record removed tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70221a0
+
+### Fix crash when accepting infobar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc9a843
+
+### [Mac File Menu] Reland of Display and enable correct Close menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a998735
+
+### Record MediaPreviews.UI.DeviceSelection.{Location}.{Type}.Action metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a204b59d
+
+### [FedCM] Add a test for CloseModalDialog during State::LOADING
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/475375d
+
+### [LHS indicator] Fix indicators colors for custom themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef9a5b9
+
+### Add a member field \`previous_device_name_\` to MediaViewControllerBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f482fa5
+
+### [FedCM] Fix button flow crash after signing in via pop-up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/008d582bf
+
+### welcome_tour: Add AppsCollections page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0e1b367
+
+### Make management ui title use util function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9697f2e
+
+### Stop AutomaticFullScreenTests pinning shortcut to taskbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f4e783f
+
+### Revert "Add ScreenCaptureLocation policy test."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/134be09
+
+### Change the NTP wallpaper search button color from secondary to primary.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7db81aa
+
+### [android] Show sync error for UPM backend outdated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/accc7b7
+
+### [FedCM] Fix dangling ptrs in button flow modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1e33b9
+
+### Expose browser non client frame view of a window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bff8fcc
+
+### [FedCM] Support back button in button flow modals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d1d196
+
+### [webauthn] Fix light/dark illustrations and images for Browser themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/527a9d0
+
+### Update ConfirmedManagedSyncDataDialog String
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da9431f6f
+
+### [ Code Cleanup ] Move recent tabs menu code into subdirectory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db2c76a9
+
+### p13n: save SeaPen image before set as wallpaper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c12cb00
+
+### Merge FakeChromeUserManager's subclasses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20f4875
+
+### Add metric SBClientDownload.LocalDecryptionEvent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abe8d67
+
+### LaCros: Select task of active tab in task manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db0b7e4
+
+### birch: Prevent concurrent calendar fetches
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43cccaa
+
+### [UNO] Create Autofill Bubble Signin Promo View & Controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8aa2b27
+
+### Keep fallback icons if the RoundedIconGenerator returned null.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab8fa25d
+
+### Update the address editor validation behaviour.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78f8b26
+
+### Add missing constructor implementation of WebUIContentsPreloadManager::MakeContentsResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cdeb83
+
+### Add ScreenCaptureLocation policy test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72f8da5
+
+### Remove PersonalDataManager#getInstance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4a406d5f
+
+### Fix management ui subtitle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a91c1bd
+
+### Add metrics for tracking manually added addresses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb9b4a9
+
+### [waffle]Enable ProfilePickerParametrizedInteractiveUiTest.ContinueWithoutAccount
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a19d0de
+
+### webui: fix use-after-free in the preload manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35fbaec
+
+### [autofill][desktop] Handle Confirmation Bubble on Unfocused Tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23161a1
+
+### [WebAuthn] Remove Trust This Computer Bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b3186a3
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee375d8
+
+### [Deprecate CookiesTreeModel] Clean up site settings handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d5a023
+
+### Fix UAF related to price tracking in bookmark save flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0764f1e
+
+### Move irrelevant strings out of Privacy Sandbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63a4013
+
+### Allow the autofill popup to overlap with the manual fallback IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b0fa87
+
+### WebUI: Fix crash due to unretained ptr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4292346
+
+### [Uno-d] Signout confirmation prompt when data upload is pending
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/336a8d6
+
+### Reland "[waffle]Move search engine step to picker in signed out flow"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dd46942
+
+### [Deprecate CookiesTreeModel] Clean up page specific site data dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0abfa33
+
+### [OOBE] Create intro/tuna feature flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c10d4dd
+
+### [OOBE][Mojo] Migration of GaiaInfoScreen to Mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5399b8
+
+### Clean up syncer::kSyncDecoupleAddressPaymentSettings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be2bd2c
+
+### [WebAuthn] Add Trust This Computer dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f4cdce4
+
+### [WebAuthn] Cleanup WebAuthenticationNewPasskeyUI flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/46b3c01
+
+### Add display mode to PromoCardShortcutTest.NoPromoIfShortcutInstalled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94038aa
+
+### Add flag AppInstallServiceUriBorealis.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d5fc19b
+
+### CrOS: Remove hibernate code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c528bcc
+
+### Reland: Make web feed feature enabled for supported countries by default
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3b3e1917
+
+### Clean up syncer::kIgnoreSyncEncryptionKeysLongMissing flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6df996b81
+
+### Clean up syncer::kPassExplicitSyncPassphraseToGmsCore flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/15a610c
+
+### VCD: Add feature flag for super-res control override
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8121baa
+
+### Adding a UI flag for standards based DBSC
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6dee9c1
+
+`);
+              </script>
+            </body>
+        </html>
