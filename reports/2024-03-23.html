@@ -1,0 +1,192 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-23
+### Fill out history embeddings searches with URL data and send via handler
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bd731bf2
+
+### [a11y] Changed AXTreeSerializer to take AXTreeUpdate type in the template.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0dbef91
+
+### [a11y] Changed AXTreeSource to take types for AXTreeData and AXNodeData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab8ae77
+
+### [autofill][desktop][bugfix] Remove the explanation view during loading
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a38149
+
+### WebUI cr-url-list-item: Provide option to use a native anchor element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d252d438
+
+### [Product specifications] Provide open tabs to webui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f9ca44
+
+### [views_ax] Introducing SetDescription(View) and other prereqs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25a4fbf
+
+### WebUI: Move cr_components/settings_prefs/ to c/b/r/settings_shared/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e5faf54c
+
+### [AriaNotify] Generate ARIA notifications event in OnNodeDataChanged
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55443e1
+
+### WebUI: Use webui_context_type in ui/webui/resources, c/b/r/chromeos
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce1282b
+
+### Triage dangling pointers in ChromeOS.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aeb4897
+
+### WebUI: Migrate cr-ripple to Lit.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4123cd
+
+### WebUI: Rename CrPaperRippleMixin to CrRippleMixin, move to cr_ripple/.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13f4725
+
+### [a11y] Enabled reduced animations by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74d8c8b2
+
+### webui: rename MojoBubbleWebUIController to TopChromeWebUIController
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/022dbd8
+
+### [a11y]: optimize CallIfAttributeValuesChanged
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/425f7beb
+
+### [//gpu] Simplify OzoneImageGLTexturesHolder texture target calculation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9ce729
+
+### wayland: Guarantee there is not re-enterancy on RequestState
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d4bb06
+
+### Move more Mac Present code to CALayerTreeCoordinator
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7356f88
+
+### Reland "x11: Always sets given insets_px"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f00e425
+
+### Record MediaPreviews.UI.{Location}.{Type}.Duration metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81aa020f
+
+### Manual region selection on lens overlay should issue lens request.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2369f07
+
+### [VC] Remove unnecessary vc flags.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee07c8a3
+
+### Propagate filename and filepath to PdfPage constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1bad582
+
+### [DefaultPrompt] Fix height of infobar increasing after switching tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73b4c32
+
+### Init RFH to nullptr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/009abd2
+
+### [media session] Don't request audio focus quite so much
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5031db4
+
+### [3PCD] Only animate when web contents are non-null
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dfcd7a
+
+### [PWA] Fix install menu option showing up for non locally installed apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0d3429
+
+### Pass in duplicated Rect to observers to avoid observers mutating shared Rect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26acf902
+
+### Alternate way of fixing crashes with animations disabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/383162d
+
+### lacros: Re-enable TabDragging test DetachToOwnWindow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58b0b7d
+
+### [CrOS WiFi] Add Wifi Direct debug UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60b7ded
+
+### Remove Customize Chrome Side Panel flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fc0af6d8
+
+### [live-preview] Add a new enum case to PreviewType of value kCameraAndMic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7755ef2
+
+### [Uno-d] Do not open Gaia tab on logout if there is no valid cookie
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3789c2
+
+### Revert "Birch: Add and propagate file id to BirchAttachmentItem"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45f6ae8
+
+### Birch: Add and propagate file id to BirchAttachmentItem
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f9d18e2b
+
+### [Uno-d] Plumb the signout confirmation dialog in the profile menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfcd318
+
+### [OOBE] Create screen files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb0eb1d
+
+### Delete some password manager histograms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b03f39
+
+### [signin] Split PeopleHandler::HandleSignout in two
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e4f88e
+
+### [OOBE][Mojo] Migration of LacrosDataBackwardMigrationScreen to Mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/852c0236
+
+### Add Developer flag for NotificationsIgnoreRequireInteraction
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e3f757c
+
+`);
+              </script>
+            </body>
+        </html>
