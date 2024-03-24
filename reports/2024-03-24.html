@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-24
+### clean up the flag in OmniboxResourceProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d06b92d82
+
+### [Layout] Adjust comments on layout managers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b128f01
+
+`);
+              </script>
+            </body>
+        </html>
