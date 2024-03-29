@@ -1,0 +1,332 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-29
+### Reland "Remove kDCompVisualTreeOptimization feature flag"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a3f488
+
+### Add siliu@ to ui/base/ime/win/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af8c038
+
+### pine: Add onboarding illustration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6414cf8
+
+### [UIA] Fix live regions on Views when UIA is enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a120a5bef
+
+### Specify illustration colors as Ash only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ccbfea8
+
+### Gracefully handle reads outside of the x11 cursor file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df63f7a5
+
+### [IME] Remove input pane flag.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c70830
+
+### [Tab Group Parity] Add modal dialog button styling for positive button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e33c1c3
+
+### Revert "fix: ime: Prevent TSF hang Chromium window when DPI changed"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6642e74
+
+### views: let UpdateWindowTitle() InvalidateLayout() if title visibility is toggled.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68b403d
+
+### [views_ax] Add default value for ViewAccessibility::SetName
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fef7e915
+
+### WebUI: Migrate cr-menu-selector to CrLitElement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/afd3f0a
+
+### [views_ax] Migrate SetAccessibleDescription to ViewAccessibility setter
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58a581fa
+
+### WebUI: Migrate history_clusters/search_query to Lit.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8befdde
+
+### Derive display ID from monitor adapter ID instead of szDevice.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5773765a
+
+### Shut down Compositor SimpleBeginFrameObservers cleanly.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54ec48e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ce01011
+
+### Remove dictation keyboard improvements flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6322763f1
+
+### Expand tailored warnings to downloads page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14006fc
+
+### Migrate toolbar test to Mocha+TS and add other test coverage for the
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32379a7
+
+### Printing: Create launch Printer Settings from Preview test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2f304b
+
+### webauthn: add tests for the new pop-up window UI steps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d26e083
+
+### Assign element IDs to infobar accept and dismiss buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82202b4
+
+### [ SavedTabGroup ] Update CHECKs in keyed service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac70e98
+
+### Read Aloud: fix browser controls position issues after theme change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc98643
+
+### [Birch] Add Command Line Flag to Show Release Notes Glanceable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/460763c
+
+### Add synthetic trial for default browser prompt infobar experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60cdbc82
+
+### [Autofill]Test SaveCardOfferBubbleViews with feature flag on/off.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff16042
+
+### Reland "[PWA] Refactoring state machine into AppBannerManager."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d25c720
+
+### Birch: Observe foreign sessions changed for tabs provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87c1a75
+
+### [webauthn] Wire Touch ID prompt to enclave uv key
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a81c85
+
+### Instantiate history and history embeddings services in test; never null
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cf3f07
+
+### [media_preview] Fix count histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf9160b1
+
+### Add JNI to expose Java method to determine pdf viewer availability
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c87f551
+
+### Revert "[Reland 1] lens overlay: Fix context menu entry point."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b257e7
+
+### Revert "Reland "[AvatarButton] Fix signin paused state not clearing on signout + cleanup""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e2e294
+
+### Move hash_realtime_utils to safe_browsing/core/common
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/321c196
+
+### Filter out policy-sourced incognito exceptions in site settings list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/446dc40
+
+### [windows] Fix BeforeStateCheckAction(...)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5c07b1
+
+### [LogoPolish] Implement logo polish for tablet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a6ecfb34
+
+### Refactor RealboxHandler functions into SearchboxHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bf8d81
+
+### [PWA] Remove ghost policy app migration code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfbb0ad6
+
+### [Multidevice] Adjust onboarding dialog footnote copy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/568dab0
+
+### Add placeholder disclaimer text for history embeddings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83d37de7
+
+### Add Family Link Settings to feedback system information on Desktop / CrOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0e1380
+
+### [Omnibox] Reland: Add fieldtrial config for suggestions list animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dc3d98f
+
+### webauthn: add a UI step for account reauth.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ba36c4
+
+### [Extensions c2s] Add accessible name to site permissions button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8619d1
+
+### webauthn: put MagicArch in a pop-up window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e739937
+
+### CrOS Settings: Apply GetOSSettingsUrl() for shared settings URL strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a1d12f
+
+### CrOS Settings: Update privacy section search result title in revamp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4542b09b
+
+### [CSC] Only show CSC-indicator on the capturing tab's infobar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f05894e
+
+### Revert "[Reland 1] Add TabFeatures and test harness for mocking out tab-based..."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e95d6e97
+
+### [media_preview] Add unit tests for Duration metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6d2a1fa
+
+### Add toggles to top-level Ad Privacy page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56909c4
+
+### Delete unused profile_welcome_ui.cc file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb3f6431
+
+### CrOS: Eliminate NetworkState::PortalState::kProxyAuthRequired
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e9f1ac
+
+### [waffle]Update info dialog UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76c4b69
+
+### Reland "[AvatarButton] Fix signin paused state not clearing on signout + cleanup"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbe7d74
+
+### [OOBE] Integrate screens into flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/390edaa
+
+### CSC status indicator UI element in TabSharingInfoBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb683bc
+
+### Focus SaveUpdate and MovePassword bubble automatically
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8187e66
+
+### Revert "Automatic Fullscreen: Wait for popup document settings propagation"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfdc911
+
+### Remove image from the move password bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbfb022
+
+### webauthn: splitting the model, step 3.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a4f4fb
+
+### [CSC] Support sticky permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb57a25
+
+### Revert "Get watermark feature ready for trusted testing."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eff437cd
+
+### [UNOp2][Android] Change the condition for launching the SigninAndHistoryOptIn activity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5e11bf
+
+### Use internal Mahi condensed menu text on chrome branded builds.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6549ae1a
+
+### [PDF] Remove \`PDFDocumentHelperClient::FindPdfChildFrame\` API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f349971
+
+### Fixed focus ring corner radius for DesktopMediaSourceView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37ab33f
+
+### Remove PwaInstallAvailable IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9058854
+
+### Display screenshots correctly in install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1daea87
+
+### Add feature flag CrOSLateBootBluetoothAudioLEAudioOnly
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/81783cc
+
+### Clean up cct-resizable-side-sheet and cct-resizable-side-sheet-for-third-parties flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a1a3600
+
+### [Fast Pair] Bump feature flag expirations
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6d4be59
+
+### [Start] Clean up START_SURFACE_ON_TABLET related code
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/61fb7d00
+
+### Add a flag for feed containment
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5c0b068
+
+### Move product spec sync to its own flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0e795d7
+
+`);
+              </script>
+            </body>
+        </html>
