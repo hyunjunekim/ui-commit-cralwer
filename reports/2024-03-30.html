@@ -1,0 +1,244 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-03-30
+### [Ozone/Wayland]Conditions for bubble to use platform widget
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35ab89b
+
+### [Ozone/Wayland]Add WaylandBubble platform window for bubble widgets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/143574a6
+
+### [views_ax] Adding SetName with no NameFrom attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9db1434
+
+### WebUI: Migrate cr_components/theme_color_picker to Lit, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ad21e2
+
+### evdev: Filter out floss virtual suspend device from mouse list
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/865851c
+
+### cr_components/app_management: Remove unnecessary Polymer dep
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d7fa78
+
+### WebUI: Migrate cr-url-list-item to CrLitElement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95b250a1
+
+### Replace JPEGCodec::Decode with simple Skia wrapper.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce44486
+
+### Changes \`GetTreeId\` to return a const reference
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79f3fbe0
+
+### [A11y] Only allow valid nodes as input into serializer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bee664
+
+### graphite: Remove separate ANGLEDebugLayer feature flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69c1e5b
+
+### Migrate static_casts to WindowTreeHostPlatform::GetHostForWindow
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/446ab4a
+
+### brightness: Add auto-brightness toggle to Settings app behind flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/605914fd
+
+### [Web Apps Infra] Position app install dialog at top of parent window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b6f464
+
+### Remove redundant OnMediaItemUIDestroyed() calls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cdc96d
+
+### Remove TestChromeAutofillClient in ChromePaymentsAutofillClientTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ddfbdb
+
+### fws: Enabled fws restore on wake up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f401720
+
+### Update OWNERS of read_write_cards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f7b953
+
+### [Web Apps Infra] Set app install dialog to be modal to the parent window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c44be9c5
+
+### brightness: Add mojo function to set display brightness from slider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/911a300
+
+### Remove base::EnumSet::Empty() and Size()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bda6288d
+
+### extended_updates: Fix multiple dialog spawn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1bed26
+
+### [Fix It] Introduce NEARBY_INFRA feature to CD_LOG
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9434d87
+
+### Remove unused SideSearch IPH and tutorial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e306c37
+
+### Record histograms of the number of sessions within certain windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab22fac4
+
+### [XDevice] Replace QP_LOGs with CD_LOGS in fp saved devices handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddf27732e
+
+### Reland "Automatic Fullscreen: Wait for popup document settings propagation"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c366ac
+
+### Revert "Add views for the PaymentsWindowUserConsentDialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dea10f1
+
+### Revert "[Sharesheet] Refactor Sharesheet to map actions by const, not UI string"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9fa6e9
+
+### Fix dump_colors crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bb9ba4
+
+### Add profile menu to PWA title bar on mac if app is installed in multiple profiles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d24df4
+
+### Fix crash in LoginHandlerViews without manager delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c94c338
+
+### [Reland 2] Add TabFeatures and test harness for mocking out tab-based...
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dad478
+
+### Remove enable_modernize_visual_update_on_tablet from tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c3438d
+
+### Remove extra flushes in default browser infobar interactive ui test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97f043a
+
+### Don't try to trigger notification attribution for all default apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d2ef5f
+
+### Add views for the PaymentsWindowUserConsentDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a91add
+
+### Fix naming of default_icon_color_accent1_container_tint_list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5866c72
+
+### Cleanup html/css for NTP Customize Chrome buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/defa27d
+
+### [CrOS WiFi] Add WiFi Direct client and group info in debug UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ada201
+
+### Reland "Add ability to show/hide ReadAloud dynamically in the app menu"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3484ee
+
+### Feedback UI: Use key-value-pair-viewer in system-info page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86af2718f
+
+### Update argument name for Screenshot() in Kombucha tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/befa780
+
+### [Sharesheet] Refactor Sharesheet to map actions by const, not UI string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/434c4df1
+
+### 🧇 Add recording for search engine position on the choice screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a319dbd
+
+### Disable TestMouseOverShownMenu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af6c3a5
+
+### Cleanup red interstitial facelift omnibox/page info code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8af35f
+
+### pe: Remove \`IsVisible\` check inside GetLastActiveWindowState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1c3b32b
+
+### settings: Use scope-resolution operator to reduce ambiguity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc22d8d
+
+### [PWA] Remove OS Hooks Errors from OS integration manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c434024
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fa7f5c2
+
+### [2/n] Fix TabDragging tests for fallback tab dragging: CancelOnNewTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c369d2d
+
+### [Uno-D][ProfileMenu] Remove customize profile from Guest mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78f0fd1e
+
+### [Extensions cleanup] Use existent extension and web contents variables
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bc8f63
+
+### p13n: remove screen-saver-duration flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3895948
+
+### gd: Remove the DropdownPanel flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/39da749
+
+### Add Enterprise module flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/86ac19c
+
+`);
+              </script>
+            </body>
+        </html>
