@@ -1,0 +1,228 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-02
+### Do not use Observer to create WindowTreeHost for display.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a142d02
+
+### WebUI: Check in .html.ts for theme_color_picker/, use Lit flags.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f8581f
+
+### use GetPreferredSize(SizeBounds) instead of GetPreferredSize() in //ui/views/widget and //ui/views/window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c821a9
+
+### wayland: Support window state and insets in configure-sync model
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e3540b
+
+### Enable shortcut customization by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/deb5ffa
+
+### Use tryAllocN32Pixels in JPEG decoding.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/adf34e1c
+
+### Move ViewShadow from //ash/public to //ui/views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb72ed1
+
+### ozone/drm: Rename MockDrmDevice->FakeDrmDevice
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a0746829
+
+### snap-group: Fix divider UI elements in vertical mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6bea385f
+
+### WebUI: Migrate cr_components/theme_color_picker to Lit, part 2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/73699e1
+
+### [a11y]: provide default move constructor and assignment operator for AXTreeUpdate and AXEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9025214
+
+### [editing] createLink command dispatches an input event with data and inputType which is set as \`insertLink\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa36610e
+
+### Remove the launched SelectToSpeakHoverText feature flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/466cf2b
+
+### Remove launched AccessibilityExposeHTMLElement flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ba0c179
+
+### [Image Descriptions] Remove feature flag for launched feature
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7ad88ce
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/430f736
+
+### Address TODO in vsync_thread_win.cc.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/032da21
+
+### Add Fluent rounded thumb unittest coverage.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7db797c
+
+### Respect keyboard layout in KeyboardModifierEventRewriter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/33eb3b5
+
+### Use DomKey directly to inject Lookup entry for StubKeyboardLayoutEngine
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b4bc9df
+
+### bruschetta: More granular errors with distinct error messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5972fb
+
+### Revert "Animate side panel opening and closing."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd2821d
+
+### lens overlay: tests should not run on about:blank.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f855ce
+
+### Refactor lockscreen online reauth flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ab0255
+
+### Make IssueLensRequest use CenterRotatedBox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/671da8b
+
+### [Data Sharing] Add notification manager and template notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe72997
+
+### WebUI: Migrate 3 more registrations to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b43427
+
+### Animate side panel opening and closing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b94b89
+
+### Reland "[Sharesheet] Refactor Sharesheet to map actions by const, not UI string"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/147e1c1c
+
+### tab collection test refactor and adding comments to the tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f7e296
+
+### [Reland 2] lens overlay: Fix context menu entry point.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b6553f
+
+### Add browser test for showing side panel on manual region selection.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed3dfa59
+
+### desks: Use feedback app id constant
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1c7182
+
+### Tab Organization: Fix GetDisplayName crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f061b7
+
+### Remove enable_modernize_visual_update_on_tablet
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7cd4f2e
+
+### kbd-backlight: Add SetKeyboardBrightness method in mojom
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24a6fa2
+
+### lens overlay: Handle edge cases for screenshot capture.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0fc5dbf
+
+### [ TabRestore ] Initial Group Restore Implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb62e698
+
+### Redesign of toggles on adPrivacy page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75c70f79
+
+### [TSLO] Add the OS version and form factor check besides feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/862bab46
+
+### Remove 1P icons from the side panel header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e176c2e
+
+### [ TabRestore ] Store saved id of groups in Tab and Group Objects
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdb2a7f
+
+### [DownloadBubble] Announce accessible alerts through the toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b709a16
+
+### Add a toolbar customization button to customize chrome side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5c48b56
+
+### Fix key event generation in device_settings_interactive_uitest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/346f3dc2
+
+### [Read Aloud] Add "loading" to font names before fonts have loaded.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1af233e
+
+### brightness: Add metric 'BrightnessSliderAdjusted'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b6cd57
+
+### [gardener] Disable flaky lacros omnibox, extension UI tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9be1fe
+
+### [gardener] Disable DefaultBrowserInfobar LogsMetrics test on TSAN/ASAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cd4e65
+
+### [Reland] Get watermark feature ready for trusted testing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86efc5ba
+
+### Tailor Widget offerings for specific screen sizes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55b0a5f
+
+### Port a test to Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ba590b
+
+### arc/gio: Replace the kArcInputOverlayBeta flag with kGameDashboard flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ccaa79e
+
+`);
+              </script>
+            </body>
+        </html>
