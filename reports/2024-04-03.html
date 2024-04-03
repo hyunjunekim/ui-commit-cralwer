@@ -1,0 +1,416 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-03
+### Mojo: Update bindings.ts to match IDL files more closely.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/320d2247
+
+### ozone/drm: Move some useful test boilerplate to common location
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99e5659
+
+### ozone/drm: Reset HardwarePlaneManager in tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1997212
+
+### use GetPreferredSize(SizeBounds) instead of GetPreferredSize() in //ui/views except //ui/views/controls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a4c7ae5
+
+### WebUI: Set default tsconfig based to ts_deps, instead of file types
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/091fbf5
+
+### Replace PNGCodec::Decode with simple Skia wrapper.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9bfeb1a
+
+### gpu: win: Remove root surface parameter from DCLayerTree::CommitAndClearPendingOverlays
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e430c09
+
+### Reland "Mark WeakLinkNode sequence checking expensive"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fbc138
+
+### WebUI: Migrate localized-link to CrLitElement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7060c6f
+
+### [AX Table Fuzzer] CHECK for negative rows and columns.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7458133
+
+### Add cc::DrawLooper to replace SkDrawLooper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc2607c1
+
+### views: AnimationDelegateViews report creation location
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8eec05
+
+### Revert "[accessibility] Fix DCHECK while handling AddRef in AXPlatformNodeWin"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06f7348
+
+### Add FILL_RULE_NONZERO command for kWinding fill type
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d0799a
+
+### Reland2: "[pdf-a11y]: enable tree consistency checks for plugin tree"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ad5a817
+
+### History WebUI: Move scrolling container out of inner components
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/167b5a7
+
+### Use bitmap->pixmap() when calling getPixels.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dec61f5
+
+### Move searchbox icons outside NTP directory and add unbranded options.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49ff85b8
+
+### [GTK] Fix size mismatch when using multiple fractional scale factors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55a34bed
+
+### [accessibility] Fix DCHECK while handling AddRef in AXPlatformNodeWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7137217
+
+### linux: make chrome's ozone platform selection code reusable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdc28de
+
+### Add Widget::CancelShellDrag()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ee411a
+
+### [ozone/wayland] Pair up rendered content and requested window bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d3f57d
+
+### [a11y] Conditionally suppress inline text box attributes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/24ecc4b
+
+### Make WaylandWindow::CancelDrag() actually cancel the drag session
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/587e69a
+
+### kiosk: Enable default true network share toggle in splash screen
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b5cf8f8
+
+### [ozone] Remove declaration of unused TestWaylandServerThread::OnTestOutputMetricsFlush()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8b7fc18
+
+### Revert "Add copy protection support for Svg and Custom data"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b47c940da
+
+### Files app: Change DirectoryModel to allow FileKey as current directory
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c655c4
+
+### Revert "wayland: Support window state and insets in configure-sync model"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9daa432
+
+### Have KeyboardLockController resolve/reject the keyboard lock promise
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22094c0
+
+### Setting a (default) PWA to standalone mode should trigger OS integration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d90d201
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffc122c1
+
+### Override empty url with about:blank in Tab Search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d97b94
+
+### [gbb-cct] Pass new request object when getting PageInsightsConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77c7b1a
+
+### [A11y metrics] Add metrics for when a11y settings are toggled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b85fbcd
+
+### Filter for local file types.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0111bd04
+
+### Reland "Animate side panel opening and closing."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f53300a
+
+### Move PaymentsWindowManager into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebd1c39
+
+### TabScrubber: Stop propagation on finishing scrubbing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cf9192
+
+### Filter local file results for images.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6084a124
+
+### [A11y metrics] Add a11y standard metrics for OOBE startup sound
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8b901a
+
+### [FS Shortcut] Show the fullscreen exit toast while pressing on the Esc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2208904
+
+### gd: Enable Game Dashboard by default.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d07cceb9
+
+### Add front-end for promo for history embeddings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33f59e5
+
+### Reland "Make IssueLensRequest use CenterRotatedBox"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/233496d
+
+### Migrate most of chrome/browser to FeatureKeys.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd288ba
+
+### Do not show RWI interstitial if page has navigated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b96bb96
+
+### Track whether the layout has changed when capturing toolbar snapshots
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/630227d
+
+### [Omnibox] Add translation following omnibox to appearance animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/488f76a
+
+### [User Education] New Badge 2.0 Metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da811d1c
+
+### [tab group v2] Implement pin and unpin tab group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8262625
+
+### [FedCM] Parse account labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95acc09
+
+### [User Education] Move histograms to user_education, add sanity checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac15ff8
+
+### [FPP] Add UX flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0759f9c
+
+### cros: Speculative crash fix inside frame caption container view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95f2947d
+
+### Tab Organization: Make feedback per-session
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb6ef14
+
+### [ TabRestore ] Initial Tab Restore Tab Implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/184df40
+
+### Stopping permissions from showing over Lens overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee66f18
+
+### [tab group v2] Add Everything menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07fa0e7
+
+### [LHS indicator] Remove Browser from LHS indicators.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dc7240e
+
+### Android: Remove deps that are listed as srcjar_deps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5459329
+
+### [android pip] Remove UAF in PictureInPictureActivity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/674e5d5
+
+### Revert "[Reland 2] lens overlay: Fix context menu entry point."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94112df4
+
+### [Product Specifications]: Manual selection menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46ab815a
+
+### Add reopening the autofill popup after adding an address.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a4a666f
+
+### [TSLO] Increase the tab strip height based on app header's height
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b370c5
+
+### Move searchbox button labels out of the NTP directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cef84a4
+
+### os settings: deprecate flag "OsSettingsDeprecateSyncMetricsToggle"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e60de50
+
+### Implement omnibox icons and interstitials change for URL filtering pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f917fa
+
+### [FedCM] Do not hide the loading modal when pop-up window is displayed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c384513
+
+### [Autofill][Desktop]Set accessible names for Loading & Confirmation UX elements.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4bffd4
+
+### Fix crash from unfulfilled promise during sync consent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dea192
+
+### [gbb-cct] Create new request object for getting PageInsightsConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54f815dc
+
+### [Codehealth] Use @JniType annotations in chrome/.../autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7a5822
+
+### [history-embeddings] Create tab helper and plug into service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a02f4bae
+
+### Add \`CalendarClient::IsDisabledByAdmin\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bf3c60
+
+### Deflake infobar test on tsan builder by adding back FlushEvents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/29c6ff3
+
+### [Android] Use @JniType for Strings in keyboard_accessory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c7e60b6
+
+### Delete tracking protection hats configs code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/045075f
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa75a2f
+
+### [Mullhet] p_m_util::GetMatchType supports grouped credentials.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c681636
+
+### Revert "Make IssueLensRequest use CenterRotatedBox"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22610067
+
+### Revert "Reland "Add views for the PaymentsWindowUserConsentDialog""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5898d1
+
+### support-tool: Update OWNERS files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6ea50b
+
+### Get domain from the email during lock screen online reauth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca849cd7
+
+### [OOBE] Populate information screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8a8ab9
+
+### privacy-hub: Add sublabel to app-management-permission-item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11481ed8
+
+### nit: TabSharingUIViews housekeeping
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9adebb48
+
+### Reland "Add views for the PaymentsWindowUserConsentDialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9d2b58f
+
+### QA+Mahi: Apply ViewShadow to ReadWriteCardsView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ec067f0
+
+### Move recent file suggestions code to a separate file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d38da6b
+
+### Add minimal code for registering SWA for conch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0954e27
+
+### Add and move saved tab group feature flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f958f1
+
+### Remove arc-enable-aaudio-mmap flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5a5370c
+
+### Make real-world-identity chrome://flags flag available on all OSes
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a9b339
+
+### clean up modernize_visual_update_small_bottom_margin
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/10b744b
+
+### [Mullhet] Remove kFillingAcrossGroupedSites feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9d5525a
+
+### Remove expired "enabled-async-dns" flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3a15fc6
+
+### [Device Posture][Viewport Segments] Integrate with the Origin Trial framework.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f1cefdca
+
+`);
+              </script>
+            </body>
+        </html>
