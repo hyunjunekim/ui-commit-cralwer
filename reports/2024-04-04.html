@@ -1,0 +1,356 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-04
+### WebUI cr-checkbox: Default to CR2023 styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/855720f
+
+### ozone/drm: Re-enable asan tests for HardwareDisplayControllerTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/486815727
+
+### Avoid dangling pointer with gdb_device*.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ccee97
+
+### use GetPreferredSize(SizeBounds) instead of GetPreferredSize() in //ui/views/controls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d8aa4d9
+
+### Implement web platform draggable region support for WebUI bubbles
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32ca9a51
+
+### ozone: Decrease touchpad click movement timeout
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/461df6f
+
+### Add feature flag for fast touchpad click movement
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d62f50f
+
+### ozone/drm: Release PageFlipRequest reference in tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/be0c33a
+
+### Remove incorrect DCHECK() in interaction_sequence.cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ce75ae3
+
+### [Android] Add @JniType to o.c.c.browser.notifications
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22c5233
+
+### Update source in WebContentsImpl::GetColorProviderColorMaps()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a06bd3e
+
+### Reland SVG, custom data and image copy protection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/302580f
+
+### ozone: Add metric for touchpad clicks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eee7aa9c
+
+### Add missing SkPath includes
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9de41377
+
+### Remove opaque-image detection from PNGCodec::Decode.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ddb0912
+
+### Remove obsolete deps on libpng and libjpeg.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fd117f24
+
+### DCLayerTree: Store separate VideoProcessor for SDR and HDR content
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3cfb0f8
+
+### Reland "[accessibility] Fix DCHECK while handling AddRef in AXPlatformNodeWin"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4cc3297
+
+### gfx: update PNGCodec.DecodeGamma unit test comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd6ab0b7
+
+### use GetPreferredSize(SizeBounds) instead of GetPreferredSize() in //ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5aefbb6e
+
+### nit: Remove unnecessary std::move
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6acbc8a9
+
+### flags: Clean up allow-eap-default-cas-without-subject-verification
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a01b19
+
+### [skyvault] Initialize prefs before current dir
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e0b0e0
+
+### [FilesF2] Make addVolume action as an action producer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89bfa4c
+
+### Add loading state for history embeddings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/509f671
+
+### Display app icon in the install dialog in a circle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ea91eab
+
+### Fix proxy config command for kcmshell6
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02bdbda7
+
+### Revert "gd: Enable Game Dashboard by default."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d2b96d4
+
+### Reland "Reland "Add views for the PaymentsWindowUserConsentDialog""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa2c2450
+
+### QA+Mahi: Fix quick answers view layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb778ee3
+
+### [Extensions cleanup] Remove ACCEPT_AND_REMEMBER_OPTION option
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e10e0b
+
+### Set time dialog: Remove Jelly flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7904e2a
+
+### Adjust ranking algorithm for continue section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a05e33c
+
+### [Page info bottom sheet] Add new bottom sheet for feedback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61f5b4d
+
+### [search bubble] Land SearchBubble WebUI shell
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/278a6b2
+
+### Remove unlaunched shared clipboard feature from Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1aab37
+
+### Update install dialog strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac62936
+
+### Split GetRecentFiles to local and drive.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/429301c
+
+### [DefaultPrompt] Merge notification service into prompt manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fa6b886
+
+### [TSLO] Desktop windowing structure/implementation updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cbd927
+
+### [dPWA] Remove the kCreateShortcutIgnoresManifest feature.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e09aa0c1
+
+### display: Add metrics to measure default settings performance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae0090e
+
+### [Benefits] Add IPH for educating users on the existence of credit card benefits.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dff7dd3
+
+### CrOS Bluetooth: Cleanup Jelly flag logic in bluetooth pairing dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d7f611c
+
+### Tab Organization: Implement v2 greenlines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8628000c
+
+### [PWA] Remove old OS integration APIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a997a37c
+
+### [freezing] Freeze browsing instances instead of pages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0c7e07
+
+### [gardener] Disable DetachToBrowserInSeparateDisplayTabDragControllerTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfd8780
+
+### [TabGroupIndicators] Add group indicator a11y description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff6a311
+
+### [HaTS] Fix crash when trigger_id is dynamically passed in HaTS surveys
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae888dc6
+
+### Cleanup Jelly flag logic in internet detail dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4772f34
+
+### [CSC] Make a click on the CSC indicator open PageInfo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16a9005
+
+### Make QueryController specify CenterRotatedBox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1ed72c
+
+### [CSC] Scope CSC indicator lifetime
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0a3fc8
+
+### Printing: Add wait for renders to fix flakes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88c61ec0
+
+### Printing: Refactor wait for element exists function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/981d468e
+
+### kbd-backlight: Add auto-brightness toggle element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17db9f4
+
+### [UNOp2][Android] Sign out when history sync is declined in recent tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/244df15
+
+### [UNOp2][Android] Hook up the new signin flow to the recent tabs promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1091639
+
+### [Shopping UKM] Add UKM for ShoppingInformation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3a7cd7e
+
+### [Layout] Fix some tests that fail when sync layout is removed from BrowserView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e3b7633
+
+### brightness: Add SetAmbientLightSensorEnabled to brightness delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d3cd2c
+
+### add demo mode support to snapper provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c691bea
+
+### [LHS indicator] Fix crash with invalid WebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9519b46
+
+### Fix crash from null profile in sync consent callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0f9bd2
+
+### [DefaultPrompt] Shuffle default prompt logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c135f1b
+
+### [Mullhet] Add PopupItemId::kTitle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4017fa4c
+
+### Parse ProfileId from PlusAddress API responses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d1ac35
+
+### Disable DetachToBrowserInSeparateDisplayTabDragControllerTest.DragTabToWindowInSeparateDisplay in Linux MSan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e02b3a2
+
+### [Survey] Use Chrome sync logo for survey icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a0a9d6
+
+### Fix address editor footer for non-account profiles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d27959
+
+### Revert "Reland "Animate side panel opening and closing.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38f34505
+
+### Disable StandaloneWindowMigrationNudgeBrowserTest.CheckNudge test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfc19be
+
+### [waffle]Add an accessibility label to the search engine choice list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28ff984
+
+### Revert "[tab group v2] Add Everything menu"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc4a1f3
+
+### Birch: Avoid setting file suggest items when no results available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15bf920
+
+### Revert "Add Family Link Settings to feedback system information on Desktop / CrOS."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7c6271
+
+### [CrOS Cellular] Add APN policies feature flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d7673c4
+
+### [ TabGroups ] Add TabGroupsSaveV2 to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7ec7ec9
+
+### Add kill switch for app indexing report
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6884984d
+
+### Add chrome:flag for page info sharing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ff57742
+
+### clean up modernize_visual_update_smaller_margins
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5fc2ca8
+
+### Tracking Protection 100%: Expose the flag to Clank
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cebb197
+
+### feaures: Clean up secure DNS with identifiers flags and features
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a9f85b7
+
+### flag-metadata: remove skip-service-worker-fetch-handler flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8ed9940
+
+`);
+              </script>
+            </body>
+        </html>
