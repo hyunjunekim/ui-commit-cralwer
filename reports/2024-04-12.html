@@ -1,0 +1,420 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-12
+### [Excellence] A quick fix on the clipboard history bitmap view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e248b32
+
+### [searchbox] Create connection to set searchbox thumbnail from handler.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ea0072
+
+### wayland: Remove non-shell SetImmersiveFullscreenStatus logic
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcdfa5d
+
+### BoxLayout: Inside Border Insets should not be calculated twice when collapsing margin spacing.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52eea7bc
+
+### [views_ax] Moving IsAccessibilityFocusable refs to use ViewAccessibility
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53216c4
+
+### split-refactor: Fix identification method for split modifier keyboard
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d92d957
+
+### Make the use of MetricsReporter in the WebUI searchbox optional.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b8d2f1
+
+### Re-enable DrmWindowTests with ASAN
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac89cbe7a
+
+### Re-enable ScreenManagerTests with ASAN
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af855c2
+
+### Clean up ToolbarUseHardwareBitmapDraw flag
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37a71aae
+
+### ElementIdentifier: restore most constexpr behavior
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7cc931f
+
+### Refactor dismissal reason of modal dialogs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57cd3d9
+
+### [Lacros]Request shm buffers with alpha for bubble shadow in sw mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eadf7b6
+
+### win: Cleanup DComp-specific APIs from public interfaces
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a1629d8
+
+### events: Fix missing field in KeyboardDevice constructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87812cf
+
+### Revert "[A11y] Make reparenting errors non fatal (temporary workaround)"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4af7be6
+
+### [Views AX] Move a11y switches to accessibility_switches.h
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e65c19
+
+### ozone/drm: Re-enable more unit tests with ASAN
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2b698f
+
+### BoxLayout: view with 0 preferred size should ignore margin.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7b3b680
+
+### [A11y] Make reparenting errors non fatal (temporary workaround)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb43b77
+
+### ui: Rename window_show_state to state
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11a66b1
+
+### [ui views] Update bulleted label text style
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7ea954
+
+### Re-enable DrmOverlayValidatorTests with ASAN
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a329692
+
+### [a11y]: eliminate unneeded copies in ui::MergeTreeUpdates flow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8e98585
+
+### [skyvault] Navigate out of local folders if disabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab00ca71
+
+### Add weidongliu@  to ui/views/layout/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/97f9a14
+
+### preload: Fix Prerender2NewTabPageTrigger parameters
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9e30b725
+
+### Files app: Fix race in ListContainer and CommandManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43736aa3
+
+### Hide site settings links on os://extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99ca66c7
+
+### [WebAuthn] Add description rows to gpm onboarding sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f20d359
+
+### [Data Sharing] Show modal when invitation is clicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a538f71
+
+### editor: update placeholder text for rewrite dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eb2fbe
+
+### Add menu item for default browser prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b585ba
+
+### [omnibox] Sets the page URL from embedder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1968ef7
+
+### [CVV Storage]Add the a11y description post CVC saved on 3 dots menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/661aba6
+
+### [VC] add IsEligibleForSeaPen check for vc sysui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80c006f2
+
+### Revert "Reland "[dPWA] Enable os integration for tests that specify override.""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/877c8ac
+
+### [WebAuthn] Add separate dialog for bootstrapping during creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6f821a
+
+### Show default browser chip when observer fires
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ddab3bc
+
+### [Mahi] Add icon to mahi settings and add a deep link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6769fc
+
+### Get user gesture state in ExclusiveAccessPermissionManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6651a33
+
+### Remove page action icon views for Send Tab to Self/Device and QR Code Generator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89933feb
+
+### [optimize-content-settings] Enable indexed content settings by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdb4efc
+
+### Add \`bool TasksClient::IsDisabledByAdmin()\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4509a06
+
+### Tab Organization: Wait to show ui until ready
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc1e8a82
+
+### Reland "picker: call fend api for math results"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b906d5c
+
+### Add an Init method to TabFeatures.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/415f5ba
+
+### [gtm] Fix the bug that new empty task is not showing in empty list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c133363
+
+### Add browser window features.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4afc98
+
+### [ ChromeRefresh ] Remove Refresh Code from RecentTabsSubMenuModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef03cff5
+
+### Clean up legacy Borealis installer, part 1.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9b9a5ec
+
+### [DefaultPrompt] Logic for triggering app menu prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38b43cd1
+
+### Add //chrome/browser design principle documentation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/598410c
+
+### tabs: Add CHECKS for TabModel::SetContents().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f53d5e2
+
+### [Lacros] fix flaky test DetachFromFullsizeWindow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/085a5f5
+
+### [tab group v2] Add saved tab group pin/unpin menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/957fc796
+
+### [FedCM] Remove duplicate variable should_destroy_dialog_widget_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae8858a
+
+### [VCN] Improve a confusing ending case for card unmask prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ebad21f
+
+### [Desktop] Implement a ESB promotion on the downloads page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c833fe9
+
+### [Autofill] Rewrite FormFieldData::value to a member function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d0f10f
+
+### Revert "[UNOp2][Android] Implement add accounts flow for re-FRE"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60ccf70
+
+### Refactor data protections to handle screenshot protection.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45bcd8a
+
+### [product specs] Shorten naming scheme for files/elements.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8264597
+
+### Revert "Roll nearby-connections from 33e682f24427 to f788b891908d (52 revisions)"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15cf90e
+
+### Add Features annotations processing to Robolectric tests by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f366b1eb
+
+### Migrate TODOs referencing old crbug IDs to the new issue tracker IDs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/965f905
+
+### Remove IsActiveDirectoryUser() from user_manager/user.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b29da42
+
+### Update \`CalendarClient::IsDisabledByAdmin\` to check another pref
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b0ce1e
+
+### Remove static Profile reference from PreloadPagesSettingsBridge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfba779e
+
+### Clean up UX revamp flag in OmniboxSuggestionsDropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b705e2d
+
+### Track PerformanceManager PageNodes in system profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81bb60c
+
+### Reland "[iOS Promo] Feature flag for iOS addresses promo."
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8730b1a
+
+### [Cake] Update strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddda70ad
+
+### Suppress flaky SearchEngineChoiceUIPixelTest on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4587aaa
+
+### Make PaymentsDataManager an AccountInfoGetter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9098ab
+
+### Consolidate performance settings page constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00649eb1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8568776
+
+### [UNOp2][Android] Implement add accounts flow for re-FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9a9111
+
+### [UNO] Sign-in promo bubble delay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba4c0c4
+
+### [FedCM] Fix showing incorrect modal dialog when add account is supported
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30dcebb
+
+### Move popup controller factory method and its test to interface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f203428
+
+### Add API for password cross domain confirmation popup available in core/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b0dba3c2
+
+### [5/n] Fallback tab dragging: Make TearOffWebApp test pass
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bf2b781
+
+### Move sub-popup-related tests to AutofillPopupControllerImpl file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8aea01f
+
+### Move a11y-related tests to AutofillPopupControllerImpl file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/830b0781
+
+### [UNO] Sign-in promo bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f08a9b
+
+### [UNO] ShouldShowSignInPromo for Autofill sign-in promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d5eef94
+
+### Introduce a test fixture for AutofillPopupController unit tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d55acd3
+
+### Move more PDM sync code to ADM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a683ef32
+
+### Allow KeepPopupOpenForTesting() to also ignore kEndEditing hiding reason
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3706470
+
+### Add the "Data in your account" preference to the unified settings panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab508ffab
+
+### Reland "Add ScreenCaptureLocation policy test."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5058a7c
+
+### [CSC] Minor clarifications through renaming things
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/625a985
+
+### editor: announce editor card when shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e5743c
+
+### Always show LanguagePacks notice in CrOS inputs Settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e63068
+
+### Add alt text for app icon in the install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/680effa
+
+### [Office upload] Remove Dump for kUnexpectedAlternateUrlHost
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6746d66
+
+### Graduate and dismantle kHandwriting{LegacyRecognition,LibraryDlc} flags.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f0451e8a2
+
+### [AIS] Update "no app data" install dialog state to match UX mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1dcd2fe
+
+### Cleanup flag TabEngagementReportingAndroid
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0670e32
+
+### [tab group v2] Add kTabGroupsSaveUIUpdate to chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7fddf1b
+
+`);
+              </script>
+            </body>
+        </html>
