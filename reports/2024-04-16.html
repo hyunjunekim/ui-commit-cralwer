@@ -1,0 +1,388 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-16
+### [skyvault] Add default display root integrations tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51b75a9a
+
+### [Views AX] Move AXEventNotificationDetails to ui/accessibility/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/517ba184
+
+### heatmap: Enable support for Geralt.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/123fb10
+
+### views: Update BulletedLabelListView constructors
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54c8974
+
+### Fix bug where responsive toolbar overflow button is seen during toolbar animation
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f72986bd
+
+### WebUI cr-toggle: Default to CR2023 styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9cf8470
+
+### [Test Automation] Move from absl to STL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e40e8ab
+
+### format windows headers using new config.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8d6b16f
+
+### Retire aura output / zaura output manager v1, part 2 (and final)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2450d66
+
+### Call EnsureAppPinnedInModelAtIndex() from PinAppAtIndex()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/732de09
+
+### [ASH] History appfilter sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96ef4b6
+
+### Fix color for kColorDownloadBubbleInfoBackground
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5766947
+
+### tabs: Hook up TabInterface with LensOverlayController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2091c71f
+
+### [ASH] Filter by app chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9e76d8
+
+### [UrlBar] Cleanup AndroidVisibleUrlTruncationV2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0cee404
+
+### [Read aloud] GetVoicePackInfo mojo APIs for Natural voices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12a89d7
+
+### [User Education] Move KeyedNotice promo type to allowlist-only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/257085b
+
+### Render answers in NTP Realbox using RichAnswerTemplate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2573756
+
+### Remove unused includes and using statements from fullscreen test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26f0e83
+
+### [DTC] Default enable feature on ToT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aeefbd9
+
+### Lower website media volume while showing keyboard/pointer lock prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27d771a
+
+### Add interactive ui test verifying preferred app for supported links.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20989d0
+
+### Fix DCHECK when restoring a window where the first tab is inactive.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e078693
+
+### Update min version for inline pdf viewer support to V
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ef79bd
+
+### [DefaultPrompt] Consolidating logic for closing all prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38451f4
+
+### Migrate usages of FromProfileAndroid() to @JniType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b40a811
+
+### [ RecentTabs ] Clean up RecentTabsSubMenuModel (づ￣ ³￣)づ
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c2efa9
+
+### WebUI: Migrate FlagsUI to WebUIConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10a7749
+
+### Remove unneeded to_address.h includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59c1b041
+
+### PDF OCR: Make its toggle button searchable on ChromeOS Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e97115
+
+### Begin using RichAnswerTemplate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/570c946
+
+### Rename SetDefaultLanguageCode to SetLanguageCode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/870f67e1
+
+### [SavedTabGroupV2] Update BubbleView options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ef740e
+
+### [live-perview] Unittest for MediaCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08d8b04
+
+### VCN 3DS Treat invalid query params as closing the pop-up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/feb8acb4
+
+### [live-preview] Add PageInfoPreviewsCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0c158f
+
+### [FedCM] Fix use other account on button flow modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21bd6e2
+
+### Deleted unused code for dom distiller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fc3b8d
+
+### Modify ContinueSAMLSignin() to no longer require ReplaceWebContents.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54540e4c
+
+### Remove TabStripModel::DetachWebContentsAtForInsertion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afdf1e5
+
+### Log chrome://dino visits to WebUI.CreatedForUrl histogram.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d36f01e7
+
+### [live-preview] Unittests for TotalDevices metric collection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e6983bb
+
+### WebUI: Record chrome-untrusted visits in WebUI.CreatedForUrl histogram.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61f2a390
+
+### [Autofill] Rewrite FormFieldData::renderer_id to a member function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33ad432c
+
+### Migrate TODOs referencing old crbug IDs to the new issue tracker IDs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9130192
+
+### [QuickStart] Dynamic subtitle on success screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0aa1621
+
+### [FedCM] Fix cancel when use other account pop-up is open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c6c958
+
+### nit: s/GetButtonEnabled/IsButtonEnabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/035fb3d
+
+### Consolidate button logic in TabSharingInfoBarDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c918b3a
+
+### Record UMA histogram whenever a HaTS survey is completed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8965e57
+
+### [FedCM] Fix uaf
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a1618bec
+
+### [Autofill] Rewrite FormFieldData::name to a member function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb6b337
+
+### [Autofill] Rewrite FormFieldData::form_control_type to a member function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b98ad3a
+
+### [Tab Resume 2.0] Boilerplate for UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d66b961
+
+### Refactor stop-button code into TabSharingInfoBarDelegate::StopButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6590c520
+
+### Use the page language when it's available instead of browser language
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ebfa91
+
+### Update prefs for dismissed prompt when accepted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28e24f4
+
+### Add string resource for "Unsubscribing...".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8ae7db
+
+### Mahi: Add metrics record if page is distillable when menu is requested
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7777e6c
+
+### Android: Use stack-allocated GURL in GURLAndroid::ToNativeGURL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7912fd3
+
+### app-controls: Renaming to shorten the code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46073ba2
+
+### [Extensions c2s] Check action's title instead of tooltip in test util
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9b4b0f
+
+### Add TOP_LEVEL_TPCD_ORIGIN_TRIAL as a content settings type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85bfdb4
+
+### Add interactive ui tests for existing users installing container app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db9b429
+
+### Clean up UX revamp flag in Carousel Suggestion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74aa932
+
+### Mahi: Apply shadow to MahiCondensedMenuView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eccb447
+
+### [OOBE] Fix cbx device name in string for AiIntro/Tuna
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de33a75
+
+### nit: Avoid obfuscating \`auto\` in ConfirmInfoBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e12de60
+
+### Remove kgrosu@google.com from chrome/browser/ui/android/google_bottom_bar/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a59ac0c
+
+### Remove kgrosu@google.com from chrome/browser/ui/android/page_insights/OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ab0f755
+
+### [PEPC] Bugfix: Align the Spinner icon with the first line of text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c32bc221
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73092e5
+
+### Hide the Mullet IPH on scroll and on overlap with password generation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63caa4f5
+
+### Revert "Allow the autofill popup to overlap with the manual fallback IPH"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72efc45
+
+### [Mullet IPH] Show the Autofill Popup asynchronously
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc1bb3d
+
+### [SHv2] Distribute pw checks randomly based on weights of days
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5553238
+
+### [SHv2] Add help center link to Safety Check page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a276af
+
+### [QuickStart] Fix strings on QR code screen.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3620d03
+
+### nit: Rename InfoBarButton to TabSharingInfoBarButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d4aac3a
+
+### [UNOp2][Android] Update strings for NTP avatar sign-in flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f585159
+
+### [CSC] Add browser tests covering the indicator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8231a70
+
+### Stop managing window activation state via crosapi.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ce75dc
+
+### [Settings] Indicate to screen readers that CBD open in new tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e187b014a
+
+### Move PDM::GetCountryCodeForExperimentGroup() to PaymentsDataManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f806fee
+
+### Change PasswordCrossDomainConfirmationPopupControllerImpl methods order.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5341529
+
+### Add interactive ui tests for container app ineligibility.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f3a641
+
+### Add AutoPictureInPictureVideoHeuristics to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ec6be5d3
+
+### [Tab Group Sync] Added flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/09923dd
+
+### Add chrome://flags entry for app menu chip/item
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9af8456
+
+### [Default Nav Transition] Add a content flag for incrementing LSID.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3a23da6
+
+### [Compose] Only disable proactive popup from deny list
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ad88da
+
+### camera: Add run-video-capture-service-in-browser to Ash's flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9839482
+
+### [Omnibox] inspire me/ZPSGroupingFramework cleanup
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/df53cb2
+
+`);
+              </script>
+            </body>
+        </html>
