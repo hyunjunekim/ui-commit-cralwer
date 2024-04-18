@@ -1,0 +1,432 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-18
+### events: Implement modifier remapping for FN key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7164e49
+
+### [Extensions-c2s] Customize allow and dismiss request buttons
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a06f4e
+
+### WebUI: Add a Lit version of icons.html and leverage in cr-expand-button
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdb3908
+
+### Revert "[Shortcuts] Icon fetcher for a given WebContents."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9a7624
+
+### Files app: Add ActionsProducer for materialized view scanner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/65dbdc7d
+
+### ScrollView use CalculatePreferredSize(SizeBounds) override.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/efc835fa
+
+### use CalculatePreferredSize(SizeBounds) in //ui/views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d2159606
+
+### History Embedding: Implement HistoryPage.SearchResultClicked metrics
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8db71e
+
+### WebUI: Add a way to generate .html.ts files for cr-iconsets
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc36c40c
+
+### [views_ax] Introduce ComputeIsIgnored to ViewAccessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03b2b89
+
+### [CrOS Cellular] Show policy icon when AllowApnModification is false
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e2155c
+
+### [Shortcuts] Icon fetcher for a given WebContents.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/07a8dd72
+
+### [views_ax] Introduce private \`SetState\` method to \`ViewAccessibility\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8192b112
+
+### [ui] Add NOTREACHED for BT2020_CL usages in color_transform
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/923ee21
+
+### Revert "display: Adjust zoom factor for firstly connected external display"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c079218
+
+### Spanify base::RefCountedMemory
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43172268
+
+### WebUI cr-toolbar-search-field: Default to CR2023 styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f146af
+
+### WebUI cr-toggle: Fix RTL knob
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7781840
+
+### display: Adjust zoom factor for firstly connected external display
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b8ee22
+
+### remove NOLINT comments for include order
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0bcf212
+
+### [A11y] Rename AccessibilityFatalError now that it's not fatal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ceb588
+
+### ui: Verify desktop_window_tree_host_lacros is needed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ee1341b
+
+### [Files] Focus on the target element before showing context menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10afb15
+
+### wayland: Set kNormal as a window state for WaylandPopup/Bubble
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ecb6a31
+
+### Support \`window.moveTo()\`, \`window.moveBy()\`, \`window.resizeTo()\` and \`window.resizeBy()\` in MakoRewriteView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/373bf16
+
+### PDF OCR: Add it to ChromeOS.Settings.Accessibility metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8495478
+
+### Add test to check that new browser windows have focus.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68670fc
+
+### Add new cast device entry views to CastDeviceSelectorView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47c19a7
+
+### TabScrubber: Set capture on scrubbing to stop overview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da2c535
+
+### [FedCM] Log AccountChooserResult UMA metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d00a02a
+
+### [Omnibox] Don't run ime-synchronized animation when kb won't show
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa028e1
+
+### Delete AppShimMenuController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4eed31b
+
+### [tab group v2] Add "Tab groups" to 3-dot menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44b192a4
+
+### [dPWA] Check-fail any tests that use OS integration w/o faking.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fa7a31
+
+### Don't close app menu item when prompt is dismissed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77859c4a4
+
+### app-controls: Implement settings row UI with set up and enable toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d46e59
+
+### Fullscreen: Remove unused params from CanEnterFullscreenMode[ForTab]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16f130d
+
+### Fix some flaky web app integration tests on mac OS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae77a1e
+
+### [WebAuthn] Move focus to cancel button on pin loading view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fbf4a8
+
+### Windows: Correctly disable mouse during screenshots
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a75a39c
+
+### Clean up pdf/pdf_features.h DEPS in //chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c37f4c
+
+### Disable LensOverlayControllerBrowserTest.DelayPermissionsPrompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/673f0f6
+
+### [Product specification] Implement basics for product selection widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0522708
+
+### Disable child accounts from toggling consent in privacy setting page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a47e23b
+
+### CrOS Settings: Fix crash due to missing multitasking string key
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2453b2
+
+### Enable Safety Hub by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a8881d8
+
+### Disabling showing memory usage in hovercards for system apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/021bc74
+
+### Disable HostedAppProcessModelTest.FromOutsideHostedApp on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/138a8014
+
+### Disable some DefaultBrowserInfobarWithRefreshInteractiveTests on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/471e1930
+
+### [lensoverlay] Accept search box query and url params in lens overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd99e5b
+
+### Add uma metric logging for default browser prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95f01ec4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/002d55a
+
+### [WebAuthn] Initialize pin textfields with pin held in sheet model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96a859d
+
+### [Read aloud] InstallVoicePack mojo APIs for Natural voices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72eb528
+
+### Disable ThumbnailTabHelperInteractiveTest.TabDiscardPreservesScreenshot for SANITIZER build
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05c375b
+
+### [PWA/Universal Install] Change webcontents observers for dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbb0f348
+
+### Chrome/Updater: Transition keystone_infobar_delegate.mm to .cc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70c7a2f
+
+### Remove Per User feature flag from ToT.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/392675e6
+
+### lensoverlay: Allow searchbox to get latest interaction response.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c6ccdf
+
+### [lensoverlay] Disable flaking test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af171195
+
+### Decouple CrOS secondary user UMA consent from device owner consent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f298e90
+
+### [STGV2] Cleanup CreateHistoricalGroup and group closing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fec501
+
+### Revert "[Uno-D] Enable fieldtrial_testing_config for full phase"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9291b9a8
+
+### [Webauthn] Make enclave a priority mechanism for make credential
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d877c75
+
+### [WebAuthn] Add username label to GPM Create Sheets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc89f48
+
+### Web UI changes for Magnifier select-to-speak
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2af6f044
+
+### wallpaper: remove unused wallpaper functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bf53d1
+
+### [sync] Rename GetEncryptedDataTypes() to better reflect behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3034a7b
+
+### Enable wallpaper search on ToT for en-US in US
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6e8951
+
+### lensoverlay: Move response protos to //components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5866f48
+
+### Remove explicit UrlBar re-focus after Assistant VoiceSearch cancel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5efc7088
+
+### Use common logic to kick off Lens interactions from SearchActivity.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7edd67a
+
+### Route SearchActivity VoiceSearch through common code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c222b50
+
+### Since accountInfo can be null, use core account info instead.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2fb819
+
+### brightness: Add BrightnessChangeSource to SetBrightnessPercent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/681b726
+
+### Remove the Java version of AndroidAutofillClient.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83e9cc2
+
+### PDF OCR: Enable scren reader notification in PdfOcrController on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ca43d2
+
+### [UNO] Fix crash caused by NotifyCustomEvent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd88bda
+
+### [DownloadReport] Notify download delegate only if called at shutdown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eccd28f
+
+### c/b/ui: add recommended policy for becoming an owner
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37fba5a
+
+### PopunderPreventer: Avoid ActivateTabAt() ReentrancyCheck
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93359b66
+
+### [waffle]Change button state when needed on resize
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2202021
+
+### [Autofill] Rewrite FormFieldData::label to a member function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95da67b
+
+### [bookmarks] Broadcast base::Location triggering deletions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d813523
+
+### [Uno-D] Enable fieldtrial_testing_config for full phase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b980d0
+
+### Add a permission prompt view for keyboard and pointer lock
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f0b7f0f
+
+### TabSharingUIViews: Use ReplaceInfoBar whenever possible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84baad7e
+
+### Remove Android-specific methods from AutofillSuggestionController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74e66bd
+
+### [sync] Improve fake passphrase-related logic in TestSyncService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3452b6
+
+### [Uno-d] Profiles created through signed in intercept remains signed in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fe1d3e
+
+### Make chromium style checker happy about PlusProfile
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3718d1
+
+### [PIX] Load risk data for initiating a payment request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea5374a
+
+### WebAuthn: Add row with username and icon in Create GPM Passkey dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51ca4f7
+
+### Let AutofillKeyboardAccessoryAdapter inherit from KA controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ade4ba
+
+### [gardener] disable flaky app_list tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/740cf3c
+
+### Use for Lens overlay request if signed in and flag enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9f053df
+
+### preloading: Check ActiveWebContents in BookmarkButton::StartPrerendering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26ab7b8e
+
+### Dismantle obsolete ash::features::kMultilingualTyping flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/29d6003
+
+### Remove flags and fallback for WebAPK install ML prompt
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9722febc
+
+### [history] Delete history-journeys-labels flag and its associated feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2d26ce7
+
+### [android] Add about flags entry for ReplaceSyncPromosWithSignInPromos
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bb7c59e
+
+### Clean up expired flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6c6d251
+
+### [android] Remove show-identity-errors-for-signed-in-users flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/22a1aec
+
+### Don't set force_ota in InstallRequest
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5036d22c
+
+`);
+              </script>
+            </body>
+        </html>
