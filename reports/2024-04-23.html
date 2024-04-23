@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-23
+### ozone: evdev: Add quirk to identify 0x18d1:0x5067 as internal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7fe853
+
+### WebUI: Add cr-tooltip, replacement for Polymer paper-tooltip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bfe1777
+
+### [Lacros]Account for window targeter when setting input region
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb912fcd
+
+### Files app: Add integration tests for Materialized Views
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98dc003
+
+### Ensure LSI is allocated for ui::Compositor when it is shown
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bb1236
+
+### Exclude chrome:// and selected URLs from dropdown
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16e9b9f
+
+### Migrate TODOs referencing old crbug IDs to the new issue tracker IDs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/923a33e
+
+### Style product selector menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4cd7420
+
+### [a11y] Update Lottie animations to respect Reduced Animations
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/89d684c
+
+### [a11y]: fix lacros a11y tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a2c68f
+
+### [a11y] Update enums in mojom files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0f00634
+
+### events: Implement six pack key rewrites using function key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22cc74f
+
+### [UI Views] IWYU on ui/views/view.cc.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd60926
+
+### WebUI: Use cr-icon and cr-iconset in cr_components/help_bubble.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a5c66e
+
+### gpu: Add gfx::BufferUsage::PROTECTED_SCANOUT
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d20dfa6
+
+### Disable top chrome font flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/222a94b
+
+### Migrate TODOs referencing old crbug IDs to the new issue tracker IDs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/81f4f2c
+
+### [Fuchsia] Update api level into 18
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1206179
+
+### [Read Aloud] Add feature flag for automatic word highlighting.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/acfe680
+
+### Ozone: Add disabled flag to use CTM to perform color conversion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/59e2e32
+
+### Fix setting corner radius in MdTextButton::OnBoundsChange().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fda3580
+
+### Files app: Fix changing directory when FileKey isn't in the store yet
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ff11c2
+
+### [gardener] Disable a flaky WebAppBrowsertest on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0566c2
+
+### soda: Update browser tests to remove monolingual assumptions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4236fc7
+
+### [Read Aloud] Show downloading message on language menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9cdef6
+
+### picker: add source to text results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c60118c
+
+### [Crostini] Crostini app unminimize to the most recent display
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb2d2b1
+
+### Extract MainView as QuickAnswersStageButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a34379a
+
+### [FedCM] Fix cancel after account selection on button flow modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62e3ebd
+
+### NoStatePrefetch: Rename prerender_origin to no_state_prefetch_origin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1c2f32
+
+### [Extensions c2s] Verify hover card updates when site access changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ccc2fc
+
+### Revert "Reland "[Product specifications] Add UI components for tab strip entry point""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcc45ead1
+
+### [Extensions c2s] Remove HasIcon() since it always returns true
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e839ea7b
+
+### [WebAuthn] Add handling forgot pin button flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9bf14cc
+
+### Reland "[Product specifications] Add UI components for tab strip entry point"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c28012b2
+
+### [Test Automation] Remove unnecessary check, expand workaround.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f45f49
+
+### Widget re-layout with view layout invalidation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3156e64
+
+### Don't show default browser prompt app menu item/chip on incognito/guest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57d6f25
+
+### kbd-backlight: Record keyboard brightness change via slider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a6351d
+
+### kbd-backlight: Add SetKeyboardAmbientLightSensorEnabled in ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac4cbd4
+
+### Suppress two ThumbnailTabHelperInteractiveTest tests on Win arm64 debug builder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4934704
+
+### Replace clear with delete in CiC text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6af692
+
+### Adapt to new PDF Viewer APIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4566f412
+
+### [STGV2] Force group to be ungrouped if closing is stopped.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae83947
+
+### [waffle]Remove TODO for obsolete issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a07dad19
+
+### Revert "[Layout] Revert removal of async layout call in LocationBarView::ChildPreferredSizeChanged"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09665db
+
+### Style product specifications dropdown button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/212e2f5
+
+### [lensoverlay] Update pinnable side panel entry to toggle the overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/820244b
+
+### RE-enable flaky default browser infobar tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9458a25
+
+### [ASH] Empty state illustration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9abed6
+
+### [QuickStart] Add custom WiFi error strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24b60fd
+
+### [FedCM] Disallow swipping to go back on Android during verifying phase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ac6569a
+
+### Update when we change the ephemeral toolbar state for side panel close.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/156fb88
+
+### Eliminate AutofillKeyboardAccessoryAdapter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b623ef
+
+### [A11y] Add UMA metrics for caret blink interval
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27842df
+
+### Create AbusiveNotificationPermissionsManager with SB checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/702eafe
+
+### [Autofill] Rewrite remaining FormFieldData fields to member functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b470b20a
+
+### [a11y] Update caret blink interval immediately
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fba12de9c
+
+### [gardener] Disable flaky WebAppFrameToolbarBrowserTest on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7603224
+
+### [skyvault] Add GoogleDrive upload observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11ae8e07
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d904d968
+
+### [Mullhet] Add the search bar view class with layout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddff8ac
+
+### Add AutofillPopupView::HasFocus().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14bf646
+
+### Simplify suggestion creation in KA bridge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a669bbc
+
+### [ChromeSettings] Adapt Chrome Settings page when in SigninPaused state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56b0cb5
+
+### Fix recording of cancel events in the SyncConsentFragmentBase view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18cec40
+
+### [CBD] Migrate language related to CBD from clear to delete v2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c07c749
+
+### Use set_fixed_width() in AddNewAddressBubbleView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c904e2
+
+### [tab group v2] Use fresh stg_everything_menu_ in AppMenu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/049bd98
+
+### [WebAuthn][Enclave] Update URL for kGPMReauthAccount step.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/134a9fbc
+
+### Revert "[Product specifications] Add UI components for tab strip entry point"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6aacbdea
+
+### Revert "Remove TimeOfDayWallpaperForcedAutoSchedule flag."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2e7840a
+
+### Remove expired flag service-worker-static-router
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7abb543
+
+### [WE] Add feature flag for Welcome Experience
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/57bc4cbc
+
+### Remove TimeOfDayWallpaperForcedAutoSchedule flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/856a7cf
+
+### [Page Zoom] Allow text-size-adjust to coexist with Page Zoom on Android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8cb5b5d3
+
+`);
+              </script>
+            </body>
+        </html>
