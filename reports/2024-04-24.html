@@ -1,0 +1,352 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-24
+### Update history "show by" button to use a select menu instead of a chip
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52d0ac5
+
+### [ozone/wayland] Tweak location of re-entrancy check
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1509189
+
+### Shortcut color calculations by memoizing if we need an input color.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca9587f
+
+### views: Textfield use CalculatePreferredSize(SizeBounds) override.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b76cf7e
+
+### [ozone/wayland] Add drag state info to DCHECK
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d27d7d0
+
+### [Read Aloud] Fix naming mismatch with the word highlighting flag.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6b1d55
+
+### Update managed-footnote to use cr-icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e3b0d8
+
+### [lensoverlay] Clear searchbox inputs when setting text or thumbnail.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cd08bc0b
+
+### cr-toolbar: Remove use of iron-media-query
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9e997a
+
+### [Linux]Account for window targeter when setting input region
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9229a5c
+
+### [lensoverlay] Expose BrowserWindow's WebContents's ui::Layer.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27e9193
+
+### modifier-split: Add HasRightAltKey function to KeyboardCapability
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98ff2fa
+
+### WebUI: Fix cr-tooltip hidden style
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c956d5
+
+### WebUI cr-toolbar-search-field: Wait for input to be visible to focus it
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28fd919
+
+### Fix ozone platform initialization when set via chrome://flags
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9e5bb8
+
+### cr-toolbar-search-field: Remove Polymer paper-spinner dependency
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e29401c8
+
+### cr-tooltip: Use pointer instead of mouse events
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/876c07c
+
+### Make sure notifications are still sent if Widget is destroyed before NativeWidget.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b47c26b
+
+### views: ImageButton use CalculatePreferredSize(SizeBounds) override.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21851324
+
+### Remove smcgruer@ from historic OWNERS files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/783a61e
+
+### SidePanel: Migrate c/b/r/side_panel/reading_list to Lit, part 5 (last)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c6c0bc
+
+### [ozone] Fix WaylandWindow::Initialize bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94e4d323
+
+### shimless_rma: Allow fullscreen requests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1bae1b8
+
+### [lensoverlay] implement will enter background
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d65f25
+
+### Flag guard deep scanning notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a50633de
+
+### app-controls: Show a list of eligible apps on the parental controls page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f59ce2989
+
+### Allow reshowing pointer lock bubble (toast) immediately after hiding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/634dbd2
+
+### Update the voice pack status when installed or removed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7ab998
+
+### [Adaptive Toolbar] Enable Translate and Bookmark buttons by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1f6203
+
+### Migrate themes to Material3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97b0a51
+
+### clean up of the DropdownItemViewInfoListManagerUnitTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fc9d67d
+
+### [CrOS Hotspot] Remove hotspot toggle in debug UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/807b9669
+
+### Migrate TODOs referencing old crbug IDs to the new issue tracker IDs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f83a91ab
+
+### Get all preset queries from Editor as suggested zero-state results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eeb652a
+
+### Align naming and behavior of an api
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39e999b
+
+### [LogoPolish] Only enable Logo Polish for Google doodle on NTP.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dd30b9
+
+### [DefaultPrompt] Add interactive ui tests for closing all prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b4661bd
+
+### Mahi: Treat Mahi card similar to Editor menu card and add unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7ebb0c
+
+### Add empty ProductSpecificationsEntryPointController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f558c0
+
+### Revert "Re-enable SearchEngineChoiceUIPixelTest"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8335873
+
+### [SurfacePolish] Update search box text and icons to be accessible in all
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5027b7c
+
+### Move GetVirtualCardEnrollmentManager() to PaymentsAutofillClient and transfer ownership of VCEM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1372a40
+
+### [dPWA] Deflaky WebAppBrowserTest.DesktopPWAsOpenLinksInNewTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff0d8a4
+
+### Wire snackbar visibility and color to BottomAttachedUiObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d83d68a
+
+### [Read Aloud] Add error message strings for the language menu.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/642ef0ed
+
+### [LogoPolish]Fix logo size not change on NTP when split screen on tablet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb0a7c9d
+
+### Rename methods in AutofillClient that refer to the Autofill popup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2caae0c
+
+### [ SavedTabGroups ] Tab Restore implementation for SavedTabGroups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae5419e0
+
+### Implement LockScreenAutoStartOnlineReauth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d536e2
+
+### Implement empty state UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/356ef26c
+
+### Fix a calendar crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92a53e0
+
+### Add histograms to monitor load times of chrome://downloads
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd157c0
+
+### Ensure message loop exits when MessageBoxDialog is closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a7bbb34
+
+### Forward PDM functions calls to ADM by mass renaming
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db902b1
+
+### [a11y] Remove unnecessary description from caret blink interval setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a60e41
+
+### [ChromeSettings] Combine signin states for people settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54de4bf6
+
+### Move (Un)AcceptSuggestion to popup controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e7d82ef
+
+### Renaming CreditCard* to PaymentMethod* in ManualFallback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7880ddc
+
+### [gbb-cct] Add custombuttonparams to the bottom bar button configuration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2d6d34
+
+### [CrOS Cellular] Remove SMDS flag from add eSIM  dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec1277a
+
+### Revert "ChromeOS Settings WebUI shows AuthPanel based on FF state"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21acf5b
+
+### [lensoverlay] Allow lens overlay to persist between tab switches.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b072c6
+
+### PEPC/permission prompt new strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2250c2
+
+### Fullscreen: Encapsulate ExclusiveAccessBubble params in a struct
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51f8548
+
+### Fix flaky Popup Controller interactive test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cb4c2c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a71b7eb
+
+### [ProfileMenuPixelTests] Enable all pixel tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/656a2c3
+
+### extended_updates: Add component for android apps list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdf22418
+
+### Add kEndEditing to autofill popup hide suppression if view is focused.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64dbfa2
+
+### Make the cross domain password filling confirmation activatable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24a3c5e
+
+### Fix autofill spoofing with Win keyboard layout switch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72161e8
+
+### [oobe] Make ResetScreen source of the screen's state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9da6505
+
+### [oobe] Update UI only when PinSetupScreen is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/855d22ab
+
+### Add callback wrapper for recording medium length durations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52ebcc6a
+
+### [gbb-cct] Use String cached param to retrieve the bottom bar params before initialization
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b39b1d0
+
+### Remove popup_base_view.h self import.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac46db7
+
+### Remove feature flag for AddUsername bubble
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f37a370
+
+### preload: Update a Prerender BookmarkBar outdated comment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/725d385
+
+### [gardener] Disable a flaky Autofill test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d48bc3d
+
+### Reland "Remove TimeOfDayWallpaperForcedAutoSchedule flag."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/13cae8d
+
+### [Verve]Adding flag to support Verve for payments autofill on Chrome
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1629a19
+
+### [PwaRestore]: Add flag to force PwaRestore to show at startup.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/52020c3
+
+### arc/gio: Remove AlphaV2 flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/86c97c1
+
+### Add "use ML Service for CrOS non-LF VK handwriting on all boards" flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d0a2f96
+
+`);
+              </script>
+            </body>
+        </html>
