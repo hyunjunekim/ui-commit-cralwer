@@ -1,0 +1,304 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-25
+### events: Implement modifier rewriting for right alt
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ccfbca
+
+### WebUI help-bubble: Default to CR2023 styles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/259a7414
+
+### Extensions and Profile Picker: Use cr-tooltip instead of paper-tooltip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7b1bcf
+
+### [views_ax] Merge ax::mojom::Action into destination \`data\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f95e460cd
+
+### HTML mode removal: Removes unused code in AXPlatformWin related to ARIA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/421fb31
+
+### [UIA] Expose aria role for role=feed as feed, not group
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9dba515
+
+### [tab group v2] Add "Tabs" title to saved group context menu
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff7b99c
+
+### Reland "jni_zero: Fixing up more broken multiplexing instances"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d66fdf
+
+### Move helper functions from FakeDrmDevice:MockDrmState to FakeDrmDevice
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a76865a
+
+### Revert "jni_zero: Fixing up more broken multiplexing instances"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bff690
+
+### [Scroll Jank] Update scroll offsets metrics to utilize correct timestamps.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ab9df04
+
+### [Ozone/Wayland]Allow supports_subwindows flag when delegation is off
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d99a9a
+
+### Convert base::StringPiece to std::string_view in //ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/36619c1
+
+### jni_zero: Fixing up more broken multiplexing instances
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43c68b0
+
+### Make FakeDrmDevice::MockDrmState non-copy-able
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef0de05
+
+### FakeDrmDevice: Simulate blobs better
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26b5e1b
+
+### [UNOp2][Android] Handle backpress in the re-FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd48414
+
+### Revert "Enable AndroidImprovedBookmarks by default for bookmark manager"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40f050c
+
+### WebUI: Migrate multiple WebUIs to WebUIConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22f1dba5
+
+### [PWA] Cleanup references to DesktopPWAsEnforceWebAppSettingsPolicy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1632bf
+
+### Migrate generic structs and utils to //chromeos/ash/components.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07ec0817
+
+### Convert base::StringPiece to std::string_view in //ch/b/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd2cc20
+
+### Remove kForYouFre feature flag check from intro_ui.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f20493
+
+### [declutter] Plumb through boolean for inclusion in native TabModelList
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7eb7802
+
+### Automatic Fullscreen: Reshow fullscreen bubble on first input
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d914a9
+
+### [Read Aloud] Share the browser language code with the controller.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8edc49c5
+
+### Fix color contrast for app menu chip with custom themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77d16a1
+
+### [tabs] Clean up discard interface for Tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c179a0c
+
+### [WebAuthn] Display passkey saved bubble after creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d9e4d0
+
+### [User Education] Groundwork for rotating promos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/960fe383
+
+### [FedCM] Improve multi IDP UI after signing in to IDP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34bafec
+
+### Fix detach webcontents ungroup call to get the right tabgroup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1144fa6
+
+### Enable AndroidImprovedBookmarks by default for bookmark manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55feee33
+
+### quick-answers: remove second answer row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d263f6a
+
+### quick-answers: wait pref value change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f090449
+
+### [Fuchsia] Remove build rules from //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c52488a
+
+### Remove enable_print_content_analysis GN flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8fbf53
+
+### [Omnibox] Update styling of @gemini IPH suggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ea3ff89
+
+### [3pcd Reminder] Introduce new reminder IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0faf9eb2
+
+### WebUI: Migrate TabSearchUI to WebUIConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f71bbe6
+
+### [passwords] Require base::Location for PasswordStoreInterface removals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdacee5
+
+### Reland "Reland "[Product specifications] Add UI components for tab strip entry point""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1dc878bc
+
+### Adds a field trial testing config for net::features:: kTpcdMetadataStagedRollback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2f49c5
+
+### Replace almost all remaining uses absl::string_view with std::string_view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/793c171
+
+### [User Education] Ensure correct histograms are emitted when IPH closes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1012856
+
+### [FedCM] Polish multi IDP UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19141726
+
+### Follow up fixes for flag guarding deep scan notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e56954e
+
+### app-controls: Add per file owners in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd248c5
+
+### Use Accept as CloseReason from Default Browser settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09a4d537
+
+### [Passwords][Settings] Update label in the passkey card if PIN exists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8715591
+
+### Revert "[LHS indicator] Add Kombucha tests for permissions dashboard view"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/734300d6
+
+### Add support for flagging extensions without privacy practices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ddcb8d
+
+### Reland "[Uno-D] Enable fieldtrial_testing_config for full phase"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b127f1
+
+### Reset textfield controller in parent permission dialog view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07f53a1
+
+### [LHS indicator] Add Kombucha tests for permissions dashboard view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9cb5fd
+
+### Let GetSuggestions return a const ref instead of a copy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bfd02829
+
+### Unflake SignInViewControllerBrowserTest.EmailConfirmationDefaultFocus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f49318
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1527d87
+
+### [Cleanup] Delete bogus include in chrome_signout_confirmation_prompt.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d340f2
+
+### [HaTS] Listen to onSurveyCompleted events in HaTS webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/613424c2
+
+### Remove GetWeakPtrToController from KA view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5954a0a
+
+### [compose] Make expandable menu icon depend on suggestion type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/809f499d
+
+### [Android] Use SignOutCoordinator instead of SignOutDialogCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2d17d3
+
+### [oobe] Simplify tablet mode handling in front-end
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1263465
+
+### [compose] Create child suggestions for the new nudge design
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3165b0
+
+### Remove some PayDM function from the PDM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee67885
+
+### Revert "Allow reshowing pointer lock bubble (toast) immediately after hiding"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f432cf8
+
+### Make autofill popup activatable depending on search bar presence.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a4e58b
+
+### Do not ignore URL query params when checking start URL in home tab scope.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ad0dfa
+
+### privacy-hub: Add turn on sensor access button to permission item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a767347
+
+### Reland "[Page Zoom] Allow text-size-adjust to coexist with Page Zoom on Android"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3834e36
+
+### Revert "[Page Zoom] Allow text-size-adjust to coexist with Page Zoom on Android"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/95248be
+
+`);
+              </script>
+            </body>
+        </html>
