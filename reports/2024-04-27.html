@@ -1,0 +1,324 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-04-27
+### [iOS] Bumping the minimum deployment target to iOS 16
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c96fb7
+
+### Migrate TODOs referencing old crbug IDs to the new issue tracker IDs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71bd8f15
+
+### WebUI: Add cr-collapse, replacement for iron-collapse
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99163b6
+
+### WebUI: Migrate cr_components/most_visited/ to Lit, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d91088
+
+### [Read Aloud] Fix feature flag typo.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da718733
+
+### Certificate Management UI V2: show real Chrome Root Store information
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0416200
+
+### [views_ax] Introduce SetShowContextMenu to ViewAccessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/16f3994
+
+### Use PLOG, DPLOG, VPLOG, and DPCHECK in more places
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fca6b6b
+
+### [a11y] Enable overscroll setting on Chrome OS by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d9bd6e8
+
+### Mark WindowReorderer::root_view_ as not dangling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87000f19
+
+### [TSLO] Update top Chrome appearance based on window focus state on app startup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e45bae
+
+### Wire up ENABLE_MERGE_REQUEST build flag to container app preinstall.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5992e5
+
+### [lensoverlay] Consolidate C++ files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/249c126
+
+### CrOS: Eliminate NetworkPortalDetector::RequestCaptivePortalDetection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe3427a
+
+### [TSLO] Check isInDesktopWindow before create new AppHeaderState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3db99c9
+
+### [Fast Pair][Software Scanning] Implement Software Scanning UI Backend
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a4e2f2
+
+### [CrOS Bluetooth] Remove kOobeHidDetectionRevamp flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/087f6d9b
+
+### ReadWriteCards: Add util functions and add tests for PreTargetHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38a21cd
+
+### borealis: Add restart and storage management buttons for startup failures.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb51125
+
+### borealis: Allow feedback reports to be submitted when startup failure occurs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6899ffc
+
+### [lensoverlay] Add user selected thumbnail to each suggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79321a2
+
+### [ASH] Show the source app in history item view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14dffad
+
+### borealis: Differentiate between different failures with error dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9f8b32
+
+### clean up of the LocationBarLayout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bef12dc
+
+### welcome_tour: Add new experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b099e3
+
+### [lensoverlay] Update the searchbox callback methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa4edda
+
+### Revert "[lensoverlay] Add background blur to spec"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92a4709
+
+### Revert "kbd-backlight: Hide keyboard auto brightness toggle if no ambient light sensor"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e33e21
+
+### Migrate TODOs referencing old crbug IDs to the new issue tracker IDs
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3f4203f7
+
+### [User Education] Revise IPH validation test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41a316b3
+
+### Show and hide downloading messages in the voices menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2d5ffb4
+
+### Revert "Remove kForYouFre feature flag check from startup_tab_provider.cc"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b4ab1a
+
+### Remove kForYouFre feature flag check from startup_tab_provider.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4516af1
+
+### [AF] Remove SecurityLevel upload credit card subhistograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e18311
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/global_media_controls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/021dd03
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/extensions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f69083
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/bookmarks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb1c826
+
+### [Extensions c2s] Rename observer to OnSiteAccessRequestDismissedByUser()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6bddbb3
+
+### PrivacyIndicators: Remove usage of kPrivacyIndicators and util function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ae3452
+
+### Convert a SignInViewControllerBrowserTest to Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd9b4293
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/performance_controls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54a48a4
+
+### [FedCM] Fix button margins and overall bottom margin in multi IDP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24cf1c63
+
+### [Shortcuts] Append profile name to initial title in create shortcut UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/568ee25
+
+### kbd-backlight: Implement method in InputDeviceSettingsProvider to Set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33725c0
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/safe_browsing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5361f0c
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/payments.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07fd7d1
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/webauthn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5fd86a
+
+### Disable LegacyFindInPageTest.SelectionDuringFind
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1abad93
+
+### [Autofill] Replace \`struct\` FormFieldData with \`class\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3b9e3c
+
+### [Code Health][Desktop] Clean up unused feature flag for Incognito NTP
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/53b75bf
+
+### [Code Health] Remove unused load time histogram for all sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8387ee1
+
+### Call AddChangeCallback() before AddProfile() after adding address.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3ad277
+
+### Untie popup reopening callback from AutofillContextMenuManager lifespan.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c9ed5c4
+
+### ContentSettings: Make SettingSource an enum class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f70de6d
+
+### kbd-backlight: Hide keyboard auto brightness toggle if no ambient light sensor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ba3b32
+
+### [gardener] Disable SendMouseMoveUITest.Probe.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a33ebb
+
+### Make the managed profile notice responsive and work on small screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/443bac4
+
+### Revert "Remove kForYouFre feature flag check from startup_browser_creator_impl"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59cf728
+
+### Disable flaky SyncConfirmationUIDialogPixelTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da4bdfe
+
+### Remove unused tracked labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f9b3eb
+
+### Revert "Remove kForYouFre feature flag check from profile_customization_util.cc"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cffecfb
+
+### Simplify autofill popup margins and clean up unnecessary code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e54b7a
+
+### Default enable Autofill popup improved timing checks.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5e67b7d
+
+### Remove some dead code found
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35e876d
+
+### Reland "[LHS indicator] Add Kombucha tests for permissions dashboard view"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f01bdd6
+
+### Remove isActiveDirectoryUser from SMB share dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3126ee
+
+### [mullhet] Filter suggestions according to input in search bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bbdcffe
+
+### [UNOp2][Android] Make bottom sheet start add account flow via delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/829af77f
+
+### Remove kForYouFre feature flag check from startup_browser_creator_impl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/581b3bc
+
+### Remove kForYouFre feature flag check from profile_customization_util.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/307508b
+
+### Move PDM::AddChangeCallback() to ADM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8793a49
+
+### [mullhet] Add part of the passwords manual fallback context menu entries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90f2ac3
+
+### [tab group v2] Add metrics for TabGroupsSaveUIUpdate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1c35db1
+
+### Invoke |started_profiling_callback| independent of whether the profiling starts successfully or not.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83d6a18
+
+### Use the last fetched time for matching multiple dictionaries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74903a7
+
+### [MagicStack] Use freshness score for ranking.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2b733d8
+
+### Add a RuntimeEnabledFeature for FedCM/SAA autogrants
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d459f7b
+
+`);
+              </script>
+            </body>
+        </html>
