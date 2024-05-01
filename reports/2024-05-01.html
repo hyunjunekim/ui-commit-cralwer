@@ -1,0 +1,428 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-01
+### Image Loader: Clear the video.src on success
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eba09132
+
+### Revert "[GL] Set native fence sync support to false on Android emulator"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/019284a
+
+### Remove deprecated monorail component.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6f0ec2f9
+
+### Notify active descendant change when the pseudo focus changes.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4de450d
+
+### [CCT][NestedIcon] Migrate animations to AndroidX
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/137dab4
+
+### Remove unused WaylandWindow::ui_scale_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3d6837
+
+### [GL] Set native fence sync support to false on Android emulator
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a14506
+
+### [views-ax] Update invalid assumptions in views a11y unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a54ed60
+
+### ui: lazily create color map in color provider
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a3362d
+
+### [Views AX] Use AXPlatform::Delegate instead of BAStateImpl in BA
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58690f2c
+
+### viz: Enable protected Vulkan image processing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c76cd8
+
+### Don't scale images
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/018b9707
+
+### [iOS] Remove obsolete feature flag
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/238bae9
+
+### Add disabled states for many icons/buttons.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a4a2bd
+
+### Add UMA to record History.Embeddings user actions
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/563ff32
+
+### ozone/drm: Use the correct config list in  UpdateDisplaysWithNewCrtcs()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/604d73a
+
+### WebUI: Add cr-page-selector, replacement for iron-pages
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ba0fa3eb
+
+### [views-ax] Add missing SetAccessibleRole (part 2)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88a28b3
+
+### [views-ax] Introduce setters for CheckedState in ViewAccessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc5c22a
+
+### Use partition_alloc PA_BUILDFLAG(...) outside PA. #cleanup
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62e877a
+
+### Allow cr-icons to be used in untrusted pages.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dfc3f53
+
+### Hide empty text in history list and clusters if there are embeddings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8267367a
+
+### Disable PickerInteractiveUiTest.SearchAndInsertMath for LSan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aa418b
+
+### Add tests for voice and language prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaf191b2e
+
+### [office] Have the CloudOpenTask own the upload handlers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31af954
+
+### [office] Explicitly destroy scoped_refptr in CloudOpenTaskBrowserTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3907599
+
+### [Read Aloud] language download complete notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e53fd7
+
+### [FedCM] Fix widget taking focus issue for error UI and mismatch UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fc7c1c
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/translate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d53fdb
+
+### Create a new BUILD.gn for app_service/app_icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bf1a70
+
+### Revert "[TSLO] Add histogram Android.DesktopWindowHeuristicResult"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bd95e0
+
+### focus-mode: Create skeleton for media streaming page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f840b704
+
+### [Reland] Create a new folder for browser_instance code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/195b2e23e
+
+### Add basic cvox test for Picker.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec736a73
+
+### Browser side integration of passage embeddings service.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a18afd9
+
+### hid: de-flake BlockedFidoDeviceAllowedWithFlag test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff50ef5
+
+### fedcm: slightly disable flaky tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/100774e
+
+### Clean up never launched NoopEditUrlSuggestionClicks feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3669621
+
+### Migrate MatchToolbarAndStatusBarColor to OmniboxFeatureMap
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d0633fb
+
+### Migrate Animate and Grouping feature flags to OmniboxFeatureMap
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a64923e2
+
+### [search bubble] Set bubble_view_ to nullptr on close.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe855f8
+
+### Remove unnecessary no_state_prefetch includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da8e93170
+
+### [TSLO] Add histogram Android.DesktopWindowHeuristicResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d325ac9
+
+### [Shortcuts] Implement badging for site icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b8572a
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/location_bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5ca451
+
+### Remove unused Omnibox feature flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1000019
+
+### Migrate duplicate cached Feature/Param combinations to common code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fb04793
+
+### [TabStripModel] Implement AddToExistingGroup with collections.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05931bc
+
+### [Tether] Remove RemoteDeviceRef from TetherAvailabilityOperation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/951452e
+
+### Move static default prompt pref functions to different file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5a678b
+
+### Add support for cached boolean parameters to OmniboxFeatures.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0091e79
+
+### Ensure only one tab strip modal UI shows at a time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e2cf39
+
+### [TabStripCollection] Implement AddToNewGroup and RemoveFromGroup functionalities. This CL implements the following methods for collections-
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2af4347
+
+### Use localized-link for tab organization failure
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22bb0f4
+
+### [SPC] Add experimental ability to show network/issuer icons (2/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfbe956
+
+### [live-preview] Remove usage of RunLoop().RunUntilIdle()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/577f4da
+
+### Remove stale code for fullscreen on Mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6396f5c3
+
+### [FedCM] Speculative crash fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed13003
+
+### [live-preview] Use cached devices in Mic Mediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7de02fb
+
+### [Omnibox] Enable AndroidNoVisibleHintForDifferentTLD by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0cd59b1
+
+### [Uno-D] Simplify ExplicitBrowserSignin feature check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42ebdaba5
+
+### [FedCM] Fix the widget stealing focus issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dba5c1
+
+### [Omnibox] Set sugg list visible/alpha in onPrepare
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf979e4
+
+### [ContextMenu] Enable Mute Site for audible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acc324ae
+
+### Add missed OOBE Screens metric definitions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/144d45f
+
+### lacros: Wait for window maximize at start of DragInMaximizedWindow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/839a898
+
+### a11y: Create a source set for accessibility_state_utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48d3fb0
+
+### [Extensions c2s] Move dismissed requests to SiteAccessRequestsHelper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4d3861
+
+### Cleaning up some unused code in TabStripModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ad24f36
+
+### [Uno-D] Dialog to notify users of the "Clear on Exit" change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b1a0c30
+
+### Move the browser-philic component impl to browser/ subdir (3)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ce7da7
+
+### [oobe][mojo] Migration of ConsumerUpdateScreen to Mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a40d7e4
+
+### ContentSettings: Use enum for GetDefaultContentSetting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f99fe70
+
+### Split extension approval grant from permission increase check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0fc8b61
+
+### Highlight default prompt menu item in app menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3593fcd
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/passwords.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81a9e1bd
+
+### webauthn: various UI updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99f7ed6
+
+### [Fixit] Update Password Manager to Google Password Manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92cbf22
+
+### [Uno-D] Clean up experiment part of the Phase 0
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fd3de3e
+
+### Update visibility of default prompt files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/017ff5a
+
+### Fix incorrect animation on the Geolocaion activity indicator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b7b5a3
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/location_bar/cookie_controls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b66fa99
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/hats.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7b070fa
+
+### PEPC increase font size for title-less prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e20082
+
+### Rewrite address calls from PersonalDataManager to AddressDataManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5f82cd
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/permissions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/991de4f
+
+### Reland Remove kForYouFre feature flag check from startup_browser_creator_impl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9813104e
+
+### Simplify FastCheckout JNI calls for showing bottomsheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61629a6
+
+### Sync: add UserSelectableType::kCookies
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cd91e5
+
+### Rewrite payment calls from PersonalDataManager to PaymentsDataManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41fa457
+
+### Remove AutofillPopupImprovedTimingChecks feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6183ab63
+
+### Remove the kForYouFreCloseShouldProceed flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1986ab50
+
+### LoggedInMixin: correctly simulate cryptohome presence
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0685315
+
+### Add the "Manage Accounts on This Device" row the unified settings panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cfb37c6
+
+### [Tab Group Sync] Add additional menu items and strings to overflow menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22f910f5
+
+### Add component for header with logo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c9c4c2
+
+### Remove chrome://flags/#use-nat64-for-ipv4-literal
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/597b130
+
+### [TabResumption] Allow showing at most one tile on the module.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5d51774a
+
+### Revert "Delete LegacyTechReportEnableCookieIssueReports flag and related code"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3bc942a
+
+### Introduce flag to protect IBAN suggestion as BottomSheet on Clank
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/631d2e7f
+
+### capture_mode: Remove audio mixing feature and chrome flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c3cdc227
+
+### [TabResumption] Introduce TabResumptionBridge.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3135c6e
+
+### ash: Enable Cellular Carrier Lock by default and hide flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d06e349
+
+`);
+              </script>
+            </body>
+        </html>
