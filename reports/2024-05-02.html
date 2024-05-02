@@ -1,0 +1,308 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-02
+### ozone: evdev: correct the name to spikyrock for 0x18d1:0x5067
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea8a284
+
+### [CrOS Cellular] Show icon in OOBE dialog when disallow APN modification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a03850
+
+### [FilesF2] Always run Files app with the new directory tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e287242
+
+### Add xiyuan@ to ui/wm/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1684c13
+
+### Add edcourtney@ (APAC) to ui/compositor/OWNERS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3215915
+
+### WebUI: Migrate cr_components/most_visited/ to Lit, part 3.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/639a23d
+
+### [views-ax] Introduce getter for NameFrom attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/55624dc
+
+### FakeDrmDevice: Remove SetPropertyBlob
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a46250
+
+### Accessibility: Add a feature flag for the STS keyboard shortcut
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aa3bd93
+
+### [a11y] Enable caret blink rate setting on Chrome OS by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/795c5113e
+
+### Mac: deflake DumpAccessibilityEventsTests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8c0270c
+
+### [views-ax] Rename GetViewAccessibility[Attr] to GetCached[Attr]
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40a592c
+
+### WebUI: Migrate cr_components/most_visited/ to Lit, part 2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb6d653
+
+### Add access to ProduceSpecificationSet observer events for webui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/878d660
+
+### [Interop] Expose section element as generic role
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7faec0
+
+### WebUI: Add cr-progress, replacement for paper-progress
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a2002f2
+
+### Don't use SCK API in situations where it's known to not work
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4f4e4f2
+
+### views: use CalculatePreferredSize(SizeBounds) in //ui/message_center.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e98a8bc
+
+### views: use CalculatePreferredSize(SizeBounds) in /chrome/browser/ui/views/omnibox.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42c8c658
+
+### Replace web_app OS integration faking; fix fullscreen when closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f46a947
+
+### snap-groups: Fix bounds in rotated display orientation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab2c6e0
+
+### Move MultiUserSignInPolicyController to components/user_manager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8b614b8
+
+### [Compose] Update colours and modifier options order to match spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/070d6e5
+
+### [extended-updates] Add UMA metrics, part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6b83a89
+
+### [User Education] Register callback for low-usage session start.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f74d7c5
+
+### Clean up isChromeRefresh2023 from ui/search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4744f8
+
+### Reland "[lensoverlay] Add background blur to spec"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95ac7ca
+
+### Increase size of discarded tab indicator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec716ccb
+
+### Add cvox test for using keyboard navigation on zero state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2deddf
+
+### Remove expired chrome://flags entries for chrome refresh
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/747de34c
+
+### Remove getLastUsedRegularProfile from ToolbarPhone.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c8f4d8
+
+### Remove getLastUsedRegularProfile from toolbar/adaptive/*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f000455c
+
+### [TSLO] Notify APPEARANCE_LIGHT_CAPTION_BARS when tab model changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0077de
+
+### [Structured Metrics] Cleanup app discovery logging feature flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab06133
+
+### [tasks] Remove special ThreadType on mac gpu io/viz thread
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/744eb20
+
+### update documentation for browser_finder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c71c7cf8
+
+### clean up of the LocationBarLayout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b4f15e
+
+### Deprecate the animate param from TabModel*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/200ea37
+
+### Add feature configuration check in isEligibleforEsbPromo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3b3190
+
+### Add feature flag to feature list
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fe992e52
+
+### Align page_image_service directory names
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b44fc53
+
+### Add additional padding on deep scan notice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3ac80a
+
+### clean up of the LocationBarMediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee23e6e889
+
+### Reland "Add tests for voice and language prefs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5fcdade
+
+### [User Education] Modify tests to ensure bounds are properly updated
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abf3bb31
+
+### Complete OmniboxFeatures cleanup: keep Omnibox features together.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e3da51
+
+### [FedCM] Refactor AccountSelectionViewBase Methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a98fce4
+
+### Move functions to private in default prompt manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54fa604
+
+### Remove NotificationSource from UrlLoadObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57f3748
+
+### [commerce] Remove locale param from ShoppingServiceHandler constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d76b7afe
+
+### brightness: Update auto-brightness toggle based on state of light sensor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66cadce
+
+### brightness: Add GetAmbientLightSensorEnabled to brightness delegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1dd2293
+
+### [Product specifications] Implement history surface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b864c7
+
+### Don't show deep scan notice if deep scanning has happened automatically
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2cc81e
+
+### [gbb-cct] Update button config list to reflect the client signed-out use case and custom params are not provided
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76d73b9
+
+### Remove unused ExclusiveAccessContext::UpdateFullscreenToolbar()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39d2a4c
+
+### [lensoverlay] Fix issue with URL-escaped query value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/522f2a6d
+
+### [Media Preview] Add check for origin trial before showing media preview.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8071968
+
+### Automatically populate Omnibox FieldTrialParams for caching
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/229f36b
+
+### Remove no longer needed AnswerColorReversal feature flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ec4c786
+
+### Move non-Omnibox features out of OmniboxFeatures.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a84af388
+
+### Migrate TouchDownTriggerForPrefetch to OmniboxFeatureMap
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adf70d30
+
+### Simplify definitions of NDE parameters
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f439db76
+
+### ReadAnything: Add a suffix to output filename of Snapshotter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85b3787
+
+### ReadAnything: Send composite request when a compositor is started
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8a60af
+
+### [PM] Refactor OnBeforeFoo and OnFoo observers 2/4
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4fcad9c
+
+### Revert "Add tests for voice and language prefs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48d7ee6
+
+### [office] Set the priority of notifications to SYSTEM_PRIORITY
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db890179
+
+### Reenable tabbed web app NavigationThrottle test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38a7a24
+
+### Birch: Do not fetch calendar data when disabled by policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9ab527
+
+### [AIS] Distinguish between no app found and connection error in install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cee4e81
+
+### editor: add browser test for l10n string flag behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0680326
+
+### Remove unneeded chrome_web_ui_controller_factory.h includes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6960db7
+
+`);
+              </script>
+            </body>
+        </html>
