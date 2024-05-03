@@ -1,0 +1,404 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-03
+### Avoid that Textfield::controller_ becomes dangling.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/724a007
+
+### [VC] simplify CreateWithAi button animation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80ebc77
+
+### Revert "[A11y] Remove AXMenuList* special classes/cases, support <optgroup>"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/693dbcff
+
+### views: remove CalculatePreferredSize()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c71b8e
+
+### use CalculatePreferredSize(SizeBounds) in Views.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75dcfb26
+
+### Remove kChromeRefresh2023TopChromeFont flag
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c006cb
+
+### Update discard ring colors and remove transparency
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90956242
+
+### [ozone] Simplify wayland-drag-in-progress-check
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7d3026
+
+### Add tracing for DelegatedInk Metadata matching
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1578229
+
+### [iOS] Add basic VoiceOver support to Blink builds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37d1eac
+
+### WebUI: Rename cr-progress CSS variables
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28c93a65
+
+### [A11y] Remove AXMenuList* special classes/cases, support <optgroup>
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d6d489a
+
+### Clarify some icon-related documentation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1756bf
+
+### Add WidgetIsZombie callback on WidgetDelegate.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f6c5a6
+
+### Deprecate LayerTreeHostClient::DidReceiveCompositorFrameAck
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca871d2
+
+### Remove unneeded base/metrics/histogram_macros.h includes in headers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8669662
+
+### [UPM] Add new restriction for GMS Core version
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3a806cd
+
+### [views-ax] Deprecate SetAccessibleDescription & replace by cache setter
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f2f34c
+
+### extension: close popup on browser window widget tree activation
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec62e3d
+
+### Consistently use \`BASE_FEATURE()\` to define features
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da767b91
+
+### Add ui gfx switches autogen java for UseSmartRefForGpuFenceHandle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/657233e
+
+### Revert "[FilesF2] Always run Files app with the new directory tree"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2b1f42a
+
+### Get rid of DomKey::InvalidKey.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f479b49
+
+### Add dpad@ as ui/events/ash owner
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/285aa514
+
+### [ASH] BrApp history filter IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f07cd71d
+
+### ReadWriteCards: Re-define PreTargetHandler API to handle multiple views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f088432e
+
+### Remove unused method declaration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95c4432e
+
+### clean up of the OmniboxSuggestionsDropdownEmbedderImpl
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3e44cf
+
+### Remove unused ExclusiveAccessBubbleViewsContext methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82c5399
+
+### editor: calculate views card height dynamically
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e2928e
+
+### editor: force webui to show in system language
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75a3027
+
+### [ Extensions ] Cleanup ChromeRefresh2023 logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbdfcf0
+
+### Clean up isChromeRefresh2023 for NTB positioning in TabStripRegionView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b11c7c1b
+
+### Clean up isChromeRefresh2023 from BrowserView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cda32d8
+
+### [ TabRestore ] Remove duplicate group data from Window object
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30ca657
+
+### Reland "fwupd: Add refresh metadata logic"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e86b84a8
+
+### Add feedback dialog for lens overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d817f59
+
+### WebUI: Migrate 4 WebUIs to WebUIConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de3a18ba
+
+### [lensoverlay] Clear cluster info and restart query flow after timeout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8797b7
+
+### WebUI: Replace WebUIConfig with DefaultWebUIConfig for less code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ce5e23
+
+### webauthn: various UI updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7082cd
+
+### [lensoverlay] Add a Chrome 3-dot menu entry for Lens Overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0809af3
+
+### [dPWA] Add dump without crash when launching URL outside of app scope
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b235f85
+
+### Implement setting to disable discard ring treatment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c2914a
+
+### Add FeatureParam to change button order on one-time permission dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90a48f5
+
+### [Desktop to iOS] Create shared view for iOS Promos for Desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/436ac72
+
+### [PWA/Universal Install] Remove DIY app entry point on CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a77843e
+
+### [TSLO] Fix tab strip height does not respond to app header changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de9ab06
+
+### [New Tab Page Cross Device Tab Resumption] UI updates
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b32eb2b1
+
+### Pref migration for multi-state memory saver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e9a23af
+
+### [lensoverlay] Attach language to request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71dce91
+
+### Clean up Chrome Refresh Flags from Hover Cards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/724470a8
+
+### [ SavedTabGroups ] Disable previously flaky interactive tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0116fb4
+
+### [lensoverlay] Add shimmer to selection overlay on invocation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6f90d38
+
+### Disable test on Lacros + Wayland as well.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17f427b
+
+### Add UI + behavior for empty state product selector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b021808
+
+### [Chime] Create PushNotificationDesktopServerClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd060b69
+
+### Add VCN 3DS Flow Events Metrics Logging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dee7484
+
+### Notify feature engagement tracker when ESB download row promo is clicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3834a39
+
+### Allow disabling \`keep_popup_open_for_testing_\` in the Popup Controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e82d15d
+
+### [clank][refactor] Create a universal TestTabModel for unit tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c8e504
+
+### Implement permission change functions for revoking abusive notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/805b29b
+
+### Open embedded hyperlink in PDF in new tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e49e58d
+
+### [lensoverlay] Update strings for toolbar tooltip and context menu entry.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d218f24
+
+### Support KeyboardAccessory IBAN suggestion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36dd4df0
+
+### Clean up isChromeRefresh2023 from toolbar and reading list side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b31157
+
+### clean up of the SuggestionViewViewBinder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/788cb1c
+
+### kbd-backlight: Add GetKeyboardAmbientLightSensorEnabled method in ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3520783
+
+### [Media Preview] Add OT check before showing media preview in page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/278c321
+
+### Fix the crash on Alert accessibility announcement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/235865d
+
+### [lensoverlay] Show modal dialog on lens overlay invocation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a81720c
+
+### Remove unused notification service includes and references
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ace31852
+
+### Remove unused work_area prefs from ChromeViewsDelegate::SaveWindowPlacement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e1f4c28
+
+### [autofill hats] Credit card forms submission can trigger a survey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e609a7f
+
+### Clean up isChromeRefresh2023 from ui/sharing_hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e63f9bc
+
+### Clean up isChromeRefresh2023 from ui/test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e59bf969
+
+### Clean up isChromeRefresh2023 from ui/content_settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df076dcf
+
+### Clean up isChromeRefresh2023 from infobars
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5274b478
+
+### [skyvault] DriveUploadObserver when no sync updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c65311
+
+### Merge signin_features.{h,cc} into signin_switches.{h,cc}
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/028530e
+
+### Force-enable tasks view for \`ENABLE_MERGE_REQUEST\` build flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b97f12b
+
+### ContentSettings: Start migrating SiteSettingsHelper to use enums
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/927159f
+
+### Disable flaky ObservesExpsRegistrationSuccessURL test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60aec37
+
+### [autofill - hats] Set up hats for credit card filling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/521d3788bc
+
+### Remove PDMObserver from AutofillOfferManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbc3b1e
+
+### Check if module available before dismiss notificcation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4fd061
+
+### Disable flaky ClickingPinnedEntryOpensSidePanel test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed8b6db
+
+### Extract a code to request fullscreen to platform.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e969b15
+
+### [UNO]Update FRE and Profile Creation flow strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74465b7
+
+### [gtmooc] Add proper aria description to link to GTMOOC page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e71f8a8
+
+### Do not put RunTestSequence inside sm.Call.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a46654b
+
+### Move OpticalCharacterRecognizer to screen_ai/public
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a269ad71
+
+### Add buttons to Lacros download notification to open Media App
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/afd82a2
+
+### Remove legacy code after enabling kUseClientGmbInterface by default.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5561c60
+
+### Quota/IDB: remove flag for relaxed durability for default buckets
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/81cc176
+
+### midi: Remove flag to disable the browser process components
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ac040f46
+
+### standalone_browser: Extract lacros selection handling from browser_util
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/fa028d71d
+
+`);
+              </script>
+            </body>
+        </html>
