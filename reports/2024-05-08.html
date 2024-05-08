@@ -1,0 +1,404 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-08
+### WebUI: Remove chrome-refresh-2023 attribute across many surfaces.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6c5a11
+
+### Reland "[FilesF2] Always run Files app with the new directory tree"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91da7e2
+
+### Backlight OCR: Fixes the "scroll to make visible" action by registering
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ba339a6
+
+### Reland "[A11y] Remove AXMenuList* special classes/cases, support <optgroup>"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5904929
+
+### cr-collapse: Initialize styles to closed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ece39f5
+
+### Remove Overlay color theme enum.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4bb2839
+
+### Remove CustomizeChromeSupportsChromeRefresh2023
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2294323
+
+### wm: Disallow cycles in the transient window hierarchy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/161589f
+
+### events: Implement capslock shortcut with the fn key
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68ef2a6
+
+### SidePanel: Migrate c/b/r/side_panel/customize_chrome to Lit, part 8.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/62257576
+
+### Add a feature flag to guard the Read Aloud phrase-based highlighting.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/28af2efd
+
+### Ozone: Enable CTM color management by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b4f0a1
+
+### Create product specs set upon navigation if \`id\` is unset.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c9104f1
+
+### Update Tolerance for Delegated Ink Metadata
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a06859b
+
+### Fix wayland crash in gnome 46 from cursor size not being divisible by scale
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a26e0f3f
+
+### ozone/wayland: Update data drag controller's data_offer_ doc comment
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/57a2398
+
+### ozone/wayland: Fix crash when cancelling incoming drag on drop event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc999f89
+
+### Revert "Velocity Tracker Timestamp Holdback"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eeceea5
+
+### Add UseScreen2xV2 feature and flag.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/923e836d
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/ash/sharesheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a141863
+
+### [OIDC enrollment] Add management info display for profile-level info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02a79ac
+
+### Move SaveIbanLocally and UploadIbanToCloud to PaymentsAutofillClient.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dd3a0a
+
+### Directly bind class method with unique_ptr Lacros omnibox provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f6faf3
+
+### [webui] Begin modularization of webui/top_chrome/.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ecec1c7
+
+### snap-groups: Add desks templates test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5948898
+
+### Gardening: disable flaky browser test for win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abac1953
+
+### Roll nearby-connections from fb4099455e0b to 7d0312eca6ed (6 revisions)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a3e950d
+
+### [feedback] Move and rename rename feedbacksource.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c28df6
+
+### [lensoverlay] Move search bubble controller to shared directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c01490
+
+### Printing: Record DPI capabilities
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/785a1f801
+
+### [lensoverlay] Disable dragging selection box.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98198da
+
+### Refactor DismissUnmaskAuthenticatorSelectionDialog and
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2776cd9
+
+### [omnibox] Disable SelectionClipboard test on ASan/LSan/TSan builders.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b49d2c3
+
+### Fix chrominent overlay positioning in ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/443dabb
+
+### Add Suggested Discard Reason
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/809906ae
+
+### [ASH] Update to newest strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b29f26
+
+### focus_mode: Refactor/implement YouTube Music controller/client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a15ca9b
+
+### [Uno-d] Update Web Intercption strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/716218c8
+
+### [TSLO] Add desktop windowing metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a03caf5
+
+### [Send Tab To Self] Clean up ChromeRefresh2023 logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f772565
+
+### Adds function for unenrolling from the cloud authenticator to the passwordsPrivate API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96b0e4b
+
+### CrOS Settings: Remove Google Play description when ARC is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4aaab5c9
+
+### [CloudToken] Clean up code for cloud token virtual cards (3 / 5)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c36ec1
+
+### Mac: disable FullscreenControllerTest.FullscreenOnFileURL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2055e62
+
+### Update AutocompleteDelegate#onSuggestionsChanged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7e56cf
+
+### [gtm] Allow both Tasks and Classroom exist together
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a6b441
+
+### [Signin][Android] Hide management notice in the upgrade promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00ba253c
+
+### Revert "[OOBE][Mojo] Migration of LacrosDataBackwardMigrationScreen to Mojo"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b4a5ea
+
+### [Uno-D] Update Verify it's you strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0497ff53
+
+### [User Education] Rotating promo toasts have 'Got It' button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f680d73
+
+### SidePanel: Migrate c/b/r/side_panel/customize_chrome to Lit, part 7.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e47e47e3
+
+### [User Education] Split kAborted help bubble result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1e508f0
+
+### [User Education] Add trigger for re-engagement promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d72e10f
+
+### [User Education] Fix corner cases around startup promos.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3ad365b
+
+### Extend ManualFallback page to show available IBANs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08e2b00
+
+### [Sync] Enable ImageServiceObserveSyncDownloadStatus by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2b3335
+
+### [Uno-D] Fix clear on exit migration condition with download in progress
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dacce82
+
+### Fix page info link style and removed some CR2023 styling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8156177
+
+### Create a function that records when a user sees the download row promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df36aae
+
+### Add new column product selector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7c6d57
+
+### clean up the flag in the AutocompleteMediator.java
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a338282c
+
+### [Compose] Add new settings page for proactive nudge prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/654f27c
+
+### Move text style utils and consts to popup_row_factory_utils.h.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/360138c
+
+### Add accessors for ProductSpecificationsEntryPointController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a8332a9
+
+### Assert histograms are created for all tutorials
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f659c3
+
+### Add new tag to the context menu address and payment method options
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/821a273
+
+### [ASH] Empty-state view in CCT history
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67c535ae
+
+### [lensoverlay] Add a new histogram to record the source of invocations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd5f5b4
+
+### Revert "[Android] Update bookmark signin promo logic"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/173e4bf8
+
+### Fix typo in title of unified settings panel section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dd4d3e
+
+### Consolidate Performance Intervention Flags
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c9d537
+
+### Remove kForYouFre feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/029bb28
+
+### [mullhet] Clear search query on pressing the clear button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2c524a
+
+### [uno-d] Update people settings page based on mocks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a951e4e
+
+### [mullhet] Move OnTextChanged/FocusLost callbacks to Delegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15d042a
+
+### [UNO] Move password after reauth from sign in promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1a2817
+
+### Revert "[Fixit] Remove contextual page action price tracking flag"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dbe99f2
+
+### Prevent side panel from animating open/closed when switching tabs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/541723a
+
+### Remove FRE experiment code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9d5375
+
+### Change signatures of methods in LoggedInUserMixin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2935df
+
+### [gtmooc] Correctly set aria attributes on GTMOOC entry point
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8ff7440
+
+### Logged in user mixin: add more login types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36c94f0
+
+### Remove default browser step flags linked to the Desktop FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7de20ff
+
+### [OOBE][Mojo] Migration of GestureNavigationScreen to Mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9564bdb
+
+### Remove unnecessary CryptohomeRecoveryBeforeFlowSplit FF
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a65951
+
+### Reland "Remove kForYouFre feature flag check from startup_tab_provider.cc"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/808398cb
+
+### [Android] Update bookmark signin promo logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f28d598
+
+### [mullhet] Fix GetPopupFocusOverride() check on search bar input focus.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62e12e7
+
+### Handle optional-ness of square_size_px explicitly in w_a_dialog_utils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acde784
+
+### [AIS] Fix crash when showing app install dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9ed7293
+
+### WebAppInstallInfo: Remove usage of default constructor in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b39724c1
+
+### [MirrorSync] Add MyFiles as sync root when MirrorSync is on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fb245c
+
+### [CCT][NestedIcon] Add CCTNestedSecurityIcon flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4e1b4a8
+
+### [CrOS Cellular] Remove smds-support flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a4eed8c
+
+### [Nearby Presence] Add flag to enable/disable GATT server
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b47cb00
+
+### Add option to enable bubble corner radius update in UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1318e8b4
+
+### Add Flag for Fetching Gaia Credentials
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/10f9402
+
+`);
+              </script>
+            </body>
+        </html>
