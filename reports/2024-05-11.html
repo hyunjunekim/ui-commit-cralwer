@@ -1,0 +1,460 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-11
+### Remove references to "refresh ranges"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9238a1c
+
+### [views-ax] ViewAccessibility unfriends View & clean up
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5287716
+
+### Snap EDID colorspace to P3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dcfd516
+
+### [views-ax] Move accessible events logic from View to ViewAccessibility
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/13679db
+
+### WebUI: Use "state: true" for internal reactive props in shared elements.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a19675
+
+### wayland: prefer wl_output.scale when logical == physical size
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/359827d
+
+### Add dogfood flag for modifier split
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cc31d4
+
+### Fix tests for icons mappings and add missing icons.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efd3005
+
+### Add shoppingservice api to history.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a08717
+
+### Clean up DisplayConfigurationParams constructors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49232ee
+
+### Reland: Add histograms of GL shader compile and program link time
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7ab7a8
+
+### Disable EGL validation when GL validation is disabled.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ba4089
+
+### Use std::unique_ptr as nullable type for DisplayMode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0dc9c47c
+
+### ButtonControllerDelegate: Add header files and forward declarations.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd5243d
+
+### Use absl::Cleanup in ui::AXEvent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/efbdf01a2
+
+### [a11y] Add feature flag for shake to locate
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/51fe5d7
+
+### Certificate Management UI V2: Export CRS contents
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38f0a27
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/347b291
+
+### events: Discard Fn key and modifier before the system receives the event
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68f9d0d
+
+### dlp: Fix dangling pointers
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f60a8d0
+
+### Use absl::Cleanup in ui::EventTest
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1055cbe5
+
+### passing additional text from LocationBarMediator to UrlBarMediator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd022b5
+
+### Remove the ux revamp flag in OmniboxResourceProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fe9281
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/media_router
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74cad811
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ddac52f
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/sharing_hub
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb74931
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/file_system_access
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a286dd
+
+### [lensoverlay] Fix hotkeys on overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f985b03
+
+### cros-preview: Create PrintPreviewCrosDialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb49539
+
+### [gtm] When one glanceables container expand, collapse the other
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/507fb4f
+
+### [lensoverlay] Support region selection on click.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44213f5
+
+### [Extensions] Wire up the "Keep for now" button in mv2 deprecation panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d0b1d6
+
+### [Shortcuts] Introduce chrome::CreateDesktopShortcutForCurrentWebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a316785
+
+### [lensoverlay] Wait for background unblur before hiding widget
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81942a4e
+
+### [omnibox][ml] Populate \`search_suggest_relevance\` ML scoring signal.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad9ff66
+
+### Make lens build target.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b692b8
+
+### [PEPC] Make PEPC permission subscription take into account device status
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d70da4
+
+### Add GetAllGroups() implementation for internal data sharing page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3170536e
+
+### quick-answers: fix maximum height of ReportQueryView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1c1d6c
+
+### Modularize webui_util.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3bca21
+
+### [themes] Extract grayscale and usercolor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef59fe6
+
+### Trigger ProductSpecification entry point for tab selection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d70db3
+
+### [ASH] Tweak chip view appearance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e61442
+
+### Update check for ProductSpecificationsEntryPointController creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c437797
+
+### [lensoverlay] Update searchbox hint text.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58e24f6
+
+### [autofill][clank] Transition to Loading View for Save Card Bottom Sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fde819a
+
+### arc-overview-tracing: move non-webui code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0adae1
+
+### webauthn: always show connecting sheet before starting transaction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e438f57
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/sharing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b0b85b
+
+### [PEPC] Add PEPC origin trial configuration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fb7ce9
+
+### [Lens Overlay] Add IPH interaction tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b69f5e5
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/webid
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3787364
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/global_media_controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b8f7bcf7
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2da8f0e
+
+### [SavedTabGroups] Remove editor bubble save toggle when V2 flag enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67ee723
+
+### [Lens Overlay] Add Lens-specific pinning and followup IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52920af
+
+### [SavedTabGroups] Remove sync icon when TabGroupsSaveV2 flag enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3d69ad0
+
+### [TabStrip] Remove old ChromeOS experiment in TabStrip.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7df85eb
+
+### [a11y] Remove "Shortcut to disable" pref from Mouse Keys
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9bfae197
+
+### Reland "Add finch param to focus low usage promo"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2586862e
+
+### Revert "[FPF] Notify user bypass to show on subresource blocked"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d582222
+
+### [SavedTabGroups] Save all groups by default when TabGroupsSaveV2 enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0daff35
+
+### [Tab Group Sync] Change undo snackbar message for group deletion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82b795f
+
+### ContentSettings: Remove string provider name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42390c5
+
+### [lensoverlay] Send vsint param with Lens requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5c9a7d3
+
+### Reland "[lensoverlay] Shows the permission bubble if permission is not granted"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12fde201
+
+### Push fatal TabStripModel reeentrancy checks back to 130.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b79b681
+
+### Add memory saver aggressiveness setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a79b62f
+
+### [saved tab group v2] Fix everything button not showing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c056022
+
+### editor: limit l10n strings to en, ja, de and fr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30c8ef3
+
+### [Omnibox] Add AnswerText impl for RichAnswerTemplate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11c2185ba
+
+### [SavedTabGroups] Properly update tab items in group context menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c53d975
+
+### [Desktop to iOS] Update strings for the new iOS password promo UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb02230
+
+### [lensoverlay] Add a new histogram to record the source of dismissals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7b06c7
+
+### [Quick Delete] Disable tabs row in QD dialog in Multi-window mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1afa6cb
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/download
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d9dcad
+
+### [Read Aloud] Stop speech when the screen is locked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ea0c71
+
+### [WebAuthn] Support the enclave authenticator in incognito mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0819529
+
+### [lensoverlay] Add loading state to side panel results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ed96bd9
+
+### [SavedTabGroups] Add padding between Ungroup and Delete menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5085b9
+
+### [FPF] Notify user bypass to show on subresource blocked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e3ace1
+
+### Update chrome://management title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c3552dc
+
+### [Refactor] Move CrOS only code from management_ui_handler into its own file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9055e51
+
+### [SHoA] Refactor PopulateUnusedSitePermissionsData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5cc9bd
+
+### Tabbed PWAs: change from OT to stable on CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1b523a
+
+### Adds disconnect Cloud Authenticator settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de0034a
+
+### [Shortcuts] Implement task connecting UX to shortcut creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f31defe
+
+### [PEPC] Change scrim color to UX requested values
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6bf1abe
+
+### [DownloadWarningHaTS] Fix PSD and survey config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/832ac77
+
+### [Quick Delete] Disable tabs checkbox in CBD in Multi-window mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/107fea0
+
+### [SurfacePolish][CleanUp] Clean up surface polish code related with SURFACE_POLISH_LESS_BRAND_SPACE_PARAM parameter.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a9021533
+
+### Revert "Add finch param to focus low usage promo"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62dc165
+
+### [NearbyPresence] Scan for private ADVs in nearby-internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a71c55c
+
+### [OOBE] Implement skeleton for the PersonalizedRecommendAppsScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db21803
+
+### Remove PopupBaseView::container_view().
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c43cb85
+
+### privacy-hub: New label for geo system services
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/407bf4b
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/webauthn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a268bed7
+
+### Fix incorrect footer below data-type settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16742f0
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28f83f0
+
+### Add finch param to focus low usage promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6040f78
+
+### Low usage promo controller now per-profile.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6e4c1dc
+
+### Remove PopupBaseView::GetParentNativeView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77989ee
+
+### [PEPC] Re-enable TestPepcHistograms test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e167cb4
+
+### [Lens Overlay] Show 'New' Badge on entry point menu items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7b58b64
+
+### Low usage promo copy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/797bfb3c
+
+### Clear Omnibox focus on Esc keypress.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f3f85b
+
+### Align CCT beforeUnload behavior with BrApp
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6e9c89f
+
+### [TabResumption] Log metrics when "see more" link is clicked.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/196d57a
+
+### [WebAPKRestore] Add chrome://flags to enable the backend
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9d05a79
+
+### [android] Add chrome://flags entry for account passwords on sign-in
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ad47929
+
+### Move the BroadcastReceiver management (registering and un-registering) the the BG
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/02a2b16
+
+`);
+              </script>
+            </body>
+        </html>
