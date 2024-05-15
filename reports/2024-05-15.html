@@ -1,0 +1,400 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-15
+### Remove misleading "Keep sorted!" comment in ui_base_features.h.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd54466
+
+### Certificate Management UI V2: add certificate source abstraction
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e164f2d
+
+### Use NOTREACHED_IN_MIGRATION() in ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e857a19
+
+### drm: Don't use GBM modifiers when allocating protected buffers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60a54f6
+
+### wayland: add TestSelectionSource::OnDndDropPerformed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/043e32e
+
+### [BRP] Un-rewrite raw_ptr used in MotionMark
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20e947d
+
+### WebUI cr-toolbar-search-field: Remove padding-inline-end override
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f4c4475
+
+### [Ozone/Wayland]Rename child_window to child_popup
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9d37d03
+
+### [skyvault] Navigate out of OneDrive to default if disabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/29ac8410
+
+### Explain matcher failures in Kombucha's MatchAndExplain.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/aa687e7
+
+### [TSLO] Add metric Android.DragDrop.Tab.SourceWindowClosed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99803d60
+
+### [Read Anything] Enable the WebUI toolbar by default.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c1c205
+
+### Browser controls in viz 2: browser frame count metric
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a1e9e2ea
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7e8dc5
+
+### [Default Nav Transition] Screenshot same-doc navs: content integration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39938c0
+
+### Video: Use multi-planar format for 4:2:2/4:4:4 decoding on macOS
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c51686d
+
+### [Viz] Move TestGpuMemoryBufferManager down to //gpu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a8a04e
+
+### LabelButton: CalculatePreferredSize respect SizeBounds
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62ca24b5
+
+### Use absl::Cleanup to ensure widgets are unblocked from closing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7306fc8c
+
+### Revert "Bubble: remove all SizeToContents() in /chrome/browser/ui/views/global_media_controls"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ed00126
+
+### [lensoverlay] Highlights object when pointer is inside the object
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4895a60
+
+### Increase editor_promo_card width for Tamil locale
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61125c988
+
+### Extensions: CodeHealth: Give enums some class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c36ca7e
+
+### [lensoverlay] Fix side panel interactions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5923aac
+
+### Update some comments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af5a84e
+
+### [Mahi]Add the disclaimer view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9be221f9
+
+### Revert "Revert "Reland "[Android] Update bookmark signin promo logic"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31c4d699
+
+### add per-file OWNERS for chrome/browser/ui/webui/settings/certificate_manager_handler*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cdc329
+
+### [Reauth] Clean up part 2 - remove FIDO toggle from desktop setting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/289cd5ab5
+
+### Clean up isChromeRefresh2023 from side_panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e5816c2
+
+### Fix header for webui_contents_wrapper.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5c4ba6
+
+### Move non-overlay lens out of chrome/browser/ui/lens.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6bc563
+
+### Clean up pre-Refresh tab search caption buttons on Windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2832093
+
+### Split SearchActivityUtils part 2: isolate Client logic (and tests).
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8607f4c
+
+### [gbb-cct] Adjusting cct top bar/nav bar + divider color if GBB enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fe8c65
+
+### Add "Send Tab To Devices" action item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54c2520
+
+### Open a new tab when \`openTabButton\` is clicked.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a796a71
+
+### [STGV2] Show the deletion dialog for "AddToNewGroup", "RemoveFromGroup" and "MoveTabToNewWindow"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63c3f97
+
+### [STGV2] Show the deletion dialog when closing the last tab in a group...
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c02904f
+
+### Use NOTREACHED_IN_MIGRATION() in c/b/ui/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/914bc34
+
+### Pipe task's \`assignmentInfo.surfaceType\` to the ash/ layer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59593e7
+
+### immersive fullscreen: tab drag prevent fullscreen window restore
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e69223f
+
+### Animate task view updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66054fc
+
+### Settings: Remove obsolete 'showFocusHighlightOption' flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd2f81f
+
+### [Birch] Add Self Share Provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40f4a2bf
+
+### [media_preview] Ignore OT if the controller is nullptr
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10071e13
+
+### [SurfacePolish] Fix bug about toolbar flips to white when navigating
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cd84598
+
+### [DoH] Remove kDnsOverHttps feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c40b0ba
+
+### [lensoverlay] Add custom lens overlay side panel web view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00a189e
+
+### [ASH] Set the right disclaimer text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc931227
+
+### Split SearchActivityUtils, part 1: isolate shared data definitions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9b9b4fb
+
+### Settings: Remove obsolete 'showSidePanelOptions' flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c21e789d
+
+### [a11y] Remove "disable in text fields" pref from Mouse Keys
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee33d3a
+
+### [TabStrip] Improve const correctness and toggle efficiency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54c8bb1
+
+### Display button when images are hovered over.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3db5cf9
+
+### [PWA] Add histogram to measure number of DIY vs crafted app launches
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31a9c96
+
+### Add "validation_regex" on GetIbanUploadDetailsResponse
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a2ee6d6
+
+### Disable TabHoverCardInteractiveUiTest.HoverCardShownOnTabFocus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33428e4
+
+### Reland "[FPF] Notify user bypass to show on subresource blocked"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6245079
+
+### [lensoverlay] Add lns_mode param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/516b5b4
+
+### Report tiniest possible minHeight for our search widgets.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04d6db8
+
+### [lensoverlay] Add corner radius
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/655bb8f15
+
+### [lensoverlay] Add time zone and country code to request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c57ec9e
+
+### [SavedTabGroups] Update EditorBubble footer text style and color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3000bf7
+
+### Fixing a potential use after free issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86ebd2d
+
+### [gbb-cct] Adds share button on click implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/497ea56
+
+### [NTP][Enterprise] Add Dismiss functionality for Google Calendar Card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a8d290
+
+### Make dice web sign-in page a Top Chrome WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88c851d1
+
+### Check for TP exception in IsOnlyPartitionedStorageAccessAllowed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02f228a8
+
+### [User Education] Make delay for side panel pin promo universal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c8cb177
+
+### Low Usage Promo: record when the promo isn't shown due to no browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/327826b
+
+### Revert "Reland "[Android] Update bookmark signin promo logic""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e06ebea
+
+### Remove TODO after investigating
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a1ab2f
+
+### Add the top avatar to the unified settings panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f208774
+
+### [Tether] Add Preference to Disable Notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/481e2e9
+
+### Fetch and parse assigned/shared tasks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6eeb7b
+
+### [PEPC] Ensure always-allow button has correct text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9fecc5
+
+### [skyvault] Add Uploader for OneDrive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c7c005
+
+### Split Equal weighted buttons metric on sync screen by source.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d77c52a
+
+### [Android] Launch new sign-in flow from ntp top feed promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04c7bfd
+
+### Reland "[Android] Update bookmark signin promo logic"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75aaba7
+
+### Reland "Cleanup enrollment oobe features"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb7628b
+
+### [gbb-cct] Adds save button on click implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1914ac2
+
+### [Android] Update sign-out string descriptions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/163a2d07
+
+### App Install: Use common method to calculate App Discovery metrics app id
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e776882
+
+### [Compose] Add proactive nudge type and a11y announcement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc4a5e3
+
+### autofill: use a scoper to reset SaveCardBubble testing focus bit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dba0c34c
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/translate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc09245b
+
+### [SurfacePolish][CleanUp] Clean up surface polish code related with SURFACE_POLISH_SCROLLABLE_MVT_PARAM parameter.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/868fb94
+
+### Allow dogfooders to opt into recording MQLS logs via chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/059f042
+
+### [NTP][Enterprise] Add fake data param for Google Calendar module
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/97578ff
+
+### Add FlatBuffer Migrate Stale Tabs to about_flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d7b1970
+
+### [Manta] Build for android
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/091794a2
+
+### [TabResumption] Add default app Url filtering for remote tabs.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4ae80ca
+
+### [Uno-D] Add SyncEnableContactInfoDataTypeInTransportMode feature to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0adb3b5
+
+### Prerender: add early lifecycle update flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/428aa98
+
+`);
+              </script>
+            </body>
+        </html>
