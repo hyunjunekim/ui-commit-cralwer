@@ -1,0 +1,428 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-16
+### views: Flip the default value of layout_manager_use_constrained_space_
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d97c8db
+
+### Add logging for AsyncWidgetRequestWaiter on fail
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/937933e7
+
+### Re-enable tooltip focus for lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c081b16
+
+### WebUI: Fix type errors in cr_elements, when stricter flags are used.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d87dab
+
+### HTML Mode Removal: Finishes leftover work for removing aria-dropeffect
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0413338
+
+### ozone/drm: Add some more tracing around pageflips
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4167fc03
+
+### Harden FocusManagerEventHandler against Widget destruction
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d481306
+
+### Add menu item for renaming product specification
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/358cb95
+
+### Check window is still attached before showing tooltip
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52b159d
+
+### Shortcut: Display top row key blocked by fn key nudge
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea663fed
+
+### [ozone] Handle input release events during wayland window drags
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b73840a8
+
+### [lensoverlay] Synchronize searchbox state with overlay.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d07ff50
+
+### extension: block extension popups on visible security dialogs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/321371e
+
+### x11: Clear cached location after warping cursor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bca458
+
+### [ozone/wayland] Fix scaling issues below 100%
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2ad0d8fc
+
+### Revert "[Default Nav Transition] Screenshot same-doc navs: content integration"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/54d36fb8c
+
+### Remove references to launched kChromeRefreshSecondary2023 feature
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05baea74
+
+### Empty state for revisit surface.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c8f27e
+
+### wayland: factor HandleDragEnd out of Reset in data drag controller
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0f2e2e8
+
+### WebUI: Remove unnecessary build_webui() tsconfig_base overrides.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9626dbd1
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c28d27a
+
+### Reimplement TopControlsMoved in CC
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9506935
+
+### [skyvault] Add OneDrive placeholder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f126f51
+
+### Remove UI string IDS_FILE_BROWSER_ARCHIVE_MOUNT_INVALID_PATH
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b979a33
+
+### Isolate OmniboxSuggestionsDropdown constructor params to setters.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/deb42fe
+
+### Revert "[live-preview] Use a fixed camera preview window size"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5a8cc7
+
+### [office] Update CannotShowMoveConfirmation test to start at higher up
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eecc9d212
+
+### [SurfacePolish][CleanUp] Clean up surface polish code in test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/616c51ad
+
+### [Files]: Creates recent model options.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fbd2440
+
+### Reland "[lensoverlay] Fix side panel interactions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6af23c11
+
+### Revert "[mullhet] Add "No suggestion found" message to autofill popup."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/816d42d
+
+### gardening: Fix ArcSessionManagerTest.ArcDisabledInLockedFullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d29f84d
+
+### Refresh suggestions when holding space opens.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a709e1
+
+### [live-preview] Use a fixed camera preview window size
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62fc2c6
+
+### [Commerce] Use ChromeRefresh2023 logic by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ecb3d7
+
+### [SavedTabGroups] Fixes editor bubble crash in incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5b5e071
+
+### file_manager: loosen arg type from Profile to BrowserContext
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/347dc98
+
+### Wire omnibox suggestions visibility and color to the BottomAttachedUiObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d9169c
+
+### Trigger ProductSpecification entry point for navigation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fddd5f8
+
+### Delete code hooking up the new CrOS install dialog to omnibox install
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6ee84dc
+
+### Fix full cert export initialization of file_type_info.extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8550ecf
+
+### [FedCM] Fix bubble dialog positioning issues
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/359cece0
+
+### [Mahi] Implement \`ShowDisclaimerUi\` in the \`MagicBoostController\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a15c1fe
+
+### [tab group v2] Make the everything button square
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5a063c
+
+### crosier: exclude all flaky Crosier tests from ChromeOS CQ.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c3a9d1
+
+### Revert "[Uno-D] Create IPH for remembering explicit browser signin preference"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d7b148
+
+### [MediaRouter] Use ChromeRefresh2023 logic by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31d04ef
+
+### [lensoverlay] Use query params to trigger translate onebox.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/709db9b
+
+### [Omnibox] Use ChromeRefresh2023 logic by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40598f1
+
+### [lensoverlay] Fix tab dragging.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed9455f
+
+### Add additional product specification menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e20eb85
+
+### [User Education] Change URL in low usage promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8483af9
+
+### Show/Hide Performance Intervention Button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57541c2
+
+### IWYU: Add missing include for std::variant usage in tab_strip_model.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2958f58a
+
+### [RWI] Require user activation for real world identity API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dd6e66
+
+### [SavedTabGroups] Add 20px version of TrashCan icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c508e4d
+
+### [Shortcuts] Add AllowBlocking to GetStartupProfilePath.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1a671b38
+
+### [Autofill] Modify auto dismissal of save card confirmation dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ad1d9fd
+
+### boca: Set up SWA skeleton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa42a05
+
+### [SHv2] Record the number of auto-revoked permissions per type
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f29767d
+
+### [MediaPreview] Use ChromeRefresh2023 logic by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fce4a36
+
+### Add main node annotations toggle to settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9af90f5b
+
+### Remove Friend declarations from rest of discovery/access_code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98af8ca
+
+### [Uno-D] Do not show web signout IPH for UNO phase 0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/91ff3b0
+
+### [SavedTabGroups] Limit footer section shown in TabGroupEditorBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1102a84
+
+### [SavedTabGroups] Move prefs into single pref_names file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bf933d
+
+### wm: Remove overview_test_util SendKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bca883
+
+### Implement temporary passwords toggle in Google Services
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/095e15a
+
+### [Omnibox] Start/stop fused location provider listening on resume/stop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/046f1b1
+
+### Reland "[Android] Update bookmark signin promo logic"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47dc6f1b
+
+### [UNOp2][Android] Update bottom sheet account list item views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/722f529
+
+### Avoid incorrect downcast in SavePaymentIconView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0201315
+
+### Revert "[LHS indicator] Update PageInfo subtitle on permission reset"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67886ba
+
+### [autofill][clank] Transition to LoadingState for VCN Enroll Bottom Sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/905255d
+
+### [gbb-cct] Adds page insights on click implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6d2a54
+
+### [Uno-D] Create IPH for remembering explicit browser signin preference
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7de8069
+
+### Disable flaky chip button UI tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a87f7efd4
+
+### Expose PWM form parsing to Autofill.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51bb400d
+
+### [LHS indicator] Update PageInfo subtitle on permission reset
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6536d599f
+
+### CrOS Settings: Remove openArcStorage WebUI message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cda613
+
+### [UNO] Add delay to Autofill Sign In Promo with no account present
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5342f0
+
+### [Android] Fix sign out snackbar not shown from google settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3f5dfa
+
+### [android/passwords] Implement account storage notice view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53e4f5a
+
+### Reland "Revert "Reland "[Android] Update bookmark signin promo logic"""
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed92fb2
+
+### [UNO] UI for Sign In Promo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4691dd4
+
+### Revert "Move immersive fullscreen controller update to FullscreenStateChanged"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2c8a2b
+
+### [Fixit] Cleanup PasswordGenerationBottomSheet feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/79dd3b9
+
+### Add VCN 3DS auth latency metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a6738a71
+
+### Remove kItemsTriggeringFieldFilling.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55b5f7c
+
+### Move immersive fullscreen controller update to FullscreenStateChanged
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42ef3e2b
+
+### Revert "[lensoverlay] Fix side panel interactions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d55b86a
+
+### autocompleteText to be Nullable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75a4dc8
+
+### geolocation: Add kLocationProviderManager feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cc04eb847
+
+### [wasm] Add Chrome flag for WebAssembly Memory64
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1a413e03
+
+### chrome: removes cco test
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7b09d85
+
+### nudge-migration: Remove expired chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d7add3b
+
+### Remove sync-poll-immediately-on-every-startup flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/eb8c321
+
+### printing: Add lacros extension printing feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/982b0bd6c
+
+### Reapply "Reland "Add crabbyavif wrapper behind a flag""
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/47a265e
+
+### cleanup system color picker for macOS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0090d31
+
+### [Compose] Add proactive nudge compact ui config option
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/afed0e1
+
+### Add feature to force mayLaunchUrl to not send users' cookies
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/822b09c
+
+### [Cake] Extend feature flag milestone
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/25d36386
+
+`);
+              </script>
+            </body>
+        </html>
