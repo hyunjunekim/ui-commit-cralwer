@@ -1,0 +1,368 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-17
+### Update Main Content Extraction proto converter unittest.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c029cc
+
+### [ozone/wayland] Immediately commit for no-change configures.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e7078f8
+
+### [Fuchsia] Cleanup ClientNativePixmapFactoryFlatland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d6b198a
+
+### part3: GetHeightForWidth default uses CalculatePreferredSize(SizeBounds)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a80961
+
+### Use NOTREACHED_IN_MIGRATION() in the rest of src/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7843eba2
+
+### Revert "HTML Mode Removal: Exposes HTML id as a string attribute"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c5a17bd7
+
+### Set ReadAnythingLocalSidePanel enabled by default.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b25479c
+
+### [a11y] Removing dead ViewsAXTreeManager code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50faaae4
+
+### WebUI: Fix type errors in cr_elements, part 2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/10bfa078
+
+### Reland "Fix bubble-dialog resize for web-modal dialogs"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08eb6e4
+
+### HTML Mode Removal: Exposes HTML id as a string attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e4febc9
+
+### Side panel: Migrate history_clusters/ to Lit.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/69d214f
+
+### Remove features::kAccessibilityFocusHighlight feature flag
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2f506e
+
+### Add binding to set anchor targets for cr-url-list-item
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6fb44164
+
+### Update ChromeVoxClassic permissions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68b4c26
+
+### [accessibility extensions] Prepare caret browsing for deprecation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f394864
+
+### WebUI: Use Lit's conditional rendering instead of hidden in a few  cases.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1eff99a
+
+### Reland "[Default Nav Transition] Screenshot same-doc navs: content integration"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7bedaf8e
+
+### views: gently tidy DialogClientView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c7ff46b
+
+### Certificate Management UI V2: Add localization infrastructure.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c975cf7
+
+### Check that RunShellDrag is only called for views hosted by the widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39de471
+
+### Require client for InitParams to always specify an ownership mode.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b67edea
+
+### part4: GetHeightForWidth default uses CalculatePreferredSize(SizeBounds)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/359cb88
+
+### lacros: allow browser opening externalfile:// virtual files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24182b1
+
+### [lensoverlay] Fix bounds for iframed images.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/078573e
+
+### Instantiate OmniboxSuggestionsDropdown from XML
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/054dcd6
+
+### [lensoverlay] Add cursor tooltip and update the initial toast string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dbdb60
+
+### [mahi] Add glue code for the integration of mahi and media app
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/756aecb3
+
+### Ensure Suggestions list animation always starts from known state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4b0227
+
+### Reland "[Fixit] Remove contextual page action price tracking flag"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ed7f8e44
+
+### Split LensOverlay find entry point from experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55d0c66
+
+### [SavedTabGroups] Hide footer when V2 flag disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47dc17d
+
+### shortcut: Add customized accelerator in input_page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69c4f41
+
+### [lensoverlay] Fade out shimmer on close
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48441b39
+
+### app-controls: Add test for UpdateApp method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dad02c
+
+### Add UI for showing user encryption information.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1012a07b
+
+### Allow PreWarmingRVAdapter to warm views synchronously.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/629b450
+
+### [omnibox] Fix text alignment for @gemini IPH suggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/105ea02
+
+### Fieldtrial testing config for performance controls round 2.5
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6cebcd
+
+### BaseSuggestionViewBinderUnitTest cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3a3af16
+
+### [Omnibox] Handle no-fragment case for RichAnswer rendering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c135b8
+
+### mahi: Implement opt-in card CreateWidget utility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af1612a
+
+### Remove obsolete default app ids
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56a5260
+
+### Apply unused site and ChroMenu strings if enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b1c37c2
+
+### Fix find bar from re-opening after tab switch when lens overlay is triggered
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0baf913
+
+### MagicBoost: Integrate MagicBoost opt in flow into Mahi Menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c62f1f6
+
+### Add profile reporting management messages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c6e81c
+
+### [lensoverlay] Fix AddQueryToHistory when side panel is resized.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6db084
+
+### [chromeos] Allow edge inputs for content windows when maximized
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d1fe3b
+
+### Remove Chrome Refresh Flags from Tab Strip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/234a47c
+
+### [Gardening] Disable flaky browser tests on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d04371f6
+
+### CrOS Settings: Use display email for drive labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b03325c
+
+### MagicBoost: Add more functions to MagicBoostController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed1051a
+
+### History WebUI: Update URL format to omit trivial subdomains
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6b75206
+
+### Clean up IsChromeRefresh2023 in bookmarks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4828f80e
+
+### Reland "[Uno-D] Create IPH for remembering explicit browser signin preference"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f603544
+
+### Android: Remove remnants of ProfileAndroid
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d32d8bc
+
+### [SurfacePolish][CleanUp] Clean up surface polish code for Start and NTP layout params and background.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/320c367
+
+### [lensoverlay] Add source query parameter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95b2ed1
+
+### [TSLO] Avoid kicking off transition before control container layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1690b996
+
+### Migrate in-session confirm password dialog to class-based syntax
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2ceffa
+
+### macOS color picker cleanup 2/2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0e4862
+
+### [gbb-cct] Allow disabling peek; remove/move some params.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3dbdba02
+
+### [gbb-cct] Don't crash if empty or invalid config is provided.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3cd1faa
+
+### [FPF] FeatureParam-guard enabling only when 3pcs are blocked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0dae5b6
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53e61a57
+
+### Adds a confirmation dialog for disconnecting the cloud authenticator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9dfff94
+
+### [Uno-d] Restrict access to \`kPasswordsLeakCheckOAuth2Scope\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c5b011
+
+### app-controls: Add app blocking toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cef73fc2
+
+### Add the signout button to the unified settings panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19c9a751
+
+### [Android] Fix history sync protrait layout issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa8dbad
+
+### [Permission] Add pixel tests to test permission prompts with long origin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d35c59
+
+### [UNO] Fix crash caused by access of invalid form manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90b14675
+
+### [UNOp2][Signin] Invert email visibility in history opt-in footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a6a675
+
+### [Uno-D] "Verify it's you" does not start a sync setup flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47a6812
+
+### Reland "[LHS indicator] Update PageInfo subtitle on permission reset"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72feb25
+
+### [OOBE] Finalize personalized flow logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c0554fa
+
+### Bubble: remove all SizeToContents() in /chrome/browser/ui/views/permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d12bb66
+
+### Tidy up structure of calling javascript.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88b6ac8
+
+### [PEPC] Rename feature for testing to BypassPepcSecurityForTesting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d5821f
+
+### Update the default minor-mode deadline to 1000ms.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8117d5ba
+
+### Move browser actions to c/b/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e2a987
+
+### Add ReadAnythingDosIntegration to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/22cc7c6
+
+### [Android TRM] Add 2 #enable-tab-resumption-module params with V2.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/552cbe9b9
+
+### Cleanup screencast v2 flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/28af4a7
+
+### [WebAuthn] Add flag for enclave and GPM PIN
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/159df53
+
+### Add extensible enterprise SSO feature flag on Mac
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/57a6b27f
+
+### [Compose] Add feature flag for displaying nudge at cursor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6e3687c
+
+`);
+              </script>
+            </body>
+        </html>
