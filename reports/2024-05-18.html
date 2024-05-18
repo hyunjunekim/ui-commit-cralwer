@@ -1,0 +1,336 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-18
+### Revert "shimless_rma: Allow fullscreen requests"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c960dc0
+
+### Update window rounded corners for pip window
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/15d6f867
+
+### Reland "Set ReadAnythingLocalSidePanel enabled by default."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40a7259
+
+### Update pip state to Lacros's local window state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02a807ba
+
+### WebUI Gallery: Migrate to Lit, part 2.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/411f668
+
+### Migrate most remaining NOTREACHED()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/188188d
+
+### Remove non-ChromeRefresh2023 code paths from some //ui/views files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/99fe5ddf
+
+### [views-ax] Add RootView's ViewAccessibility as a WidgetObserver
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/066f6305
+
+### Use a more stable display::Display::id_ on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31306f8
+
+### Remove more deprecated LatencyTracker UMAs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d7cf359
+
+### Android: Delete ChromeRestriction, as they are all usused.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b5819ca2
+
+### WebUI: Use attrForSelected with HTML attrs only in CrSelectablelMixin.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4e17566
+
+### [viz] Use std::unordered_map for CARendererLayerTree::CALayerMap
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ffa0f8
+
+### Clean up easy test uses of features::kChromeRefresh2023
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09fcefe
+
+### Certificate Management UI V2: Local certificates section skeleton
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbef433
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a7732f2
+
+### [ozone/wayland test] Fix latest applied viz seq ID setting
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f322f6
+
+### Update description of some UI strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42579ae
+
+### Revert "Set ReadAnythingLocalSidePanel enabled by default."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbbe8d30
+
+### part1: GetHeightForWidth default uses CalculatePreferredSize(SizeBounds)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a382b48
+
+### Create CastDeviceFooterView and add to MediaItemUIUpdatedView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea8f55d
+
+### brightness: Only send brightness slider metrics after short delay (2s)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/640701a0
+
+### printing: Implement Get Lacros extension printers on ash-chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/187ecec
+
+### Undo SuggestionsList VISIBILITY management using setVisibility.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53a96b1
+
+### Force show divider for partial width bottom-attached UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e8652f
+
+### [skyvault] Rename local_user_files/ to skyvault/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a143a9fc
+
+### Add page action controller for product specifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7aa8b3e
+
+### app-controls: Create PIN entry dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24e713a
+
+### Move DigitalIdentityProvider to //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/981ea51
+
+### Remove now unused GaiaPasswordChangedScreen implementations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce4a4fe
+
+### mahi: Implement ShowOptInUI function
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62437f4
+
+### [User Education] Move Tab Organization context menu "New" Badge to 2.0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca447953
+
+### [User Education] Switch Tab Organization to use "New" Badge 2.0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca1c53d
+
+### [lensoverlay] Adds an info icon button to the overlay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84dc169b
+
+### Remove long-enabled feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74ab8ce
+
+### [IBAN][Clank] Delete IBAN bottom sheet bridge unit test file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85dddc5
+
+### [lensoverlay] Properly handle empty string text separators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d38f2f1
+
+### Listen for un-owned Views destruction to eliminate potential dangling pointers.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac13a43
+
+### ExternalProtocolDialog is already a View, so use it as such.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45e2eb9
+
+### Remove friend declarations from c/b/ui/webui/access_code_cast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2df320
+
+### Reland "[live-preview] Use a fixed camera preview window size"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a551b6e
+
+### [omnibox] Fix bug where omnibox text alternates visibility of 'https://'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b1ed56
+
+### [Shortcuts] Fix namespace usage in create_desktop_shortcut.h/.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/757f4a4
+
+### webui: preload beyond Tab Search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2247ef
+
+### Revert "[lensoverlay] Add cursor tooltip and update the initial toast string"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb808d3
+
+### [oobe] Fix LockScreenStartReauthDialog::Show crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34779b2f
+
+### Make app_home sources clearly Win/Mac/Linux only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e526946
+
+### Performance intervention button responds to tab strip changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82db874
+
+### Retire Adaptive Suggestions Java implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdf740b
+
+### [declutter] Add custom message for archived tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96697cd
+
+### ChooserDialogView is already a View, so use it as such.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf19559
+
+### Emit metric for number of plus address refreshes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f5ac98
+
+### [lensoverlay] Only send masfc when there is a search context
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7052e4
+
+### [lensoverlay] Move Lens histograms into a common UMA directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/183fbcd5
+
+### Fix permission chip's animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47a6cc0
+
+### [Tether] Add Control for Notifications Toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6edce5d
+
+### [mullhet] Execute actions upon clicking the context menu entries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11a0fe0
+
+### [Autofill context menu] Make command execution more consistent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec719cf8
+
+### Rearrange autofill_context_menu_manager.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/320e9e9
+
+### [mullhet] Display different context menu entries if passwords are saved
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d6daaa6
+
+### [Permissions] Allow pageinfo sub-view for all one-time permissions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84d64a9
+
+### [UNOp2][Android] Update history sync screen strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac32c31
+
+### [Cookies] Make the "Block Truncated Cookies" behavior permanent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b19527f
+
+### support-tool: Separate detected PII data to different lines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8db8438
+
+### Expose PW classifications to Autofill on iOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b1098e
+
+### Add permission-settings button to desktop-media picker when needed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f70eeb3
+
+### [lensoverlay] Exit Overlay on entering fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0f4293
+
+### Parametrize MinorModeRestrictionsFetchDeadlineMs value.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9da8b77
+
+### [Uno-D][Metrics] Record ChromeSigninUserChoice modifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bed2091
+
+### fix delete and edit autofill profile imports to use whole path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a37faee
+
+### Add an account section header string to the unified settings panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79b136a
+
+### [gbb-cct] Adds UMA logging for events in GoogleBottomBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3c8cef
+
+### Launch followups for saving passwords in the account on Mac Linux Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/685944c
+
+### [gbb-cct] Fix share action to use embedder pendingIntent if available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7864e45
+
+### Lacros-test: Enable HostedOrWebAppTest.CtrlClickLink.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0c440b
+
+### Introduce class for AutofillBubbles anchored on the location bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f9cc7e
+
+### Making AutocompleteState#mAutocompleteText as Optional<String>
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26718da
+
+### Fix the issue that Tab is not visible in the getDisplayMedia picker dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/edf1f48
+
+### Move bookmark_app_util from web_apps into extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80d9274
+
+### Add chrome://flag controlling Omnibox asynchronous view inflation.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ebcbf7ac
+
+`);
+              </script>
+            </body>
+        </html>
