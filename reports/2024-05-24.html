@@ -1,0 +1,364 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-24
+### ui: fix gcc/libstdc++ build break
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef8e6bea
+
+### Files app: Add star icon
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fc4c21
+
+### [A11y] Support ARIA progress bar values with aria-valuetext
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a257e37
+
+### Reland "Add VirtualDisplayUtilLinux with X11 support."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d6ce652
+
+### Explicitly specify widget ownership in a few files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a6361d
+
+### Certificate Management UI V2: enable link to native cert management UI
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbf5959
+
+### [User Education] Gate use of SimpleMenuModel::SetIsNewFeatureAt(...)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cbc842
+
+### [a11y] Testing config for finch trial of PruneRedundantAXInlineTextBoxText
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6091c1750
+
+### [a11y] Remove feature flag for launched large cursor feature
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d6df4e39
+
+### JNI Zero: Require @JniType conversions functions to appear in .h files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f46caa51
+
+### views: GetHeightForWidth default uses CalculatePreferredSize(SizeBounds)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/063ec54
+
+### Certificate Management UI V2: Show correct platform cert import state
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ea929c
+
+### [Nearby Presence] Migrate StatusCode enum out of NearbyPresenceService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77440a5d4
+
+### fusebox: remove keep_extension argument
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b372d95
+
+### [Mahi] Update the magic boost illustration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc723d21
+
+### [webui bubble] Enable draggable regions for non-platform bubbles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44b4a3e
+
+### Pin preloaded apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4021448
+
+### Remove QP_LOG macro
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b2992c9
+
+### Do not allow user to select the additional text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c76e36cb
+
+### birch: Connect BirchMostVisitedItem to history service and favicon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc97d0d
+
+### Move GetIbanAccessManager() into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55f1cf4
+
+### Explicitly specify widget ownership in //chrome/browser/ui/views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74299a3
+
+### [lensoverlay] Set Lens footprint url param for text selection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b353de2
+
+### Fix default browser prompt manager crash in headless mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/684e3ccd5
+
+### Add placeholder texts for empty source and device
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14ced475f
+
+### [lensoverlay] Add 3 dot menu to overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4810a2d
+
+### CrOS Settings: Implement new date time handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8969da7
+
+### Explicitly specify widget ownership in //chrome/browser/ui.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/265419c
+
+### Clean up SidePanelPinning flag and unused code from core side panel logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11e9b39
+
+### Show the Performance Intervention Dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f58a9aa
+
+### Make tabstrip operations async in ClusterManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ee67f50
+
+### Make AutocompleteController Optional<>.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d16127a
+
+### crosapi: Add SetMinFlingVelocity to TestController interface
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37c51f8
+
+### Compile failing Fling* TabDragging tests for Lacros, left disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac80109
+
+### [CrOS Hotspot] Remove hotspot feature flags
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f10937e2
+
+### [Recent Sessions] Record daily/weekly histograms once per day.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b372ca54
+
+### Set text for lens ActionItem and create ClassProperty for hiding title in side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f851639
+
+### webauthn: rework hints a bit
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4862dc4
+
+### Reland "Lacros-test: Enable HostedOrWebAppTest.CtrlClickLink."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf42e82
+
+### Revert "[UNOp2][Android] Make account info acquisition as synchronous as possible"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8cb2e652
+
+### [themes] Isolate windows dependencies in standalone target.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0a8cf6d1
+
+### borealis: Attribute launches to a referring source
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99a7a87
+
+### [lensoverlay] Use "auto" for source language and Translate language synonyms for target language.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe709d5
+
+### Explicitly specify widget ownership in //chrome/browser/{ash,ui/ash}.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4770e39
+
+### [Extensions Cleanup] Remove unnecessary create uninstall dialog method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5258de72
+
+### app-controls: Add "Forgot PIN?" help center link
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff92d4b
+
+### app-controls: Add search tag for parental controls in settings search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0333ffa
+
+### [FedCM] Fix GetBubbleBounds crash speculatively
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37c260a
+
+### Do not record Autocomplete metrics if the AutocompleteResult is empty.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecd24906
+
+### Fixing vcn gray-out for opted out merchants on MacOS.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8a95cf
+
+### [lensoverlay] Expand search stack push and pop logic.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4dbdbc
+
+### [Omnibox] Fix max lines for dictionary RichAnswerText
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5120e3
+
+### Remove ENABLE_MERGE_REQUEST from container app.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/490ea21
+
+### owners: Add ChromeOS Connectivity folks to OWNERS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bc2a7d
+
+### Remove IsDeviceLocalAccountUser in chrome/browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbe4307
+
+### Remove deduping logic from Append3pcExceptions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a2beaf
+
+### Move GetIbanManager() into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6644273
+
+### Remove obsolete queryFromGurl() call.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10a9904
+
+### Replace AutocompleteMediator Nullables with Optionals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/800a8f3
+
+### [Uno-D][Metrics] Create Signin Pending resolution started source histogram
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e877e15
+
+### base: Remove flat_hash_map.h include in supports_user_data.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0e8dc1
+
+### Cleanup usage of deprecated Cryptohome::Key
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/163a65f4
+
+### [Uno-D][Metrics] Inconsistent state started & resolved metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaabf62
+
+### Remove parameterization of CookieControlsUserBypassTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba05900
+
+### [UNOp2][Android] Set scrim color on bottom sheet instead of activity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d46171
+
+### kiosk: Introduce chrome://kiosk-vision-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6901276
+
+### Disable one ThumbnailTabHelperUpdatedInteractiveTest on win-asan
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cdd656
+
+### Add clock to AbusiveNotificationPermissionsManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35af5f8
+
+### Refactor safety_hub/ to abstract helper classes, methods, and constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e82c96f
+
+### Replace StringPiece with std::string_view in //chrome/browser/ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ba684e
+
+### [SHoA] Enable permissions revocation behind flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33f2ff3f
+
+### Remove subapps list from uninstall dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efd5c1b
+
+### Record incorrect parent password for SU extensions approval on UMA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e074fb
+
+### privacy-hub: Add microphone HW switch info to permission item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a78d909
+
+### [UNOp2][Android] Make account info acquisition as synchronous as possible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2bae94
+
+### Remove consumer kiosk commandline flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3ea763
+
+### Remove tests testing ARC kiosk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fe4cdc
+
+### [UNOp2][Android] Fix background color for history sync opt-in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de1da0d
+
+### Zero media::AudioBus in AudioStreamCoordinatorTest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c3f194
+
+### [Extensions] Add warning to extension's detail page for mv2 deprecation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e8a342
+
+### Add timeout for file suggester.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e5209f
+
+### Simplify SizeCalculator and subclasses
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d01cee8
+
+### Add previews for local and drive files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6aa3d148
+
+### [TabStripModelRefactor] Refactor the AddWorkflow to allow for easier migration to using TabCollection.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/549283e7
+
+### Mall: Add skeleton of SWA wrapper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2090b27
+
+### Clean pinned toolbar button tooltip text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9dc553
+
+### [UPMAccessLossWarning] Add the feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2a6dafa
+
+`);
+              </script>
+            </body>
+        </html>
