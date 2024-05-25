@@ -1,0 +1,300 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-25
+### CrContainerShadowMixin: Add support for adding CSS classes on container
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8166c6
+
+### WebUI: Special handle \`CrLitElement\`s with autofocus in cr-dialog.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e40f471
+
+### [views-ax] Perform ax cache merge before View::GetAccessibleNodeData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd05061
+
+### Explicitly specify widget ownership in most files in //ui/views.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26a7c126
+
+### WebUI: Initialize cr-slider value to zero on startup.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/050a7e8
+
+### [Mac a11y] Add DumpWithoutCrashing to collect info about exception
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/169ecaa
+
+### Synchronize EnableTrustedTypesCSP in webui_examples
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/26e4aae6
+
+### Explicitly specify widget ownership mode in Widget::InitParams construction.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fdf8f7b9
+
+### Remove Jank UMAs from LatencyTracker
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/66e7d4c
+
+### [views-ax] Set the a11y text offsets in TextField & Label GetAXNodeData
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/585e639
+
+### libgestures_glue: remove deprecated screen_x/y_dpi fields
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/704d9c63
+
+### Record caller of animation end/abort
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b0037e
+
+### ui/views: fix undeclared re-entrancy in shell drags
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc876cf
+
+### Disable DirectCompositionLetterboxVideoOptimization by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/967da21
+
+### HDR/macOS: Throttle HDR headroom updates
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9999ef6
+
+### Delete dead code from NtpCustomBackgroundService.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e61dbd0b
+
+### printing: Dispatch StartGrantPrinterAccess requests to lacros from ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62078865
+
+### printing: Implement dispatching print requests to lacros from ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7af21cb
+
+### [lensoverlay] Show context menu when text detected in region.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b6197ba
+
+### Add TODO note about potential mac ui issue.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12c9e10
+
+### mahi: Update opt-in strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/46af965
+
+### traffic counters: Enable traffic counters for WiFi networks
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/45331fd2
+
+### app-controls: Add app search bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63ad075
+
+### [lensoverlay] Makes the dynamic theme colors available to the WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf4c5ac
+
+### [RWI] Update RWI interstitial when page navigates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4159106
+
+### [Tab Group Sync] Avoid using specifics in the model (part 2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e5b51c9
+
+### Fix VCN SMS OTP crash in failed OnDidSelectChallengeOption response
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0538ab1e
+
+### Extensions: Dark Mode: Parse icon_variants top-level key and store
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e109917
+
+### Implement Performance Intervention Bubble Delegate and Observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ff4f1a
+
+### [FedCM] Fix disappearing globe icon on button flow modal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6682c1b
+
+### [Mahi] Implement the linked text in the disclaimer page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bb8c86
+
+### Don't show non-app extensions on chrome://apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee4b9fe
+
+### Remove Chromad specific message for disabled devices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71b5b68
+
+### [Gardener] Disable testProfileDataUpdateOnInitialExpandedSheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0493e7
+
+### Remove failing CompleteRequest check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a12674
+
+### ChromeOS Settings WebUI shows AuthPanel based on FF state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f27da6
+
+### Extensions: Icons: Create a new directory to house icons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81820de0
+
+### Revert "[TabStripModelRefactor] Refactor the Remove Workflow to allow for easier migration to using TabCollection."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f365016
+
+### [TabGroups] Add tab to closed group o7
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40464ee1
+
+### [Tab Group Sync] Avoid using specifics in the model (part 1)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1e27fc
+
+### [Permission Prompt] Line-wrap the origin in permission prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/692b5aa
+
+### [Downloads] Show "quick action" buttons on chrome://downloads items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72c6624
+
+### [tab group v2] Fix screen reader message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42aec12
+
+### Add Translate action item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34d5605
+
+### app-controls: Update local block dialog icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d059502
+
+### [SHoA] Add permissions subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aa2032d
+
+### [lensoverlay] Resolves dynamic color palette based on screenshot
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c0e4e5
+
+### support-tool: Add a select all checkbox for data collectors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f37a760
+
+### [FedCM] Update modal background image on theme change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f91e44992
+
+### Move CloseWebauthnDialog() from AutofillClient to PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8d7823
+
+### Refactor UnusedSitePermissionsServiceTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a2702b
+
+### Track picture-in-picture occlusion for more permission prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6633582
+
+### Reland "[UNOp2][Android] Make account info acquisition as synchronous as possible"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bca90a8a
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0e35938
+
+### Revert "Remove QP_LOG macro"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6c99d0
+
+### [SHoA] Permissions link row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61bd1ed
+
+### [UNOp2][Android] Update account picker dialog layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c86ebbf
+
+### Forward TestPDM calls to TestADM or TestPayDM
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4473747
+
+### [Android] Add missing inRoot(isDialog()) to AccountPickerDialogTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a379ea
+
+### Make AddressDataManager::GetProfiles*() return const pointers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/150a645
+
+### [Android] Update signin fre strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6cfc5c
+
+### [PG] Remove new indicator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/051bdeb
+
+### [compose] Allow vertical anchoring on narrow element bounds
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fb576d
+
+### [Gardener] Disable flaky PopupViewViewsBrowsertests on Windows.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4146af18
+
+### [Desktop] Add Google G icon for plus addresses creation dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3929c61
+
+### [Android] Remove cancel button from the plus addresses bottom sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ce084a
+
+### [Passwords] UMA for save prompt acceptance for users without passwords
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f64aa13
+
+### webui: Use base::expected Parse in policy test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e601d9b
+
+### [TabStripModelRefactor] Refactor the Remove Workflow to allow for easier migration to using TabCollection.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d987d02
+
+### shortcuts: Remove picker flip flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/205d203
+
+### Add language downloading and voice selection flags to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d6d377c
+
+`);
+              </script>
+            </body>
+        </html>
