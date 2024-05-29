@@ -1,0 +1,376 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-29
+### Files app: Add star icon for Starred files materialized view
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/218d843
+
+### Fix header guard in miscellaneous directories
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6e08e5
+
+### [ozone+wayland] Allow ANGLEImplementation::kVulkan when ozone platform is Wayland
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9ca21ac4
+
+### [display manager] Improve CHECKs and add DumpWithoutCrashing for debug
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0056371
+
+### evdev: Ignore BTN_MISC in checking if any keys are being pressed
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fb4410f6
+
+### WebUI: Move CrScrollableMixin to Settings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db8041b
+
+### WebUI: Improve regular expression to extract CSS in lit_migration.py.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac8c83e
+
+### [RemoteMacViews] Wire TextEditCommands over mojo.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08c7422
+
+### [ChromeRefresh2023] Adjust upgrade row appearance based on UX requests.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8d458c1
+
+### ui/views: fix undeclared re-entrancy in system menu
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6d2895e
+
+### Fix default-constructor uses of Widget::InitParams in //ui/views.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/de16a6c
+
+### modifier-split: Add ModifierKeyUsageMetric for fn and right alt
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e8cf13e
+
+### ui::DisplayManager: Only adjust HDR headroom of PQ displays
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/06a4fb3
+
+### ui/gl/features.gni: Set use_egl=true unconditionally.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9eaf1e7
+
+### [views-ax] Removed TODO in SetDescription
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/18d324f
+
+### [a11y extension] Fix high contrast webstore extension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/551d606
+
+### [A11y] Repair bad aria-hidden usage by ignoring it
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40942fad
+
+### Compose: Use CrScrollObserverMixin instead of CrScrollableMixin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4b7c0050
+
+### Certificate Management UI V2: fix cert list header alignment and set font weight
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/45d4f58
+
+### Revert "[Mac a11y] Add DumpWithoutCrashing to collect info about exception"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cbeb6f04
+
+### Flatten vulkan-deps.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3eea78b
+
+### Create Scrim Sys token
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3cf29cc
+
+### WebUI: Use the stricter tsconfig_base_lit.json TS flags in cr_elements.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f97edf
+
+### Allow for multiple instances of WindowOcclusionTracker.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/02d5d565
+
+### ScrollPredictor Driven Scrolling Prototype
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c0b450
+
+### views: don't crash when traversing empty TableViews
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e07a2713
+
+### Make views::View the leftmost base class of BubbleDialogDelegateView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d37a8b1
+
+### Make the WidgetDelegate 'owned' by the client.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e6633a
+
+### Revert "Rewrite previously excluded raw_ptr fields"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1c75497
+
+### Rewrite previously excluded raw_ptr fields
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8a98a9ba
+
+### Destroy ViewAccessibility before view observers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac656fb3
+
+### [skyvault] Show Downloads before migration
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f09820
+
+### Remove Redundant Feature Checks for ChromeRefresh2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83e377c
+
+### Revert "[Compose] Dismiss nudge UIs after n field change events"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f1057e
+
+### Reject AutocompleteResult if Omnibox is not active.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28ccaa1
+
+### [extended-updates] Safeguard against showing dialog when not eligible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0594e78
+
+### [IPP] Add learn more link back to IPP sub-label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11f05b16
+
+### [FedCM] Show active widget to take the focus when UI is displayed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3184b5fd
+
+### [lensoverlay] Many improvements to the close flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3354113
+
+### [Mahi] Update more strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/607f2a5
+
+### Reland "[toolbarpinning] Add QR code generator action item"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d419e1a
+
+### [Compose] Dismiss nudge UIs after n field change events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6e9410
+
+### webauthn: drop dialog close callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d56cc9f
+
+### [Default Nav Transition]Smooth transition from screenshot to native view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dab823c
+
+### Add V2 birch weather provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87e9422
+
+### [TabStripModelRefactor] Refactor move workflow to allow for future collection integration.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a03c84ff
+
+### [Shortcuts] Add end-to-end integration tests using kombucha.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21edfd9
+
+### [lensoverlay] Add an enterprise policy to control the feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d470434
+
+### birch: Add browser test coverage for calendar chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d15d6d
+
+### Properly remove ClusterManager observer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82db7c2
+
+### [media-preview] Increase code readability in video_stream_view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9731af1
+
+### What's New: Remove page on ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99defa3
+
+### [FedCM] Make Show methods return bool
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b6b285
+
+### Records whether the pdf native page is frozen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/151feac
+
+### app-controls: Add custom pin verification for parental controls PIN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6621341
+
+### [FS Shortcut] Enable the feature on ToT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42459aa6
+
+### [gtm] Implement scrolling from classroom to tasks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c99c56
+
+### [FedCM] Download all profile pictures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49b073c
+
+### CrOS Settings: Wire up NewDateTimeHandler and add tests for it
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c61f98
+
+### [WebAuthn] Put 'Manage devices' button on hybrid connection dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97c6122
+
+### [WebAuthn] Change text on bootstrap dialog back button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c5b714
+
+### [Desktop] Remove close dialog button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/630d3df
+
+### Fix header guard in //chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0591ab7
+
+### Disable flaky Logging_LostFocus test on Lacros.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7a840ff
+
+### Ensure switching languages in the same tab switches voices
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28e39934
+
+### [FaceGaze] Combines settings into one subpage per UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7463280
+
+### kbd-backlight: Get initial ALS status when observer is registered
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce9a3e8
+
+### Comment followup on chromium:5483610
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cfdd74
+
+### [hats] Add password setup for user perception survey on form submission
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9e54bc
+
+### [Android] Adjust padding in the plus addresses bottom sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d0e795
+
+### [gbb-cct] Dynamic Button based on config
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49b1f1a
+
+### [UB] Refactor GetStatus method in CookieControlsController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b66b5f4
+
+### kbd-backlight: Implement KeyboardAmbientLightSensorObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1661ed
+
+### Refactor FormFetcher::GetFederatedMatches to return base::span<const PasswordForm>.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a55b1e
+
+### [Android] Add icon before the suggested plus address.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4374d3e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7d37d4
+
+### [CodeHealth] Remove unused variable "force_reload"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00b988c8
+
+### [UNOp2][Android] Update back-of-card sign bottom sheet subtitle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/069b6c5
+
+### [UNOp2][Android] Show bottom sheet for 0 account sign-in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec356d6
+
+### Modularize //chrome/browser/themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b76feb6
+
+### Limit the number of recent files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47d3acf
+
+### [WebAuthn][Passwords] Disable biometric auth promo for WebAuthn windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d656b4a
+
+### Filter recent files by volume.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36d0a36
+
+### Fix tests related to recent files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb0fdb1
+
+### arc: Migrate user of ArcStorageManager to ArcDiskSpaceBridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0647665
+
+### channel: Move channel methods from browser_util to //chromeos/ash
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/73f7ad33
+
+### [mahi] Add flag UI for kMediaAppPdfMahi
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/48caf9af
+
+### Roll src/third_party/ffmpeg/ 092f84b61..bc1ee906c (502 commits)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6bd5cd67
+
+### Video Capture Linux: add backend for portal / pipewire cameras
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/edcd0133
+
+### dnt: Remove early swap for back forward visual transitions.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3e7ea37
+
+`);
+              </script>
+            </body>
+        </html>
