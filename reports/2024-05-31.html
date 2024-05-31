@@ -1,0 +1,348 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-05-31
+### settings: Refresh modifier keys when dogfood is enabled
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fa84431
+
+### Revert "[Reading Mode] Re-enable delayed side panel loading."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d9b597
+
+### events: Add API to determine which launcher icon to show
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb215e0
+
+### History Clusters: Migrate to Lit, part 3
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3ccdd8
+
+### Remove 0-arg (default) constructor for views::Widget::InitParams.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ba69cd
+
+### Revert "[ozone+wayland] Allow ANGLEImplementation::kVulkan when ozone platform is Wayland"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49aad997b
+
+### Modify WindowOcclusionTracker DCHECK to account for multiple instances.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7dc8555
+
+### Do cleanup in Mac snaptshot code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d5887bc
+
+### [views-ax] Remove unnecessary SetAccessibleName in MenuModelAdapter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c740d1
+
+### ui: Remove ColorProvider::HasMixers()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/594a4f3
+
+### Certificate Management UI V2: client cert manage link and tweaks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/29af15d2
+
+### Fix remaining 0-arg constructor uses of Widget::InitParams.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b2c2e0
+
+### [Reading Mode] Re-enable delayed side panel loading.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18462ebe
+
+### History Clusters: Migrate to Lit, part 2
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed4c5b5
+
+### Reland "[a11y]: apply non_const_ref to AXUpdatesAndEvents"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63bbdea
+
+### Reland "Bookmarks: fix restore focus after delete"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2258e84
+
+### TabSearch: Migrate to Lit, part 3.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e540063
+
+### Add \`PlatformFont::Exists()\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8bf24b4
+
+### CLIENT_OWNS_WIDGET mode can DCHECK in FocusController.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca7bb902
+
+### [lensoverlay] Allow search navigation after thumbnail removed.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/899bfe6
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88bddf0
+
+### [views-ax] Migrate GetAccessibleName to ViewAccessibility getter in
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/512b021
+
+### Reland "Disable EGL validation when GL validation is disabled."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bee3500d
+
+### Update namespace for files moved to //components/input
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c8e0b2
+
+### Clean up OzoneUIControlsTestHelper
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b0aa56
+
+### Add BFCache switches to Android WebView settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3168d13
+
+### [STG] Noop from TabStripModelChange if tab is not a part of the group.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb9ac31
+
+### editor: query country code continuously
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9eeeb5e
+
+### Revert "cros-preview: Handle closing print dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cadd68a
+
+### birch: Add BirchLastActiveItem and related boilerplate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/064728f
+
+### birch: Update network traffic annotations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/903d2ce
+
+### cros: UI changes to ChromeOS account manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2cd2f0
+
+### UserNotes: Remove user notes related WebUI code and tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10ee4b5
+
+### [media-preview] Draw preview badge / icon on top of video frames
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f94d49
+
+### Null-check optional button controller when updating
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08038ce2
+
+### Add \`bool GlanceablesClassroomClient::IsDisabledByAdmin()\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c3400a9
+
+### [views-ax] Use ViewAccessibility::SetName in chrome/browser/ui/views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/402ee49
+
+### Modularize chrome/browser/search/background
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6f69b5
+
+### [media-preview] Plumb permission state down to VideoStreamView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f4d841
+
+### [LHS indicators] Add pixel tests for verbose indicators
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f07493d
+
+### [lensoverlay] Check for focus manager in HandleKeyboardEvent.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df76090
+
+### [lensoverlay] Add icon and i18n to select text context menu item.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/098a02e
+
+### Resolve font list in default preference values
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a70401
+
+### Merge column header strings on various Settings pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba23e47
+
+### cros-preview: Handle closing print dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63d6708
+
+### Remove references to chrome refresh flag from chrome/browser/ui/webui/searchbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d27135e
+
+### Move Privacy Sandbox strings into PS strings file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/121782a5
+
+### Remove \`ENABLE_MERGE_REQUEST\` support for Glanceables Tasks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e87ef144c
+
+### [Tab Group Sync] Plumb PrefService to sync bridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2972d5a
+
+### Revert "[UNOp2][Android] Use the SigninManager for supervised accounts in the FRE"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58eef56
+
+### Use history_embeddings::kSearchMinimumWordCount feature param in webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eff0a3b
+
+### [tab group v2] Avoid accessing deleted group in menus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5430fda
+
+### Remove "_data" prefix from LoggingData proto fields.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fbc90ed
+
+### Handle forward delete for Android omnibox.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd509db
+
+### [media] Spanify chunk demuxer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34b8435e
+
+### [omnibox] Fixes spacing on answer vertical suggestion text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47ddbf6
+
+### [UNOp2][Android] Fix new sign-in flow scrim color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e6d99d
+
+### [lensoverlay] Clear state after related search before pushing to stack.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99169d51
+
+### Remove references to chrome refresh flag from chrome/browser/ui/views/autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff3d5e7
+
+### [lensoverlay] Uses dynamic colors in WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbce2b6e8
+
+### Remove references to chrome refresh flag from chrome/browser/ui/views/profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd9fc9ef
+
+### [Uno-D] Update Signout confirmation dialog strings and metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b96b738
+
+### Remove references to IsChromeRefresh2023 from download bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19854d96
+
+### [FedCM] Make the Android UI use the downloaded bitmap
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24cd099
+
+### [Uno-D] Check IsClearPrimaryAccountAllowed for non guest profiles only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb2ce3396
+
+### Use latest URL to check against clustering result
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/883d262
+
+### [DBSC] Convert BoundSessionThrottlerParams to an array
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96f7b4a
+
+### Remove references to chrome refresh flag from chrome/browser/ui/toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2ead6f6
+
+### Remove references to IsChromeRefresh2023 from web_applications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99cc220
+
+### Remove Browser.Tabs.SelectionToVisibilityRequestTime
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8a12d7
+
+### [UB] Update CookieControlsBubbleVC to use new TP features list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06b77ca
+
+### webauthn: log more in enclave browsertests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85febb6
+
+### [UNOp2][Android] Use the SigninManager for supervised accounts in the FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98746bb
+
+### Make PageInfoBubble not autosize until its layout bug is fixed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3bd529
+
+### Add flag for lens/gallery
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/acd2352
+
+### [text-box-trim] Add a switch to \`about://flags\`
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/70d025e
+
+### Add chrome://flags for classroom student and tasks glanceables
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/03ac75c
+
+### Add the links section in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f82bc23
+
+### [SurfacePolish][CleanUp] Clean up surface polish code for MVT (Part 2)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/772f147
+
+### Bundz: add chrome://flags entry for the prompt API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/375b6ec
+
+### [Eche] Cleanup network connection state flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4589fca
+
+### [TabResumption] Implement TabModel data fetcher for Android.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3dfd6611
+
+### [UNOp2][Android] Update feature flag for ReplaceSyncPromosWithSignInPromos
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7be9ed65a
+
+`);
+              </script>
+            </body>
+        </html>
