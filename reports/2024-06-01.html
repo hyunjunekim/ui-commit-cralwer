@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-01
+### views: only consider cross-axis dimensions when applying alignment in FlexLayout.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0cf755f
+
+### [views-ax] Migrate GetAccessibleRole to ViewAccessibility getter in
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b587844
+
+### Delete deprecated color calls
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4c243df
+
+### [lensoverlay] Adjust searchbox thumbnail row suggestions.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2216600
+
+### [User Education] Switch 'New' Badge label to use V2 API
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/973307b
+
+### [ChromeRefresh2023] Allow menu with child items to trigger action.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/070ef3e
+
+### [metrics] Update EventLatencyTimeFromTickClock to be optimistic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc9bf17
+
+### Specify Widget ownership for CreateTestWidget() callers in //ui/views.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c2f38dd
+
+### [views-ax] Removing OverrideIsLeaf
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7d99b4
+
+### Add two-parameter CreateTestWidget() in views_test_base.h.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d85162c
+
+### History Clusters: Migrate to Lit, part 4
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ee72d82
+
+### [views-ax] Standardize TODOs used for the ViewsAX project
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68750c3
+
+### Remove all references to features::IsChromeWebuiRefresh2023() helper.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b43c18e
+
+### Delete kChromeRefresh2023 and kChromeRefreshSecondary2023 flags
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a3a631
+
+### [UIA] Expose separator as UIA_ThumbControlType when focusable
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/161f713d
+
+### [Keyboard] Deprecate get/set Instance on KeyboardVisibilityDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3db0ae08
+
+### Revert "ui: Allow sdr luminance and min luminance to be equal"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e39ae1
+
+### Move tests to use CLIENT_OWNS_WIDGET.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/860a8aa6
+
+### Harden DesktopNativeWidgetAura against a destroyed Widget.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9819bb
+
+### [views-ax] Initialize accessibility cache before using it
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5da72cf
+
+### Adjust searchbox design to spec.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d269c4b
+
+### [views-ax] Make ComboboxModel selected index nullopt when list is empty
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1fcd8c4
+
+### [lensoverlay] Update color analysis extraction to respect max pixels and
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/259403bb
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f8dbcd
+
+### Revert "Keyboard shortcuts are ignored in the menu."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da718c0
+
+### Keyboard shortcuts are ignored in the menu.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5145655
+
+### Add LensOverlay entry point to the location bar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b46e08d
+
+### [FaceGaze] Adds control to adjust cursor speeds together
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fb0d0e
+
+### MagicBoost: Rename MagicBoostController to MagicBoostCardController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/999a996
+
+### Remove Chrome Refresh Flags from Tab Groups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d97c5a7
+
+### app-controls: Add top bar to parental controls page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e918ffd
+
+### Move InteractiveAshTest into //c/t/b/a/interactive/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9074755
+
+### Refactor result/retry UI of QuickAnswersView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eff8c0a
+
+### Birch: Make favicon_url of self share item const
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b4d4ed
+
+### [Shortcuts] Remove kShortcutCreatedEvent and change tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35b7721f
+
+### [PWA] Remove WebAppShortcutManager, clean up dead code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f21e61
+
+### Birch: Check ChromeSync integration policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b8611b
+
+### [lensoverlay] Migrate shimmer to Canvas2D instead of CSS Paint API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de6d747
+
+### Change multi-screen tests resolution to 1024x768
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9249a44
+
+### Move container app config.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c5b73c
+
+### Add execution logic for product specifications page action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/800a1c7
+
+### settings: Revert back to old mouse swap primary label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/073e55a
+
+### Remove unused DeviceLockDialogController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e010de2
+
+### [Cookie Controls] Use ChromeRefresh2023 logic by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b218eec
+
+### Move ShowVirtualCardEnrollDialog() from AutofillClient to PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/082d3923
+
+### [Autofill] Use ChromeRefresh2023 logic by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/964ecdf
+
+### birch: Connect BirchLastActiveItem to history and favicon services
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65a9158
+
+### CBD Timeframe Experiment: add error announcement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c5a43de
+
+### Reland "cros-preview: Handle closing print dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbf9219d
+
+### Disable falsely passing TabDragging test FlingOnStartingDrag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72e9f63a
+
+### [chrome-refresh-2023-cleanup] partial cleanup of location bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e511b45
+
+### Enable \`GlanceablesTimeManagementTasksView\` by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1a459662
+
+### Remove \`WallpaperDragDropDelegate\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba29940
+
+### Remove static Profile references from PasswordStoreBridge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/278efd28
+
+### [mullhet] Enable search bar for password manual fallback suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63f5a46
+
+### [FaceGaze] Adds new FaceGaze prefs and settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/963725b
+
+### Mark constants 'inline in secure_payment_confirmation_views_util.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0efb864
+
+### Create GetAutofillSnackbarController() in ChromePaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/309ef4d
+
+### Add messages to checks in the thumbnail tab helper test to aid debugging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8915ac7
+
+### Pass MahiMenuView's bounds with the context menu request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7fea22
+
+### Reland [mullhet] Add "No suggestion found" message to autofill popup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/503bc59
+
+### [min-font-size] Remove the runtime flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/844a8c8
+
+### Rewrite GetCookieSetting to stop assuming a same-site context
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1eca808
+
+### Apply auto abusive notification revocation to Safety Hub handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9cf33c
+
+### Integrate abusive notification revocation into SH permission module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/880c792
+
+### [SPC] Be explicit about the spacer between title + details
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc2c8f5
+
+### [WebAuthn] Fix key icon color in the header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87c1b30
+
+### [Site search policy] Favicon bgcolor for featured Enterprise search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb2084e
+
+### [SHv2] Use unique commands for Safety Hub menu notifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dfb8aa5c
+
+### Simplify InsecureCredentialsManager construction
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/100a78d
+
+### Disable FullscreenToLockedTransition test on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb6e4efb
+
+### [UNOp2][Android] Do not suppress re-FRE for inferred minors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2464cfd5
+
+### [Passwords] Ignore crowdsourced max length on manual pwd generation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34b86bc1
+
+### [Passwords] Refactor PasswordGenerationPopupController tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38110d3
+
+### [Clean-up] Remove unused method in NTPTilesInternalsMessageHandlerClient.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4f02588
+
+### Reland "[UNOp2][Android] Use the SigninManager for supervised accounts in the FRE"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/410b0446
+
+### gardening: Disable flaky Watermark- and Profile-related tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7790562
+
+### Reland "[TabGroupSync] Add device information's cache guid into SavedTabGroups."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/280dd56
+
+### [tiling-resize] Add about flag for Tiling Window Resize
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2e2076d
+
+### [Oidc Enrollment] Add OidcAuthProfileManagement feature flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab27a8a
+
+### [Send Tab Notifs] Create feature flag for Send Tab To Self notifications
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6e2a894
+
+### [waffle]Use correct macros to add a chrome://flags instance
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b44fc08
+
+`);
+              </script>
+            </body>
+        </html>
