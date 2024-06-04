@@ -1,0 +1,332 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-04
+### TabModalPresenter: intercept Escape key to dismiss.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05de956
+
+### Declare gl::GetGLProcAddress as __stdcall on Windows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0e100a6
+
+### viz: adding quad umas to log composition info
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/569634e
+
+### Decouple InsetObserver with KeyboardVisibilityDelegate
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7c3fe9f
+
+### Destroy views::View::observers_ after all other members
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5711441
+
+### [Code Health] Remove some uses of base::SupportsWeakPtr.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/409cc47
+
+### Reland "[views-ax] Add RootView's ViewAccessibility as a WidgetObserver"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc49a4aa
+
+### ozone: Use atomic calls for setting connector props.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f32db3c
+
+### [A11y] Move selection item method to AXPlatformNodeWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8d44d59
+
+### part1: FlexLayoutView respect SizeBounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac887e2
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00eb36d
+
+### Improve debugging PropertyModels
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e090d7b
+
+### [views-ax] Use ViewAccessibility::SetRole in //ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9d2e3f8
+
+### [TabStripModelRefactor] Remove UpdateGroupForDragRevert method.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce12eb60
+
+### preload-topchrome: add preload candidate selector
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f53b56
+
+### Add a presubmit warning against using BrowserUserData
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87358e8
+
+### WebAppInstallInfo: remove manifest_id-only constructor and all usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e1d22a
+
+### Separate HTTPS-First-Mode-in-Incognito from new settings controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77e18b0
+
+### Remove Autofill.Popup.AcceptanceDelayThresholdNotMet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ff4f946
+
+### [User Education] 'New' Badge respects new profile grace period
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2203019
+
+### Add page for history search in Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/951915f
+
+### [lensoverlay] Enable context menu on overlay when debug mode enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/716d615
+
+### Extensions: ManifestHandler: Separate Registry like ExtensionRegistry
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92beaff
+
+### [User Education] Controls for grace periods and cooldowns
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/25a8cb52
+
+### [User Education] Create new profile grace period
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b2c055
+
+### cros-preview: Set token in dialog arguments
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0d931d
+
+### [User Education] Clarify internals mojom documentation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d288584
+
+### Link Capturing: Remove app-to-app link capturing flags and code
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/462a3be
+
+### [side panel] Address clipping issues during entry/exit animation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d98b4ff2
+
+### app-controls: Wipe blocked app registry on disable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1a2a0f
+
+### app-controls: Direct search to parental controls row using a deeplink
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/486bcab
+
+### [NTP][Enterprise] Add styling for expanded and collapsed events
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/369c859
+
+### Remove \`UserEducationHelperBubbleController::CreateHelpBubble()\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4566a6
+
+### [UB] Surface page reload count heuristic to clank.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38096785
+
+### [PM] Remove most uses of GetAll*Nodes()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a61c3da
+
+### Move lens overlay c++ files into the singular lens overlay folder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b53fe3d
+
+### [User Education] Fix flaky lifecycle test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7033081
+
+### [PWA] Implement PWA.openCurrentPageInApp
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0811e88
+
+### Simplifications to LensSearchBubbleController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d279a63
+
+### [Gardener] Disable LensOverlayControllerBrowserTest.DelayPermissionsPrompt on all platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/177a251
+
+### [Shortcuts] Add test for multiple identical shortcuts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36431ae2
+
+### Certificate Management UI V2: add ChromeOS to build flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0d39ed6
+
+### Android: Do not store MinorModeRestrictionsFetchDeadlineMs field trial in class static field
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4cbc014
+
+### [Tab Group Sync] Correct implementation for sign-out behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8cea58
+
+### [lensoverlay] Fix corner radius on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7374d3b
+
+### Fix chrome://crashes lifecycle issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ed59d
+
+### [lensoverlay] Add tiered downscaling approach
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d643aa3
+
+### [Shortcuts] Add multi-profile integration tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78e56a7
+
+### Refactor ShowMandatoryReauthOptInConfirmation into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67a7970
+
+### snap-groups: Implement keyboard resize
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb51a7b
+
+### Revert "WebUI: Migrate FlagsUI to WebUIConfig."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa84821b
+
+### Specify ownership for CreateTestWidget() callers in chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15d1b3d7
+
+### pepc: camera and mic permission to use SystemPermissionDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99b8466
+
+### Remove static profile access from ReauthenticatorBridge.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4ef0e9e
+
+### Clank implementation for VCN gray out for merchant opt-out.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c061e91
+
+### [What's New] Use Mojo interface instead of WebUIMessageHandler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f0f44ee
+
+### [chrome-refresh-2023-cleanup] Clean up GM3 flags under cbui/profiles/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8756e7
+
+### printing: Fix the print status value for success
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1448b84
+
+### [Gardener] Disable SyncConfirmationUIWindowPixelTest on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bb50b14
+
+### Default to os country for privacy sandbox notices.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b30511d
+
+### Tab Search: Remove fuzzy search part 1
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3e1d886b
+
+### [SPC] Experiment with inline network/issuer logos
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ebccfa3
+
+### [mullhet] Add an image view with lazy loading capabilities.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1144b44
+
+### [Desktop] Add dark mode Google G logo icon.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/047f8d1
+
+### [OOBE] - Remove Feature Flag guard when create Pers Recs screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54428e3
+
+### Pass proper identity managers to PlusAddressService in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0fbcb9
+
+### privacy-hub: Finalize location strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d58e7fc
+
+### [UNOp2][Android] Fix CTA string for sign-in promos
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dacbf7c
+
+### [SHoA] Add 'Got it' button and functionality
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fee9fc12
+
+### Remove PDM pointer from FormDataImporter.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4493612
+
+### [Reauth] Impl AndroidxDeviceAuthenticatorControllerImpl#authenticate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c6c460
+
+### [SHv2] Add triggers for T&S HaTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a130484b
+
+### [mullet M2] Move 'Fill everything' at the top of the context sub-menu
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/20e278c
+
+### Adding the feature flag for the bookmarks tree view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33d4696
+
+### [Desktop] Append "Manage plus addresses..." to the list of suggestions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/976d3aa5
+
+### [UNOp2][Android] Simplify promo triggering logic in RecentTabsManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89cb25a
+
+### Remove expired attribution-reporting-debug-mode flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1b39549
+
+### [TabResumption] Move param "show_tabs_in_one_module" to TabResumption flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d9e63f29
+
+### [Hub] Split up launched flag from FAB and remaining params
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/52ae6627
+
+`);
+              </script>
+            </body>
+        </html>
