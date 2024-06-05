@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-05
+### Implements Notification Width Increase for Message Center and Popups
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb5eb91
+
+### Fix the HighlightText and Highlight for CSS system colors
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91484d7d
+
+### [views-ax] Scope cache initialization to role attribute only
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7834311
+
+### [a11y] Add reduced animations to kiosk mode quick settings
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/06358a86
+
+### views: enable unsafe buffer checking
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a575657
+
+### [A11y] Expose auto-generated text attribute for list bullets, etc.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/204c959c
+
+### Hook up the screenshot protection on the Windows platform.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58fb14a
+
+### [views-ax] Use ViewAccessibility::SetProperties in ash, components, ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b092788
+
+### Update a11y tests to use CLIENT_OWNS_WIDGET ownership.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49c972c
+
+### gpu: win: Reduce DVLOG spam in dc_layer_tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a579797
+
+### win: Port remaining DirectCompositionSurfaceWin tests and delete
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1f8d1b7
+
+### Evaluate more stable display::Display::id_ derivations on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/67946ca4
+
+### Rename DUMP_ version of NOTREACHED()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb0d5306
+
+### Bubble dialogs should pick up theme changes immediately.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/557aaae
+
+### evdev: Add callback to all devices (including internal) for imposter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/facfe5c
+
+### linux: dispatch window move upon ET_MOUSE_DRAGGED
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f3d25c4
+
+### Reland "[Reading Mode] Re-enable delayed side panel loading."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc2e9ba
+
+### [Keyboard] use InsetObserver to drive keyboard visibility updates
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f5e1382
+
+### [Insets] Attach InsetObserver directly to ActivityWindowAndroid
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/384890b3
+
+### [Insets] Move Inset related code to ui/android/
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a187fc8
+
+### ozone/drm: Introduce TileProperty to HardwareDisplayControllerInfo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00d85d2
+
+### Revert "part1: FlexLayoutView respect SizeBounds"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b9f2e67
+
+### Add NotifyClipboardDataChanged call to ClipboardMac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d573175
+
+### Revert "[skyvault] Add a note on chrome://management page."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1150256
+
+### snap-groups: Remove feedback button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5249145
+
+### Only create product specification sets with open URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72e7ca0
+
+### birch: Add F/C toggle for weather suggestions, part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c73e059a
+
+### Improve Mac menu handling
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/495cca0
+
+### Remove WebContentsProxy [3/3]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f31152c
+
+### Fix tab closing mode for trailingmost tab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/694c5efd
+
+### Android: No inline autocomplete after fwd delete.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/552bc641
+
+### Update and fix icons on the Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00684d6
+
+### Disallow more browser finder methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/845b9e6
+
+### [video-pip] Add minimize button to video picture-in-picture window
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ab7a082e
+
+### [lensoverlay] Fix corner radii mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/754cb510
+
+### Better autocomplete cursor movement on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/145889d
+
+### [lens overlay] Suppress the page action on the NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45a9155
+
+### Fix unfortunate text truncation in the external protocol dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/498a362
+
+### Modularize lens overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04a502b5
+
+### Fix preferred size for MediaItemUIUpdatedView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10721ad
+
+### [Oidc Enrollment] Correct OIDC unified consent dialog text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad6aad5
+
+### [Omnibox] Cache page class on session start
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88f02dd
+
+### [User Education] Enable help bubble screenreader text substitutions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a66fe2
+
+### Remove IsChromeRefresh2023() from c/b/ui/views/tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5f1b76
+
+### [toolbarpinning] Fix Dev Tools crashing when toolbar pinning enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da90fd0f
+
+### [TP] Clean up settings rollback notice on web
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5609671
+
+### Extract annotator mojom to separate directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af279a3
+
+### [lensoverlay] Send vsint for Lens text selections
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9b7093
+
+### [WE] Make flag state available in Settings UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a7a6abd
+
+### Birch: disable weather providers by policy integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/159163d
+
+### Specify ownership for CreateTestWidget() callers in c/b/ui/views.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/627ef274
+
+### nit: Fix indentation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb16f8d3
+
+### [Android] Unbatch tests that break with batching on CQ
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3586b7
+
+### Update field names in wallpaper_search.proto to match the server version.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8d9618
+
+### Remove no longer needed exception reporter callback from UrlBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1e0cd3f
+
+### Ensure UrlBarData is never null.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82e55214
+
+### [Permission] Fix long origin in pepc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48f19bc
+
+### Quick cleanup of UrlBar mediator and coordinator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/350e633
+
+### [skyvault] Add a note on chrome://management page.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e886322
+
+### [Android] Implement dark mode plus address header logo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/420157d
+
+### app-controls: Consolidate local block dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a295c4f
+
+### [toolbarpinning] Fix translate page action icon visibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5148319
+
+### [Desktop to iOS] Add feature flag for iOS payment promo bubble.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/12be3c710
+
+### Move OnVirtualCardDataAvailable() from AutofillClient to PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9485f7e4
+
+### [Desktop] Use email icon for suggestions targeting email fields.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a213cce
+
+### [Desktop] Use Google G logo for "Manage plus addresses...".
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1dd8e3e
+
+### Update signin preference strings page when signin disabledby policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e803534
+
+### Disable accept button while refresh is ongoing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/509ad2b
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a91e2e
+
+### Added metrics for DesktopMediaPicker permission button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bbb0d4e
+
+### Remove TP exceptions with 3PC exceptions in 3PC settings list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4141a36
+
+### Move plus address metrics into own build target.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0668cb45
+
+### [UNOp2][Android] Show top-of-feed promo for inferred minors
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b46c48d
+
+### Reland "Move immersive fullscreen controller update to FullscreenStateChanged"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4177b8f35
+
+### Enable ProfilePickerUIPixelTest and SyncConfirmationUIDialogPixelTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5b69dac
+
+### [views-ax] Migrate GetAccessibleName to ViewAccessibility getter in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f75226a
+
+### [Android] Use monospaced font for the suggested plus address.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/549168cd
+
+### [Autofill] Fix styling of disabled icons in the autofill popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/632ba09
+
+### Gardening: disable flaky LHS indicator browsertest for Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c7668a
+
+### [DSE] Clean up DSE experiment code.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/55ccc1f
+
+### Create Related Website Sets page flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f9b42d3
+
+### [SurfacePolish][CleanUp] Clean up surface polish code for MVT (Part 6)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5f242e0
+
+`);
+              </script>
+            </body>
+        </html>
