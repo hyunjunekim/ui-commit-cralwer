@@ -1,0 +1,416 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-08
+### Restore initial resolution after VirtualDisplayUtilWin teardown.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1b25d1e
+
+### Adds metrics which tracks the usage of top row + modifier keys
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4d4300d
+
+### Add retain/release debugging to CocoaTestHelperWindow
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6562ea4
+
+### Allow WindowOcclusionTracker to be destroyed mid-animation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50b1f5d
+
+### Reland "[Keyboard] use InsetObserver to drive keyboard visibility updates"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b670e5d
+
+### Cleanup mode matching logic
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c2b1f63
+
+### Remove fling controller's dependency on //ui/display
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a98500c6
+
+### Add code to optionally make InkDropContainerView auto size to the parent.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e0948d
+
+### Add NotifyClipboardDataChanged call to ClipboardWin
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddde57b
+
+### [accessibility] Remove AXTreeManager::CleanUp
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/41d19cd5b
+
+### views: delete some GetHeightForWidth overloads in //ui/views.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f83a4393
+
+### [vsync] Support add/remove VSyncObserver from OnVSync.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4375dbad
+
+### [Views AX] Lazily initialize product strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a2dfc0
+
+### Fix easing fn not being applied at the bounds of an animation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64032ba
+
+### Revert "Reland "linux: dispatch window move upon ET_MOUSE_DRAGGED""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/999df5b
+
+### [SavedTabGroupV2] Add CloseGroup IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4e398a4
+
+### settings: Show External storage preferences if ARC is always enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0081bc5
+
+### [Shortcuts] Field trial testing configs for ShortcutsNotApps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/856ff2c
+
+### Log Performance Intervention Notification Frequency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2d020f8
+
+### [GM2 Cleanup] layout_constants.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61fcde8
+
+### [FS Shortcut] Disable the feature on all desktop platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/448c55a
+
+### Add k{App,InstallUrl,InstallSource}Removed to UninstallResultCode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05d1ba08
+
+### [Capture] Remove References of ChromeRefresh2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/993127e
+
+### [Omnibox] Hide toolbar buttons immediately when animating on NTP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd244ac
+
+### [Commerce] Remove References to ChromeRefresh2023
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93c5b3d
+
+### Use the system scrim color for exclusive access permission prompt
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ffb5ea
+
+### birch: Add browser test for last active URL suggestion chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80b8041
+
+### [views-ax] Use ViewAccessibility::SetProperties in chrome/* files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53f7e55
+
+### Revert "[Read Aloud] Temporarily move logging to the page handler."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57ce7649
+
+### [Omnibox] Fade suggestions instead of entire dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1820327
+
+### [WebAuthn] Add translated strings for GPM pin options menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1487de2
+
+### [NTP][Enterprise] Require user is managed to see Calendar card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce2a509
+
+### [chrome-refresh-2023-cleanup] Remove refresh flag from toolbar/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a469589
+
+### Revert "Update history sync screen buttons to follow minor mode restrictions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2649360
+
+### [E2E] Use BottomControlsStacker to resize bottom browser controls
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2c4b3d
+
+### pepc: Support geolocation permission
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97c9866
+
+### [What's New] Handle new metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9eba17
+
+### [TabStripModelRefactor] Add tab count to tabstripmodel tracing.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4ceda31
+
+### Check abusive notification revocation flag in SH handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e32bb8
+
+### Update background color for pdf pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a97411
+
+### [gbb-cct] Rename GoogleBottomBar histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/509f3f9
+
+### Move UpdateOfferNotification() into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a13a009
+
+### Re-enable ReadAnythingModelTests on Mac ASAN
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd8ce35
+
+### [Extensions cleanup] Remove checkbox label to dialog view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5421363
+
+### app-controls: Record metrics when blocked app dialog is shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33c04b6
+
+### Add aria description to parental controls subpage button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fce46ef
+
+### focus-mode: Stop music playback during ending moment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18a68c3
+
+### [SurfacePolish][CleanUp] Clean up surface polish code for fake search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e72d08
+
+### [TabStripModelRefactor] Add interface for contents data.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f29b089
+
+### [Autofill] Remove dead CreditCardFillingInfoBar code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35df6a5
+
+### [GM2 Cleanup] drag_and_drop_interactive_uitest.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f759b33
+
+### [waffle]Update search engine settings string for non eea
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/475d12ed
+
+### Fix chrome://policy/test page on iOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee91a670
+
+### [gbb-cct] Update GoogleBottomBar button descriptions to match greenlines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ffdd73
+
+### [GM2 Cleanup] new_tab_page_handler*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/671ced7
+
+### [Desktop] Add plus address desktop icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3123d0b
+
+### Introduce popup interaction metric to better understand users behaviour
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3523d0d
+
+### [Android] Hide refresh button if refresh is not supported.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b4c8a4
+
+### [android] Remove "passwords" from sync consent screens
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a60122b
+
+### [GM2 Cleanup] device_chooser_consent_view.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f3b73b
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/958c955
+
+### [OOBE][Mojo] Migration of ArcVmDataMigrationScreen to Mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79e9dc72
+
+### [gbb-cct][Urgent fix] Update enum for GoogleBottomBarButtonEvent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7cccc8
+
+### [gbb-cct] Rename Disabled save button description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fdd6ec
+
+### Update app menu to hide guest mode for supervised users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/655a998b
+
+### Fix how the top avatar looks when there is no name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/371c56e
+
+### Clean up some more plus address related strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/456281cd
+
+### CBD Timeframe Experiment: error announcement via focus on dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec819acb
+
+### privacy-hub: Hide turn on microphone access button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf7d7b4
+
+### Fix the Signout button padding and center the text in the button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe1b6c6
+
+### [mullet m2] Make expand children control visibility dynamic.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/22c82ac
+
+### Modularize sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2845b38c
+
+### Fixed radius/border for the screen-sharing dialog permission-pane
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f0d75c
+
+### [PEPC] Add callback TimeToDecision metric
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5570c28
+
+### Update history sync screen buttons to follow minor mode restrictions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0ab209b
+
+### Move annotator UI config to annotator directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48dcc25
+
+### [UNOp2][Android] Update footer in PrivacySettings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0296174
+
+### [mullet m2] Add popup show duration metric.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc42f19
+
+### [Android] Log number of plus address refreshes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1783ac4
+
+### [Uno-D] Implement the dotted avatar circle for SigninPending state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4645e2b
+
+### [Uno-D] Revamp ChromeSignin Setting + String updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53ed99f
+
+### [Android] Implement refresh plus address.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcfb6e6
+
+### [Card on File] Fix Autofill key metrics by logging for each form type.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f96022a
+
+### [SHoA] Enable abusive notification revocation on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/49c7c5c
+
+### [Desktop] Use monospaced font for the proposed plus address.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c0e4688
+
+### [Verve] Card art assets and its retrieval for AndroidOS(Clank) clients.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ba28ce
+
+### [PEPC] Create PEPC prompt in PWAs as well
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68469d2
+
+### Update page info for pdf pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93ad2b9
+
+### Need-to-restart text for the screen-sharing dialog permission message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/080f231b
+
+### [GM2 Cleanup] page_info_*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e74f6d
+
+### focus_mode: Implement a functional skeleton of the web audio player
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1594276
+
+### Move sidepanel C++ code into a single directory.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f409657
+
+### Use correct icons for drive files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4e245a
+
+### [Price insights clank] Add price insights contextual page action model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb3c13e
+
+### Change uninstall result to take UninstallResultCode enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d5fdcdb
+
+### [omnibox][zps] Enable ZPS prefetch debouncing to minimize backend impact
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2632b6f
+
+### [AF] Create flag/treatment arms for AutofillUpstreamUpdatedUi
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e4b6cfa
+
+### Fix flag about page entry for peripherals logging
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4bbd87f
+
+### Merge Storage Access Headers features and add a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7bb5989
+
+### Add DidCommitLoad as another trigger point of prerender cc warm up
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6632bc4
+
+`);
+              </script>
+            </body>
+        </html>
