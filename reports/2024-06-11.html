@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-11
+### [A11y] Magnify the full-screen magnifier dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9105362
+
+### CrSelectableMixin: Improve index to value lookups
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f14fc34
+
+### WebUI: Add missing cr-iconset,iron-iconset-svg deps in various elements.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a9d2777
+
+### views: fix unsafe buffer use in a few unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ef693d7
+
+### [1/5] per-window-scale: Introduce the new API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7b59df54
+
+### [Read Anything] Introduce Images Toggle
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f814054
+
+### Non-active InputMethod should not remove ImeKeyEventDispatcher in TSFBridge.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b11c923
+
+### Fix crash if InsetObserver can no longer be created
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f330a1d
+
+### [CrOS Cellular] Replace ApnPolicies flag with AllowApnModificationPolicy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9a8e4fa
+
+### Remove features::kReadAnything as it has been rolled out for a year.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/390e42d
+
+### //ui/gl: Add blundell@chromium as an OWNER
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/46edfec
+
+### android: Order surface control transaction acks
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f97b656
+
+### Replace Layout() override with DelegatingLayoutManager.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6447505
+
+### [ozone/wayland] Fix text-input-v1 crash with ibus
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/715fcc5
+
+### Split WaylandExtension into WaylandToplevelExtension
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/daeffa7
+
+### [A11y] Add flag for feature to magnify magnifier confirmation dialog
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1cd8ba5
+
+### Refactor ClipboardOzone::GetSource
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a6a55cd3
+
+### Mall: Pin Mall SWA to shelf when it is enabled and installed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/744806f
+
+### [SurfacePolish] Fix incorrect toolbar color when navigating from single
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a712662
+
+### [lensoverlay] Clean up style guide violations with "ForTesting" methods.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13ded29
+
+### [TabStripCollection] Integrate collection related changes to contents data.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/325e76a6
+
+### [FS Shortcut] Do not start hold timer for Esc + [modifier key]
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83eeb19e
+
+### Add test for formatting history embedding results
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c63e4d6
+
+### [lensoverlay] Pass image bounding boxes relative to screenshot to server.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b00a2cc
+
+### [mullet] Remove restriction that makes M3 work if M2 filling is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3dee637
+
+### 🧇 Disambiguate remaining Fallback vs Default template URL getters
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5f3902b
+
+### Printing: Update device log levels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e692364
+
+### Fix potential crash on destruction of SidePanelContentSwappingContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72158b0
+
+### [Toolbar Customization] Categorize actions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c49fff9
+
+### Browser controls in viz 4: OffsetTag plumbing to renderer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae08e26e
+
+### Modularize side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ddd80
+
+### [SavedTabGroups] Default save unsaved when updating from V1 to V2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e70c29e7
+
+### Split ManagedUserProfileNoticeHandler proceed_callback in 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f471a066
+
+### Add snackbar message for enterprise managed accounts with sync disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4174fc7
+
+### Add test for recording history embeddings search result metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8480c51
+
+### Extract managed user notice in separate component
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/023b4f18
+
+### [NTP][Enterprise] Add link to calendar and hover states
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53fb3cf
+
+### Disable flaky ShowTooltipFromIFrameWithKeyboard test on all platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19a93d9
+
+### birch: Add browser test for most visited URL suggestion chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1133f45
+
+### Always set is_subresource to false in interstitial webui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e42f26
+
+### p13n: move fullscreen preview impl to wallpaper controller client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08fc1bd
+
+### [STGV2] update text for learn more, and fix sizing of text in footer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd88348
+
+### Fix the ID of the current "Managed by your administrator" string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47314698
+
+### Fixing OS specific permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9dce53
+
+### [SidePanelResizing] Create a feature flag for side panel resizing changes.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ac0acdd
+
+### [Uno-D] Sync promos in profile menu have "No thanks" button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b829c64
+
+### [UNOp2][Android] Fix FRE metrics dialog info string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a22aba5
+
+### Saved tab groups: Add auto pin pref boolean
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee2d11e
+
+### Update profile menu guest mode visibility
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/454958c
+
+### [Fewer Update Confirmations] Remove the update confirmation dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a3a57f2
+
+### [chrome-refresh-2023-cleanup] Remove refresh flag from location_bar/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a93a1d2
+
+### PageInfo: Avoid crash in sentiment service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cae1c5b
+
+### [SavedTabGroupsV2] Add pluralization and email to Deletion Dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f262a4b0
+
+### [UNOp2][Android] Suppress history sync when it is declined often.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6e4442b
+
+### [UNO] Create util function for getting the signed in state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51ed9046
+
+### [Uno-D] Store the first Uno bubble decline time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc98ca77
+
+### [Read Aloud] Generic download error message
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71acaf1
+
+### [Autofill] Apply deactivated style in the footer text of the popup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/020d7b8
+
+### [Desktop] UI adjustments in the plus address creation dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81036866
+
+### Move ConfirmAccountNameFixFlow() from AutofillClient to PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa7cbe3
+
+### Update SyncButtons.Clicked to record buttons clicked on history screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35520b5
+
+### Separate \`SuggestionType::kAutofillOption\`, depending on filling product
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98405de
+
+### Add page handler and resources for Related Website Sets DevUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55a28bf
+
+### Reland "Update history sync screen buttons to follow minor mode restrictions"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9224274
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0537d7a
+
+### [Android] Add generic substring for re-fre
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/21923f9
+
+### [Passwords] Adjust generation string for shorter passwords on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a57f2eb
+
+### [UNOp2][Android] Fix bookmark promo message string
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63a6a085
+
+### [SHoA] Add notifications review subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fd8014f
+
+### password-manager-internals: Add button to reset AccountStorageNotice
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e68e433e
+
+### Update strings for pdf page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e98348b9
+
+### Simplify unit tests for plus address controller on Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31fb73a
+
+### Move histograms related to plus addresses into their own file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe39302
+
+### [toolbarpinning] Remove ellipses from toolbar action strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/650b1c7
+
+### Gardening: Disable a failing test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b92a16c
+
+### [Nearby Share] Add flags for testing WiDi
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/69b8154
+
+### gd: Add Additional PWA Support
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/302340c8
+
+### Adds flag to enable Private State Tokens Dev UI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5aa755f
+
+### Remove quick-intensive-throttling-after-loading flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8be6ebd
+
+### [omnibox][ml] Implement piecewise-mapped ML scoring variant.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/47311431
+
+### [AuthView] Add a feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6565815
+
+### [CrOS Cellular] Add feature flag for Allow APN Modification policy
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/886c9e9
+
+`);
+              </script>
+            </body>
+        </html>
