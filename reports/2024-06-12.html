@@ -1,0 +1,392 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-12
+### Support CADisplayLink on Mac.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c920f54
+
+### [FilesF2] Fix focus/keydown issue for the directory tree
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/927e11e
+
+### Drop FocusManager pointer in NativeWidgetMac during Close().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3fc1a5c
+
+### views: FlexLayoutView respect SizeBounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ed31bfe
+
+### Experiment with Autofill and AccessibilityState for Android
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b1e2ee61
+
+### WebUI: Throw error when cr-icon encounters unknown iconsets.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b40ec61
+
+### [views-ax] Move transformation of bounds to screen-relative bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/654c17a
+
+### Remove DisplayItemList::Reset() and RTree::Reset()
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e61b413
+
+### Disable rounded corners on menus when compositing is not available
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eb33370
+
+### //ui/gl: Removing leftover references to WGL.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c797dd5
+
+### webui: browser: Remove Carrier Lock feature flag from UI
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d176a38
+
+### Add ShowProductSpecificationsSetForUuid to delegate.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/42e2089
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/510e657
+
+### [input] Treat WM_NCMOUSEMOVE like WM_MOUSEMOVE in WebMouseEventBuilder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/71dca960
+
+### //ui/gl: Stop including platform GL headers other than EGL.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5e8890bb
+
+### //ui/gl: Remove no longer used dual_gpu_state files.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bca16f9
+
+### FIXUP: Keyboard shortcuts are ignored in the menu.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e6445d3
+
+### Handle root view being destroyed in NativeWidgetMacNSWindowHost.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/38450fc
+
+### [FedCM] Show account chooser for non-returning user on approved client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e51a9e0
+
+### Reland "Clear BrowserUserData before destroying Browser"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c6ff93
+
+### WebAppInstallInfo: Add checked setters for manfiest_id & start_url
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc5e428
+
+### [pm] Remove PageNode::PageState.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e4ecff
+
+### Print preview: Increase max time for ready metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccc70fc
+
+### Update AshTestBase::CreateTestWidget() callers outside ash.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b370c314
+
+### Get SavedTabGroupKeyService to observe events only when V2 flag is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e461d7f
+
+### [media-preview] Favor 16:9 format for video previews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/119f4ca
+
+### ongoing-processes: Update privacy indicators notification contents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33b5fab
+
+### birch: Add browser test for self share chips
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ed5686
+
+### Revert "Clear BrowserUserData before destroying Browser"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/073518c
+
+### Explicitly wait for creation of speculative RFH in tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bdd0be
+
+### Ablate Arrow keys from triggering refine.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/617911d
+
+### Revert "[PWA] Enable universal install on CrOS via field trial testing"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/900bfafb
+
+### Reland "[bookmarks] Add empty-state view as an item type"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e9771a7
+
+### [Ash] Add //chrome/browser/ash/privacy_hub/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6095357
+
+### [Mahi] Remove the disclaimer view from chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2942c1b
+
+### Remove fullscreen popups experimental feature.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e0f300d
+
+### [lensoverlay] Simplify LensOverlaySidePanelCoordinator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63f9a1d8
+
+### Prevent IME from intercepting and suppressing key events.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d04905
+
+### Deprecate BrowserList::GetLastActive() in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/979f3a9
+
+### [Ash] Add //chrome/browser/ash/bluetooth/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1aece3e
+
+### Remove static accessors from SidePanelUI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dda455d
+
+### Clear BrowserUserData before destroying Browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5500261
+
+### Make discarded tab indicators shrink at the same time
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dca0dda
+
+### Fix two unit tests for disabled kAddPrinterViaPrintscanmgr flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfc4daa
+
+### [lens overlay] Update LocationBarLayout to consider minimum width
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73775914
+
+### Move UnmaskCardReason into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c1f409
+
+### [Autofill] Prepare FormData::fields test-code references for rewrite #1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/655b5f8
+
+### Refactor OpenPromoCodeOfferDetailsURL into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed8b783b
+
+### [DigitalCredentials] Cancel request if user opens new tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56f70e4
+
+### Add teacherId query parameter to ListCoursesRequest.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/075d810a
+
+### [GM2 cleanup] managed_ui*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36aed7f
+
+### [QuickStart] Disable cross-device KeyedServices on Flex.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1d9a30
+
+### MagicBoost: Make the controller override ReadWriteCardController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6980f45
+
+### [STGV2] Fix context menu commands that dont show the Deletion Dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5936f5
+
+### [lensoverlay] Change permission bubble close button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6492c46
+
+### Don't make clustering recommendations for old product specification sets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af9b19e
+
+### birch: Block file suggestions in both launcher and birch on user request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e18a08d
+
+### chrome: make BrowserList deal with Browser deletion
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7337d862
+
+### [PWA] Enable universal install on CrOS via field trial testing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f07579
+
+### [lensoverlay] Slice by entry point for permissions bubble metrics.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01eec184
+
+### focus_mode: Move YouTube Music directory under \`ash/system/focus_mode/sounds\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02739e68
+
+### Implements conditional routing for Private State Tokens Dev UI subpage.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0cdec0
+
+### Allow everybody to add IDs to chrome_color_id
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72ab863
+
+### ReducedAnimations: Add search tags for Settings search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b58b74
+
+### Use weak pointer for complete/fail requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6deaee3
+
+### [mullhet] Add favicon domain to Suggestion as custom_icon variant.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61fdcca
+
+### Fixing a crash with Saved Tab Groups close promo during browser shutdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08a6ccd
+
+### Print preview: Remove unused include
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a135bf
+
+### Simplify UrlBar TextChange notifications.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57d3d76
+
+### Remove MinorModeRestrictionsForHistorySyncOptIn experiment on Desktop.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/202c9515
+
+### media: Fix an out-of-bounds read
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/172f6de
+
+### Update the feed management menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/502c310
+
+### [OIDC Enrollment] Add svgs for updated unified consent UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a229de3
+
+### [Passwords] Add skeleton of full-data-reset element
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3df94e
+
+### Move ConfirmExpirationDateFixFlow() from AutofillClient to PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ada3ded
+
+### [video-pip] Avoid unwanted pausing in more cases
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/282180e
+
+### [UNOp2][Android] Fix history sync status bar color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55f0d29
+
+### [3/n] Move gesture input related methods from RenderWidgetHostImpl to
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e574c54
+
+### [PEPC] Ensure PEPC prompt can not overlap browser UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fa6bf8
+
+### Certificate Management UI V2: hook up chrome://certificate-manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a5d584
+
+### Add user choice handling callback
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/205bc03e
+
+### PEPC Check Media Policy for Admin-set permissions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3996a60
+
+### [Desktop] Take screenshots of the plus address creation dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2674082b
+
+### [Desktop] Hide plus address container when error message is shown.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d323d88
+
+### [PEPC] Migrate SystemPermissionDelegate callsites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/764ce77
+
+### WebAppInstallInfo: Make manfiest_id & start_url private fields
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e50c1eaf
+
+### [Autofill] Add feature to disallow adding invalid local cards
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0576842
+
+### [UNOp2][Android] Add missing comma to IDS_SIGNIN_FRE_SUBTITLE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e4dd25b
+
+### Show feature tour on first use of Picker feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f74b877
+
+### Remove enable-federated-service flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d150d95
+
+### Remove remaining \`HoldingSpaceWallpaperNudge\` code.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/86f6082
+
+### [TabStripModelRefactor] Add collections feature flag to chrome flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/46b2923
+
+### [flags] Add an about:flags entry for Canvas hibernation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2cc60fb
+
+### [gbb-cct] Add flag for different bottom bar layouts
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6b891630
+
+`);
+              </script>
+            </body>
+        </html>
