@@ -1,0 +1,392 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-14
+### Reland "views: FlexLayoutView respect SizeBounds"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9103d2c
+
+### Support Image Insertion of Large Data URL in Lacros
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bf2163fd
+
+### ui: Make ColorProvider unmovable and remove ColorProviderInternal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/074f057f
+
+### [views-ax] Cache kChildTreeId and kChildTreeScale when it changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5b7e4e1
+
+### Remove ARB extensions support from GL bindings: Part III.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d79124
+
+### Remove path_rendering related GL bindings.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8153fe3
+
+### Remove ARB extensions support from GL bindings: Part I.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7c1655e
+
+### Revert "bluetooth: Add Bluetooth interactive UI test"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40e811e
+
+### Use CLIENT_OWNS_WIDGET for View unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c794203
+
+### views: re-order widgets on activation only on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7f7c56
+
+### [ozone] Fix WaylandWindowDragController::StartDragSession crashes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7d98d8ee
+
+### [views-ax] Cache bounds in ViewAccessibility when they change
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a78f3318
+
+### Revert "Add check for valid URL in \`ui::DataTransferEndpoint\` constructor"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a7d7558
+
+### WebUI: Use ESLint checks to prevent @ts-ignore statements.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e9886e4
+
+### Show feedback form on thumbs down for history embeddings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e75f5c64
+
+### Remove the last of gm2
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd54e90
+
+### Add CHECK_IS_TEST to Delegated Ink *ForTesting functions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5a28178
+
+### Add check for valid URL in \`ui::DataTransferEndpoint\` constructor
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/607d686
+
+### [UIA] Expose LineBreak Role as UIA_TextControlTypeId for </br> tags
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b41844d
+
+### //ui/gl: Remove the use_egl GN variable, it is no longer used.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7835775
+
+### views: fix unsafe buffer warnings in examples
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60d9422
+
+### bluetooth: Add Bluetooth interactive UI test
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e7fa5c
+
+### Fix leaky codepath in UniqueWidgetPtr.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5ca6284
+
+### Fix DataTransferEndpoint == operator
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e8c0a81
+
+### [3/5] per-window-scale: Migrate //ui call-sites
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9e2c3ec8
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b80aee0a
+
+### fixup! [1/5] per-window-scale: Introduce the new API
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e68d35
+
+### HTML Mode Removal: Removes HTML attributes from Windows AX trees
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f617581
+
+### [Clipboard] Rename WebCustomDataType to DataTransferCustomType.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e61adbb
+
+### Remove //ui/gl:gl_config
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fdcf6659
+
+### gfx: add OverlayType
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9886b72
+
+### ash: Add chrome/browser/ash/wallpaper/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5419ec8
+
+### Update strings for history search in Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2b184b9
+
+### [E2E] Calculate bottom controls height with BottomControlsStacker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/adffe418
+
+### app-controls: Migrate handler unit test to browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee459b0
+
+### Show the suggested tab list in the performance intervention dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af297bd
+
+### MagicBoost: Remove MagicBoostCardController global instance
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/235a60f
+
+### [SHv2] Move HaTS for SH to separate service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11062d7
+
+### [Extensions] Add acc label for find alternative button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6e7a7e
+
+### [video pip] Use correct minimize icon for video picture-in-picture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7170103e8
+
+### [webauthn] Rework bluetooth status check
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e0f1ab
+
+### [Code Health] Remove RAW_PTR_EXCLUSTION in MenuSection
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1068d91
+
+### [Extensions] Add title and acc label to extension's action menu button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97ab351
+
+### Turn CustomizeChromeSidePanelController into a TabFeature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff2313f
+
+### Use server-side clustering for ProductSpecificationsEntryPointController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/524e57c
+
+### [omnibox] Disable flaky SelectionClipboard omnibox test across all bots.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf91201
+
+### [TabStripCollectionRefactor] Add CHECKs to collection APIs.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4583870
+
+### Reland "[PWA] Enable universal install on CrOS via field trial testing"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5eb1c084
+
+### [SHoA] Add the static components to the dashboard
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19d32b0
+
+### Apply consistent naming conventions to "zoom" values
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/036a35c
+
+### Implement digital-credentials API interstitial for desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a029d7
+
+### Dispatch ENTER key presses after these are processed by IME.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4148600d
+
+### [ozone] Disable MenuItemViewTestRemoveWithSubmenu0.RemoveItemWithSubmenu0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a32645
+
+### preload-topchrome: integrate candidate selector with preload manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8363203
+
+### Privacy Guide - Ad Topics Strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f462362
+
+### Add TabGroupSyncTabState class
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7980b6
+
+### Fix lens UaF in destructor.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50e98b1
+
+### Switch history_embeddings to use os_crypt_async
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c128370
+
+### QuickAnswersView uses StructuredResult
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b473151
+
+### [lensoverlay] Use stickiness signals when translating.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b34e6a
+
+### [gtm] GlanceablesV2 flag clean up - part 1
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9e4114
+
+### Use <Tab> key to navigate through Suggestion Dropdown items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23215b2
+
+### [Code Health] Remove RAW_PTR_EXCLUSION
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2929ee9
+
+### [MSan] PopupRowView's dtor should stop observing child views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/689e7e5
+
+### [PWA] Fix IWYU failures for web_app_registrar.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/983a2ddd
+
+### [search_engines] Update a11y labels for buttons on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3770607
+
+### magic-boost: extract common components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/27c61e0
+
+### Enables RestrictCoreSharing process mitigation policy to the renderer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e0b72e
+
+### display: Add a11y announcement when changing display arrangement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c3a847
+
+### Configures Lit for Private State Tokens DevUI page implementation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1948728
+
+### [mullhet] Add a privacy flag to Suggestion::FaviconDomainUrl.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e443acf
+
+### [UNOp2][Android] Show recent tabs promo to signed in users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eba73e1d
+
+### [Code Health] Remove RAW_PTR_EXCLUSION for StatusBubbleViews::StatusView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f1cae8
+
+### [CodeHealth] Migrate PaymentRequestCompletionStatus tests to Events2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5306647
+
+### [Code Health] Remove RAW_PTR_EXCLUSION in ThemeColorPickerHandlerTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ced5826
+
+### [CodeHealth] Migrate PaymentRequestJourneyLogger tests to Events2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae81f7d
+
+### Conditionally compile mac-specific code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cba3207
+
+### Reland "Split Equal weighted buttons metric on sync screen by source."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cb3c8b3
+
+### \`span\`-ify \`mojo/.../data_pipe.h\`: Migrate \`chrome/browser\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bad63bfe
+
+### [Autofill] Replace \`struct\` FormData with \`class\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bbe6ef2
+
+### Privacy Guide - Ad Topics card skeleton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d53700a1
+
+### [UB] Create custom view class for new toggle row in UB.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c46af7a
+
+### [CC Number Validation Target] Strip card number separators (7e/8)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1d1a696
+
+### [UNOp2][Android] Explicitly disable ReplaceSyncPromosWithSignInPromos for testSignInAnotherAccountForWebSignin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b608282
+
+### [UNOp2][Android] Explicitly disable ReplaceSyncPromosWithSignInPromos in AccountPickerBottomSheetRenderTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/348e23c
+
+### Use .mm-suffix for ScreenCapturePermissionCheckerMac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4cc090
+
+### [Android] Fix crash when signing out from CBD
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9ea9788
+
+### Added "Mac"-suffix to DesktopMediaPermissionPaneView + used .mm-suffix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/978562a
+
+### [Autofill] Add UMA recording the cc prompt acceptance rate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7639683c
+
+### Data sharing: Change WebUI to inherit UntrustedTopChromeWebUIController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1388d901
+
+### Add in a new feature key for Sparky.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b36712f
+
+### [declutter] Add flag/implementation to archive all but the active tab
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b2c3835
+
+### [omnibox][ml] Add chrome://flags related to ML Scoring on Mobile.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7cf75a2
+
+### Expand ARC on Demand to unmanaged users
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/73cd185
+
+`);
+              </script>
+            </body>
+        </html>
