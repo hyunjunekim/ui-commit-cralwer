@@ -1,0 +1,316 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-15
+### [PWA] Rewrite flaky WebAppBrowserTest window bounds tests
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86ef347
+
+### add missing component export
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/809f2566
+
+### [views-ax] Use ViewAccessibility::SetName in ui/*
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e19e5e2
+
+### Revert "Migrate/Refactor WindowTreeHostManager Observer"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a22c4b
+
+### Use the stricter Lit TS flags in cr_components/help_bubble/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8306d54
+
+### views controls: fix unsafe buffer warnings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6611ec2
+
+### WebUI: Create a cr-lazy-render Lit equivalent element.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96a6d792
+
+### Migrate/Refactor WindowTreeHostManager Observer
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e1f246
+
+### Remove ARB extensions support from GL bindings: Part II.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/35a2d82
+
+### CrSelectableMixin: Rename iron-selected CSS class to selected
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a8308cb
+
+### Add main node annotations to chrome://flags.
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/50ecf709
+
+### [accessibility] Improve type safety for platform node identifiers
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5b6a85e
+
+### [Clipboard] Rename ReadCustomData to ReadDataTransferCustomData.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3c3f084
+
+### Tab Search: Move MWB icons and update to cr-iconset
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d28ff70
+
+### Use CLIENT_OWNS_WIDGET for Bubble related unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c1e85bd5
+
+### Remove unused TextAppearance.RobotoMediumStyle
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e668380
+
+### Introduce Google Sans Text & Google Sans Text Medium
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43ba56f
+
+### [skyvault] Wait for migration to remove MyFiles
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b8e99428
+
+### gfx: add SWAP_NON_SIMPLE_OVERLAYS_FAILED
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/006ecc1
+
+### [TSLO] Move tab strip transition classes to sub-package
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd12c15
+
+### Speculative NPE fix in SyncConsentFragmentBase.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a71f659
+
+### prefetch: first aid to attach out-of-sync param
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d8cce77c
+
+### ash: Remove Carrier Lock feature flag from ui and main parts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d71f80dd
+
+### part1: Remove SizeToFit which is no longer needed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e36388
+
+### [Panorama][a11y] announce change to uploaded theme and classic chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a22bdd
+
+### [TSLO] Refactor TabStripTransitionCoordinator
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/995db5f
+
+### [4/5] per-window-scale: Migrate the remaining call-sites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95eaaab
+
+### [TabGroupSync] UpdateAttributions in the listeners
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4444c36
+
+### [TabGroupSync] Use the service in the listeners instead of model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/26c4a29
+
+### Introduce explicit 'TypingStarted' signal emitted by the UrlBar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8963e5c1
+
+### [ImprovedDownloadWarnings] Clean up (pt. 2): Browser side code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59cf1c7
+
+### [ImprovedDownloadWarnings] Clean up (pt. 1): Remove the base::Feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7cf7de
+
+### [User Education] Prevent IPH during browser close.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5132723
+
+### Revert "[Gardener] Disable failing test"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f69096
+
+### [TabSearchPosition] Update the sidepanel position to a dropdown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30404c2
+
+### Update strings for history embeddings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c886aa8
+
+### [Code Health] Remove RAW_PTR_EXCLUSION in CustomizeChromePageHandlerTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6db64ea
+
+### [WebAuthn] Remove kGPMOnboarding step
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fdc374
+
+### [Compose] Split out "New" features correctly by feature flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/052f09c
+
+### ongoing-processes: Update Cast notification contents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e080b18
+
+### Fix and restore disabled ContainerAppInteractiveUiTests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be2ccfe
+
+### Remove Chrome Refresh from Tab style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93f93a80
+
+### [Gardener] Disable failing test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dd5245
+
+### [mullhet] Add sync response from cache to lazy loading images loader.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c92583
+
+### [WebAuthn] Remove authenticator request bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7eb341d
+
+### Remove unused entry point for search choice dialog.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b542bce
+
+### Add missing web_contents.h include
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5efba84c
+
+### Use plus address icons from plus_address component.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/932980c
+
+### [Uno-D] Adapt app menu profile section to signin pending state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9fd5ffb
+
+### [FPF] Add ThrottleManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d956298
+
+### [Autofill][Compose] Fix DEPS issue
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/774e2a9
+
+### [mullhet] Implement password suggestion row favicon loader.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42a5d52
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a29e8fb
+
+### [Autofill] Remove unnecessary nogncheck
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/50ec3439
+
+### [UNOp2][Android] Adapt SyncPromoControllerUITest to UNO
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7b441e
+
+### Launch followups for saving passwords in the account on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/debf928c
+
+### [Gardener] Disable failing test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1cfe95
+
+### Add missing IntDef annotation and remove redundant definitions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28c18a9
+
+### Only show screen-sharing permission button for MacOS 13 or later
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65d3202a
+
+### [Uno-D] Add temporary accessibility labels to the identity pill states
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87a4356
+
+### Rename SuggestionType::kClearForm to kUndoOrClear
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/02e05f7c
+
+### [SHoA] All block all notifications button functionality
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1abe19ba
+
+### Update history sync buttons to be outlined for Minor Mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98145c2
+
+### arc: Record metrics for SecondaryAccountAllowedInArc policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6743857
+
+### [Autofill] Add pixel tests for deactivated password or WebAuthn entries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43d7aac
+
+### [Uno-d] Chrome.Identity API show Chrome Sign in Gaia URL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fd515d
+
+### Extensions: Display extension GUID on internals page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/452cba16
+
+### build: Add missing dep //chrome/browser:lcp_critical_path_predictor_proto to //chrome/browser/ui:ui
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a028adb
+
+### mac: Support comma-separated font lists
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fb67a9
+
+### [WebAuthn][Passwords] Add passkey saved confirmation bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c15cac
+
+### Add new badge to manual fallback for plus addresses on Desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4daa84f1b
+
+### [Read Aloud] Add word highlighting to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0b0f366
+
+### [Hub] Remove the AndroidHub flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d8ff75b
+
+### [Tab Group Sync] Provide kill switch for auto open
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f8d70e2
+
+### [Extensions] Add flag for the Zero-State Puzzle Piece Recommendation.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c4a088176
+
+`);
+              </script>
+            </body>
+        </html>
