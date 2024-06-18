@@ -1,0 +1,340 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-18
+### Fix MSAN false-positive for DMA_BUF_IOCTL_EXPORT_SYNC_FILE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/37cb4bb
+
+### Remove ARB extensions support from GL bindings: Part IV.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ac7b986
+
+### Remove is_desktop_core_profile from GLVersionInfo.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fadb6156
+
+### [X11] Fix decoration insets scaling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/852f9270b
+
+### HistoryClusters: Leverage fire() helper from CrLitElement.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/350cc46
+
+### Add LatencyImprovement measurement for DelegatedInk
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f54fae1
+
+### [Read Anything] Remove ReadAnythingWebUIToolbar flag.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/98f3d6d
+
+### Remove ARB extensions support from GL bindings: Part VI.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/93f8277
+
+### [X11] Use localized display label only for browser process
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8010390
+
+### Remove ARB extensions support from GL bindings: Part V.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5da8d1b
+
+### views: delete ScrollView's GetHeightForWidth overload
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/70b1d81
+
+### Rewrite base::span fields into base::raw_span
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad8f169
+
+### autotest: Fix ThroughputTracker::CancelReport crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3106c2f1
+
+### [Code Health] Remove RAW_PTR_EXCLUSION
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c41529ae
+
+### [X11] Fix decoration insets getting out-of-sync
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f92e775
+
+### [Code Health] Remove RAW_PTR_EXCLUSION in BubbleExample
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b3d4dab6
+
+### Reland "Add check for valid URL in \`ui::DataTransferEndpoint\` constructor"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/158a444
+
+### gfx: use gfx::OverlayType
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6c75074
+
+### Remove ScreenAI Layout Extraction.
+* Affected: ui, chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a5daf6a9
+
+### Fix some TODOs to point to the right bugs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/277293f
+
+### Remove dominickn from Chrome OWNERS files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4c407b6
+
+### ash: Add chrome/browser/ash/customization/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e14e2ef
+
+### ash: Add chrome/browser/ash/attestation/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ffc66f
+
+### preload-topchrome: support navigating to url path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a3f34efc
+
+### [Customize Toolbar] Add icons to actions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/185a2531
+
+### Do not write to cache, if the user is already removed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b0a889
+
+### [TSLO] Create TabStripTransitionDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c08e6b5
+
+### [lensoverlay] Fix bugs related to side panel back button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8addff4
+
+### [Extensions] Add functionality to disable MV2 extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e6d0cf
+
+### [declutter] Skip native integration for archived tab model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be2ed769
+
+### [Price insights clank] Add price insights button data provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e11486
+
+### [lensoverlay] Add an option to disable the omnibox entry point.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a61f98
+
+### Show no groups found on less than 2 valid tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8267be1
+
+### [SubresourceCleanup] Remove is_subresource and is_subframe in UnsafeResource
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3b5833
+
+### media: rm unused code, enable ScopedObservation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f0be0c
+
+### Update a11y announcement on button pin to/unpin from toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f7c73c
+
+### [TabStripModelRefactor] Refactor MoveTabsToNewWindow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07cbfd2
+
+### Privacy Guide - Ad Topics Connecting Strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63068d7
+
+### [Extensions] Add Manifest V2 deprecation keep dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfcb68ac
+
+### Refactor GetMerchantPromoCodeManager into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ae6892
+
+### [omnibox] Stop using RichAnswerTemplate's answer_type field on Clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7137ffc
+
+### Add check in PolicyUI::GetSchema for GetPolicySchemaRegistryService()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd2cf1f
+
+### Show Performance Intervention On Active Window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ee07f9
+
+### [Mahi] Update the disclaimer view showing logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/211b257
+
+### [ImprovedDownloadWarnings] Clean up (pt. 3): WebUI page resources
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/87d7b0e
+
+### Replace hasLauncherButton in input device settings split
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28a5168
+
+### [Tab Resume 1.5] Update title and add see more button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a46abc
+
+### Remove PlusAddressLogo* from components//vector_icons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5acfade3
+
+### preload-topchrome: preload on WebContents destroy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f11acd30
+
+### [Android] Fix animation issue in re-FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/465a1206
+
+### Add performance intervention accessible strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67831ee
+
+### [omnibox] Fix typo in wiring \`search_suggest_relevance\` in ML debug page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce82960
+
+### [SurfacePolish][CleanUp] Clean up surface polish code for Logo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef651c4
+
+### [Uno-D] Add new accessibility label for "continue as" button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/beacae1
+
+### [gbb-cct] Cleanup before adding variant layouts type to BottomBarConfig
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f4f0a248
+
+### Make WebAppBrowserTestBase a mixin based test and port ROOL tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c5bd89
+
+### Implement sanitize done page in SWA
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79dfdd4
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c6b1e6
+
+### [UNOp2][Android] Update metrics recorded by FullscreenSigninMediator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b7e95d1
+
+### [Uno-d] Show Chrome Sign in dialog for extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d91e28
+
+### Replace b/ by crbug.com/ in autofill's TODOs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/833998d
+
+### Move PeakGpuMemoryTracker to //components/input
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39fe049
+
+### [TabStrip] Move kSplitTabStrip into c/b/ui/tabs/features.h
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a8e8450
+
+### Disable flaky ExtensionSidePanelBrowserTest.WindowCloseCalledWhenLoading
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/932f5dc
+
+### [UB] Update UB toggle to be ON when protections are ON.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f957357
+
+### [mullhet] Simplify PasswordFaviconLoaderTest tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3df64c
+
+### [Uno-d] Implement dialog to display for Identity API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06ea760c
+
+### [CodeHealth] Migrate PaymentRequestCanMakePayment tests Events2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc7f01f
+
+### Unit-test DesktopMediaPermissionPaneViewMac::WasPermissionButtonClicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/252b19c8
+
+### Use updated icon for plus addresses in settings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6423f69
+
+### [AIS] Clean up launched flag for Ash Web App install dialog
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e1200e29f
+
+### preloading: Add kPrerender2ForNewTabPageAndroid in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7dbe0c9
+
+### documentScan: Remove advanced-documentscan-api flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4e0254f8
+
+### Reland "[Hub] Remove the AndroidHub flag"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0f43d51
+
+### [omnibox][ml] Fix missing chrome://flags on Android.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/43f5443
+
+### [Nearby Share] Create flag for mDNS discovery
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b772a6d
+
+### Add price tracking expansion flag to chrome://flags following go/finch-feature-api#chrome-feature-flag-in-chromeflags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/069dcf7
+
+### [Omnibox] Associate answer action flags w trigger ids
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a61bd06
+
+### audio: Add flag to reset set-based audio selection preference pref
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/cc31e1c
+
+### [media] Remove UseMultiPlaneFormatForHardwareVideo flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a7175689
+
+### Revert "[Hub] Remove the AndroidHub flag"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a40b391
+
+`);
+              </script>
+            </body>
+        </html>
