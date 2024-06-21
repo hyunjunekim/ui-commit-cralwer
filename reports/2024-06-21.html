@@ -1,0 +1,332 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-21
+### Files app: Downgrade error to warn
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c70ada6
+
+### [X11] Ensure decoration insets is initialized
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e7d3ad8
+
+### Certificate Management UI V2: add toolbar and fix styles
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40c88fd
+
+### [views-ax] Migrating kReadOnly attribute to new system
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97b3b36
+
+### Remove default bool arguments for \`DataTransferEndpoint\` URL constructor
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5e305e8
+
+### [views-ax] Introducing setters for kInvisible state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/87aa2d2
+
+### views: fix many unsafe buffer warnings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d118024
+
+### [views-ax] Introducing setters for kReadOnly attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/640fa45
+
+### views: fix unsafe buffer use in TableLayout
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/724596f6
+
+### [Clipboard] Write \`image/svg+xml\` content in UTF-8 format on Windows.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9966716
+
+### Establish a canonical "Mac Chromium Owners" file
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b8d56f2
+
+### TextViewWithLeading extends AppCompatTextView
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f8afe8a
+
+### [toolbarpinning] Add Addresses action item
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17745d4
+
+### Snapped rounded corner bounds of the surface to pixel boundary
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/96d4992
+
+### WebUI: Remove unnecessary shadowRoot existence check. in cr-icon-button.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e824e9e
+
+### ozone/wayland: fix ozone init + per-platform web features disabling
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e9ff5f
+
+### Reland "Implement screenshot protection on Mac"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e447391
+
+### [views-ax] Add Textfield test that was previously only downstream (Edge)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/98bb669
+
+### StyledLabel: remove GetHeightForWidth overloads.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d34b3ec
+
+### Replace Layout() override with DelegatingLayoutManager.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e25a08c
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/037f7363
+
+### Increase padding at the top of modal dialogs when there is no title
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dea1b8a
+
+### [views-ax] Add a11y setters for table properties
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/af29086
+
+### ash: Add/Augment build files in c/b/a/system_web_apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdb687c
+
+### magic-boost: Add opt-in strings to chromeos_strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48e6254
+
+### WebUI: Migrate CustomizeChrome side panel to WebUIConfig.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e88f9bb
+
+### [media-preview] Record camera preview delay
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea4b92f3
+
+### Add customize chrome menu item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8645cee
+
+### Fix MahiCondensedMenuView highlight
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ee4eca
+
+### [media-preview] Measure total visible camera preview duration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d9adb61
+
+### [PWAs] Split App Shim launching code into its own files.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b56fa025
+
+### Revert "[ContextMenu] Enable Mute Site for audible"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93173d1
+
+### [TabRestore] Update tests to support TabGroupsSaveV2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/642f9e8
+
+### Birch: Use calendar event response status for ranking
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/70f874f
+
+### Disable flaky test on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12e98c5
+
+### [Extensions] Display mv2 deprecation panel based on experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61835ab
+
+### Implement tab list hover effects
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43893092
+
+### [User Education] Add a custom help bubble factory for autofill
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bba479f
+
+### Fix Screen2x data collection workflow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e62eb42
+
+### [User Education] Optional alternate help bubble event routing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8e2cd07
+
+### [lensoverlay] Remove selection box dragging feature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b19a996
+
+### [autofill][clank] Add OnDismiss VCN callback after Save Card Confirm
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65edbe5
+
+### Limit prerender cc warmup to specific prerender triggers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc91f80
+
+### [autofill][clank] Confirmation Snackbar for Save Card and VCN Enroll
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fad8103
+
+### [Price insights clank] Create basic price insights bottom sheet MVC architecture
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9b911ec
+
+### [Omnibox] Fix decoration size and action chip spacing for simple card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dfe3c72
+
+### [Read Anything] Add Atkinson Hyperlegible font to reading mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c7ee69
+
+### Remove unnecessary tests involving WebContents replacement
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ece422
+
+### [WebAuthn] Add gpm locked pin sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4e8878
+
+### Change USM routing id to use new the new models.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b868ae
+
+### Use Resource Attribution in GetDiscardedMemoryEstimate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12930d3
+
+### Remove redundant conditionals in chrome/browser/ui/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/197d64a
+
+### [PWAs] Move AppShimRegistry to c/b/wa/os_integration/mac.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3458a1d8
+
+### [WebAuthn] Change accept button string in sign up bootstrapping sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/123e7c0f5
+
+### [SHoA] Add the safe browsing module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d07290
+
+### overview: Rework overview focus (19/N)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95d731565
+
+### Revert "Defer media load on background synced tab"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ddb543
+
+### birch: Add browser test coverage for the release notes chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/441d53f
+
+### [lensoverlay] Gate all entrypoints to normal windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5281916
+
+### [lensoverlay] Add request header to side panel result loads.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf0c6461
+
+### Remove bad SavedTabGroupsBar test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ba27b05
+
+### [Digital credentials] Give chrome://flag priority
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e3b74996
+
+### [WebAuthn] Make gpm pin textfield work in RTL
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5d8441
+
+### Allow bruschetta to use microphone.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0a75f9
+
+### Add feature to delay popup shown measurement until view is painted.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b26bf81
+
+### [UNOp2][Android] Fix signin screen bottom group padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7796db
+
+### [UNOp2][Android] Remove Parcelable from AccountPickerBottomSheetStrings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb10bfe
+
+### [OOBE][Mojo] Migration of AiIntro & Tuna screens to Mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/255e627
+
+### Enable AnimationForDesktopCapturePermissionChecker by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8643f5
+
+### Remove RAW_PTR_EXCLUSION in password manager browser tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9007a1a
+
+### [OOBE] Implement skeleton for the PerksDiscoveryScreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65eda75
+
+### [UNOp2][Android] Rename FullscreenSyncPromo to FullscreenSigninPromo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4490c8f
+
+### [WebAuthn] Add some details to passkey saved confirmation bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64542940
+
+### [WebAuthn] Add displaying gpm pin remaining attempts error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b654ba3
+
+### picker: populate best_match field for launcher results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17f8ba0
+
+### [gbb-cct] Add new variants with custom button replacing page insights.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/226d2d2
+
+### [AIS] Clean up launched flag for App Install URI
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ce78f771
+
+### wayland: add a chrome flag for fallback tab dragging impl
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1ea3e3c7a
+
+### Add CrosMallSwa to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/2055f9b
+
+`);
+              </script>
+            </body>
+        </html>
