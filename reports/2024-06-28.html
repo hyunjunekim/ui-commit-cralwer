@@ -1,0 +1,268 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-06-28
+### Replace DomKey::Base with DomKey
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/701c1ab
+
+### Allow null web view identifiers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ab1b8f
+
+### Android: Rename CallbackHelper.waitForFirst() -> waitForOnly()
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c42861
+
+### wayland: add 'wayland-per-window-scaling' chrome flag
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1d15505f
+
+### [views-ax] Introducing setters for kKeyShortcuts attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bb3665ee
+
+### Delete references to DisableAnimationsTestRule now that it's a part of the runner.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28e2718
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2aeac79
+
+### Revive SelectFileDialogMacTest.DontCrashWithBogusExtension
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9caa883e
+
+### Remove SupportsFixedType() from GLVersionInfo.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dac3988
+
+### viz: drm: Implement swap failure handling in DrmOverlayManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/74b94a8
+
+### drm: propagate kHandleOverlaysSwapFailure
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0b00534
+
+### viz: notify DrmOverlayManager about overlays' promotion
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a76d846
+
+### Some Keyboard shortcuts doesn't work on context menu.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/25a6e25
+
+### Add test for announcement of GIFs button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44b4d33b
+
+### Add tooltip to the search field back button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c248bb4
+
+### mahi: Update various mahi strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/381c5cf6f
+
+### media: Add video frame search interactive UI test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/06c331f
+
+### [a11y] Add aria-label on ChromeOS Chrome Guest NTP Learn More links
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6edd7ff
+
+### Revert "Performance intervention button color change on click"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5135e5
+
+### CrOS WebUI: Use assert helpers from chai_assert.js instead of window.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/743ad84c
+
+### MagicBoost: Not fetch QA/Mahi controller if consent status is declined
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc50b854
+
+### Fix opening a shortcut for a locked profile bypassing profile picker
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a2840a
+
+### birch: Add browser test for event attachment suggest chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc3c819
+
+### [Gardener] Disable flaky LensOverlayControllerBrowserTest test.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/094d601
+
+### [STGV2] Fix deletion from different window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d49c8dd
+
+### Clean up TotallyEdgeToEdge
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0f50929
+
+### Refactor VirtualCardEnrollUiModel to a class.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2463882
+
+### [HTTPS Upgrades] Disable for captive portal login URLs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a80cd70
+
+### [Extensions] Add disabled stage content to mv2 deprecation panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f019ae8
+
+### [User Education] Dump stack trace when anchor is unexpectedly hidden
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20e460bf
+
+### Move ConfirmSaveCreditCardToCloud() to PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e83d5d
+
+### focus-mode: Add Ash.FocusMode.PlaylistsDuringSession
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15847c0
+
+### webui: Migrate PerformanceSidePanelUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d45503be
+
+### Fix crash bug when abusive notification revocation feature is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56932aee
+
+### [Omnibox] Suppress "big text" when answer has no actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18d0ac5
+
+### Android: Remove obsolete wake lock in ChromeApplicationTestUtils
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e4d29d
+
+### birch: Query the FaviconService for favicon images in suggestion chips
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9823c427
+
+### [QuickStart]: Cleanup unused discoverable name
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ccf1c1
+
+### [lensoverlay] Remove setting for omnibox entry point when disabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/68c6ef4
+
+### Performance intervention button color change on click
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd5f24a
+
+### Prevent SignOutCoordinator.startSignOutFlow() if no user is logged in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e32279a
+
+### Clean up Tracking Protection Rollback IPH
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9ec77ab
+
+### webui: Migrate BookmarksSidePanelUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45efb7e7
+
+### [FedCM] Move some classes in AccountSelectionViewBase into namespace
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c41b86b
+
+### [FPF] Move shared features and constants out of browser/
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/56617c0
+
+### [Autofill] Remove DenseSet::is_one_of()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2df6f36
+
+### [Start] Remove START_SURFACE_OPEN_START_AS_HOMEPAGE.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bae9599
+
+### [SHoA] Add options menus to subpages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04b3d12
+
+### Cleanup red interstitial facelift code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71c7a35
+
+### Add screenlock reauth promo in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9d5a9f0
+
+### Treat AutofillPopupMeasureTimeAfterPaint as kill switch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99c0f73
+
+### [waffle]Enable search engine choice pixel tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/498c789
+
+### Move ScreenCapturePermissionCheckerMac callback into member
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ebdda3
+
+### ash: Add //chrome/browser/ash/magic_boost/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4c8362
+
+### Reland "Fix HTML escape problem in SyncConfirmationUI"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d00200e96
+
+### Add tooltip for the clear button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a3426e
+
+### Remove accessible name for search field and add tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52baff1
+
+### Add //chrome/browser/remote_apps/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75e0cb8
+
+### Add suport for background playback for Read Aloud
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/963e11f4
+
+### Cleanup launched feature AutofillEnableRemadeDownstreamMetrics
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bca751eb
+
+### [omnibox][ml] Update chrome://flags with more options.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4501c1f
+
+### [AF] Clean up unused AutofillEnableStickyManualFallbackForCards flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/727a126
+
+### Add feature flag for using IUserConsentVerifierInterop api on Windows
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dceb1d4d
+
+`);
+              </script>
+            </body>
+        </html>
