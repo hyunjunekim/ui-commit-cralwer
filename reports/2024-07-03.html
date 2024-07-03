@@ -1,0 +1,364 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-03
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cebca4d
+
+### cr-tooltip: Restore paper-tooltip polyfill to determine offsetParent
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2e9f12b8
+
+### [views-ax] Migrates kDefault state update to cache-push system
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bc2572aa
+
+### Revert "[BRP] Rewrite pointers in AXPlatformNodeAuraLinux"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a375d5d
+
+### ozone/wayland: Immediately reset selected action on SetDndActions(0)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/030391b
+
+### Remove ARB extensions support from GL bindings: Part XIV.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/39cb85e
+
+### [views-ax] Introducing setter and remove method for kValue attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f87a60f
+
+### ui::SelectFile: deprecate params
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4b57fa
+
+### Certificate Management UI V2: fix export button click.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ecf4f6b
+
+### [BRP] Rewrite pointers in AXPlatformNodeAuraLinux
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/53f84c38
+
+### [//ui/gl] Add base::Feature to add delay when linking GL program
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/332a416
+
+### Remove ARB extensions support from GL bindings: Part VII.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/04ac3231
+
+### [Android] Record maximum GLES version supported for non-ANGLE
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f20169c
+
+### Remove ARB extensions support from GL bindings: Part VIII.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/797c760
+
+### [A11y] Accessibility tweaks in WebUI to enable name prohibited fixes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9742421
+
+### [views-ax] Introduce setters for State::kProtected
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3ec5914
+
+### [Files] Fix table sort preferences race
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/765fe705
+
+### [views-ax] Migrating kPlaceholder attribute to new system for textfield
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4eb7eec8
+
+### Revert "ash: Add //chrome/browser/ash/extended_updates/BUILD.gn"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc74cd7f
+
+### ash: Add //chrome/browser/ash/extended_updates/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3236a46
+
+### ash: Add //chrome/browser/ash/annotator/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16fb4a5
+
+### ash: Add //chrome/browser/ash/arc and its subdirs BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f94d070
+
+### NewTabPage: Remove CwsDarkLogo feature flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7efe615f9
+
+### Add Score function in optimization guide
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f18562
+
+### Revert "[code cache] Extend GeneratedCodeCache logging for Chrome WebUI"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/552dbc1
+
+### [Extensions] Delete dashboardPrivate API
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8dfabb3
+
+### Records whether the pdf download url is successfully encoded
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d1b18a2
+
+### [lensoverlay] Send phase latencies, plla, and entry point client logs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe2f59ff
+
+### [lensoverlay] Change fullscreen behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffb96fd
+
+### Autofill Settings: Add aria-description to inputs with maxlength
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c16b3a
+
+### Certificate Management UI V2: shorten certificate_manager_handler.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/db006063
+
+### [MSan] Fix use-after-dtor in CupsPrintersHandlerTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9eaf91d
+
+### Navigate to chrome-native://pdf/ onPdfDownloadStarted
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4a85c28
+
+### Remove default arguments on virtual functions in WebContents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5710b06
+
+### magic-boost: Add orca string variations test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/861d81c4
+
+### [Shortcuts] Support chrome-extension:// urls for shortcut creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eac76cd
+
+### Implement column drag and drop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0708dbf
+
+### [Compose] Enable MSBB IPH based on the ENABLE_COMPOSE flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/041da1e7
+
+### eCCT: Hide incognito branded features in Ephemeral mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/56d7856
+
+### [Pre-DangerousDownloadInterstitial] Establishes naming convention
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0940c9
+
+### [STGV2] log metrics in STGKS and fix TGSSImpl for TabGroupEvents
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3578b68
+
+### [code cache] Extend GeneratedCodeCache logging for Chrome WebUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2278fa1
+
+### [stts-notifs] Update DeviceInfo to reflect send tab push notifs enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e8f307
+
+### [lens] Add always-visible page action icon variant
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37736ef
+
+### [WebAuthn][Enclave] Add account info section above the PIN dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eda2ef94
+
+### [FS Shortcut] Ignore Esc key press with non-stateful modifiers only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb7e807
+
+### [Hub] Cleanup legacy tab switcher code in toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c717fb0
+
+### Fix string for general performance section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05b3424
+
+### Get media session request id for AshWebView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4623694
+
+### [lensoverlay] Add a UKM metric that records invocations.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b229aef
+
+### WebAuthn: Introduce AuthenticatorGpmPinSheetModelBase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97f362f
+
+### [WebAuthn][Enclave] Notify model after passkey reset and WebView closed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55e4d79
+
+### [Read Anything] Convert update content selection tests to typescript
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dec65e
+
+### Reland "[lensoverlay] Hide FedCM dialog when overlay is showing."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e02f355
+
+### Add a check for frame button positions in BrowserTabStripController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/748ca52
+
+### [WebAuthn] Add correct strings for GPM Pin locked UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc27d7b8
+
+### [Read Anything] Convert other update content tests to typescript
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f69ae31
+
+### [Read Anything] Convert update content tests to typescript
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b3edb67
+
+### [Ash] Add //chrome/browser/ash/plugin_vm/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c26a1896
+
+### Delete obsolete cr-customize-themes and ntp-customize-dialog strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85c12c2
+
+### Add Performance intervention settings toggle
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2594d9
+
+### Clean up the unused multistate memory saver mode flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ece083
+
+### Moving PaymentsRpcResult to PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8804b57
+
+### [TabStrip] Move kScrollableTabStripOverflow into c/b/ui/tabs/features.h
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/5d2cbdb
+
+### Remove outdated documentation line from side_panel_entry_id.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c514695
+
+### [test] Prepare making TestingProfile::TestFactory move-only
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2662c16
+
+### [DBSC] Update chrome://signin-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ce345b70
+
+### [skyvault] Add migration notice dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6155464
+
+### Change Origin to SchemeHostPort for federation_origin in PasswordForm.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6acba890
+
+### Use builders more consistently in plus address creation modal.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1299cad0
+
+### Revert "[SHv2] Add a singular version of the string"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05b22a0
+
+### Add description for "delete all password manager data" row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f65a55f1
+
+### [Android] Implement plus address first time usage UI changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36453fe
+
+### Revert "Update HistorySyncCoordinator to be created only once"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/03a8450
+
+### Enable NTP modules redesign on ToT
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3bcf73f
+
+### [Gardening] Disable DeleteTabsWhileDetached tests on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e68b4c9
+
+### ash: Add //chrome/browser/ash/floating_workspace/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd3dce40
+
+### ash: Add chrome/browser/ash/account_manager/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e134c3
+
+### Support accounts with non-displayable email address in unified settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb9f60b
+
+### ash: Add //chrome/browser/ash/platform_keys/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dffc7118
+
+### Implements Chrome Flags for Notification Width Increase
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/84650bb
+
+### [Tab Switcher] For new animation use standard easing
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4d3d35d
+
+### [Tab Switcher] Custom tab close animation
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c5db4b4
+
+### Add backdrop-filter-mirror-edge chrome flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/85cd4298
+
+### Remove the Model Loader API - part 2/n
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1eab2dc
+
+### VCD: Add feature flag for face retouch
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/be311db
+
+### Add friendlier error dialog flag and propagate to ARC
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d287680
+
+`);
+              </script>
+            </body>
+        </html>
