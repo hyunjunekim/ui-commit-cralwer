@@ -1,0 +1,376 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-04
+### [ToolbarPinning] Update visibility of status indicator for translate pinned button.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/821f268
+
+### ui::SelectFile: remove Android AcceptTypes mechanism
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0a2ac34
+
+### Replace SysColorMixer GetResultingPaintColor usage with AlphaBlend
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/79aa5bd
+
+### [views-ax] Migrating kExpanded and kCollapsed attribute to new system for notification
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c2adca
+
+### ui: update SelectFile documentation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9f39229
+
+### History WebUI: Add padding to empty states
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/358879b
+
+### [Language] Require that Accept-Languages be on kAcceptLanguageList
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/58e8f8e
+
+### HTML Mode Removal: Removes HTML accessibility mode from all platforms
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a2d1a05
+
+### Use base::FixedFlatSet and base::FixedFlatMap in ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1a86c3fc
+
+### WebUI: Fix colorize.svg icon references.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dcaa92
+
+### Always use GLVersionInfo::IsAtLeastGLES(3, 0).
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f302828
+
+### NativeWidget: Remove unused RunShellDrag() view parameter
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/614c3bb
+
+### [BRP] Expand on RAW_PTR_EXCLUSION comment for document_parent_
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d1a6a0
+
+### Enable creating InitParams::CLIENT_OWNS_WIDGET modal dialogs
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d71ee9
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c2f975f
+
+### [color] Cleanup sys color mixer definitions to match UX spec
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f96da37
+
+### Ensure the input protector also covers taps
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/22b2696
+
+### [views-ax] Introducing setters for kExpanded and kCollapsed state
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f2d34b
+
+### events: Copy native event to events with flags rewritten.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6136466
+
+### [views-ax] Migrating ProgressBar kValue attribute to new system
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4320494
+
+### [views-ax] Migrating kExpanded and kCollapsed attribute to new system for omnibox header view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bc6f8a
+
+### Reland "ash: Add //chrome/browser/ash/extended_updates/BUILD.gn"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ea1c33
+
+### [Payments] Keep moving PaymentsRpcResult to payments/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cfe76cd7
+
+### [Mahi] Introduce OptInFeatures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b01f16e
+
+### [MSan] Fix use-after-dtor errors in FileSystemAccessUsageBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf5255b
+
+### ash: Add //chrome/browser/ash/guest_os/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f653446e
+
+### [DangerousDownloadInterstitial] Add handler for logging cancel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/670c731
+
+### ash: Add chrome/browser/ash/child_accounts/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ffabbf0b
+
+### MagicBoost: Not fetching Mahi controller when page is not distillable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ce6385
+
+### ash: Add chrome/browser/ash/input_method/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3b69f70
+
+### Announce list items inside a section correctly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c50f588
+
+### passwords: refactor PasswordManagerPorter
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97dc5182
+
+### ui: remove some subclasses of SelectFilePolicy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f296a4a8
+
+### MagicBoost: Fix ReadWriteCardsManagerImpl::GetControllers logic
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/039c087
+
+### dPWA: Enable App Icon feature flag by default as we want to bring consistency of installed PWAs with platform apps.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/482e83c5
+
+### Implement accessibility grid layout for emoji bar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8b6293
+
+### [Start] Clean up LocationBarModel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bcaee44
+
+### Optimize AssociateWindows on Android.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ed9ac07
+
+### [DangerousDownloadInterstitial] Add handler for logging open survey on
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/400b430
+
+### [QSv2] Default QS to On, remove QS On/Off toggles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/245cfea
+
+### geolocation: Integrate with Windows location permission
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/24463f46
+
+### [FedCM] Honor mediation: required for returning users in button mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa12002
+
+### [FedCM] Update account chooser header on Android button mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb48361
+
+### [DangerousDownloadInterstitial] Add histogram for user actions on the dangerous download
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95ef31b
+
+### cbui: remove ui::SelectFileDialog params test cover
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f6eba9b
+
+### [User Education] Rewrite help bubble on menu tests in Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f8daa0e3
+
+### [Extensions] Remove delegated install prompt code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/908a036
+
+### [Start] Cleanup of OverrideUrlLoadingDelegate etc. in ToolbarManager.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7bde3a2
+
+### webui: introduce TopChromeWebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8492a5
+
+### Remove unused performance side panel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c8beaf
+
+### Remove unused setAppMenuUpdateBadgeSuppressed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/819625e
+
+### Use Suggestion::feature_for_new_badge for Compose new badges.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1f7413
+
+### [Extensions] Add remove button MV2 deprecation panel in disabled stage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/380f392
+
+### [views-ax] Migrating kExpanded and kCollapsed attribute to new system for omnibox popup view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ffe962
+
+### Reland "[code cache] Extend GeneratedCodeCache logging for Chrome WebUI"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0120f6
+
+### Certificate Management UI V2: shorten certificate_manager_handler.cc
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff903f8
+
+### iwa: Remove kIsolatedWebApps from bad flag list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5c8c2c
+
+### Rewrite FocusModeController around FocusModeTasksModel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ccef874f
+
+### focus-mode: Update media controls source title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c43ddc
+
+### [lensoverlay] Remove hidden canvas.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8873415
+
+### [Tab Group Sync] Add Shared Tab Group Data to other platforms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e022b78
+
+### Default initialize edge-to-edge and its system insets without waiting for the first opted-in website
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2192930
+
+### Remove remaining ForYouFre code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d7ae46
+
+### Revert "ash: Add //chrome/browser/ash/file_system_provider/BUILD.gn"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8707e9b
+
+### Disable \`LensOverlayControllerCUJTest.CopyKeyCommandCopies\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28339e2
+
+### Update UrlBar font size in accordance with go/ui-font-deprecatoin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8abcd97
+
+### Disable PageInsightsMediatorTest#testAutoTrigger_signedIn..
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2441e1f
+
+### [lensoverlay] Fix crash when dragging tab back to window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/34530a7
+
+### [mahi] Make existing Mahi toggle use new strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac94f70
+
+### [ShoA] Add the primary action for Safe Browsing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3da9f41
+
+### [SHv2] Show compromised password number instead of origin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e1845f
+
+### [Tab Group Sync] Implement startup helper in native
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/629965c
+
+### Allow specifying "new" badges via autofill::Suggestion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee85ff5
+
+### [UNOp2][Android] Fix 'Add account' row RTL layout
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d4f8af
+
+### [waffle]Add logs in test to debug asan failure on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d07d65f
+
+### Enable SyncConfirmationUIWindowPixelTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59fed8c
+
+### [DataSharing] Reuse MockDataSharingService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80e9f251
+
+### Sync consent crash fix
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/44ff45f5
+
+### [DataSharing] Use StrongAlias for GroupId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1baf358
+
+### chrome/browser/ui: add missing dependency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2b43c1
+
+### quick-answers: nullptr can be returned for error
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73bf5b66
+
+### [Tab Group] Remove non-const accessors to the model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb9755d
+
+### lobster: setup lobster client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e6ce6a
+
+### ash: Add chrome/browser/ash/app_list/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c92546a
+
+### [MSan] Fix use-after-dtor in VideoOverlayWindowViews
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d71415d
+
+### ash: Add //chrome/browser/ash/file_system_provider/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4f1b09
+
+### [Compose] Nudge on selection
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6648f22
+
+### [lensoverlay] Add omnibox entry point options to chrome://flags.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7a4ed20
+
+### [media] Remove UseMultiPlaneFormatForSoftwareVideo feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/dbc902a
+
+### soda: Add conch models.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8d65041
+
+`);
+              </script>
+            </body>
+        </html>
