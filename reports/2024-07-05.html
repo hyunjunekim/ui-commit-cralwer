@@ -1,0 +1,176 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-05
+### android: remove old contact selection backend
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0e025d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90512b0
+
+### Revert "Reland "Reland "[WebAuthn][Android] Reenable Fido2CredentialRequestTest"""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/14cad09
+
+### Encapsulate wl_display vars usage in WaylandConnection
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e552fb9
+
+### Revert "HTML Mode Removal: Removes HTML accessibility mode from all platforms"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59f713c
+
+### Use std::array in ui::PrintableCodeEntry  to avoid unsafe buffer error.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/323c382
+
+### ash: Add chrome/browser/ash/file_manager/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67c4ae4
+
+### Move interstitial prior to digital identity request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84e15f7
+
+### [FedCM] Simplify JNI interface using JniType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3fb23b4
+
+### [Start] Clean up ToolbarManager and ToolbarLayout|Phone.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76dc089
+
+### [Start] Remove ToolbarManager#setSkipRecreateActivity.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4620ab
+
+### Start download if the pdf page is not created for chrome-native://pdf/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/256ac4d
+
+### Rename CustomProfileLabel to EnterpriseCustomLabel
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4347550
+
+### [WebAuthn] Unify create and change pin sheets model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a291f82
+
+### [WebAuthn] Make pin cells match the specs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7189fd31
+
+### Add Sign-in interception bubble handler tests for supervised users
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7b13913
+
+### Portals: Remove WebContentsDelegate::UpdateInspectedWebContentsIfNecessary
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3abbaa
+
+### [SHoA] Add the managed state to SB module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/363e4d83
+
+### Remove AutofillClient::DidFillOrPreviewField
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc8b6413
+
+### Reland "Update HistorySyncCoordinator to be created only once"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/820947d
+
+### Use inline constexpr for constant strings in webui_url_constants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d36ecf
+
+### [FedCM] Really hide dialog in Mac fullscreen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3844eb58
+
+### Simplify and generalize user education notifications for Autofill UI.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea8f744
+
+### Remove outdated TODOs in plus address views code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea21809
+
+### Record event to note if a suggestion with benefits IPH was accepted.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1ab241d
+
+### 🧇 Add debug logs to track potential caching bug in metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eed5f50
+
+### Perform small clean-ups in the interactive UI test for plus addresses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4185974
+
+### Change *KeyedServiceFactory::TestingFactory to base::OnceCallback<...>
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdacb48c
+
+### Remove OpenLink methods from PlusAddressCreationView.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/90d1282e
+
+### [pip2] Remove \`lock_aspect_ratio\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6deebfe
+
+### [Office] HaTS survey improved triggers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cc29ab
+
+### [User Education] Make command line switch public
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/381ae30
+
+### [Ash] BUILD.gn file for //chrome/browser/ash/printing/oauth2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d43a165
+
+### Add notice screen for plus addresses on Desktop.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f8009b
+
+### ash: Add //chrome/browser/ash/file_suggest/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55101ea0
+
+### healthd_internals: Fetch data from cros_healthd service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/101fb4f
+
+### Allow tab traversal to visit Picker textfield.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8481c82
+
+### Add feature flag for annotator mode
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a34a024
+
+### Create feature flag for generic oidc
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f6ee8f31d
+
+### Rename windows authentication flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ee52e68
+
+`);
+              </script>
+            </body>
+        </html>
