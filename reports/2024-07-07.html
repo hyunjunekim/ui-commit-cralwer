@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-07
+### drm: add histogram to measure number of fullscreen overlays' failures
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c3bd352
+
+### Files app: remove unused LoaderType enum (CANVAS)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ca733786
+
+### Image Loader: remove unused storage permission
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b0d1adf
+
+### Clean over-limit notifications in the async way
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/80ef1c7
+
+`);
+              </script>
+            </body>
+        </html>
