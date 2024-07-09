@@ -1,0 +1,368 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-09
+### Improve support for reading android virtual content uri as FilePath
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/da76baa9
+
+### android: Unregister observer in WindowAndroid.destroy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0386c2c
+
+### [views-ax] Migration of kProtected state in textfield
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/23d8ce9
+
+### Remove GLversionInfo::IsLowerThanGL().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c0d4a3d
+
+### Add support for Mac CADisplayLink preferred refresh rate range
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a794e12
+
+### [Android] Implement SoftKeyboardElement
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/350e5e561
+
+### Accessibility: Add a feature flag for the disable trackpad feature
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/18eb149
+
+### [Tab Strip] Remove fromMouse check and rely on only primary button check to detect primary clicks.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f068222
+
+### [input] Treat non-client mouse events like normal in WebMouseEventBuilder
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78827c3
+
+### Portals: Deprecate ax.Role.kPortal
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b271535
+
+### fontconfig_util: Ensure duplicate DLC font dirs are not added
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ada6bc1
+
+### lobster: introduce lobster session
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cc0216
+
+### on_device_model: Add PlatformModelProgressObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/936875e
+
+### Rename dbus_method_call_status.h to dbus_callback.h
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b270cf
+
+### webui: use TopChromeWebUIConfig for top-chrome WebUIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf02497b
+
+### [NTP][Enterprise] Add double booked chip
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d805a1cd
+
+### [lensoverlay] Don't show coachmark when Chromnient invoked by image.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0966168
+
+### [lensoverlay] Always show toolbar entrypoint when overlay open
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea3afbc9
+
+### [omnibox][history-embeddings] Search-spark icon in @history scope
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4593cae
+
+### Fix memory leak in VoiceRecognitionHandler.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6eb30e
+
+### Update ShelfDefaultPinLayoutRolls only once
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00b4575
+
+### [Site search policy] IPH conditions for featured search
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cba1351
+
+### [Start] Remove allowSkipLoadingTab() at startup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4be5ac6f
+
+### kbd-backlight: Don't show the notification bubble when changing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df58bf9
+
+### Streamline E2EControllerFactory enabled checks / creation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9740364
+
+### [views-ax] Migrating Role in the Omnibox button row view to new system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4965161
+
+### Reapply "Remove layer of indirection in first run dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/544afa2a
+
+### Add new screens to the signin interception
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d7b7978
+
+### Route settings theme button to customize chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b28d39f1
+
+### [omnibox][history-embeddings] Add row badge UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/714edcf
+
+### app-controls: Validate PIN in Mojo handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/830d2244
+
+### [Birch] Add Video Conference Type to Lost Media Provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5ca7268
+
+### [omnibox] OmniboxSuggestionButtonRowView, clean up & fix button margins
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b84f69
+
+### [DangerousDownloadInterstitial] Add handler for logging save dangerous
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2cb15aba
+
+### [Customize Toolbar] Add drag to reorder tip card.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e074c45
+
+### Revert "Remove layer of indirection in first run dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28dd2f1
+
+### [Ash] Add //chrome/browser/ash/scalable_iph/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d057a0c4
+
+### Toolbar: Hide avatar button for OffTheRecord profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08989d3b
+
+### [Discovery] Record MediaRouter.Ui.Dialog.LoadedWithData for Cast and GMC
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee963f7
+
+### Remove layer of indirection in first run dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/235c22e
+
+### ui: break CertificatesHandler dep on SelectFileDialog params
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d46c033
+
+### [lensoverlay] Hide toolbar entrypoint on DSE change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c1d9ec3
+
+### [gbb-cct] Add check to determine if Google is default search engine.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4320206
+
+### [lenoverlay] Refactor how we blur background
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9db6cc5
+
+### [Tab Group] Remove UpdateVisualData method with sync ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d037604
+
+### Merge TestSyncService::SetSignedIn*() methods into a single one
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6b7dd4
+
+### [Extensions] Add MV2 deprecation dialog for disabled extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/794b473
+
+### iwa: Ensure all tests work with IWA feature enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a64898
+
+### PDF OCR: Make PdfOcrController compatible with OOPIF PDF Viewer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8446353
+
+### Fully disable flaky PrivacySandboxDialogView Consent Test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6072408b
+
+### Add QRCodeGeneratorEnabled group policy
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8d94bfa
+
+### [WebAuthn] Fix specs of pin textfield and reveal icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf6e4ee
+
+### Ensure chrome://policy/test messages ignored when not supported
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99cafbf
+
+### [gbb-cct] Delete all references to PageInsightsCoordinator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8a9d817
+
+### Records whether the pdf download url is successfully decoded
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55c0d6a
+
+### Remove empty column inside autofill suggestion row view.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/771d10b3
+
+### Remove SetMaxTransportState() from TestSyncService::StopAndClear()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5d2c855
+
+### [lensoverlay] Add preselection toast to overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d7fd95ce
+
+### chrome/browser/ui: fix missing deps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/41c8e8c
+
+### Update User Bypass enforcement icons to ChromeRefresh style
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97ec8cc
+
+### [skyvault] Close dialog if migration stops
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff3c734
+
+### Remove TODO in PlusAddressCreationDialogDelegate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f6c5ffa
+
+### Add toggle UI for FloatingSso cookie sync
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/083fec4
+
+### ash: Add //chrome/browser/ash/extensions/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7ba6b8d
+
+### [LHS indicators] Add pixel tests for permissions blocked on system-level
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cd51731
+
+### Enable SyncConfirmationUIWindowPixelTest.InvokeUi_default/ManagedAccount
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1f06e3
+
+### [OOBE][Mojo] Migration of LacrosDataBackwardMigrationScreen to Mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40ddd36
+
+### [Ash] BUILD.gn for //chrome/browser/ash/printing/print_preview
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5e0906
+
+### [OOBE][Mojo] Migration of LacrosDataMigrationScreen to Mojo
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ea3b773
+
+### Revert "ash: Add chrome/browser/ash/dbus/BUILD.gn."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1acc9c1b6
+
+### Disable LaunchWebAppWhileBrowserShutdown on Lacros
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b81050
+
+### ash: Add chrome/browser/ash/dbus/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c45392
+
+### ash: Add //chrome/browser/ash/power/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5766c18
+
+### [skyvault] Start migration on Upload now clicked
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1886e53
+
+### Disable testOnClickListenersAttachedWithMinorModeAccount on Android Auto
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b238c9c
+
+### ash: Add chrome/browser/ash/login/saml/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3b6a06c
+
+### ash: Add chrome/browser/ash/login/quick_unlock/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14f12b26d
+
+### Remove unused SharedURLLoaderFactory getter from client
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fbe638c
+
+### ash: Add chrome/browser/ash/login/lock/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f23117
+
+### ash: Add chrome/browser/ash/login/enrollment/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92e7aaf
+
+### ash: Add chrome/browser/ash/login/demo_mode/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6a4cc90
+
+### [Android MVT] Add #enable-most-visited-tiles-select-existing-tab flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f84c99e
+
+### [Link Capturing] Updating feature flag to be enum denoting reimpl
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6f45eab8
+
+### Add chrome://flags for WinPdfUseFontProxy
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/26b87be
+
+### Introduce a TemplateURL feature that drops unrecognized parameters.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1ecf427
+
+### [desktop] Expose kSyncEnableBookmarksInTransportMode in chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/133a667
+
+### [Tab Switcher] Use quick delete animation for close all tabs
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/47d6960
+
+### [TLDD] Enable tab tearing based on OEM allowlist.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8a77a25
+
+`);
+              </script>
+            </body>
+        </html>
