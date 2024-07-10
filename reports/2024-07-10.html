@@ -1,0 +1,412 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-10
+### [HTTPS Upgrades] Disable in captive portal login webview
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1001b3d
+
+### Turn iterator $var!=.end() DCHECK() into CHECK() for ui
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f690fca9
+
+### Add ApplyTransformToLetterboxingfeature & DisableVPBLTUpscale to SWP
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8ac7d7e
+
+### Set input scope as private or default
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6b29ca
+
+### Remove is_es use cases: Part II.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/12d741f
+
+### Remove is_es use cases: Part I.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08f60e83
+
+### [Permissions] Origins in prompt title should be bold
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d0c463a
+
+### Change blink::WebKeyboardEvent to use std::array in is members
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ddb1b5f2b
+
+### wmp: update the menu separator color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3b90613c
+
+### Remove GLVersionInfo::IsAtLeastGL().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e531bb32
+
+### Stop using ViewCompat.setPaddingRelative.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fba2393
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f356058
+
+### [UNOp2][Android] Fix NTP signed-out avatar color
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/47bb2018
+
+### Remove outdated conditions from GL bindings.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/829181b
+
+### Use CLIENT_OWNS_WIDGET for all AX-related unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/05a8b50e
+
+### [A11y] Remove position anchor DCHECK from ax_position InitializeWithoutValidation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0d9b313
+
+### Reland "[BRP] Rewrite pointers in AXPlatformNodeAuraLinux"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cb16adf
+
+### Fallback tab dragging: Always create a hidden window for detached tabs
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9cd30ea
+
+### [views-ax] Migrating kExpanded and kCollapsed attribute to new system for popup view views
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c740c93
+
+### [Fuzzing] Fuzz gfx::PaintVectorIcon().
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/95de970
+
+### [ui] Rename \`GetDialogButtons\` to \`buttons\`
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64bd16ab
+
+### [SHv2] Fix unknown content setting type crash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f4fe29
+
+### ash: Add chrome/browser/ash/login/smart_lock/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6ee5c92
+
+### [Product specifications] Fix the icon expansion bug
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b411d3
+
+### Revert "[User Education] Prevent manual config of IPH features for Desktop"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32a64f0
+
+### ash: Add chrome/browser/ash/login/signin/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/38b3ca2
+
+### ash: Add chrome/browser/ash/login/session/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb9d8e28
+
+### Revert "[MSan] Fix use-after-dtor error in TabStripScrollContainer"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d044a27
+
+### [Ash] Create BUILD.gn file for //chrome/browser/ash/profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a5a3439
+
+### [WE] Get companion app info from Almanac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e93249
+
+### Migrate another thumbnail tab helper test to Kombucha
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f98a869
+
+### Add performance intervention UI metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1c56eba
+
+### Update minimum width for editor menu
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8766e65
+
+### Extend tab hit test to top of window on tiling WMs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0e79c94d
+
+### [FedCM] Update add account buttons on Android button mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35b73d2
+
+### [Start][SurfacePolish][CleanUp] Clean up surface polish code related to Start Surface in toolbar.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/316f218
+
+### [Start] Clean up TabLaunchType.FROM_START_SURFACE.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0127fc
+
+### chrome/linux: Fix icon in wayland with user data dir set
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ba4bca
+
+### [lensoverlay] Add UKM metrics for overlay interactions.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/624041c
+
+### chrome/linux: Fix profile picker icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2eaeb2
+
+### Revert "[Tab Group UI] Lazily initialize"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/19cbcbc
+
+### Remove experimental annotation #11  #cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6839939
+
+### [E2E] Use yOffset API to position BottomControlsLayer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eddce7e
+
+### [toolbarpinning] Create Chrome Labs action item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e49aa102
+
+### [Gardener] Disable PreselectionToastOmniboxFocusState on Mac
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a23bc4b
+
+### [User Education] Prevent manual config of IPH features for Desktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc1beca5
+
+### [MSan] Fix use-after-dtor error in TabStripScrollContainer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/290e945
+
+### [DNT] Support smooth transition for other native pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33f00f7
+
+### [TSLO] Flag-guard DTC in DW mode implementation
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d6eecb2
+
+### Trigger WN2 page when feature is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4104a10
+
+### [WebAuthn] Use correct icon for reveal pin button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ede974b
+
+### [Card on File] Fix fill-ins after kStandaloneCvc is refactored to new FieldTypeGroup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/344387fa
+
+### [WebAuthn] Add locked gpm pin illustrations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea5b8845
+
+### [Uno-D][AvatarButton] Fix accessibility text not updating properly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55041fe
+
+### Turn iterator $var!=.end() DCHECK() into CHECK() for chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e90601d
+
+### Switch to StateObserver pattern to fix thumbnail test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a5c7927
+
+### [PEPC] Ensure that browser zoom does not affect font size validation
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/655ed28
+
+### Do not reuse candidate page when navigate between different pdf pages
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5517aea
+
+### De-listify TabStripObserver for simplicity
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/074af33
+
+### [User Education] Put tutorial ids in separate file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0bdef2e
+
+### [PEPC] Ensure scrim taps also dismiss the dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b17d344
+
+### Privacy Guide - Ad Topics Country Filtering
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d65c626
+
+### CleanupPreloadPrefs() needs to be called after startup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4055be54
+
+### [WebAuthn] Make sure background is not drawn outside of pin cells
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78d28b3
+
+### [pip2] Remove \`initial_aspect_ratio\`
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/53fa9836
+
+### [Tab Group Sync] Remove TabGroupStore from factory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/156bfc0
+
+### Supervised User verification interstitial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/86694bb
+
+### 🧇 Revisit TabHelpers creation and dialog registration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ad73825
+
+### Ensure system web dialog is visible before focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a3442af
+
+### [WebAuthn][UI] Make cancel button tonal in the trust dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c30cb6
+
+### [Tab Group UI] Lazily initialize
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0b9c24
+
+### [skyvault] Upload ScreenCaptures to OneDrive using CloudUpload flow.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1efece1
+
+### [gbb-cct] Make sure that save and share button are shown in the topBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c637ec31
+
+### Update SyncButtons.Shown to record button shown on history sync screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43760b6
+
+### [Ash] BUILD.gn for //chrome/browser/ash/printing/print_management
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a59b807
+
+### [gbb-cct] Add support to enable search and home button from Chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e1a5ff
+
+### [WebAuthn][UI] No top border when there is a step specific header
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f48d6783
+
+### [lensoverlay] Add metrics for session duration and abandonment/success.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/feb095e4
+
+### Remove unnecessary is_valid check on url.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fd198d64
+
+### TabDragging: Add test variant for fallback tab dragging
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82c0d0f
+
+### [gbb-cct] Adds logging for GoogleBottomBarVariant layout and its elements
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a1ad59
+
+### [gbb-cct] Add support for home button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/14e95a0
+
+### ash: Add chrome/browser/ash/login/screens/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/786b7b6
+
+### Disable autofill popup width adjusting to a multiple of 12.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3333ed4
+
+### Remove debug logs in test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c192334
+
+### Stop using chrome://welcome string outside its directories
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c55d159
+
+### [Profiles] Change avatar icon to outline
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80c2f0b0
+
+### [gbb-cct] Implement tap on Super G, hint text view and mic button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23bd53d
+
+### ash: Add chrome/browser/ash/borealis/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7aa15e0
+
+### Reland "ash: Add chrome/browser/ash/dbus/BUILD.gn."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52e8ed9c
+
+### [WebAuthn] Replace passkey confirmation bubble body with styled label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0fb088c
+
+### Introduce a new badge for creating plus addresses in the Autofill popup.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2571e7f
+
+### Query PlusAddressSettingsService on whether to show notice.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f229f3d9
+
+### lobster: setup profile keyed service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/85f450a
+
+### Add timestamp in emoji history.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1059121
+
+### Switch to search results view only when they arrive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c60202
+
+### Add flag for a desktop dialog UI for ABH (nee HFM)
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b0a56b8b
+
+### [Omnibox] Make answer actions counterfactual arm work
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1792a5d8
+
+### Remove the EnableAutomaticSharedImageManagement flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/7466757
+
+`);
+              </script>
+            </body>
+        </html>
