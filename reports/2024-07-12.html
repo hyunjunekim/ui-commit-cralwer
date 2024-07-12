@@ -1,0 +1,344 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-12
+### [views_ax] Introduce ViewAccessibility setters for Scroll Attributes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/abd3014
+
+### History Clusters: Remove use of iron-scroll-threshold
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/543cd8f
+
+### [Compose] Announce to screenreader when dialog result is updated
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d064416
+
+### [views-ax] Migrating Role in ui/Views to new system
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/60fd2d6
+
+### Use CLIENT_OWNS_WIDGET for Views-related unittests.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b83a31f
+
+### Force history embeddings loading state to display for a minimum time
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fe55a9
+
+### [lensoverlay] Fix searchbox margin on RTL ui direction.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b85515b
+
+### Android: TestThreadUtils -> ThreadUtils
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb6e41f
+
+### Explicitly BoolAttributes::kHasHiddenOffscreenNodes numeric value
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/40f2858d
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e7e9753
+
+### [Code Health] Remove a use of base::SupportsWeakPtr. (wayland)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f0e477fe
+
+### Replace Layout() override with DelegatingLayoutManager.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0c44fb9
+
+### [FilesF2] Remove old directory tree code in the browser tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d1cc7e216
+
+### Revert "Add fieldtrial testing config and update default parameters."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f87a5e
+
+### [dPWA] Replacing IsLocallyInstalled with the correct InstallState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/807d9bb
+
+### [PWA] Create base PiP window testing class for web applications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d1fee1
+
+### Save Password Hash on Chrome Sign-in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/501198f
+
+### ash: Add chrome/browser/ash/audio/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1960bf4
+
+### [Ash] Clean up residual source files in ash/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ddaf988
+
+### [CodeHealth] Remove RAW_PTR_EXCLUSION for 'ExtensionViewViews::container_'
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47a66f9
+
+### MagicBoost: Fix keyboard navigation for opt in card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c464490
+
+### [Extensions] Investigate WaitForPopup() test failures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca573201
+
+### Tab organization: Remove history sync dependency
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f3ed53
+
+### Add settings button for customize toolbar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61c8fd1
+
+### [FedCM] Refactor IdentityProvider.close implementation on Android
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e2fdea7d
+
+### Add more margin space to tab list
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/92f00853
+
+### [NTP] Delete Recipes module handler
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3d4fc8
+
+### Fix digital credential interstitial having two prominent buttons
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f79578
+
+### [Mahi] Magic boost integration test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33b8b96
+
+### [media-preview] Remove hacky handling for empty combobox model
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37fbeb94
+
+### [lensoverlay] Send analytics_id
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9340739
+
+### [FedCM] Use default bottom sheet scrim for Android button mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a87c741
+
+### [Fixit] add hover highlight for verbose status view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cdc879f
+
+### Revert "sessions/ash: No immediate load of occluded active tabs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/51456fd
+
+### Portals: Remove remaining mentions in chrome/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23a9712
+
+### [omnibox] Fix wrong icon sizing on Clank
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fdf4aa
+
+### [MSan] Fix use-after-dtor in ToolbarButton
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/df4072d
+
+### [User Education] Check to make sure IPH have corresponding actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69c362c
+
+### webauthn: tidy up many TODO(enclave)s.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5f70542
+
+### Add fieldtrial testing config and update default parameters.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07c5f9e
+
+### Add a nullptr check in BrowserViewAsh
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99110e9
+
+### Reland "[Tab Group UI] Lazily initialize"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7791ffdf
+
+### Revert "[lensoverlay] Close overlay on renderer close"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b4333fa
+
+### [lens] Fix PageActionIconView shape when presenting without label
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9731c6
+
+### Add option to allow IconLabelBubbleView to always paint a background
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3357e42
+
+### Fix an instance of -Wdangling-assignment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ba8f0b
+
+### [SurfacePolish][CleanUp] Clean up surface polish code related to toolbar and real omnibox appearance.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c065994
+
+### Improve hardware <Enter> handling in omnibox.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4cab0fd
+
+### [Android] Re-enable testWipeAnimation()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc50f7d
+
+### Update ablation study condition to 14 day window
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/154d7e5
+
+### Skip flaky WebAppBrowserTest.WindowOffsetsClampedToScreen check on Linux
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a371169d
+
+### [Extensions] Update lots of ExtensionBuilder::AddPermission() callsites
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f3c6912
+
+### [skyvault] Fix check of ODFS temp dir existence.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f69285d
+
+### [lensoverlay] Close overlay on renderer close
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea884b76
+
+### [Extensions] Extend ExtensionBuilder's permission-related methods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea49b8f
+
+### [UB] Only show UB eye icon when there are unmanaged protections.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/711b385
+
+### [WE] Observe changes to app state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f5a28b
+
+### Certificate Management UI V2: move client cert sources to separate file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11efacdb
+
+### [Passwords] Add a local variant of data reset confirmation dialog title
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/434be0b
+
+### Revert "privacy-hub: Geolocation UI revamp from dropdown to dialog"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/79ac6c5
+
+### [lensoverlay] Add UMA and UKM metrics for time to first interaction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f9509a4
+
+### sessions/ash: No immediate load of occluded active tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f08c9c2
+
+### privacy-hub: Geolocation UI revamp from dropdown to dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97967189
+
+### [Tab Resume 1.5] CWS colors are not defined
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a810ad0
+
+### Add testing config for toolbar pinning and update Addresses action item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39af010
+
+### Certificate Management UI V2: pointer cleanups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2669cc9
+
+### Revert "[Performance Intervention] Don't suggest tabs from other profiles"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5fc1d7f
+
+### [Android] Create plus address section for addresses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eaa143b
+
+### ash: Add chrome/browser/ash/crostini/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c30420
+
+### ash: Add chrome/browser/ash/input_device_settings/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16a3cbb
+
+### Fallback tab dragging: Listen for mouse release events during system DnD
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3640b32
+
+### Remove completed TODO about adjusting margins, no behavioural changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4918a13
+
+### Fallback tab dragging: Fix incorrectly hovered tab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6782e3f4
+
+### Add counters to 'delete all password manager data' dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d09b6897
+
+### [High5] Remove obsolete UI elements in Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ba86a0
+
+### ash: Add chrome/browser/ash/system/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1ab8a09
+
+### [views-ax] Migrating kPopupForId to new system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a27e9e
+
+### [lensoverlay] Log new object and tap-to-region selection types
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d29fb20
+
+### ash: Sort some dependencies in some build files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f2515d
+
+### Remove TimeOfDayDlc flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b8e2be6
+
+### Add about flag for visited url ranking service feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c263ab1
+
+### [gbb-cct] Use home button instead of page insights button for GoogleBottomBar feature
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a7cf53
+
+`);
+              </script>
+            </body>
+        </html>
