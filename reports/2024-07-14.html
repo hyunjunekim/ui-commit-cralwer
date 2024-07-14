@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-14
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7a371fdf
+
+### [views-ax] Migrating kExpanded and kCollapsed attribute to new system for tab group
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa90877
+
+`);
+              </script>
+            </body>
+        </html>
