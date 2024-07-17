@@ -1,0 +1,412 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-17
+### [A11y] Enable feature to magnifiy the magnifier dialog
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ff5ba68
+
+### Fix cr-feedback-button selected option updates
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/50dda43
+
+### gfx: win: Skip waiting on GPU fence if we're past the completed value
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/221dceb
+
+### Update primary owner for remaining clipboard OWNER files
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dd1ceb30
+
+### Android V cleanup for desktop windowing / tab tearing implementation
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94108d9
+
+### [MVTs & Specs] Hide globe icon appears on top of dragging element on Mac
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7fa4aa4
+
+### Cert Management UI V2: Fix alignment of "no certs" row
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ac8dcf51
+
+### Update ToolbarTest to detect Soft IME used with Hardware keyboards.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/727c771
+
+### Allow Page Colors to affect Linux GTK Theme
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6b2fe29
+
+### dnt: Add flag to mirror gestures when in RTL
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e888b3c
+
+### Cert Manager UI V2: Minor CSS tweaks:
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dc8cfd60
+
+### [views-ax] Fix cached role/name/description out of sync in the cache (//chrome/views)
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61b9828
+
+### [Compose] Mark new screenreader strings as not translateable and behind refinements
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/db94e60
+
+### [iOS Blink] Do not pass a param to FileSelectionCanceled method
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e69e6b1
+
+### [MSan] Fix use-after-dtor in WaylandTestBase
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/fc97ab8c
+
+### Copy a bitmap of little-endian bytes as a single memcpy
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a67d008
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07a3fffd
+
+### Certificate Management UI V2: Move strings to grdp file
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3540b90
+
+### Remove legacy feature UseSetPresentDuration.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e83fa5
+
+### gardening: Disable tab strip related tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/928a8f5
+
+### Reland ash: Add //chrome/browser/ash/file_system_provider/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74f8f6b
+
+### Open pdf from Download Home with encoded url
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20d9fde
+
+### [lens] Order the persistent entrypoint beside the bookmarks star
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9d22c7f6
+
+### [lens] Always suppress the label for the persistent entrypoint
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3f2ae0a
+
+### [omnibox] Increase padding between trailing decorations and text
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/97453e92
+
+### [lensoverlay] Add label to Lens Overlay renderer process
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7276c0a
+
+### [Reminder][TrackingProtection] Tracking Protection Reminder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/815d34a0
+
+### [Discounts] Add the discounts page action icon
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5044c41
+
+### [Omnibox] Use TextMediumThick.Primary.Baseline for answer actions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/897abfd
+
+### [Omnibox] Don't show action buttons for card UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6de87b
+
+### Update product specifications to use a single flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd47ffd
+
+### NewTabPage: Delete NtpMostVisitedReflowOnOverflow feature flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3b7cc8
+
+### PDF OCR: Update one metric to use whether OCR is actually available
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77e4ed4
+
+### Tweak tab organization disclaimer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/820c6c1
+
+### [Extensions] Add re-enable extension dialog for MV2 disabled stage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1b44d1
+
+### CrOS Settings: Don't disable timezone settings when policy permits
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/045f2e90
+
+### Desk bar: Fix behavior when Forest is enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84fd87f
+
+### [WE] Use per-device-subsection-header in touchpad subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cee958b
+
+### [Extensions] Update global notice vars/methods in MV2 disabled stage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c41c4ae
+
+### [FedCM] Fix a crash when closing a dialog in certain states
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2a55b2
+
+### editor: avoid cache context when getting the context of editor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6dfbd73ea
+
+### Add disclaimer footer for product specifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22fea75
+
+### Make it easier to select a FeatureTile in a browser test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fa08d0
+
+### ProductSpecs: Add a dedicated route for FRE UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07321ee
+
+### Reland "[TabStripModel] Add functions to notify when groups are added or removed"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c778d6
+
+### [FedCM] Increase bottom margin for multi IDP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fade34d
+
+### [AF] Implement banner image changes for AutofillUpstreamUpdatedUi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5721ea9
+
+### [AF] Remove animated experiment arms for AutofillUpstreamUpdatedUi
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/58e11a7
+
+### [TabGroupSync] Test the wrapper service in both flows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bf12768
+
+### Product Specifications Toggle in chrome://settings/syncSetup/advanced
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8554c6b
+
+### [SHoA] Notifications subpage fixes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d8ccbf
+
+### [autofill][clank] Add Content Description for Save Card Loading View
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c1b15d
+
+### [omnibox] Fix a11y label not being read for @gemini IPH.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da807b5b
+
+### [Start] Remove showNtpAtStartup and StartSurfaceAndroid feature flags.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b360c78
+
+### Android: ExecutionException -> RuntimeException for runOnUiThreadBlocking
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/031d159
+
+### [Discounts] Add discounts page action controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/199ae24
+
+### [Shortcuts] Disable picture in picture windows from occluding shortcut dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a247a1b
+
+### Improve Forced Colors Invalidation for Page Color Block List
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c767f029
+
+### [autofill][clank] Add Content Description for VCN Enroll Loading View
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2082c9ab
+
+### Reland "Do not pre-focus UrlBar on Tablets where HW keyboard works in tandem"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdf2a75
+
+### Add KeyboardAndPointerLockPrompt to fieldtrial_testing_config.json
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/deabd82c
+
+### [Extensions] Add global notice acknowledgment of MV2 disabled stage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb74634
+
+### [SHoA] update permissions and notifications module strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76f8da1
+
+### Move LocalSaveCardPromptCallback to PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2a2c23e
+
+### Reland "[User Education] Require metadata on new Tutorials, IPH, and New Badges"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f648f70
+
+### controlledframe: Add a Blink runtime enabled feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e9adf05
+
+### Update Extension Result To Validate Extension Is Not Null
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1875bf
+
+### [Extensions] Move ConstrainedDeviceChooserDialog to extensions_dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00868a6
+
+### Remove kButterOnDesktopFollowup flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9903431
+
+### [declutter] Add IPH message card to archived tabs dialog
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4160d94
+
+### preload-topchrome: record request to FCP time for top-chrome WebUIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6beeb1
+
+### [SHv2] Unify the relaunch confirmation dialog description
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32f6416a
+
+### Revert "Do not pre-focus UrlBar on Tablets where HW keyboard works in tandem"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/581cc93
+
+### [UB] Add feature params for IPP/FPP gating.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f31cb9
+
+### [SHoA] Update strings for update checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36620b8
+
+### Create a custom layout for the PinnedToolbarActionsContainer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3c5f30
+
+### Remove unnecessary ScopedProfileSelectionsForFactoryTesting usages.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69c659f1
+
+### Update logic for moving pinned buttons in PinnedToolbarActionsContainer.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f524ce7
+
+### Add kite badge on secondary Supervised User sign-in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3398f354
+
+### [SHoA] Add the managed state for passwords module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/62de987
+
+### Refactor PlusAddressService::SupportsPlusAddresses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f7f1ab
+
+### [Start] Clean up cached flags in SyncPromoController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80dc2cb
+
+### [UNOp2][Android] Use the new sign-in flow on Automotive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d55fec70
+
+### recorder: Add OpenAiFeedbackDialog mojo method
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39fbece
+
+### Re-enable DiceWebSigninInterceptionBubblePixelTest on Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1366d99
+
+### Remove store combobox from Save bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb13efea
+
+### Remove kButterOnDesktopFollowup flag from pwm bubbles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5688ec1
+
+### Move ablation seed to local state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69c35997
+
+### [Uno-D] Fix accessibility text for avatar button with dismiss by click disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e76867
+
+### Modularize chrome/browser/ui/views/bubble.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8082f991
+
+### Disable filtering shared files when creating drive search provider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1599d67
+
+### quick-answers: add test case for turn on behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ab1e92a8
+
+### Remove App Deduplication Service
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4f810e8
+
+### [PWA] Fix link capturing states in about_flags.cc
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a5dac7c
+
+### Add CrOSLateBootAllowBetaFpmcuFirmware flag to chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f8ab32b
+
+### [Amount Extraction][Flag] Add the feature flag to protect Chrome amount
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3f617ac5
+
+### [SHoA] Record permission expiration flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1c80a1fe
+
+### [Autofill] Add experimental timeout for UploadCardRequest
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8fe98b6
+
+### Add flag to extend broadcast of intent ANR timeout on ARC++
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e3b331f
+
+`);
+              </script>
+            </body>
+        </html>
