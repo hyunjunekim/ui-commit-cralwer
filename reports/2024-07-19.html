@@ -1,0 +1,460 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-19
+### [lensoverlay] Tweak lens searchbox design.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4a6a88b
+
+### Cert Management UI v2: CSS changes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/43e252e
+
+### profile-picker UI: Migrate to Lit, part 1.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ccc7ce6d1
+
+### [views-ax] Introducing setters for kAccessKey attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/817e0be
+
+### ozone: evdev: Remove internal keyboard imposter callback
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/68aea7b
+
+### content: Add indeterminate progress bar for invoke animation.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/931bd7de
+
+### [lensoverlay] Autocomplete on focus with non-empty input and thumbnail.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6ccf00bce
+
+### Cert Management UI V2: Fix focus issues
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/364b47a
+
+### Revert "[a11y] Move scrolling notifs to use fast location-pipeline instead of full serialization."
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3386ba9
+
+### Disable suspected keyboard check for kiosk apps
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/276cb2c0
+
+### [ozone/wayland] text-input-v3 Part 2: Initial connection, v3 test initialization
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3e5286cd
+
+### Fix build breakages introduced in https://crrev.com/c/5698205
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ec5e2f7
+
+### Switch generate_bindings.py to use ANGLE headers.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0df2ce0
+
+### Don't use desktop GL headers in generate_bindings.py
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1236d72b
+
+### ozone: Distinguish BT.601/709 YUV encoding on Vulkan CrOS devices
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f64538c
+
+### Move static GL bindings into the right place.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4f3bd5f5
+
+### [skyvault] Add some i18n strings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/dbc1d707
+
+### ash: Add //chrome/browser/ui/ash/privacy_hub/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2833c9
+
+### ash: Add //chrome/browser/ui/ash/picker/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/efa169a
+
+### ash: Add //chrome/browser/ui/ash/network/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c7dc3a
+
+### Reland "[Ash] Create BUILD.gn file for //chrome/browser/ash/printing root"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b13041d
+
+### ash: Add //chrome/browser/ui/ash/multi_user/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7312440
+
+### ash: Remove //c/b/ui/ash/auth files from //c/b/ui/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c825e9e8
+
+### ash: Add //chrome/browser/ui/ash/lobster/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59520c3
+
+### Hide GIFs button when GIFs are disabled by policy.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96d3981
+
+### Revert "[WebAuthn] Update gpm pin sheets"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc7b84a
+
+### ash: Add //chrome/browser/ui/ash/keyboard/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7776a0e
+
+### Fix initialization mismatch in edge-to-edge padding
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2f45b931
+
+### Continue to modularize lens overlay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b07b8d4
+
+### Disable WebUIContentsPreoloadManagerPageLoadMetricsTest.RequestToFCP on Win
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d390a6a
+
+### gardening: Disable failing test DataSharingBubbleInteractiveUiTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c108230
+
+### SearchPrefetch: Stop sending gs_lcrp on search prefetch requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ff3ac3
+
+### Fix build graph for //chrome/browser.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf71e35
+
+### ash: Move assistant browser_tests to c/b/a/app_list:browser_tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea541237
+
+### ash: Move sources to c/b/a/app_list:app_list.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdbf8612
+
+### ash: Create c/b/a/app_list/search:search.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2282e4e
+
+### editor: split blocked state into hard/soft
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98618be
+
+### preload-topchrome: add TopChromeWebUIConfig::ShouldAutoResizeHost()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dba66a
+
+### [FedCM] Update verifying sheet on Android button mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8897151
+
+### Add accessible name to the emoji bar grid.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a788b2
+
+### [FedCM] Implement request permission dialog on Android button mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b42d141
+
+### MagicBoost: Fix bugs with kPending consent status state
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8061655
+
+### iwa: Miscellaneous updates to test_signed_web_bundle_builder
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/062b1d9
+
+### [pip] [reland] Show capture media picker in pip if it's focused
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a9ff059
+
+### [WebAuthn] Update gpm pin sheets
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f7b6159
+
+### [What's New] Fix owner email
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0581449
+
+### [lensoverlay] Round object vertices by a configurable amount.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47ad0fa
+
+### birch: Only fetch weather info in the mornings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4dbdc50
+
+### Remove expired Linux.SystemTheme* histograms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17aa443
+
+### Birch: Fix crash by checking sync_service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9723771
+
+### [SHoA] Finalize permission and notification module strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf882ba
+
+### [lensoverlay] Keep overlay open if URL does not change
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e8c072
+
+### Fix the minimum size calculation for IWA borderless windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20168e7c
+
+### Revert "Add V2 birch weather provider"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84df7f4
+
+### [SHoA] Finalize the remaining dashboard strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/98dc4a6
+
+### [SHoA] Finalize Safe Browsing module strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08ea8d7
+
+### customization: Add overview to the list of options for GTs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4e08a0b
+
+### [SHoA] Finalize update module strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ecb2cc
+
+### Eagerly initialize PaymentsAutofillClient in AutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7c261ad
+
+### [PWA] Fixing WebApp UKM power resume & session comparison
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e885f3
+
+### Update chrome://management page for URLF audit-only updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4558f55
+
+### Introduce content settings type for Storage Access Header OT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37b9646
+
+### [Mahi] Show the Mahi panel after completing the opt-in flow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc13f23
+
+### [History V2] Implement history AQA ML answer API.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9774a53c
+
+### [SHoA] Finalize password module strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d90ec34
+
+### [picture-in-picture] Animate resizeTo/By in document picture-in-picture
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/11944c9
+
+### [Omnibox] Add top and right padding to simple card UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ec4c95
+
+### Replace GetOpenerOfWebContents with GetOpenerOfTab
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0383554cf
+
+### [lensoverlay] Set min y value for preselection bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb686d1f
+
+### [DangerousDownloadInterstitial] Render Process (pt. 10) Set dangerous 
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9a9549
+
+### [stts-notifs] Move sharing message protos to components/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e16b75f0
+
+### [TabGroupSync] Default save new groups for TGSS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f0feaab
+
+### Remove circular background from management toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11763cd
+
+### [WebAuthn] Add accessibility hints for gpm pin textfields
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/28a87895
+
+### snap-group: Rename test file and APIs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18574113
+
+### [SHoA] Finalize user education section strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9a49517
+
+### [toolbarpinning] Add Passwords Action Item
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80ede6e
+
+### Reland "[ToolbarPinning] Implement showing customize chrome from outside NTP."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e9eaec
+
+### [SHoA] Add a signed out state for passwords module
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/23eab3f
+
+### Do not show URL scheme in digital credential interstitial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0d08c4
+
+### Reland "sessions/ash: No immediate load of occluded active tabs"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cf018c7
+
+### [SHoA] Finalize site settings strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b6ad1aa
+
+### Add Supervision: Create Error Path for Inactive Identity Manager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2e41fe
+
+### Data Sharing: Initial integration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0c6c4eb
+
+### Certificate Management UI V2: fix a few missing returns in error cases
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/723f52c
+
+### [SHoA] Finalize notifications subpage strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee8ca901
+
+### [SHoA] Finalized permissions subpage strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2d2f957
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b1c59d
+
+### [PEPC] Add HaTS survery filters for PEPC prompts
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/125660b7
+
+### Remove PersonalDataManagerFactory::GetForProfile()
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/61d15aa
+
+### Revert "Modularize chrome/browser/media/webrtc."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7ace16a
+
+### [UNOp2] Record Signin.Started and SigninStartedAccessPoint separately
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/99ad73e
+
+### Modularize chrome/browser/media/webrtc.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/72340485
+
+### [UNOp2][Android] Fix RTL layout for account row
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c05071
+
+### [Android] Display the list of plus addresses in the bottom sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7d0ae545
+
+### Only build ManagementToolbarButton and deps for linux, mac and windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc93e63
+
+### [Android] Don't show the bottom group if signin progress spinner is being shown
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aef224c
+
+### Fix Gaia not returning password during enrollment.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8c8885
+
+### [Android] Add "Select plus address" action to KA.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89bff1d
+
+### [Shortstand] Delete all kCrosWebAppShortcutUiUpdate code from crosapi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d1634979d
+
+### Change local_state to a pointer in SearchEngineChoiceService
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82846b5
+
+### Re-enable Minor Mode History Sync Tests on android auto
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2580f97
+
+### Check for WeakPtr validity in EmbeddedPermissionPromptContentScrimView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8b8f3fa
+
+### healthd_internals: Add memory and fan info in telemetry page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2945c1
+
+### Revert "[Ash] Create BUILD.gn file for //chrome/browser/ash/printing root"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/318a13d
+
+### Add accessible name for "Show All"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc9fd06
+
+### [Ash] Create BUILD.gn file for //chrome/browser/ash/printing root
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9b56c682
+
+### Decouple feature flags for running model in javascript with prompt API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3dbfb8a
+
+### [Extensions] Add MV2 Deprecation Disabled feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4286795
+
+### [Tab Group Parity] Add feature flag for re enabling creation dialog
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/3efd2587
+
+### Reland "[Passwords] Update experiment for showing suggestions on autofocus."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/298fc06
+
+`);
+              </script>
+            </body>
+        </html>
