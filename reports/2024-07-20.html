@@ -1,0 +1,436 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-20
+### Apply some fluent scrollbar optimizations to aura scrollbars
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d3310fd
+
+### Reland "[UI] Disable bubble shadows and rounded corners without compositing"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b364074
+
+### Revert "[Compose] Mark new screenreader strings as not translateable and behind refinements"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/839e4e5e
+
+### [A11y] Enable quick setting for reduced animations in Kiosk mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7cf8f7a
+
+### Revert "[UI] Disable bubble shadows and rounded corners without compositing"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4058ae8
+
+### Update styling and remove learn more link for history embeddings
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ae450f9
+
+### ui/display: Check CDB Bounds
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d871aaae
+
+### Apply limit direction when ticking keyframed animation in cc
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/df70f1b
+
+### [UI] Disable bubble shadows and rounded corners without compositing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e6de04
+
+### Fix typo
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bd64fff
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e25ff40
+
+### [ozone/wayland] text-input-v3 Part 3: Activate, Deactivate, Reset
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9c53b1a
+
+### [FedCM] Align Android button mode UI to redlines
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5f42d8
+
+### Add performance intervention demo mode
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a0758fc
+
+### Don't show actions in the side panel if they shouldn't be visible.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f6bc21
+
+### Make QR code bubble anchor to the toolbar button instead of omnibox if it exists.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55e280e
+
+### Update customize chrome page handler to use correct actions for passwords, payments, and addresses.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3df6762
+
+### Update toolbar customization side panel to include lens overlay and companion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/55b6f23
+
+### Make actions in the "engaged" state higher priority for visibility during layout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4dcf0b
+
+### Update bottom chin to listen for navigation bar color changes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0271643
+
+### welcome_tour: Add metrics to record the experimental arms
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/630c5ce
+
+### Reland "MagicBoost: Enable MagicBoost by default for Mahi feature"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d5a383d
+
+### Specs: Implement disclosure UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/22f2d12
+
+### Disabling \`BrowserUserEdu...FeatureConfigurationConsistencyCheck\`.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b930ea
+
+### Finalize performance intervention accessbility strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae46624a
+
+### [FedCM] Use proper title when 'Choose an account' is selected
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9ece5141
+
+### [lensoverlay] Make sure overlay is closed after reload
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8921c9b9
+
+### Style Product Specs List
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b2e469ea
+
+### Anchor send tab to self bubbles to toolbar button when pinned.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47422be
+
+### [FedCM] Add RP icon to disclosure UI on Android button mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1546254
+
+### Update the logic to determine NativePageType
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e1bc589e
+
+### Reland "[WebAuthn] Update gpm pin sheets"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ed5406d
+
+### [toolbarpinning] Add Copy Link pinned action
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80a6666f
+
+### [Mahi] Remove secret key check for Mahi
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b28bc6f5
+
+### [TabGroupSync] Implement TabGroupServiceWrapper::OpenTabGroup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abaa25d
+
+### Update history embeddings feature checks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b1a05c4
+
+### [GAR] Fix: Add labels for buttons in permissions page in Settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3a47849
+
+### Revert "MagicBoost: Enable MagicBoost by default for Mahi feature"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/33019adb
+
+### Revert "Quick Answers available from kPendingDisclaimer"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ee5440
+
+### [WE] Finalize app install strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be1537f
+
+### [ToolbarPinning1] Update the attached tab state for customize chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8084687
+
+### customization: Update nudge header in customize graphics tablet button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0a0e462
+
+### Revert "[lensoverlay]Use Lens fallback for keyboard context menu cases"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4483809
+
+### [SHoA] Update password strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1fca7ba
+
+### Update engage state of manage passwords action button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d6230d5d
+
+### [PWA] Show \`install page as app\` except when web apps are unsupported
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05266426
+
+### customization: Update nudge header in customize mouse button subpage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e1888d8
+
+### network_summary: Updates for modem flashing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f8acdba
+
+### [Start] Remove HostSurface.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a15398a
+
+### [lensoverlay]Use Lens fallback for keyboard context menu cases
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3c75baf
+
+### [Uno-d] Change Chrome-signin IPH to a toast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ccf13b
+
+### Explicitly disable battery hats survey for ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2aa17f034
+
+### [PWA] Remove separate manifest URL from WebAppDataRetriever
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/76735376
+
+### [gbb-cct] Change hint text.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b9bbf9f
+
+### [User Education] Support reshow of certain IPH after dismissal
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea413b0
+
+### Quick Answers available from kPendingDisclaimer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a950cad1
+
+### [gbb-cct] Modifying UI for lens icon in google bottom bar searchbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94763fca
+
+### [gbb-cct] Adding toast if lens is not enabled for lens button in Google Bottom Bar searchbox
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2050cda
+
+### [lensoverlay] Revert always showing toolbar entrypoint
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/911aaf3
+
+### [Oidc Enrollment] OIDC Enrollment UX Overhaul
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/abf543cb
+
+### MagicBoost: Enable MagicBoost by default for Mahi feature
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/332331b6e
+
+### Move UploadSaveCardPromptCallback into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/96b4787
+
+### [SHoA] Pluralize bulk notifications and permissions snackbar strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ea1a7
+
+### [User Education] Low-level support for promo reshow
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d40b83e
+
+### [Android] Add search view to the all plus addresses bottom sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c821177
+
+### [stts-notifs] Clean up kWebOTPCrossDevice flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c604a92
+
+### [Omnibox] Use semantic text styles in answer card
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b4ef2f
+
+### [Omnibox] Reverse knowledge graph answers with RichAnswerText
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10a4c21
+
+### [What's New] Add metrics for v2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9e6f3cb6
+
+### Clean up cast app menu experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dcbac5
+
+### Allow manual disabling of USB 'share with X' notifications.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6351587
+
+### Refactor proactive password check to avoid using PasswordCheckDelegate
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c2fce29
+
+### chrome: Hook up indeterminate progress bar to chrome stack
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6eac0a1
+
+### [ShoA] Make intervals finch configurable
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e7c1a0d
+
+### [Android][3PPWM] Record whether 3P filling is available or reset
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e84c07
+
+### Limit the amount of times NTP wallpaper search button animates.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/93441f8c
+
+### [AutoReload] Add autoreload class definition
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cae862b
+
+### [UNOp2][Android] Fix new sign-in flow test for automotive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/77a94dc
+
+### [FedCM] Prepare button mode account chooser finch experiment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bb704846
+
+### [Android] Add warning message to the all plus addresses bottom sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4073372
+
+### [Android] Add all plus addresses bottom sheet title.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3a0937
+
+### [Oidc Enrollment] Add triggers to error/timeout dialog for OIDC enrollment
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e784bf7
+
+### [gbb-cct] Fix ripple effect
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f5597d3
+
+### ash: Create c/b/chromeos/echo/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/409a496
+
+### [Android] Create AllPlusAddressesBottomSheetUIInfo.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a844532
+
+### [Tab Group Sync] Provide API to pause / resume local observers
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c5adf80
+
+### ash: Create c/b/chromeos/container_app/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/094a421
+
+### ash: Create c/b/chromeos/arc/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e8911f3
+
+### ash: Create c/b/chromeos/app_mode/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4281745
+
+### [UNOp2][Android] Disable long press for sign-in bottom sheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f01d8be
+
+### magicboost: expose consent status to read_write_cards
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc9c295
+
+### Enable SyncConfirmationUIDialogPixelTest.InvokeUi_default/ManagedAccount
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4c216b64
+
+### [UNOp2][Android] Record SyncStarted onResume rather than onCreate.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d4d4c9f
+
+### Add //chrome/browser/ash/policy/reporting/**/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b751ade
+
+### healthd_internals: Extend thermal info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4bf89e3b
+
+### move SpannableCursorController to a dedicated file
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/638035ba
+
+### MagicBoost: Parameterize QuickAnswers browser tests for the feature
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b5f7b04
+
+### bluetooth: Add bluetooth-btsnoop-internals flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b8db4fe
+
+### bluetooth: Add a button to start/stop btmon in bluetooth-internals
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/42d9ba17
+
+### Add custom tooltips for emojis and emoticons.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eacfc7d
+
+### Introduce HatsOfficeTriggerLoginScreenTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/706eaa66
+
+### Create a feature flag for VC Tray Mic Indicator
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6a99337
+
+### [WE] Add feature flag for testing with unsupported devices
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f63519b
+
+### [SHoA] Add magic stack flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/37aba9d
+
+### Add multi specifics flag to about://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/345477ad
+
+`);
+              </script>
+            </body>
+        </html>
