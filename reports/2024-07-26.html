@@ -1,0 +1,388 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-26
+### Add constant for BubbleDialogModelHost scrollable height
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71e50a71
+
+### Label: delete GetHeightForWidth overload.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2bba1b
+
+### gpu: win: Turn off antialiasing for overlays from tile layers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/31637242
+
+### file_manager: add more ViewFileType enum values
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8a0a14
+
+### Use smaller animation delay for throbbers with bigger diameters
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e981456
+
+### Add virtual mode creation to mode matching
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f7d8342
+
+### Replace timing details from DisplayMode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/131eff7
+
+### Cert Management UI V2: Move chrome-product icon into cr iconset
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1caba7b
+
+### [Rounded Windows] Update window rounding in overview mode
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ccc8a40
+
+### [Language] Use base::FixedFlatSet in l10_util
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f6e94d
+
+### Android NDK: Migrate DEPS to NDK r27
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/51bfd7a
+
+### ui/gfx: fix some unsafe buffers in x
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/cdd416b
+
+### Add niharm to searchbox OWNERS file.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/207f0e0
+
+### Allow client arrays except for command decoders.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/52469f3
+
+### Remove uses of variable-length arrays
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/64d4fde
+
+### Remove uses of variable-length arrays
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9057e2bf
+
+### Update permission icons in settings page to GM3 icons
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/75818b9b
+
+### [accessibility] Memoize unique ids so they have the same lifetime as their renderer
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d5b93a92
+
+### [UI] Disable bubble shadows and rounded corners without compositing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/7e6de049
+
+### ash: Add c/b/ui/webui/ash/login/**/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c9571ccb
+
+### Announce initial active descendant with delay.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35ba835
+
+### [media-preview] Record the number of devices metric after enumeration
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/108a61f
+
+### Do not show icons for ChromeOS or for tabbed apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/45fe0b0
+
+### chrome/browser/ui/views/side_panel: fix missing deps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bac0f6c
+
+### [magicboost] Make magicboost and its sub items searchable in os settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b28706
+
+### Resolve the keyboard lock promise even without focus
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69eccfc
+
+### [E2E] Disable page opt-in when using bottom chin
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8c6fdfef
+
+### Revert "Remove unused work_area prefs from ChromeViewsDelegate::SaveWindowPlacement"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/63ac281
+
+### Invoke Answerer if enabled with new param; use 128-bit random session ID
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b80814
+
+### Add chrome/browser/ash/policy/uploading/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a671e7a
+
+### Add chrome/browser/ash/policy/off_hours/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/89f2bc9
+
+### Move GetAutofillOfferManager() into PaymentsAutofillClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/94f8ff2
+
+### Remove holding space predictability feature flag.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/87abd00
+
+### Move chrome::ShowFeedbackPage to a standalone header file.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/59dbe27e
+
+### Add field trial config for performance intervention UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c3c726f7
+
+### [Birch] Add SecondaryIconType For Self Share Items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1d64487
+
+### [Data Sharing] Add access token in group data
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67063ec
+
+### saved desks: Fix some more tests with forest enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c41036
+
+### Clean up tab list focus behavior
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13d4caa
+
+### [lensoverlay] When Lens is disabled, hide the lens omnibox button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3ee2610
+
+### [Extensions] Show MV2 deprecation dialog on browser window startup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6cbb96d
+
+### Disable WebUIContentsPreoloadManagerPageLoadMetricsTest.RequestToFCP
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da58179
+
+### Remove Browser usage from LensOverlayController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/01e2df0
+
+### [High5] Introduce a new feature flag kActiveSessionAuth
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e862bc4a
+
+### Remove redundant code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ef3192dc
+
+### [lensoverlay]Fix UI when side panel is closed via close button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/153816d
+
+### Add bottom chin to BottomControlsStacker and integrate with the BottomAttachedUiObserver
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4e00ba
+
+### [WebAuthn] Use BuildStepSpecificHeader for GPM header in TouchIDView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b0a1490e
+
+### Position the BottomControlsMediator Android view based on the y_offset instead of min_height
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/679255e
+
+### [Ash] Add c/b/u/w/a/account_manager/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ec397e2e
+
+### Avoid accessing bad optional in CloseTab.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10c1e28
+
+### [Customize Toolbar] Add copy link to side panel.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e437cee
+
+### [Ash] Add c/b/u/webui/ash/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0c3594
+
+### [ACT] Update UB logic to better support incognito plans
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7a9a38c
+
+### boca: Implement tab_strip_delegate to fetch tabs info in chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9379fd7
+
+### [Compact Mode] Initial Implementation
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1bedc20c
+
+### Clean up 3PCD IPH variants
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ceb4fbc5
+
+### Revert "Add include-mode-b param to PTB feature"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fdccab5
+
+### Implement Global Reset for DNS Configurations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/885bd86f
+
+### [Profiles] Ensure icons are visible with web store themes
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1d7afc5
+
+### [UNOp2][Android] Rename FullscreenSigninPromoUtil
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0fb63e
+
+### Reland "[lensoverlay]Use Lens fallback for keyboard context menu cases"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a7f82d2
+
+### Bump the Chrome macOS deployment target to 11.0
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/165142f
+
+### Reflect insecure inline pdf download in page info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9393af9
+
+### Add OWNERS files for side_panel directories.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/360a8a6a
+
+### [Shortstand] Delete all Shortstand code from ash/shelf
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d5fa6bf
+
+### Add NativeUI dialog for product specifications FRE
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3726834
+
+### Enable SecondaryAccountAllowedInArcPolicy by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/10b478f
+
+### ash: Add SessionObserver::OnFirstSessionReady
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2e3d1c9
+
+### [gbb-cct] Allow setting height via intent or finch.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/11ceb08
+
+### battery saver tests support ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/390d47c2
+
+### Stateless system permission retrieval
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8ef553c
+
+### Observe changes to prefs affecting action items' visibility/enabled state.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a3c6196
+
+### ContentSettings: Remove SafetyHubPermissionType enum
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/783d090
+
+### Hide buttons after confirming plus address creation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b9101b
+
+### Disable plus address refresh icon after creation click.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc0e5f2
+
+### Revert "views: use native dialogs for message boxes if no parent window is given"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5b0d318
+
+### Only show plus address in settings if the service is enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66ad418
+
+### Revert "Blur the scrim for keyboard and pointer lock permission prompts"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c12dcb6
+
+### [WebAuthn] Show activity indicator for the new PIN dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/35f05f79
+
+### Reduce circular deps for c/b/ash/profiles.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f778568
+
+### Add chrome/browser/ash/policy/display/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eca456d
+
+### [Ash] BUILD.gn for //chrome/browser/ui/webui/ash/smb_shares
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a26d498
+
+### ash: Add c/b/ui/webui/ash/firmware_update_ui/*/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36f5424
+
+### ash: Add c/b/ui/webui/ash/enterprise_reporting
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0d96092
+
+### Remove unused fido progress dialog
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a216f77
+
+### [TP Cleanup] Remove flag for testing rollout UX
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0284d72
+
+### webauthn: instantiate enclave authenticator on ChromeOS
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f8d329a
+
+### hid: Adjust feature report buffer on Windows
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1df989d
+
+### Add Feature Flags and Chrome Flags for new Battery Badge Icon.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d32b40b
+
+### Remove kUseChromeOSDirectVideoDecoder
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/ed501f4c
+
+### Add about:flags entry for Freezing on Energy Saver (testing mode).
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/67dad78
+
+### Add about:flags entry for Freezing on Energy Saver.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0eea4b1
+
+`);
+              </script>
+            </body>
+        </html>
