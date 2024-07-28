@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-28
+### [ozone/wayland] Add wayland-text-input-v3 chrome flag and refactor initialization
+* Affected: ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/4ecfdbd7
+
+### [skyvault] Show notification while uploading screencaptures to OneDrive.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ccff283
+
+### [Ash] Gather browser and unit tests in //c/b/u/webui/ash/
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/140ecfa8
+
+`);
+              </script>
+            </body>
+        </html>
