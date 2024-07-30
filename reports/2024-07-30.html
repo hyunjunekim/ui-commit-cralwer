@@ -1,0 +1,320 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-07-30
+### Fix unused include warning for keysym headers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f6a30baa
+
+### [Files]: Fix the width of the rename box.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d66b1e6e
+
+### win: Remove support for delegated compositing without DComp textures
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b57cb3c
+
+### viz: win: Use SCANOUT SharedImages with delegated compositing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bca8867
+
+### Reland "Reland "[UI] Disable bubble shadows and rounded corners without compositing""
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a905178d
+
+### Add MatchDirection method to gfx::Range and gfx::RangeF
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5be16c7
+
+### Remove Ozone udev logging code
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9b394e3
+
+### Revert "Remove legacy feature UseSetPresentDuration."
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5f354f38
+
+### [lensoverlay] Change suggestion styling.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/552c65f4
+
+### [ozone/wayland] Initialize "other" desktop in WaylandInputMethodContext unit tests
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/0ad7665
+
+### [lensoverlay] Correct shift-tab behavior on realbox thumbnail.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1516da9
+
+### Android: Inline trivial methods from ApiCompatibilityUtils
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/591dbc4
+
+### Fix typos in FlexLayout.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3cc2f71
+
+### fixup! Remove ozone/wayland from unsafe buffers paths
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/daab6cf
+
+### [views-ax] Migrates kDefaultActionVerb attribute to new system in combobox
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d41bf780
+
+### [views-ax] Migrates kDefaultActionVerb attribute to new system for textfield
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a28bdc2
+
+### [view-ax] Migrate kTextSelStart & kTextSelEnd for textfield
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/08f525a
+
+### [views-ax] Introducing setters for ActiveDescendant attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/91b165d
+
+### ash: Add c/b/ui/webui/ash/cloud_upload/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/82af7ad
+
+### ash: Add c/b/ui/webui/ash/cellular_setup/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/124b3543
+
+### ash: Add c/b/ui/webui/ash/borealis_installer/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bec8347a
+
+### ash: Add c/b/ui/webui/ash/audio/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/728c5a55
+
+### ash: Add c/b/ui/web/ash/assistant_optin/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e3c3efe
+
+### Announce when there are no main results.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5cec752d
+
+### Always delay initial active descendant change.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d884736
+
+### ash: Add c/b/ui/webui/ash/arc_*/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8eb49b6
+
+### ash: Add c/b/ui/webui/ash/app_install/BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5799250
+
+### webui: fix wrong auto-resized host size on high DPI screen
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4015daa
+
+### preload-topchrome: configure if a WebUI is preloadable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/beecbf8
+
+### ash: Move //c/b/ui/ash/api/tasks to //c/b/ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e01a91e
+
+### [Extensions] Clean up ExtensionActionIconFactory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fc315fff
+
+### [Ash] BUILD.gn for //chrome/browser/ui/webui/ash/crostini_installer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4a5c4e4
+
+### Fix gn check failure on linux-arm64-cast-rel bot.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb4807d
+
+### Add title to FileMetadata and use it in Birch UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6426d37
+
+### [QSv2] Add strings to Quick Share Visibility section
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e171dc7
+
+### Revert "[Read Anything] Update to use site isolation safe path"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/67086904
+
+### [Linux Wayland] Fix incorrect frame geometry set on window restore
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d65d842f
+
+### Revert "Refactor enrollment code to retrieve GAIA id and password."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5a55a770
+
+### Delete feed for desktop, part 1.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c0094a6
+
+### birch: Don't show lost media item if the stream is paused
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0b3bb02
+
+### [Mac] Have web app integration tests fail if the app shim fails to launch
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7575dcea
+
+### Fix data race & CHECK on BrowsingHistoryHandler::remove_visits_callback_
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d891706e
+
+### [platform apps] Minimum size of the windows takes window radius into account
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/13dc1a0
+
+### [Toolbar] Remove duplicate tab switcher drawable.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5eb8c63
+
+### [declutter] Support clear browsing data for archived tabs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1afd632
+
+### [PA] Update DEPS for new include path #cleanup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc1d5a6
+
+### [Toolbar] Remove redundant variable mHasFocus.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f2bc26
+
+### Show citations for product specifications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7999c33
+
+### [Read Anything] Update to use site isolation safe path
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/43fc0381
+
+### [PageInfo] Use TP feature list for cookies enforcement/status.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5aed4f3
+
+### jellybean: Expose cros-accordion in cros-components
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4aef7db
+
+### [Customize Toolbar] Update side panel when action visibility changes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c859e4
+
+### p13n: enable fullscreen preview for recent SeaPen wallpaper
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a411199
+
+### Switch APIs to use groupId instead of resourceId
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/52f466c
+
+### Fix the problem of Organize tabs chip being too long.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ae3875
+
+### Rename SaveCardAndVirtualCard* to SavePaymentMethodAndVirtualCard*
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aae44c6b
+
+### NewTabPage: Migrate to Lit, part 10.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ccda14
+
+### Remove reference to "Child" property in family link internals.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/eb81f5a
+
+### Tab organization: Attempt to fix flaky tests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/820a0c22
+
+### Modernize the ScreenCaptureNotificationUI code.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da84fa1
+
+### Performance Intervention UI Polish
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0227497f
+
+### Add case for survey question answered in HaTS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/95b8380
+
+### [OOBE][Perks] Make PerksDiscoveryScreen resumable
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/784cdf1
+
+### Fixed the issue where text could not be fully displayed when resetting zoom level.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff4afbe
+
+### [WebUI] Use string_view for value in WebUIDataSource::AddString
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4003e8
+
+### Sets up mojo bindings for PrivateStateTokensDevUI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2404029
+
+### Update family link internals to use capabilities to identify child accounts.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/be6d019
+
+### Force supervised user reauthentication for YouTube with interstitial
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/17391aa
+
+### kiosk: Remove consumer Kiosk in webui extensions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cce3e63
+
+### Refactor enrollment code to retrieve GAIA id and password.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/963ef0d
+
+### Fix search showing settings results for devices without fingerprint
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ca1196
+
+### kiosk: Remove consumer Kiosk in KioskChromeAppManager
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/927f90a
+
+### [UNOp2][Android] Make bottom sheet progress view height match shown view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/232a6a5
+
+### PreselectionToastOmniboxFocusState flaky Windows
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bdf9f07
+
+### [FedCM] Record AccountChooserResult metric on Android button mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6b4394a
+
+### Move SidePanelEntryObserver.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b57cc1c
+
+`);
+              </script>
+            </body>
+        </html>
