@@ -1,0 +1,348 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-08-02
+### Allow images to be dropped into clank
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/735f543
+
+### Reland "[ozone+wayland] Allow ANGLEImplementation::kVulkan when ozone platform is Wayland"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/1d408de
+
+### Certificate Management UI V2: Change spacing on subpage header row
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/896613f
+
+### Enable AccessibilityAccelerator flag by default
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/21320e1
+
+### Gracefully handle errors from SetWindowPos
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e6ae481
+
+### Reland "Avoid nested runloops by default in PostToServerAndWait()"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4eb8a6c
+
+### [E2E] Add metrics to record bottom overscroll
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/20b56ec
+
+### [views] Check MenuModelAdapter's MenuModel before dereferencing
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4dd0b62
+
+### [views-ax] Migrating Slider kValue attribute to new system
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8381791
+
+### Cert Management UI V2: remove extra padding on cert list
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6eef86c
+
+### Make implicit \`this\` capture explicit
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dcb8b46
+
+### Trigger product specifications first-time disclosure
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7f3b7c3
+
+### [Automation] Collapse some code in InteractionSequence
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3875f3
+
+### [views-ax] Migrating editable_combobox kValue attribute to new system
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a3e96a3
+
+### Fix typo in variable name
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f4bc73a
+
+### [A11y] Add debugging info to understand hypertext offset crash
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/49284822
+
+### [a11y] Infer (next|previous)OnlineID where possible
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/bbccbe64
+
+### Update additional permissions icons in settings to GM3 icons (1/2)
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2d576714
+
+### ash: Create //chrome/browser/ash/eol
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/30df4e6
+
+### healthd_internals: Extend memory metrics
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f794b42
+
+### [Ash] Move crostini_dialogue_browser_test_util to separate BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7fa31e0
+
+### ash: Move browser_public_dependencies to public_deps in //c/b/ui/webui/ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca8d71b7
+
+### Announce the preview metadata as part of a list item.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9f4528a
+
+### Move DisableFeatureTourForTesting to PickerController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b6ac10a
+
+### [Ash] BUILD.gn for //chrome/browser/ui/webui/ash/edu_coexistence
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/189624d
+
+### Modularize //chrome/browser/ui/webui/util
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f159e38
+
+### Move some ChromeOS-only dialog views to build only for ChromeOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/54e0fd2
+
+### [Toolbar] Remove redundant calls to update/reset NTPTransitionAnimation
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a71382a
+
+### [lensoverlay] Add translate button to lens overlay behind flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/66824f4
+
+### Update product specifications menu items
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2dc93d1
+
+### Continue to modularize lens.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8b05322
+
+### Disable inline pdf in incognito
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3269131a
+
+### spanification: Add \`#pragma allow_unsafe_buffers\` to chrome/* #cleanup
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/406947a0
+
+### Add cast warning icon to MediaItemUIUpdatedView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81a0e6e
+
+### Add more documentation for //chrome/browser modularization.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7934a12
+
+### Remove the kJelly feature flag in chrome/browser/ui/web_applications
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a1ebd44
+
+### Clean up memory saver aggressiveness flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/37b4407
+
+### boca: Fix boca lifecycle.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/810be9e
+
+### birch: Don't show lost media suggestion when focus mode audio is playing
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e669ac38
+
+### Remove \`ash::features::SysUiDownloadsIntegrationV2\`.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/8662dd4
+
+### [Birch] Add Secondary Icon Loading Method To Birch Items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15ed07b3
+
+### Fix browsertests ran with UseAuthPanelInSession FF enabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d178b8a
+
+### Make pkotwicz@ an OWNER of digital credentials code
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a144331
+
+### geolocation: Update geolocation strings related to system settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/39ef504
+
+### [views-ax] Migration of kTextSelStart & kTextSelEnd attribute in omnibox_view_views
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6842b62
+
+### [Gardener] Disable InvokeUi_NotificationsRequest_VeryUnlikelyGrant
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57d4d58
+
+### webui: migrate AboutUI to WebUIConfig
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c4b5eb7c
+
+### Remove justinleewells as an owner from the codebase
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cbff019
+
+### [SurfacePolish] Remove kill switch SurfacePolishForToolbarKillSwitch.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/aead3952
+
+### [WE] Improve a11y labeling for device info
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c07c4b
+
+### Remove the kJelly feature flag in chrome/browser/ui/ash/sharesheet
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c0ebce
+
+### Switch from uint to int for memory savings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a17dcb
+
+### Update favicon implementation for RWS Dev UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fe563b18
+
+### Clean up kEvDetailsInPageInfo feature and flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c5dc235
+
+### [TabGroupsSaveV2] Remove Duplicate Close Button in TabGroupEditorBubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8f20768
+
+### Revert "Adding OS warning to site-settings"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/15ead70d
+
+### Move Java digital_credentials code to dedicated directory
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2954e8d
+
+### [lensoverlay] Add object tests and variations of signed in tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/189233a
+
+### Replace IsSafeSitesEnabled with capabilities
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9659508
+
+### Reland "Move URLF prefs and enum into components/enterprise/connectors/"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbc5680
+
+### Adding OS warning to site-settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09ab467
+
+### ash: Refactor auth_panel to use ImeController directly
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff48408
+
+### Use CLIENT_OWNS_WIDGET for StatusBubbleView and EditorMenuController.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/887289e
+
+### Reset Browser::profile_pref_registrar on Browser destruction.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/115df7f
+
+### chrome/browser/ui/webui/ash/settings/pages: fix build deps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/343d0f6
+
+### [Omnibox] Add GetLensOverlayInteractionResponse to OmniboxClient
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d47646b
+
+### Skip promo card dict entries which don't have kIdKey
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/804372b
+
+### [Android] Remove plus address icon from all plus addresses bottom sheet.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3747853
+
+### Delete unnecessary gni args from //chrome/common/features.gni.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/21928872
+
+### Rename some media_router classes to cast
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/00ddf491
+
+### Move BrowserActions to //chrome/browser:primitives.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/09278db
+
+### [views-ax] Migrate kSelected a11y attribute to new system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dc24167c
+
+### ash: Create c/b/chromeos/video_conference/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a9d882
+
+### ash: Create c/b/chromeos/upload_office_to_cloud/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e60d78a
+
+### ash: Create c/b/chromeos/platform_keys/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6e2b3589
+
+### ash: Create c/b/chromeos/network/BUILD.gn.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4705d063
+
+### Revert "[toolbarpinning] Update Chrome Labs code for ToolbarPinning."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2ef5368
+
+### [Permission] Use Network Framework for ServiceWatcher
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c7bd393
+
+### Remove bounce-tracking-mitigations flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9506b305
+
+### [blink scheduler] Add UseCase::kDiscreteInputResponse behind a flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/29ff47d
+
+### Revert "MediaApp: Delete PDF a11y OCR flag."
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/a2f1a63d
+
+### Remove some Unified Password Manager entries from chrome://flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/373091e
+
+### MediaApp: Delete PDF a11y OCR flag.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9e4b1af
+
+`);
+              </script>
+            </body>
+        </html>
