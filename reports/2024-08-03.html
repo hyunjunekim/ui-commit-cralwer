@@ -1,0 +1,280 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-08-03
+### Change touch_selection_controller_impl to CLIENT_OWNS_WIDGET
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c8e29bc1
+
+### Remove the kJelly feature flag in ui/message_center
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/03894f1b
+
+### [TSLO] Fix regression that broke app header implementation
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2c5a05a
+
+### Remove fallback_to_software option in GPU testing.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eae2dfb
+
+### Add default module for payment settings
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/582bec9
+
+### immersive fullscreen: limit the collection behavior for overlay windows
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/336b90f
+
+### spanification: Add \`#pragma allow_unsafe_buffers\` follow-up chromeos.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/de351fd
+
+### [a11y] Optimize fetching integer valued properties from AX Nodes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/d0b99e4
+
+### Cert Managment UI V2: Change top shadow behaviour
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/4ca5fbfe
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8bdb45b
+
+### Fix location of xinput enter/leave events.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/905c56a2
+
+### wayland: retain origin surface on fallback window drag sessions
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c72e49c2
+
+### Spanify gfx::Image creation method.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/852d559
+
+### Do not save recent emojis if inserting in incognito window.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5c80eaf
+
+### [Customize Toolbar] Fix crash when flag is off.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f2997ab5
+
+### Modifying ChromePaymentsAutofillClient to cache risk_data.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb40758
+
+### [TabGroupSync] Update BookmarkTabHelper to use Wrapper Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d6d3f7bb
+
+### [ACT] Re-add ACT features for cookies page UX
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/33c3109
+
+### Use base::clamp in WindowSizer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3e064e9
+
+### Update event logs to on-device-internals page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5d9d031
+
+### [Toolbar] Added missed finch param check. Turning flag off to debug further cases identified.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4293a28
+
+### [dPWA] Replacing IsLocallyInstalled with the correct InstallState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c95b0ef
+
+### Change Page Info certificate string for invalid certificates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2c75753
+
+### [TabGroupSync] Update DeletionDialogController to use Wrapper Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6fe8029
+
+### cros: Put saved desk changes behind separate flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c0afb1
+
+### [TabGroupSync] Explicitly return nullptr for OTR profiles
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/111ae70
+
+### [PWA/Link Capturing Reimpl] Add support for Shift clicks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/65887a26
+
+### [TabGroupSync] Use Wrapper Service in TabGroupEditorBubbleView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9465e67
+
+### [LogoPolish] Try to fix ANR bug and add a kill switch for logo polish animation.
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/675dad1
+
+### Add histogram for Gaia passwordless login requests
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/da25195
+
+### [BCIV] Reduce toolbar captures
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a4c496e
+
+### Save desks: Fix disable status/tooltips
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48c1ffd
+
+### [TabGroupSync] Use Wrapper Service in SavedTabGroupBar
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20b6d2251
+
+### [WE] Introduce metrics for first-time connection notification
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f1273f0
+
+### Move \`connector_pref\` and \`common\` files to the \`core\` folder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/47dca0b8
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a60961e
+
+### [FedCM] Integrate new_accounts_idp with Android UI
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5bd556c
+
+### [FedCM] Add tab subscriptions for FedCmAccountSelectionViewController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/40ea4d1
+
+### [a11y] Announce pin textfield content with screen reader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/32f35ae
+
+### [NTP][Enterprise] Add attachment horizontal scroll
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d09342c
+
+### [data sharing] Add entry point in tab group editor bubble
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b498e67
+
+### [mullhet] Auth in ManagePasswordsView to show initial password details.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7e1c8a38
+
+### [sync] Rename ModelTypeSyncBridge to DataTypeSyncBridge
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1c65b5f
+
+### [TG Sync] Add API TabGroupSyncService::ConnectLocalTabGroup
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c902ab
+
+### Signin: Migrate signin-reauth, signin-error UIs to Lit.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b69e655
+
+### Device log: Add types searchQueryParam
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a44f07ff
+
+### Announce when the side panel is resized via keyboard.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa291f4
+
+### [shortstand] Remove the flag kStandaloneWindowMigrationUx
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4fda6d37
+
+### [views-ax] Migrate a11y attribute kSelected to new system
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/929824b
+
+### Move note_taking related code to its own directly.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e40383
+
+### Reupload: Adding OS warning to site-settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c00f9bd
+
+### Move AreExtensionsPermissionsEnabled to chrome/browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c8f3830
+
+### [A11y][WebAuthn] Announce loading while UI is disabled
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a0a59e4
+
+### Enforce correct teardown order in SiteSettingsHandler test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/413d3e38
+
+### Revert "Announce the preview metadata as part of a list item."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e4ac6b8
+
+### Revert "Add announcement upon insertion."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7907de9
+
+### ash: Add c/b/ui/webui/ash/settings/**/BUILD.gn, part 5
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6c9f473
+
+### Add announcement upon insertion.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/509b2431
+
+### ash: Add c/b/ui/webui/ash/settings/**/BUILD.gn, part 4
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aa6e75d
+
+### [sync] Rename ModelTypeController to DataTypeController
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/07a3db9
+
+### ash: Add c/b/ui/webui/ash/settings/**/BUILD.gn, part 3
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/75245f1
+
+### ash: Add c/b/ui/webui/ash/settings/**/BUILD.gn, part 2
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/813f3d8
+
+### Deduplicate Drive links in browsing history before burn in
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e9b06ab
+
+### [views-ax] Migrates a11y kSelected to new system in OmniboxResultView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c7d3d14c
+
+### Remove the ForceSpectreVariant2Mitigation feature.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f4b9a15
+
+### Remove flag AndroidHatsRefactor
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/0637de6
+
+`);
+              </script>
+            </body>
+        </html>
