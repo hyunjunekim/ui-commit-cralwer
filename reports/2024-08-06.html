@@ -1,0 +1,372 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-08-06
+### Switch to [[likely]]: ui/
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c6cacc4
+
+### [Wayland] Add ToplevelIconManager
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6185a6e
+
+### Avoid some dubious string_view constructors.
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/449a2972
+
+### views: adds a bunch of null checks for Widget
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3d11aa6
+
+### [Text Contrast] Add flag to increase contrast on Windows
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6e86a15
+
+### Cert Management UI V2: Change event on menu item selector
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b811c34
+
+### Send answerer result URL, index, and text fragments to history front end
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b9b016d
+
+### Revert "[views-ax] Migrating Slider kValue attribute to new system"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/9fc4d95
+
+### Fix CHECK in DelegatedInkPointRendererGpu::ReportPointsDrawn.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/080db81
+
+### Add outstanding points histogram.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a745551
+
+### Speculative fix for NativeWidgetDelegate access
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/3bc00c3b
+
+### Disable WarmScreenCapture by default for macOS Sequoia
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/528bc223
+
+### Assume macOS 11+ in a ui/ build file
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/94e4e49
+
+### [views-ax] Migrates kDefaultActionVerb attribute to new system in buttons
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/aea57e5
+
+### Remove \`kGLImplementationDesktopName\` and \`kGLImplementationAppleName\`
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/78a0076
+
+### [High5] Fetch auth factors availability before setting user pods
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c6ee492
+
+### Make USE_CRAS #define a BUILDFLAG
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/81f9d7f4
+
+### [GMC] Fixed the issue with incorrect *DeviceEntryView height
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/20d9fea
+
+### Remove ReadAnythingTabHelper.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a17f29f
+
+### tabs: Add a stub to TabFeatures to handle tab discard.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ff4addd
+
+### Data Sharing: consolidate group_data.mojom usage
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/398d3d4
+
+### [mahi] apply age and country restrictions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca060337
+
+### Use different strings for feature tour based on editor eligibility.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5751afcf3
+
+### Clean up Friendlier Settings on Desktop
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/f6fefa2
+
+### [lensoverlay] Fix thumbnail breaking for multimodal queries
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6f6381b
+
+### Remove the kJelly feature flag in ash/system/holding_space
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e0d8002
+
+### [ntp][redesign] Enabled on ToT for all locales
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7cef135
+
+### Add form submission hook to user annotations
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/73c0fc4
+
+### [Extensions][UI] Change extensions webstore UI links.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bd99692
+
+### focus-mode: Gate YTM playlists from flag
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cb66577
+
+### Update HTTPS-First Mode settings to include Balanced Mode
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/af79a20
+
+### Block UI tablet mode during the kiosk session
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3da3ce0
+
+### focus-mode: Update the header of sounds view
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/60b2686c4
+
+### [QSv2] Quick Share Quick Settings Tile on/off when device visible
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/025777b23
+
+### Record icon to exapnd computation time only if navigation has finished
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fb1f334
+
+### [Extensions] Show MV2 deprecation keep dialog by using browser
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/48b1c11
+
+### [TabGroupSync] Update BookmarkBarView to use Wrapper Service
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c17a8ce
+
+### Remove feature kLensImageCompression
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/88ac416
+
+### Remove unused finch params for adaptive toolbar
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e67cbd1
+
+### Remove enable_screen_ai_service from build files in //chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/7dcbee95
+
+### Add Credentials Mode Support to EndpointFetcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5912b8f4
+
+### Remove ENABLE_SCREEN_AI_SERVICE buildflag from //chrome.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4ee66d6
+
+### [WE] Display companion app icon and update css to match spec
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/84c3def
+
+### Rename chrome refresh icons with no non-refresh equivalent
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/012c214
+
+### DemoSession::shouldShowAppInShelf() returns false for uninstalled apps
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0dc6cf6
+
+### Add IPH for the management toolbar button
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/18c24698
+
+### [Gardener] Revert "Re-enable SuggestTabsForMultipleProfiles test"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ac85a07f
+
+### Add missing doc for product_specifications_entry_point_controller
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/251f6e7
+
+### Update browser view frame controls for OnTask
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57ab0ad
+
+### [passwords/android] Inline and simplify UPM eviction functions
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/74dd8850
+
+### Don't sync form submissions for synced tab groups
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/57bc74c
+
+### Rename memory saver icons to performance controls speedometer
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4d3da3c
+
+### Data Sharing: Implement SDKDelegateDesktop
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/244c7e5
+
+### cros: Enable forest feature by default
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bc384ff8
+
+### Add new suite of feature checks for compare
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dd7a8939
+
+### Modularize //chrome/browser/ui/webui/top_chrome
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0ec390a
+
+### [lensoverlay] Show live page after CSB query
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/64513da
+
+### [UNOp2][Android] Update device lock strings for Automotive
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/bab1192d
+
+### Re-enable SuggestTabsForMultipleProfiles test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/fa8ec16
+
+### [mullhet] Fix bubble initial details mode layout.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9c8ef64
+
+### Revert "NewTabPage: Remove NtpWideModules feature flag"
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/38caf4a
+
+### [HTTPS First Mode] Add tentative balanced mode strings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ea1eaa9ee
+
+### [sync] Rename ModelTypeStore to DataTypeStore (part 2 of 2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/31a57c5e
+
+### Implement product attribute chips with optional labels
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0aacec5
+
+### Limiting the UI changes to CrOS
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a2522d5
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9801de6
+
+### [Autofill] Add option to ignore AwG checks for virtual view structure flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/121aa1a
+
+### [sync] Rename ModelTypeStore to DataTypeStore (part 1 of 2)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9048b12
+
+### Revert "Signin: Migrate sync-confirmation, signin-email-confirmation to Lit."
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/6d6126a
+
+### [UNOp2][Android] Suppress upgrade promo on Android Auto
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3d39095
+
+### [LHS indicators] Enable the LeftHandSideActivityIndicators flag on ToT
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e967b5c
+
+### lobster: add lobster candidate store
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0a5fd10
+
+### Pass driver as argument in AutofillContextMenuManager::GetAutofillField
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d3222a0
+
+### kiosk: Remove kiosk_enable_screen for consumer Kiosk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1722211
+
+### Change pointers to refs in TemplateURLService prod constructor
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ecdd272
+
+### On desktops, accept visible enough suggestions only.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/78bdcf8
+
+### [shortstand] Remove the flag kCrosShortstand
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/d69a90a
+
+### lobster: add image sanitizer after fetching from manta
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3337bf1
+
+### kiosk: Remove kiosk_autolaunch_screen for consumer Kiosk
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/83a7a90
+
+### lobster: add image fetcher
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0777b0c
+
+### Add alternate emoji bar strings for when GIFs are disabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2b16bee
+
+### views: update modal dialog position on browser window move
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e844c3f
+
+### Revert "Clean up kClearLoginDatabaseForUPMUsers flag"
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bdc199a
+
+### focus-mode: Add YTM feature flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/92cb4df
+
+### Clean up kClearLoginDatabaseForUPMUsers flag
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/9f6e1930
+
+### Add a chrome-flags flag for language detection API.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/6002a030
+
+### [IncognitoMigration] Added feature flag to migrate incognito switcher to toolbar
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/bdd3144
+
+### Preview for ai.summarizer API
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/1bc0f62
+
+### Add debugging flag for Picker feature tour.
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c9a83c8
+
+`);
+              </script>
+            </body>
+        </html>
