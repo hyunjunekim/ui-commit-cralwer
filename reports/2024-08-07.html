@@ -1,0 +1,312 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2024-08-07
+### Replace chromeos-betty-pi-arc-chrome with chromeos-betty-chrome
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/61990c1
+
+### fixup: Ensure text-input protocol is available
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/c415c4e
+
+### Show accent color for indeterminate checkboxes
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/eab89a3c
+
+### ui/display: Tighten CDB Bounds check
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6a61b2e
+
+### Updating XTBs based on .GRDs from branch main
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f465ac9e9
+
+### Add TimeFromDelegatedInkToApiPaint histogram for Delegated Ink.
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a5307ce
+
+### Cert Management V2: extend subpage height
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/b400b4ec
+
+### Revert "Remove error-prone constructor: ScopedJavaGlobalWeakRef(env, jobject)"
+* Affected: ui, chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12ca279
+
+### Migrate NOTREACHEDs in ui/base
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/00fa00f
+
+### Revert "[A11y] When repairing prohibited name, avoid redundant description"
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/baf03ca
+
+### Make cr-toggle focus visible in hcm
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/f9257cd6
+
+### Replace mesa_headers with angle's headers
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/5110fce
+
+### [views-ax] Introduces setter for kAutoComplete string attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/8155b1a
+
+### [A11y] When repairing prohibited name, avoid redundant description
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/6946fa2
+
+### [Android] Rename ElementInState to Element
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/a367534
+
+### Fix CHECK in DelegatedInkPointRendererGpu::StoreDelegatedInkPoint
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/2a7c1521
+
+### Create CADisplayLink DisplayLinkMacSharedState for each thread
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/e463499
+
+### [views-ax] Introducing setters for kRoleDescription attribute
+* Affected: ui
+* https://chromium.googlesource.com/chromium/src/+/ea461aa
+
+### [Ash] BUILD.gn for //chrome/browser/ui/webui/ash/crostini_upgrader
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3bd510c1
+
+### [Ash] Fix //c/b/u/webui/ash/smb_shares BUILD.gn
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/530e6b8
+
+### Calls GetStoredTrustTokens() to receive issuer origin and token count
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/58d0135
+
+### crosier: Move metadata copying to the relevant build files
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ee42b2c
+
+### sunfish: Add SearchResultsView as an AshWebView
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ece4688
+
+### [SidePanel] Add customizable bookmarks panel width preference
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3c5b023
+
+### [A11y] Add flash notifications preview button in settings
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8fa99b2
+
+### [Birch] Deprecate IsVideoConferenceTab From Lost Media Items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5dc2ac4
+
+### [lensoverlay] Hide preselection toast when search bubble enabled.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/525788b
+
+### [Birch] Add SecondaryIconType For Recent Tab Items.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9acfa185
+
+### [TabstripDeclutter] Add feature flag.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/04fd539
+
+### [Birch] Add Expiration Filter For Self Share Provider.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a8dc8ed
+
+### Deflake PerformanceInterventionMixedProfileTest
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/0f97c676
+
+### [Birch] Update Release Notes Item With New Strings.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/80401e3
+
+### [TabGroupSync] Use Wrapper Service in remaining SavedTabGroupBar Paths
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1e8aa34c
+
+### birch: Refactor BirchWeatherProvider
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/c19e17c
+
+### Make SidePanelRegistry explicitly owned.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2fd6b53c
+
+### Local passwords are now fully launched in M126
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/cc00f4e
+
+### Allow chrome://policy/test to treat a profile as managed
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e09f88e
+
+### Cleanup Reader mode contextual page action
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/c20ba57
+
+### Make CommerceUiTabHelper into a TabFeature.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a6daba2
+
+### Fix the wrong window style found on parentless modal message boxes.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/3be77c238
+
+### Cleanup contextual page actions feature flag
+* Affected: chrome/browser/ui, chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b368e08
+
+### [PWA] Have default focus be on Cancel button for PWA install dialogs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/d2f7b2d
+
+### [lensoverlay] always include credentials in server request
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b073cde
+
+### Birch: Add readme
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e5ef8f2
+
+### Reland "Quick Answers available from kPendingDisclaimer"
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/16e2b9676
+
+### [AccentColor]Pump Windows system accent color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/8a73948a
+
+### Update favicon for product specifications page
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/69c90782
+
+### [mullhet] Remove edit username button for single credential bubble mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/acc37ff
+
+### Refactor birch unit tests and browser tests.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/08f8e09f
+
+### [lensoverlay] Close lens overlay when search bubble is manually closed.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1b773ee
+
+### webui: use DefaultWebUIConfig whenever possible
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/12a0bcf
+
+### [Toolbar] Move tab switcher button to existing coordinator.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/b636fee
+
+### [SurfacePolish][CleanUp] Clean up surface polish code related to toolbar and real omnibox animation.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/e6bccac
+
+### [A11y] Add settings for flash notifications and flash color
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/2bb01443
+
+### [sync] Rename ModelTypeState to DataTypeState
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1f56564
+
+### Add copy download link quick-action to download item.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/05340b2
+
+### Make the border around the side panel content thicker.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca8b604
+
+### Fix should_focus_step_specific_content_ is being checked before updates
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/355f11f
+
+### [mullhet] Set details bubble title to affiliated domain display name.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f3ac6be8
+
+### [a11y] Fix screen reader feedback upon entry in PinTextfield
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a41aa459
+
+### [SPC] Use the built-in progress bar instead of adding our own
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/1cf68f0
+
+### [android] Remove some Unified Password Manager prefs
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ae6d518
+
+### [Android] Create AccessorySheetField::Builder.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/5c2942d
+
+### Rename Get/SetLastActiveTime to Get/SetLastActiveTimeTicks
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/4b58dd93
+
+### Re-enabled VeryUnlikelyGrant permission pixel test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/a085a80
+
+### Disable failing test
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/36eddba
+
+### [mullhet] Remove details bubble back button for single credential mode.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/f58c321
+
+### [AWC] Popups and web apps: Fire move event on moveTo calls.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/71c29d1
+
+### [sync] Rename enum ModelType to DataType (with temporary alias)
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/209e0271
+
+### [views-ax] Migrating a11y properties to view constructor in //ash
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/ca0d61e
+
+### Reuse existing generic accessibility name for back button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/9db96b9
+
+### Reuse existing string for search box clear button.
+* Affected: chrome/browser/ui
+* https://chromium.googlesource.com/chromium/src/+/dbe8325a
+
+### chromeos: Add feature BirchWeather to about:flags
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/b828dd7
+
+### dnt: Add chrome flag for mirroring in RTL
+* Affected: chrome/browser/about_flags.cc
+* https://chromium.googlesource.com/chromium/src/+/e79a5dc
+
+`);
+              </script>
+            </body>
+        </html>
